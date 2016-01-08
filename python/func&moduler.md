@@ -236,7 +236,7 @@ print "Decoded {0} - {1}".format(decoded,type(decoded))
 # Encoded ["hello", 42, [1, "two"], "apple"] - <type 'str'="">
 # Decoded [u'hello', 42, [1, u'two'], u'apple'] - <type 'list'="">
 ```
-**sys错误、程序终止、模块包含了跟python解析器和环境相关的变量和函数。**
+**sys I/O、错误、程序终止、模块包含了跟python解析器和环境相关的变量和函数。**
 ```python
 sys.argv        —— 对命令行参数的访问:sys.argv[1]
 sys.platform()  —— 输出平台信息
