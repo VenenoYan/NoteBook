@@ -12,7 +12,7 @@
 二叉树：每个节点最多两个字树，而且字树有左右之分<br>
 满二叉树与完全二叉树：<br>
 ![3](1.png)
-  存储：链式为主。
+<br>存储：链式为主。
 ```C
 typedef struct BitNode{
     TElemType data;
@@ -29,4 +29,25 @@ status PreOrder(BiTree T){
         return error;
     }else
         return OK;
-}```
+}
+status InOrder(BiTree T){
+    if(T){
+        print(T->data);
+        if(PreOrder(T->lchild))
+            if(PreOrder(T->rchild))
+                return OK;
+        return error;
+    }else
+        return OK;
+}
+status PostOrder(BiTree T){
+    if(T){
+        print(T->data);
+        if(PreOrder(T->lchild))
+            if(PreOrder(T->rchild))
+                return OK;
+        return error;
+    }else
+        return OK;
+}
+```
