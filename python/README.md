@@ -30,4 +30,4 @@
 * 
 [爬虫](web_spider.md)
 * 
-[经典小测试](test.md)
+[经典小测试](examine.md)
