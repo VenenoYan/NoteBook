@@ -18,3 +18,15 @@ typedef struct BitNode{
     TElemType data;
     struct BitNode *lchild,*rchild;
 }BitNode,*BiTree;```
+遍历：先根遍历、中根遍历、后根遍历
+```C
+status PreOrder(BiTree T){
+    if(T){
+        print(T->data);
+        if(PreOrder(T->lchild))
+            if(PreOrder(T->rchild))
+                return OK;
+        return error;
+    }else
+        return OK;
+}```
