@@ -22,10 +22,11 @@ math.abs(x)        # 返回一个数的绝对值。
 ##random()
 ```python
 import random
+
+随机实数：
 random.random()          # 随机生成下一个实数，它在[0,1)范围内。
 random.uniform(a,b)      # 随机生成下一个实数，它在[a,b]范围内。
 下面生成的实数符合其它的分布 (你可以参考一些统计方面的书籍来了解这些分布):
-
 random.gauss(mu,sigma)    # 随机生成符合高斯分布的随机数，mu,sigma为高斯分布的两个参数。 
 random.expovariate(lambd) # 随机生成符合指数分布的随机数，lambd为指数分布的参数。
 
@@ -63,8 +64,7 @@ random.sample('abcdefghij',3)
 多个字符中选取特定数量的字符组成新字符串：
 >>> import random
 >>> import string
->>> string.join(random.sample(['a','b','c','d','e','f','g','h','i','j'], 3)).r
-eplace(" ","")
+>>> string.join(random.sample(['a','b','c','d','e','f','g','h','i','j'], 3)).replace(" ","")
 'fih'
 
 随机选取字符串：
