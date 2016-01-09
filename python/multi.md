@@ -31,6 +31,25 @@ q.get(item,block,timeout)
 ```
 范例0:
 ```python
+def consumer()：
+    while 1:
+        item = q.get()
+        if item is None:
+            break
+        print(item)
+        q.task_done()
+
+q = Queue.Queue()
+threads=[]
+for i in range(5):
+    t = threading.Thread(target = consumer):
+    t.start()
+    threads.append(t)
+q.join()
+for i in range(5):
+    q.put(None)
+for t in threads:
+    t.join()
 ```
 范例1：
 ```python
