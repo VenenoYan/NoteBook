@@ -297,7 +297,7 @@ random 提供了生成随机数的工具:
 0.17970987693706186
 >>> random.randrange(6)    # random integer chosen from range(6)
 4
-seed() 设置生成随机数用的整数起始值。调用任何其他random模块函数之前调用这个函数。
+seed([X]) 设置生成随机数用的整数起始值。调用任何其他random模块函数之前调用这个函数。
 ```
 **[互联网访问](web_spider.md)**
 ```python
