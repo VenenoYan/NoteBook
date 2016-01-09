@@ -28,3 +28,36 @@ q.get(item,block,timeout)
         block=True:若queue为空，调用该queue的线程阻塞直至出现一个可用单元。
         block=False:满了就会引起Empty异常
 ```
+范例1：
+```python
+import Queue,threading,time,random
+
+class consumer(threading.Thread):
+    def __init__(self,que):
+        threading.Thread.__init__(self)
+        self.daemon = False
+        self.queue = que
+    def run(self):
+        while True:
+            if self.queue.empty():
+                break
+            item = self.queue.get()
+            #processing the item
+            time.sleep(item)
+            print self.name,item
+            self.queue.task_done()
+        return
+que = Queue.Queue()
+for x in range(10):
+    que.put(random.random() * 10, True, None)       #生产者
+consumers = [consumer(que) for x in range(3)]
+
+for c in consumers:
+    c.start()
+que.join()
+
+代码的功能是产生10个随机数（0～10范围），sleep相应时间后输出数字和线程名称
+这段代码里，是一个快速生产者（产生10个随机数），3个慢速消费者的情况。
+在这种情况下，先让三个consumers跑起来，然后主线程用que.join()阻塞。
+当三个线程发现队列都空时，各自的run函数返回，三个线程结束。同时主线程的阻塞打开，全部程序结束。
+```
