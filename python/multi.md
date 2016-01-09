@@ -30,6 +30,7 @@ q.get(item,block,timeout)
 ```
 范例1：
 ```python
+#consuming after produced
 import Queue,threading,time,random
 
 class consumer(threading.Thread):
