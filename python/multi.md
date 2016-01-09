@@ -2,6 +2,7 @@
 
 对于资源，加锁是个重要的环节。因为python原生的list,dict等，都是not thread safe的。而Queue，是线程安全的，因此在满足使用条件下，建议使用队列。
 ```Python 
+impor
 Queue模块有三种队列及构造函数:
 Python Queue模块的FIFO队列先进先出。 class Queue.Queue(maxsize)
 LIFO类似于堆，即先进后出。 class Queue.LifoQueue(maxsize)
