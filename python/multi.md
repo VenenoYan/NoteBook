@@ -45,7 +45,7 @@ for i in range(5):
     t = threading.Thread(target = consumer):
     t.start()
     threads.append(t)
-for i in range(5):
+for i in range(10):
     q.put(i)
 for t in threads:
     t.join()
