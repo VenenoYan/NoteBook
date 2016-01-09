@@ -31,7 +31,7 @@ q.get(item,block,timeout)
 ```
 范例0:
 ```python
-import threading,Queu
+import threading,Queue
 def consumer()：
     while 1:
         item = q.get()
