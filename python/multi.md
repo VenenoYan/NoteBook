@@ -16,9 +16,9 @@ q.get([block[, timeout]]) 获取队列，timeout等待时间
 q.get_nowait()  相当q.get(False)
 非阻塞 q.put(item)  写入队列，timeout等待时间
 q.put_nowait(item)  相当q.put(item, False)
-q.task_done()   consumer在完成在该queue上的操作(先get())，
+q.task_done()   consumer在完成对该queue上元素的操作(先get()，用于join激活)，
 q.join()        阻塞到queue上的元素均被操作(实际上意味着等到队列为空)，再执行别的操作
-        由于join()引起的阻塞，所有元素被操作后重新“激活”（每一个put进去的元素都task_done调用）
+        由于join()引起的阻塞，所有元素被操作后重新“激活”（每一个put进去的元素都进行了task_done调用）
     
 q.put(item,block[False],timeout[None])
         block=True:若queue已满，调用该queue的线程阻塞直至出现一个空的单元
