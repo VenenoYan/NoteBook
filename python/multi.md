@@ -19,4 +19,7 @@ q.get_nowait() 相当q.get(False)
 q.put_nowait(item) 相当q.put(item, False)
 q.task_done() 在完成一项工作之后，q.task_done() 函数向任务已经完成的队列发送一个信号
 q.join() 实际上意味着等到队列为空，再执行别的操作
+
+q.put(item,block,timeout)
+        block=True:若queue已满，调用该queue的线程阻塞否则
 ```
