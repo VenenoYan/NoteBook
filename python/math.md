@@ -30,6 +30,8 @@ random.gauss(mu,sigma)    # 随机生成符合高斯分布的随机数，mu,sigm
 random.expovariate(lambd) # 随机生成符合指数分布的随机数，lambd为指数分布的参数。
 
 设置种子：random.seed(x)
+seed([X]) 设置生成随机数用的整数起始值。调用任何其他random模块函数之前调用这个函数。
+random.seed( 10 )       #当然可以以时间为种子。但是容易产生相同的(因为种子同则随机的值也相同)。
 
 随机整数：
 >>> import random
