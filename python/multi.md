@@ -20,7 +20,7 @@ q.task_done() 在完成一项工作之后，q.task_done() 函数向任务已经�
 q.join() 实际上意味着等到队列为空，再执行别的操作
 
 q.put(item,block[False],timeout[None])
-        block=True:若queue已满，调用该queue的线程阻塞直至出现一个空的单元。
+        block=True:若queue已满，调用该queue的线程阻塞直至出现一个空的单元(同时若timeout是一个正整数：阻塞时长)
         block=False:满了就会引起Full异常
         
 q.get(item,block,timeout)
