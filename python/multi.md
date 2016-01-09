@@ -29,6 +29,9 @@ q.get(item,block,timeout)
         block=True:若queue为空，调用该queue的线程阻塞直至出现一个可用单元。
         block=False:满了就会引起Empty异常
 ```
+范例0:
+```python
+```
 范例1：
 ```python
 #consuming after produced
