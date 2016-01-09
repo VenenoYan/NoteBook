@@ -63,6 +63,7 @@ que.join()
 ```
 范例2:
 ```python
+#consuming while producing
 import Queue,threading,time,random
 
 class consumer(threading.Thread):
