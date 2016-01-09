@@ -49,7 +49,7 @@ class consumer(threading.Thread):
         return
 que = Queue.Queue()
 for x in range(10):
-    que.put(random.random() * 10, True, None)       #生产者
+    que.put(random.random() * 10, True, None)       #生产者（主线程）
 consumers = [consumer(que) for x in range(3)]
 
 for c in consumers:
