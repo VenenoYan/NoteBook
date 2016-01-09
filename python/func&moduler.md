@@ -298,7 +298,7 @@ random 提供了生成随机数的工具:
 >>> random.randrange(6)    # random integer chosen from range(6)
 4
 seed([X]) 设置生成随机数用的整数起始值。调用任何其他random模块函数之前调用这个函数。
-random.seed( 10 )       #当然可以以时间为种子。
+random.seed( 10 )       #当然可以以时间玩儿
 ```
 **[互联网访问](web_spider.md)**
 ```python
