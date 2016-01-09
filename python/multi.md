@@ -45,11 +45,11 @@ for i in range(5):
     t = threading.Thread(target = consumer):
     t.start()
     threads.append(t)
-q.join()
 for i in range(5):
-    q.put(None)
+    q.put(i)
 for t in threads:
     t.join()
+q.join()
 ```
 范例1：
 ```python
