@@ -5,7 +5,7 @@
 * 
 [#258_整数各位相加](add_digits.md)
 * 
-[#292_最后一个谁拿谁赢-Nim游戏](Nim_game.md)
+[#292_Nim游戏最后一个谁拿谁赢](Nim_game.md)
 * 
 [#32_符号匹配](Longest_Valid_Parentheses.md)
 * 
