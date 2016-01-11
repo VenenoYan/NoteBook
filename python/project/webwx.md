@@ -155,7 +155,7 @@ BaseRequest = {}
 ContactList = []
 My = []
 
-#获得当前登录
+#获得当前登录的ID
 def getUUID():
 	global uuid
 	url = 'https://login.weixin.qq.com/jslogin'
@@ -177,6 +177,7 @@ def getUUID():
 	if code == '200':
 		return True
 	return False
+#保存二维码图片到本地
 def showQRImage():
 	global tip
 	url = 'https://login.weixin.qq.com/qrcode/' + uuid
