@@ -19,5 +19,5 @@
 1. 
 [把0移动到最后](movezeroes.md)
 1. 
-[324_排序：a< b >c<...](324_Wiggle_sort.m)
+[324_排序：a< b >c<...](324_Wiggle_sort.md)
 
