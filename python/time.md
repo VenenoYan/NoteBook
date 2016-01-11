@@ -13,6 +13,7 @@ print end-start
 print time.clock()
 print time.gmtime()     
 print time.localtime()
+print int(time.time())  #当前时间的整数
 
 ## dd/mm/yyyy格式
 print (time.strftime("%d/%m/%Y"))
