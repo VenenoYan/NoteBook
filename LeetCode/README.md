@@ -1,7 +1,7 @@
 1. 
-[3个数和为0](3Sum.md)
+[15_3个数和为0](3Sum.md)
 1. 
-[3个数和靠近某一数](3Sum-Closest.md)
+[16_3个数和靠近某一数](3Sum-Closest.md)
 1. 
 [整数各位相加](add_digits.md)
 1. 
