@@ -65,3 +65,7 @@ def val_in_xrange(x, val):
 python2.X:  [1,2]>"helo" 返回False
 python3.X:  [1,2]>"helo" 引起异常
 ```
+1. 
+bool与int:
+```python
+2.X中bool是int的子集```
