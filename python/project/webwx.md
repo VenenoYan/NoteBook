@@ -257,7 +257,7 @@ def login():
 		elif node.nodeName == 'pass_ticket':
 			pass_ticket = node.childNodes[0].data
 
-	# print 'skey: %s, wxsid: %s, wxuin: %s, pass_ticket: %s' % (skey, wxsid, wxuin, pass_ticket)
+	# print 'skey: %s, wxsid: %s, wxuin: %s, pass_ticket: %s'%(skey, wxsid, wxuin, pass_ticket)
 
 	if skey == '' or wxsid == '' or wxuin == '' or pass_ticket == '':
 		return False
@@ -272,7 +272,7 @@ def login():
 	return True
 
 def webwxinit():
-	url = base_uri + '/webwxinit?pass_ticket=%s&skey=%s&r=%s' % (pass_ticket, skey, int(time.time()))
+	url = base_uri+'/webwxinit?pass_ticket=%s&skey=%s&r=%s'%(pass_ticket, skey, int(time.time()))
 	params = {
 		'BaseRequest': BaseRequest
 	}
@@ -350,7 +350,7 @@ def createChatroom(UserNames):
 		MemberList.append({'UserName': UserName})
 
 
-	url = base_uri + '/webwxcreatechatroom?pass_ticket=%s&r=%s' % (pass_ticket, int(time.time()))
+	url = base_uri+'/webwxcreatechatroom?pass_ticket=%s&r=%s'%(pass_ticket, int(time.time()))
 	params = {
 		'BaseRequest': BaseRequest,
 		'MemberCount': len(MemberList),
