@@ -64,6 +64,8 @@ def val_in_xrange(x, val):
 1. 
 比较操作
 ```python
+Python 2.x中不等于有两种写法 != 和 <>
+Python 3.x中去掉了<>, 只有!=一种写法
 python2.X:  [1,2]>"helo" 返回False
 python3.X:  [1,2]>"helo" 引起异常
 ```
