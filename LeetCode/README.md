@@ -13,7 +13,7 @@
 1. 
 [最后一个单词的长度](Length_last_word.md)
 1. 
-[Z字编码](ZigZag_conversion.md)
+[6_Z字编码](ZigZag_conversion.md)
 1. 
 [字符串字符匹配](anagram.md)
 1. 
