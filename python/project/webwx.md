@@ -7,12 +7,12 @@
 1.微信服务器返回一个会话ID
 微信Web版本不使用用户名和密码登录，而是采用二维码登录，所以服务器需要首先分配一个唯一的会话ID，用来标识当前的一次登录，通过请求地址：
 
-https://login.weixin.qq.com/jslogin?appid=wx782c26e4c19acffb&redirect_uri=https%3A%2F%2Fwx.qq.com%2Fcgi-bin%2Fmmwebwx-bin%2Fwebwxnewloginpage&fun=new&lang=zh_CN&_=1377482012272（其中1377482012272这个值是当前距离林威治标准时间的毫秒）
+https://login.weixin.qq.com/jslogin?<b>appid=wx782c26e4c19acffb&redirect_uri=https%3A%2F%2Fwx.qq.com%2Fcgi-bin%2Fmmwebwx-bin%2Fwebwxnewloginpage&fun=new&lang=zh_CN&_=1377482012272（其中1377482012272这个值是当前距离林威治标准时间的毫秒）
 
 服务器会返回如下的字符串：
 window.QRLogin.code = 200; window.QRLogin.uuid = “DeA6idundY9VKn”;
 
-而这个DeA6idundY9VKn（每一次都不同）字符串就是微信服务器返回给我们这次会话的ID。
+而这个DeA6idundY9VKn（**每一次都不同**）字符串就是微信服务器返回给我们这次会话的ID。
 
 2.通过会话ID获得二维码
 
@@ -52,8 +52,7 @@ https://wx.qq.com/cgi-bin/mmwebwx-bin/webwxinit?r=1377482058764（r依然是时�
 
 访问该链接需要使用POST，并且在Body中带上以下的JSON信息：
 ```python
-{"BaseRequest":
-{"Uin":"2545437902","Sid":"QfLp+Z+FePzvOFoG","Skey":"","DeviceID":"e1615250492"}}
+{"BaseRequest":{"Uin":"2545437902","Sid":"QfLp+Z+FePzvOFoG","Skey":"","DeviceID":"e1615250492"}}
 ```
 这个JSON串中Uin和Sid分别是上面步骤中获得的那两个Cookie值，DeviceID是一个本地生成的随机字符串（分析了官方的总是e+一串数字，所以我们也保持这样的格式）。
 
@@ -69,7 +68,7 @@ https://wx.qq.com/cgi-bin/mmwebwx-bin/webwxgetcontact?r=1377482079876（r依然�
 
 7.保持与服务器的信息同步
 
-与服务器保持同步需要在客户端做轮询，该轮询的URL如下：
+**与服务器保持同步需要在客户端做轮询**，该轮询的URL如下：
 
 https://webpush.weixin.qq.com/cgi-bin/mmwebwx-bin/synccheck?callback=jQuery18309326978388708085_1377482079946&r=1377482079876&
 sid=QfLp+Z+FePzvOFoG&uin=2545437902&deviceid=e1615250492&synckey=(见以下说明)&_=1377482079876
@@ -156,6 +155,7 @@ BaseRequest = {}
 ContactList = []
 My = []
 
+#获得当前登录
 def getUUID():
 	global uuid
 	url = 'https://login.weixin.qq.com/jslogin'
