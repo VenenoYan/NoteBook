@@ -21,3 +21,21 @@ os.popen(cmd): 输出
 通过 os.popen() 返回的是 file-read 的对象，对其进行读取 read() 的操作可以看到执行的输出。
 这种调用方式是通过管道的方式来实现，函数返回一个file-like的对象，里面的内容是脚本输出的内容
     （可简单理解为echo输出的内容）。```
+1. 
+commands:输出和返回值 
+```python
+(status, output) = commands.getstatusoutput('cat /proc/cpuinfo')
+print status, output
+======================example:
+import commands
+commands.getstatusoutput('ls /bin/ls')
+(0, '/bin/ls')
+commands.getstatusoutput('cat /bin/junk')
+(256, 'cat: /bin/junk: No such file or directory')
+commands.getstatusoutput('/bin/junk')
+(256, 'sh: /bin/junk: not found')
+commands.getoutput('ls /bin/ls')
+'/bin/ls'
+commands.getstatus('/bin/ls')
+'-rwxr-xr-x 1 root 13352 Oct 14 1994 /bin/ls'
+```
