@@ -3,9 +3,9 @@
 1. 
 [16_3个数和靠近某一数](3Sum-Closest.md)
 1. 
-[整数各位相加](add_digits.md)
+[258_整数各位相加](add_digits.md)
 1. 
-[最后一个谁拿谁赢-Nim游戏](Nim_game.md)
+[292_最后一个谁拿谁赢-Nim游戏](Nim_game.md)
 1. 
 [符号匹配](Longest_Valid_Parentheses.md)
 1. 
@@ -15,9 +15,9 @@
 1. 
 [6_Z字编码](ZigZag_conversion.md)
 1. 
-[字符串字符匹配](anagram.md)
+[242_字符串字符匹配](anagram.md)
 1. 
-[把0移动到最后](movezeroes.md)
+[283_把0移动到最后](movezeroes.md)
 1. 
 [324_排序：a< b >c<...](324_Wiggle_sort.md)
 
