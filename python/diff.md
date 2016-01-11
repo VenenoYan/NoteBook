@@ -38,6 +38,8 @@ def val_in_xrange(x, val):
 1. 
 异常
 ```python
+捕获异常的语法由 except exc, var 改为 except exc as var。
+在2.x时代，所有类型的对象都是可以被直接抛出的，在3.x时代，只有继承自BaseException的对象才可以被抛出。
 首先是引起异常的方式：
         python2.X:  raise IOError, "file error"
                     raise IOError("file error")  #====>均可得到：IOError: file error
