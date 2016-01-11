@@ -9,7 +9,7 @@
 <br>
 常用时延：
 ![2](time_delay.png)
-因特尔奔腾M
+因特尔奔腾M：
 | to where | cycles |
 | -- | -- |
 | register | 1 |
