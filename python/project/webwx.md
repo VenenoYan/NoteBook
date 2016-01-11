@@ -177,7 +177,7 @@ def getUUID():
 	if code == '200':
 		return True
 	return False
-#保存二维码图片到本地
+#保存二维码图片到本地用于扫描
 def showQRImage():
 	global tip
 	url = 'https://login.weixin.qq.com/qrcode/' + uuid
