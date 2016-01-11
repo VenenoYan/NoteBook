@@ -6,7 +6,7 @@ echo "hello world!"
 exit 3
 ```
 1. 
-os.system(cmd):
+os.system(cmd):执行状态
 ```python
 该方法在调用完shell脚本后，返回一个16位的二进制数，低位为杀死所调用脚本的信号号码，高位为脚本的退出状态
 码，即脚本中“exit 1”的代码执行后，os.system函数返回值的高位数则是1，如果低位数是0的情况下，则函数的返回值
@@ -16,7 +16,8 @@ n = os.system(test.sh)
 n >> 8
 3```
 1. 
-os.popen(cmd): 
+os.popen(cmd): 输出
 ```python
+通过 os.popen() 返回的是 file-read 的对象，对其进行读取 read() 的操作可以看到执行的输出。
 这种调用方式是通过管道的方式来实现，函数返回一个file-like的对象，里面的内容是脚本输出的内容
     （可简单理解为echo输出的内容）。```
