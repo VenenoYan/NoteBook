@@ -7,9 +7,9 @@
 1. 
 [292_最后一个谁拿谁赢-Nim游戏](Nim_game.md)
 1. 
-[符号匹配](Longest_Valid_Parentheses.md)
+[32_符号匹配](Longest_Valid_Parentheses.md)
 1. 
-[下标求和](sum_between_indices.md)
+[303_下标求和](sum_between_indices.md)
 1. 
 [58_最后一个单词的长度](Length_last_word.md)
 1. 
