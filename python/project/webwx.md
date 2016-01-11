@@ -1,4 +1,4 @@
-[网页版微信解析实践](http://freezingsky.iteye.com/blog/2055502?utm_source=tuicool&utm_medium=referral)
+[网页版微信解析实践](http://www.tuicool.com/articles/r6JFFr)
 <div class="iteye-blog-content-contain">
 <p class="MsoNormal" style="font-size: 14px;"><span style="font-size: 14.0pt; font-family: 宋体;">&nbsp;</span></p>
 <p class="MsoNormal" style="text-indent: 28.0pt;"><span style="font-size: 16px; font-family: 宋体;">前段时间，刚好遇到朋友拜托我做一个功能。大致的功能需求中，有一个重要部分，是需要监听微信的消息，并收集起来，之后再根据一些需要对数据进行处理。（我会在文章的后面附上相应的源码,<span style="color: #ff0000;">如果有说错的地方，还请看官勿喷。</span>）</span></p>
