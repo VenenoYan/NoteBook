@@ -15,3 +15,8 @@ os.system(cmd):
 n = os.system(test.sh)
 n >> 8
 3```
+1. 
+os.popen(cmd): 
+```python
+这种调用方式是通过管道的方式来实现，函数返回一个file-like的对象，里面的内容是脚本输出的内容
+    （可简单理解为echo输出的内容）。```
