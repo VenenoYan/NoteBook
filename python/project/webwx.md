@@ -1,13 +1,11 @@
 [网页版微信解析实践](http://www.tuicool.com/articles/r6JFFr)
 <div class="iteye-blog-content-contain">
 <p class="MsoNormal" style="font-size: 14px;"><span style="font-size: 14.0pt; font-family: 宋体;">&nbsp;</span></p>
-<p class="MsoNormal" style="text-indent: 28.0pt;"><span style="font-size: 16px; font-family: 宋体;">前段时间，刚好遇到朋友拜托我做一个功能。大致的功能需求中，有一个重要部分，是需要监听微信的消息，并收集起来，之后再根据一些需要对数据进行处理。（我会在文章的后面附上相应的源码,<span style="color: #ff0000;">如果有说错的地方，还请看官勿喷。</span>）</span></p>
-<p class="MsoNormal" style="text-indent: 28.0pt;"><span style="font-size: 16px;"><span style="font-family: 宋体;">于是，很正常的上网搜索，发现网上关于微信接口方面的资料，主要集中在公众平台和安卓方面的</span><span style="font-family: 宋体;">sdk</span><span style="font-family: 宋体;">，明显不符合需求，剩下的唯一方式，就只能通过官方的微信网页版了。</span></span></p>
+<p class="MsoNormal" style="text-indent: 28.0pt;"><span style="font-size: 16px; font-family: 宋体;">前段时间，刚好遇到朋友拜托我做一个功能。大致的功能需求中，有一个重要部分，是需要监听微信的消息，并收集起来，之后再根据一些需要对数据进行处理。于是，很正常的上网搜索，发现网上关于微信接口方面的资料，主要集中在公众平台和安卓方面的</span><span style="font-family: 宋体;">sdk</span><span style="font-family: 宋体;">，明显不符合需求，剩下的唯一方式，就只能通过官方的微信网页版了。</span></span></p>
 <p class="MsoNormal" style="text-indent: 28.0pt;"><span style="font-size: 16px; font-family: 宋体;">为此在网上经过多次搜索，目前只发现有如下两篇文章讲到网页版微信的解析：</span></p>
 <p class="MsoNormal" style="text-indent: 28.0pt;"><span style="font-size: 16px; font-family: 宋体;"><a href="http://www.woyaofeng.com/1421.html">http://www.woyaofeng.com/1421.html</a></span></p>
 <p class="MsoNormal" style="text-indent: 28.0pt;"><span style="font-size: 16px; font-family: 宋体;"><a href="http://www.tanhao.me/talk/1466.html">http://www.tanhao.me/talk/1466.html</a></span></p>
 <p class="MsoNormal" style="text-indent: 28.0pt;"><span style="font-size: 16px; font-family: 宋体;">可惜的是，根据实际观察分析，发现与目前官方的情况已经有很明显的出入了，不过，还是很有参考的价值。</span></p>
-<p class="MsoNormal" style="text-indent: 28.0pt;"><span style="font-size: 16px; font-family: 宋体;">但最终，这活还是得自己去研究。</span></p>
 <p class="MsoNormal" style="text-indent: 28.0pt;"><span style="font-size: 16px; font-family: 宋体;">现根据自己研究的情况，写出大致步骤，希望对一些有兴趣的同学，能有所帮助。</span></p>
 <p class="MsoNormal" style="text-indent: 28.0pt;"><span style="font-size: 16px; font-family: 宋体;">先做一些铺垫。由于官方的登陆实现要求，是必须先用手机扫描过二维码之后，由手机在终端授权登陆后，网页版才会进行一些相应的动作，比如收集交互时的认证信息。</span></p>
 <p class="MsoNormal" style="text-indent: 28.0pt;"><span style="font-size: 16px; font-family: 宋体;">也就是说，网页版的登陆，可以大约分为这么一个过程： &nbsp;</span></p>
@@ -35,8 +33,4 @@
 <p class="MsoListParagraph"><span style="font-size: 16px;"><span style="font-family: 宋体;"><span style="font-family: 宋体;">&nbsp; </span><span style="font-family: 宋体;">4.</span></span><span style="font-family: 宋体;">浏览器端与服务器端的定时心跳。</span></span></p>
 <p class="MsoListParagraph"><span style="font-size: 16px;"><span style="font-family: 宋体;">&nbsp; &nbsp; GET "https://webpush2.weixin.qq.com/cgi-bin/mmwebwx-bin/synccheck?skey={skey}&amp;callback=jQuery183008612365838727565_1397377003545&amp;r={r}&amp;sid={sid}&amp;uin={uin}&amp;deviceid={deviceid}&amp;synckey={synckey}&amp;_={time}"; &nbsp; &nbsp; &nbsp;&nbsp;</span></span></p>
 <p class="MsoListParagraph"><span style="font-size: 16px;"><span style="font-family: 宋体;">&nbsp; &nbsp; 该请求有二个作用，一个是用于保证心跳，一个是用于暗示是否有相应的微信消息。返回值的内容大致如下：</span><span style="font-family: 宋体;">{retcode:</span><span style="font-family: 宋体;">”<span style="font-family: 宋体;">0</span>″<span style="font-family: 宋体;">,selector:</span>”<span style="font-family: 宋体;">0</span>″<span style="font-family: 宋体;">}</span> </span>。通过观察发现，当<span style="font-family: 宋体;">selector</span>不等于<span style="font-family: 宋体;">0</span>的时候，意味着需要客户端发起请求去获取消息，这时，需要重新请求第<span style="font-family: 宋体;">2</span>步骤即可。</span></p>
-<p class="MsoNormal" style="font-size: 14px;"><span style="font-size: 16px; font-family: 宋体;">&nbsp;</span></p>
-<p class="MsoNormal" style="margin-left: 21.0pt;"><span style="font-size: 16px; font-family: 宋体;">&nbsp; &nbsp; 大致的情况如上所述，建议有兴趣的同学，请结合文章开头引用的两篇文章，毕竟，本文主要是对其做一些补充说明。</span></p>
-<p style="font-size: 14px;"><span style="font-size: 16px;">&nbsp;</span></p>
-<p class="MsoNormal" style="margin-left: 21.0pt;"><span style="font-size: 16px;"><span style="font-family: 宋体;">（备注：自从去年去了一家港资公司之后，基本上也没怎么写过代码了，感觉生疏了许多。刚好这次借着机会，练练手，同时把</span><span style="font-family: 宋体;">gson</span><span style="font-family: 宋体;">和</span><span style="font-family: 宋体;">httpclient4</span><span style="font-family: 宋体;">的东西学习一下。）</span></span></p>
 </div>
