@@ -11,6 +11,7 @@ https://login.weixin.qq.com/jslogin?appid=wx782c26e4c19acffb&redirect_uri=https%
 
 服务器会返回如下的字符串：
 window.QRLogin.code = 200; window.QRLogin.uuid = “DeA6idundY9VKn”;
+
 而这个DeA6idundY9VKn（每一次都不同）字符串就是微信服务器返回给我们这次会话的ID。
 
 2.通过会话ID获得二维码
@@ -21,7 +22,7 @@ https://login.weixin.qq.com/qrcode/DeA6idundY9VKn?t=webwx
 
 该请求返回的便是我们需要的二维码，此时需要用户在微信的手机版本中扫描这个二维码（我就搞不明白微信官方是如何想的，登录Web版本竟然还需要手机微信去配合登录，难道没有考虑我被迫选择Web微信就是因为手机不在身边这样的情形么？）
 
-3.轮询手机端是否已经扫描二维码并确认在Web端登录
+3.**轮询**手机端是否已经扫描二维码并确认在Web端登录
 
 当获得二维码之后，就需要用户去手机端去扫描二维码，并获得用户的授权，此时我们并不知道用户何时完成这个操作，所以我们只有轮询，而轮询的地址就是：
 
