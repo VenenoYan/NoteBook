@@ -20,7 +20,7 @@ window.QRLogin.code = 200; window.QRLogin.uuid = “DeA6idundY9VKn”;
 
 https://login.weixin.qq.com/qrcode/DeA6idundY9VKn?t=webwx
 
-该请求返回的便是我们需要的二维码，此时需要用户在微信的手机版本中扫描这个二维码（我就搞不明白微信官方是如何想的，登录Web版本竟然还需要手机微信去配合登录，难道没有考虑我被迫选择Web微信就是因为手机不在身边这样的情形么？）
+该请求返回的便是我们需要的二维码，此时需要用户在微信的手机版本中扫描这个二维码
 
 3.**轮询**手机端是否已经扫描二维码并确认在Web端登录
 
