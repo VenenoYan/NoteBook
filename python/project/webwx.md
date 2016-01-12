@@ -26,7 +26,7 @@ https://login.weixin.qq.com/qrcode/DeA6idundY9VKn?t=webwx
 
 当获得二维码之后，就需要用户去手机端去扫描二维码，并获得用户的授权，此时我们并不知道用户何时完成这个操作，所以我们只有轮询，而轮询的地址就是：
 
-https://login.weixin.qq.com/cgi-bin/mmwebwx-bin/login?uuid=DeA6idundY9VKn&tip=1&_=1377482045264（注意UUID和最后时间这两个参数，tip=1代表）
+https://login.weixin.qq.com/cgi-bin/mmwebwx-bin/login?uuid=DeA6idundY9VKn&tip=1&_=1377482045264（注意UUID和最后时间这两个参数，tip=1代表未描）
 
 如果服务器返回：
 
