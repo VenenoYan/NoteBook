@@ -43,6 +43,12 @@ m = re.search(pattern, string)  # 搜索整个字符串，直到发现符合的�
 m = re.match(pattern, string)   # 从头开始检查字符串是否符合正则表达式。必须从字符串的第一个字符开始就相符。
         match()函数只检测re是不是在string的开始位置匹配，
         search()会扫描整个string查找匹配，
+match()、search（）如果匹配成功则返回一个Match Object对象，该对象有以下属性、方法：
+方法/属性	作用
+group()	返回被 RE 匹配的字符串
+start()	返回匹配开始的位置
+end()	返回匹配结束的位置
+span()	返回一个元组包含匹配 (开始,结束) 的位置
 m = re.sub(pattern, replacement, string) 
     # 在string中利用正则变换pattern进行搜索，对于搜索到的字符串，用另一字符串replacement替换。返回替换后的字符串
 m = re.split(str,maxsplit)    # 根据正则表达式分割字符串， 将分割后的所有子字符串放在一个表(list)中返回
