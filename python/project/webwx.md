@@ -4,7 +4,7 @@
 
 下面就详细解说一下微信Web版的流程：
 
-1.与微信服务器一个会话ID:
+1.与微信服务器建立一个会话ID:
 微信Web版本不使用用户名和密码登录，而是采用二维码登录，所以服务器需要首先**分配一个唯一的会话ID，用来标识当前的一次登录**，通过请求地址：
 
 https://login.weixin.qq.com/jslogin?<b>appid=wx782c26e4c19acffb&redirect_uri=https%3A%2F%2Fwx.qq.com%2Fcgi-bin%2Fmmwebwx-bin%2Fwebwxnewloginpage&fun=new&lang=zh_CN&_=1377482012272（其中1377482012272这个值是当前距离林威治标准时间的毫秒）
