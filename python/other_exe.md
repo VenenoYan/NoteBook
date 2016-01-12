@@ -1,4 +1,5 @@
-Python执行系统命令的方法: ```os.system()，os.popen()，commands```
+Python执行系统命令的方法: ```os.system()，os.popen()，commands```<br>
+Python执行其他程序的方法: ```subprocess```
 ```python
 #test.sh
 #!/bin/bash
@@ -40,7 +41,7 @@ commands.getstatus('/bin/ls')
 '-rwxr-xr-x 1 root 13352 Oct 14 1994 /bin/ls'
 ```
 1. 
-subprocess：其他
+subprocess：其他程序
 ```python
 1)call()
 　　　　subprocess.call(['mkdir','name']，shell=True)
