@@ -40,7 +40,7 @@ commands.getstatus('/bin/ls')
 '-rwxr-xr-x 1 root 13352 Oct 14 1994 /bin/ls'
 ```
 1. 
-subprocess
+subprocess：其他
 ```python
 1)call()
 　　　　subprocess.call(['mkdir','name']，shell=True)
