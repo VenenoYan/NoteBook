@@ -35,10 +35,10 @@ $         字符串的结尾位置
 2、使用compile(表达式)得匹配模式
 3、调用函数，利用这个模式来进行进一步的匹配。
 
-re_str = "..."   (构造正则表达式)
-pattern = re.compile(r're_str')           # 注意 r
+re_str = r"..."   (构造正则表达式)
+pattern = re.compile(re_str)     # 注意 r
 
-m = re.findall(pattern,string)  # 整个字符串所有匹配  返回符合的list
+m = re.findall(pattern,string)  # 匹配整个字符串  返回所有符合的---list
 m = re.search(pattern, string)  # 搜索整个字符串，直到发现符合的子字符串。
 m = re.match(pattern, string)   # 从头开始检查字符串是否符合正则表达式。必须从字符串的第一个字符开始就相符。
         match()函数只检测re是不是在string的开始位置匹配，
