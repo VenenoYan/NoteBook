@@ -85,6 +85,8 @@ os.path.dirname(path):
         返回文件路径
 os.stat(file,struct stat)
         获取文件属性
+os.walk(dir)
+        遍历：返回的是一个三元tupple(dirpath, dirnames, filenames),
 ```
 
 #路径和文件相关
