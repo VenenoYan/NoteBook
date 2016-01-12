@@ -55,3 +55,5 @@ subprocess：其他程序
 　　　　print fd.wait()
 　　　　fd.returncode
 ```
+1. 
+python3.5提供了run方法也可以
