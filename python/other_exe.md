@@ -56,4 +56,4 @@ subprocess：其他程序
 　　　　fd.returncode
 ```
 1. 
-python3.5提供了run（）也可以
+python3.5提供了run()也可以
