@@ -39,3 +39,18 @@ commands.getoutput('ls /bin/ls')
 commands.getstatus('/bin/ls')
 '-rwxr-xr-x 1 root 13352 Oct 14 1994 /bin/ls'
 ```
+1. 
+subprocess
+```python
+1)call()
+　　　　subprocess.call(['mkdir','name']，shell=True)
+2)check_output()：输出结果
+　　　　output=subprocess.check_output(['ls','-a'])
+3)Popen()：调用其他程序
+　　　　cmd = ["./out","i", "leo", "zhang"]
+　　　　fd=subprocess.Popen(cmd,stdout=subprocess.PIPE,shell=False)
+　　　　print fd.stdout.read()
+　　　　print fd.poll()
+　　　　print fd.wait()
+　　　　fd.returncode
+```
