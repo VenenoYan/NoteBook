@@ -45,7 +45,7 @@ os.chown(path,uid,gid)
 os.system()
         运行shell命令。
 os.sep 
-        可以取代操作系统特定的路径分割符。
+        操作系统特定的路径分割符。
 os.linesep
         字符串给出当前平台使用的行终止符
 os.symlink(src,dst)
