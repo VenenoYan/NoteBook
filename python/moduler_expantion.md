@@ -71,6 +71,7 @@
 	13. quopri 模块
 	14. uu 模块
 	15. binascii 模块
+	16. decimal:能表示更大范围的数字，更精确地四舍五入
 文件格式
 	1. 概览
 	2. xmllib 模块
