@@ -12,15 +12,16 @@
 	6. stat 模块
 	7. string 模块
 	8. re 模块
-	9. math 模块
+	9. math 模块：定义了标准的数学方法
 	10. cmath 模块
-	11. operator 模块
+	11. operator 模块：提供了访问python内置的操作和解析器提供的特殊方法
 	12. copy 模块：提供了对复合（compound）对象（list，tuple，dict，custom-class）进行浅拷贝和深拷贝的功能
 	13. sys 模块：包含了跟python解析器和环境相关的变量和函数
 	14. atexit 模块
 	15. time 模块
 	16. types 模块
 	17. gc 模块
+	18. collections模块：包含了一些有用的容器的高性能实现，各种容器的抽象基类，和创建name-tuple对象的函数。
 更多标准模块
 	1. 概览
 	2. fileinput 模块
@@ -38,7 +39,7 @@
 	14. getpass 模块
 	15. glob 模块
 	16. fnmatch 模块
-	17. random 模块
+	17. random 模块：提供了各种方法用来产生随机数
 	18. whrandom 模块
 	19. md5 模块
 	20. sha 模块
@@ -57,7 +58,7 @@
 	8. signal 模块
 数据表示
 	1. 概览
-	2. array 模块
+	2. array 模块：代表数组，类似与list，与list不同的是只能存储相同类型的对象
 	3. struct 模块
 	4. xdrlib 模块
 	5. marshal 模块
