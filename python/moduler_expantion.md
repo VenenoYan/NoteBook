@@ -89,6 +89,7 @@
 	11. zipfile 模块
 	12. gzip 模块
 	11. csv模块: 用来读写comma-separated values（CSV）文件。
+	12. json模块: 被用类序列化或饭序列化Javascript object notation（JSON）对象。
 邮件和新闻消息处理
 	1. 概览
 	2. rfc822 模块
