@@ -10,7 +10,7 @@ http://pypi.douban.com/simple/
 使用镜像源很简单，用-i指定就行了： <br>
 sudo easy_install -i http://pypi.douban.com/simple/ saltTesting <br>
 sudo pip install -i http://pypi.douban.com/simple/ saltTesting<br>
-把其设置为默认源：
+把其设置为**默认源**：
 ```shell
 1.linux 
     ~/.pip/pip.conf 
