@@ -10,7 +10,7 @@
 	4. os 模块
 	5. os.path 模块
 	6. stat 模块
-	7. string 模块
+	7. string 模块：包含大量有用的常量和函数用来处理字符串
 	8. re 模块
 	9. math 模块：定义了标准的数学方法
 	10. cmath 模块
@@ -59,7 +59,7 @@
 数据表示
 	1. 概览
 	2. array 模块：代表数组，类似与list，与list不同的是只能存储相同类型的对象
-	3. struct 模块
+	3. struct 模块：用来在python和二进制结构间实现转化
 	4. xdrlib 模块
 	5. marshal 模块
 	6. pickle 模块:用来序列化python的对象到bytes流，从而适合存储到文件，网络传输，或数据库存储.又称serializing
@@ -193,7 +193,7 @@
 其他模块
 	1. 概览
 	2. pyclbr 模块
-	3. filecmp 模块
+	3. filecmp 模块 : 提供了函数来比较文件和目录。
 	4. cmd 模块
 	5. rexec 模块
 	6. Bastion 模块
