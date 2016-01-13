@@ -1,5 +1,3 @@
-除了[基础模块1](func&moduler.md)和[内置模块2](http://www.jb51.net/article/57656.htm)
-
 ## 模块分类
 
 ```C
