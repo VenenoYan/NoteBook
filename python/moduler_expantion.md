@@ -23,7 +23,7 @@
 	17. gc 模块
 	18. collections模块：包含了一些有用的容器的高性能实现，各种容器的抽象基类，和创建name-tuple对象的函数。
 	19. datetime模块 :提供了各种类型来表示和处理日期和时间。
-	20. logging模块: 灵活方便地对应用程序记录events，errors，warnings，和debuging 信息
+	20. logging模块:    灵活方便地对应用程序记录events，errors，warnings，和debuging 信息
 更多标准模块
 	1. 概览
 	2. fileinput 模块
@@ -88,6 +88,7 @@
 	10. shlex 模块
 	11. zipfile 模块
 	12. gzip 模块
+	11. csv模块: 用来读写comma-separated values（CSV）文件。
 邮件和新闻消息处理
 	1. 概览
 	2. rfc822 模块
@@ -119,7 +120,7 @@
 	15.e requests模块
 	16. telnetlib 模块
 	17. nntplib 模块
-	18. SocketServer 模块
+	18. SocketServer 模块:提供了类型简化了TCP，UDP和UNIX领域的socket server的实现。
 	19. BaseHTTPServer 模块
 	20. SimpleHTTPServer 模块
 	21. CGIHTTPServer 模块
