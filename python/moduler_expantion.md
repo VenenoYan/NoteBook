@@ -61,7 +61,7 @@
 	3. struct 模块
 	4. xdrlib 模块
 	5. marshal 模块
-	6. pickle 模块
+	6. pickle 模块:用来序列化python的对象到bytes流，从而适合存储到文件，网络传输，或数据库存储.又称serializing
 	7. cPickle 模块
 	8. copy_reg 模块
 	9. pprint 模块
