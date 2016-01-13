@@ -1,5 +1,223 @@
-除了[基础模块1](func&moduler.md)和[内置模块2](http://www.jb51.net/article/57656.htm),还有[扩展模块](http://blog.csdn.net/lcyangcss/article/details/7249961)<br>
+除了[基础模块1](func&moduler.md)和[内置模块2](http://www.jb51.net/article/57656.htm)
 
+## 模块分类
+
+```C
+核心模块
+	1. 介绍
+	2. _ _builtin_ _ 模块
+	3. exceptions 模块
+	4. os 模块
+	5. os.path 模块
+	6. stat 模块
+	7. string 模块
+	8. re 模块
+	9. math 模块
+	10. cmath 模块
+	11. operator 模块
+	12. copy 模块
+	13. sys 模块
+	14. atexit 模块
+	15. time 模块
+	16. types 模块
+	17. gc 模块
+更多标准模块
+	1. 概览
+	2. fileinput 模块
+	3. shutil 模块
+	4. tempfile 模块
+	5. StringIO 模块
+	6. cStringIO 模块
+	7. mmap 模块
+	8. UserDict 模块
+	9. UserList 模块
+	10. UserString 模块
+	11. traceback 模块
+	12. errno 模块
+	13. getopt 模块
+	14. getpass 模块
+	15. glob 模块
+	16. fnmatch 模块
+	17. random 模块
+	18. whrandom 模块
+	19. md5 模块
+	20. sha 模块
+	21. crypt 模块
+	22. rotor 模块
+	23. zlib 模块
+	24. code 模块
+线程和进程
+	1. 概览
+	2. threading 模块
+	3. Queue 模块
+	4. thread 模块
+	5. commands 模块
+	6. pipes 模块
+	7. popen2 模块
+	8. signal 模块
+数据表示
+	1. 概览
+	2. array 模块
+	3. struct 模块
+	4. xdrlib 模块
+	5. marshal 模块
+	6. pickle 模块
+	7. cPickle 模块
+	8. copy_reg 模块
+	9. pprint 模块
+	10. repr 模块
+	11. base64 模块
+	12. binhex 模块
+	13. quopri 模块
+	14. uu 模块
+	15. binascii 模块
+文件格式
+	1. 概览
+	2. xmllib 模块
+	3. xml.parsers.expat 模块
+	4. sgmllib 模块
+	5. htmllib 模块
+	6. htmlentitydefs 模块
+	7. formatter 模块
+	8. ConfigParser 模块
+	9. netrc 模块
+	10. shlex 模块
+	11. zipfile 模块
+	12. gzip 模块
+邮件和新闻消息处理
+	1. 概览
+	2. rfc822 模块
+	3. mimetools 模块
+	4. MimeWriter 模块
+	5. mailbox 模块
+	6. mailcap 模块
+	7. mimetypes 模块
+	8. packmail 模块
+	9. mimify 模块
+	10. multifile 模块
+网络协议
+	1. 概览
+	2. socket 模块
+	3. select 模块
+	4. asyncore 模块
+	5. asynchat 模块
+	6. urllib 模块
+	6.e urllib2模块
+	7. urlparse 模块
+	8. cookie 模块
+	9. robotparser 模块
+	10. ftplib 模块
+	11. gopherlib 模块
+	12. httplib 模块
+	13. poplib 模块
+	14. imaplib 模块
+	15. smtplib 模块
+	15.e requests模块
+	16. telnetlib 模块
+	17. nntplib 模块
+	18. SocketServer 模块
+	19. BaseHTTPServer 模块
+	20. SimpleHTTPServer 模块
+	21. CGIHTTPServer 模块
+	22. cgi 模块
+	23. webbrowser 模块
+国际化
+	1. locale 模块
+	2. unicodedata 模块
+	3. ucnhash 模块
+多媒体相关模块
+	1. 概览
+	2. imghdr 模块
+	3. sndhdr 模块
+	4. whatsound 模块
+	5. aifc 模块
+	6. sunau 模块
+	7. sunaudio 模块
+	8. wave 模块
+	9. audiodev 模块
+	10. winsound 模块
+数据储存
+	1. 概览
+	2. anydbm 模块
+	3. whichdb 模块
+	4. shelve 模块
+	5. dbhash 模块
+	6. dbm 模块
+	7. dumbdbm 模块
+	8. gdbm 模块
+工具和实用程序
+	1. dis 模块
+	2. pdb 模块
+	3. bdb 模块
+	4. profile 模块
+	5. pstats 模块
+	6. tabnanny 模块
+其他模块
+	1. 概览
+	2. fcntl 模块
+	3. pwd 模块
+	4. grp 模块
+	5. nis 模块
+	6. curses 模块
+	7. termios 模块
+	8. tty 模块
+	9. resource 模块
+	10. syslog 模块
+	11. msvcrt 模块
+	12. nt 模块
+	13. _winreg 模块
+	14. posix 模块
+执行支持模块
+	1. dospath 模块
+	2. macpath 模块
+	3. ntpath 模块
+	4. posixpath 模块
+	5. strop 模块
+	6. imp 模块
+	7. new 模块
+	8. pre 模块
+	9. sre 模块
+	10. py_compile 模块
+	11. compileall 模块
+	12. ihooks 模块
+	13. linecache 模块
+	14. macurl2path 模块
+	15. nturl2path 模块
+	16. tokenize 模块
+	17. keyword 模块
+	18. parser 模块
+	19. symbol 模块
+	20. token 模块
+其他模块
+	1. 概览
+	2. pyclbr 模块
+	3. filecmp 模块
+	4. cmd 模块
+	5. rexec 模块
+	6. Bastion 模块
+	7. readline 模块
+	8. rlcompleter 模块
+	9. statvfs 模块
+	10. calendar 模块
+	11. sched 模块
+	12. statcache 模块
+	13. grep 模块
+	14. dircache 模块
+	15. dircmp 模块
+	16. cmp 模块
+	17. cmpcache 模块
+	18. util 模块
+	19. soundex 模块
+	20. timing 模块
+	21. posixfile 模块
+	22. bisect 模块
+	23. knee 模块
+	24. tzparse 模块
+	25. regex 模块
+	26. regsub 模块
+	27. reconvert 模块
+	28. regex_syntax 模块
+	29. find 模块```
 ### 使用其它国内的源：
 但是可能不是最新的
 
