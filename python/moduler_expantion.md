@@ -6,7 +6,9 @@
 虽然用easy_install和pip来安装第三方库很方便,它们的原理其实就是从Python的官方源http://pypi.python.org/pypi 下载到本地，然后解包安装。不过因为某些原因，访问官方的pypi不稳定，很慢甚至有些还时不时的访问不了。 
 ```python
 在国内的强烈推荐豆瓣的源：
-    http://pypi.douban.com/simple/ 
+    http://pypi.douban.com/simple/
+阿里的源：
+    http://mirrors.aliyun.com/pypi/simple/
 注意后面要有/simple目录
 使用镜像源很简单，用-i指定就行了： 
     sudo easy_install -i http://pypi.douban.com/simple/ saltTesting 
