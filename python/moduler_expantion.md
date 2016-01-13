@@ -18,4 +18,5 @@ sudo pip install -i http://pypi.douban.com/simple/ saltTesting<br>
     %HOME%\pip\pip.ini 
 添加：
 [global] 
-index-url = http://pypi.douban.com/simple ```
+index-url = http://pypi.douban.com/simple
+```
