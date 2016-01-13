@@ -19,4 +19,6 @@ sudo pip install -i http://pypi.douban.com/simple/ saltTesting<br>
 添加：
 [global] 
 index-url = http://pypi.douban.com/simple
+[install]
+trusted-host = pypi.douban.com
 ```
