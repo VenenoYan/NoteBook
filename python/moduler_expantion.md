@@ -22,11 +22,13 @@
 	16. types 模块
 	17. gc 模块
 	18. collections模块：包含了一些有用的容器的高性能实现，各种容器的抽象基类，和创建name-tuple对象的函数。
+	19. datetime模块 :提供了各种类型来表示和处理日期和时间。
+	20. logging模块: 灵活方便地对应用程序记录events，errors，warnings，和debuging 信息
 更多标准模块
 	1. 概览
 	2. fileinput 模块
-	3. shutil 模块
-	4. tempfile 模块
+	3. shutil 模块：用来执行更高级别的文件操作，例如拷贝，删除，改名
+	4. tempfile 模块：用来产生临时文件和文件名。
 	5. StringIO 模块
 	6. cStringIO 模块
 	7. mmap 模块
@@ -37,8 +39,8 @@
 	12. errno 模块
 	13. getopt 模块
 	14. getpass 模块
-	15. glob 模块
-	16. fnmatch 模块
+	15. glob 模块：可以获得匹配的文件列表。
+	16. fnmatch 模块：提供了使用UNIX shell-style的通配符来匹配文件名。这个模块只是用来匹配
 	17. random 模块：提供了各种方法用来产生随机数
 	18. whrandom 模块
 	19. md5 模块
@@ -52,7 +54,7 @@
 	2. threading 模块
 	3. Queue 模块
 	4. thread 模块
-	5. commands 模块
+	5. commands 模块:用来执行简单的系统命令，以字符串的形式传入，且同时以字符串的形式返回命令的输出。但只在UNI上可用。
 	6. pipes 模块
 	7. popen2 模块
 	8. signal 模块
@@ -81,7 +83,7 @@
 	5. htmllib 模块
 	6. htmlentitydefs 模块
 	7. formatter 模块
-	8. ConfigParser 模块
+	8. ConfigParser 模块:用来读写配置文件。
 	9. netrc 模块
 	10. shlex 模块
 	11. zipfile 模块
