@@ -7,6 +7,15 @@
 在国内的强烈推荐豆瓣的源：
 http://pypi.douban.com/simple/ 
 注意后面要有/simple目录。<br>
-使用镜像源很简单，用-i指定就行了： 
-sudo easy_install -i http://pypi.douban.com/simple/ saltTesting 
-sudo pip install -i http://pypi.douban.com/simple/ saltTesting
+使用镜像源很简单，用-i指定就行了： <br>
+sudo easy_install -i http://pypi.douban.com/simple/ saltTesting <br>
+sudo pip install -i http://pypi.douban.com/simple/ saltTesting<br>
+把其设置为默认源：
+```shell
+1.linux 
+    ~/.pip/pip.conf 
+2.windows 
+    %HOME%\pip\pip.ini 
+    
+[global] 
+index-url = http://pypi.douban.com/simple ```
