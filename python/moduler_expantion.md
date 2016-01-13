@@ -171,6 +171,7 @@
 	12. nt 模块
 	13. _winreg 模块
 	14. posix 模块
+	15. tushare 模块: 金融
 执行支持模块
 	1. dospath 模块
 	2. macpath 模块
