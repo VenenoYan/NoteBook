@@ -15,8 +15,8 @@
 	9. math 模块
 	10. cmath 模块
 	11. operator 模块
-	12. copy 模块：提供了对复合（compound）对象（list，tuple，dict，custom class）进行浅拷贝和深拷贝的功能
-	13. sys 模块
+	12. copy 模块：提供了对复合（compound）对象（list，tuple，dict，custom-class）进行浅拷贝和深拷贝的功能
+	13. sys 模块：包含了跟python解析器和环境相关的变量和函数
 	14. atexit 模块
 	15. time 模块
 	16. types 模块
