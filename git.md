@@ -69,7 +69,7 @@ git checkout 把版本库中的文件覆盖工作区文件
     git push [remote-name] [t-name]/--tags   推送某一标签/推送所有标签
 删除标签：
     1)本地：git tag -d [t-name]
-    2)远程：git tag -d [t-name] 后 git push [remote-name]:refs /tag/[t-name]
+    2)远程：git tag -d [t-name] 后 git push [remote-name]:refs/tags/[t-name]
 ```
 1. 
 远程库
