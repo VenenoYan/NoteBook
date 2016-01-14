@@ -10,7 +10,7 @@
 $git config [--global] user.name "yourname"
 $git config [--global] user.eamil "email"    // global/system/无
 $git config [--global] color.ui true   颜色
-$git config [--global] alias.st status  重命名命令
+$git config [--global] alias.st status  重命名命令---别名
 $git config [--global] core.editor vim/emacs    设默认编辑器
 $git config [--global] merge.tool vimdiff       比较工具
 写忽略文件：
