@@ -130,3 +130,13 @@ git checkout 把版本库中的文件覆盖工作区文件
 修改：git push
 通知作者： 远程仓库发起一个 pull request
 ```
+1. 
+搭建自己的git服务器
+```C
+安装
+创建用户：sudo adduser [git-name] 
+运行git服务
+把所有用户的公钥即他们自己的id_rsa.pub文件，导入到/home/git/.ssh/authorized_keys文件里，一行一个。
+初始化仓库：sudo git init --bare sample.git
+更新权限：sudo chown -R git:[git-name] sample.git
+```
