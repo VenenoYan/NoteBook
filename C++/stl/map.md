@@ -11,16 +11,16 @@
    map<int ,string >mapint(mapstring);
    map<k,v> m(b,e);
 2. map添加数据； 
-   1.maplive.insert(pair<int,string>(102,"aclive"));
-   2.maplive.insert(map<int,string>::value_type(321,"hai"));
-   3 maplive[112]="April";//map中最简单最常用的插入添加！
+   maplive.insert(pair<int,string>(102,"aclive"));
+   maplive.insert(make_pair(102,"aclive"));
+   maplive.insert(beg,end);
+   maplive.insert(iter,e);
+   maplive[112]="April";    //map中最简单最常用的插入添加！
 3，map中元素的查找：
-   find()函数返回一个迭代器指向键值为key的元素，如果没找到就返回指向map尾部的迭代器。        
-   map<int ,string >::iterator l_it;; 
-   l_it=maplive.find(112);
-   if(l_it==maplive.end())
-                cout<<"we do not find 112"<<endl;
-   else cout<<"wo find 112"<<endl;
+   find()函数返回一个迭代器指向键值为key的元素，如果没找到就返回指向map尾部的迭代器。   
+   maplive.find(112);
+   find()函数返回出现的次数。   
+   maplive.(112);
 4 map中元素的删除：
    如果删除112；
    map<int ,string >::iterator l_it;;
