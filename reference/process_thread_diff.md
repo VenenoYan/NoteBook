@@ -50,3 +50,10 @@
 （2）以多线程形式，允许单个任务分成不同的部分运行；<br>
 （3）提供协调机制，一方面防止进程之间和线程之间产生冲突，另一方面允许进程之间和线程之间共享资源。<br>
 
+```python
+所以对于单进程的JS语言来说，就会很浪费资源： 
+Event Loop就是为了解决这个问题而提出的。Wikipedia这样定义： 
+"Event Loop是一个程序结构，用于等待和发送消息和事件。（a programming construct that waits for and dispatches events or messages in a program.）" 
+**简单说，**就是在程序中设置两个线程：一个负责程序本身的运行，称为"主线程"；另一个负责主线程与其他进程（主要是各种I/O操作）的通信，被称为"Event Loop线程"（可以译为"消息线程"）。
+python中通过协程来处理：async/await
+```
