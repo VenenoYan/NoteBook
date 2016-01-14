@@ -15,26 +15,23 @@
    2.maplive.insert(map<int,string>::value_type(321,"hai"));
    3 maplive[112]="April";//map中最简单最常用的插入添加！
 3，map中元素的查找：
-
    find()函数返回一个迭代器指向键值为key的元素，如果没找到就返回指向map尾部的迭代器。        
-
    map<int ,string >::iterator l_it;; 
    l_it=maplive.find(112);
    if(l_it==maplive.end())
                 cout<<"we do not find 112"<<endl;
    else cout<<"wo find 112"<<endl;
-4,map中元素的删除：
+4 map中元素的删除：
    如果删除112；
    map<int ,string >::iterator l_it;;
    l_it=maplive.find(112);
    if(l_it==maplive.end())
         cout<<"we do not find 112"<<endl;
    else  maplive.erase(l_it);  //delete 112;
-5,map中 swap的用法：
+5 map中 swap的用法：
   Map中的swap不是一个容器中的元素交换，而是两个容器交换；
 6.map的sort问题：
   Map中的元素是自动按key升序排序,所以不能对map用sort函数：
-7，   map的基本操作函数：
       C++ Maps是一种关联式容器，包含“关键字/值”对
       begin()          返回指向map头部的迭代器
       clear(）         删除所有元素
