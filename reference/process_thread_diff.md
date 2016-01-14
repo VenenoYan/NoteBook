@@ -57,7 +57,7 @@ Event Loop就是为了解决这个问题而提出的。Wikipedia这样定义：
 简单说，就是在程序中设置两个线程：
     一个负责程序本身的运行，称为"主线程"；
     另一个负责主线程与其他进程（主要是各种I/O操作）的通信，被称为"Event Loop线程"（可以译为"消息线程"）。
-python中通过协程来处理：async/await
+python中通过协程来处理：async/await  分别用来定义协程函数和调用
 async def get_reddit_top(subreddit, client):
        data1 = await get_json(client, 'https://www.reddit.com/r/'+subreddit + '/top.json?
                                         sort=top&t=day&limit=5')
