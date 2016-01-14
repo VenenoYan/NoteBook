@@ -57,7 +57,6 @@ Event Loop就是为了解决这个问题而提出的。Wikipedia这样定义：
 简单说，就是在程序中设置两个线程：
     一个负责程序本身的运行，称为"主线程"；
     另一个负责主线程与其他进程（主要是各种I/O操作）的通信，被称为"Event Loop线程"（可以译为"消息线程"）。
-    
 python中通过协程来处理：async/await  分别用来定义协程函数和调用
     async def get_reddit_top(subreddit, client):
            data1 = await get_json(client, 'https://www.reddit.com/r/'+subreddit + '/top.json?
@@ -70,11 +69,12 @@ python中通过协程来处理：async/await  分别用来定义协程函数和�
                  print(str(score) + ': ' + title + ' (' + link + ')')
            print('DONE:', subreddit + '\n')
     def signal_handler(signal, frame):
-          name = ['python','programming','compsci']
-          for t in name:
-            await get_reddit_top(t,client)
-    loop = asyncio.get_event_loop()
-    loop.run_until_complete(get_reddit_top())
-    loop.close()
-    # loop.run_forever()
+          loop.stop()
+          client.close()
+          sys.exit(0)
+    signal.signal(signal.SIGINT, signal_handler)
+    asyncio.ensure_future(get_reddit_top('python', client))
+    asyncio.ensure_future(get_reddit_top('programming', client))
+    asyncio.ensure_future(get_reddit_top('compsci', client))
+    loop.run_forever()
 ```
