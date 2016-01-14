@@ -101,3 +101,11 @@ git checkout 把版本库中的文件覆盖工作区文件
 重命名：
     git remote rename [old] [new]
 ```
+1. 
+他人仓库
+```C
+首先在远程仓库中：fork一个过来
+然后：git clone [url] 到本地
+修改：git push
+通知作者： 远程仓库发起一个 pull request
+```
