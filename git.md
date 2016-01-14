@@ -27,6 +27,13 @@ git diff file1  ： 文件file1的改动
 git log [--pretty=oneline]  历史记录
 git reflog   查看历史commit-id
 git blame file1  查看文件被修改的信息
+忽略信息：不提交的内容
+    编写 .gitignore文件
+    规则：
+        #   代表注释
+        *   代表任意字符或字符串
+        ！  不忽略
+        ？  任意字符
 版本回退：
     1)仍在工作区未add:  git checkout --filename1  返回到最近的已提交状态
     2)已提交commit：   git reset --hard HEAD~[i]  回退（后再执行一次1)）
