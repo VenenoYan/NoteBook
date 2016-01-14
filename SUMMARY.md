@@ -1,5 +1,7 @@
 # Summary
 
+* [Sublime配置](sublime.md)
+* [git](git.md)
 * [简介](README.md)
 * [GitBook使用](gitbook/README.md)
 * [Django初步](django/README.md)
@@ -9,5 +11,4 @@
 * [Linux基础](Linux/README.md)
 * [reference](reference/README.md)
 * [LeetCode](LeetCode/README.md)
-* [Sublime配置](sublime.md)
 * [Data Structure--数据结构](DataStructure/README.md)
