@@ -10,3 +10,14 @@ string无：
 list无：
     除了  ++   --  ！=   == 之外，所有的算术运算和关系运算都不支持
 ```
+```C
+string 特有：
+    substr
+    append
+    replace
+    find
+    compare
+vector特有：
+    capacity
+    reserve
+```
