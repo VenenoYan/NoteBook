@@ -4,105 +4,103 @@
 
 下面就详细解说一下微信Web版的流程：
 
-1.与微信服务器建立一个会话ID:
-微信Web版本不使用用户名和密码登录，而是采用二维码登录，所以服务器需要首先**分配一个唯一的会话ID，用来标识当前的一次登录**，通过请求地址：
+1.与服务器建立一个会话ID:
+```C
+微信Web版本不使用用户名和密码登录，而是采用二维码登录，所以服务器需要首先分配一个唯一的会话ID：用来标识当前的一次登录
+通过请求地址：
 
-https://login.weixin.qq.com/jslogin?<b>appid=wx782c26e4c19acffb&redirect_uri=https%3A%2F%2Fwx.qq.com%2Fcgi-bin%2Fmmwebwx-bin%2Fwebwxnewloginpage&fun=new&lang=zh_CN&_=1377482012272（其中1377482012272这个值是当前距离林威治标准时间的毫秒）
+https://login.weixin.qq.com/jslogin?appid=wx782c26e4c19acffb&redirect_uri=https%3A%2F%2
+    Fwx.qq.com%2Fcgi-bin%2Fmmwebwx-bin%2Fwebwxnewloginpage&fun=new&lang=zh_CN&_=1377482012272
+    （其中1377482012272这个值是当前距离林威治标准时间的毫秒）
 
 服务器会返回如下的字符串：
 window.QRLogin.code = 200; window.QRLogin.uuid = “DeA6idundY9VKn”;
-
-而这个DeA6idundY9VKn（**每一次都不同**）字符串就是微信服务器返回给我们这次会话的ID。
+而这个DeA6idundY9VKn（每一次都不同）字符串就是微信服务器返回给我们这次会话的ID。
+```
 
 2.通过会话ID获得二维码
-
-既然微信Web版本是通过二维码进行登录，如何获得这个随机的二维码呢？答案就是利用刚才获得的ID去请求服务器生成的二维码，通过上面的ID我们组合得到以下的URL地址：
-
-https://login.weixin.qq.com/qrcode/DeA6idundY9VKn?t=webwx
-
+```C
+既然微信Web版本是通过二维码进行登录，如何获得这个随机的二维码呢？答案就是利用刚才获得的ID去请求服务器生成的二维码，
+通过上面的ID我们组合得到以下的URL地址：
+    https://login.weixin.qq.com/qrcode/DeA6idundY9VKn?t=webwx
 该请求返回的便是我们需要的二维码，此时需要用户在微信的手机版本中扫描这个二维码
+```
 
 3.**轮询**手机端是否已经扫描二维码并确认在Web端登录
-
-当获得二维码之后，就需要用户去手机端去扫描二维码，并获得用户的授权，此时我们并不知道用户何时完成这个操作，所以我们只有轮询，而轮询的地址就是：
-
-https://login.weixin.qq.com/cgi-bin/mmwebwx-bin/login?uuid=DeA6idundY9VKn&tip=1&_=1377482045264（注意UUID和最后时间这两个参数，tip=1代表未扫描）
-
+```C
+当获得二维码之后，就需要用户去手机端去扫描二维码，并获得用户的授权，此时我们并不知道用户何时完成这个操作，
+所以我们只有轮询，而轮询的地址就是：
+https://login.weixin.qq.com/cgi-bin/mmwebwx-bin/login?uuid=DeA6idundY9VKn&tip=1&_=1377482045264
+    （注意UUID和最后时间这两个参数，tip=1代表未扫描）
 如果服务器返回：
-
-window.code=201;
-
-则说明此时用户在手机端已经完成扫描，但还没有点击确认；
-
+    window.code=201;    则说明此时用户在手机端已经完成扫描，但还没有点击确认；
 如果服务器返回200：
-
-window.redirect_uri=一个URL地址
-
-则说明此时用户已经在手机端完成了授权过程，保存下这个URL地址下一步骤中使用。
+    window.redirect_uri=[URL]    则说明此时用户已经在手机端完成了授权过程，保存下这个URL地址下一步骤中使用。
+```
 
 4.访问登录地址，获得uin和sid
 
-通过访问上一步骤中获得的URL地址，可以在服务器返回的Cookies中获得到wxuin和wxsid这两个值，这两值在后续的通信过程中都要使用到这两个值，并且Cookies中也需要包括这两项。
+```C
+通过访问上一步骤中获得的URL地址，可以在服务器返回的Cookies中获得到wxuin和wxsid这两个值，这两值在后续的通信过程中
+都要使用到这两个值，并且Cookies中也需要包括这两项。
+```
 
 5.初使化微信信息
-
-前面的步骤算是完成了这个复杂的登录过程，如果我们需要使用微信就需要获得当前用户的信息、好友列表等，还有一个关键的就是同步信息（后续与服务器轮询中需要使用同步信息），通过访问以下的链接：
-
-https://wx.qq.com/cgi-bin/mmwebwx-bin/webwxinit?r=1377482058764（r依然是时间）
-
+```C
+前面的步骤算是完成了这个复杂的登录过程，如果我们需要使用微信就需要获得当前用户的信息、好友列表等，还有一个关键的就是
+同步信息（后续与服务器轮询中需要使用同步信息），通过访问以下的链接：
+    https://wx.qq.com/cgi-bin/mmwebwx-bin/webwxinit?r=1377482058764（r依然是时间）
 访问该链接需要使用POST，并且在Body中带上以下的JSON信息：
-```python
 {"BaseRequest":{"Uin":"2545437902","Sid":"QfLp+Z+FePzvOFoG","Skey":"","DeviceID":"e1615250492"}}
+这个JSON串中Uin和Sid分别是上面步骤中获得的那两个Cookie值，DeviceID是一个本地生成的随机字符串
+    （分析了官方的总是e+一串数字，所以我们也保持这样的格式）。
+服务器就会返回一个很长的JSON串，这其中包括：BaseResponse中的值用来表示请求状态码，ContactList主要用来表示联系人
+（此列表不全，只包括了类似通讯录助手、文件助手、微信团队和一些公众帐号等，后面会通过另一接口去获得更全面的信息），
+SyncKey是用户与服务器同步的信息，User就是当前登录用户自己的信息。
 ```
-这个JSON串中Uin和Sid分别是上面步骤中获得的那两个Cookie值，DeviceID是一个本地生成的随机字符串（分析了官方的总是e+一串数字，所以我们也保持这样的格式）。
-
-服务器就会返回一个很长的JSON串，这其中包括：BaseResponse中的值用来表示请求状态码，ContactList主要用来表示联系人（此列表不全，只包括了类似通讯录助手、文件助手、微信团队和一些公众帐号等，后面会通过另一接口去获得更全面的信息），SyncKey是用户与服务器同步的信息，User就是当前登录用户自己的信息。
 
 6.获得所有的好友列表
-
+```C
 在上一步骤中已经获得了部分好友和公众帐号，如果需要获得完整的好友信息，就需要访问以下的链接：
-
-https://wx.qq.com/cgi-bin/mmwebwx-bin/webwxgetcontact?r=1377482079876（r依然是时间）
-
-访问该链接同样需要POST方式，但Body为空JSON：{}，服务器对身份的判定是通过Cookies，所以需要保持之前访问的Cookies不被修改（在Objective-C中会自动保存相关的Cookies，无需程序特殊处理），在返回的JSON串中，MemberList中就包含了所有的好友信息。
-
+    https://wx.qq.com/cgi-bin/mmwebwx-bin/webwxgetcontact?r=1377482079876（r依然是时间）
+访问该链接同样需要POST方式，但Body为空JSON：{}，服务器对身份的判定是通过Cookies，所以需要保持之前访问的Cookies
+不被修改（在Objective-C中会自动保存相关的Cookies，无需程序特殊处理），在返回的JSON串中，MemberList中就包含了
+所有的好友信息。
+```
 7.保持与服务器的信息同步
-
-**与服务器保持同步需要在客户端做轮询**，该轮询的URL如下：
-
-https://webpush.weixin.qq.com/cgi-bin/mmwebwx-bin/synccheck?callback=jQuery18309326978388708085_1377482079946&r=1377482079876&
-sid=QfLp+Z+FePzvOFoG&uin=2545437902&deviceid=e1615250492&synckey=(见以下说明)&_=1377482079876
-
-其中的参数r和_都是time，sid，uin，deviceid与上面步骤的值相对应，此处的synkey是上步步骤获得的同步键值，但需要按一定的规则组合成以下的字符串：
+```C
+与服务器保持同步需要在客户端做轮询，该轮询的URL如下：
+ https://webpush.weixin.qq.com/cgi-bin/mmwebwx-bin/synccheck?callback=jQuery18309326978388708085_
+    1377482079946&r=1377482079876&sid=QfLp+Z+FePzvOFoG&uin=2545437902&deviceid=e1615250492&
+    synckey=(见以下说明)&_=1377482079876
+其中的参数r和_都是time，sid，uin，deviceid与上面步骤的值相对应，此处的synkey是上步步骤获得的同步键值，
+但需要按一定的规则组合成以下的字符串：
 
 1_124125|2_452346345|3_65476547|1000_5643635
 
 就是将键和值用_隔开，不同的键值对用|隔开，但记得|需要URL编码成%7C，通过访问上面的地址，会返回如下的字符串：
-
-window.synccheck={retcode:”0”,selector:”0”}
-
-如果retcode中的值不为0，则说明与服务器的通信有问题了，但具体问题我就无法预测了，selector中的值表示客户端需要作出的处理，目前已经知道当为6的时候表示有消息来了，就需要去访问另一个接口获得新的消息。
-
+    window.synccheck={retcode:”0”,selector:”0”}
+如果retcode中的值不为0，则说明与服务器的通信有问题了，但具体问题我就无法预测了，selector中的值表示客户端需要
+作出的处理，目前已经知道当为6的时候表示有消息来了，就需要去访问另一个接口获得新的消息。
+```
 8.获得别人发来的消息
-
+```C
 当一个步骤中知道有新消息时，就需要去获取消息内容，通过访问以下的链接：
-
-https://wx.qq.com/cgi-bin/mmwebwx-bin/webwxsync?sid=QfLp+Z+FePzvOFoG&r=1377482079876
-
-上面链接中的参数sid对应上面步骤中的值，r为时间，访问链接需要使用POST方式，Body中包括JSON串，该JSON串格式如下：
+    https://wx.qq.com/cgi-bin/mmwebwx-bin/webwxsync?sid=QfLp+Z+FePzvOFoG&r=1377482079876
+上面链接中的参数sid对应上面步骤中的值，r为时间，访问链接需要使用POST方式，Body中包括JSON串，该JSON串格式如下：```
 ```python
 {"BaseRequest" : {"Uin":2545437902,"Sid":"QfLp+Z+FePzvOFoG"},
 "SyncKey" : {"Count":4,"List":[{"Key":1,"Val":620310295},
         {"Key":2,"Val":620310303},{"Key":3,"Val":620310285},{"Key":1000,"Val":1377479086}]},
 "rr" :1377482079876};
 ```
-以下的信息中BaseRequest中包括的Uin与Sid与上面步骤中的值对应，SyncKey也是上面步骤中获得的同步键值对，rr为时间，访问成功之后服务器会返回一个JSON串，其中AddMsgList中是一个数组，包含了所有新消息。
+信息中BaseRequest中包括的Uin与Sid与上面步骤中的值对应，SyncKey也是上面步骤中获得的同步键值对，rr为时间，访问成功之后服务器会返回一个JSON串，其中AddMsgList中是一个数组，包含了所有新消息。
 
 9.向用户发送消息
-
+```C
 用户主动发送消息，通过以下的URL地址：
 https://wx.qq.com/cgi-bin/mmwebwx-bin/webwxsendmsg?sid=QfLp+Z+FePzvOFoG&r=1377482079876
-上面的sid和r参数不再解释了，访问该URL采用POST方式，在Body中的JSON串形如以下的格式：
+上面的sid和r参数不再解释了，访问该URL采用POST方式，在Body中的JSON串形如以下的格式：```
 ```python
 {
     "BaseRequest":{
@@ -121,8 +119,10 @@ https://wx.qq.com/cgi-bin/mmwebwx-bin/webwxsendmsg?sid=QfLp+Z+FePzvOFoG&r=137748
     },
     "rr" = 1377504864463
 }```
-其中BaseRequest都是授权相关的值，与上面的步骤中的值对应，Msg是对消息的描述，包括了发送人与接收人，消息内容，消息的类型(1为文本)，ClientMsgId和LocalID由本地生成。rr可用当前的时间。
-在返回JSON结果中BaseResponse描述了发送情况，Ret为0表示发送成功。
+```C
+其中BaseRequest都是授权相关的值，与上面的步骤中的值对应，Msg是对消息的描述，包括了发送人与接收人，消息内容，
+消息的类型(1为文本)，ClientMsgId和LocalID由本地生成。rr可用当前的时间。
+在返回JSON结果中BaseResponse描述了发送情况，Ret为0表示发送成功。```
 
 ##实战：微信找”非好友“
 ```python
