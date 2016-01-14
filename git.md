@@ -38,4 +38,9 @@ git blame file1  查看文件被修改的信息
 删除回复：
     git checkout --file
 HEAD永远指向当前工作分支
+git checkout 把版本库中的文件覆盖工作区
+```
+1. 
+远程库
+```C
 ```
