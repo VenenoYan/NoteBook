@@ -1,4 +1,4 @@
-#List    　　　　[seq]
+#List    　　　　[seq,]
 ```python
 dir(list):显示所有list方法和属性。
 
