@@ -22,6 +22,7 @@
    find()函数返回出现的次数。   
         maplive.count(112);
 4 map中元素的删除：
+   m.clear()
    m.erase(k)   删除键为K的元素，返回删除的个数
    m.erase(iter)   删除iter指向的元素，返回void
    m.erase(b,e)   删除范围内的元素，返回void
