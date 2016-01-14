@@ -12,7 +12,7 @@ vector之所以被认为是一个容器，是因为它能够像容器一样存�
 为了可以使用vector，必须在你的头文件中包含下面的代码：
 　　#include <vector>
 　　函数表述
-　　c.assign(beg,end)   将[beg; end)区间中的数据赋值给c（beg,end不可是C的）
+　　c.assign(beg,end)   将[beg; end)区间中的数据赋值给c（beg,end不可是的迭代器）
     c.assign(n,elem)    将n个elem的拷贝赋值给c
 　　
 　　c.at(idx)
