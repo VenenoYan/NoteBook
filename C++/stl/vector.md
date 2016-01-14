@@ -21,7 +21,7 @@ vector之所以被认为是一个容器，是因为它能够像容器一样存�
 　　c.front()　　传回第一个数据。
 　　c.begin()　　传回迭代器中的第一个数据地址。
 　　c.end()　　指向迭代器中末端元素的下一个，指向一个不存在元素。
-　　c.rbegin()　　指向迭代器中最后一个
+　　c.rbegin()　　指向迭代器中最后一个元素
 　　c.rend()　　传回迭代器中的第一个数据的前一个，指向一个不存在元素。
 　　c.capacity()　　返回容器中数据个数。
 　　c.reserve()     重置capacity大小
@@ -29,9 +29,9 @@ vector之所以被认为是一个容器，是因为它能够像容器一样存�
 　　c.empty()　　判断容器是否为空
 　　c.erase(pos)    删除pos位置的数据，传回下一个数据的位置。
 　　c.erase(beg,end)    　删除(beg,end)区间的数据，传回下一个数据的位置。
-　　c.insert(pos,elem)
-　　c.insert(pos,n,elem)
-　　c.insert(pos,beg,end)
+　　c.insert(pos,elem)      在迭代器指向的元素前插入。返回指向新添加的迭代器
+　　c.insert(pos,n,elem)    在迭代器指向的元素前插入n个elem，返回void
+　　c.insert(pos,beg,end)   在迭代器指向的元素前插入，返回void
 　　在pos位置插入一个elem拷贝，传回新数据位置。在pos位置插入n个elem数据。无返回值。在pos位置插入在[beg,end)区间的数据。无返回值。
 iterator insert( iterator loc, const TYPE &val ); 
 void insert( iterator loc, size_type num, const TYPE &val ); 
