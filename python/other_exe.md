@@ -7,7 +7,12 @@ echo "hello world!"
 exit 3
 ```
 1. 
-os.system(cmd):执行状态
+execfile("filename")
+```python
+execfile(/home/leo/maple/test.sh)
+```
+1. 
+os.system([cmd]):执行状态
 ```python
 该方法在调用完shell脚本后，返回一个16位的二进制数，低位为杀死所调用脚本的信号号码，高位为脚本的退出状态
 码，即脚本中“exit 1”的代码执行后，os.system函数返回值的高位数则是1，如果低位数是0的情况下，则函数的返回值
