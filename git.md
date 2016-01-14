@@ -60,6 +60,16 @@ git checkout 把版本库中的文件覆盖工作区文件
     git stash drop  删除
     git stash pop    恢复现场，相当于上面两个指令
     git stash list      所有
+标签：当前版本的快照
+    git tag    查看所有标签
+    git tag [t-name]    新建标签
+    git tag [t-name] commit-id  给提交新建标签
+    git tag -a [t-name] -m "instruction" commit-id  与上同，只是有说明
+    git show [t-name] 列出标签详细信息
+    git push [remote-name] [t-name]/--tags   推送某一标签/推送所有标签
+删除标签：
+    1)本地：git tag -d [t-name]
+    2)远程：git tag -d [t-name] 后 git push [remote-name]:refs /tag/[t-name]
 ```
 1. 
 远程库
