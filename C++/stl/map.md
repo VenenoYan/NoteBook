@@ -125,8 +125,6 @@ public:
     t = x.t;
     return *this;
   }
-
-
   // 返回用于key比较的函数
   key_compare key_comp() const { return t.key_comp(); }
 
