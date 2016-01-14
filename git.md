@@ -5,4 +5,5 @@
 ```C
 $git config [--global] user.name "yourname"
 $git config [--global] user.eamil "email"    //global/system/user_name
+$git config [--global]
 ```
