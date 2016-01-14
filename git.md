@@ -147,5 +147,7 @@ git checkout 把版本库中的文件覆盖工作区文件
 各自clone：git clone git@server:/[path]/sample.git
 推送即可
 问题：
-    1)小团队可以把所有公钥收集起来放到服务器的/home/git/.ssh/authorized_keys文件里。几百号人的团队需要Gitosis
+    1)小团队可以把所有公钥收集起来放到服务器的/home/git/.ssh/authorized_keys文件里。
+        几百号人的大团队需要Gitosis来管理公钥
+    2)用户权限：Gitolite负责管理。
 ```
