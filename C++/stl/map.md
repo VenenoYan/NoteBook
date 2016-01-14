@@ -1,5 +1,5 @@
 ## stl_map.h
-```C
+```C++
 // Filename:    stl_map.h
 
 /*
