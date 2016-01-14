@@ -2,7 +2,7 @@
 ## 进程与线程：
 
 
-[转载}(http://www.ruanyifeng.com/blog/2013/04/processes_and_threads.html)
+[转载处](http://www.ruanyifeng.com/blog/2013/04/processes_and_threads.html)
 
 
 ### 区别：
@@ -49,3 +49,4 @@
 （1）以多进程形式，允许多个任务同时运行；<br>
 （2）以多线程形式，允许单个任务分成不同的部分运行；<br>
 （3）提供协调机制，一方面防止进程之间和线程之间产生冲突，另一方面允许进程之间和线程之间共享资源。<br>
+
