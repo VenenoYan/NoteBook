@@ -139,4 +139,11 @@ git checkout 把版本库中的文件覆盖工作区文件
 把所有用户的公钥即他们自己的id_rsa.pub文件，导入到/home/git/.ssh/authorized_keys文件里，一行一个。
 初始化仓库：sudo git init --bare sample.git
 更新权限：sudo chown -R git:[git-name] sample.git
+禁用shell登录：出于安全考虑
+        git:x:1001:1001:,,,:/home/git:/bin/bash
+        改为：
+        git:x:1001:1001:,,,:/home/git:/usr/bin/git-shell
+这样，git用户可以正常通过ssh使用git，但无法登录shell，因为我们为git用户指定的git-shell每次一登录就自动退出。
+各自clone：git clone git@server:/[path]/sample.git
+推送即可
 ```
