@@ -11,7 +11,15 @@ vector之所以被认为是一个容器，是因为它能够像容器一样存�
 　　vector<Elem> c(n, elem)
 　　vector<Elem> c(beg,end)
 　　c.~ vector<Elem>()
-　　函数表述：
+标准运算符: ==, !=, <=, >=, <, 和 >. 
+    v[]         // 要访问vector中的某特定位置的元素可以使用 [] 操作符.
+    v1 == v2    // 两个vectors被认为是相等的,如果: 1.它们具有相同的容量;2.所有相同位置的元素相等.
+    v1 != v2
+    v1 <= v2    // vectors之间大小的比较是按照词典规则.
+    v1 >= v2 
+    v1 < v2
+    v1 > v2 
+函数表述：
 　  c.push_back()        添加到末尾
 　  c.pop_back()        删最后一个
 　　c.assign(beg,end)   将[beg; end)区间中的数据赋值给c（beg,end不可是自己的迭代器）=======所有迭代器失效
