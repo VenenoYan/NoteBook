@@ -13,6 +13,20 @@ $git config [--global] color.ui true   颜色
 $git config [--global] alias.st status  重命名命令
 $git config [--global] core.editor vim/emacs    设默认编辑器
 $git config [--global] merge.tool vimdiff       比较工具
+写忽略文件：
+    编写 .gitignore文件
+    规则：
+        #   代表注释
+        *   代表任意字符或字符串
+        ！  不忽略
+        ？  任意字符
+    example：
+        *.md        忽略所有 .md文件
+        !tt.md      忽略出tt.md的所有 .md文件
+        folder      忽略folder文件夹及子文件
+        folder/     忽略该目录
+        *.[o]       忽略所有 .o文件
+        *a/a*       忽略所有以a结尾/开头的文件
 ```
 1. 
 本地使用
