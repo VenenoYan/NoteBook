@@ -1,27 +1,20 @@
 ## stl_vector.h
 ```C++
-vector是C++标准模板库中的部分内容，中文偶尔译作“容器”，但并不准确。它是一个多功能的，能够操作多种数据结构和算法的模板类和函数库。vector之所以被认为是一个容器，是因为它能够像容器一样存放各种类型的对象，简单地说，vector是一个能够存放任意类型的动态数组，能够增加和压缩数据。
+vector是C++标准模板库中模板。它是一个多功能的，能够操作多种数据结构和算法的模板类和函数库。
+vector之所以被认为是一个容器，是因为它能够像容器一样存放各种类型的对象，
+简单地说，vector是一个能够存放任意类型的动态数组，能够增加和压缩数据。
 　　简单的使用方法如下:
 　　vector<int> test;//建立一个vector
 　　test.pushback(1);//把1和2压入vector 这样test[0]就是1,test[1]就是2
 　　test.pushback(2);
 　　我们可以用一个迭代器：
 　　vector<int>::iterator iter=text.begin();//定义一个可以迭代int型vector的迭代器iter，它指向text的首位
-　　while(;iter!=text.end();iter++) 
-cout<<(*iter);//iter++指的是向前迭代一位，直到iter到超出末端迭代器为止，输出迭代器指向的值
- 
 为了可以使用vector，必须在你的头文件中包含下面的代码：
 　　#include <vector>
-　　vector属于std命名域的，因此需要通过命名限定，如下完成你的代码：
-　　using std::vector;
-　　vector<int> vInts;
-　　或者连在一起，使用全名：
-　　std::vector<int> vInts;
-　　建议使用全局的命名域方式：using namespace std;
 　　函数表述
-　　c.assign(beg,end)
-    c.assign(n,elem)
-　　将[beg; end)区间中的数据赋值给c。将n个elem的拷贝赋值给c。
+　　c.assign(beg,end)   将[beg; end)区间中的数据赋值给c（beg,end不可是C的）
+    c.assign(n,elem)    将n个elem的拷贝赋值给c
+　　
 　　c.at(idx)
 　　传回索引idx所指的数据，如果idx越界，抛出out_of_range。
 　　c.back()
