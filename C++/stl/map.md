@@ -18,16 +18,13 @@
    maplive[112]="April";    //map中最简单最常用的插入添加！
 3，map中元素的查找：
    find()函数返回一个迭代器指向键值为key的元素，如果没找到就返回指向map尾部的迭代器。   
-   maplive.find(112);
+        maplive.find(112);
    find()函数返回出现的次数。   
-   maplive.(112);
+        maplive.count(112);
 4 map中元素的删除：
-   如果删除112；
-   map<int ,string >::iterator l_it;;
-   l_it=maplive.find(112);
-   if(l_it==maplive.end())
-        cout<<"we do not find 112"<<endl;
-   else  maplive.erase(l_it);  //delete 112;
+   m.erase(k)   删除键为K的元素，返回删除的个数
+   m.erase(iter)   删除iter指向的元素，返回void
+   m.erase(b,e)   删除范围内的元素，返回void
 5 map中 swap的用法：
   Map中的swap不是一个容器中的元素交换，而是两个容器交换；
 6.map的sort问题：
@@ -35,10 +32,10 @@
 7 map的基本操作函数：
       C++ Maps是一种关联式容器，包含“关键字/值”对
       begin()          返回指向map头部的迭代器
+      end()            返回指向map末尾的迭代器   (first ,second)
       clear(）         删除所有元素
       count()          返回指定元素出现的次数
       empty()          如果map为空则返回true
-      end()            返回指向map末尾的迭代器
       equal_range()    返回特殊条目的迭代器对
       erase()          删除一个元素
       find()           查找一个元素
