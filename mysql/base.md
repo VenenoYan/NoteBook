@@ -57,8 +57,18 @@ SQL语句分为两种：DML（Data Manipulation Language）与DDL(Data Definitio
             time	        时间 '12:25:36'
             datetime	    日期时间 '2008-12-2 22:06:44'
             timestamp       自动存储记录修改时间v
-    4)字符：
+            若定义一个字段为timestamp，这个字段里的时间数据会随其他字段修改的时候自动刷新，
+            所以这个数据类型的字段可以存放这条记录最后被修改的时间。
+    4)属性：
         bit、string、boolean、Null、hexadecimal、decimal
+            MySQL关键字	    含义
+            NULL	            数据列可包含NULL值
+            NOT NULL	        数据列不允许包含NULL值
+            DEFAULT	         默认值
+            PRIMARY KEY 	    主键
+            AUTO_INCREMENT      自动递增，适用于整数类型
+            UNSIGNED	        无符号
+            CHARACTER SET [name]	指定一个字符集
 基本操作：
     登录：
         mysql -u[user-name] -p[password]
