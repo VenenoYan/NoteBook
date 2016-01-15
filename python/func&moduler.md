@@ -1,6 +1,6 @@
 #常用函数：
 
-### 1. 内置函数[python.o](https://docs.python.org/3.5/library/functions.html)：
+### 1. 内置函数[python.org](https://docs.python.org/3.5/library/functions.html)：
 
 ```python
 Python内置(built-in)函数随着python解释器的运行而创建。在Python的程序中，你可以随时调用这些函数，不需要定义.
