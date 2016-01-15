@@ -17,7 +17,7 @@ SQL语句分为两种：DML（Data Manipulation Language）与DDL(Data Definitio
 数据类型：
     1)算术：
         tinyint、smallint、mediumint、int、bigint、float(M,D)、double(M,D)、decimal(M,D)
-            MySQL数据类型	含义（有符号）
+            MySQL数据类型	    含义（有符号）
             tinyint(m)	     1个字节  范围(-128~127)
             smallint(m)	    2个字节  范围(-32768~32767)
             mediumint(m)	   3个字节  范围(-8388608~8388607)
