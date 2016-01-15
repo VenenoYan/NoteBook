@@ -36,7 +36,7 @@ man git [order]     查看帮助
 git init        :初始化一个本地仓库
 git add file1 file2 ... :添加文件
 git add ./-A/-u  :  添加所有除了删除的/添加所有/添加除新建之外的
-git add -p
+git add -p      交互式提交某些内容
 git commit -m "instruction" [-a] :  提交的说明。加[-a]只对已提交过的文件有效
 git status  : 仓库状态
 git log [--pretty=oneline]  历史记录
@@ -92,6 +92,7 @@ git checkout 把版本库中的文件覆盖工作区文件
         git pull --rebase   远程分支合并到本地，然后将本地变更应用到该版本（多人更新时）
 分支信息：
         git branch -v       本地分支信息
+        git branch -a       本地加远程所有
         git remote -v       远程分支url
         git branch -r       远程分支名
         git branch -m [old] [new] 改分支名字
