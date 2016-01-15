@@ -34,7 +34,7 @@ SQL语句分为两种：DML（Data Manipulation Language）与DDL(Data Definitio
         rename database [olddbname] to [newdbname]
     表：
         show tables;
-        create table [Tname] (col_name col_type,...);
+        create table [Tname] (col_name col_type,...) ENGINE=InnoDB DEFAULT CHARSET=gbk;
         drop table [Tname];
         describe [Tname];
         select */col1,col2,... from [Tname] where coli=[str1] and colj=[str2];
