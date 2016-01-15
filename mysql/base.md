@@ -117,4 +117,8 @@ SQL语句分为两种：DML（Data Manipulation Language）与DDL(Data Definitio
           #             单个数字匹配
           -[a-z]        范围内任意一个
           [!0-9]        不匹配范围内任一个
+    联结：
+        1)左联结
+            select ... from [Tname1] join [Tname2]  on [contion]
+        2)右联结
 ```
