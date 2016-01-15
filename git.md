@@ -37,7 +37,7 @@ git add file1 file2 ... :添加文件
 git add ./-A/-u  :  添加所有除了删除的/添加所有/添加除新建之外的
 git commit -m "instruction" [-a] :  提交的说明。加[-a]只对已提交过的文件有效
 git status  : 仓库状态
-git diff file1  ： 文件file1的改动
+git diff [file1]  ： 文件[file1]的改动
 git log [--pretty=oneline]  历史记录
 git reflog   查看历史commit-id
 git blame file1  查看文件被修改的信息
