@@ -53,6 +53,8 @@ tuple([2,3,4])                   # 转换为定值表 tuple
 slice(5,2,-1)                    # 构建下标对象 slice
 dict(a=1,b="hello",c=[1,2,3])    # 构建词典 dictionary
 
+enumerate(seq)          返回一个下标和对应值  for i,v in enumerate(lis)
+
 3、序列操作
 
 all([True, 1, "hello!"])         # 是否所有的元素都相当于True值
