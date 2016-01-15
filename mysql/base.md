@@ -39,6 +39,7 @@ SQL语句分为两种：DML（Data Manipulation Language）与DDL(Data Definitio
         describe [Tname];
         select */col1,col2,... from [Tname] where coli=[str1] and colj=[str2];
         insert into [Tname](col1,col2,...) values('v1','v2',...);
+        update [Tname] set coli=[str1] where colj=[str2];
         delete from [Tname] where coli=[str2];
         alter table [Tname] add column [col_name] [col_type];
         alter table [Tname] change [old_col] [new_col] [col_type];
