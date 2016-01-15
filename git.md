@@ -85,6 +85,9 @@ git checkout 把版本库中的文件覆盖工作区文件
         git merge [Bname]        把分支合并到当前分支
         合并时会有冲突：默认Fast-forward模式,自己解决
             git merge --no-ff -m "instruction" [Bname]
+        git show [Bname]:[file]   查看其他分支文件
+        git diff [Bname]:[file]   查看其他分支文件与自己的不同
+        git pull --rebase   远程分支合并到本地，然后将本地变更应用到该版本（多人同时更新时）
 分支信息：
         git branch -v       本地分支信息
         git remote -v       远程分支url
