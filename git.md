@@ -87,7 +87,7 @@ git checkout 把版本库中的文件覆盖工作区文件
             git merge --no-ff -m "instruction" [Bname]
         git show [Bname]:[file]   查看其他分支文件
         git diff [Bname]:[file]   查看其他分支文件与自己的不同
-        git pull --rebase   远程分支合并到本地，然后将本地变更应用到该版本（多人同时更新时）
+        git pull --rebase   远程分支合并到本地，然后将本地变更应用到该版本（多人更新时）
 分支信息：
         git branch -v       本地分支信息
         git remote -v       远程分支url
@@ -121,6 +121,7 @@ git checkout 把版本库中的文件覆盖工作区文件
         git remote add [remote-name] git@github:[yourname]/[respo_name].git
 使用：
         git pull
+        git pull --rebase   远程分支合并到本地，然后将本地变更应用到该版本（多人更新时）
         git push [remote-name] [localB-name]
         git fetch
 远程到本地：
