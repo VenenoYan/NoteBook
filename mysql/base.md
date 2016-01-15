@@ -35,9 +35,21 @@ SQL语句分为两种：DML（Data Manipulation Language）与DDL(Data Definitio
             text       	可变长度，最多65535个字符
             mediumtext 	可变长度，最多2的24次方-1个字符
             longtext   	可变长度，最多2的32次方-1个字符
-            1._BLOB和_text存储方式不同，_TEXT以文本方式存储，英文存储区分大小写，而_Blob是以二进制方式存储，不分大小写。 
+            1._BLOB和_text存储方式不同，_TEXT以文本方式存储，区分大小写，而_Blob是以二进制方式存储，不分大小写。 
             2._BLOB存储的数据只能整体读出。 
             3._TEXT可以指定字符集，_BLO不用指定字符集。
+            char和varchar：
+                1.char(n) 若存入字符数小于n，则以空格补于其后，查询之时再将空格去掉。
+                    所以char类型存储的字符串末尾不能有空格，varchar不限于此。 
+                2.char(n) 固定长度，char(4)不管是存入几个字符，都将占用4个字节，varchar是存入的实际字符数+1个
+                    字节（n<=255）或2个字节(n>255)，所以varchar(4),存入3个字符将占用4个字节。 
+                3.char类型的字符串检索速度要比varchar类型的快。
+            varchar和text： 
+                1.varchar可指定n，text不能指定，内部存储varchar是存入的实际字符数+1个字节（n<=255）或2个
+                    字节(n>255)，text是实际字符数+2个字节。 
+                2.text类型不能有默认值。 
+                3.varchar可直接创建索引，text创建索引要指定前多少个字符。varchar查询速度快于text,
+                    在都创建索引的情况下，text的索引似乎不起作用。
     3)时间：
         date、datetime、time、timestamp、year
     4)字符：
