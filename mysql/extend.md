@@ -7,5 +7,5 @@
     显示当前所有用户：
         select user from mysql.user;
     删除用户：
-        drop user [username]
+        drop user [username];
 ```
