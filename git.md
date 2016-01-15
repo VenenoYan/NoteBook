@@ -96,31 +96,31 @@ git checkout 把版本库中的文件覆盖工作区文件
 远程库
 ```C
 首先认证：
-    ssh-keygen -t rsa -C "youremail"  
-    然后把生成的 id_rsa.pub内容放到github内
+        ssh-keygen -t rsa -C "youremail"  
+        然后把生成的 id_rsa.pub内容放到github内
 绑定：
-    git remote add [remote-name] git@github:[yourname]/[respo_name].git
+        git remote add [remote-name] git@github:[yourname]/[respo_name].git
 使用：
-    git pull
-    git push [remote-name] [localB-name]
-    git fetch
+        git pull
+        git push [remote-name] [localB-name]
+        git fetch
 远程到本地：
-    git clone [url]
+        git clone [url]
 推送：
-    git checkout -b [lBname] [remote-name/Bname]  :建立对应远程的分支名，最好名字相同
-    git push [remote-name/Bname] [localB-name]  ：  指定分支推送
+        git checkout -b [lBname] [remote-name/Bname]  :建立对应远程的本地分支名，最好名字相同
+        git push [remote-name/Bname] [localB-name]  ：  指定分支推送
 分支关联：
-    1)普通：git remote add ....
-    2)指定分支： git branch --set-upstream [local/lBname] [remote-name/Bname]
+        1)普通：git remote add ....
+        2)指定分支： git branch --set-upstream [local/lBname] [remote-name/Bname]
 删除：
-    1)删除远程分支：
-        git push [remote-name] --delete [Bname]
-    2)删除远程仓库绑定：
-        git remote rm [remote-name]
+        1)删除远程分支：
+            git push [remote-name] --delete [Bname]
+        2)删除远程仓库绑定：
+            git remote rm [remote-name]
 修改：
-    git remote set-url --push [remote-name] new-url
+        git remote set-url --push [remote-name] new-url
 重命名：
-    git remote rename [old] [new]
+        git remote rename [old] [new]
 ```
 1. 
 他人仓库
