@@ -86,7 +86,7 @@ SQL语句分为两种：DML（Data Manipulation Language）与DDL(Data Definitio
         create table [Tname] (col_name col_type,...) ENGINE=InnoDB DEFAULT CHARSET=gbk;
         drop table [Tname];
         describe [Tname];
-        select */col1,col2,... from [Tname] where coli=[str1] and colj=[str2];
+        select */col1,col2,... from [Tname] where coli=[str1] and colj=[str2] and col3 like "%1%";
         insert into [Tname](col1,col2,...) values('v1','v2',...);
         update [Tname] set coli=[str1] where colj=[str2];
         delete from [Tname] where coli=[str2];
