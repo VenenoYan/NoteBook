@@ -131,7 +131,7 @@ compile(str,filename,kind)   str为python代码字符串  文件    编译成供
 ```
 
 
-## 模块及函数
+## 模块及例子
 
 
 **[os](os.md) 模块提供了很多与操作系统交互的函数:**
