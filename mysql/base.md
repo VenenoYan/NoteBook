@@ -93,5 +93,5 @@ SQL语句分为两种：DML（Data Manipulation Language）与DDL(Data Definitio
         alter table [Tname] add column [col_name] [col_type] after [col_name];
         alter table [Tname] change [old_col] [new_col] [col_type];
         alter table [Tname] drop column [col_ame];
-        alter table [old-Tname] rename [new_Tname]
+        alter table [old-Tname] rename [new_Tname];
 ```
