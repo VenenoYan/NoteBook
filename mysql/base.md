@@ -119,8 +119,9 @@ SQL语句分为两种：DML（Data Manipulation Language）与DDL(Data Definitio
           [!0-9]        不匹配范围内任一个
     联结：
         0)内联结：
-            select ... from [Tname1] [INNER | CROSS] join [Tname2]  on [contion]；
+            select ... from [Tname1] [INNER | CROSS] join [Tname2]  on [contion] where [contion]；
         1)外左联结
-            SELECT * FROM [Tname1] LEFT JOIN [Tname2] ON [contion];
+            SELECT ... FROM [Tname1] LEFT JOIN [Tname2] ON [contion] where [contion];
         2)外右联结
+            SELECT ... FROM [Tname1] RIGHT JOIN [Tname2] ON [contion] where [contion];
 ```
