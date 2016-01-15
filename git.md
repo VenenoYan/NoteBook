@@ -115,6 +115,13 @@ git checkout 把版本库中的文件覆盖工作区文件
 删除标签：
         1)本地：git tag -d [t-name]
         2)远程：git tag -d [t-name] 后 git push [remote-name]:refs/tags/[t-name]
+查找出错的版本：git bisect 采用二分法
+        1)git bisect start  开始二分查找，git告诉你一个版本去测试
+        2)git bisect good  告诉git当前版本正常（加参数[commid-id]即可告诉git该版本是正常的不用测试了）
+        3)git会继续给你一个版本（中间版本）去测试
+        4)git bisect bad    告诉git当前版本有问题，git bisect结束
+        5)git bisect reset  返回到初始状态
+        6)git bisect log    最后一个完全成功的
 ```
 1. 
 远程库
