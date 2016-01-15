@@ -48,7 +48,7 @@ git log [--pretty=oneline]  历史记录
         --graph     现实所有依赖树
         --after="date"    显示该日期之后的提交
         --before="date"   该日期之前的提交
-        --no-merges master..    显示尚未提交的变更
+        --no-merges master..    显示尚未合并到master的变更
         --pretty=oneline/[para] 自定义输出
         -p [file]       显示某个文件的详细变化，
         -L [s,e]:[file] 显示某个文件s~e行之间的变化
