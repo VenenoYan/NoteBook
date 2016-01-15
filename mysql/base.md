@@ -52,6 +52,11 @@ SQL语句分为两种：DML（Data Manipulation Language）与DDL(Data Definitio
                     在都创建索引的情况下，text的索引似乎不起作用。
     3)时间：
         date、datetime、time、timestamp、year
+            MySQL数据类型	含义
+            date	    日期 '2008-12-2'
+            time	    时间 '12:25:36'
+            datetime	日期时间 '2008-12-2 22:06:44'
+            timestamp   自动存储记录修改时间v
     4)字符：
         bit、string、boolean、Null、hexadecimal、decimal
 基本操作：
