@@ -16,5 +16,5 @@
     		sex char(4) not null,
     		age tinyint unsigned not null,
     		tel char(13) null default "-"
-    	);
+    	)ENGINE=InnoDB DEFAULT CHARSET=gbk;
 ```
