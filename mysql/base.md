@@ -95,3 +95,17 @@ SQL语句分为两种：DML（Data Manipulation Language）与DDL(Data Definitio
         alter table [Tname] change [old_col] [new_col] [col_type];
         alter table [Tname] drop column [col_ame];
 ```
+实例;
+```C
+    创建详细功能表：
+        create table students
+    	（
+    		id int unsigned not null auto_increment primary key,
+    		name char(8) not null,
+    		sex char(4) not null,
+    		age tinyint unsigned not null,
+    		tel char(13) null default "-"
+    	)ENGINE=InnoDB DEFAULT CHARSET=gbk;
+    
+    select name from students where sex='男' and age>18 and tel like "%687_";
+```
