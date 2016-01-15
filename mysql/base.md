@@ -124,4 +124,10 @@ SQL语句分为两种：DML（Data Manipulation Language）与DDL(Data Definitio
             SELECT ... FROM [Tname1] LEFT JOIN [Tname2] ON [contion] where [contion];
         2)外右联结
             SELECT ... FROM [Tname1] RIGHT JOIN [Tname2] ON [contion] where [contion];
+        联结的运算顺序:
+        SELECT t1.id,t2.id,t3.id FROM t1,t2 LEFT JOIN t3 ON (t3.id=t1.id) WHERE t1.id=t2.id;
+        --实际上这么执行
+        SELECT t1.id,t2.id,t3.id FROM t1,(  t2 LEFT JOIN t3 ON (t3.id=t1.id)  ) WHERE t1.id=t2.id;
+        --应该这么写
+        SELECT t1.id,t2.id,t3.id FROM (t1,t2) LEFT JOIN t3 ON (t3.id=t1.id) WHERE t1.id=t2.id;
 ```
