@@ -36,6 +36,7 @@ man git [order]     查看帮助
 git init        :初始化一个本地仓库
 git add file1 file2 ... :添加文件
 git add ./-A/-u  :  添加所有除了删除的/添加所有/添加除新建之外的
+git add -p
 git commit -m "instruction" [-a] :  提交的说明。加[-a]只对已提交过的文件有效
 git status  : 仓库状态
 git log [--pretty=oneline]  历史记录
