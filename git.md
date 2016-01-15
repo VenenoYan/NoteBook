@@ -121,7 +121,8 @@ git checkout 把版本库中的文件覆盖工作区文件
         3)git会继续给你一个版本（中间版本）去测试
         4)git bisect bad    告诉git当前版本有问题，git bisect结束
         5)git bisect reset  返回到初始状态
-        6)git bisect log    最后一个完全成功的
+        6)git bisect log    最后一个完全成功的日志
+        7)以上过程可以写一个脚本
 ```
 1. 
 远程库
