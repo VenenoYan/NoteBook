@@ -49,8 +49,10 @@ git log [--pretty=oneline]  历史记录
         --after="date"    显示该日期之后的提交
         --before="date"   该日期之前的提交
         --pretty=oneline/.. 自定义输出
+        -p [fie]        现实某个文件的相信变化，
     例子：一周之内leo的提交,一行显示
         git log --author="leo" --after="1 week ago" --oneline
+        git log -p git.md
 git reflog   查看历史commit-id
 git blame file1  查看文件被修改的信息
 忽略信息：不提交的内容
