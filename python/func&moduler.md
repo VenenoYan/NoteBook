@@ -53,7 +53,8 @@ tuple([2,3,4])                   # 转换为定值表 tuple
 slice(5,2,-1)                    # 构建下标对象 slice
 dict(a=1,b="hello",c=[1,2,3])    # 构建词典 dictionary
 
-enumerate(seq)          返回一个下标和对应值  for i,v in enumerate(lis)
+enumerate(seq)          返回一个下标和对应值的元组[(i,v1),...]  for i,v in enumerate(list)
+zip(seq1,seq2)        两个合成的元组   [(s1[0],s2[0]),..]  按最短的为基准长度
 
 3、序列操作
 
@@ -62,6 +63,7 @@ any(["", 0, False, [], None])    # 是否有任意一个元素相当于True值
 
 sorted([1,5,3])                  # 返回正序的序列，也就是[1,3,5]
 reversed([1,5,3])                # 返回反序的序列，也就是[3,5,1]
+max/min(seq)                最大/最小的值
 
 4、文件操作
 
