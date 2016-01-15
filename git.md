@@ -194,4 +194,5 @@ git daemon搭建：
         守护进程运行在9418端口。用户只可以clone,不能push
 3)接受用户更改
         git config daemon.receivepack true
+注意：远程访问时就需要用git://localhost/Mike/share/MyProject.git    因为启动时--base-path指定
 ```
