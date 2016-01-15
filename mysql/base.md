@@ -61,7 +61,7 @@ SQL语句分为两种：DML（Data Manipulation Language）与DDL(Data Definitio
             所以这个数据类型的字段可以存放这条记录最后被修改的时间。
     4)属性：
         bit、string、boolean、Null、hexadecimal、decimal
-            MySQL关键字	    含义
+            MySQL关键字	        含义
             NULL	            数据列可包含NULL值
             NOT NULL	        数据列不允许包含NULL值
             DEFAULT	         默认值
