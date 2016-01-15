@@ -158,7 +158,7 @@ git checkout 把版本库中的文件覆盖工作区文件
         git remote rename [old] [new]
 ```
 1. 
-他人仓库
+参与他人项目
 ```C
 首先在远程仓库中：fork一个过来
 然后：git clone [url] 到本地
