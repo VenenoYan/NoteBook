@@ -1,5 +1,6 @@
-**#!/usr/bin/env python3
-# -*- coding: utf-8 -*-
+```python
+#!/usr/bin/env python3
+#-*- coding: utf-8 -*-
 
 import datetime
 import telnetlib
@@ -36,4 +37,4 @@ def main():
 
 
 if __name__ == '__main__':
-    main()**
+    main()**```
