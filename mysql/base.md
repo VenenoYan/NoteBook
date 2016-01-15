@@ -28,6 +28,16 @@ SQL语句分为两种：DML（Data Manipulation Language）与DDL(Data Definitio
             decimal(m,d)      参数m<65 是总个数，d<30且 d<m 是小数位。
     2)文本：
         char、varchar、tinyblob、blob、mediumblob、longblob、enum、set
+            MySQL数据类型	    含义
+            char(n)	    固定长度，最多255个字符
+            varchar(n)	 固定长度，最多65535个字符
+            tinytext	   可变长度，最多255个字符
+            text       	可变长度，最多65535个字符
+            mediumtext 	可变长度，最多2的24次方-1个字符
+            longtext   	可变长度，最多2的32次方-1个字符
+            1._BLOB和_text存储方式不同，_TEXT以文本方式存储，英文存储区分大小写，而_Blob是以二进制方式存储，不分大小写。 
+            2._BLOB存储的数据只能整体读出。 
+            3._TEXT可以指定字符集，_BLO不用指定字符集。
     3)时间：
         date、datetime、time、timestamp、year
     4)字符：
