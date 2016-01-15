@@ -1,4 +1,11 @@
-## 其他几个程序可能用到的检测平台环境
+###依赖包
+```python
+dotenv
+twilio
+yagmail
+git+https://github.com/charlierguo/gmail
+```
+### 其他几个程序可能用到的检测平台环境
 ```python
 #!/usr/bin/env python3
 # -*- coding: utf-8 -*-
