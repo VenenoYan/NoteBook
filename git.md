@@ -32,7 +32,7 @@ $git config [--global/system] merge.tool vimdiff       比较工具
 本地使用
 ```C
         工作区--add-->暂存区--commit-->版本仓库
-man git [order]     查看
+man git [order]     查看帮助
 git init        :初始化一个本地仓库
 git add file1 file2 ... :添加文件
 git add ./-A/-u  :  添加所有除了删除的/添加所有/添加除新建之外的
@@ -48,6 +48,8 @@ git log [--pretty=oneline]  历史记录
         --after="date"    显示该日期之后的提交
         --before="date"   该日期之前的提交
         --pretty=oneline/.. 自定义输出
+    例子：一周之内leo的提交,一行显示
+        git log --author="leo" --after="1 week ago" --oneline
 git reflog   查看历史commit-id
 git blame file1  查看文件被修改的信息
 忽略信息：不提交的内容
