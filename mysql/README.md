@@ -24,6 +24,8 @@ SQL语句分为两种：DML（Data Manipulation Language）与DDL(Data Definitio
 基本操作：
     登录：
         mysql -u[user-name] -p[password]
+    修改密码：
+        mysql -u[user-name] -p[old-password] password [new-password]
     数据库：
         show databases;
         create database [DBname];
