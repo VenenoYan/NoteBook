@@ -6,6 +6,7 @@
 * [GitBook使用](gitbook/README.md)
 * [Django初步](django/README.md)
 * [Python基础](python/README.md)
+* [MySQL](mysql/README.md)
 * [Web基础](web/README.md)
 * [C++基础](C++/README.md)
 * [Linux基础](Linux/README.md)
