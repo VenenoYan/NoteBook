@@ -76,7 +76,7 @@ SQL语句分为两种：DML（Data Manipulation Language）与DDL(Data Definitio
     修改密码：
         mysqladmin -u[user-name] -p[old-password] password [new-password]
     数据库：
-        show databases;
+        show databases character set gbk;
         create database [DBname];
         use [DBname];
         drop [DBname];
