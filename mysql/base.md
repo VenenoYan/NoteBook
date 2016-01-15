@@ -119,11 +119,11 @@ SQL语句分为两种：DML（Data Manipulation Language）与DDL(Data Definitio
           [!0-9]        不匹配范围内任一个
     联结：
         0)内联结：
-            select ... from [Tname1] [INNER|CROSS] join [Tname2] on [map_relation] where [contion]
+            select ... from [Tname1] [INNER|CROSS] join [Tname2] on [eq_relation] where [contion]
         1)外左联结
-            SELECT ... FROM [Tname1] LEFT JOIN [Tname2] ON [map_relation] where [contion];
+            SELECT ... FROM [Tname1] LEFT JOIN [Tname2] ON [eq_relation] where [contion];
         2)外右联结
-            SELECT ... FROM [Tname1] RIGHT JOIN [Tname2] ON [map_relation] where [contion];
+            SELECT ... FROM [Tname1] RIGHT JOIN [Tname2] ON [eq_relation] where [contion];
         联结的运算顺序:不想犯错就用括号
         SELECT t1.id,t2.id,t3.id FROM t1,t2 LEFT JOIN t3 ON (t3.id=t1.id) WHERE t1.id=t2.id;
         --实际上这么执行
