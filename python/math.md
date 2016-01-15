@@ -11,6 +11,7 @@ math.pow(x,y)      # 指数运算，得到x的y次方
 math.log(x)        # 对数，默认基底为e。可以使用base参数，来改变对数的基地。比如math.log(100,base=10)
 math.sqrt(x)       # 平方根
 math.abs(x)        # 返回一个数的绝对值。
+math.complex(1,2)   返回一个复数 1+2j
 
 三角函数: math.sin(x), math.cos(x), math.tan(x), math.asin(x), math.acos(x), math.atan(x)
             这些函数都接收一个弧度(radian)为单位的x作为参数。
