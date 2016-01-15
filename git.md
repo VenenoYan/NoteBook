@@ -84,7 +84,7 @@ git checkout 把版本库中的文件覆盖工作区文件
         git push [remote-name] --delete [Bname] 删除远程分支
         git merge [Bname]        把分支合并到当前分支
         合并时会有冲突：默认Fast-forward模式,自己解决
-            git merge --no-ff -m "instruction" [Bname]
+            git merge --no-ff -m "instruction" [Bname]    保存该分支的历史
         git show [Bname]:[file]   查看其他分支文件
         git diff [Bname]:[file]   查看其他分支文件与自己的不同
         git pull --rebase   远程分支合并到本地，然后将本地变更应用到该版本（多人更新时）
