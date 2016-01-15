@@ -4,9 +4,9 @@
 配置
 ```C
 配置文件：
-    1)etc/.gitconfig   整个system
-    2)~/.gitconfig     用global,当前用户。也是默认的
-    3)./.git/config    本仓库
+        1)etc/.gitconfig   整个system
+        2)~/.gitconfig     用global,当前用户。也是默认的
+        3)./.git/config    本仓库
 $git config [--global/system] user.name "yourname"
 $git config [--global/system] user.eamil "email"    // global/system/无
 $git config [--global/system] color.ui true   颜色
@@ -14,19 +14,19 @@ $git config [--global/system] alias.st status  重命名命令---别名
 $git config [--global/system] core.editor vim/emacs    设默认编辑器
 $git config [--global/system] merge.tool vimdiff       比较工具
 写忽略文件：
-    编写 .gitignore文件
-    规则：
-        #   代表注释
-        *   代表任意字符或字符串
-        ！  不忽略
-        ？  任意字符
-    example：
-        *.md        忽略所有 .md文件
-        !tt.md      忽略出tt.md的所有 .md文件
-        folder      忽略folder文件夹及子文件
-        folder/     忽略该目录
-        *.[o]       忽略所有 .o文件
-        *a/a*       忽略所有以a结尾/开头的文件
+        编写 .gitignore文件
+        规则：
+            #   代表注释
+            *   代表任意字符或字符串
+            ！  不忽略
+            ？  任意字符
+        example：
+            *.md        忽略所有 .md文件
+            !tt.md      忽略出tt.md的所有 .md文件
+            folder      忽略folder文件夹及子文件
+            folder/     忽略该目录
+            *.[o]       忽略所有 .o文件
+            *a/a*       忽略所有以a结尾/开头的文件
 ```
 1. 
 本地使用
@@ -42,55 +42,55 @@ git log [--pretty=oneline]  历史记录
 git reflog   查看历史commit-id
 git blame file1  查看文件被修改的信息
 忽略信息：不提交的内容
-    编写 .gitignore文件
-    规则：
-        #   代表注释
-        *   代表任意字符或字符串
-        ！  不忽略
-        ？  任意字符
+        编写 .gitignore文件
+        规则：
+            #   代表注释
+            *   代表任意字符或字符串
+            ！  不忽略
+            ？  任意字符
 版本回退：
-    1)仍在工作区未add:  git checkout --filename1  返回到最近的已提交状态
-    2)已提交commit：   git reset --hard HEAD~[i]  回退（后再执行一次1)）
+        1)仍在工作区未add:  git checkout --filename1  返回到最近的已提交状态
+        2)已提交commit：   git reset --hard HEAD~[i]  回退（后再执行一次1)）
 前进：回退多了
-    git reset --hard commit-id
+        git reset --hard commit-id
 删除文件：
-    git rm file1
-    git commit -m ...
+        git rm file1
+        git commit -m ...
 删除回复：
-    git checkout --file
+        git checkout --file
 HEAD永远指向当前工作分支
 git checkout 把版本库中的文件覆盖工作区文件
 分支：
-    git checkout -b [Bname] 新建并切换
-    git branch [Bname]       新建分支
-    git checkout [Bname]     切换分支
-    git branch -d/-D [Bname] 删除/强制删除
-    git push [remote-name] --delete [Bname] 删除远程分支
-    git merge [Bname]        把分支合并到当前分支
-    合并时会有冲突：默认Fast-forward模式,自己解决
-        git merge --no-ff -m "instruction" [Bname]
+        git checkout -b [Bname] 新建并切换
+        git branch [Bname]       新建分支
+        git checkout [Bname]     切换分支
+        git branch -d/-D [Bname] 删除/强制删除
+        git push [remote-name] --delete [Bname] 删除远程分支
+        git merge [Bname]        把分支合并到当前分支
+        合并时会有冲突：默认Fast-forward模式,自己解决
+            git merge --no-ff -m "instruction" [Bname]
 分支信息：
-    git branch -v       本地分支信息
-    git remote -v       远程分支url
-    git branch -r       远程分支名
-    git branch -m [old] [new] 改分支名字
+        git branch -v       本地分支信息
+        git remote -v       远程分支url
+        git branch -r       远程分支名
+        git branch -m [old] [new] 改分支名字
 保存当前工作环境：
-    git stash       保存现场
-        do something else
-    git stash apply [id]
-    git stash drop  删除
-    git stash pop    恢复现场，相当于上面两个指令
-    git stash list      所有
+        git stash       保存现场
+            do something else
+        git stash apply [id]
+        git stash drop  删除
+        git stash pop    恢复现场，相当于上面两个指令
+        git stash list      所有
 标签：当前版本的快照
-    git tag    查看所有标签
-    git tag [t-name]    新建标签
-    git tag [t-name] commit-id  给提交新建标签
-    git tag -a [t-name] -m "instruction" commit-id  与上同，只是有说明
-    git show [t-name] 列出标签详细信息
-    git push [remote-name] [t-name]/--tags   推送某一标签/推送所有标签
+        git tag    查看所有标签
+        git tag [t-name]    新建标签
+        git tag [t-name] commit-id  给提交新建标签
+        git tag -a [t-name] -m "instruction" commit-id  与上同，只是有说明
+        git show [t-name] 列出标签详细信息
+        git push [remote-name] [t-name]/--tags   推送某一标签/推送所有标签
 删除标签：
-    1)本地：git tag -d [t-name]
-    2)远程：git tag -d [t-name] 后 git push [remote-name]:refs/tags/[t-name]
+        1)本地：git tag -d [t-name]
+        2)远程：git tag -d [t-name] 后 git push [remote-name]:refs/tags/[t-name]
 ```
 1. 
 远程库
