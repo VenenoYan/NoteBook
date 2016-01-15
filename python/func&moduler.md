@@ -14,7 +14,7 @@ help(func/comm)   用法帮助
 abs(-5)                           取绝对值，也就是5
 round(2.6)                        四舍五入取整，也就是3.0
 pow(2, 3)                         相当于2**3，如果是pow(2, 3, 5)，相当于2**3 % 5
-cmp(2.3, 3.2)                     比较两个数的大小：   负数 0 正数(第一个)
+cmp(2.3, 3.2)                     比较两个数的大小：   负数 0 正数(第一个大)
 divmod(9,2)                       返回除法结果和余数
 max([1,5,2,9])                    求最大值
 min([9,2,-4,2])                   求最小值
@@ -120,6 +120,14 @@ exec("print('Hello')")            # 解释并执行字符串，print('Hello')。
 input("Please input:")            # 等待输入
 globals()                         # 返回全局命名空间，比如全局变量名，全局函数名
 locals()                          # 返回局部命名空间
+callable(object)            对象是否可以调用
+eval(expression)            计算表达式的值并返回
+exec(str)              执行python语句的字符串
+execfile(file)              执行文件
+compile(str,filename,kind)   str为python代码字符串  文件    编译成供执行的类型
+    s = 'for i in range(10): print(i)'
+    c1 = compile(s,'','exec')        c2 = compile(s,'','eval')
+    exec(c1)                         result = eval(c2)
 ```
 
 
