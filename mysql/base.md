@@ -25,6 +25,7 @@ SQL语句分为两种：DML（Data Manipulation Language）与DDL(Data Definitio
             bigint(m)	      8个字节  范围(+-9.22*10的18次方)
             float(m,d)	    单精度浮点型    8位精度(4字节)     m总个数，d小数位
             double(m,d)	   双精度浮点型    16位精度(8字节)    m总个数，d小数位
+            decimal(m,d)      参数m<65 是总个数，d<30且 d<m 是小数位。
     2)文本：
         char、varchar、tinyblob、blob、mediumblob、longblob、enum、set
     3)时间：
