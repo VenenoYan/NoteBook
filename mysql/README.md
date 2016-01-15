@@ -6,5 +6,28 @@ SQL语句分为两种：DML（Data Manipulation Language）与DDL(Data Definitio
         select、update、delete、insert into
     2、DDL
         create database、alter database、create table、alter table、alter table、drop table
-
+算术操作符：
+    +、-、/、*、%、|、^、&、<<、>>
+比较操作符：
+    =、>、<、<=、>=、！= 
+逻辑操作符：
+    not、！     or、||      XOR         and、&&
+数据类型：
+    1)算术：
+        tinyint、smallint、mediumint、int、bigint、float(M,D)、double(M,D)、decimal(M,D)
+    2)文本：
+        char、varchar、tinyblob、blob、mediumblob、longblob、enum、set
+    3)时间：
+        date、datetime、time、timestamp、year
+    4)字符：
+        bit、string、boolean、Null、hexadecimal、decimal
+基本操作：
+    登录：
+        mysql -u[user-name] -p[password]
+    数据库：
+        show databases;
+        create database [DBname];
+        use [DBname];
+        drop [DBname];
+        alter database []
 ```
