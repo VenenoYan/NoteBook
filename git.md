@@ -186,4 +186,11 @@ git checkout 把版本库中的文件覆盖工作区文件
     1)小团队可以把所有公钥收集起来放到服务器的/home/git/.ssh/authorized_keys文件里。
         几百号人的大团队需要Gitosis来管理公钥
     2)用户权限：Gitolite负责管理。
+git daemon搭建：
+1)创建项目，在项目中创建一个空的git-daemon-export-ok文件，
+2)git daemon -reuseaddr --base-path=/home/Mike/share /home/Mike/share/MyProject.git
+    sudo ufw allow 9418  添加防火墙例外
+    守护进程运行在9418端口。用户只可以clone,不能push
+3)接受用户更改
+    git config daemon.receivepack true
 ```
