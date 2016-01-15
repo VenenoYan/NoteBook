@@ -109,9 +109,9 @@ git checkout 把版本库中的文件覆盖工作区文件
 推送：
         git checkout -b [lBname] [remote-name/Bname]  :建立对应远程的本地分支名，最好名字相同
         git push [remote-name/Bname] [localB-name]  ：  指定分支推送
-分支关联：
+关联：
         1)普通：git remote add ....
-        2)指定分支： git branch --set-upstream [local/lBname] [remote-name/Bname]
+        2)指定： git branch --set-upstream [local/lBname] [remote-name/Bname]
 删除：
         1)删除远程分支：
             git push [remote-name] --delete [Bname]
@@ -127,7 +127,8 @@ git checkout 把版本库中的文件覆盖工作区文件
 ```C
 首先在远程仓库中：fork一个过来
 然后：git clone [url] 到本地
-修改：git push
+修改
+修改后：git push
 通知作者： 远程仓库发起一个 pull request
 ```
 1. 
