@@ -38,7 +38,6 @@ git add file1 file2 ... :添加文件
 git add ./-A/-u  :  添加所有除了删除的/添加所有/添加除新建之外的
 git commit -m "instruction" [-a] :  提交的说明。加[-a]只对已提交过的文件有效
 git status  : 仓库状态
-git diff [file1]  ： 文件[file1]的改动
 git log [--pretty=oneline]  历史记录
     参数：
         --oneline   一行显示
@@ -56,6 +55,7 @@ git log [--pretty=oneline]  历史记录
         git log --author="leo" --after="1 week ago" --oneline   一周之内leo的提交,一行显示
         git log -p git.md       git.md的提交和具体改变
 git reflog   查看历史commit-id
+git diff [file1]  ： 文件[file1]的改动
 git blame file1  查看文件被修改的信息
 忽略信息：不提交的内容
         编写 .gitignore文件
