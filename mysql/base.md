@@ -106,6 +106,6 @@ SQL语句分为两种：DML（Data Manipulation Language）与DDL(Data Definitio
     		age tinyint unsigned not null,
     		tel char(13) null default "-"
     	)ENGINE=InnoDB DEFAULT CHARSET=gbk;
-    
+    查看：
     select name from students where sex='男' and age>18 and tel like "%687_";
 ```
