@@ -4,15 +4,15 @@
 配置
 ```C
 配置文件：
-    1)etc/.gitconfig   system
+    1)etc/.gitconfig   整个system
     2)~/.gitconfig     用global,当前用户。也是默认的
     3)./.git/config    本仓库
-$git config [--global] user.name "yourname"
-$git config [--global] user.eamil "email"    // global/system/无
-$git config [--global] color.ui true   颜色
-$git config [--global] alias.st status  重命名命令---别名
-$git config [--global] core.editor vim/emacs    设默认编辑器
-$git config [--global] merge.tool vimdiff       比较工具
+$git config [--global/system] user.name "yourname"
+$git config [--global/system] user.eamil "email"    // global/system/无
+$git config [--global/system] color.ui true   颜色
+$git config [--global/system] alias.st status  重命名命令---别名
+$git config [--global/system] core.editor vim/emacs    设默认编辑器
+$git config [--global/system] merge.tool vimdiff       比较工具
 写忽略文件：
     编写 .gitignore文件
     规则：
