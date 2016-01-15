@@ -195,4 +195,11 @@ git daemon搭建：
 3)接受用户更改
         git config daemon.receivepack true
 注意：远程访问时就需要用git://localhost/Mike/share/MyProject.git    因为启动时--base-path指定
+＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝　
+权限管理：
+        出于安全的考虑，我们最好限制用户只能进行git push/pull，但无法登陆。这可以使用git-shell来完成。
+        首先把git-shell的路径添加到/etc/shells文件里
+            which git-shell   输出git-shell的路径，后添加到/etc/shells文件里
+        再改下用户权限即可
+            sudo chsh [username]
 ```
