@@ -107,7 +107,7 @@ SQL语句分为两种：DML（Data Manipulation Language）与DDL(Data Definitio
     		tel char(13) null default "-"
     	)ENGINE=InnoDB DEFAULT CHARSET=gbk;
     查看：
-        select name from students where sex='男' and age>18 and tel like "%687*";
+        select t.name from students as t where t.sex='男' and t.age>18 and tel like "%687*";
     like用法：
         模式            注释
           *             多个字符匹配    
