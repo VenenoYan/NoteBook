@@ -124,7 +124,7 @@ callable(object)            对象是否可以调用
 eval(expression)            计算表达式的值并返回
 exec(str)              执行python语句的字符串
 execfile(file)              执行文件
-compile(str,filename,kind)   str为python代码字符串  文件    编译成供执行的类型
+compile(str,filename,kind)   str为python代码字符串  文件    编译成供执行的对象
     s = 'for i in range(10): print(i)'
     c1 = compile(s,'','exec')        c2 = compile(s,'','eval')
     exec(c1)                         result = eval(c2)
