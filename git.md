@@ -56,7 +56,7 @@ git log [--pretty=oneline]  历史记录
         git log -p git.md       git.md的提交和具体改变
 git reflog   查看历史commit-id
 git diff [file1]  ： 文件[file1]的改动
-git blame file1  查看文件被修改的所有信息  注意 git log -p参数
+git blame file1  查看文件被修改的所有信息  （注意 git log -p参数）
 忽略信息：不提交的内容
         编写 .gitignore文件
         规则：
