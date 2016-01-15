@@ -35,7 +35,7 @@ SQL语句分为两种：DML（Data Manipulation Language）与DDL(Data Definitio
             text       	可变长度，最多65535个字符
             mediumtext 	可变长度，最多2的24次方-1个字符
             longtext   	可变长度，最多2的32次方-1个字符
-            1._BLOB和_text存储方式不同，_TEXT以文本方式存储，区分大小写，而_Blob是以二进制方式存储，不分大小写。 
+            1._BLOB和_text存储方式不同，_TEXT以文本方式存储，区分大小写，而_Blob是以二进制方式存储，不分大小写
             2._BLOB存储的数据只能整体读出。 
             3._TEXT可以指定字符集，_BLO不用指定字符集。
             char和varchar：
