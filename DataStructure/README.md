@@ -3,7 +3,11 @@
 1. 
 [线性结构](liner.md)
 1. 
-[数性结构](tree.md)
+[树性结构](tree.md)
+1. 
+[二叉排序树](BST.md)
+1. 
+[Huffman树](Huffman.md)
 1. 
 [图形结构](graph.md)
 1. 
