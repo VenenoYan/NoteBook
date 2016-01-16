@@ -75,4 +75,4 @@ status PostOrder(BiTree T){
 ===============================<br>
 　　　首先权值小的一定深度大。<br>
 　　　整个过程共新建N-1个节点。该树2N-1个节点<br>
-　　　整个Huffman树不存在度为1的jie dian
+　　　整个Huffman树不存在度为1的节点（0/2）
