@@ -8,3 +8,17 @@
 　　　整个过程共新建N-1个节点。该树2N-1个节点<br>
 　　　整个Huffman树不存在度为1的节点（0/2）<br>
 **代码实现：**
+```C
+typedef struct HTNode{
+    char c;
+    unsigned int weight;
+    HTNode *parent,*lchild,*rchild;
+}
+HTNode *HTCreate(int *w, char *s){
+    int len=0,index=-1;
+    while(w[len]) ++len;    
+    while(--len>1){
+        index = select_min(w);
+    }
+}
+```
