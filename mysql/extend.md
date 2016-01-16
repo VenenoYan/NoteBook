@@ -89,16 +89,16 @@
     22、列示type、vender、pcs字段，以type字段排列，case可以方便地实现多重选择，类似select 中的case。 
         select type,sum(case vender when ‘A’ then pcs else 0 end),sum(case vender when ‘C’ then 
         pcs else 0 end),sum(case vender when ‘B’ then pcs else 0 end) FROM tablename group by type 
-    显示结果： 
-    type vender pcs 
-    电脑 A 1 
-    电脑 A 1 
-    光盘 B 2 
-    光盘 A 2 
-    手机 B 3 
-    手机 C 3 
+            显示结果： 
+            type vender pcs 
+            电脑 A 1 
+            电脑 A 1 
+            光盘 B 2 
+            光盘 A 2 
+            手机 B 3 
+            手机 C 3 
     23、初始化表table1 
-    TRUNCATE TABLE table1 
+        TRUNCATE TABLE table1 
     24、选择从10到15的记录 
-    select top 5 * from (select top 15 * from table order by id asc) T_别名 order by id desc 
+        select top 5 * from (select top 15 * from table order by id asc) T_别名 order by id desc 
 ```
