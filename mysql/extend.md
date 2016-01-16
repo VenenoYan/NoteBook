@@ -18,4 +18,18 @@
     视图
         创建视图：create view [viewname] as select statement 
         删除视图：drop view [viewname] 
+    查找：
+        select * from table1 where field1 like ’%value1%’ —like的语法很精妙，查资料! 
+    排序： 
+        select * from table1 order by field1,field2 [desc] 
+    总数：
+        select count as totalcount from table1 
+    求和：
+        select sum(field1) as sumvalue from table1 
+    平均：
+        select avg(field1) as avgvalue from table1 
+    最大：
+        select max(field1) as maxvalue from table1 
+    最小：
+        select min(field1) as minvalue from table1 
 ```
