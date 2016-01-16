@@ -32,13 +32,10 @@ status PreOrder(BiTree T){
 }
 status InOrder(BiTree T){
     if(T){
-        print(T->data);
-        if(PreOrder(T->lchild))
-            if(PreOrder(T->rchild))
-                return OK;
-        return error;
-    }else
-        return OK;
+        InOrder(T->lchild);
+        print T->data;
+        InOrder(T->rchild);
+    }
 }
 status PostOrder(BiTree T){
     if(T){
