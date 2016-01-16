@@ -17,39 +17,6 @@ typedef struct HTNode
 }
 HTNode *HTCreate(int *w, char *s)
 {
-    int len=0,index=-1;
-    while(w[len])
-    {
-        HTnode = (HTNode) malloc (sizeof(HTNode));
-        HTnode->c=s[index];
-        HTnode->weight=w[index];
-        HTnode->parent=Null;
-        HTnode->lchild = Null;
-        HTnode->rchild = Null;
-        ++len;
-    }    
-    while(--len!=1)
-    {
-        HTnodep = (HTNode) malloc (sizeof(HTNode));
-        index = select_min(w);
-        HTnode1 = (HTNode) malloc (sizeof(HTNode));
-    //  HTnode1->c=s[index];
-        HTnode1->weight=w[index];
-        HTnode1->parent=Null;
-        HTnode1->lchild = Null;
-        HTnode1->rchild = Null;
-        deletethis(index,w);
-        deletethis(index,s);
-        index = select_min(w);
-        HTnode2 = (HTNode) malloc (sizeof(HTNode));
-    //  HTnode2->c=s[index];
-        HTnode2->weight=w[index];
-        HTnode2->parent=Null;
-        HTnode2->lchild = Null;
-        HTnode2->rchild = Null;
-        deletethis(index,w);
-        deletethis(index,s);
-        HTnodep->weight = HTnode1->weight+HTnode2->weight;
-    }
+
 }
 ```
