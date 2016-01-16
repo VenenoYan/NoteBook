@@ -17,7 +17,9 @@
 typedef struct BitNode{
     TElemType data;
     struct BitNode *lchild,*rchild;
-}BitNode,*BiTree;```
+}BitNode,*BiTree;
+有N个节点的二叉树就会有N+1个空指针
+```
 遍历：先根遍历、中根遍历、后根遍历
 ```C
 status PreOrder(BiTree T){
@@ -42,4 +44,12 @@ status PostOrder(BiTree T){
     }
 }
 有先序和中序、中序和后序、中序和层序可以唯一确定一个二叉树。但是先序和后序不可以。
+```
+
+### 二叉排序树(BST)/二叉查找树：
+```C
+左孩子节点值比父节点小，而右孩子值比父大。每一个子节点都是一颗树。
+查找算法：比当前小就进入左字树查找，大就进入右字树查找。
+插入算法：比当前小就进入左字树插入，大就进入右字树插入。
+删除时节点的处理：
 ```
