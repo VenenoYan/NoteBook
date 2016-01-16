@@ -23,12 +23,9 @@ typedef struct BitNode{
 status PreOrder(BiTree T){
     if(T){
         print(T->data);
-        if(PreOrder(T->lchild))
-            if(PreOrder(T->rchild))
-                return OK;
-        return error;
-    }else
-        return OK;
+        PreOrder(T->lchild);
+        PreOrder(T->rchild);
+    }
 }
 status InOrder(BiTree T){
     if(T){
@@ -39,12 +36,10 @@ status InOrder(BiTree T){
 }
 status PostOrder(BiTree T){
     if(T){
-        print(T->data);
-        if(PreOrder(T->lchild))
-            if(PreOrder(T->rchild))
-                return OK;
-        return error;
-    }else
-        return OK;
+        PostOrder(T->lchild);
+        PostOrder(T->rchild);
+        print(T->datat);
+    }
 }
+有先序和中序、中序和后序、中序和层序可以唯一确定一个二叉树。但是先序和后序不可以。
 ```
