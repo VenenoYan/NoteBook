@@ -98,7 +98,7 @@ preferences->settings-User 中设置
 ## 一键运行python ：
 
 在preferences->key binding 中
-```
+```C
 [
        { "keys": ["ctrl+q"], "command": "repl_open",
                  "caption": "Python",
