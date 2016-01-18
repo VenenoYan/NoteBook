@@ -66,6 +66,7 @@ git blame [-w] file1  查看文件被修改的所有信息  （注意 git log -p
             ！  不忽略
             ？  任意字符
 版本回退：
+        0)回退到某一次提交： git checkout [commit-id]
         1)仍在工作区未add:  git checkout --filename1  返回到最近的已提交状态
         2)已提交commit： git reset --hard HEAD~[i]  回退到该状态===『之后的提交commit-id即历史都没有了』
                          git reset --soft HEAD~[i]  回退（之后的变化处在暂存区，commit即可,但历史亦无）
