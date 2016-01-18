@@ -29,7 +29,7 @@ http://sourceforge.net/projects/vimcdoc/files/vimcdoc/<br>
 * 
 ~/.vimrc
 
-win和linux在配置上的不同：<br>
+windows和linux在配置上的不同：<br>
 　　win中的C:\Program Files\Vim 目录对应linux上的~/.vim/<br>
 　　win中的C:\Program Files\Vim\_vimrc对应linux上的~/.vimrc文件<br>
 　　各种配置在_vimrc改就对了
