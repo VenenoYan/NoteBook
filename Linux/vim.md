@@ -5,7 +5,7 @@
 ### 1、安装Vim和Vim基本插件:
 
     sudo apt-get install vim vim-scripts vim-doc
-    vim --version:显示vim版本和支持的功能语言 
+    vim --version:显示vim版本及支持的功能语言 
 其中vim-scripts是vim的一些基本插件，包括语法高亮的支持、缩进等等。<br>
 vim中文帮助文档tar包下载地址:
 http://sourceforge.net/projects/vimcdoc/files/vimcdoc/<br>
