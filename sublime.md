@@ -16,7 +16,7 @@ sudo apt-get install sublime-text-installer```
         download (got %s instead of %s), please try manual install' % (dh, h)) if dh != h else
         open(os.path.join( ipp, pf), 'wb' ).write(by)
 ## 快捷键：
-```
+```C
     所有的默认快捷键都在preferendes->key binds default 中，可以设置key binds user 中重新设置
     
 ctrl + `            打开控制台
