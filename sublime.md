@@ -119,7 +119,7 @@ preferences->settings-User 中设置
 ## 一键运行c++：
 
 在tools->build system->new 新建一个即可,(一般已带)
-```
+```C
 {
      "cmd": ["g++", "${file}", "-o", "${file_path}/${file_base_name}"],
      "file_regex": "^(..[^:]*):([0-9]+):?([0-9]+)?:? (.*)$",
