@@ -139,7 +139,7 @@ preferences->settings-User 中设置
 
 
 ## 常用插件：
-```
+```C
 sublimetepl:        html,css,js 模板
 GitGutter:          记录改动
 brackethighlight：  高亮匹配
