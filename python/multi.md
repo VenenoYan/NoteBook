@@ -37,7 +37,6 @@ def consumer()：
             break
         print(item)
         q.task_done()
-
 q = Queue.Queue()
 threads=[]
 for i in range(5):
