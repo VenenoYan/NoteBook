@@ -34,6 +34,7 @@ def get_log_path(name):
 ```
 ### auto_coffee
 ```python
+#auto_coffee.py
 #!/usr/bin/env python3
 #-*- coding: utf-8 -*-
 #coffee-auto
