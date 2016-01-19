@@ -20,7 +20,8 @@ os.system([cmd]):执行状态
 如果我们需要获得os.system的正确返回值，那使用位移运算可以还原返回值：
 n = os.system(test.sh)
 n >> 8
-3```
+3
+```
 1. 
 os.popen(cmd): 输出
 ```python
