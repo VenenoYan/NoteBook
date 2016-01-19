@@ -8,6 +8,8 @@
 * 
 [操作系统功能](os.md)
 * 
+[三种函数](func.md)
+* 
 [Soket](Socket.md)
 * 
 [print_format](in_print.md)
