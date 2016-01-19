@@ -12,8 +12,6 @@
 * 
 [Soket](Socket.md)
 * 
-[print_format](in_print.md)
-* 
 [re](re.md)
 * 
 [time](time.md)
