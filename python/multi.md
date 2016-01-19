@@ -6,7 +6,6 @@ Queue模块有三种队列及构造函数:
 Python Queue模块的FIFO队列先进先出。 class Queue.Queue(maxsize)
 LIFO类似于堆，即先进后出。 class Queue.LifoQueue(maxsize)
 还有一种是优先级队列级别越低越先出来。 class Queue.PriorityQueue(maxsize)
-
 此包中的常用方法(q = Queue.Queue()):
 q.qsize()       返回队列的大小
 q.empty()       如果队列为空，返回True,反之False
@@ -19,13 +18,11 @@ q.put_nowait(item)  相当q.put(item, False)
 q.task_done()   consumer在完成对该queue上元素的操作(先get()，用于join激活)，
 q.join()        阻塞到queue上的元素均被操作(实际上意味着等到队列为空)，再执行别的操作
         由于join()引起的阻塞，所有元素被操作(task_done)后重新“激活”(每一个put进去的元素都进行了task_done调用)
-    
-q.put(item,block[False],timeout[None])
+q.put(item,block[False],timeout[None]):
         block=True:若queue已满，调用该queue的线程阻塞直至出现一个空的单元
             同时若timeout是一个正整数：该阻塞时长后仍未有空，发出Full异常
         block=False:满了就会引起Full异常
-        
-q.get(item,block,timeout)
+q.get(item,block,timeout):
         block=True:若queue为空，调用该queue的线程阻塞直至出现一个可用单元。
         block=False:满了就会引起Empty异常
 ```
