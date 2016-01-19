@@ -2,7 +2,7 @@
 
 <br>
 * 
-[python2和python3不同](diff.md)
+[python2和python3不同](2&3diff.md)
 * 
 [内置函数及模块介绍](func&moduler.md)
 * 
