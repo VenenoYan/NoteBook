@@ -3,7 +3,11 @@
     修改密码：
         mysqladmin -u[user-name] -p[old-password] password [new-password]
     添加用户：
-        grant select,insert,update,delete on *.* to [username]@localhost identified by\"[p-word]\"
+        grant select,insert,update,delete on [DB].[T] to [username]@[host] identified by [p-word]
+        即：
+            新建用户：create user [username]@[host] identified by [password]
+            授权：grant [privileges] on [DBname].[Tname] to [username]@[host]
+        注：
     显示当前所有用户：
         select user from mysql.user;
     删除用户：
