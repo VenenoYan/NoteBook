@@ -28,9 +28,14 @@ int minum(const int *w)
 }
 HTNode *HTCreate(const int *w, const char *s)
 {
-    HTNode *head=NULL,*pre=NULL,*n=NULL;
+    HTNode *head=NULL,*left=NULL,*right=NULL;
     int index = 0;
-    index = minum(w);
-    
+    while(w[0])
+    {
+        index = minum(w);
+        left = new HTNode();
+        left->weight = w[index];
+        left->c = s[index];
+    }
 }
 ```
