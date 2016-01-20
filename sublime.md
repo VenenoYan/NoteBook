@@ -55,6 +55,7 @@ Ctrl+Shift+W        关闭所有打开文件
 Ctrl+X              删除当前行
 Ctrl + Shift + [    折叠
 Ctrl + Shift + ]    打开折叠
+Alt + Shift + 1     单屏
 Alt + Shift + 2     进行左右分屏    
 Alt + Shift + 8     进行上下分屏
 Alt + Shift + 5     进行上下左右分屏（即分为四屏）
