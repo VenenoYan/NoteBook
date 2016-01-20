@@ -30,9 +30,9 @@ void minum(HTNode *node,HTNode *head)
         temp = pre;
         pre = pre->parent;
     }
-    child->parent = node->parent;
     if(child==head)
         head = head->parent;
+    child->parent = node->parent;
     
 }
 HTNode *HTCreate(const int *w, const char *s)
