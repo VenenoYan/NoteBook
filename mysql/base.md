@@ -81,7 +81,7 @@ SQL语句分为三种：DML（Data Manipulation Language）与DDL(Data Definitio
         show databases character set gbk;
         create database [DBname];
         use [DBname];
-        drop [DBname];
+        drop database [DBname];
         rename database [olddbname] to [newdbname]
     表：
         show tables;
