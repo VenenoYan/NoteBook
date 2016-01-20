@@ -50,11 +50,11 @@ Ctrl + G            然后输入行号以跳转到指定行
 Ctrl + Shift + N    创建一个新sublime窗口
 Ctrl + N            创建一个新标签
 Ctrl + W            关闭当前标签
+Ctrl + Shift + T    恢复刚刚关闭的标签
 Ctrl+Shift+W        关闭所有打开文件
 Ctrl+X              删除当前行
 Ctrl + Shift + [    折叠
 Ctrl + Shift + ]    打开折叠
-Ctrl + Shift + T    恢复刚刚关闭的标签
 Alt + Shift + 2     进行左右分屏    
 Alt + Shift + 8     进行上下分屏
 Alt + Shift + 5     进行上下左右分屏（即分为四屏）
