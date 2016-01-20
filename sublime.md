@@ -142,7 +142,7 @@ preferences->settings-User 中设置
 
 ## 常用插件：
 ```C
-sublimetmpl:        常用模板
+sublimetmpl:      常用模板(http://www.fantxi.com/blog/archives/sublime-template-engine-sublimetmpl/)
     ctrl+alt+h html
     ctrl+alt+j javascript
     ctrl+alt+c css
