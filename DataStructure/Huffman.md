@@ -62,5 +62,6 @@ HTNode *HTCreate(const int *w, const char *s)
         m1->parent = newnode;
         m2->parent = newnode;
     }
+    return head;
 }
 ```
