@@ -30,7 +30,7 @@ void minum(HTNode *node,HTNode *head)
         temp = pre;
         pre = pre->parent;
     }
-    temp->parent = node->parent;
+    child->parent = node->parent;
     if(pre==head)
         head = head->parent;
     
