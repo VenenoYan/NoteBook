@@ -14,7 +14,8 @@ typedef struct HTNode
     char c;
     unsigned int weight;
     HTNode *parent,*lchild,*rchild;
-}
+    HTNode():parent(NULL),lchild(NULL),rchild(NULL){};
+}；
 HTNode *HTCreate(int *w, char *s)
 {
 
