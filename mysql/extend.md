@@ -1,13 +1,21 @@
 ##升级使用
 ```C++
     修改密码：
-        mysqladmin -u[user-name] -p[old-password] password [new-password]
+        1)终端：mysqladmin -u[user-name] -p[old-password] password [new-password]
+        2)mysql环境：set password for [username]@[host]=password('new password')  修该某一用户
+                set password=password('new password')       修该当前用户
     添加用户：
-        grant select,insert,update,delete on [DB].[T] to [username]@[host] identified by [p-word]
+        grant [select,insert,update,delete] on [DB].[T] to [username]@[host] identified by [p-word]
         即：
             新建用户：create user [username]@[host] identified by [password]
             授权：grant [privileges] on [DBname].[Tname] to [username]@[host]
         注：
+            username   用户名
+            host       指定用户从那个主机登陆
+            password   用户密码
+            privileges  允许该用户的操作如select、update等（all 代表所有操作都允许）
+            DBname/Tname  允许访问的数据库和表（*.*即所有都可以）
+            可以用通配符  
     显示当前所有用户：
         select user from mysql.user;
     删除用户：
