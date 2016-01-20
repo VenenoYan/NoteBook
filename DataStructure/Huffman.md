@@ -52,6 +52,7 @@ HTNode *HTCreate(const int *w, const char *s)
     {
         HTNode *m1 = new HTNode();
         HTNode *m2 = new HTNode();
+        HTNode *newnode = new HTNode();
         minum(m1,head);
         minum(m2,head);
     }
