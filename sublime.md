@@ -150,7 +150,7 @@ sublimetmpl:        常用模板
     ctrl+alt+r ruby
     ctrl+alt++shift+p python
     新增模板：
-        /home/user/.config/sublime-text-3/Packages/SublimeTmpl/templates中新建对应的模板:[name].tmpl
+        /home/[user]/.config/sublime-text-3/Packages/SublimeTmpl/templates中新建对应的模板:[name].tmpl
     自定义快捷键：preferences->key bindings-user
     {
         "keys": ["ctrl+alt+j"], "command": "sublime_tmpl",
