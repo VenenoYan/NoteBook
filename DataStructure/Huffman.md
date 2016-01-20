@@ -36,6 +36,7 @@ HTNode *HTCreate(const int *w, const char *s)
         left = new HTNode();
         left->weight = w[index];
         left->c = s[index];
+        left->
     }
 }
 ```
