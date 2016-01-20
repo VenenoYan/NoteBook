@@ -88,11 +88,11 @@ SQL语句分为三种：DML（Data Manipulation Language）与DDL(Data Definitio
         create table [Tname] (col_name col_type,...) ENGINE=InnoDB DEFAULT CHARSET=gbk;
         drop table [Tname];
         describe [Tname];
-        alter table [old-Tname] rename [new_Tname];
         select */col1,col2,... from [Tname] where coli=[str1] and colj=[str2] and col3 like "%1_";
         insert into [Tname](col1,col2,...) values('v1','v2',...);
         update [Tname] set coli=[str1] where colj=[str2];
         delete from [Tname] where coli=[str2];
+        alter table [old-Tname] rename [new_Tname];
         alter table [Tname] add column [col_name] [col_type] after [col_name];
         alter table [Tname] change [old_col] [new_col] [col_type];
         alter table [Tname] drop column [col_ame];
