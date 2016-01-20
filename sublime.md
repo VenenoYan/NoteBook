@@ -149,10 +149,12 @@ sublimetmpl:        常用模板
     ctrl+alt+p php
     ctrl+alt+r ruby
     ctrl+alt++shift+p python
+    新增模板：
+        /home/user/.config/sublime-text-3/Packages/SublimeTmpl/templates中新建对应的模板:[name].tmpl
     自定义快捷键：preferences->key bindings-user
     {
         "keys": ["ctrl+alt+j"], "command": "sublime_tmpl",
-        "args": {"type": "[js/pytho]"}, "context": [{"key": "sublime_tmpl.js"}]
+        "args": {"type": "[js/python...]"}, "context": [{"key": "sublime_tmpl.js"}]
     }
 GitGutter:          记录改动
 brackethighlight：  高亮匹配
