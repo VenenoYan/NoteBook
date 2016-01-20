@@ -48,3 +48,8 @@ int maxDepth(TNode *root)
     cout<<"width is "<<width<<"depth is "<<depth<<endl;
     return depth;
 }```
+###lesson
+```C
+用队列求高度和宽度。以层为单位压入
+记录每一层即可。
+```
