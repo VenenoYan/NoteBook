@@ -20,7 +20,7 @@ void minum(HTNode *node,HTNode *head)
 {
     HTNode *pre = head,*temp;
     node = head;
-    while(pre->parent)
+    while(pre)
     {
         if(node->weight>pre->weight)
         {
@@ -29,6 +29,10 @@ void minum(HTNode *node,HTNode *head)
         temp = pre;
         pre = pre->parent;
     }
+    temp->parent = node->parent;
+    if(pre==head)
+        head = head->parent;
+    
 }
 HTNode *HTCreate(const int *w, const char *s)
 {
