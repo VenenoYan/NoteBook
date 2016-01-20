@@ -19,7 +19,7 @@ typedef struct HTNode
 int minum(const int *w)
 {
     int index = 0, i = 0;
-    while(w[i])
+    while(w[i++])
     {
         if(w[index]>w[i])
             index = i;
