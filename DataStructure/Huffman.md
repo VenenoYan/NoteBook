@@ -18,7 +18,7 @@ typedef struct HTNode
 }；
 void minum(HTNode *node,HTNode *head)
 {
-    HTNode *pre = head,*temp,*child;
+    HTNode *pre = head,*temp=head,*child=head;
     node = head;
     while(pre)
     {
@@ -30,7 +30,7 @@ void minum(HTNode *node,HTNode *head)
         temp = pre;
         pre = pre->parent;
     }
-    if(child==head)
+    if(node==head)
         head = head->parent;
     else
         child->parent = node->parent;
