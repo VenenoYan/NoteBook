@@ -32,7 +32,8 @@ void minum(HTNode *node,HTNode *head)
     }
     if(child==head)
         head = head->parent;
-    child->parent = node->parent;
+    else
+        child->parent = node->parent;
     
 }
 HTNode *HTCreate(const int *w, const char *s)
