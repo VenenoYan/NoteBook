@@ -25,7 +25,7 @@ Tab                 向后缩进
 Shift + Tab         向前缩进
 Ctrl + Enter        在当前行下面新增一行然后跳至该行；
 Ctrl + Shift + Enter 在当前行上面增加一行并跳至该行
-Ctrl + ←/→          进行逐词移动
+Ctrl + ←/→          进行逐词移动鼠标
 Ctrl + Shift + ←/→  进行逐词选择。
 Ctrl + ↑/↓          移动当前显示区域
 Ctrl + Shift + ↑/↓  移动当前行
