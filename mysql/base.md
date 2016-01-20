@@ -10,7 +10,7 @@ SQL语句分为三种：DML（Data Manipulation Language）与DDL(Data Definitio
     2、DDL
         create database、alter database、create table、alter table、alter table、drop table
     3、DCL
-       GRANT，REVOKE，COMMIT，ROLLBACK
+        GRANT，REVOKE，COMMIT，ROLLBACK
 算术操作符：
     +、-、/、*、%、|、^、&、<<、>>
 比较操作符：
