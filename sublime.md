@@ -152,7 +152,7 @@ sublimetmpl:        常用模板
     自定义快捷键：preferences->key bindings-user
     {
         "keys": ["ctrl+alt+j"], "command": "sublime_tmpl",
-        "args": {"type": "[js/python]"}, "context": [{"key": "sublime_tmpl.js"}]
+        "args": {"type": "[js/pytho]"}, "context": [{"key": "sublime_tmpl.js"}]
     }
 GitGutter:          记录改动
 brackethighlight：  高亮匹配
