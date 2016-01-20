@@ -115,7 +115,7 @@ SQL语句分为三种：DML（Data Manipulation Language）与DDL(Data Definitio
     		age tinyint unsigned default '0' not null,
     		tel char(13) null default "-"
     	)ENGINE=InnoDB DEFAULT CHARSET=gbk;
-    查看：
+    where：
         select t.name from students as t where t.sex='男' and t.age>18 and t.tel like "%687*";
     like用法：
         模式            注释
