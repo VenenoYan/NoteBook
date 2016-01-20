@@ -149,6 +149,11 @@ sublimetmpl:        常用模板
     ctrl+alt+p php
     ctrl+alt+r ruby
     ctrl+alt++shift+p python
+    自定义快捷键：preferences->key bindings-user
+    {
+        "keys": ["ctrl+alt+j"], "command": "sublime_tmpl",
+        "args": {"type": "js"}, "context": [{"key": "sublime_tmpl.js"}]
+    }
 GitGutter:          记录改动
 brackethighlight：  高亮匹配
 AutoPEP8：          格式化Python代码。
