@@ -18,13 +18,14 @@ typedef struct HTNode
 }；
 void minum(HTNode *node,HTNode *head)
 {
-    HTNode *pre = head,*temp;
+    HTNode *pre = head,*temp,*child;
     node = head;
     while(pre)
     {
         if(node->weight>pre->weight)
         {
             node = weight;
+            child = temp;
         }
         temp = pre;
         pre = pre->parent;
