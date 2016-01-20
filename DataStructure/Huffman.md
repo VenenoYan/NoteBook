@@ -25,9 +25,11 @@ void minum(HTNode *node,HTNode *head)
         if(node->weight>pre->weight)
         {
             node = weight;
+            temp = pre;
+            pre = pre->parent;
         }
-        temp = pre;
-        pre = pre->parent;
+        else
+            pre = pre->parent;
     }
     temp->parent = node->parent;
     if(pre==head)
