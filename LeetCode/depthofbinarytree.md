@@ -1,6 +1,6 @@
 
 ## 104. Maximum Depth of Binary Tree
-Given a binary tree, find its maximum depth.
+Given a binary tree, find its maximum depth.求二叉树的
 
 The maximum depth is the number of nodes along the longest path from the root node down to the farthest leaf node.
 ###solution
@@ -52,4 +52,6 @@ int maxDepth(TNode *root)
 ```C
 用队列求高度和宽度。以层为单位压入
 记录每一层即可。
+改善：
+    当前
 ```
