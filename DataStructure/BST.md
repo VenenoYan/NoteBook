@@ -3,6 +3,41 @@
 左孩子节点值比父节点小，而右孩子值比父大；每一个子节点都是一颗树。
 查找算法：比当前小就进入左字树查找，大就进入右字树查找。
 插入算法：比当前小就进入左字树插入，大就进入右字树插入。
+typedef struct TreeNode
+{
+    int val;
+    TreeNode *left,*right;
+    TreeNode(){};
+    TreeNode(int x):val(x),left(NULL),right(NULL){}
+}TNode;
+void insert(TNode *head,TNode *node)
+{
+    if(node->val>head->val)
+    {
+        if(head->right==NULL)
+            head->right=node;
+        else
+            insert(head->right,node);
+    }
+    else
+    {
+        if(head->left==NULL)
+            head->left=node;
+        else
+            insert(head->left,node);
+    }
+}
+TreeNode *create(int n)
+{
+    TNode *HT = new TreeNode(50);
+    for(int i=0;i<n;++i)
+    {
+        TNode *NewNode = new TreeNode();
+        NewNode->val = rand()%100;
+        insert(HT,NewNode);
+    }
+    return HT;
+}
 ```
 删除时操作：
 ```
