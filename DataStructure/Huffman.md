@@ -55,6 +55,12 @@ HTNode *HTCreate(const int *w, const char *s)
         HTNode *newnode = new HTNode();
         minum(m1,head);
         minum(m2,head);
+        newnode->weight=m1->weight+m2->weight;
+        newnode->lchild=m1;
+        newnode->rchild=m2;
+        m1->parent = newnode;
+        m2->parent = newnode;
+        newnode->parent = head;
     }
 }
 ```
