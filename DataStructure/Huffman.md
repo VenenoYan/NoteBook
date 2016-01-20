@@ -18,6 +18,8 @@ typedef struct HTNode
 }；
 HTNode *HTCreate(const int *w, const char *s)
 {
+    int index = 0;
+    index = minum(w);
     
 }
 ```
