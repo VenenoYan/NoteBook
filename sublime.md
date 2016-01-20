@@ -49,7 +49,7 @@ Ctrl + R            列出当前文件中的符号
 Ctrl + G            然后输入行号以跳转到指定行
 Ctrl + Shift + N    创建一个新sublime窗口
 Ctrl + N            创建一个新标签
-Ctrl + Tab          标签
+Ctrl + Tab          标签切换
 Ctrl + W            关闭当前标签
 Ctrl + Shift + T    恢复刚刚关闭的标签
 Ctrl+Shift+W        关闭所有打开文件
@@ -145,14 +145,11 @@ preferences->settings-User 中设置
 sublimetepl:        html,css,js 模板
 GitGutter:          记录改动
 brackethighlight：  高亮匹配
-converttoutf8:      中文乱码
-HTMLBeautify：      格式化HTML。
 AutoPEP8：          格式化Python代码。
+PEP8 Autoformat     python pep8自动格式整理
 Alignment：         进行智能对齐。
 HTML/JS/CSS prettify  格式化HTML/JS/CSS
-PEP8 Autoformat     python pep8自动格式整理
 ColorHighlighter    css颜色高亮
-Sublime-HTMLPrettify  一个html js 和css代码美化的插件
 Autoprefixer        可以给css自动加前缀功能
 jQuery              支持jquery的只能语法提示
 CSS3                CSS3的自动补全
