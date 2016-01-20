@@ -16,7 +16,7 @@ typedef struct HTNode
     HTNode *parent,*lchild,*rchild;
     HTNode():c(' '),weight(0),parent(NULL),lchild(NULL),rchild(NULL){};
 }；
-HTNode *HTCreate(int *w, char *s)
+HTNode *HTCreate(const int &w, const char &s)
 {
 
 }
