@@ -142,7 +142,7 @@ preferences->settings-User 中设置
 
 ## 常用插件：
 ```C
-sublimetepl:        html,css,js 模板
+sublimetmpl:        html,css,js 模板(Ctrl+Alt+h/j/c)
 GitGutter:          记录改动
 brackethighlight：  高亮匹配
 AutoPEP8：          格式化Python代码。
@@ -160,5 +160,4 @@ AllAutocomplete     自动完成插件(全部打开的文件中，自动完成)
 ColorPicker         颜色选择器(Ctrl / Cmd + Shift + C)
 CTags                   
 git 
-
 ```
