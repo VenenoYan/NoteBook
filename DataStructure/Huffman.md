@@ -20,7 +20,7 @@ void minum(HTNode *node,HTNode *head)
 {
     HTNode *pre = head,*temp=head,*child=head;
     node = head;
-    while(pre)
+    while(pre->parent)
     {
         if(node->weight>pre->weight)
         {
