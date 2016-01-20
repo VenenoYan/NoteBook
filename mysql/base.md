@@ -102,7 +102,7 @@ SQL语句分为三种：DML（Data Manipulation Language）与DDL(Data Definitio
         selcect col1... from [Tname] [condition] into outfile 'path/filename';
         load data infile 'path/filename' into table [Tname];
     备份：  
-        mysqldump -r[username] -p[password] [DBname] [Tname] > 'backup_name'
+        终端中：mysqldump -r[username] -p[password] [DBname] [Tname] > 'backup_name'
 ```
 实例;
 ```C
