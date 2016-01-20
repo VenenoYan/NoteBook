@@ -114,7 +114,7 @@ SQL语句分为三种：DML（Data Manipulation Language）与DDL(Data Definitio
         模式            注释
           *             多个字符匹配    
           %             同上，匹配多个字符
-          [*]           即匹配*
+          [*/...]       即匹配*/...
           ?             单字符匹配
           #             单个数字匹配
           -[a-z]        范围内任意一个
