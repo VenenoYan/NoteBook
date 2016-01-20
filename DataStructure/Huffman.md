@@ -16,6 +16,16 @@ typedef struct HTNode
     HTNode *parent,*lchild,*rchild;
     HTNode():c(' '),weight(0),parent(NULL),lchild(NULL),rchild(NULL){};
 }；
+int minum(const int *w)
+{
+    int index = 0, i = 0;
+    while(w[i])
+    {
+        if(w[index]>w[i])
+            index = i;
+    }
+    return index;
+}
 HTNode *HTCreate(const int *w, const char *s)
 {
     HTNode *head=NULL,*pre=NULL,*n=NULL;
