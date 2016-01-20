@@ -142,7 +142,7 @@ preferences->settings-User 中设置
 
 ## 常用插件：
 ```C
-    sublimetmpl:        模板
+sublimetmpl:        常用模板
     ctrl+alt+h html
     ctrl+alt+j javascript
     ctrl+alt+c css
