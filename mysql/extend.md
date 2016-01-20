@@ -48,6 +48,15 @@
         select max(field1) as maxvalue from table1 
     最小：
         select min(field1) as minvalue from table1 
+    限制数量：
+        select * from [Tname] limit 0,[num]      前0~num个
+        select * from [Tname] order by [col] asc limit [num]  后num个
+        select * from [Tname] order by [col] asc limit [pos],[num]  指定位置
+    分组显示：
+        单列：select id,name,sum(price) as title date from [Tname] group by id order by title desc
+        多列：select id,name,sum(price*num) as title from [Tname] group by title order by id asc
+        多表：select a.name,avg(a.price),b.name,avg(b.price) from [Tname1] as a,[Tname2] as b 
+            where a.id=b.id group by t.type
 ```
 一些好的实例：
 ```C++
