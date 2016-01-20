@@ -48,7 +48,7 @@ HTNode *HTCreate(const int *w, const char *s)
         pres->parent = head;
         head = pres;
     }
-    while(head->parent)
+    while(head)
     {
         HTNode *m1 = new HTNode();
         HTNode *m2 = new HTNode();
