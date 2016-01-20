@@ -23,7 +23,7 @@
     撤销授权：
         revoke [privileges] on [DBname].[Tname] from [username]@[host];
     删除用户：
-        drop user [username];
+        drop user [username]@[host];
     主键
         添加主键： Alter table [Tname] add primary key(col) 
         删除主键： Alter table [Tname] drop primary key(col) 
