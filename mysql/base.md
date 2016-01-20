@@ -12,9 +12,9 @@ SQL语句分为三种：DML（Data Manipulation Language）与DDL(Data Definitio
     3、DCL
         GRANT，REVOKE，COMMIT，ROLLBACK
 算术操作符：
-    +、-、/、*、%、|、^、&、<<、>>
+    +  -  /  *  %  |  ^  &  <<  >>
 比较操作符：
-    =、>、<、<=、>=、！= 
+    =  >  <   <=  >=  ！= 
 逻辑操作符：
     not、！     or、||      XOR         and、&&
 数据类型：
@@ -74,7 +74,7 @@ SQL语句分为三种：DML（Data Manipulation Language）与DDL(Data Definitio
             CHARACTER SET [name]	指定一个字符集
 基本操作：
     登录：
-        mysql -u[user-name] -p[password]
+        mysql [-h[host_addr]] -u[user-name] -p[password]
     修改密码：
         mysqladmin -u[user-name] -p[old-password] password [new-password]
     数据库：
