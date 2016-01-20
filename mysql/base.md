@@ -98,6 +98,9 @@ SQL语句分为三种：DML（Data Manipulation Language）与DDL(Data Definitio
         alter table [Tname] drop column [col_ame];
         delete from [Tname]         清空表内容，相当于一行一行删
         truncate table [Tname]      同上，但是无记录
+    导入导出：
+        selcect col1... from [Tname] [condition] into outfile 'path/filename';
+        load data infile 'path/filename' into table [Tname];
 ```
 实例;
 ```C
