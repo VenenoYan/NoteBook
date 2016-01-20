@@ -85,7 +85,7 @@ SQL语句分为三种：DML（Data Manipulation Language）与DDL(Data Definitio
         rename database [olddbname] to [newdbname]
     表：
         show tables;
-        create table [Tname] (col_name col_type,...) ENGINE=InnoDB DEFAULT CHARSET=gbk;
+        create table [Tname] (col_name col_type,...) ENGINE=InnoDB DEFAULT CHARSET=utf-8;
         drop table [Tname];
         describe/desc  [Tname];
         select */col1,col2,... from [Tname] where coli=[str1] and colj=[str2] and col3 like "%1_";
@@ -105,7 +105,7 @@ SQL语句分为三种：DML（Data Manipulation Language）与DDL(Data Definitio
     		id int unsigned not null auto_increment primary key,
     		name char(8) not null,
     		sex char(4) not null,
-    		age tinyint unsigned not null,
+    		age tinyint unsigned default '0' not null,
     		tel char(13) null default "-"
     	)ENGINE=InnoDB DEFAULT CHARSET=gbk;
     查看：
