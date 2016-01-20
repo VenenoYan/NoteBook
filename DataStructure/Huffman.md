@@ -16,27 +16,38 @@ typedef struct HTNode
     HTNode *parent,*lchild,*rchild;
     HTNode():c(' '),weight(0),parent(NULL),lchild(NULL),rchild(NULL){};
 }；
-int minum(const int *w)
+void minum(HTNode *node,HTNode *head)
 {
-    int index = 0, i = 0;
-    while(w[++i])
+    HTNode *pre = head,*temp;
+    node = head;
+    while(pre->parent)
     {
-        if(w[index]>w[i])
-            index = i;
+        if(node->weight>pre->weight)
+        {
+            node = weight;
+        }
+        temp = pre;
+        pre = pre->parent;
     }
-    return index;
 }
 HTNode *HTCreate(const int *w, const char *s)
 {
-    HTNode *head=NULL,*left=NULL,*right=NULL;
-    int index = 0;
-    while(w[0])
+    int index=0;
+    HTNode *head = new HTNode();
+    while(w[index++])
     {
-        index = minum(w);
-        left = new HTNode();
-        left->weight = w[index];
-        left->c = s[index];
-        left->
+        HTNode *pres = new HTNode();
+        pres->c=s[index];
+        pres->weight=w[index];
+        pres->parent = head;
+        head = pres;
+    }
+    while(head->parent)
+    {
+        HTNode *m1 = new HTNode();
+        HTNode *m2 = new HTNode();
+        minum(m1,head);
+        minum(m2,head);
     }
 }
 ```
