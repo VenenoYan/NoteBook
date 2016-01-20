@@ -142,7 +142,13 @@ preferences->settings-User 中设置
 
 ## 常用插件：
 ```C
-sublimetmpl:        html,css,js 模板(Ctrl+Alt+h/j/c)
+sublimetmpl:        html,css,js 模板
+    ctrl+alt+h html
+    ctrl+alt+j javascript
+    ctrl+alt+c css
+    ctrl+alt+p php
+    ctrl+alt+r ruby
+    ctrl+alt++shift+p python
 GitGutter:          记录改动
 brackethighlight：  高亮匹配
 AutoPEP8：          格式化Python代码。
