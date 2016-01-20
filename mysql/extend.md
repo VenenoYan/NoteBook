@@ -18,7 +18,8 @@
             可以用通配符  
     显示当前所有用户：
         select user from mysql.user;
-    显示
+    显示授权：
+        show grants for [username]@[host];
     撤销授权：
         revoke [privileges] on [DBname].[Tname] from [username]@[host];
     删除用户：
