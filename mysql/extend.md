@@ -11,13 +11,16 @@
             授权：grant [privileges] on [DBname].[Tname] to [username]@[host]
         注：
             username   用户名
-            host       指定用户从那个主机登陆
+            host       指定用户从那个主机登陆(本机：localhost)
             password   用户密码
             privileges  允许该用户的操作如select、update等（all 代表所有操作都允许）
             DBname/Tname  允许访问的数据库和表（*.*即所有都可以）
             可以用通配符  
     显示当前所有用户：
         select user from mysql.user;
+    显示
+    撤销授权：
+        revoke [privileges] on [DBname].[Tname] from [username]@[host];
     删除用户：
         drop user [username];
     主键
