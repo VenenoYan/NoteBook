@@ -32,4 +32,4 @@
 * 
 [经典小测试](examine.md)
 * 
-[多线程(queue)](multi.md)
+[多线程(queue)](multi_process.md)
