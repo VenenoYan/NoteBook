@@ -2,7 +2,7 @@
 ## ZigZag Conversion
 
  The string "PAYPALISHIRING" is written in a zigzag pattern on a given number of rows like this: (you may want to display this pattern in a fixed font for better legibility)<br>
- 竖着的Z字编码
+ 竖着的Z字编码：输出横着
 
 ```C
 P   A   H   N
