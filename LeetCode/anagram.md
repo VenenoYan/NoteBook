@@ -2,7 +2,8 @@
 ## Valid Anagram
 
 Given two strings s and t, write a function to determine if t is an anagram of s.
-
+<br>
+比较两个字符串是否由相同的字符以相同的数量组成<br>
 For example,
 s = "anagram", t = "nagaram", return true.
 s = "rat", t = "car", return false. 
