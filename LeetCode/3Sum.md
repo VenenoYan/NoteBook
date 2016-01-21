@@ -3,7 +3,8 @@
 
 
 Given an array S of n integers, are there elements a, b, c in S such that a + b + c = 0? Find all unique triplets in the array which gives the sum of zero.
-
+<br>
+给定一个数组：找是否存在三个元素相加为0。有按序输出
 
 #### Note:
 
