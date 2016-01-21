@@ -77,4 +77,4 @@ Special cases;
 * 
 target is immutable
 * 
-sort firstly and quick-sort
+sort firstly with quick-sort
