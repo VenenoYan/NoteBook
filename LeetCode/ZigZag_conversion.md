@@ -1,7 +1,7 @@
 
 ## ZigZag Conversion
 
- The string "PAYPALISHIRING" is written in a zigzag pattern on a given number of rows like this: (you may want to display this pattern in a fixed font for better legibility)
+ The string "PAYPALISHIRING" is written in a zigzag pattern on a given number of rows like this: (you may want to display this pattern in a fixed font for better legibility)<br>
 
 ```C
 P   A   H   N
@@ -46,11 +46,12 @@ string convert(string s, int numRows){
 
 * 
 convert("h",1);
+* 
 convert("JKLHJUI",4);
 
 ## Lesson:
 
-*
+* 
 return s if numRows==1
 * 
 span
