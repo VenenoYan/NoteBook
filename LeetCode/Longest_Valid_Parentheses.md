@@ -1,5 +1,6 @@
 ### Longest Valid Parentheses
-Given a string containing just the characters '(' and ')', find the length of the longest valid (well-formed) parentheses substring.
+Given a string containing just the characters '(' and ')', find the length of the longest valid (well-formed) parentheses substring.<br>
+括号匹配：输出最长匹配
 ```C++
 For "(()", the longest valid parentheses substring is "()", which has length = 2.
 
