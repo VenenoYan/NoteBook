@@ -49,7 +49,6 @@ HTNode *HTCreate(const int *w, const char *s)
         pres->weight=w[index];
         pres->parent = head;
         head = pres;
-        ++index;
     }
     while(head->parent)
     {
