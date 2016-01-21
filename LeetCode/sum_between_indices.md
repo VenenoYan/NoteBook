@@ -2,7 +2,7 @@
 ### Range Sum By Indices
 Given an integer array nums, find the sum of the elements between indices i and j (i ≤ j), inclusive.
 <br>
-求给定区域内元素之和<br>
+    求给定区域内元素之和<br>
 Example:
 
 ```C++
