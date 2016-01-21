@@ -47,7 +47,17 @@ int maxDepth(TNode *root)
     }
     cout<<"width is "<<width<<"depth is "<<depth<<endl;
     return depth;
-}```
+}
+还有一个笨方法，而且容易超出给定的时间，可以参考：
+int maxDepth(TreeNode *root)
+{
+    if(!root)
+        return 0;
+    else
+        return maxDepth(root->left)+1>maxDepth(root->right)+1?maxDepth(root->left)+1:
+                                                            maxDepth(root->right)+1;
+}
+```
 ###lesson
 ```C
 用队列求高度和宽度。以层为单位压入
