@@ -4,6 +4,7 @@
 采用的是分时复用技术，即不存在真正的多线程，cpu做的事是快速地切换线程，以达到类似同步运行的目的，因为高密集运算方面多线程是没有用的，但是对于存在延迟的情况（延迟IO，网络等）多线程可以大大减少等待时间，避免不必要的浪费。
 
 对于资源，加锁是个重要的环节。因为python原生的list,dict等，都是not thread safe的。而Queue，是线程安全的，因此在满足使用条件下，建议使用队列。
+
 ```Python 
 Queue模块有三种队列及构造函数:
 Python Queue模块的FIFO队列先进先出。 class Queue.Queue(maxsize)
@@ -16,7 +17,7 @@ q.full()        如果队列满了，返回True,反之False
 q.full          与 maxsize 大小对应
 q.get([block[, timeout]]) 获取队列，timeout等待时间
 q.get_nowait()  相当q.get(False)
-非阻塞 q.put(item)  写入队列，timeout等待时间
+非阻塞 q.put(item，timeout)  写入队列，timeout等待时间
 q.put_nowait(item)  相当q.put(item, False)
 q.task_done()   consumer在完成对该queue上元素的操作(先get()，用于join激活)，
 q.join()        阻塞到queue上的元素均被操作(实际上意味着等到队列为空)，再执行别的操作
