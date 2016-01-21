@@ -40,6 +40,8 @@ HTNode *HTCreate(const int *w, const char *s)
 {
     int index=0;
     HTNode *head = new HTNode();
+    head->c=s[index];
+    head->weight=w[index];
     while(w[index])
     {
         HTNode *pres = new HTNode();
