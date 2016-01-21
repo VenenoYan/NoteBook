@@ -68,7 +68,7 @@ HTNode *HTCreate(const int *w, const char *s)
         head=newnode;
         m1->parent = newnode;
         m2->parent = newnode;
-    }
+    }                                   //选两个最小的，建一个
     return head;
 }
 ```
