@@ -34,6 +34,7 @@ multiprocessing.Queue：一个用于多进程的队列<br>
 范例0:
 ```python
 import threading,Queue
+
 def consumer()：
     while 1:
         item = q.get()
