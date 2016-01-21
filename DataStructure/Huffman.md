@@ -9,18 +9,17 @@
 　　　整个Huffman树不存在度为1的节点（0/2）<br>
 **代码实现：**
 ```C++
-typedef struct HTNode
+struct HTNode
 {
     char c;
     unsigned int weight;
     HTNode *parent,*lchild,*rchild;
     HTNode():c(' '),weight(0),parent(NULL),lchild(NULL),rchild(NULL){};
-}；
-void minum(HTNode *node,HTNode *head)
+};
+HTNode *minum(HTNode **head)
 {
-    HTNode *pre = head,*temp=head,*child=head;
-    node = head;
-    while(pre->parent)
+    HTNode *pre = *head,*temp=*head,*child=*head,*node = *head;
+    while(pre)
     {
         if(node->weight>pre->weight)
         {
@@ -30,11 +29,11 @@ void minum(HTNode *node,HTNode *head)
         temp = pre;
         pre = pre->parent;
     }
-    if(node==head)
-        head = head->parent;
+    if(node==*head)
+        *head = (*head)->parent;
     else
         child->parent = node->parent;
-    
+    return node;    
 }
 HTNode *HTCreate(const int *w, const char *s)
 {
@@ -42,25 +41,31 @@ HTNode *HTCreate(const int *w, const char *s)
     HTNode *head = new HTNode();
     head->c=s[index];
     head->weight=w[index];
+    head->lchild=NULL;
+    head->rchild=NULL;
     while(w[++index])
     {
         HTNode *pres = new HTNode();
         pres->c=s[index];
         pres->weight=w[index];
+        pres->lchild=NULL;
+        pres->rchild=NULL;
         pres->parent = head;
         head = pres;
-    }
+    }                                       //构造节点
+    HTNode *m1 = new HTNode();
+    HTNode *m2 = new HTNode();
     while(head->parent)
     {
-        HTNode *m1 = new HTNode();
-        HTNode *m2 = new HTNode();
         HTNode *newnode = new HTNode();
-        minum(m1,head);
-        minum(m2,head);
+        m1=minum(&head);
+        m2=minum(&head);
         newnode->weight=m1->weight+m2->weight;
+        newnode->c='-';
         newnode->lchild=m1;
         newnode->rchild=m2;
         newnode->parent = head;
+        head=newnode;
         m1->parent = newnode;
         m2->parent = newnode;
     }
