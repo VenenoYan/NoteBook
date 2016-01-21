@@ -1,7 +1,8 @@
 
 ## Move Zeroes
 
- Given an array nums, write a function to move all 0's to the end of it while maintaining the relative order of the non-zero elements.
+ Given an array nums, write a function to move all 0's to the end of it while maintaining the relative order of the non-zero elements.<br>
+把0移动到最后
 
 For example, given nums = [0, 1, 0, 3, 12], after calling your function, nums should be [1, 3, 12, 0, 0]. 
 ```C++
@@ -24,5 +25,5 @@ public:
 
 **Lesson**
 
-1、vector的erase()方法，删除后，迭代器指向删除的下一个元素
+1、vector的erase()方法，删除后，迭代器指向删除的下一个元素<br>
 2、push_back()方法，添加后，end()加1
