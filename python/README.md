@@ -9,6 +9,8 @@
 * 
 [操作系统功能](os.md)
 * 
+[读写配置文件](config.md)
+* 
 [三种函数](func.md)
 * 
 [网络编程](Socket.md)
