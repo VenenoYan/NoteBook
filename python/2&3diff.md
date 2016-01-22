@@ -46,7 +46,8 @@ def val_in_xrange(x, val):
 1. 
 异常
 ```python
-捕获异常的语法由 except exc, var 改为 except exc as var。
+捕获异常的语法由 except Exception,var 改为 except Exception as var。
+抛出常的语法由 raise Exception,args 改为 raise Exception(args)
 在2.x时代，所有类型的对象都是可以被直接抛出的，在3.x时代，只有继承自BaseException的对象才可以被抛出。
 首先是引起异常的方式：
         python2.X:  raise IOError, "file error"
@@ -70,7 +71,7 @@ def val_in_xrange(x, val):
                     print e     #错误
 ```
 1. 
-比较操作  != ，而且对象检查更严格---
+比较操作  != ，而且对象检查更严格---异常
 ```python
 Python 2.x中不等于有两种写法 != 和 <>
 Python 3.x中去掉了<>, 只有!=一种写法
