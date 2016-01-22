@@ -15,9 +15,9 @@ python2.7或之前，print只是语句而不是函数。  print "hello"
 同exec()
 格式：
     以前都是  % 来控制，现在用format()
-    "I love {0},{1},{2}".format("eagg","meat","ha")
-    "I love {a},{b},{c}".format(a="eagg",b="meat",c="ha")
-    "I love {0},{1},{c}".format("eagg","meat",c="ha")
+    "I love {0},{1},{2}".format("eagg","meat","ha")             #普通：以0开始
+    "I love {a},{b},{c}".format(a="eagg",b="meat",c="ha")       #字典
+    "I love {0},{1},{c}".format("eagg","meat",c="ha")           #普通和字典
 ```
 1. 
 除法
