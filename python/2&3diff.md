@@ -1,6 +1,6 @@
 ## 主要是python2.X和python3.X的不同
 1. 
-可能是最好的消息：```默认编码是utf-8,我们就不需要要在行首加一行：#coding:utf-8```
+可能是最好的消息：```默认编码是utf-8,我们就不需要在行首加一行：#coding:utf-8```
 
 1. 
 输入：
@@ -13,6 +13,10 @@
 python2.7或之前，print只是语句而不是函数。  print "hello"
 但python3之后，必须函数形式才行。    print("hello")。
 同exec()
+格式：
+    以前都是  % 来控制，现在用format()
+    "I love {0},{1},{2}".format("eagg","meat","ha")
+    "I love {a},{b},{c}".format(a="eagg",b="meat",c="ha")
 ```
 1. 
 除法
