@@ -27,7 +27,7 @@
 * 
 [输入输出](in_print.md)
 * 
-[string](string.md)
+[字符串](string.md)
 * 
 [爬虫](web_spider.md)
 * 
