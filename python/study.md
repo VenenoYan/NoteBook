@@ -44,7 +44,7 @@
 <li><a href="http://www.pythontutor.com/visualize.html">Visualize your Python code being executed</a></li>
 </ul>
 
-<h2><a id="user-content-resources-for-women" class="anchor" href="#resources-for-women" aria-hidden="true"><span class="octicon octicon-link"></span></a>Resources for Women</h2>
+<h2>Resources for Women</h2>
 
 <ul>
 <li><a href="http://www.pyladies.com/">Pyladies</a></li>
@@ -55,7 +55,7 @@
 <li><a href="https://www.youtube.com/user/tarahwheelervanvlack">Tarah Wheeler Van Vlack Videos</a></li>
 </ul>
 
-<h2><a id="user-content-why-python" class="anchor" href="#why-python" aria-hidden="true"><span class="octicon octicon-link"></span></a>Why Python?</h2>
+<h2>Why Python?</h2>
 
 <ul>
 <li><a href="http://www.python.org/about/success/esr/">Python Success Stories</a></li>
@@ -68,7 +68,7 @@
 <li><a href="http://blog.mikiobraun.de/2013/11/how-python-became-the-language-of-choice-for-data-science.html">How Python became the language of choice for data science</a></li>
 </ul>
 
-<h2><a id="user-content-style-guide-and-idioms" class="anchor" href="#style-guide-and-idioms" aria-hidden="true"><span class="octicon octicon-link"></span></a>Style Guide and Idioms</h2>
+<h2>Style Guide and Idioms</h2>
 
 <ul>
 <li><a href="http://www.python.org/dev/peps/pep-0008/">PEP 8 - Style Guide for Python Code</a></li>
@@ -79,7 +79,7 @@
 <li><a href="http://www.python.org/dev/peps/pep-0257/">Docstring Conventions</a></li>
 </ul>
 
-<h2><a id="user-content-dictionary" class="anchor" href="#dictionary" aria-hidden="true"><span class="octicon octicon-link"></span></a>Dictionary</h2>
+<h2>Dictionary</h2>
 
 <ul>
 <li><a href="http://blog.amir.rachum.com/post/54458435089/python-hash-id-and-dictionary-order">Python hash, id and dictionary order</a></li>
@@ -87,7 +87,7 @@
 <li><a href="http://blog.amir.rachum.com/post/39501813266/python-the-dictionary-playbook">Python: The Dictionary Playbook</a></li>
 </ul>
 
-<h2><a id="user-content-decorators" class="anchor" href="#decorators" aria-hidden="true"><span class="octicon octicon-link"></span></a>Decorators</h2>
+<h2>Decorators</h2>
 
 <ul>
 <li><a href="http://simeonfranklin.com/blog/2012/jul/1/python-decorators-in-12-steps/">Understanding Python Decorators in 12 easy steps</a></li>
@@ -107,7 +107,7 @@
 <li><a href="https://www.codementor.io/python/tutorial/advanced-use-python-decorators-class-function">Advanced Uses of Python Decorators</a></li>
 </ul>
 
-<h2><a id="user-content-generators" class="anchor" href="#generators" aria-hidden="true"><span class="octicon octicon-link"></span></a>Generators</h2>
+<h2>Generators</h2>
 
 <ul>
 <li><a href="http://www.jeffknupp.com/blog/2013/04/07/improve-your-python-yield-and-generators-explained/">Improve Your Python: 'yield' and Generators Explained</a></li>
@@ -116,39 +116,39 @@
 <li><a href="http://pyvideo.org/video/3170/generators-will-free-your-mind-0">Generators Will Free Your Mind</a></li>
 </ul>
 
-<h2><a id="user-content-coroutines" class="anchor" href="#coroutines" aria-hidden="true"><span class="octicon octicon-link"></span></a>Coroutines</h2>
+<h2>Coroutines</h2>
 
 <ul>
 <li><a href="http://www.dabeaz.com/coroutines/">A Curious Course on Coroutines and Concurrency</a></li>
 </ul>
 
-<h2><a id="user-content-iterators" class="anchor" href="#iterators" aria-hidden="true"><span class="octicon octicon-link"></span></a>Iterators</h2>
+<h2>Iterators</h2>
 
 <ul>
 <li><a href="http://www.shutupandship.com/2012/01/understanding-python-iterables-and.html">Understanding Iterators and Iterables</a></li>
 <li><a href="https://www.codementor.io/python/tutorial/python-generators-and-iterators">For Loops and Iterators</a></li>
 </ul>
 
-<h2><a id="user-content-import" class="anchor" href="#import" aria-hidden="true"><span class="octicon octicon-link"></span></a>Import</h2>
+<h2>Import</h2>
 
 <ul>
 <li><a href="https://www.codementor.io/python/tutorial/python-path-virtualenv-import-for-beginners">A Python Import Tutorial for Beginners</a></li>
 </ul>
 
-<h2><a id="user-content-yield" class="anchor" href="#yield" aria-hidden="true"><span class="octicon octicon-link"></span></a>Yield</h2>
+<h2></a>Yield</h2>
 
 <ul>
 <li><a href="http://stackoverflow.com/questions/231767/the-python-yield-keyword-explained">Python yield keyword explained</a></li>
 </ul>
 
-<h2><a id="user-content-context-managers" class="anchor" href="#context-managers" aria-hidden="true"><span class="octicon octicon-link"></span></a>Context Managers</h2>
+<h2>Context Managers</h2>
 
 <ul>
 <li><a href="http://effbot.org/zone/python-with-statement.htm">Understanding Python's with statement</a></li>
 <li><a href="http://preshing.com/20110920/the-python-with-statement-by-example/">The Python "with" Statement by Example</a></li>
 </ul>
 
-<h2><a id="user-content-unicode" class="anchor" href="#unicode" aria-hidden="true"><span class="octicon octicon-link"></span></a>Unicode</h2>
+<h2>Unicode</h2>
 
 <ul>
 <li><a href="http://www.reddit.com/r/Python/comments/1g62eh/explain_it_like_im_five_python_and_unicode/">Explain Unicode like I'm five years old</a></li>
@@ -159,13 +159,13 @@
 <li><a href="http://blogs.skicelab.com/maurizio/unicode-common-pitfalls.html">Unicode in Python: Common Pitfalls</a></li>
 </ul>
 
-<h2><a id="user-content-networking" class="anchor" href="#networking" aria-hidden="true"><span class="octicon octicon-link"></span></a>Networking</h2>
+<h2>Networking</h2>
 
 <ul>
 <li><a href="http://freepythontips.wordpress.com/2013/08/06/python-socket-network-programming/">An intro to Python socket network programming</a></li>
 </ul>
 
-<h2><a id="user-content-metaclasses" class="anchor" href="#metaclasses" aria-hidden="true"><span class="octicon octicon-link"></span></a>Metaclasses</h2>
+<h2>Metaclasses</h2>
 
 <ul>
 <li><a href="http://jakevdp.github.io/blog/2012/12/01/a-primer-on-python-metaclasses/">A primer on python metaclasses</a></li>
@@ -175,7 +175,7 @@
 <li><a href="http://pypix.com/python/metaprogramming-python/">Metaprogramming in Python</a></li>
 </ul>
 
-<h2><a id="user-content-documentation" class="anchor" href="#documentation" aria-hidden="true"><span class="octicon octicon-link"></span></a>Documentation</h2>
+<h2>Documentation</h2>
 
 <ul>
 <li><a href="http://kennethreitz.org/documentation-is-king/">Documentation is King</a></li>
@@ -184,13 +184,13 @@
 <li><a href="http://jacobian.org/writing/great-documentation/">Writing great documentation</a></li>
 </ul>
 
-<h3><a id="user-content-sphinx" class="anchor" href="#sphinx" aria-hidden="true"><span class="octicon octicon-link"></span></a>Sphinx</h3>
+<h3>Sphinx</h3>
 
 <ul>
 <li><a href="http://scriptsonscripts.blogspot.in/2012/09/quick-sphinx-documentation-for-python.html">Quick Sphinx documentation for Python</a></li>
 </ul>
 
-<h2><a id="user-content-environments-and-environment-management" class="anchor" href="#environments-and-environment-management" aria-hidden="true"><span class="octicon octicon-link"></span></a>Environments and Environment Management</h2>
+<h2>Environments and Environment Management</h2>
 
 <ul>
 <li><a href="http://www.virtualenv.org/en/latest/">Virtualenv - The official documentation</a></li>
@@ -205,26 +205,26 @@
 <li><a href="http://caffeineindustries.com/anaconda-primer.html">Anaconda Primer</a></li>
 </ul>
 
-<h2><a id="user-content-exceptions" class="anchor" href="#exceptions" aria-hidden="true"><span class="octicon octicon-link"></span></a>Exceptions</h2>
+<h2>Exceptions</h2>
 
 <ul>
 <li><a href="https://www.codementor.io/python/tutorial/how-to-write-python-custom-exceptions">Writing and Using Custom Exceptions</a></li>
 </ul>
 
-<h2><a id="user-content-debugging" class="anchor" href="#debugging" aria-hidden="true"><span class="octicon octicon-link"></span></a>Debugging</h2>
+<h2>Debugging</h2>
 
 <ul>
 <li><a href="http://blog.ionelmc.ro/2013/06/05/python-debugging-tools/">Debugging Tools in Python</a></li>
 <li><a href="https://zapier.com/engineering/debugging-python-boss/">Debugging Python Like a Boss</a></li>
 </ul>
 
-<h3><a id="user-content-logging" class="anchor" href="#logging" aria-hidden="true"><span class="octicon octicon-link"></span></a>Logging</h3>
+<h3>Logging</h3>
 
 <ul>
 <li><a href="https://sentry.readthedocs.org/en/latest/index.html">Sentry - realtime event logging and aggregation platform</a></li>
 </ul>
 
-<h2><a id="user-content-testing" class="anchor" href="#testing" aria-hidden="true"><span class="octicon octicon-link"></span></a>Testing</h2>
+<h2>Testing</h2>
 
 <ul>
 <li><a href="http://pythontesting.net/framework/nose/nose-introduction/">Nose Introduction</a></li>
@@ -237,14 +237,14 @@
 <li><a href="https://garybernhardt.github.io/python-mock-comparison/">Python Mock Library Comparison</a></li>
 </ul>
 
-<h2><a id="user-content-profiling" class="anchor" href="#profiling" aria-hidden="true"><span class="octicon octicon-link"></span></a>Profiling</h2>
+<h2>Profiling</h2>
 
 <ul>
 <li><a href="http://www.huyng.com/posts/python-performance-analysis/">A guide to analyzing Python performance</a></li>
 <li><a href="https://zapier.com/engineering/profiling-python-boss/">Profiling Python Like a Boss</a></li>
 </ul>
 
-<h2><a id="user-content-packaging" class="anchor" href="#packaging" aria-hidden="true"><span class="octicon octicon-link"></span></a>Packaging</h2>
+<h2>Packaging</h2>
 
 <ul>
 <li><a href="http://docs.python-guide.org/en/latest/shipping/packaging/">The Hitchhiker’s Guide to Packaging</a></li>
@@ -260,26 +260,26 @@
 <li><a href="http://www.pydanny.com/python-dot-py-tricks.html">setup.py tricks</a></li>
 </ul>
 
-<h2><a id="user-content-deployment" class="anchor" href="#deployment" aria-hidden="true"><span class="octicon octicon-link"></span></a>Deployment</h2>
+<h2>Deployment</h2>
 
 <ul>
 <li><a href="http://hynek.me/talks/python-deployments">Solid Python Deployments for Everybody</a></li>
 </ul>
 
-<h3><a id="user-content-fabric" class="anchor" href="#fabric" aria-hidden="true"><span class="octicon octicon-link"></span></a>Fabric</h3>
+<h3>Fabric</h3>
 
 <ul>
 <li><a href="http://www.pythonforbeginners.com/systems-programming/how-to-use-fabric-in-a-development-environment/">Using Fabric in a development environment</a></li>
 <li><a href="http://dmsimard.com/2013/11/29/capture-output-from-parallel-execution-with-fabric/">Capture output from parallel execution with Fabric</a></li>
 </ul>
 
-<h3><a id="user-content-ansible" class="anchor" href="#ansible" aria-hidden="true"><span class="octicon octicon-link"></span></a>Ansible</h3>
+<h3>Ansible</h3>
 
 <ul>
 <li><a href="https://github.com/rabidgremlin/dev-ops-snippets/tree/master/aws-full-stack">Example Ansible scripts for building a full AWS stack</a></li>
 </ul>
 
-<h2><a id="user-content-warts-and-gotchas" class="anchor" href="#warts-and-gotchas" aria-hidden="true"><span class="octicon octicon-link"></span></a>Warts and Gotchas</h2>
+<h2>Warts and Gotchas</h2>
 
 <ul>
 <li><a href="http://stackoverflow.com/questions/530530/python-2-x-gotchas-and-landmines">Python 2.x gotcha's and landmines</a></li>
@@ -288,20 +288,20 @@
 <li><a href="http://stackoverflow.com/questions/1011431/common-pitfalls-in-python/1321075#1321075">Common Pitfalls in Python</a></li>
 </ul>
 
-<h2><a id="user-content-web" class="anchor" href="#web" aria-hidden="true"><span class="octicon octicon-link"></span></a>Web</h2>
+<h2>Web</h2>
 
 <ul>
 <li><a href="http://mrjoes.github.io/2013/06/21/python-realtime.html">Python and Realtime Web</a></li>
 <li><a href="https://www.mobify.com/blog/http-requests-are-hard/">A Python guide to handling HTTP request failures</a></li>
 </ul>
 
-<h3><a id="user-content-frameworks" class="anchor" href="#frameworks" aria-hidden="true"><span class="octicon octicon-link"></span></a>Frameworks</h3>
+<h3>Frameworks</h3>
 
 <ul>
 <li><a href="https://www.airpair.com/python/posts/django-flask-pyramid">Django vs Flask vs Pyramid: Choosing a Python Web Framework</a></li>
 </ul>
 
-<h4><a id="user-content-flask" class="anchor" href="#flask" aria-hidden="true"><span class="octicon octicon-link"></span></a>Flask</h4>
+<h3>Flask</h3>
 
 <ul>
 <li><a href="http://blog.miguelgrinberg.com/post/the-flask-mega-tutorial-part-i-hello-world">Flask Mega Tutorial Series</a></li>
@@ -322,19 +322,19 @@
 <li><a href="http://blog.tryolabs.com/2015/04/30/building-a-kanban-app-in-react/">Building a Kanban App with Flask and React</a></li>
 </ul>
 
-<h5><a id="user-content-books" class="anchor" href="#books" aria-hidden="true"><span class="octicon octicon-link"></span></a>Books</h5>
+<h3>Books</h3>
 
 <ul>
 <li><a href="https://exploreflask.com">Explore Flask</a></li>
 </ul>
 
-<h4><a id="user-content-web2py" class="anchor" href="#web2py" aria-hidden="true"><span class="octicon octicon-link"></span></a>Web2Py</h4>
+<h3>Web2Py</h3>
 
 <ul>
 <li><a href="http://fragile.org.uk/2013/06/twitter-clone-tutorial-in-web2py-part-1-getting-started/">Building a Twitter clone in Web2Py</a></li>
 </ul>
 
-<h4><a id="user-content-django" class="anchor" href="#django" aria-hidden="true"><span class="octicon octicon-link"></span></a>Django</h4>
+<h3>Django</h3>
 
 <ul>
 <li><a href="https://docs.djangoproject.com/en/1.5/">The official Django documentation</a></li>
@@ -360,20 +360,20 @@
 <li><a href="https://www.codementor.io/python/tutorial/build-data-products-django-machine-learning-clustering-user-preferences">Building a Wine Review &amp; Recommendation Site with Django</a></li>
 </ul>
 
-<h4><a id="user-content-bottle" class="anchor" href="#bottle" aria-hidden="true"><span class="octicon octicon-link"></span></a>Bottle</h4>
+<h3>Bottle</h3>
 
 <ul>
 <li><a href="http://www.realpython.com/blog/python/developing-with-bottle-part-1/">Developing with Bottle- Part 1</a></li>
 </ul>
 
-<h4><a id="user-content-tornado" class="anchor" href="#tornado" aria-hidden="true"><span class="octicon octicon-link"></span></a>Tornado</h4>
+<h4>Tornado</h4>
 
 <ul>
 <li><a href="http://www.tornadoweb.org/en/stable/">Tornado official documentation</a></li>
 <li><a href="http://www.peterbe.com/plog/fastestdb">Fastest database for Tornado</a></li>
 </ul>
 
-<h4><a id="user-content-pyramid" class="anchor" href="#pyramid" aria-hidden="true"><span class="octicon octicon-link"></span></a>Pyramid</h4>
+<h4>Pyramid</h4>
 
 <ul>
 <li><a href="http://docs.pylonsproject.org/en/latest/docs/pyramid.html">Pyramid official documentation</a></li>
@@ -381,21 +381,21 @@
 <li><a href="https://www.codementor.io/javascript/tutorial/build-ajax-helloworld-pyramid">Building an AJAX Hello-World with Pyramid</a></li>
 </ul>
 
-<h3><a id="user-content-web-servers" class="anchor" href="#web-servers" aria-hidden="true"><span class="octicon octicon-link"></span></a>Web Servers</h3>
+<h3>Web Servers</h3>
 
 <ul>
 <li><a href="https://www.digitalocean.com/community/articles/a-comparison-of-web-servers-for-python-based-web-applications">A Comparison of Web Servers for Python Based Web Applications</a></li>
 <li><a href="https://fgimian.github.io/blog/2012/12/08/setting-up-a-rock-solid-python-development-web-server/">Setting Up a Rock Solid Python Development Web Server</a></li>
 </ul>
 
-<h3><a id="user-content-api-and-web-services" class="anchor" href="#api-and-web-services" aria-hidden="true"><span class="octicon octicon-link"></span></a>API and Web Services</h3>
+<h3>API and Web Services</h3>
 
 <ul>
 <li><a href="http://www.pythonforbeginners.com/python-on-the-web/how-to-access-various-web-services-in-python/">How to access various web services in python</a></li>
 <li><a href="https://github.com/hackerlist/glassdoor">Glassdoor API</a></li>
 </ul>
 
-<h3><a id="user-content-scraping" class="anchor" href="#scraping" aria-hidden="true"><span class="octicon octicon-link"></span></a>Scraping</h3>
+<h3>Scraping</h3>
 
 <ul>
 <li><a href="http://www.pythonforbeginners.com/python-on-the-web/web-scraping-with-beautifulsoup/">Web Scraping with BeautifulSoup</a></li>
@@ -404,37 +404,37 @@
 <li><a href="http://fuzz-box.blogspot.in/2013/03/how-to-automatically-search-download-torrent-python-scrapy.html">How to automatically search and download torrents with Python and Scrapy</a></li>
 </ul>
 
-<h2><a id="user-content-mobile-development" class="anchor" href="#mobile-development" aria-hidden="true"><span class="octicon octicon-link"></span></a>Mobile Development</h2>
+<h2>Mobile Development</h2>
 
-<h3><a id="user-content-kivy" class="anchor" href="#kivy" aria-hidden="true"><span class="octicon octicon-link"></span></a>Kivy</h3>
+<h3>Kivy</h3>
 
 <ul>
 <li><a href="http://archlinux.me/dusty/2013/06/13/creating-an-application-in-kivy-part-1/">Creating an app in Kivy</a></li>
 </ul>
 
-<h2><a id="user-content-google-glass" class="anchor" href="#google-glass" aria-hidden="true"><span class="octicon octicon-link"></span></a>Google Glass</h2>
+<h2>Google Glass</h2>
 
-<h3><a id="user-content-resources" class="anchor" href="#resources" aria-hidden="true"><span class="octicon octicon-link"></span></a>Resources</h3>
+<h3>Resources</h3>
 
 <ul>
 <li><a href="https://developers.google.com/glass/quickstart/python">The official Python Quick Start for Google Glass</a></li>
 </ul>
 
-<h3><a id="user-content-libraries" class="anchor" href="#libraries" aria-hidden="true"><span class="octicon octicon-link"></span></a>Libraries</h3>
+<h3>Libraries</h3>
 
-<h4><a id="user-content-glasspy" class="anchor" href="#glasspy" aria-hidden="true"><span class="octicon octicon-link"></span></a>glass.py</h4>
+<h3>glass.py</h3>
 
 <ul>
 <li><a href="https://github.com/SamyPesse/glass.py">Create python web applications for Google Glass</a></li>
 </ul>
 
-<h2><a id="user-content-image-processing" class="anchor" href="#image-processing" aria-hidden="true"><span class="octicon octicon-link"></span></a>Image Processing</h2>
+<h2>Image Processing</h2>
 
 <ul>
 <li><a href="http://www.riisen.dk/dop/pil.html">Python Image Library - Examples</a></li>
 </ul>
 
-<h2><a id="user-content-gui-programming" class="anchor" href="#gui-programming" aria-hidden="true"><span class="octicon octicon-link"></span></a>GUI Programming</h2>
+<h2>GUI Programming</h2>
 
 <ul>
 <li><a href="https://wiki.python.org/moin/GuiProgramming">Python.org GUI Overview Page</a></li>
@@ -446,24 +446,24 @@
 <li><a href="https://wiki.python.org/moin/Intro%20to%20programming%20with%20Python%20and%20Tkinter">Intro to programming with Python and Tkinter</a></li>
 </ul>
 
-<h2><a id="user-content-android" class="anchor" href="#android" aria-hidden="true"><span class="octicon octicon-link"></span></a>Android</h2>
+<h2>Android</h2>
 
-<h3><a id="user-content-sl4a" class="anchor" href="#sl4a" aria-hidden="true"><span class="octicon octicon-link"></span></a>SL4A</h3>
+<h3>SL4A</h3>
 
 <ul>
 <li><a href="http://www.brokenairplane.com/2011/08/im-not-texting-im-programming.html">Making the Physics Gizmo app for Android using SL4A</a></li>
 </ul>
 
-<h2><a id="user-content-wsgi" class="anchor" href="#wsgi" aria-hidden="true"><span class="octicon octicon-link"></span></a>WSGI</h2>
+<h2>WSGI</h2>
 
 <ul>
 <li><a href="http://lucumr.pocoo.org/2007/5/21/getting-started-with-wsgi/">Getting started with WSGI</a></li>
 <li><a href="http://agiliq.com/blog/2013/07/basics-wsgi/">WSGI Basics</a></li>
 </ul>
 
-<h2><a id="user-content-databases" class="anchor" href="#databases" aria-hidden="true"><span class="octicon octicon-link"></span></a>Databases</h2>
+<h2>Databases</h2>
 
-<h3><a id="user-content-sqlalchemy" class="anchor" href="#sqlalchemy" aria-hidden="true"><span class="octicon octicon-link"></span></a>SQLAlchemy</h3>
+<h3>SQLAlchemy</h3>
 
 <ul>
 <li><a href="http://www.aosabook.org/en/sqlalchemy.html">SQLAlchemy</a></li>
@@ -473,13 +473,13 @@
 <li><a href="https://www.codementor.io/python/tutorial/understanding-sqlalchemy-cheat-sheet">An SQLAlchemy Cheatsheet</a></li>
 </ul>
 
-<h2><a id="user-content-data-mining" class="anchor" href="#data-mining" aria-hidden="true"><span class="octicon octicon-link"></span></a>Data Mining</h2>
+<h2>Data Mining</h2>
 
 <ul>
 <li><a href="http://architects.dzone.com/articles/linux-system-mining-python">Linux system mining using Python</a></li>
 </ul>
 
-<h2><a id="user-content-data-analysis" class="anchor" href="#data-analysis" aria-hidden="true"><span class="octicon octicon-link"></span></a>Data Analysis</h2>
+<h2>Data Analysis</h2>
 
 <ul>
 <li><a href="http://radimrehurek.com/data_science_python/">Practical Data Science in Python</a></li>
@@ -489,7 +489,7 @@
 <li><a href="https://www.codementor.io/python/tutorial/data-science-python-r-sentiment-classification-machine-learning">Data Science with Python &amp; R: Sentiment Classification Using Linear Methods</a></li>
 </ul>
 
-<h3><a id="user-content-pandas" class="anchor" href="#pandas" aria-hidden="true"><span class="octicon octicon-link"></span></a>Pandas</h3>
+<h3>Pandas</h3>
 
 <ul>
 <li><a href="http://pandas.pydata.org/pandas-docs/stable/10min.html">A 10 min intro to Pandas</a></li>
@@ -498,7 +498,7 @@
 <li><a href="http://nbviewer.ipython.org/github/sanand0/ipython-notebooks/blob/master/Faster%20Data%20Processing%20in%20Python.ipynb">Faster Data Processing in Python</a></li>
 </ul>
 
-<h2><a id="user-content-ipython-notebooks" class="anchor" href="#ipython-notebooks" aria-hidden="true"><span class="octicon octicon-link"></span></a>IPython Notebooks</h2>
+<h2>IPython Notebooks</h2>
 
 <ul>
 <li><a href="https://github.com/ipython/ipython/wiki/A-gallery-of-interesting-IPython-Notebooks">A Gallery of Interesting IPython Notebooks</a></li>
@@ -532,7 +532,7 @@
 <li><a href="https://github.com/rajathkumarmp/Python-Lectures">Get Started with Python</a></li>
 </ul>
 
-<h2><a id="user-content-design-patterns" class="anchor" href="#design-patterns" aria-hidden="true"><span class="octicon octicon-link"></span></a>Design Patterns</h2>
+<h2>Design Patterns</h2>
 
 <ul>
 <li><a href="http://www.youtube.com/watch?v=GZNUfkVIHAY">Python Best Practice Patterns by Vladimir Keleshev</a></li>
@@ -541,13 +541,13 @@
 <li><a href="https://www.codementor.io/python/tutorial/wishful-coding-python-solving-big-problems">Wishful Coding in Python: a Problem Solving Philosophy</a></li>
 </ul>
 
-<h3><a id="user-content-concurrency-patterns" class="anchor" href="#concurrency-patterns" aria-hidden="true"><span class="octicon octicon-link"></span></a>Concurrency Patterns</h3>
+<h3>Concurrency Patterns</h3>
 
 <ul>
 <li><a href="http://emptysqua.re/blog/wasps-nest-read-copy-update-python/">Wasp's Nest: The Read-Copy-Update Pattern In Python</a></li>
 </ul>
 
-<h2><a id="user-content-concurrency-and-distributed-systems" class="anchor" href="#concurrency-and-distributed-systems" aria-hidden="true"><span class="octicon octicon-link"></span></a>Concurrency and Distributed Systems</h2>
+<h2>Concurrency and Distributed Systems</h2>
 
 <ul>
 <li><a href="http://architects.dzone.com/articles/gevent-zeromq">Gevent and ZeroMQ</a></li>
@@ -555,14 +555,14 @@
 <li><a href="http://sdiehl.github.io/gevent-tutorial/">Gevent for the working Python developer</a></li>
 </ul>
 
-<h2><a id="user-content-functional-programming" class="anchor" href="#functional-programming" aria-hidden="true"><span class="octicon octicon-link"></span></a>Functional Programming</h2>
+<h2>Functional Programming</h2>
 
 <ul>
 <li><a href="http://inventwithpython.com/blog/2011/08/11/recursion-explained-with-the-flood-fill-algorithm-and-zombies-and-cats/">Recursion Explained with the Flood Fill Algorithm</a></li>
 <li><a href="https://web.archive.org/web/20140105103917/http://pypix.com/python/functional-programming/">Functional Programming in Python</a></li>
 </ul>
 
-<h2><a id="user-content-python-2-vs-3" class="anchor" href="#python-2-vs-3" aria-hidden="true"><span class="octicon octicon-link"></span></a>Python 2 vs 3</h2>
+<h2>Python 2 vs 3</h2>
 
 <ul>
 <li><a href="http://wiki.python.org/moin/Python2orPython3">Python 2 or 3 ?</a></li>
@@ -572,7 +572,7 @@
 <li><a href="http://lucumr.pocoo.org/2010/1/7/pros-and-cons-about-python-3/">Pros and Cons about Python 3</a></li>
 </ul>
 
-<h3><a id="user-content-porting-to-python-3" class="anchor" href="#porting-to-python-3" aria-hidden="true"><span class="octicon octicon-link"></span></a>Porting to Python 3</h3>
+<h3>Porting to Python 3</h3>
 
 <ul>
 <li><a href="https://python3wos.appspot.com/">Python 3 Wall of Superpowers(Packages)</a></li>
@@ -582,9 +582,9 @@
 <li><a href="http://python-future.org/">Easy, clean, reliable Python 2/3 compatibility</a></li>
 </ul>
 
-<h2><a id="user-content-books-1" class="anchor" href="#books-1" aria-hidden="true"><span class="octicon octicon-link"></span></a>Books</h2>
+<h2>Books</h2>
 
-<h3><a id="user-content-free" class="anchor" href="#free" aria-hidden="true"><span class="octicon octicon-link"></span></a>Free</h3>
+<h3>Free</h3>
 
 <ul>
 <li><a href="https://github.com/vhf/free-programming-books/blob/master/free-programming-books.md#python">Free Programming Books - Python</a></li>
@@ -604,14 +604,14 @@
 <li><a href="http://www.oreilly.com/programming/free/files/how-to-make-mistakes-in-python.pdf">How to make mistakes in Python</a></li>
 </ul>
 
-<h3><a id="user-content-paid" class="anchor" href="#paid" aria-hidden="true"><span class="octicon octicon-link"></span></a>Paid</h3>
+<h3>Paid</h3>
 
 <ul>
 <li><a href="http://wiki.python.org/moin/PythonBooks">Some list of paid books on python</a></li>
 <li><a href="http://python3porting.com/">Porting to Python 3 - The Book Site</a></li>
 </ul>
 
-<h2><a id="user-content-online-courses-and-challenges" class="anchor" href="#online-courses-and-challenges" aria-hidden="true"><span class="octicon octicon-link"></span></a>Online Courses and Challenges</h2>
+<h2>Online Courses and Challenges</h2>
 
 <ul>
 <li><a href="http://ocw.mit.edu/courses/electrical-engineering-and-computer-science/6-189-a-gentle-introduction-to-programming-using-python-january-iap-2011/index.htm">A Gentle Introduction to Programming Using Python</a></li>
@@ -619,7 +619,7 @@
 <li><a href="http://projecteuler.net">Project Euler</a></li>
 </ul>
 
-<h2><a id="user-content-discussions" class="anchor" href="#discussions" aria-hidden="true"><span class="octicon octicon-link"></span></a>Discussions</h2>
+<h2>Discussions</h2>
 
 <ul>
 <li><a href="https://news.ycombinator.com/item?id=3746692">What's your favorite programming language?</a></li>
@@ -630,7 +630,7 @@
 <li><a href="http://stackoverflow.com/questions/101268/hidden-features-of-python">StackOverflow - Hidden Features of Python</a></li>
 </ul>
 
-<h2><a id="user-content-conferences-and-events" class="anchor" href="#conferences-and-events" aria-hidden="true"><span class="octicon octicon-link"></span></a>Conferences and events</h2>
+<h2>Conferences and events</h2>
 
 <ul>
 <li><a href="http://www.pycon.org/">Official PyCon website</a></li>
@@ -638,7 +638,7 @@
 <li><a href="http://python.meetup.com/">Meetup.com - Python Meetup Groups</a></li>
 </ul>
 
-<h2><a id="user-content-videos" class="anchor" href="#videos" aria-hidden="true"><span class="octicon octicon-link"></span></a>Videos</h2>
+<h2>Videos</h2>
 
 <ul>
 <li><a href="http://www.youtube.com/watch?v=ugqu10JV7dk">Guido Van Rossum on the history of Python</a></li>
@@ -655,7 +655,7 @@
 <li><a href="https://github.com/s16h/py-must-watch">Must-watch videos about Python by s16h</a></li>
 </ul>
 
-<h2><a id="user-content-editors-and-ides-for-python-programming" class="anchor" href="#editors-and-ides-for-python-programming" aria-hidden="true"><span class="octicon octicon-link"></span></a>Editors and IDE's for Python programming</h2>
+<h2>Editors and IDE's for Python programming</h2>
 
 <ul>
 <li><a href="http://dbader.org/blog/setting-up-sublime-text-for-python-development">Setting up Sublime Text for Python Development</a></li>
@@ -671,27 +671,27 @@
 <li><a href="https://www.pythonanywhere.com/">Python Anywhere</a></li>
 </ul>
 
-<h2><a id="user-content-bigdata" class="anchor" href="#bigdata" aria-hidden="true"><span class="octicon octicon-link"></span></a>BigData</h2>
+<h2>BigData</h2>
 
 <ul>
 <li><a href="http://www.xmind.net/m/WvfC/?goback=%2Emid_I2756675707*43_*1#%21">Mind map of Python for Big Data</a></li>
 </ul>
 
-<h2><a id="user-content-curated-python-resources-from-other-websites" class="anchor" href="#curated-python-resources-from-other-websites" aria-hidden="true"><span class="octicon octicon-link"></span></a>Curated Python resources from other websites</h2>
+<h2>Curated Python resources from other websites</h2>
 
 <ul>
 <li><a href="http://codesters.org/resource/topic/python/all/">Python Resources (All) - Codesters.org</a></li>
 <li><a href="https://www.codementor.io/learn-python-online">Learn Python Online</a></li>
 </ul>
 
-<h2><a id="user-content-newsletters" class="anchor" href="#newsletters" aria-hidden="true"><span class="octicon octicon-link"></span></a>Newsletters</h2>
+<h2>Newsletters</h2>
 
 <ul>
 <li><a href="http://pycoders.com/">Pycoder's</a></li>
 <li><a href="http://www.pythonweekly.com/">Python Weekly</a></li>
 </ul>
 
-<h2><a id="user-content-miscellaneous" class="anchor" href="#miscellaneous" aria-hidden="true"><span class="octicon octicon-link"></span></a>Miscellaneous</h2>
+<h2>Miscellaneous</h2>
 
 <ul>
 <li><a href="http://jessenoller.com/good-to-great-python-reads/">Good to great Python reads</a></li>
@@ -722,4 +722,3 @@
 <li><a href="http://norvig.com/sudoku.html">Solving Every Sudoku Puzzle</a></li>
 <li><a href="http://www.iheartpy.com/">IHeartPy!</a></li>
 </ul>
-</article>
