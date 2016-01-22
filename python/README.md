@@ -2,6 +2,8 @@
 
 <br>
 * 
+[学习无止境](study.md)
+* 
 [python2和python3不同](2&3diff.md)
 * 
 [内置函数及模块介绍](func&moduler.md)
