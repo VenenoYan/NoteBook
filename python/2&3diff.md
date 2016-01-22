@@ -89,4 +89,5 @@ bool与int:
 1. 
 nonloca
 ```python
-使用nonlocal可以生命一个外部变量，但不是global变量```
+使用nonlocal可以声明一个外部变量，但不是global变量
+```
