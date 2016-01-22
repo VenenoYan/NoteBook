@@ -9,7 +9,8 @@
 输出：
 ```python
 python2.7或之前，print只是语句而不是函数。  print "hello"
-但python3之后，必须函数形式才行。    print("hello")
+但python3之后，必须函数形式才行。    print("hello")。
+同exec()
 ```
 1. 
 除法
@@ -73,3 +74,4 @@ python3.X:  [1,2]>"helo" 引起异常
 bool与int:
 ```python
 在2.X中bool是int的子集，所以才有while 1 比while True快，但是3.X之后True、False都是关键字，所以速度没区别```
+1. 
