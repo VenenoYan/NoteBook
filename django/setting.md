@@ -12,7 +12,7 @@ INSTALLED_APPS：<br>自带或者自定义的app包路径(推荐：django_bleach
 1. 
 MANAGERS：与ADMIS类似，只是给manager发邮件
 1. 
-MIDDLEWARE_CLASS：<br>中间件（推荐：SessionMiddleware(应用中shi yo nsession)、CsrfViewMiddleware、XFrameOptionsMiddleware） 
+MIDDLEWARE_CLASS：<br>中间件（推荐：SessionMiddleware(应用中使用session)、CsrfViewMiddleware(防csrfg)、XFrameOptionsMiddleware） 
 1. 
 TEMPLATE_DEBUG：网页上会显示详细信息，上线时要设置为False
 1. 
