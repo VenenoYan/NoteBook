@@ -10,6 +10,7 @@ Queue模块有三种队列及构造函数:
 Python Queue模块的FIFO队列先进先出。    class Queue.Queue(maxsize)
 LIFO类似于堆，即先进后出。              class Queue.LifoQueue(maxsize)
 还有一种是优先级队列级别越低越先出来。     class Queue.PriorityQueue(maxsize)
+
 此包中的常用方法(q = Queue.Queue()):
 q.qsize()       返回队列的大小
 q.empty()       如果队列为空，返回True,反之False
