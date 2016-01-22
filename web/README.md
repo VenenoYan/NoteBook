@@ -1,5 +1,5 @@
 #Web
-有个APP叫web前端课堂，可以
+有个APP叫web前端课堂，可以用用
 * 
 [Upload](JS- Upload.md)
 * 
