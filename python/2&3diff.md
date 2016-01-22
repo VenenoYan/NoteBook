@@ -81,5 +81,5 @@ python3.X:  [1,2]>"helo" 引起异常
 1. 
 bool与int:
 ```python
-在2.X中bool是int的子集，所以才有while 1 比while True快，但是3.X之后True、False都是关键字，所以速度没区别```
+在2.X中bool是int的子集，所以才有while 1 比while True快，但是3.X之后True、False、as、with都是关键字，所以速度没区别```
 1. 
