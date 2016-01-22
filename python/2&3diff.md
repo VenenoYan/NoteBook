@@ -90,4 +90,8 @@ bool与int:
 nonloca
 ```python
 使用nonlocal可以声明一个外部变量，但不是global变量
+def test():
+    i = 19
+    def uses():
+        i = i+1         #这是错误的，对于赋值：首先会把他看成局部变量。。直接读值才按照LEGB顺序
 ```
