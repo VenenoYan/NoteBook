@@ -17,7 +17,7 @@ python2.7或之前，print只是语句而不是函数。  print "hello"
     以前都是  % 来控制，现在用format()
     "I love {0},{1},{2}".format("eagg","meat","ha")             #普通：以0开始
     "I love {a},{b},{c}".format(a="eagg",b="meat",c="ha")       #字典
-    "I love {0},{1},{c}".format("eagg","meat",c="ha")           #普通和字典
+    "I love {0},{1},{c}".format("eagg","meat",c="ha")           #普通和字典混用
 ```
 1. 
 除法
@@ -70,7 +70,7 @@ def val_in_xrange(x, val):
                     print e     #错误
 ```
 1. 
-比较操作  !=
+比较操作  != ，而且对象检查更严格---
 ```python
 Python 2.x中不等于有两种写法 != 和 <>
 Python 3.x中去掉了<>, 只有!=一种写法
