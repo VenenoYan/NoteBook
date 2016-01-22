@@ -31,7 +31,7 @@
 * 
 [爬虫](web_spider.md)
 * 
-[经典小测试](examine.md)
+[小测试](project/README.md)
 * 
 [多线程(queue)](multi_thread.md)
 * 
