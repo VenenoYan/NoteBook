@@ -21,7 +21,7 @@
 * 
 [数学模块](math.md)
 * 
-[模块](moduler_expantion.md)
+[扩展模块](moduler_expantion.md)
 * 
 [curl的python版本](py_curl.md)
 * 
