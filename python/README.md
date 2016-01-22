@@ -1,6 +1,5 @@
 #Python 
 
-<br>
 * 
 [学习无止境](study.md)
 * 
@@ -12,15 +11,15 @@
 * 
 [三种函数](func.md)
 * 
-[Soket](Socket.md)
+[网络编程](Socket.md)
 * 
-[re](re.md)
+[正则表达式](re.md)
 * 
-[time](time.md)
+[时间相关](time.md)
 * 
 [list及自定义](list&operator.md)
 * 
-[math](math.md)
+[数学模块](math.md)
 * 
 [模块](moduler_expantion.md)
 * 
