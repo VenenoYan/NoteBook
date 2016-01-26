@@ -301,6 +301,10 @@ if __name__=="__main__":
     for i in range(6):
         msg = "hello"+str(i)
         pool.apply_async(func,(msg,))
+    print("main : mark mark mark mark")
+    pool.close()
+    pool.join()
+    print("main:end!!!")
 ```
 
 
