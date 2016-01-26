@@ -117,7 +117,7 @@ if __name__=="__main__":
     print("end!!!")
 输出：end!!!
 因为设置daemon为True：父进程结束后子进程也结束。怎么改？
-    start()后调用p.join()即可
+    p.start()后调用p.join()即可
 ```
 ```python
 import multiprocessing 
