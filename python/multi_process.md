@@ -256,6 +256,7 @@ import time
 def pro1(pipe):
     while 1:
         for i in range(100):
+            print("pro1 send {0}".format(i))
             pipe.send(i)
             time.sleep(2)
 def pro2(pipe):
