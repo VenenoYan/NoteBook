@@ -190,5 +190,21 @@ if __name__=="__main__":
         p.start()
 ```
 
+### 同步通信
+```python
+import multiprocessing
+import time
+
+def wait_for_event(e):
+    print("wait for event:starting")
+    e.wait()
+    print("wait for event:e.is_set()"+str(e.is_set()))
+def wait_for_timeout(e):
+    print("wait for eventtimeout:starting")
+    e.wait()
+    print("wait for eventtimeout:e.is_set()"+str(e.is_set()))
+```
+
+
 
 
