@@ -30,7 +30,7 @@ q.get(item,block,timeout):
         block=True:若queue为空，调用该queue的线程阻塞直至出现一个可用单元。
         block=False:空了就会引起Empty异常
 ```
-一个用于多进程的队列<br>
+用于多进程的队列<br>
 范例0:
 ```python
 import threading,Queue
