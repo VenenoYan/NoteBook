@@ -99,6 +99,7 @@ if __name__=="__main__":
     end!!!
     start time is ...
     end tiem is...
+    
 #daemon:设置为True则意味着父结束子自动结束
 import multiprocessing
 import time
