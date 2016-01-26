@@ -115,6 +115,6 @@ if __name__=="__main__":
     p.start()
     print("end!!!")
 输出：end!!!
-因为设置daemon为True：p.start()之后父进程结束
+因为设置daemon为True：父进程结束后子进程也结束。
 ```
 
