@@ -25,11 +25,11 @@ print q(100)
 所以一个常见的问题：
 ```python
 def foo(): 
- a = 1
- def bar(): 
-  a = a + 1
-  return a 
- return bar
+    a = 1
+    def bar(): 
+        a = a + 1   #错误
+        return a 
+    return bar
  是错误的
  因为在python中，所有在赋值语句左边的变量都是局部变量。故a=a+1由于a已经被认定为局部了，出错。解决：nonlocal
  ```
