@@ -292,10 +292,10 @@ if __name__ == "__main__":
 #非阻塞版                                     #阻塞版
 import multiprocessing                      import multiprocessing
 import time                                 import time
-def func(msg):
-    print("msg is {0}".format(msg))
-    time.sleep(4)
-    print("end!!!")
+def func(msg):                              def func(msg):
+    print("msg is {0}".format(msg))             print("msg is {0}".format(msg))
+    time.sleep(4)                               time.sleep(4)
+    print("sub:end!!!")
 if __name__=="__main__":
     pool = multiprocessing.Pool(processes =5 )
     for i in range(6):
