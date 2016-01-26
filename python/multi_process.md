@@ -305,21 +305,21 @@ if __name__=="__main__":                    if __name__=="__main__":
     pool.close()                                pool.close()
     pool.join()                                 pool.join()
     print("main:end!!!")                        print("main:end!!!")
-#output:
-#main : mark mark mark mark
-#msg is hello0
-#msg is hello1
-#msg is hello2
-#sub:end!!!
-#sub:end!!!
-#msg is hello3
-#sub:end!!!
-#msg is hello4
-#msg is hello5
-#sub:end!!!
-#sub:end!!!
-#sub:end!!!
-#main:end!!!
+#  output:
+#  main : mark mark mark mark               msg is hello0       
+#  msg is hello0                            sub:end!!!
+#  msg is hello1                            msg is hello1
+#  msg is hello2                            sub:end!!!
+#  sub:end!!!                               msg is hello2
+#  sub:end!!!                               end!!!
+#  msg is hello3
+#  sub:end!!!
+#  msg is hello4
+#  msg is hello5
+#  sub:end!!!
+#  sub:end!!!
+#  sub:end!!!                               main : mark mark mark mark  
+#  main:end!!!                              main:end!!!
 ```
 
 
