@@ -162,7 +162,6 @@ AutoPEP8：          格式化Python代码。
 Alignment：         进行智能对齐。
 HTML/JS/CSS prettify  格式化HTML/JS/CSS
 ColorHighlighter    css颜色高亮
-Autoprefixer        可以给css自动加前缀功能
 jQuery              支持jquery的智能语法提示
 CSS3                CSS3的自动补全
 SublimeLinter       可以验证各种语法错误。
