@@ -199,10 +199,18 @@ def wait_for_event(e):
     print("wait for event:starting")
     e.wait()
     print("wait for event:e.is_set()"+str(e.is_set()))
-def wait_for_timeout(e):
+def wait_for_timeout(e,ti):
     print("wait for eventtimeout:starting")
-    e.wait()
+    e.wait(ti)
     print("wait for eventtimeout:e.is_set()"+str(e.is_set()))
+if __name__=="__main__":
+    e = multiprocessing.Event()
+    w1 = multiprocessing.Process(target = wait_for_event,name = "block",args = (e,))
+    w2 = multiprocessing.Process(target = wait_for_timeout,name = "non-block",args = (e,4))
+    w1.start()
+    w2.start()
+    time.sleep(3)
+    e.set()
 ```
 
 
