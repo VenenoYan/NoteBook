@@ -212,7 +212,7 @@ if __name__=="__main__":
     time.sleep(3)
     e.set()
     print("main:e is set")
-output：
+output:
     wait for event:starting
     wait for eventtimeout:starting
     wait for eventtimeout--->False
