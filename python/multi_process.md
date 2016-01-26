@@ -300,7 +300,7 @@ if __name__=="__main__":                    if __name__=="__main__":
     pool = multiprocessing.Pool(processes=5)    pool = multiprocessing.Pool(processes=5)
     for i in range(6):                          for i in range(6):
         msg = "hello"+str(i)                        msg = "hello"+str(i)
-        pool.apply_async(func,(msg,))               pool.apply(func,(msg,))
+        pool.apply_async(func,(msg,))               pool.apply(func,(msg,))     #阻塞
     print("main : mark mark mark mark")         print("main : mark mark mark mark")
     pool.close()                                pool.close()
     pool.join()                                 pool.join()
