@@ -27,7 +27,7 @@ print html
 
 urlopen一般接受三个参数：
         urlopen(url, data, timeout)```
-#### 一般浏览器发送的**HTTP**是基于请求和应答机制的：    urllib2用一个**Request对象**来映射你提出的HTTP请求。####
+##### 一般浏览器发送的**HTTP**是基于请求和应答机制的：    urllib2用一个**Request对象**来映射你提出的HTTP请求。#####
 ```python
 import urllib2    
 req = urllib2.Request('http://www.baidu.com')    
