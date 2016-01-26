@@ -31,5 +31,5 @@ def foo():
   return a 
  return bar
  是错误的
- 因为在python中，所有在赋值语句左边的变量都是局部变量
+ 因为在python中，所有在赋值语句左边的变量都是局部变量。故a=a+1由于a已经被认定为局部了，出错。解决：nonlocal
  ```
