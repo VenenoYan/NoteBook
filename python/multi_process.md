@@ -320,6 +320,7 @@ if __name__=="__main__":                        if __name__=="__main__":
 #  sub:end!!!
 #  sub:end!!!                                   main : mark mark mark mark  
 #  main:end!!!                                  main:end!!!
+当然也可以使用多个进程池
 ```
 
 
