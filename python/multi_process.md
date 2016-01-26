@@ -305,7 +305,7 @@ if __name__=="__main__":                        if __name__=="__main__":
     pool.close()                                    pool.close()
     pool.join()                                     pool.join()
     print("main:end!!!")                            print("main:end!!!")
-#  output:
+#  output: 可能有所
 #  main : mark mark mark mark                   msg is hello0       
 #  msg is hello0                                sub:end!!!
 #  msg is hello1                                msg is hello1
