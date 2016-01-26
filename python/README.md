@@ -7,6 +7,10 @@
 * 
 [内置函数及模块介绍](func&moduler.md)
 * 
+[数学模块](math.md)
+* 
+[扩展模块](moduler_expantion.md)
+* 
 [操作系统功能](os.md)
 * 
 [读写配置文件](config.md)
@@ -20,10 +24,6 @@
 [时间相关](time.md)
 * 
 [list及自定义](list&operator.md)
-* 
-[数学模块](math.md)
-* 
-[扩展模块](moduler_expantion.md)
 * 
 [curl的python版本](py_curl.md)
 * 
