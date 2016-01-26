@@ -28,7 +28,7 @@ q.put(item,block[False],timeout[None]):
         block=False:满了就会引起Full异常
 q.get(item,block,timeout):
         block=True:若queue为空，调用该queue的线程阻塞直至出现一个可用单元。
-        block=False:满了就会引起Empty异常
+        block=False:了就会引起Empty异常
 ```
 multiprocessing.Queue：一个用于多进程的队列<br>
 范例0:
