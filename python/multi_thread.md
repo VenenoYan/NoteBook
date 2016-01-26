@@ -35,7 +35,7 @@ q.get(item,block,timeout):
 ```python
 import threading,Queue
 
-def consumer():
+def consumer(): 
     while 1:
         item = q.get()
         if item is None:
@@ -53,6 +53,12 @@ for i in range(10):
 for t in threads:
     t.join()
 q.join()
+
+线程的join()：
+    1、阻塞主线程，无法执行join之后的语句，专注于多线程的执行
+    2、参数：等待的时间
+        1、无则意味着等待，即直到该线程结束才执行接下来的语句
+        2、有即意味着等待该时间，如果子线程在该时间里执行完则正常执行下面语句，否则不等待，让他继续，但父进程可以继续
 ```
 范例1：
 ```python
