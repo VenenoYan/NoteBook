@@ -95,5 +95,21 @@ if __name__=="__main__":
     p = multiprocessing.Process(target=worker,args = (3,))
     p.start()
     print("end!!!")
+
+#daemon:设置为True则意味着父结束子自动结束
+import multiprocessing
+import time
+
+def worker(ti):
+    print("start time is {0}".format(time.ctime()))
+    time.sleep(ti)
+    print("end time is {0}".format(time.ctime()))
+    
+if __name__=="__main__":
+    print("the number of cpu is {0}".format(multiprocessing.cpu_count()))
+    p = multiprocessing.Process(target=worker,args = (3,))
+    p.daemon = True
+    p.start()
+    print("end!!!")
 ```
 
