@@ -31,7 +31,7 @@ Process([group[,target[,name[,args[,kwargs]]]]]):
 ### 使用
 
 ```python
-#实例1
+#实例1：单个
 import multiprocessing
 import time
 
@@ -51,7 +51,7 @@ if __name__=="__main__":
     print("isalive is {0}".format(p.is_live()))
 ```
 ```python
-#实例2
+#实例2：多个
 import multiprocessing
 import time
 
@@ -81,7 +81,7 @@ if __name__=="__main__":
         print("name is {0}, id is {1}".format(p.pid,p.name))
 ```
 ```python
-#实例3：darmon
+#实例3：daemon
 import multiprocessing
 import time
 
