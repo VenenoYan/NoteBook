@@ -280,5 +280,17 @@ if __name__ == "__main__":
     p3.join()
 ```
 
+### Pool：大规模多进程
+```python
+函数:
+    apply_async(func[,args[,kwds[,callbakck]]]])   非阻塞，维持进程数量稳定
+    apply(func[,args[,kwds]])       阻塞版
+    close()         关闭pool，不接受新增
+    join()          主进程阻塞，等待子进程结束，要在close()/terminate()之后使用
+    terminate()     结束工作进程，不处理未完成的任务
+import 
+```
+
+
 
 
