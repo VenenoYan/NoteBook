@@ -50,4 +50,52 @@ if __name__=="__main__":
     print("name is {0}".format(p.name))
     print("isalive is {0}".format(p.is_live()))
 ```
+```python
+#实例2
+import multiprocessing
+import time
+
+def worker1(ti):
+    print("time is {0}".format(time.ctime()))
+    time.sleep(ti)
+def worker2(ti):
+    print("time is {0}".format(time.ctime()))
+    time.sleep(ti)
+def worker3(ti):
+    print("time is {0}".format(time.ctime()))
+    time.sleep(ti)
+def worker4(ti):
+    print("time is {0}".format(time.ctime()))
+    time.sleep(ti)
+if __name__=="__main__":
+    print("the number of cpu is {0}".format(multiprocessing.cpu_count()))
+    p = multiprocessing.Process(target=worker1,args = (4,))
+    p = multiprocessing.Process(target=worker2,args = (3,))
+    p = multiprocessing.Process(target=worker3,args = (2,))
+    p = multiprocessing.Process(target=worker4,args = (1,))
+    p.start()
+    print("pid is {0}".format(p.pid))
+    print("name is {0}".format(p.name))
+    print("isalive is {0}".format(p.is_live()))
+```
+```python
+#实例1
+import multiprocessing
+import time
+
+def worker(ti):
+    n=6
+    while n>0:
+        print("time is {0}".format(time.ctime()))
+        time.sleep(ti)
+        n-=1
+    
+if __name__=="__main__":
+    print("the number of cpu is {0}".format(multiprocessing.cpu_count()))
+    p = multiprocessing.Process(target=worker,args = (3,))
+    p.start()
+    print("pid is {0}".format(p.pid))
+    print("name is {0}".format(p.name))
+    print("isalive is {0}".format(p.is_live()))
+```
 
