@@ -94,8 +94,6 @@ if __name__=="__main__":
     print("the number of cpu is {0}".format(multiprocessing.cpu_count()))
     p = multiprocessing.Process(target=worker,args = (3,))
     p.start()
-    print("pid is {0}".format(p.pid))
-    print("name is {0}".format(p.name))
-    print("isalive is {0}".format(p.is_live()))
+    print("end!!!")
 ```
 
