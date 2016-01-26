@@ -35,7 +35,7 @@ q.get(item,block,timeout):
 ```python
 import threading,Queue
 
-def consumer()：
+def consumer():
     while 1:
         item = q.get()
         if item is None:
