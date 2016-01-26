@@ -245,4 +245,39 @@ if __name__=="__main__":
     wri.join()
 ```
 
+### Pipe：通信管道的两端
+```python
+Pipe(conn1,conn2[,duplex]):返回通信管道的两端   duplex默认True即两端均可收发，False则只有conn1可以收，conn2发
+send()  发送消息
+recv()  接受消息：没有可接受的则阻塞，管道关闭抛出异常
+
+import multiprocessing
+import time
+def pro1(pipe):
+    while 1:
+        for i in range(100):
+            pipe.send(i)
+            time.sleep(2)
+def pro2(pipe):
+    while 1:
+        print("pro2 recv is {0}".format(pipe.recv()))
+        time.sleep()
+def pro3(pipe):
+    while 1:
+        print("pro3 recv is {0}".format(pipe.recv()))
+        time.sleep()
+if __name__ == "__main__":
+    pipe = multiprocessing.Pipe()
+    p1 = multiprocessing.Process(target=pro1,args=(pipe[0],))
+    p2 = multiprocessing.Process(target=pro2,args=(pipe[1],))
+    p3 = multiprocessing.Process(target=pro3,args=(pipe[1],))
+    p1.start()
+    p2.start()
+    p3.start()
+    p1.join()
+    p2.join()
+    p3.join()
+```
+
+
 
