@@ -22,7 +22,7 @@ Process([group[,target[,name[,args[,kwargs]]]]]):
     terminate()
 属性:
     authkey     
-    daemon      在start()之前设置：意味着父进程终止后自动终止，且自己不能产生新进程
+    daemon      在start()之前设置：意味着父进程终止后自动终止，且自己不能产生新进程；默认False
     exitcode
     name
     pid
@@ -120,7 +120,7 @@ if __name__=="__main__":
     p.start()后调用p.join()即可
 ```
 ```python
-#类中
+#类中实现
 import multiprocessing 
 import time
 
