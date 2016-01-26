@@ -138,3 +138,51 @@ if __name__ == "__main__":
     p = clockprocess (3)
     p.start()           #自动调用run()
 ```
+
+### Lock：共享资源
+```python
+import multiprocessing
+import sys
+
+def worker_with(lock,f):
+    with lock:
+        fs = open(f,"a+")
+        n = 10
+        while n!=0:
+            fs.write("lock with with")
+            --n
+        fs.close()
+def worker_without(lock,f):
+    lock.acquire()
+    try:
+        fs = open(f,"a+")
+        n = 10
+        while n!=0:
+            fs.write("lock with with")
+            --n
+        fs.close()
+    finally；
+        lock.release()
+        
+if __name__ == "__main__"；
+    lock = multiprocessing.lock()
+    f="file.txt"
+    w = mulitprocessing.Process(target = worker_with,args=(lock,f))
+    wo = mulitprocessing.Process(target = worker_without,args=(lock,f))
+    w.start()
+    wo.start()
+```
+
+### semaphore：访问数量
+```python
+import multiprocessing
+imort time
+def worker(s,i):
+    s.acquire()
+    print("current process {0} acquire".format(multiprocessing.current_process().name)
+    time.sleep()
+    
+```
+
+
+
