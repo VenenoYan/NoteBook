@@ -190,7 +190,7 @@ if __name__=="__main__":
         p.start()
 ```
 
-### event:通信
+### event:同步通信
 ```python
 import multiprocessing
 import time
