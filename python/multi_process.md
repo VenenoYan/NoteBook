@@ -135,5 +135,5 @@ class clockprocess(multiprocessing.Process):
             --n
 if __name__ == "__main__":
     p = clockprocess (3)
-    p.start()
+    p.start()           #自动调用run()
 ```
