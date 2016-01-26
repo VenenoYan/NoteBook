@@ -81,7 +81,7 @@ if __name__=="__main__":
         print("name is {0}, id is {1}".format(p.pid,p.name))
 ```
 ```python
-#实例3
+#实例3：darmon
 import multiprocessing
 import time
 
