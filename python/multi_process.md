@@ -211,6 +211,7 @@ if __name__=="__main__":
     w2.start()
     time.sleep(3)
     e.set()
+    print("main：e is set")
 ```
 
 
