@@ -120,6 +120,7 @@ if __name__=="__main__":
     p.start()后调用p.join()即可
 ```
 ```python
+#类中
 import multiprocessing 
 import time
 
