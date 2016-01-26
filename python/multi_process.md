@@ -123,5 +123,17 @@ if __name__=="__main__":
 import multiprocessing 
 import time
 
-class 
+class clockprocess(multiprocessing.Process):
+    def __init__(self,ti):
+        multiprocessing.Process.__init__(self)
+        self.ti = ti
+    def run():
+        n = 4
+        while n!=0:
+            print("the time is {0}".format(time.ctime()))
+            time.sleep(self.ti)
+            --n
+if __name__ == "__main__":
+    p = clockprocess (3)
+    p.start()
 ```
