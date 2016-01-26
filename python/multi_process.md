@@ -297,14 +297,15 @@ def func(msg):                              def func(msg):
     time.sleep(4)                               time.sleep(4)
     print("sub:end!!!")                         rint("sub:end!!!")
 if __name__=="__main__":                    if __name__=="__main__":
-    pool = multiprocessing.Pool(processes=5)
-    for i in range(6):
-        msg = "hello"+str(i)
-        pool.apply_async(func,(msg,))
-    print("main : mark mark mark mark")
-    pool.close()
-    pool.join()
-    print("main:end!!!")
+    pool = multiprocessing.Pool(processes=5)    pool = multiprocessing.Pool(processes=5)
+    for i in range(6):                          for i in range(6):
+        msg = "hello"+str(i)                        msg = "hello"+str(i)
+        pool.apply_async(func,(msg,))               pool.apply_async(func,(msg,))
+    print("main : mark mark mark mark")         print("main : mark mark mark mark")
+    pool.close()                                pool.close()
+    pool.join()                                 pool.join()
+    print("main:end!!!")                        print("main:end!!!")
+#output:
 ```
 
 
