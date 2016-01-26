@@ -288,7 +288,19 @@ if __name__ == "__main__":
     close()         关闭pool，不接受新增
     join()          主进程阻塞，等待子进程结束，要在close()/terminate()之后使用
     terminate()     结束工作进程，不处理未完成的任务
-import 
+    
+#非阻塞版                                     #阻塞版
+import multiprocessing                      import multiprocessing
+import time                                 import time
+def func(msg):
+    print("msg is {0}".format(msg))
+    time.sleep(4)
+    print("end!!!")
+if __name__=="__main__":
+    pool = multiprocessing.Pool(processes =5 )
+    for i in range(6):
+        msg = "hello"+str(i)
+        pool.apply_async(func,(msg,))
 ```
 
 
