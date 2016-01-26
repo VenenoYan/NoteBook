@@ -95,7 +95,10 @@ if __name__=="__main__":
     p = multiprocessing.Process(target=worker,args = (3,))
     p.start()
     print("end!!!")
-
+输出;
+    end!!!
+    start time is ...
+    end tiem is...
 #daemon:设置为True则意味着父结束子自动结束
 import multiprocessing
 import time
@@ -111,5 +114,7 @@ if __name__=="__main__":
     p.daemon = True
     p.start()
     print("end!!!")
+输出：end!!!
+因为设置daemon为True：p.start()之后父进程结束
 ```
 
