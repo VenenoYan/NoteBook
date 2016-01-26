@@ -181,7 +181,8 @@ def worker(s,i):
     s.acquire()
     print("current process {0} acquire".format(multiprocessing.current_process().name)
     time.sleep()
-    
+    s.release()
+    print("current process {0} release".format(multiprocessing.current_process().name)
 ```
 
 
