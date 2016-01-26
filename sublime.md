@@ -148,7 +148,7 @@ sublimetmpl:      常用模板(http://www.fantxi.com/blog/archives/sublime-templ
     ctrl+alt+c css
     ctrl+alt+p php
     ctrl+alt+r ruby
-    ctrl+alt++shift+p python
+    ctrl+alt+shift+p python
     新增模板：
         /home/[user]/.config/sublime-text-3/Packages/SublimeTmpl/templates中新建对应的模板:[name].tmpl
     自定义快捷键：preferences->key bindings-user
