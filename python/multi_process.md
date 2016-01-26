@@ -81,16 +81,14 @@ if __name__=="__main__":
         print("name is {0}, id is {1}".format(p.pid,p.name))
 ```
 ```python
-#实例1
+#实例3
 import multiprocessing
 import time
 
 def worker(ti):
-    n=6
-    while n>0:
-        print("time is {0}".format(time.ctime()))
-        time.sleep(ti)
-        n-=1
+    print("start time is {0}".format(time.ctime()))
+    time.sleep(ti)
+    print("end time is {0}".format(time.ctime()))
     
 if __name__=="__main__":
     print("the number of cpu is {0}".format(multiprocessing.cpu_count()))
