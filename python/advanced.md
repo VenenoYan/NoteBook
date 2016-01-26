@@ -52,7 +52,7 @@ def make_filter(keep):
         filter_doc = [i for i in lines if keep in i] 
         return filter_doc 
     return the_filter
-如果我们需要取得文件"result.txt"中含有"pass"关键字的行，则可以这样使用例子程序
+如果我们需要取得文件["result.txt"]中含有["pass"]关键字的行，则可以这样使用例子程序
 filter = make_filter("pass")
 filter_result = filter("result.txt")
 ```
