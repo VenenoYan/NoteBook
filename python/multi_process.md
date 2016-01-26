@@ -77,9 +77,8 @@ if __name__=="__main__":
     p2.start()
     p3.start()
     p4.start()
-    print("pid is {0}".format(p.pid))
-    print("name is {0}".format(p.name))
-    print("isalive is {0}".format(p.is_live()))
+    for p in multiprocessing.active_children():
+        print("name is {0}, id is {1}".format(p.pid,p.name))
 ```
 ```python
 #实例1
