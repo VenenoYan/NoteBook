@@ -221,6 +221,28 @@ if __name__=="__main__":
 #    wait for event--->True
 ```
 
+### Queue:数据传递
 
+```python
+import multiprocessing
+def writer(q):
+    try:
+        q.put(1,block=False)
+    except:
+        pass
+def reader(q):
+    try:
+        print(q.get(bloc=False))
+    except:
+        pass
+if __name__=="__main__":
+    q = multiprocessing.Queue()
+    wri = multiprocessing.Process(target = writer, args=(q,))
+    wri.start()
+    rea = multiprocessing.Process(target=reader,args = (q,))
+    rea.start()
+    rea.join()
+    wri.join()
+```
 
 
