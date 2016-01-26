@@ -289,37 +289,37 @@ if __name__ == "__main__":
     join()          主进程阻塞，等待子进程结束，要在close()/terminate()之后使用
     terminate()     结束工作进程，不处理未完成的任务
     
-#非阻塞版                                     #阻塞版
-import multiprocessing                      import multiprocessing
-import time                                 import time
-def func(msg):                              def func(msg):
-    print("msg is {0}".format(msg))             print("msg is {0}".format(msg))
-    time.sleep(4)                               time.sleep(4)
-    print("sub:end!!!")                         rint("sub:end!!!")
-if __name__=="__main__":                    if __name__=="__main__":
-    pool = multiprocessing.Pool(processes=5)    pool = multiprocessing.Pool(processes=5)
-    for i in range(6):                          for i in range(6):
-        msg = "hello"+str(i)                        msg = "hello"+str(i)
-        pool.apply_async(func,(msg,))               pool.apply(func,(msg,))     #阻塞
-    print("main : mark mark mark mark")         print("main : mark mark mark mark")
-    pool.close()                                pool.close()
-    pool.join()                                 pool.join()
-    print("main:end!!!")                        print("main:end!!!")
+#非阻塞版                                       #阻塞版
+import multiprocessing                          import multiprocessing
+import time                                     import time
+def func(msg):                                  def func(msg):
+    print("msg is {0}".format(msg))                 print("msg is {0}".format(msg))
+    time.sleep(4)                                   time.sleep(4)
+    print("sub:end!!!")                             rint("sub:end!!!")
+if __name__=="__main__":                        if __name__=="__main__":
+    pool = multiprocessing.Pool(processes=5)        pool = multiprocessing.Pool(processes=5)
+    for i in range(6):                              for i in range(6):
+        msg = "hello"+str(i)                            msg = "hello"+str(i)
+        pool.apply_async(func,(msg,))                   pool.apply(func,(msg,))     #阻塞
+    print("main : mark mark mark mark")             print("main : mark mark mark mark")
+    pool.close()                                    pool.close()
+    pool.join()                                     pool.join()
+    print("main:end!!!")                            print("main:end!!!")
 #  output:
-#  main : mark mark mark mark               msg is hello0       
-#  msg is hello0                            sub:end!!!
-#  msg is hello1                            msg is hello1
-#  msg is hello2                            sub:end!!!
-#  sub:end!!!                               msg is hello2
-#  sub:end!!!                               end!!!
+#  main : mark mark mark mark                   msg is hello0       
+#  msg is hello0                                sub:end!!!
+#  msg is hello1                                msg is hello1
+#  msg is hello2                                sub:end!!!
+#  sub:end!!!                                   msg is hello2
+#  sub:end!!!                                   end!!!
 #  msg is hello3
 #  sub:end!!!
 #  msg is hello4
 #  msg is hello5
 #  sub:end!!!
 #  sub:end!!!
-#  sub:end!!!                               main : mark mark mark mark  
-#  main:end!!!                              main:end!!!
+#  sub:end!!!                                   main : mark mark mark mark  
+#  main:end!!!                                  main:end!!!
 ```
 
 
