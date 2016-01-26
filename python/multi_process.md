@@ -183,6 +183,11 @@ def worker(s,i):
     time.sleep()
     s.release()
     print("current process {0} release".format(multiprocessing.current_process().name)
+if __name__=="__main__":
+    s = multiprocessing.Semaphore(2)
+    for i in range(5):
+        p = multiprocessing.Process(target=worker,args = (s,i**2))
+        p.start()
 ```
 
 
