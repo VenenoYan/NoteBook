@@ -43,5 +43,6 @@ vector<int> tt(a,a+4);
 for(auto it=tt.begin();it!=tt.end();++tt)
     ...
 ```
-### 5.explicit
-### 6.mutable
+### 5.implicit
+### 6.explicit
+### 7.mutable
