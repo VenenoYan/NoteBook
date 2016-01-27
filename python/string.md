@@ -139,7 +139,7 @@ print(s.split(','))```
 ```python
 delimiter = ','
 mylist = ['Brazil', 'Russia', 'India', 'China']
-print delimiter.join(mylist)    #join：把序列用del连接起来
+print delimiter.join(mylist)    #join：把序列、元组、字典用del连接起来
 
 strcat(sStr1,sStr2)
 sStr1 = 'strcat'
