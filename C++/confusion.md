@@ -47,4 +47,4 @@ for(auto it=tt.begin();it!=tt.end();++tt)
 ### 5.implicit/explicit
 首先explicit这个关键字只能用在类内部的构造函数声明上，而不能用在类外部的函数定义上，它的作用是不能进行隐式转换。即显示的指明用那个构造函数。implicit是默认的，可以自动使用最“接近的”构造函数，但是当构造函数参数超过两个后自动关闭implicit.
 ### 7.mutable/const
-const
+const 推出的初始目的，正是为了取代预编译指令，消除它的缺点，同时继承它的优点。
