@@ -6,3 +6,5 @@
 [字符串](string.md)
 1. 
 [stl源码](stl/README.md)
+1. 
+[static](static.md)
