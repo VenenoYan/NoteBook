@@ -24,16 +24,12 @@ S.capitalize()  #首字母大写
 String.capwords(S)
     #这是模块中的方法。它把S用split()函数分开，然后用capitalize()把首字母变成大写，最后用join()合并到一起
 S.title()   #只有首字母大写，其余为小写，模块中没有这个方法 
-strlwr(sStr1)
-sStr1 = 'JCstrlwr'
-sStr1 = sStr1.upper()
-sStr1 = sStr1.lower()
-print sStr1```
+```
 
 **字符串指定长度比较**
 
 ```python
-strncmp(sStr1,sStr2,n)
+#C:strncmp(sStr1,sStr2,n)
 sStr1 = '12345'
 sStr2 = '123bc'
 n = 3
