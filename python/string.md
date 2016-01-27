@@ -29,7 +29,7 @@ S.title()   #只有首字母大写，其余为小写，模块中没有这个方�
 **字符串指定长度比较**
 
 ```python
-#C:strncmp(sStr1,sStr2,n)
+指定长度：#C:strncmp(sStr1,sStr2,n)
 sStr1 = '12345'
 sStr2 = '123bc'
 n = 3
