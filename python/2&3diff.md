@@ -12,7 +12,7 @@
 ```python
 python2.7或之前，print只是语句而不是函数。  print "hello"
 但python3之后，必须函数形式才行。    print("hello")。
-同exec()
+同exec()，也是函数
 格式控制：
     以前都是  % 来控制，现在用format()
     "I love {0},{1},{2}".format("eagg","meat","ha")             #普通：以0开始
