@@ -43,6 +43,6 @@ vector<int> tt(a,a+4);
 for(auto it=tt.begin();it!=tt.end();++tt)
     ...
 ```
-### 5.implicit
-### 6.explicit
+### 5.implicit/explicit
+首先explicit这个关键字只能用在类内部的构造函数声明上，而不能用在类外部的函数定义上，它的作用是不能进行隐式转换。
 ### 7.mutable
