@@ -29,7 +29,8 @@ S.title()   #只有首字母大写，其余为小写，模块中没有这个方�
 **字符串指定长度比较**
 
 ```python
-指定长度：#C:strncmp(sStr1,sStr2,n)
+指定长度：
+#C:strncmp(sStr1,sStr2,n)
 sStr1 = '12345'
 sStr2 = '123bc'
 n = 3
@@ -43,14 +44,14 @@ print cmp(sStr1,sStr2)```
 **复制指定长度的字符**
 
 ```python
-strncpy(sStr1,sStr2,n)
+#C：strncpy(sStr1,sStr2,n)
 sStr1 = ''
 sStr2 = '12345'
 n = 3
 sStr1 = sStr2[0:n]
 print sStr1
 
-strcpy(sStr1,sStr2)
+#C：strcpy(sStr1,sStr2)
 sStr1 = 'strcpy'
 sStr2 = sStr1
 sStr1 = 'strcpy2'
@@ -59,7 +60,7 @@ print sStr2```
 **将字符串前n个字符替换为指定的字符**
 
 ```python
-strnset(sStr1,ch,n)
+#C:strnset(sStr1,ch,n)
 sStr1 = '12345'
 ch = 'r'
 n = 3
@@ -71,7 +72,7 @@ print sStr1
 **翻转字符串**
 
 ```python
-strrev(sStr1)
+#C:strrev(sStr1)
 sStr1 = 'abcdefg'
 sStr1 = sStr1[::-1]
 print sStr1```
@@ -87,25 +88,25 @@ S.rfind(substr, [start, [end]])
     #返回S中最后出现的substr的第一个字母的标号，如果S中没有substr则返回-1
 S.rindex(substr, [start, [end]])
 S.count(substr, [start, [end]]) #计算substr在S中出现的次数 
-strstr(sStr1,sStr2)
+#C:strstr(sStr1,sStr2)
 sStr1 = 'abcdefg'
 sStr2 = 'cde'
 print sStr1.find(sStr2)
 
-strchr(sStr1,sStr2) 
+#C:strchr(sStr1,sStr2) 
  < 0 为未找到
 sStr1 = 'strchr'
 sStr2 = 's'
 nPos = sStr1.index(sStr2)
 print nPos
 
-strspn(sStr1,sStr2)
+#C:strspn(sStr1,sStr2)
 sStr1 = '12345678'
 sStr2 = '456'
 sStr1 and chars both in sStr1 and sStr2
 print len(sStr1 and sStr2)
 #扫描字符串
-strpbrk(sStr1,sStr2)
+#C:strpbrk(sStr1,sStr2)
 sStr1 = 'cekjgdklab'
 sStr2 = 'gka'
 nPos = -1
@@ -124,7 +125,7 @@ S.rsplit([sep, [maxsplit]])
 S.splitlines([keepends])
     #把S按照行分割符分为一个list，keepends是一个bool值，如果为真每行后而会保留行分割符。
 S.join(seq) #把seq代表的序列──字符串序列，用S连接起来 
-strtok(sStr1,sStr2)
+#C:strtok(sStr1,sStr2)
 sStr1 = 'ab,cde,fgh,ijk'
 sStr2 = ','
 sStr1 = sStr1[sStr1.find(sStr2) + 1:]
@@ -138,7 +139,7 @@ print(s.split(','))```
 ```python
 delimiter = ','
 mylist = ['Brazil', 'Russia', 'India', 'China']
-print delimiter.join(mylist)
+print delimiter.join(mylist)    #join：把序列用del连接起来
 
 strcat(sStr1,sStr2)
 sStr1 = 'strcat'
