@@ -85,9 +85,7 @@ bool与int:
 但是3.X之后True、False、as、with都是关键字，所以速度没区别
 ```
 1. 
-添加as、with为关键字
-1. 
-nonloca
+nonlocal
 ```python
 使用nonlocal可以声明一个外部变量，但不是global变量
 def test():
