@@ -87,7 +87,7 @@ bool与int:
 1. 
 nonlocal
 ```python
-使用nonlocal可以声明一个外部变量，但不是global变量
+使用nonlocal可以声明上一层变量，但不是global变量
 def test():
     i = 19
     def uses():
