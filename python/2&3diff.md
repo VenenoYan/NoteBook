@@ -22,8 +22,8 @@ python2.7或之前，print只是语句而不是函数。  print "hello"
 1. 
 除法
 ```python
-在python2.7前，‘/’和‘//’代表floor除     3/2=1
-python3后，‘/’代表除法(/、//无差)  3/2=1.5
+在python2.7前，‘/’和‘//’都代表floor除     3/2=1
+python3后，‘/’代表除法(//则是地板除)  3/2=1.5
 当然可在python2.X中：from __future__ import division来使用Python3的除法或者强制转换(float)3/2、3/2.0
 ```
 1. range()/xrange()
