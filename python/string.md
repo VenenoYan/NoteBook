@@ -10,7 +10,7 @@ s.strip().lstrip().rstrip(',')```
 **字符串长度**
 
 ```python
-strlen(sStr1)
+#C:strlen(sStr1)
 sStr1 = 'strlen'
 print len(sStr1)```
 
@@ -123,10 +123,10 @@ print nPos```
 
 ```python
 S.split([sep, [maxsplit]])
-#以sep为分隔符，把S分成一个list。maxsplit表示分割的次数。默认的分割符为空白字符
+    #以sep为分隔符，把S分成一个list。maxsplit表示分割的次数。默认的分割符为空白字符
 S.rsplit([sep, [maxsplit]])
 S.splitlines([keepends])
-#把S按照行分割符分为一个list，keepends是一个bool值，如果为真每行后而会保留行分割符。
+    #把S按照行分割符分为一个list，keepends是一个bool值，如果为真每行后而会保留行分割符。
 S.join(seq) #把seq代表的序列──字符串序列，用S连接起来 
 strtok(sStr1,sStr2)
 sStr1 = 'ab,cde,fgh,ijk'
