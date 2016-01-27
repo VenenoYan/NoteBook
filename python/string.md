@@ -35,7 +35,7 @@ sStr2 = '123bc'
 n = 3
 print cmp(sStr1[0:n],sStr2[0:n])
 
-strcmp(sStr1,sStr2)
+#C:strcmp(sStr1,sStr2)
 sStr1 = 'strchr'
 sStr2 = 'strch'
 print cmp(sStr1,sStr2)```
