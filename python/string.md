@@ -139,15 +139,15 @@ print(s.split(','))```
 ```python
 delimiter = ','
 mylist = ['Brazil', 'Russia', 'India', 'China']
-print delimiter.join(mylist)    #join：把序列、元组、字典用del连接起来
+print delimiter.join(mylist)    #join：把序列、元组、字典等用del连接起来
 
-strcat(sStr1,sStr2)
+#C：strcat(sStr1,sStr2)
 sStr1 = 'strcat'
 sStr2 = 'append'
 sStr1 += sStr2
 print sStr1
 
-strncat(sStr1,sStr2,n)
+#C：strncat(sStr1,sStr2,n)
 sStr1 = '12345'
 sStr2 = 'abcdef'
 n = 3
