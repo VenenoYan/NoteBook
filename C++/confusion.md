@@ -37,6 +37,12 @@ getchar()```
 
 
 ### 4.auto
+auto关键字可以从表达式中推导出变量的类型，这样就大大简化了编程人员的工作。而且auto是在编译时对变量进行了类型推导，所以不会对程序的效率造成影响，另外auto也不会对编译速度造成太大影响，因为编译时本身也要右侧推导后判断是否与左侧匹配。
+```C++
+vector<int> tt(a,a+4);
+for(auto it=tt.begin();it!=tt.end();++tt)
+    ...
+```
 ### 5.const 
 ### 6.explicit
 ### 7.mutable
