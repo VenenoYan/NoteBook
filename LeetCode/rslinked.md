@@ -1,4 +1,73 @@
 206
 把单链表逆序
+
 92
 把单链表指定范围逆序
+```C++
+For example:
+Given 1->2->3->4->5->NULL, m = 2 and n = 4,
+
+return 1->4->3->2->5->NULL.```
+####solution
+```C++
+//206
+ListNode *reverseList(ListNode *head){
+    if(!head)
+        return NULL;
+    ListNode *p,*q,*n;
+    q=p=head;
+    n=q->next;
+    while(n){
+        p->next=n->next;
+        n->next=q;
+        q=n;
+        n=p->next;
+    }
+    return q;
+}
+//92
+ListNode *reverseBetween(ListNode *head,int s,int e){
+    if(!head||s==e)
+        return head;
+    ListNode *q,*p,*n;
+    int diff = e-s;
+    p = q = head;
+    while(--s){
+        q=p;
+        p=p->next;
+    }
+    if(q==p){
+        n=q->next;       //如果只有一个节点的话，那么s==e为True。早就结束了,即至少2个
+        while(diff){
+            q->next=n->next;
+            n->next=p;
+            p=n;
+            n=q->next;
+            --diff;
+        }
+        return p;
+    }
+    n=p->next;
+    if(n==NULL){
+        q->next=p->next;
+        p->next=q;
+        return p;
+    }
+    while(diff!=0){
+        p->next=n->next;
+        n->next=q->next;
+        q->next=n;
+        n=p->next;
+        --diff;
+    }
+    return head;
+}
+```
+####lesson
+```C
+1、头插入
+2、指定时：
+    1）从第一个1开始
+    2) 哨兵
+    3) 链表只有1、2个时的特殊处理
+```
