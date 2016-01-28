@@ -8,6 +8,7 @@ Output: 7 -> 0 -> 8
 ### solution
 
 ```C++
+//使用较长的那个链表返回
 ListNode* addTwoNumbers(ListNode* l1, ListNode* l2) {
     ListNode *h1=l1,*h2=l2,*head=NULL,*ret=NULL;
     int i1,i2,va,t=0;
