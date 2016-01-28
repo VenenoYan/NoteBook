@@ -24,21 +24,21 @@
         //调试信息的缓冲长度
         #define DEBUG_BUFFER_MAX 4096
         //将调试信息输出到文件中
-        #define printDebugMsg(moduleName, format, ...) {\
-            char buffer[DEBUG_BUFFER_MAX+1]={0};\
+        #define printDebugMsg(moduleName, format, ...) {
+            char buffer[DEBUG_BUFFER_MAX+1]={0};
             snprintf( buffer, DEBUG_BUFFER_MAX \
-                    , "[%s] "format" File:%s, Line:%d\n", moduleName, ##__VA_ARGS__, __FILE__, __LINE__ );\
-            FILE* fd = fopen(DEBUG_FILE, "a");\
-            if ( fd != NULL ) {\
-                fwrite( buffer, strlen(buffer), 1, fd );\
-                fflush( fd );\
-                fclose( fd );\
-            }\
+              ,"[%s] "format" File:%s, Line:%d\n", moduleName, ##__VA_ARGS__, __FILE__, __LINE__ );
+            FILE* fd = fopen(DEBUG_FILE, "a");
+            if ( fd != NULL ) {
+                fwrite( buffer, strlen(buffer), 1, fd );
+                fflush( fd );
+                fclose( fd );
+            }
         }
     #else
         //将调试信息输出到终端
-        #define printDebugMsg(moduleName, format, ...) \
-                  printf( "[%s] "format" File:%s, Line:%d\n", moduleName, ##__VA_ARGS__, __FILE__, __LINE__ );
+        #define printDebugMsg(moduleName, format, ...) printf \
+            ( "[%s] "format" File:%s, Line:%d\n", moduleName, ##__VA_ARGS__, __FILE__, __LINE__ );
     #endif //end for #ifdef DEBUG_TO_FILE
 #else
     //发行版本，什么也不做
