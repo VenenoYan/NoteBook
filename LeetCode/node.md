@@ -18,5 +18,4 @@ the linked list should become 1 -> 2 -> 4 after calling your function.```
 
 ### Lesson:
 
-1. 复制下一个节点到自己身上，然后删除下一个即
-可
+1. 复制下一个节点到自己身上，然后删除下一个即可
