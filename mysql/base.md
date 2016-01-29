@@ -153,7 +153,20 @@ SQL语句分为三种：DML（Data Manipulation Language）与DDL(Data Definitio
 ### 常用函数：
 
 ```C++
-version()
-current_date()
-
+version()               mysql版本
+current_date()          当前时期
+user()                  当前用户
+database()              当前的数据库
+now()                   当前时间
+concat()                连接成一个字符串
+lower()/upper()         小写/大写
+left/right(str,n)       取str的左/右n个字符
+substring(str,x,y)      从str的x处取y个字符
+abs()                   绝对值
+ceil()/floor()          大于的最小整数／小于的最大整数
+mod(x,y)                x除以y
+rand()                  0~1随即数
+round(x,y)              对x四舍五入，留y位小数
+truncate(x,y)           x保留y位小数后的值
+count()                 计数
 ```
