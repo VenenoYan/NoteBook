@@ -3,7 +3,7 @@
 ```C++
 MySQL 为关系型数据库(Relational Database Management System), 这种所谓的"关系型"可以理解为"表格"的概念, 
         一个关系型数据库由一个或数个表格组成
-不区分大小写,每条命令以';'结束。
+
 SQL语句分为三种：DML（Data Manipulation Language）与DDL(Data Definition Language)及DCL(Data Control)
     1、DML
         select、update、delete、insert into
@@ -73,6 +73,7 @@ SQL语句分为三种：DML（Data Manipulation Language）与DDL(Data Definitio
             UNSIGNED	        无符号
             CHARACTER SET [name]	指定一个字符集
 基本操作：
+不区分大小写,每条命令以';'结束。
     登录：
         mysql [-h[host_addr]] -u[user-name] -p[password]
     修改密码：
