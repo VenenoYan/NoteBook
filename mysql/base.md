@@ -75,7 +75,7 @@ SQL语句分为三种：DML（Data Manipulation Language）与DDL(Data Definitio
 基本操作：
     不区分大小写,每条命令以';'结束。
     登录：
-        mysql [-h[host_addr]] -u[user-name] -p[password]
+        mysql [-h[host_addr]] -u[user-name] -p[password]   没有空格
     修改密码：
         mysqladmin -u[user-name] -p[old-password] password [new-password]
     数据库：
