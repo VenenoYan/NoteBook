@@ -3,7 +3,7 @@
     修改密码：
         1)终端：mysqladmin -u[user-name] -p[old-password] password [new-password]
         2)mysql环境：set password for [username]@[host]=password('new password')  修该某一用户
-                set password=password('new password')       修该当前用户
+                    set password=password('new password')       修该当前用户
     添加用户：
         grant [select,insert,update,delete] on [DB].[T] to [username]@[host] identified by [p-word]
         即：
