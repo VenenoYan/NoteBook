@@ -19,7 +19,7 @@ void deleteNode(ListNode* node) {
         node->next=NULL;
 }```
 
-### Lesson:
+### lesson:
 
 1. 复制下一个节点到自己身上，然后删除下一个即可
 
@@ -55,7 +55,10 @@ ListNode* removeElements(ListNode* head, int val) {
     return head;
 }
 ```
-Lesson
+
+### lesson
+
+
 1. 使用上题的方法
 1. 
-没有使用：因为要放置一个哨兵，以防最后一个是要删除的
+没有使用：因为要放置一个哨兵，以防最后一个是要删除的;同时删除时更简单
