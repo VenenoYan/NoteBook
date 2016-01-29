@@ -1,5 +1,5 @@
 
-### 237. Delete Node in a Linked List
+### **237.** Delete Node in a Linked List
 
 在一个链表中，删除一个节点。只提供该节点，而且你只能访问该节点。
 ```
@@ -22,9 +22,9 @@ the linked list should become 1 -> 2 -> 4 after calling your function.```
 
 <hr>
 
-### 203. Remove Linked List Elements
+### **203**. Remove Linked List Elements
 
-
+删除链表中指定的节点
 ```C
 Remove all elements from a linked list of integers that have value val.
 
