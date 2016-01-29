@@ -104,6 +104,10 @@ SQL语句分为三种：DML（Data Manipulation Language）与DDL(Data Definitio
         load data infile 'path/filename' into table [Tname];
     备份：  
         终端中：mysqldump -r[username] -p[password] [DBname] [Tname] > 'backup_name'
+    select:
+        columns from ...
+        func
+        math
 ```
 实例;
 ```C
@@ -116,6 +120,10 @@ SQL语句分为三种：DML（Data Manipulation Language）与DDL(Data Definitio
     		age tinyint unsigned default '0' not null,
     		tel char(13) null default "-"
     	)ENGINE=InnoDB DEFAULT CHARSET=gbk;
+    between：
+        between ... and ...
+        not between ... and ...
+    in/not in    desc/asc
     where：
         select t.name from students as t where t.sex='男' and t.age>18 and t.tel like "%687*";
     like用法：
@@ -140,4 +148,12 @@ SQL语句分为三种：DML（Data Manipulation Language）与DDL(Data Definitio
         SELECT t1.id,t2.id,t3.id FROM t1,(  t2 LEFT JOIN t3 ON (t3.id=t1.id)  ) WHERE t1.id=t2.id;
         --应该这么写
         SELECT t1.id,t2.id,t3.id FROM (t1,t2) LEFT JOIN t3 ON (t3.id=t1.id) WHERE t1.id=t2.id;
+```
+
+### 常用函数：
+
+```C++
+version()
+current_date()
+
 ```
