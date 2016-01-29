@@ -34,3 +34,28 @@ Remove all elements from a linked list of integers that have value val.
 Example
 Given: 1 --> 2 --> 6 --> 3 --> 4 --> 5 --> 6, val = 6
 Return: 1 --> 2 --> 3 --> 4 --> 5```
+
+### solution
+
+```C++
+ListNode* removeElements(ListNode* head, int val) {
+    ListNode *start,*p;
+    while(head&&head->val==val)
+        head=head->next;
+    p=start=head;
+    while(start){
+        if(start->val!=val){
+            p=start;
+            start=start->next;
+        }
+        else{
+            p->next=start->next;
+        }
+    }
+    return head;
+}
+```
+Lesson
+1. 使用上题的方法
+1. 
+没有使用：因为要放置一个哨兵，以防最后一个是要删除的
