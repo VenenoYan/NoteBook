@@ -73,7 +73,7 @@ SQL语句分为三种：DML（Data Manipulation Language）与DDL(Data Definitio
             UNSIGNED	        无符号
             CHARACTER SET [name]	指定一个字符集
 基本操作：
-不区分大小写,每条命令以';'结束。
+    不区分大小写,每条命令以';'结束。
     登录：
         mysql [-h[host_addr]] -u[user-name] -p[password]
     修改密码：
