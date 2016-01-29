@@ -11,10 +11,13 @@ the linked list should become 1 -> 2 -> 4 after calling your function.```
 ### solution:
 
 ```C++
-    void deleteNode(ListNode* node) {
+void deleteNode(ListNode* node) {
+    if(node->next){
         node->val=node->next->val;
         node->next=node->next->next;
-    }```
+    }else
+        node->next=NULL;
+}```
 
 ### Lesson:
 
