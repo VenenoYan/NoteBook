@@ -207,7 +207,9 @@ iterator rend();                    //返回string第一个字符位置的前面
 **C兼容：**
 ```C
 #include <string.h>/<cstring> 
-char* c_str(const char &s)       //返回C格式字符串
+//返回C格式字符串
+char* c_str(const string &s)   
+char* data(const string &s)
 
 void * memcpy( void * des, const void * src, size_t num );  //把src的前num个字符赋值给des
 void * memmove( void * des, const void * src, size_t num );   //从src取num个字符，在des处开始覆盖
