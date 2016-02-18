@@ -91,9 +91,9 @@ char *asctime(const struct tm* timeptr)   将时间和日期以字符串格式�
 clock()     确定处理器时间
 char *ctime(const time_t* timep);    把日期和时间转换为字符串
 double difftime(time_t time1, time_t time2);  计算两个时刻之间的时间差
-gmtime()    把日期和时间转换为(GMT)时间(将time_t转换成struct tm) 
-localtime() 取得当地目前时间和日期
-mktime()    将时间结构数据转换成经过的秒数
+struct tm* gmtime(const time_t* time+_t);    把日期和时间转换为(GMT)时间(将time_t转换成struct tm) 
+struct tm* localtime(const time_t* timep);  取得当地目前时间和日期
+time_t mktime(struct tm* timeptr);    将时间结构数据转换成经过的秒数
 strftime()  将时间格式化
 time()      取得目前的时间
 int gettimeofday(struct timeval* tv,struct timezone* tz);当前距离1970年的秒数和微妙数，一般不用后面的时区tz
