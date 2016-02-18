@@ -228,5 +228,5 @@ strftime(...)
     %z，%Z 时区名称，如果不能得到时区名称则返回空字符。
     %% 百分号
       
-  strptime(str,60, "%Y-%m-%d %H:%M:%S",struct tm *ptr;)
+  strftime(str,60, "%Y-%m-%d %H:%M:%S",struct tm *ptr);
   ```
