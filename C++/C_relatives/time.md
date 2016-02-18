@@ -87,7 +87,7 @@ struct tm {
 };
 
 函数：
-asctime()   将时间和日期以字符串格式表示
+char *asctime(const struct tm* timeptr)   将时间和日期以字符串格式表示
 clock()     确定处理器时间
 ctime()     把日期和时间转换为字符串
 difftime()  计算两个时刻之间的时间差
