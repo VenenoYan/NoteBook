@@ -95,7 +95,7 @@ struct tm* gmtime(const time_t* timep);    把日期和时间转换为(GMT)时�
 struct tm* localtime(const time_t* timep);  取得当地目前时间和日期
 time_t mktime(struct tm* timeptr);    将时间结构数据转换成经过的秒数
 strftime()  将时间格式化
-time()      取得目前的时间
+time_t time(time_t* t);      取得目前的时间的秒数
 int gettimeofday(struct timeval* tv,struct timezone* tz);当前距离1970年的秒数和微妙数，一般不用后面的时区tz
 ```
 **struct timeval 结构体**
