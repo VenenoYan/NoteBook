@@ -31,4 +31,5 @@ public:
         return root;
     }```
 lesson:
+1. 
 遍历，每个节点换一下左右兄弟即可
