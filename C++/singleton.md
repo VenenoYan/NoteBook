@@ -61,7 +61,7 @@ class testsingle{
         class testhold{
             static testsingle *instance = new testsingle();
             ～testhold(){
-                free(instance);
+                delete instance;
             }
         }
     public:
