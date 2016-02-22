@@ -85,8 +85,17 @@ class singleton{
             return instance;
         }
 }
-
 ```
+**问题**：
+这是由局部静态变量的实际实现所决定的。为了能满足局部静态变量只被初始化一次的需求，很多编译器会<br>通过一个全局的标志位记录该静态变量是否已经被初始化的信息。那么，对静态变量进行初始化的伪码就变成下面<br>这个样子：
+```C++
+bool flag = false;
+if (!flag)
+{
+    flag = true;
+    staticVar = initStatic();
+}```
+“那么在第一个线程执行完对flag的检查并进入if分支后，第二个线程将可能被启动，从而也进入if分支。这样，两个线程都将执行对静态变量的初始化。
 1. 
 线程安全、异常安全，可以做以下扩展                      好
 ```C++
@@ -129,3 +138,45 @@ Singleton* Singleton::Instantialize()
 	}
 	return pInstance;
 }```
+1. 
+升级
+```C++
+template <typename T>
+class Singleton
+{
+public:
+    static T& Instance()
+    {
+        if (m_pInstance == NULL)
+        {
+            Lock lock;
+            if (m_pInstance == NULL)
+            {
+                m_pInstance = new T();
+                atexit(Destroy);
+            }
+            return *m_pInstance;
+        }
+        return *m_pInstance;
+    }
+ 
+protected:
+    Singleton(void) {}
+    ~Singleton(void) {}
+ 
+private:
+    Singleton(const Singleton& rhs) {}
+    Singleton& operator = (const Singleton& rhs) {}
+ 
+    void Destroy()
+    {
+        if (m_pInstance != NULL)
+            delete m_pInstance;
+        m_pInstance = NULL;
+    }
+ 
+    static T* volatile m_pInstance;
+};
+ 
+template <typename T>
+T* Singleton<T>::m_pInstance = NULL;```
