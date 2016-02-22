@@ -7,7 +7,7 @@ struct CLS
 {
     int m_i;
     CLS()=default;  //当你定义了构造函数，初始化时必须按照此要求来。加上‘=default’可以“使用”编译器的默认构造函数
-    explicit CLS(int c); //仅用于单个参数的构造函数：不能发生相应的隐式类型转换：CLS t = CLS(18);CLS t(10)错
+    explicit CLS(int c); //仅用于单个参数的构造函数：不能发生相应的隐式类型转换：CLS t = CLS(18);CLS t(18)错
     CLS( int i ) : m_i(i){}
     CLS()
     {
