@@ -13,9 +13,12 @@
 ```C++
 class testsingle{
     private:
+        testsingle * instance;
         testsingle()=delete;
         testsingle(const testsingle &);
         testsingle & operator =(const testsingle &);
+    public:
+        static testsingle *
 }
 ```
 1. 
