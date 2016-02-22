@@ -77,8 +77,8 @@ wctomb(); 把宽字符转换为多字节字符```
 引入stdlib.h头文件后可以在代码中操作内存的分配与释放。
 下面来一一讲解下内存分配函数：
 
-void *malloc(size_t size);
-malloc()函数分配了指定大小为size的字节数，这些字节块是没有被初始化的，也就是说有可能是非\0有值的。这也正是malloc()的缺点。如果size为0，则函数返回NULL；否则返回一个指向该内存块的指针，该指针可随后被free()调用释放。
+**void *malloc(size_t size);**
+malloc()函数分配了指定大小为size的字节数，这些字节块**是没有被初始化的**，也就是说有可能是非\0有值的。这也正是malloc()的缺点。如果size为0，则函数返回NULL；否则返回一个指向该内存块的指针，该指针可随后被free()调用释放。
 函数的返回类型是void *，即任意类型，虽然很多编译器会把malloc()返回的地址自动转换成赋值语句左边的指针类型，但在编码中，习惯在malloc()赋值前做一次强制转换。
 另外，由于可能在执行内存分配时刚好内存不足，函数也会返回一个NULL，所以对所返回的指针做非空判断。如下所示：
 
@@ -88,8 +88,8 @@ malloc()函数分配了指定大小为size的字节数，这些字节块是没�
        } else {
             // go on
        }
-void *calloc(size_t nmemb, size_t size);
-calloc()解决了malloc()分配的内存块无初始化的问题，每个字节都被强制赋值为\0。还有另一个特点是把内存块分配为给定了大小的数组。即第一个参数nmemb指定了分配的元素个数，第二个参数size指定了单个元素的指定大小。
+**void *calloc(size_t nmemb, size_t size);**
+calloc()解决了malloc()分配的内存块无初始化的问题，**每个字节都被强制赋值为\0。还有另一个特点是把内存块分配为给定了大小的数组**。即第一个参数nmemb指定了分配的元素个数，第二个参数size指定了单个元素的指定大小。
 刚才malloc()的示例代码可以使用calloc()的话则可修改为：
 
        char* p = (char*)calloc(10, sizeof(char));
@@ -98,7 +98,7 @@ calloc()解决了malloc()分配的内存块无初始化的问题，每个字节�
        } else {
             // go on
        }
-void *realloc(void *ptr, size_t size)
+**void *realloc(void *ptr, size_t size)**
 在程序运行中，碰到新的数据需要继续填充处理时发现原来的内存块已经不够了，则要开辟新更大的内存块以处理更多的数据，则就需要使用到realloc()函数了。
 realloc()函数的第一个参数ptr表示指向老的内存块的指针，第二个参数sizt则表示新的内存块大小。
 开辟出新的内存块后，会把老内存块的数据复制到新内存块中；老内存块的空间会自动被系统回收。
@@ -107,7 +107,7 @@ realloc()函数的第一个参数ptr表示指向老的内存块的指针，第�
 如果指定的ptr是NULL，则函数的作用相当于malloc(size);
 如果指定的size值为0，则相当于调用了free(ptr)去释放了原有的内存块；
 
-void free(void *ptr)
+**void free(void *ptr)**
 释放指针ptr所指向的内存块。如果ptr是NULL，则相当于什么也没做。
 当对ptr执行free()操作后，要及时对ptr赋值为空，避免野指针的出现或误操作。
 
@@ -138,6 +138,7 @@ realloc的内存泄露陷井
 
 其中示例代码中的函数get_string()见sodino另一篇文章【C/C++】使用getchar()实现gets()功能
 
+```C
 #include <stdio.h>
 #include <stdlib.h>
 #include <string.h>
@@ -203,4 +204,4 @@ int main/*04*/ (int argc, char ** argv) {
     // 保持习惯，及时置空
     pStore = NULL;
     return EXIT_SUCCESS;
-}
+}```
