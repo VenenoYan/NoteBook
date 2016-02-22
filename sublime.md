@@ -64,6 +64,10 @@ Ctrl + 数字键        跳转到指定屏
 Ctrl + K / B        显示或隐藏侧栏
 Ctrl + M            可以快速的在起始括号和结尾括号间切换
 Ctrl + Shift + M    则可以快速选择括号间的内容
+　　
+tab键的自动补全：
+	div.classname   自动展开：<div class="classname">
+	div#idname      自动展开：<div id="idname">
 ```
 
 
