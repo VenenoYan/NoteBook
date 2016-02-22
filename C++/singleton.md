@@ -37,7 +37,7 @@ class singleton{
                 instance = new Singleton();
             return instance;
         }     //不好，多线程会导致在判断NULL时创建多个实例
-        //改进
+        //改进:双重
         static singleton *getinstance(){
             if(instance==NULL){
                 lock();
