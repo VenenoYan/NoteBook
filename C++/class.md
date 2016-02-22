@@ -1,7 +1,7 @@
 预编译/防止重复编译：**#ifndef**
 1. 仅在编译阶段起作用
 2. 大写
-3. 
+3. #ifndef   #define  #endif
 
 ```C
 #include <stdlib.h>
@@ -16,7 +16,7 @@ struct CLS
     CLS( int i ) : m_i(i){}
     CLS()
     {
-        CLS(0);  //不行的！！！！下面是方案：
+        CLS(0);  //不行的！！！！下面是方案：new
     }
     ~CLS()=delete;  // 禁止某一个函数
 };
