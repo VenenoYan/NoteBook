@@ -16,7 +16,7 @@ struct CLS
     CLS( int i ) : m_i(i){}
     CLS()
     {
-        CLS(0);  //不行的！！！！下面是方案
+        CLS(0);  //不行的！！！！下面是方案：
     }
     ~CLS()=delete;  // 禁止某一个函数
 };
