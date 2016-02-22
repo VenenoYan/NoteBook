@@ -114,3 +114,10 @@ int main (int argc, char ** argv) {
 
 父进程为了获取子进程的SIGSTOP、SIGTERM等信号时，由于**调用了wait而导致主进程一直阻塞**。在实际的开发中，主进程在等待子进程状态变化时还会有其它的事情要去执行，所以需要一种异步回调机制，让主进程可以在执行其它任务的时候，又可以监听到子进程的进程状态变化时及时处理。====》signal()函数就可以解决以上的问
 题。
+```C
+signal()函数原型如下：
+
+   #include <signal.h>
+
+   typedef void (*sighandler_t)(int);
+   sighandler_t signal(int signum, sighandler_t handler);```
