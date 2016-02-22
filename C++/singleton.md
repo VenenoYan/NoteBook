@@ -67,3 +67,5 @@ class testsingle{
         }
 }
 ```
+1. 
+局部静态变量：
