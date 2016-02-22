@@ -69,3 +69,16 @@ class testsingle{
 ```
 1. 
 局部静态变量：
+```C++
+class singleton{
+    private:
+        singleton();
+        singleton(const singleton &);
+        singleton & operator =(const singleton &);
+    public:
+        singleton & getinstance(){
+            static singleton instance;
+            return instance;
+        }
+}
+```
