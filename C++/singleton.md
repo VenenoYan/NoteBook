@@ -90,14 +90,17 @@ class singleton{
 ```C++
 class Lock
 {
+    private:       
+    	CCriticalSection m_cs;
     public:
-        inline locker() { m_hMutex=CreateMutex(NULL,FALSE,NULL); std::cout<<"Locker::Locker() " ;} 
-        inline ~locker() { CloseHandle(m_hMutex); } 
-        inline void lock() { WaitForSingleObject(m_hMutex, INFINITE); } 
-        inline void unlock() { ReleaseMutex(m_hMutex); } 
-    private: 
-        HANDLE m_hMutex;
-};
+    	Lock(CCriticalSection  cs) : m_cs(cs)
+    	{
+    		m_cs.Lock();
+    	}
+    	~Lock()
+    	{
+    		m_cs.Unlock();
+    	}
 };
 class Singleton
 {
