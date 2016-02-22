@@ -356,6 +356,9 @@ setw(n)	设置输出字段宽度为n位。
 setfill(c)	设置填充字符c，c可以是字符常量或字符变量
 resetiosflags	终止已设置的输出格式状态，在括号中应指定内容。
  
+  cout<<setfill('*')<<setw(10)<<pt<<endl; //指定域宽,输出字符串,空白处以'*'填充
+  cout<<"oct:"<<setbase(8)<<b<<endl; //以八进制形式输出整数b
+  cout<<setiosflags(ios::scientific)<<setprecision(8);
 ```
 
 ### 基于WINAPI的文件操作
