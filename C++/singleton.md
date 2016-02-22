@@ -8,7 +8,7 @@
 定义一个单例类，使用类的私有静态指针变量指向类的唯一实例，并用一个公有的静态方法获取该实例。**拷贝构造函数和赋值构造函数都要是私有化**
 #### **两种模式**
 1. 
-“恶汉”：实例化类时就创建刚静态实例
+“恶汉”：实例化类时就创建静态实例
 ```C++
 class testsingle{
     private:
@@ -60,6 +60,9 @@ class testsingle{
     private:
         class testhold{
             static testsingle *instance = new testsingle();
+            ～testhold(){
+                free(instance);
+            }
         }
     public:
         static testsingle *getinstance(){
