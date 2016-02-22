@@ -76,7 +76,7 @@ class singleton{
         singleton(const singleton &);
         singleton & operator =(const singleton &);
     public:
-        singleton & getinstance(){
+        static singleton & getinstance(){
             static singleton instance;
             return instance;
         }
