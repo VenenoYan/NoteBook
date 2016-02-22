@@ -50,4 +50,20 @@ class singleton{
         }
 }
 ```
-解决思路：
+## 解决思路：
+
+
+1. 
+内部类
+```C++
+class testsingle{
+    private:
+        class testhold{
+            static testsingle *instance = new testsingle();
+        }
+    public:
+        static testsingle *getinstance(){
+            return this.testsingle.instance;
+        }
+}
+```
