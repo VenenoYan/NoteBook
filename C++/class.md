@@ -1,7 +1,8 @@
 预编译/防止重复编译：**#ifndef**
 1. 仅在编译阶段起作用
 2. 大写
-3. #ifndef   #define  #endif
+3. 
+``` #ifndef   #define  #endif```
 
 ```C
 #include <stdlib.h>
