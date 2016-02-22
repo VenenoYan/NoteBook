@@ -51,3 +51,4 @@ class singleton{
         }
 }
 ```
+解决思路：
