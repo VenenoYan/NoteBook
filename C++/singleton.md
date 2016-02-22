@@ -91,28 +91,28 @@ class singleton{
 ```C++
 class Lock
 {
-private:       
-	CCriticalSection m_cs;
-public:
-	Lock(CCriticalSection  cs) : m_cs(cs)
-	{
-		m_cs.Lock();
-	}
-	~Lock()
-	{
-		m_cs.Unlock();
-	}
+    private:       
+    	CCriticalSection m_cs;
+    public:
+    	Lock(CCriticalSection  cs) : m_cs(cs)
+    	{
+    		m_cs.Lock();
+    	}
+    	~Lock()
+    	{
+    		m_cs.Unlock();
+    	}
 };
 class Singleton
 {
-private:
-	Singleton();
-	Singleton(const Singleton &);
-	Singleton& operator = (const Singleton &);
-public:
-	static Singleton *Instantialize();
-	static Singleton *pInstance;
-	static CCriticalSection cs;
+    private:
+    	Singleton();
+    	Singleton(const Singleton &);
+    	Singleton& operator = (const Singleton &);
+    public:
+    	static Singleton *Instantialize();
+    	static Singleton *pInstance;
+    	static CCriticalSection cs;
 };
 Singleton* Singleton::pInstance = 0;
 Singleton* Singleton::Instantialize()
