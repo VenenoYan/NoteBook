@@ -1,3 +1,8 @@
+预编译/防止重复编译：**#ifndef**
+1. 仅在编译阶段起作用
+2. 大写
+3. 
+
 ```C
 #include <stdlib.h>
 #include <iostream>
@@ -11,7 +16,7 @@ struct CLS
     CLS( int i ) : m_i(i){}
     CLS()
     {
-        CLS(0);
+        CLS(0);  //不行的！！！！
     }
     ~CLS()=delete;  // 禁止某一个函数
 };
