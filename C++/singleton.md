@@ -72,7 +72,7 @@ class testsingle{
 }
 ```
 1. 
-局部静态变量：必须把拷贝构造函数和赋值构造函数都要是私有化，否则违反单例原则       
+局部静态变量：必须把拷贝构造函数和赋值构造函数都要是私有化，否则违反单例原则       良
 ```C++
 class singleton{
     private:
@@ -85,6 +85,7 @@ class singleton{
             return instance;
         }
 }
+
 ```
 1. 
 线程安全、异常安全，可以做以下扩展                      好
