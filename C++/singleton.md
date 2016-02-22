@@ -54,7 +54,7 @@ class singleton{
 
 
 1. 
-内部类
+内部类:存在什么时候释放的问题
 ```C++
 class testsingle{
     private:
