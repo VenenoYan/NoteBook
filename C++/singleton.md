@@ -6,3 +6,18 @@
 ### 基本思路
 
 定义一个单例类，使用类的私有静态指针变量指向类的唯一实例，并用一个公有的静态方法获取该实例。
+
+#### **两种模式**
+1. 
+“恶汉”：实例化类时就创建刚静态实例
+```C++
+class testsingle{
+    private:
+        testsingle()=delete;
+        testsingle(const testsingle &);
+        testsingle & operator =(const testsingle &);
+}
+```
+1. 
+“懒汉”：第一次使用时才创建实例
+
