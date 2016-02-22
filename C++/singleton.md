@@ -86,21 +86,18 @@ class singleton{
 }
 ```
 1. 
-线程安全、异常安全，可以做以下扩展   
+线程安全、异常安全，可以做以下扩展                      好
 ```C++
 class Lock
 {
-    private:       
-    	CCriticalSection m_cs;
     public:
-    	Lock(CCriticalSection  cs) : m_cs(cs)
-    	{
-    		m_cs.Lock();
-    	}
-    	~Lock()
-    	{
-    		m_cs.Unlock();
-    	}
+        inline locker() { m_hMutex=CreateMutex(NULL,FALSE,NULL); std::cout<<"Locker::Locker() " ;} 
+        inline ~locker() { CloseHandle(m_hMutex); } 
+        inline void lock() { WaitForSingleObject(m_hMutex, INFINITE); } 
+        inline void unlock() { ReleaseMutex(m_hMutex); } 
+    private: 
+        HANDLE m_hMutex;
+};
 };
 class Singleton
 {
