@@ -2,7 +2,7 @@
 1. 仅在编译阶段起作用
 2. 大写
 3. 
-``` #ifndef   #define  #endif```
+``` #ifndef     #define    #endif```
 
 ```C
 #include <stdlib.h>
