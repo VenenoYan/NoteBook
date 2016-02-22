@@ -16,3 +16,5 @@
 [文件操作](file_operation.md)
 1. 
 [类信息](class.md)
+1. 
+[单例模式](singleton.md)
