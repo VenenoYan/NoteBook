@@ -13,14 +13,27 @@
 ```C++
 class testsingle{
     private:
-        testsingle * instance;
-        testsingle()=delete;
+        static testsingle * instance = new testsingle();
+        testsingle();
         testsingle(const testsingle &);
         testsingle & operator =(const testsingle &);
     public:
-        static testsingle *
+        static testsingle * getinstance(){
+            return instance;
+        }
 }
 ```
 1. 
 “懒汉”：第一次使用时才创建实例
-
+```C++
+class singleton{
+    private:
+        singleton();
+        singleton(const singleton &);
+        singleton & operator =(const singleton &);
+    public:
+        singleton *getinstance(){
+            if()
+        }
+}
+```
