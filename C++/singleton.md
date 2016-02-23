@@ -144,8 +144,7 @@ Singleton* Singleton::Instantialize()
 	return pInstance;
 }```
 1. 
-升级：有几个类型都需要实现为Singleton，复用上述代码
-
+升级：有几个类型都需要实现为Singleton，复用上述代码　　　想通下面标注的问题就通了。
 ```C++
 template <typename T>
 class Singleton
