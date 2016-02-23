@@ -157,8 +157,8 @@ public:
             Lock lock;
             if (m_pInstance == NULL)                    //double-check
             {
-                m_pInstance = new T();
-                atexit(Destroy);                    //解决释放问题
+                m_pInstance = new T();                  ／／延迟初始化
+                atexit(Destroy);                        //解决释放问题
             }
             return *m_pInstance;
         }
