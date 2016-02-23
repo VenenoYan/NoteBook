@@ -145,12 +145,13 @@ Singleton* Singleton::Instantialize()
 }```
 1. 
 升级：有几个类型都需要实现为Singleton，复用上述代码
+
 ```C++
 template <typename T>
 class Singleton
 {
 public:
-    static T& Instance()                            //为什么用的指针，
+    static T& Instance()                            //为什么用的指针，非要返回引用？
     {
         if (m_pInstance == NULL)
         {
