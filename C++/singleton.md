@@ -13,7 +13,7 @@
 ```C++
 class testsingle{
     private:
-        static testsingle * instance = new testsingle();    //全局：线程安全，初始化时是单线程
+        static testsingle * instance = new testsingle();    //全局：线程安全，因初始化时是单线程
         testsingle();
         testsingle(const testsingle &);
         testsingle & operator =(const testsingle &);
@@ -97,7 +97,7 @@ if (!flag)
 }```
 “那么在第一个线程执行完对flag的检查并进入if分支后，第二个线程将可能被启动，从而也进入if分支。这样，两个线程都将执行对静态变量的初始化。
 1. 
-线程安全、异常安全，可以做以下扩展                      好
+线程安全、异常安全，可以做以下扩展  看                    好
 ```C++
 class Lock
 {
@@ -179,4 +179,8 @@ T* Singleton<T>::m_pInstance = NULL;
 　
 使用：
 class SingletonInstance : public Singleton<SingletonInstance>…
-“在需要重用该Singleton实现时，我们仅仅需要从Singleton派生并将Singleton的泛型参数设置为该类型即可。”```
+“在需要重用该Singleton实现时，我们仅仅需要从Singleton派生并将Singleton的泛型参数设置为该类型即可。”
+　
+在通过new关键字创建类型实例的时候，我们同时通过atexit()函数注册了释放该实例的函数，从而保证了这些实例能够
+在程序退出前正确地析构。该函数的特性也能保证后被创建的实例首先被析构。
+```
