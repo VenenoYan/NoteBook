@@ -155,10 +155,10 @@ public:
         if (m_pInstance == NULL)
         {
             Lock lock;
-            if (m_pInstance == NULL)
+            if (m_pInstance == NULL)             //double-check
             {
                 m_pInstance = new T();
-                atexit(Destroy);
+                atexit(Destroy);                //解决释放
             }
             return *m_pInstance;
         }
@@ -176,7 +176,7 @@ private:
             delete m_pInstance;
         m_pInstance = NULL;
     }
-    static T* volatile m_pInstance;
+    static T* volatile m_pInstance;          //使用指针而不是局部/全局静态变量的原因？
 };
 　
 template <typename T>
