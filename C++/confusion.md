@@ -5,7 +5,7 @@
 暂停：**
 ```C
 system("pause")             #include <unistd.h>
-Sleep()
+sleep()
 getchar()```
 暂停固定时间：
 ```C++
