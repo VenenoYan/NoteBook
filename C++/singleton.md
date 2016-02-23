@@ -28,14 +28,12 @@ class testsingle{
 ```C++
 class singleton{
     private:
-        static singelton * instance;
         singleton();
         singleton(const singleton &);
         singleton & operator =(const singleton &);
     public:
         static singleton *getinstance(){
-            if (instance == NULL)
-                instance = new Singleton();
+            static singelton * instance;
             return instance;
         }     //不好，多线程会导致在判断NULL时创建多个实例
         //改进:双重检查
