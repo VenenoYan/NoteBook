@@ -150,7 +150,7 @@ template <typename T>
 class Singleton
 {
 public:
-    static T& Instance()
+    static T& Instance()                            //为什么用的指针，
     {
         if (m_pInstance == NULL)
         {
@@ -168,7 +168,7 @@ protected:
     Singleton(void) {}
     ~Singleton(void) {}
 private:
-    Singleton(const Singleton& rhs) {}          //g各种构造函数的
+    Singleton(const Singleton& rhs) {}          //各种构造函数的私有化
     Singleton& operator = (const Singleton& rhs) {}
     void Destroy()
     {
