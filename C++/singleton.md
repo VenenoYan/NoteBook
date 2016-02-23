@@ -139,7 +139,7 @@ Singleton* Singleton::Instantialize()
 	return pInstance;
 }```
 1. 
-升级
+升级：有几个类型都需要实现为Singleton
 ```C++
 template <typename T>
 class Singleton
