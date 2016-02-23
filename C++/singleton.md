@@ -81,7 +81,7 @@ class singleton{
         singleton & operator =(const singleton &);
     public:
         static singleton & getinstance(){
-            static singleton instance;
+            static singleton instance;          //延迟初始化：函数被调用时其才会被创建
             return instance;
         }
 }
