@@ -13,7 +13,7 @@
 ```C++
 class testsingle{
     private:
-        static testsingle * instance = new testsingle();    //全局：线程安全，初始化时是单线程
+        static testsingle * instance = new testsingle();    //全局：线程安全，初始化时是单线程。下是局部
         testsingle();
         testsingle(const testsingle &);
         testsingle & operator =(const testsingle &);
