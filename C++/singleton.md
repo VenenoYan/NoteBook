@@ -41,7 +41,7 @@ class singleton{
             if(instance==NULL){
                 lock();
                 if(instance==NULL){
-                    instance=new singelton();           ／／函数被调用时其才会被创建，一直到程序结束
+                    instance=new singelton();           //函数被调用时其才会被创建，一直到程序结束
                 }
                 unlock();
                 return instance;
