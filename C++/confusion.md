@@ -18,7 +18,7 @@ linux下：
     time(&tt1);
     do{
         time(&tt2);
-    }while(tt2-tt1==5);
+    }while(tt2-tt1<5);
 ```
 
 **2. 函数名/函数地址/函数指针**
