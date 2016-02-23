@@ -174,4 +174,7 @@ private:
     static T* volatile m_pInstance;
 };
 template <typename T>
-T* Singleton<T>::m_pInstance = NULL;```
+T* Singleton<T>::m_pInstance = NULL;
+使用：
+class SingletonInstance : public Singleton<SingletonInstance>…
+“在需要重用该Singleton实现时，我们仅仅需要从Singleton派生并将Singleton的泛型参数设置为该类型即可。”```
