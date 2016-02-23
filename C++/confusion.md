@@ -14,14 +14,11 @@ windows中：
     Sleep(unsigned int &);
 linux下：
     通过初始化两个tm结构体，然后不断相减，直至等于要暂停的数。
-    struct tm1,tm2;
-    time_t tt;
-    time(&tt);
-    tm1=localtime(&tt);
+    time_t tt1,tt2;
+    time(&tt1);
     do{
-        time(&tt);
-        tm2=localtime(&tt);
-    }while(tm2-tm2==5);
+        time(&tt2);
+    }while(tt2-tt1==5);
 ```
 
 **2. 函数名/函数地址/函数指针**
