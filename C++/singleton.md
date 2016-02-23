@@ -142,7 +142,12 @@ Singleton* Singleton::Instantialize()
 		}
 	}
 	return pInstance;
-}```
+}
+　
+使用：
+    Singleton& tt=Singleton::Instantialize();
+必须是引用，如果无出错：别忘了赋值构造已经是私有化的。
+```
 1. 
 升级：有几个类型都需要实现为Singleton，复用上述代码　　　想通下面标注的问题就通了。
 ```C++
