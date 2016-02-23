@@ -146,7 +146,7 @@ Singleton* Singleton::Instantialize()
 　
 使用：
     Singleton& tt=Singleton::Instantialize();       //对
-    Singleton tt=Singleton::Instantialize();       //错：赋值构造
+    Singleton tt=Singleton::Instantialize();       //错：赋值构造禁止了
 必须是引用，如果无出错：别忘了赋值构造已经是私有化的。
 ```
 1. 
