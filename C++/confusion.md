@@ -15,6 +15,7 @@ windows中：
 linux下：
     #include<unistd.h>
     sleep(int seconds);
+    自定义：
     通过初始化两个tm结构体，然后不断相减，直至等于要暂停的数。
     void sleep(const inst &num){
         time_t tt1,tt2;
