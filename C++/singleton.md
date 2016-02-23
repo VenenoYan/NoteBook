@@ -67,7 +67,7 @@ class testsingle{
         }
     public:
         static testsingle *getinstance(){
-            return this.testsingle.instance;
+            return this.testhold.instance;
         }
 }
 ```
