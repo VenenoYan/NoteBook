@@ -20,7 +20,15 @@ linux下：
         do{
             time(&tt2);
         }while(tt2-tt1<num);
-    }    
+    }   
+    
+    void Delay(int time)//time*1000为秒数 
+    { 
+    clock_t now   =   clock(); 
+    
+    while(   clock()   -   now   <   time   ); 
+    } 
+
 ```
 
 **2. 函数名/函数地址/函数指针**
