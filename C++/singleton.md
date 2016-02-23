@@ -43,7 +43,7 @@ class singleton{
             if(instance==NULL){
                 lock();
                 if(instance==NULL){
-                    instance=new singelton();           ／／函数被调用时其才会被创建
+                    instance=new singelton();           ／／函数被调用时其才会被创建，一直到程序结束
                 }
                 unlock();
                 return instance;
@@ -81,7 +81,7 @@ class singleton{
         singleton & operator =(const singleton &);
     public:
         static singleton & getinstance(){
-            static singleton instance;          //延迟初始化：函数被调用时其才会被创建，一直到成结束
+            static singleton instance;          //延迟初始化：函数被调用时其才会被创建，一直到程序结束
             return instance;
         }
 }
