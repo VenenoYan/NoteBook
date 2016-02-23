@@ -55,7 +55,7 @@ class singleton{
 
 
 1. 
-内部类:存在什么时候释放的问题  　　   良：看第四个方案　　     
+内部类:存在什么时候释放的问题  　　   良：看第四个方案：atexit(func)注册释放函数　　     
 ```C++
 class testsingle{
     private:
