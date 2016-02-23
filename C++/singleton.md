@@ -36,7 +36,7 @@ class singleton{
             static singelton * instance;
             return instance;
         }     //不好，多线程会导致在判断NULL时创建多个实例
-        //改进:双重检查
+   /*     //改进:双重检查
         static singleton *getinstance(){
             if(instance==NULL){
                 lock();
@@ -46,7 +46,7 @@ class singleton{
                 unlock();
                 return instance;
             }
-        }
+        }*/
 }
 ```
 综合：<br>
@@ -99,7 +99,8 @@ if (!flag)
     flag = true;
     staticVar = initStatic();
 }```
-“那么在第一个线程执行完对flag的检查并进入if分支后，第二个线程将可能被启动，从而也进入if分支。这样，两个线程都将执行对静态变量的初始化。
+“那么在第一个线程执行完对flag的检查并进入if分支后，第二个线程将可能被启动，从而也进入if分支。这样，两个线程都将执行对静态变量的初始化。<br>
+**解决**：用一个指针记录创建的实例，局部静态变量不是线程安全的。在对指针进行赋值之前使用锁保证在同一时间内只能有一个线程对指针进行初始化。同时基于性能的考虑，我们需要在每次访问实例之前检查指针是否已经经过初始化，以避免每次对Singleton的访问都需要请求对锁的控制权
 1. 
 线程安全、异常安全，可以做以下扩展                      好
 ```C++
