@@ -158,7 +158,7 @@ public:
             if (m_pInstance == NULL)             //double-check
             {
                 m_pInstance = new T();
-                atexit(Destroy);                //解决释放
+                atexit(Destroy);                //解决释放问题
             }
             return *m_pInstance;
         }
@@ -168,7 +168,7 @@ protected:
     Singleton(void) {}
     ~Singleton(void) {}
 private:
-    Singleton(const Singleton& rhs) {}
+    Singleton(const Singleton& rhs) {}          //g各种构造函数的
     Singleton& operator = (const Singleton& rhs) {}
     void Destroy()
     {
