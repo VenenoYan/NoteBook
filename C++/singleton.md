@@ -157,7 +157,7 @@ template <typename T>
 class Singleton
 {
 public:
-    static T& Instance()                                //为什么用的指针，非要返回引用？
+    static T& get_Instance()                            //为什么用的指针，非要返回引用？
     {
         if (m_pInstance == NULL)
         {
@@ -185,7 +185,7 @@ private:
     }
     static T* volatile m_pInstance;                 //使用指针而不是局部静态变量的原因？
 };
-　
+//.cpp
 template <typename T>
 T* Singleton<T>::m_pInstance = NULL;                //类中静态变量初始化问题
 　
