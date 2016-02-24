@@ -11,7 +11,7 @@ bool isSameTree(TreeNode* p, TreeNode* q) {
             if(p->val!=q->val)
                 return false;
             ret1=isSameTree(p->left,q->left);
-            ret2=isSameTree(p->right,q->right);
+            ret2=isSameTree(p->right,q->right);     //左右子树的返回值，留作判断
         }else if(!q&&!p)
             return true;
         else
