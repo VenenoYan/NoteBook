@@ -117,4 +117,4 @@ mutable修饰的变量，将永远处于可变的状态，即使在一个const�
 void bar(sometype1 a, sometype2 *b);
 void bar(sometype1 a, int i);
 ```
-使用bar(t,0)时就会出现问题。原本想传空指针过去，但是0是空指针更是整形。
+使用bar(t,0)时就会出现问题。原本想传空指针过去，但是0是空指针更是整形。所以bar(t,nullptr)
