@@ -153,7 +153,7 @@ private:
  　　int a,b,c;
  　　static int Sum;//声明静态数据成员
 };
-int Myclass::Sum=0;//定义并初始化静态数据成员
+int Myclass::Sum=0;//定义并初始化静态数据成员   必须在外部文件(比如.cpp)中定义
 
 Myclass::Myclass(int a,int b,int c)
 {
