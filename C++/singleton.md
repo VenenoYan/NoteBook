@@ -186,7 +186,7 @@ private:
 };
 　
 template <typename T>
-T* Singleton<T>::m_pInstance = NULL;                //类中静态变量要在外部文件中
+T* Singleton<T>::m_pInstance = NULL;                //类中静态变量初始化
 　
 使用：
 class SingletonInstance : public Singleton<SingletonInstance>…
