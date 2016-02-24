@@ -195,7 +195,8 @@ class SingletonInstance : public Singleton<SingletonInstance>…
 　
 在通过new关键字创建类型实例的时候，我们同时通过atexit()函数注册了释放该实例的函数，从而保证了这些实例能够
 在程序退出前正确地析构。该函数的特性也能保证后被创建的实例首先被析构。
-atexit（）不能使用时，内部类处理释放问题；
+atexit（）不能使用时，内部类处理释放问题:
+        析构所有的全局变量,事实上，系统也会析构所有的类的静态成员变量，就像这些静态成员也是全局变量一样。
 template <typename T>
 class Singleton
 {
