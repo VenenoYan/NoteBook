@@ -208,7 +208,6 @@ public:
             if (m_pInstance == NULL)                    //double-check
             {
                 m_pInstance = new T();                  //延迟初始化
-                atexit(Destroy);                        //解决释放问题
             }
             return *m_pInstance;
         }
@@ -220,12 +219,7 @@ protected:
 private:
     Singleton(const Singleton& rhs) {}                  //各种构造函数的私有化
     Singleton& operator = (const Singleton& rhs) {}
-    void Destroy()
-    {
-        if (m_pInstance != NULL)
-            delete m_pInstance;
-        m_pInstance = NULL;
-    }
+    static Dele de;
     static T* volatile m_pInstance;                 //使用指针而不是局部静态变量的原因？
 };
 ```
