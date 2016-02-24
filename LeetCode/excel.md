@@ -80,4 +80,11 @@ char convert(int i){
             ret.insert(0,c,1);
         }while(n!=0);
         return ret;
-    }```
+    }
+```
+**Lesson**
+1. 
+相除余0时减1
+1. 
+字符串反转：插入时插到字符串头
+1. 
