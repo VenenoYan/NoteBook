@@ -110,3 +110,4 @@ mutable修饰的变量，将永远处于可变的状态，即使在一个const�
 #endif
 #endif
 ```
+在C中NULL就是void **的指针，可以隐式转换成相应的类型
