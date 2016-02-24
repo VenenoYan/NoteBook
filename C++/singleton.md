@@ -185,7 +185,7 @@ private:
     }
     static T* volatile m_pInstance;                 //使用指针而不是局部静态变量的原因？
 };
-//.cpp
+//.cpp文件
 template <typename T>
 T* Singleton<T>::m_pInstance = NULL;                //类中静态变量初始化问题
 　
@@ -195,4 +195,37 @@ class SingletonInstance : public Singleton<SingletonInstance>…
 　
 在通过new关键字创建类型实例的时候，我们同时通过atexit()函数注册了释放该实例的函数，从而保证了这些实例能够
 在程序退出前正确地析构。该函数的特性也能保证后被创建的实例首先被析构。
+atexit（）不能使用时，内部类处理释放问题；
+template <typename T>
+class Singleton
+{
+public:
+    static T& get_Instance()                            //为什么用的指针，非要返回引用？
+    {
+        if (m_pInstance == NULL)
+        {
+            Lock lock;
+            if (m_pInstance == NULL)                    //double-check
+            {
+                m_pInstance = new T();                  //延迟初始化
+                atexit(Destroy);                        //解决释放问题
+            }
+            return *m_pInstance;
+        }
+        return *m_pInstance;
+    }
+protected:
+    Singleton(void) {}
+    ~Singleton(void) {}
+private:
+    Singleton(const Singleton& rhs) {}                  //各种构造函数的私有化
+    Singleton& operator = (const Singleton& rhs) {}
+    void Destroy()
+    {
+        if (m_pInstance != NULL)
+            delete m_pInstance;
+        m_pInstance = NULL;
+    }
+    static T* volatile m_pInstance;                 //使用指针而不是局部静态变量的原因？
+};
 ```
