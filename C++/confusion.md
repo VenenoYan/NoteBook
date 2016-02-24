@@ -111,7 +111,8 @@ mutable修饰的变量，将永远处于可变的状态，即使在一个const�
 #endif
 ```
 在C中NULL就是void *的指针，可以隐式转换成相应的类型<br>
-在C++中，空NULL就是0.但是两个函数：
+在C++中，空NULL就是0.nullptr是专门空指针类型的
+但是两个函数：
 ```C
 void bar(sometype1 a, sometype2 *b);
 void bar(sometype1 a, int i);
