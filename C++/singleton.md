@@ -220,6 +220,7 @@ protected:
 private:
     Singleton(const Singleton& rhs) {}                  //各种构造函数的私有化
     Singleton& operator = (const Singleton& rhs) {}
+    　
     static Dele de;
     class Dele{
         ~Dele(){
@@ -227,6 +228,7 @@ private:
                 delete Singleton::m_pInstance
         }
     }
+    　
     static T* volatile m_pInstance;                 //使用指针而不是局部静态变量的原因？
 };
 ```
