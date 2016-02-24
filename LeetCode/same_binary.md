@@ -19,3 +19,10 @@ bool isSameTree(TreeNode* p, TreeNode* q) {
         return ret1&&ret2;
 }
 ```
+### **lesson**
+1. 
+树的遍历
+1. 
+节点同时为空时不是错
+1. 
+保留左右子树的返回值
