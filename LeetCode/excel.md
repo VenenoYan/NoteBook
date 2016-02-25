@@ -11,7 +11,7 @@ For example:
     27 -> AA
     28 -> AB 
 **Solution**
-```C
+```C++
 char convert(int i){
         switch(i){
             case 1:
