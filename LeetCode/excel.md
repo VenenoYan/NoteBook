@@ -1,4 +1,4 @@
-## 168. Excel Sheet Column Title
+## 168. Excel Sheet Column Title 　　171. Excel Sheet Column Number
 Given a positive integer, return its corresponding column title as appear in an Excel sheet.
 
 For example:
