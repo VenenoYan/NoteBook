@@ -104,8 +104,9 @@ auto upw1(std::make_unique<Widget>()); // with make func
 std::unique_ptr<Widget> upw2(new Widget); // without make func
 auto spw1(std::make_shared<Widget>()); // with make func
 std::shared_ptr<Widget> spw2(new Widget); // without make func
-为了节省一次内存分配：原来 shared_ptr<Foo> x(new Foo); 需要为 Foo 和 ref_count 各分配一次内存，
+1、为了节省一次内存分配：原来 shared_ptr<Foo> x(new Foo); 需要为 Foo 和 ref_count 各分配一次内存，
     现在用 make_shared() 的话，可以一次分配一块足够大的内存，供 Foo 和 ref_count 对象容身
+2、new可能会
 ```
 
 ### **4 weak_ptr**
