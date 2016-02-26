@@ -1,4 +1,6 @@
 引自：git clone https://github.com/kirang89/pycrumbs[/blob/master/pycrumbs.md]
+
+##[python日报](http://py.memect.com/)
 <h2>Beginner's Delight</h2>
 
 <ul>
