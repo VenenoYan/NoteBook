@@ -1,6 +1,6 @@
 ### **智能指针概念**
 
-C++中指针申请和释放内存通常采用的方式是new和delete。智能指针是基于RAII机制实现的**类(模板)**，具有指针的行为(重载了operator*与operator->操作符)，可以“智能”地销毁其所指对象。C++11中有unique_ptr、shared_ptr与weak_ptr等智能指针，可以对动态资源进行管理
+C++中指针申请和释放内存通常采用的方式是new和delete。智能指针是基于RAII机制实现的**类(模板)**，具有指针的行为(重载了operator*与operator->操作符)，可以“智能”地销毁其所指对象。C++11中有unique_ptr、auto_ptr、shared_ptr与weak_ptr等智能指针，可以对动态资源进行管理
 
 ** 1、unique_ptr概念**
 
