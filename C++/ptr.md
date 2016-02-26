@@ -96,7 +96,7 @@ shared_ptr与scoped_ptr一样包装了new操作符在堆上分配的动态对象
 * 
 两个的 shared_ptr 实体可以被两个线程同时写入，“析构”算写操作；
 * 
-多个线程读写同一个 shared_ptr 对象，那么需要加锁:因为 shared_ptr 有两个数据成员，读写操作不能原子化
+若多个线程读写同一个 shared_ptr 对象，那么需要加锁：因为 shared_ptr 有两个数据成员，读写操作不能原子化
 
 ### 多用make_shared和make_unique
 ```C++
