@@ -82,6 +82,14 @@ char convert(int i){
         }while(n!=0);
         return ret;
     }
+    int titleToNumber(string s) {
+        size_t i = s.len()-1;
+        int val = 0,time = 0;
+        while(i>=0{
+            val += convert(s[i])*pow(26,time);
+            ++time;
+        }
+    }
 ```
 **Lesson**
 1. 
