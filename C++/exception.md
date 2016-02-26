@@ -91,6 +91,10 @@ int main()
                     check(y);    
                     cout<<x/y;    
             }    
+            catch(myException &me)
+            {
+                    cout<<me.what();
+            }
             catch(int &e) //no catch sentence matches the throw type    
             {    
                     cout<<e<<endl;    
