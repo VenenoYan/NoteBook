@@ -237,4 +237,13 @@ except urllib2.HTTPError, e:
 except urllib2.URLError, e:
     print e.reason
 else:
-    print "OK"```
+    print "OK"
+```
+## 安装scrapy
+1. lxml ```https://pypi.python.org/pypi/lxml/3.3.1```输入 import lxml 测试安装
+2. setuptool  ```https://pypi.python.org/packages/2.7/s/setuptools/```  easy_install
+3. zope.interface  ```https://pypi.python.org/pypi/zope.interface/4.1.0#downloads``` 
+4. Twisted : pip install twisted
+5. pyOpenSSL : pip install pyOpenSSL
+6. win32api http://sourceforge.net/projects/pywin32/files%2Fpywin32/
+7. scrapy : pip install scrapy
