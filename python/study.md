@@ -1,6 +1,6 @@
 引自：git clone https://github.com/kirang89/pycrumbs[/blob/master/pycrumbs.md]
 
-##[python日报](http://py.memect.com/)
+### [python日报](http://py.memect.com/)
 <h2>Beginner's Delight</h2>
 
 <ul>
@@ -490,6 +490,7 @@
 <li><a href="https://www.codementor.io/python/tutorial/python-vs-r-for-data-science-data-frames-i">Data Science with Python &amp; R: Data Frames</a></li>
 <li><a href="https://www.codementor.io/python/tutorial/data-science-python-r-exploratory-data-analysis-visualization">Data Science with Python &amp; R: Exploratory Data Analysis</a></li>
 <li><a href="https://www.codementor.io/python/tutorial/data-science-python-r-sentiment-classification-machine-learning">Data Science with Python &amp; R: Sentiment Classification Using Linear Methods</a></li>
+<li><a href="https://www.coursera.org/learn/hipython/home/welcome">南大</a></li>
 </ul>
 
 <h3>Pandas</h3>
