@@ -40,7 +40,7 @@
         * 
 如果写throw(A, B), 表示函数抛出A、B的异常
     * 
-如果抛出的异常不在列表范围内，则异常不能被catch，也就会调用terminate()
+如果抛出的异常不在列表范围内，则异常不能被catch，也就会调用unexpected()/terminate()
 
 1. 
 实现自定义异常：
