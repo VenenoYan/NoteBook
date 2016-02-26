@@ -20,3 +20,5 @@
 [单例模式](singleton.md)
 1. 
 [智能指针](ptr.md)
+1. 
+[异常](exception.md)
