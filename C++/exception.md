@@ -64,6 +64,7 @@ class myException:public exception
                 return "ERROR! Don't divide a number by integer zero.\n";    
            }        
 };    
+　
 void check(int y) //any type of exception is permitted    
 {    
             if(y==0) throw myException();    
