@@ -121,12 +121,12 @@ void bar(sometype1 a, int i);
 
 C++中，空指针多用nullptr
 ### **12.类型扩展**
-size_t是unsigned类型，用于指明数组长度或下标，它必须是一个正数，std::size_t.设计size_t就是为了适应多个平台，其引入增强了程序在不同平台上的可移植性。
+**size_t**是unsigned int类型，用于指明数组**长度或下标，它必须是一个正数**，std::size_t.设计size_t就是为了适应多个平台，其引入增强了程序在不同平台上的可移植性。
 
-ptrdiff_t是signed类型，用于存放同一数组中两个指针之间的差距，它可以使负数，std::ptrdiff_t.同上，使用ptrdiff_t来得到独立于平台的地址差值.
+**ptrdiff_t**是signed类型，用于存放同一数组中**两个指针之间的差距(以数组元素的长度为单位，而非字节)，它可以使负数**，std::ptrdiff_t.同上，使用ptrdiff_t来得到独立于平台的地址差值.
 
-size_type是unsigned类型,表示容器中元素长度或者下标，vector<int>::size_type i = 0;
+**size_type**是unsigned类型,表示容器中元素长度或者下标，vector<int>::size_type i = 0;
 
-difference_type是signed类型,表示迭代器差距，vector<int>:: difference_type = iter1-iter2.
+**difference_type**是signed类型,表示迭代器差距，vector<int>:: difference_type = iter1-iter2.
 
 前二者位于标准类库std内，后二者专为STL对象所拥有。
