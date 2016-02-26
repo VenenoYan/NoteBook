@@ -48,3 +48,53 @@
 继承基类
     * 
 重写重写基类的```const char* what()```函数，返回错误信息；
+    * 
+代码：
+```C++
+#include<exception>    
+#include<iostream>    
+using namespace std;    
+　
+//customized exception class 'myException'    
+class myException:public exception    
+{    
+public:    
+   const char* what()const throw()    
+   {    
+        return "ERROR! Don't divide a number by integer zero.\n";    
+   }        
+};    
+void check(int y) //any type of exception is permitted    
+{    
+     if(y==0) throw myException();    
+}    
+void myUnexpected()    
+{    
+     cout<<"Unexpected exception caught!\n";    
+     system("pause");    
+     exit(-1);    
+}    
+void myTerminate() //##1 set it be the terminate handler    
+{    
+     cout<<"Unhandler exception!\n";    
+     system("pause");    
+     exit(-1);    
+}    
+//entry of the application    
+int main()    
+{    
+    unexpected_handler oldHandler=set_unexpected(myUnexpected);    
+    terminate_handler preHandler=set_terminate(myTerminate);    
+    int x=100,y=0;    
+    try    
+    {    
+        check(y);    
+        cout<<x/y;    
+    }    
+    catch(int &e) //no catch sentence matches the throw type    
+    {    
+        cout<<e<<endl;    
+    }    
+    system("pause");    
+    return 0;    
+}```
