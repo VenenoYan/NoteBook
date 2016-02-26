@@ -65,6 +65,19 @@ class myException:public exception          //继承
            }        
 };    
 　
+class myException:public exception          //继承
+{    
+    public:  
+           myException()=default;
+           myException(const string &s):ret(s){}
+           const string what()const throw()      //重写
+           {    
+                return ret;   
+           }
+    private:
+    string ret;
+};    
+　
 void check(int y) //any type of exception is permitted    
 {    
             if(y==0) throw myException();    
