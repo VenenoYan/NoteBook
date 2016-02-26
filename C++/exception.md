@@ -56,10 +56,10 @@
 using namespace std;    
 　
 //customized exception class 'myException'    
-class myException:public exception    
+class myException:public exception          //继承
 {    
     public:    
-           const char* what()const throw()    
+           const char* what()const throw()  //
            {    
                 return "ERROR! Don't divide a number by integer zero.\n";    
            }        
