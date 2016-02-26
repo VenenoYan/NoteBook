@@ -1,6 +1,11 @@
 ### **智能指针概念**
 
-C++中指针申请和释放内存通常采用的方式是new和delete。智能指针是基于RAII机制实现的**类(模板)**，具有指针的行为(重载了operator*与operator->操作符)，可以“智能”地销毁其所指对象。C++11中有unique_ptr、auto_ptr、shared_ptr与weak_ptr等智能指针，可以对动态资源进行管理
+C++中指针申请和释放内存通常采用的方式是new和delete。智能指针是基于**RAII(Resource acquisition is initialization)机制实现的类(模板)**，具有指针的行为(重载了operator*与operator->操作符)，可以“智能”地销毁其所指对象。C++11中有unique_ptr、auto_ptr、shared_ptr与weak_ptr等智能指针，可以对动态资源进行管理
+
+** 0、RAII概念**
+
+C++中的RAII全称是“Resource acquisition is initialization”，直译为“资源获取就是初始化”。但是这翻译并没有显示出这个惯用法的真正内涵。RAII的好处在于它提供了一种**资源自动管理**的方式，当产生异常、回滚等现象时，RAII可以正确地释放掉资源。
+RAII的**实现原理**很简单，利用stack上的临时对象生命期是程序自动管理的这一特点，将我们的资源释放操作封装在一个临时对象中。比如文件操作还没有到达close就因异常。
 
 ** 1、unique_ptr概念**
 
@@ -66,4 +71,4 @@ auto_ptr有拷贝语义，拷贝后源对象变得无效；unique_ptr则无拷�
 1. 
 auto_ptr不可作为容器元素，unique_ptr可以作为容器元素
 1. 
-auto_ptr不可指向动态数组(尽管不会报错：但销毁时delete而不是delete []错)，unique_ptr可以指向动态数组
+auto_ptr不可指向动态数组(尽管不会报错：但销毁时delete而不是delete []错****)，unique_ptr可以指向动态数组
