@@ -111,7 +111,7 @@ mutable修饰的变量，将永远处于可变的状态，即使在一个const�
 #endif
 ```
 在C中NULL就是void *的指针，可以隐式转换成相应的类型<br>
-在C++中，空NULL就是0.nullptr是专门空指针类型的
+在C++中，空NULL就是0. nullptr是专门空指针类型的
 但是两个函数：
 ```C
 void bar(sometype1 a, sometype2 *b);
@@ -120,3 +120,13 @@ void bar(sometype1 a, int i);
 使用bar(t,0)时就会出现问题。原本想传空指针过去，但是0是空指针更是整形。所以bar(t,nullptr)
 
 C++中，空指针多用nullptr
+### **12.类型扩展**
+size_t是unsigned类型，用于指明数组长度或下标，它必须是一个正数，std::size_t.设计size_t就是为了适应多个平台，其引入增强了程序在不同平台上的可移植性。
+
+ptrdiff_t是signed类型，用于存放同一数组中两个指针之间的差距，它可以使负数，std::ptrdiff_t.同上，使用ptrdiff_t来得到独立于平台的地址差值.
+
+size_type是unsigned类型,表示容器中元素长度或者下标，vector<int>::size_type i = 0;
+
+difference_type是signed类型,表示迭代器差距，vector<int>:: difference_type = iter1-iter2.
+
+前二者位于标准类库std内，后二者专为STL对象所拥有。
