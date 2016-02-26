@@ -95,3 +95,7 @@ shared_ptr与scoped_ptr一样包装了new操作符在堆上分配的动态对象
 两个的 shared_ptr 实体可以被两个线程同时写入，“析构”算写操作；
 * 
 如果要从多个线程读写同一个 shared_ptr 对象，那么需要加锁。
+
+### **4 weak_ptr**
+
+weak_ptr是为配合shared_ptr而引入的一种智能指针来协助shared_ptr工作，它可以从一个shared_ptr或另一个weak_ptr对象构造，它的构造和析构不会引起引用记数的增加或减少。没有重载*和->但可以使用lock获得一个可用的shared_ptr对象
