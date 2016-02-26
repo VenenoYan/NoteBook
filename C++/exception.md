@@ -11,3 +11,8 @@
 | invalid_argument | 逻辑错误：不适合的参数 |
 | length_error | 逻辑错误：试图超出类型最大长度的对象 |
 | out_of_range | 逻辑错误：使用的值超出范围 |
+
+
+### 自定义异常：一般继承自exception
+
+
