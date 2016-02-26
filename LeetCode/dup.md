@@ -12,3 +12,8 @@ Given an array of integers, find if the array contains any duplicates. Your func
         }
         return false;
     }```
+
+### lesson
+1. 
+set.count(val):出现次数统计
+set.find(val):出现？本迭代器：end()
