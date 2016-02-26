@@ -63,6 +63,8 @@ unique_ptr默认的资源删除操作是delete/delete[]，若需要，可以进�
 void end_connection(connection *p) { disconnect(*p); } //资源清理函数  
 unique_ptr<connection, decltype(end_connection)*> //资源清理器的“类型”  
         p(&c, end_connection);// 传入函数名，会自动转换为函数指针  ```
+** 2 auto_ptr**
+
 **auto_ptr与unique_ptr**
 
 在C++11环境下，auto_ptr被看做“遗留的”，他们有如下区别：
