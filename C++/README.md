@@ -18,3 +18,5 @@
 [类信息](class.md)
 1. 
 [单例模式](singleton.md)
+1. 
+[智能指针](ptr.md)
