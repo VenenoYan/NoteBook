@@ -63,7 +63,7 @@ unique_ptr默认的资源删除操作是delete/delete[]，若需要，可以进�
 void end_connection(connection *p) { disconnect(*p); } //资源清理函数  
 unique_ptr<connection, decltype(end_connection)*> //资源清理器的“类型”  
         p(&c, end_connection);// 传入函数名，会自动转换为函数指针  ```
-** 2 auto_ptr**
+### ** 2 auto_ptr**
 
 auto_ptr是C++标准库中(```<utility>```)为了解决资源泄漏的问题提供的一个智能指针类模板（注意：这只是一种简单的智能指针）
 
@@ -85,3 +85,13 @@ auto_ptr有拷贝语义，拷贝后源对象变得无效；unique_ptr则无拷�
 auto_ptr不可作为容器元素，unique_ptr可以作为容器元素
 1. 
 auto_ptr不可指向动态数组(尽管不会报错：但销毁时delete而不是delete []错****)，unique_ptr可以指向动态数组
+
+### **3. shared_ptr**
+
+shared_ptr与scoped_ptr一样包装了new操作符在堆上分配的动态对象，但它实现的是引用计数型的智能指针 ，**可以被自由地拷贝和赋值，在任意的地方共享它**，当没有代码使用（引用计数为0）它时才删除被包装的动态分配的对象。shared_ptr也可以安全地放到标准容器中，并弥补了auto_ptr因为转移语义而不能把指针作为STL容器元素的缺陷。
+* 
+一个 shared_ptr 实体可被多个线程同时读取；
+* 
+两个的 shared_ptr 实体可以被两个线程同时写入，“析构”算写操作；
+* 
+如果要从多个线程读写同一个 shared_ptr 对象，那么需要加锁。
