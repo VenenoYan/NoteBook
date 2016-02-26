@@ -96,7 +96,7 @@ shared_ptr与scoped_ptr一样包装了new操作符在堆上分配的动态对象
 * 
 两个的 shared_ptr 实体可以被两个线程同时写入，“析构”算写操作；
 * 
-若多个线程读写同一个 shared_ptr 对象，那么需要加锁：因为 shared_ptr 有两个数据成员，读写操作不能原子化
+若多个线程读写同一个 shared_ptr 对象，那么需要加锁：因为 **shared_ptr 有两个数据成员，读写操作不能原子化**
 
 ### 多用make_shared和make_unique
 ```C++
@@ -104,6 +104,8 @@ auto upw1(std::make_unique<Widget>()); // with make func
 std::unique_ptr<Widget> upw2(new Widget); // without make func
 auto spw1(std::make_shared<Widget>()); // with make func
 std::shared_ptr<Widget> spw2(new Widget); // without make func
+为了节省一次内存分配：原来 shared_ptr<Foo> x(new Foo); 需要为 Foo 和 ref_count 各分配一次内存，
+    现在用 make_shared() 的话，可以一次分配一块足够大的内存，供 Foo 和 ref_count 对象容身
 ```
 
 ### **4 weak_ptr**
