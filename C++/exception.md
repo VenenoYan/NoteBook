@@ -55,7 +55,8 @@
 #include<iostream>    
 using namespace std;    
 　
-//customized exception class 'myException'    
+//customized exception class 'myException'  
+//普通：指定输出
 class myException:public exception          //继承
 {    
     public:    
@@ -65,6 +66,7 @@ class myException:public exception          //继承
            }        
 };    
 　
+//传参：用户自定义
 class myException:public exception          //继承
 {    
     public:  
@@ -78,6 +80,7 @@ class myException:public exception          //继承
     string ret;
 };    
 　
+//用户自定义高级
 class myException:public exception          //继承
 {    
     public:  
