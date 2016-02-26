@@ -490,7 +490,8 @@
 <li><a href="https://www.codementor.io/python/tutorial/python-vs-r-for-data-science-data-frames-i">Data Science with Python &amp; R: Data Frames</a></li>
 <li><a href="https://www.codementor.io/python/tutorial/data-science-python-r-exploratory-data-analysis-visualization">Data Science with Python &amp; R: Exploratory Data Analysis</a></li>
 <li><a href="https://www.codementor.io/python/tutorial/data-science-python-r-sentiment-classification-machine-learning">Data Science with Python &amp; R: Sentiment Classification Using Linear Methods</a></li>
-<li><a href="https://www.coursera.org/learn/hipython/home/welcome">南大</a></li>
+<li><a href="https://www.coursera.org/learn/hipython/home/welcome">南大公开课</a></li>
+<li><a href="https://www.dataquest.io/">Dataquest</a></li>
 </ul>
 
 <h3>Pandas</h3>
