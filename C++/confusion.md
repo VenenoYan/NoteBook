@@ -130,3 +130,5 @@ C++中，空指针多用nullptr
 **difference_type**是signed类型,表示迭代器差距，vector<int>:: difference_type = iter1-iter2.
 
  ### **前二者位于标准类库std内，后二者专为STL对象所拥有。**
+ 
+ ### **13. 智能指针：auto_ptr与unique_ptr、shared_ptr与weak_ptr等**
