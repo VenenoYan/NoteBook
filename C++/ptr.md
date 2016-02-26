@@ -66,4 +66,4 @@ auto_ptr有拷贝语义，拷贝后源对象变得无效；unique_ptr则无拷�
 1. 
 auto_ptr不可作为容器元素，unique_ptr可以作为容器元素
 1. 
-auto_ptr不可指向动态数组(尽管不会报错，但不会表现出正确行为)，unique_ptr可以指向动态数组
+auto_ptr不可指向动态数组(尽管不会报错：但销毁时delete而不是delete [])，unique_ptr可以指向动态数组
