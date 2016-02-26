@@ -78,6 +78,12 @@ class myException:public exception          //继承
     string ret;
 };    
 　
+class myException:public exception          //继承
+{    
+    public:  
+           myException(const string &s):exception(s){}
+};    
+　
 void check(int y) //any type of exception is permitted    
 {    
             if(y==0) throw myException();    
