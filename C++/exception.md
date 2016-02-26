@@ -59,7 +59,7 @@ using namespace std;
 class myException:public exception          //继承
 {    
     public:    
-           const char* what()const throw()  //
+           const char* what()const throw()      //重写
            {    
                 return "ERROR! Don't divide a number by integer zero.\n";    
            }        
