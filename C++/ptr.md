@@ -65,9 +65,13 @@ unique_ptr<connection, decltype(end_connection)*> //资源清理器的“类型�
         p(&c, end_connection);// 传入函数名，会自动转换为函数指针  ```
 ** 2 auto_ptr**
 
-auto_ptr是C++标准库中(<utility>)为了解决资源泄漏的问题提供的一个智能指针类模板（注意：这只是一种简单的智能指针）
+auto_ptr是C++标准库中(```<utility>```)为了解决资源泄漏的问题提供的一个智能指针类模板（注意：这只是一种简单的智能指针）
 
-auto_ptr的实现原理其实就是RAII，在构造的时候获取资源，在析构的时候释放资源，并进行相关指针操作的重载，使用起来就像普通的指针:std::auto_ptr<ClassA> pa(new ClassA);
+auto_ptr的实现原理其实就是RAII，在构造的时候获取资源，在析构的时候释放资源，并进行相关指针操作的重载，使用起来就像普通的指针:```std::auto_ptr<Class A> pa(new ClassA);```
+
+** 2.1 事项**
+
+
 
 **auto_ptr与unique_ptr**
 
