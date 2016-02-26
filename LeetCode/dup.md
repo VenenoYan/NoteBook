@@ -15,5 +15,5 @@ Given an array of integers, find if the array contains any duplicates. Your func
 
 ### lesson
 1. 
-set.count(val):出现次数统计<br>
-set.find(val):出现？本迭代器：end()
+set.count(val): 出现次数统计<br>
+set.find(val):  出现？本迭代器：end()
