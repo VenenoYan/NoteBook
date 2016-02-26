@@ -38,3 +38,5 @@
 [# 100_相似二叉树判断](same_binary.md)
 1. 
 [# 168&171_excel&number](excel.md)
+1. 
+[# 217数组重复]
