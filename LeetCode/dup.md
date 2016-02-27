@@ -1,4 +1,4 @@
-## 217. Contains Duplicate.  　　　  169. Majority Element
+## 217. Contains Duplicate.             
 Given an array of integers, find if the array contains any duplicates. Your function should return true if any value appears at least twice in the array, and it should return false if every element is distinct.
 
 ###solution
@@ -17,3 +17,36 @@ Given an array of integers, find if the array contains any duplicates. Your func
 1. 
 set.count(val): 出现次数统计<br>
 set.find(val):  出现？本迭代器：end()
+
+
+<hr>
+## 169. Majority Element My Submissions Question
+
+Given an array of size n, find the majority element. The majority element is the element that appears more than ⌊ n/2 ⌋ times.
+
+You may assume that the array is non-empty and the majority element always exist in the array.
+
+###solution
+```C++
+    int majorityElement(vector<int>& nums) {
+        map<int,int> count;
+        map<int,int>::iterator tt,max;
+        for(vector<int>::iterator iter = nums.begin();iter!=nums.end();++iter){
+            tt=count.find(*iter);
+            if(tt==count.end()){
+                count.insert(make_pair(*iter,1));
+                if(count.size()==1)
+                    max=count.begin();
+            }else{
+                ++tt->second;
+                cout<<tt->second<<endl;
+                if(tt->second>max->second)
+                    max=tt;
+            }
+        }
+        return max->first;
+    }
+```
+
+### lesson
+1. map的
