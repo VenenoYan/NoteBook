@@ -52,6 +52,6 @@ Input is guaranteed to be within the range from 1 to 3999.
 'D': 500;
 数字上横线:1000倍
 小的在大的:
-    左边：减法
-    右边：加法
+    左边：小的为负
+    右边：小的为正
 ```
