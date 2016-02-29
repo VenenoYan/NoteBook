@@ -1,4 +1,4 @@
-## 13. Roman to Integer My Submissions Question
+## 13. Roman to Integer My Submissions Question         
 
 Given a roman numeral, convert it to an integer.
 
@@ -57,3 +57,7 @@ Input is guaranteed to be within the range from 1 to 3999.
     左边：小的为负
     右边：小的为正
 ```
+## 12. Integer to Roman
+Given an integer, convert it to a roman numeral.
+
+Input is guaranteed to be within the range from 1 to 3999.
