@@ -50,5 +50,5 @@ Input is guaranteed to be within the range from 1 to 3999.
 'V': 5;
 'L': 50;
 'D': 500;
-数字上横:1000倍
+数字上横线:1000倍
 ```
