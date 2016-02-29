@@ -43,7 +43,9 @@ Input is guaranteed to be within the range from 1 to 3999.
 ```
 
 ### Lesson
-```'I'：1
+```
+每位正常相加：
+'I'：1
 'X'：10;
 'C': 100;
 'M'：1000;
