@@ -6,3 +6,5 @@
 面试题目积累
     * 
 [linux](linux.md)
+    * 
+[c/c++](c++.md)
