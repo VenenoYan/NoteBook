@@ -16,4 +16,19 @@ lesson:
 bitset<bits> name(s/u);
 bitset<32> name(12); 即12的二进制位模式
 bitset<32> name("1100"):注意读位顺序是相反的:0011
+
+方法：
+any()       存在为1的位吗
+none()      不存在为1的位吗
+count()     1的个数
+size()      位数
+test(pos)   测试pos是否为1
+set()       所有位值为1
+set(pos)    pos值设为1
+reset()     所有设为0
+reset(pos)  pos设为0
+flip()      逐位取反
+flip(pos)   pos取反
+to_ulong()  按位返回一个unsigned long值
+os<<b       输入至流中
 ```
