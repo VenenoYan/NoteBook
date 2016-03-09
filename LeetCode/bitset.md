@@ -30,5 +30,6 @@ reset(pos)  pos设为0
 flip()      逐位取反
 flip(pos)   pos取反
 to_ulong()  按位返回一个unsigned long值
+to_string() 按位返回一个string值
 os<<b       输入至流中
 ```
