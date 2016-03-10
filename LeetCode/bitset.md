@@ -33,3 +33,6 @@ to_ulong()  按位返回一个unsigned long值
 to_string() 按位返回一个string值,顺序一致
 os<<b       输入至流中
 ```
+## 231. Power of Two My Submissions Question
+
+Given an integer, write a function to determine if it is a power of two.
