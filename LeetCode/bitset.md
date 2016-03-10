@@ -36,3 +36,16 @@ os<<b       输入至流中
 ## 231. Power of Two My Submissions Question
 
 Given an integer, write a function to determine if it is a power of two.
+###solution
+```C++
+    bool isPowerOfTwo(int n) {
+        bitset<32> t(n);
+        return t.count()==1?true:false;
+    }
+    bool isPowerOfTwo(int n) {
+        return (n>0&&(n&(n-1)==0));
+    }
+```
+### Lesson
+
+如果该数是2的幂，则对应的二进制中只有一个1
