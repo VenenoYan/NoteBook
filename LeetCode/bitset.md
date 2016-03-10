@@ -50,4 +50,4 @@ Given an integer, write a function to determine if it is a power of two.
 ```
 ### Lesson
 
-如果该数是2的幂，则对应的二进制中只有一个1
+如果该数是2的幂，则对应的二进制中只有一个1。注意是负数或者是0.
