@@ -39,6 +39,8 @@ Given an integer, write a function to determine if it is a power of two.
 ###solution
 ```C++
     bool isPowerOfTwo(int n) {
+        if(n<=0)
+            return false;
         bitset<32> t(n);
         return t.count()==1?true:false;
     }
