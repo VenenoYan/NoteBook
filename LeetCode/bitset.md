@@ -51,3 +51,9 @@ Given an integer, write a function to determine if it is a power of two.
 ### Lesson
 
 如果该数是2的幂，则对应的二进制中只有一个1。注意是负数或者是0.
+
+## 190. Reverse Bits My Submissions Question
+
+Reverse bits of a given 32 bits unsigned integer.
+
+For example, given input 43261596 (represented in binary as 00000010100101000001111010011100), return 964176192 (represented in binary as 00111001011110000010100101000000).
