@@ -13,7 +13,7 @@ For example, the 32-bit integer ’11' has binary representation 000000000000000
 ```
 lesson:
 ```C++
-bitset<bits> name(s/u);
+bitset<bits> name(string/unsigned long);
 bitset<32> name(12); 即12的二进制位模式
 bitset<32> name("1100"):注意读位顺序是相反的:0011
 
