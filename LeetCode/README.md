@@ -46,3 +46,5 @@
 [# 191&190&231 bitset的用法](bitset.md)
 1. 
 [# 328 奇偶重排](odd_even.md)
+1. 
+[# 234 链表中是否有环](palindrome.md)
