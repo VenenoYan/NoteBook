@@ -1,6 +1,24 @@
 @@ 234. Palindrome Linked List My Submissions Question
 
 Given a singly linked list, determine if it is a palindrome.
+###solution
+```C++
+    bool isPalindrome(ListNode* head) {
+        if(!head||!head->next)
+            return false;
+        if(head==head->next)
+            return true;
+        ListNode* n=head->next;
+        n=n->next;
+        while(n&&n->next)
+        {
+            if(head==n)
+                return true;
+            head=head->next;
+            n=n->next->next;
+        }
+        return false;
+    }```
 ### lesson
 1. 
 单链表是有环？<br>
