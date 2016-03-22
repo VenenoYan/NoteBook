@@ -18,7 +18,8 @@ Given a singly linked list, determine if it is a palindrome.
             n=n->next->next;
         }
         return false;
-    }```
+    }
+```
 ### lesson
 1. 
 单链表是有环？<br>
@@ -29,7 +30,7 @@ Given a singly linked list, determine if it is a palindrome.
 
 1. 
 环的链接点在哪？<br>
-　　　定理：相遇点到连接点的距离等于头指针到连接点的距离
+　　　**定理：相遇点到连接点的距离等于头指针到连接点的距离**
 1. 
 链表的长度？<br>
 　　　头指针到相遇点的长度加上问题2的长度即可
