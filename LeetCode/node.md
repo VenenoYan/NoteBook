@@ -65,7 +65,7 @@ ListNode* removeElements(ListNode* head, int val) {
 * 
 特殊情况：头部是要删除的
 1. 
-没有使用：因为要放置一个哨兵，以防最后一个是要删除的;同时删除时更简单
+还要放置一个哨兵，以防最后一个是要删除的;同时删除时更简单
 
 ## 19. Remove Nth Node From End of List My Submissions Question
 ```C++
