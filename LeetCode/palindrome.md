@@ -1,4 +1,4 @@
-@@ 234. Palindrome Linked List My Submissions Question
+## 234. Palindrome Linked List My Submissions Question
 
 Given a singly linked list, determine if it is a palindrome.
 ###solution
