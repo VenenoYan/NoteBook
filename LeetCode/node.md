@@ -42,7 +42,7 @@ Return: 1 --> 2 --> 3 --> 4 --> 5```
 ListNode* removeElements(ListNode* head, int val) {
     ListNode *start,*p;
     while(head&&head->val==val)
-        head=head->next;
+        head=head->next;        //先把头部的
     p=start=head;
     while(start){
         if(start->val!=val){
