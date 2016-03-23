@@ -42,7 +42,7 @@ Return: 1 --> 2 --> 3 --> 4 --> 5```
 ListNode* removeElements(ListNode* head, int val) {
     ListNode *start,*p;
     while(head&&head->val==val)
-        head=head->next;        //先把头部的
+        head=head->next;        //先把头部的删除
     p=start=head;
     while(start){
         if(start->val!=val){
@@ -60,7 +60,10 @@ ListNode* removeElements(ListNode* head, int val) {
 ### lesson
 
 
-1. 使用上题的方法
+1. 
+使用上题的方法
+* 
+特殊情况：头部是要删除的
 1. 
 没有使用：因为要放置一个哨兵，以防最后一个是要删除的;同时删除时更简单
 
