@@ -62,3 +62,34 @@ ListNode* removeElements(ListNode* head, int val) {
 1. 使用上题的方法
 1. 
 没有使用：因为要放置一个哨兵，以防最后一个是要删除的;同时删除时更简单
+
+## 19. Remove Nth Node From End of List My Submissions Question
+```C++
+Given a linked list, remove the nth node from the end of list and return its head.
+
+For example,
+
+   Given linked list: 1->2->3->4->5, and n = 2.
+
+   After removing the second node from the end, the linked list becomes 1->2->3->5.
+   ```
+ ### solution
+```C++
+    ListNode* removeNthFromEnd(ListNode* head, int n) {
+        if(!head)     
+            return head;
+        ListNode* h,*ret;
+        h=ret=head;
+        while(n--) h=h->next;
+        while(h&&h->next)
+        {
+            head=head->next;
+            h=h->next;
+        }
+        if(!h)
+            ret=ret->next;
+        else
+            head->next=head->next->next;
+        return ret;
+    }
+```
