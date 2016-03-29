@@ -35,3 +35,5 @@ type绝对不能为以下类型：
 ——char、short和相应的signed、unsigned类型的实际参数提升到int
 * 
 ——如果int不能存储原值，则提升到unsigned int
+
+##应用 
