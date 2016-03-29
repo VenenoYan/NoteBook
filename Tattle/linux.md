@@ -6,7 +6,7 @@
 同步数据到硬盘：sync
 详细信息：demsg
 查找grep：(global search regular expression(RE) and print out the line
-    grep [-acinrv] [--color=auto] '搜寻字符串' filename
+    grep [-acinrv] [--color=auto] '搜寻字符串' filename/*
         选项与参数：
         -a ：将 binary 文件以 text 文件的方式搜寻数据
         -c ：计算找到 '搜寻字符串' 的次数
