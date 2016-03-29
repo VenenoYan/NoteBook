@@ -4,7 +4,7 @@
 查看服务cpu利用：top
 查看服务对应端口：netstat -nlp
 同步数据到硬盘：sync
-详细信息：demsg
+详细信息：dsg
 查找grep：(global search regular expression(RE) and print out the line
     grep [-acinorv] [--color=auto] '搜寻字符串' filename/*
         选项与参数：
