@@ -1,0 +1,16 @@
+## 变长ca
+熟悉C的人都知道，C语言支持可变参长数函数(Variable Argument Functions)，即参数的个数可以是不定个，在函数定义的时候用(...)表示，比如我们常用的printf()\execl()函数等；printf函数的原型如下：
+
+[cpp] view plain copy print?
+int printf(const char *format, ...);  
+注意，采用这种形式定义的可变参数函数，至少需要一个普通的形参，比如上面代码中的*format，后面的省略号是函数原型的一部分。
+
+C语言定义了一系列宏来完成可变参数函数参数的读取和使用：宏va_start、va_arg和va_end；在ANSI C标准下，这些宏定义在stdarg.h中。三个宏的原型如下：
+
+[cpp] view plain copy print?
+void va_start(va_list ap, last);// 取第一个可变参数（如上述printf中的i）的指针给ap，  
+                // last是函数声明中的最后一个固定参数（比如printf函数原型中的*fromat）；  
+type va_arg(va_list ap, type);  // 返回当前ap指向的可变参数的值，然后ap指向下一个可变参数；  
+                // type表示当前可变参数的类型（支持的类型位int和double）；  
+void va_end(va_list ap);    // 将ap置为NULL  
+当一个函数被定义为可变参数函数时，其函数体内首先要定义一个va_list的结构体类型，这里沿用原型中的名字，ap。va_start使ap指向第一个可选参数。va_arg返回参数列中的当前参数并使ap指向参数列表中的下一个参数。va_end把ap指针清为NULL。函数体内可以多次遍历这些参数，但是都必须以va_start开始，并以va_end结尾。
