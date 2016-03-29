@@ -11,7 +11,7 @@ void va_start(va_list ap, last);// 取第一个可变参数（如上述printf中
 type va_arg(va_list ap, type);  // 返回当前ap指向的可变参数的值，然后ap指向下一个可变参数；  
                 // type表示当前可变参数的类型（支持的类型位int和double）；  
 void va_end(va_list ap);    // 将ap置为NULL  ```
-当一个函数被定义为可变参数函数时，其函数体内首先要定义一个va_list的结构体类型，这里沿用原型中的名字，ap。va_start使ap指向第一个可选参数。va_arg返回参数列中的当前参数并使ap指向参数列表中的下一个参数。va_end把ap指针清为NULL。函数体内可以多次遍历这些参数，但是都必须以va_start开始，并以va_end结尾。
+当一个函数被定义为可变参数函数时，**其函数体内首先要定义一个va_list的结构体类型**，这里沿用原型中的名字，ap。va_start使ap指向第一个可选参数。va_arg返回参数列中的当前参数并使ap指向参数列表中的下一个参数。va_end把ap指针清为NULL。函数体内可以多次遍历这些参数，但是都必须以va_start开始，并以va_end结尾。
 
 简单的说，我们用va_arg(ap,type)取出一个参数的时候，
 ```C
