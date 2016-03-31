@@ -24,7 +24,7 @@ double tanh(double x); 计算双曲正切
 
 指数与对数
 double exp(double x); 求取自然数e的幂
-double sqrt(double x); 开平方
+double sqrt(double x); 开平方根
 double log(double x); 以e为底的对数
 double log10(double x); 以10为底的对数
 double pow(double x, double y); 
