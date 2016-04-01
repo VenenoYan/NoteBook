@@ -27,8 +27,7 @@ double exp(double x); 求取自然数e的幂
 double sqrt(double x); 开平方根
 double log(double x); 以e为底的对数
 double log10(double x); 以10为底的对数
-double pow(double x, double y); 
-计算以x为底数的y次幂 
+double pow(double x, double y); 计算以x为底数的y次幂 
 float powf(float x, float y); 
 与pow一致，输入与输出皆为浮点数
 
