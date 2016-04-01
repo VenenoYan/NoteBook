@@ -28,8 +28,7 @@ double sqrt(double x); 开平方根
 double log(double x); 以e为底的对数
 double log10(double x); 以10为底的对数
 double pow(double x, double y); 计算以x为底数的y次幂 
-float powf(float x, float y); 
-与pow一致，输入与输出皆为浮点数
+float powf(float x, float y); 与pow一致，输入与输出皆为浮点数
 
 取整
 double ceil(double); 取上整
