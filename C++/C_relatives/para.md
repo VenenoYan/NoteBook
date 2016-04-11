@@ -1,5 +1,5 @@
 ## [变长参数](http://blog.csdn.net/astrotycoon/article/details/8284501)
-熟悉C的人都知道，C语言支持可变参长数函数(Variable Argument Functions)，即参数的个数可以是不定个，在函数定义的时候用(...)表示，比如我们常用的printf()\execl()函数等；printf函数的原型如下：
+熟悉C的人都知道，C语言支持[可变参长数函数(Variable Argument Functions)](http://blog.csdn.net/arong1234/article/details/2456455)，即参数的个数可以是不定个，在函数定义的时候用(...)表示，比如我们常用的printf()\execl()函数等；printf函数的原型如下：
 ```C
 int printf(const char *format, ...);  ```
 注意，采用这种形式定义的可变参数函数，**至少需要一个普通的形参**，比如上面代码中的*format，后面的省略号是函数原型的一部分。
