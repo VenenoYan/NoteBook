@@ -53,7 +53,7 @@ l 多进程的（使用 CLONE_THREAD, 类似 NPTL pthreads）；
 
 ## grep：查找并打印
 ```linux
-grep [-acinorvw] [--color=auto] '搜寻字符串' filename/*
+grep [-acinorvw] [--color=auto] '搜寻字符串' filename/*.*
         选项与参数：
         -a ：将 binary 文件以 text 文件的方式搜寻数据
         -c ：计算找到 '搜寻字符串' 的次数
