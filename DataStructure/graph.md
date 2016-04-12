@@ -25,4 +25,36 @@
 
 ####2.2 DFS：深度优先搜索
 类似于树的先根遍历
+
+**思想：**
+```
+初始时，所有顶点未访问。DFS选择一个顶点开始访问，然后从该顶点进行深度遍历直至结束或者遇到已访问的节点；
+若此时还有未访问的节点，则以该节点开始继续；
+直至所以节点都被访问到。
+```
+**实现：**
+```C
+bool visited[num_of_vex]
+void DFS_Traverse(Graph g,int v)
+{
+    for(v=0;v<num_of_vex;++v)   visited[v] = false;
+    for(v=0;v<num_of_vex;++v)   
+    {
+        if(visited[v] == false)
+            DFS(g,v);
+    }   //以防还有未访问到的节点
+}       
+void DFS(Graph g,int v)
+{
+    visited[v] = true;
+    for(w = firstadjvex(g,v);w>=0;w = nextadjvex(g,v,w))
+        if(visited[v] == false) 
+            DFS(g,w);
+}   //深度遍历以该顶点为起始的路径
+```
+
+
+
+
+
 两点最短路径：图的遍历算法即可
