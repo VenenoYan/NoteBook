@@ -32,23 +32,34 @@
 ```
 **实现：**
 ```C
+层次遍历需要
 bool visited[num_of_vex]
-void DFS_Traverse(Graph g,int v)
+void BFS_Traverse(Graph g,int v)
 {
     for(v=0;v<num_of_vex;++v)   visited[v] = false;
+    initqueue(q);
     for(v=0;v<num_of_vex;++v)   
     {
         if(visited[v] == false)
-            DFS(g,v);
+        {
+            visited[v] = true;
+            enqueue(q,v);
+            while(!empty(q))
+            {
+                dequeue(q,u);
+                for(w = firstadjvex(g,u);w>=0; w = nextadjvex(g,u,w))
+                {
+                    if(visited[w] == false)
+                    {
+                        visited[w] = true;
+                        enqueue(w);
+                    }
+                }
+            }
+        }
     }   //以防还有未访问到的节点
 }       
-void DFS(Graph g,int v)
-{
-    visited[v] = true;
-    for(w = firstadjvex(g,v);w>=0;w = nextadjvex(g,v,w))
-        if(visited[v] == false) 
-            DFS(g,w);
-}   //深度遍历以该顶点为起始的路径
+
 ```
 **总结：**
 ```C
