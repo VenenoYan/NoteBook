@@ -1,7 +1,7 @@
 1. 
 [vim配置使用](vim.md)
 1. 
-[电脑信息](computer_info.md)
+[命令](computer_info.md)
 1. 
 [软件安装](Software.md)
 1. 
