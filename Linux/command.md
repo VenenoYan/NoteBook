@@ -65,7 +65,7 @@ grep [-acinorvw] [--color=auto] '搜寻字符串' filename/*.*
         -w ：精确匹配单词
         --color=auto ：可以将找到的关键词部分加上颜色的显示喔！
 ```
-##[kill](http://www.cnblogs.com/peida/archive/2012/12/20/2825837.html):用来终止指定的进程（terminate）的运行
+##[kill](http://www.cnblogs.com/peida/archive/2012/12/20/2825837.html):用来[终止](http://www.cnblogs.com/wangkangluo1/archive/2012/05/26/2518857.html)指定的进程（terminate）的运行
 ```
 kill[参数][进程号]:
         发送指定的信号到相应进程。不指定型号将发送SIGTERM（15）终止指定进程。
