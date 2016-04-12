@@ -74,6 +74,14 @@ kill[参数][进程号]:
 -p  指定kill 命令只打印相关进程的进程号，而不发送任何信号
 -s  指定发送信号
 -u  指定用户 
+
+HUP    1    终端断线
+INT     2    中断（同 Ctrl + C）
+QUIT    3    退出（同 Ctrl + \）
+TERM   15    终止
+KILL    9    强制终止
+CONT   18    继续（与STOP相反， fg/bg命令）
+STOP    19    暂停（同 Ctrl + Z）
 ```
 查看服务对应端口：netstat -nlp
 同步数据到硬盘：sync
