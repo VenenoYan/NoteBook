@@ -23,6 +23,38 @@
 ###2.遍历：对所有顶点扫描一次，故有一个辅助数组记录是否已访问
 ####2.1 BFS：广度优先搜索
 类似于树的层次遍历
+
+**思想：**
+```
+初始时，所有顶点未访问。BFS选择一个顶点开始访问，然后对该顶点进行层次遍历直至结束；
+然后从这些邻接点出发继续访问他们的邻接点；
+直至所以节点都被访问到。
+```
+**实现：**
+```C
+bool visited[num_of_vex]
+void DFS_Traverse(Graph g,int v)
+{
+    for(v=0;v<num_of_vex;++v)   visited[v] = false;
+    for(v=0;v<num_of_vex;++v)   
+    {
+        if(visited[v] == false)
+            DFS(g,v);
+    }   //以防还有未访问到的节点
+}       
+void DFS(Graph g,int v)
+{
+    visited[v] = true;
+    for(w = firstadjvex(g,v);w>=0;w = nextadjvex(g,v,w))
+        if(visited[v] == false) 
+            DFS(g,w);
+}   //深度遍历以该顶点为起始的路径
+```
+**总结：**
+```C
+数组实现：  O（n*n）    n代表顶点数
+邻接表实现：O（n+e）    n代表顶点数，e代表边/弧数
+```
 ####2.2 DFS：深度优先搜索
 类似于树的先根遍历
 
