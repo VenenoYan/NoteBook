@@ -51,20 +51,7 @@ l 多进程的（使用 CLONE_THREAD, 类似 NPTL pthreads）；
 ## top:实时显示系统中各个进程的资源占用状况
 
 
-## grep：查找并打印
-```linux
-grep [-acinorvw] [--color=auto] '搜寻字符串' filename/*.*
-        选项与参数：
-        -a ：将 binary 文件以 text 文件的方式搜寻数据
-        -c ：计算找到 '搜寻字符串' 的次数
-        -i ：忽略大小写的不同，所以大小写视为相同
-        -n ：顺便输出行号
-        -o ：只显示正则表达式匹配的部分
-        -r ：递归的读取目录下的所有文件，包括子目录。
-        -v ：反向选择，亦即显示出没有 '搜寻字符串' 内容的那一行！
-        -w ：精确匹配单词
-        --color=auto ：可以将找到的关键词部分加上颜色的显示喔！
-```
+
 ##[kill](http://www.cnblogs.com/peida/archive/2012/12/20/2825837.html):用来[终止](http://www.cnblogs.com/wangkangluo1/archive/2012/05/26/2518857.html)指定的进程（terminate）的运行
 #### 杀死进程最安全的方法是单纯使用kill命令，不加修饰符，不带标志。 
 
@@ -84,6 +71,20 @@ TERM   15    终止
 KILL    9    强制终止
 CONT   18    继续（与STOP相反， fg/bg命令）
 STOP    19    暂停（同 Ctrl + Z）
+```
+## grep：查找并打印
+```linux
+grep [-acinorvw] [--color=auto] '搜寻字符串' filename/*.*
+        选项与参数：
+        -a ：将 binary 文件以 text 文件的方式搜寻数据
+        -c ：计算找到 '搜寻字符串' 的次数
+        -i ：忽略大小写的不同，所以大小写视为相同
+        -n ：顺便输出行号
+        -o ：只显示正则表达式匹配的部分
+        -r ：递归的读取目录下的所有文件，包括子目录。
+        -v ：反向选择，亦即显示出没有 '搜寻字符串' 内容的那一行！
+        -w ：精确匹配单词
+        --color=auto ：可以将找到的关键词部分加上颜色的显示喔！
 ```
 查看服务对应端口：netstat -nlp
 同步数据到硬盘：sync
