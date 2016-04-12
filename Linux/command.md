@@ -67,7 +67,8 @@ grep [-acinorvw] [--color=auto] '搜寻字符串' filename/*.*
 ```
 ##kill:用来终止指定的进程（terminate）的运行
 ```
-kill[参数][进程号]:发送指定的信号到相应进程。不指定型号将发送SIGTERM（15）终止指定进程。
+kill[参数][进程号]:
+        发送指定的信号到相应进程。不指定型号将发送SIGTERM（15）终止指定进程。
 ```
 查看服务对应端口：netstat -nlp
 同步数据到硬盘：sync
