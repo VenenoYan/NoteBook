@@ -271,7 +271,7 @@ bool criticalPath(ALGraph G)
             k = p->adj;
             dur = *(p->info);
             if(vl[k]-dur<vl[j])
-                vl[j]=vl[k]-dur;    //最晚时间
+                vl[j]=vl[k]-dur;    //最晚时间更新
         }
         for(j=0;j<G.vertexnum;++j)
         {
