@@ -298,8 +298,37 @@ bool criticalPath(ALGraph G)
 * 
 对V-S的顶点集合：从数组D中找到最小值的一个顶点u，即当前求得的一条从该顶点出发的最短路径的终点，加入S中
 * 
-更新V-S其余的值：对于V-S中的其他顶点，如果**D[u] + arcs[s][u]<D[k],则更新D[k]=D[u] + arcs[s][u]**
+更新V-S中其余的值：对于V-S中的其他顶点，如果**D[u] + arcs[s][u]<D[k],则更新D[k]=D[u] + arcs[s][u]**
 * 
 重复上述两步n-1次，即可求得到所有顶点的最短路径。
 
+####3.5.1 单源最短路径实现
+```C
+void shortest_DIJ(MGraph G, int s,shortpathtable &d)
+{
+    for(v = 0;v<G.vexnum;+=v)
+    {
+        final[i] = false;   //代表未求得到该顶点的最短路径
+        d[i] = G.arcs[s][i];    //初始化到各个顶点的距离
+    }
+    d[s] = 0; final[s] = true;  
+    for(i = 1;i<G.vexnum;++i)   //重复n-1次
+    {
+        min = infinity;
+        for(w = 0;w<G.vexnum;+=w)   //V-S中最小的顶点
+            if(!final(w))       //顶点在V-S中
+                if(d[w]<min)
+                {
+                    v= w;
+                    min = d[w];
+                }
+        final[v] = true;
+        for(w=0;w<G.vexnum;++w) //由上步最小的顶点，更新其余
+        {
+            if(!final[w]&&(min+G.arcs[v][w]<d[w]))
+                d[w] = min+G.arcs[v][w];
+        }
+    }
+}
+```
 两点最短路径：图的遍历算法即可
