@@ -229,7 +229,7 @@ bool topologicalSort(ALGraph G)
 对拓扑排序算法进行扩增即可
 ####3.4.2.1 关键路径实现
 ```C
-bool topologicalSort(ALGraph G)
+bool topologicalSort(ALGraph G,stack &T)
 {
     int indegree[G.vertexnum]，ve[G.vertexnum]=0;
     int count=0;
@@ -256,6 +256,36 @@ bool topologicalSort(ALGraph G)
     if(count!=vertexnum)
         return false;
     return true;
+}
+bool criticalPath(ALGraph G)
+{
+    stack T;
+    if(!topolocialSort(G,T)
+        return false;
+    vl[G.vertexnum] = ve;
+    while(T.empty())
+    {
+        i = T.pop();
+        for(p = G.ver[i].firstarc;p;p=G.ver[i].nextarc)
+        {
+            k = p->adj;
+            dur = *(p->info);
+            if(vl[k]-dur<vl[j])
+                vl[j]=vl[k]-dur;
+        }
+        for(j=0;j<G.vertexnum;++j)
+        {
+            for(p = G.ver[i].firstarc;p;p=G.ver[i].nextarc)
+            {
+                k = p->adj;
+                dur = *(p->info);
+                ee = ve[j];
+                el = vl[k]-dur;
+                tag = (ee==el)?'*':' ';
+                printf(j,k,dur,ee,el,tag);
+            }
+        }
+    }
 }
 ```
 ####3.4.2.2 关键路径分析
