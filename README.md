@@ -12,4 +12,4 @@
 * [Linux基础](Linux/README.md)
 * [reference](reference/README.md)
 * [LeetCode](LeetCode/README.md)
-* [Data Structure--数据结构](DataStructure/README.md)
+* [数据结构](DataStructure/README.md)
