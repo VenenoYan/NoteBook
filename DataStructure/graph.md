@@ -302,7 +302,7 @@ bool criticalPath(ALGraph G)
 * 
 重复上述两步n-1次，即可求得到所有顶点的最短路径。
 
-####3.5.1 单源最短路径实现
+####3.5.2 单源最短路径实现
 ```C
 void shortest_DIJ(MGraph G, int s,shortpathtable &d)
 {
@@ -331,4 +331,6 @@ void shortest_DIJ(MGraph G, int s,shortpathtable &d)
     }
 }
 ```
+####3.5.1 单源最短路径分析
+时间复杂度：O（N*N）
 两点最短路径：图的遍历算法即可
