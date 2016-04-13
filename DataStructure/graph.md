@@ -298,7 +298,7 @@ bool criticalPath(ALGraph G)
 * 
 对V-S的顶点集合：从数组D中找到最小值的一个顶点u，即当前求得的一条从该顶点出发的最短路径的终点，加入S中
 * 
-更新V-S中其余的值：对于V-S中的其他顶点，如果**D[u] + arcs[s][u]<D[k],则更新D[k]=D[u] + arcs[s][u]**；即从开始顶点经过S中所有的顶点，上一步得到的u是最后一个，然后到达顶点V-S中任一顶点
+更新V-S中其余的值：对于V-S中的其他顶点，如果**D[u] + arcs[s][u]<D[k],则更新D[k]=D[u] + arcs[s][u]**；即从开始顶点经过S中所有的顶点，上一步得到的u是最后一个，然后到达顶点V-S中顶点
 * 
 重复上述两步n-1次，即可求得到所有顶点的最短路径。
 
@@ -325,7 +325,7 @@ void shortest_DIJ(MGraph G, int s,shortpathtable &d)
         final[v] = true;
         for(w=0;w<G.vexnum;++w) //由上步最小的顶点，更新其余
         {
-            if(!final[w]&&(min+G.arcs[v][w]<d[w]))  //=====
+            if(!final[w]&&(min+G.arcs[v][w]<d[w]))  //===============核心2
                 d[w] = min+G.arcs[v][w];
         }
     }
