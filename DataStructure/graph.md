@@ -133,13 +133,22 @@ MST性质：假设N={V,{E}}是一个连通网，U是顶点集V的非空子集。
 ```C
 void prim_code(MGraph G,VertexType u)
 {
-        
+    vertex U,V;
+    arc TE;
+    U.insert(u);
+    while(U!=V)
+    {
+        v = find_closest(G,U,V);
+        U.insert(v);
+        TE.insert(u,v)
+    }
 }
+vertex find_closest(MGraph,vertex []U,vertex []V)   //返回最小边的另一个
 ```
 ####3.2.1.3 prim分析
 时间复杂度为：O（N*N），与边数无关。
 <br>
-所以适合求稀疏图的最小生成
+所以适合求稀疏图的最小生成树
 ####3.2.2 克鲁斯卡尔kruskal
 ###3.3 拓扑排序与环
 ###3.4 关键路径
