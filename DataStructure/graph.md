@@ -262,7 +262,7 @@ bool criticalPath(ALGraph G)
     stack T;
     if(!topolocialSort(G,T)
         return false;
-    vl[G.vertexnum] = ve;
+    vl[G.vertexnum] = ve;   //出度默认等于ru du
     while(T.empty())
     {
         i = T.pop();
