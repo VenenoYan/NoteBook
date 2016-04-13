@@ -184,6 +184,30 @@ while(无顶点||无入度为0的顶点)
     删除该顶点和所有与其相关的弧；
 }
 判断是无顶点还是无入度为0的顶点，前者说明排序完成，后者说明有环；
+bool topologicalSort(ALGraph G)
+{
+    int indegree[G.vertexnum];
+    int count=0;
+    initdegree(G,indegree); //求各个节点的入度
+    initstack(s);
+    for(int i = 0;i <G.vertexnum;++i)
+        if(indegree[i]==0)
+            s.push(i);
+    while(!empty(s))
+    {
+        i = pop(s);
+        ++count;    //节点数
+        for(w = G.ver[i].firstarc;w;w=G.ver[i].nextarc)
+        {
+            j = w->adj;
+            if(!(--indegree[i]))    
+                s.push(j);
+        }
+    }
+    if(count!=vertexnum)
+        return false;
+    return true;
+}
 ```
 ####3.3.2.1 拓扑排序分析
 时间复杂度：O（n+e）<br>
