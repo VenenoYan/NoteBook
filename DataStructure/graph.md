@@ -160,7 +160,7 @@ vertex find_closest(MGraph,vertex []U,vertex []V)   //返回最小边的另一�
 ####3.2.1.2 kruskal实现
 
 ####3.2.1.3 kruskal分析
-时间复杂度：O（e*loge）， 与顶点数<br>
+时间复杂度：O（e*loge）， 与顶点数无关<br>
 适合稀疏图
 ###3.3 拓扑排序与环
 ###3.4 关键路径
