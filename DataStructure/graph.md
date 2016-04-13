@@ -192,14 +192,14 @@ bool topologicalSort(ALGraph G)
     initstack(s);
     for(int i = 0;i <G.vertexnum;++i)
         if(indegree[i]==0)
-            s.push(i);
+            s.push(i);      //入度为0的入栈
     while(!empty(s))
     {
         i = pop(s);
         ++count;    //节点数
-        for(w = G.ver[i].firstarc;w;w=G.ver[i].nextarc)
+        for(w = G.ver[i].firstarc;w;w=G.ver[i].nextarc) //每一个相连的弧
         {
-            j = w->adj; //连接顶点
+            j = w->adj; //该弧连接顶点
             if(!(--indegree[i]))    
                 s.push(j);
         }
@@ -235,22 +235,22 @@ bool topologicalSort(ALGraph G,stack &T)
     int count=0;
     initdegree(G,indegree); //求各个节点的入度
     initstack(s);
-    initstack(T);   //保存拓扑序列
+    initstack(T);       //保存拓扑序列
     for(int i = 0;i <G.vertexnum;++i)
         if(indegree[i]==0)
-            s.push(i);
+            s.push(i);  //入度为0的入栈
     while(!empty(s))
     {
         i = pop(s);
         T.push(i);
         ++count;    //节点数
-        for(w = G.ver[i].firstarc;w;w=G.ver[i].nextarc)
+        for(w = G.ver[i].firstarc;w;w=G.ver[i].nextarc) //每一个相连的弧
         {
             j = w->adj; //连接顶点
             if(!(--indegree[i]))    
-                s.push(j);
+                s.push(j);      
             if(ve[i]+*(w->info)>ve[i])
-                ve[k] = ve[i]+*(w->info);
+                ve[k] = ve[i]+*(w->info);   //如果从当前活动结束开始较晚则更新
         }
     }
     if(count!=vertexnum)
@@ -262,7 +262,7 @@ bool criticalPath(ALGraph G)
     stack T;
     if(!topolocialSort(G,T)
         return false;
-    vl[G.vertexnum] = ve;   //出度默认等于ru du
+    vl[G.vertexnum] = ve;   //出度默认等于入度
     while(T.empty())
     {
         i = T.pop();
