@@ -199,7 +199,7 @@ bool topologicalSort(ALGraph G)
         ++count;    //节点数
         for(w = G.ver[i].firstarc;w;w=G.ver[i].nextarc)
         {
-            j = w->adj;
+            j = w->adj; //连接顶点
             if(!(--indegree[i]))    
                 s.push(j);
         }
