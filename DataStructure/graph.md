@@ -265,7 +265,7 @@ bool criticalPath(ALGraph G)
     vl[G.vertexnum] = ve;   //出度默认等于入度
     while(T.empty())
     {
-        i = T.pop();
+        i = T.pop();        //从汇点开始求最晚
         for(p = G.ver[i].firstarc;p;p=G.ver[i].nextarc)
         {
             k = p->adj;
