@@ -7,7 +7,7 @@
 * [Web基础](web/README.md)
 * [C++基础](C++/README.md)
 * [Linux基础](Linux/README.md)
-* [reference](reference/README.md)
+* [参考](reference/README.md)
 * [LeetCode](LeetCode/README.md)
 * [数据结构](DataStructure/README.md)
 * [Python基础](python/README.md)
