@@ -316,7 +316,7 @@ void shortest_DIJ(MGraph G, int s,shortpathtable &d)
     {
         min = infinity;
         for(w = 0;w<G.vexnum;+=w)   //V-S中最小的顶点
-            if(!final(w))       //顶点在V-S中
+            if(!final(w))       //顶点在V-S中=====================核心1
                 if(d[w]<min)
                 {
                     v= w;
@@ -325,7 +325,7 @@ void shortest_DIJ(MGraph G, int s,shortpathtable &d)
         final[v] = true;
         for(w=0;w<G.vexnum;++w) //由上步最小的顶点，更新其余
         {
-            if(!final[w]&&(min+G.arcs[v][w]<d[w]))
+            if(!final[w]&&(min+G.arcs[v][w]<d[w]))  //=====
                 d[w] = min+G.arcs[v][w];
         }
     }
