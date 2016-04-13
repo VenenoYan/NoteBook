@@ -265,13 +265,13 @@ bool criticalPath(ALGraph G)
     vl[G.vertexnum] = ve;   //出度默认等于入度
     while(T.empty())
     {
-        i = T.pop();        //从汇点开始求最晚
+        i = T.pop();        //从汇点开始求最晚时间
         for(p = G.ver[i].firstarc;p;p=G.ver[i].nextarc)
         {
             k = p->adj;
             dur = *(p->info);
             if(vl[k]-dur<vl[j])
-                vl[j]=vl[k]-dur;
+                vl[j]=vl[k]-dur;    //最晚时间
         }
         for(j=0;j<G.vertexnum;++j)
         {
