@@ -228,6 +228,36 @@ bool topologicalSort(ALGraph G)
 
 对拓扑排序算法进行扩增即可
 ####3.4.2.1 关键路径实现
+```C
+bool topologicalSort(ALGraph G)
+{
+    int indegree[G.vertexnum]，ve[G.vertexnum]=0;
+    int count=0;
+    initdegree(G,indegree); //求各个节点的入度
+    initstack(s);
+    initstack(T);   //保存拓扑序列
+    for(int i = 0;i <G.vertexnum;++i)
+        if(indegree[i]==0)
+            s.push(i);
+    while(!empty(s))
+    {
+        i = pop(s);
+        T.push(i);
+        ++count;    //节点数
+        for(w = G.ver[i].firstarc;w;w=G.ver[i].nextarc)
+        {
+            j = w->adj; //连接顶点
+            if(!(--indegree[i]))    
+                s.push(j);
+            if(ve[i]+*(w->info)>ve[i])
+                ve[k] = ve[i]+*(w->info);
+        }
+    }
+    if(count!=vertexnum)
+        return false;
+    return true;
+}
+```
 ####3.4.2.2 关键路径分析
 时间复杂度：O（n+e）<br>
 **顶点可以代表某件事，弧代表完成事件的具体活动，权值代表时间或者其他花费====》得到工程总时间和关键活动，可能多条**
