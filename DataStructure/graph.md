@@ -143,13 +143,25 @@ void prim_code(MGraph G,VertexType u)
         TE.insert(u,v)
     }
 }
-vertex find_closest(MGraph,vertex []U,vertex []V)   //返回最小边的另一个
+vertex find_closest(MGraph,vertex []U,vertex []V)   //返回最小边的另一个顶点
 ```
 ####3.2.1.3 prim分析
 时间复杂度为：O（N*N），与边数无关。
 <br>
-所以适合求稀疏图的最小生成树
+所以适合求稠密图的最小生成树
 ####3.2.2 克鲁斯卡尔kruskal
+####3.2.1.1 kruskal思想
+假设N={V,{E}}是一个连通网<br>
+最小生成树的初始状态：T = {V，{}},U=V,边集为空，图中每个顶点自成一个连通分量；
+<br>
+重复下述操作：**在所有边中，选择权值最小而且两个顶点在不同连通分量中的边，加入到T中，否则选择下一个权值最小的边**<br>
+直至所有顶点都在一个连通分量中为止。<br>
+此时，T = {U,{TE}}即最小生成树
+####3.2.1.2 kruskal实现
+
+####3.2.1.3 kruskal分析
+时间复杂度：O（e*loge）<br>
+适合稀疏图
 ###3.3 拓扑排序与环
 ###3.4 关键路径
 ###3.5 最短路径
