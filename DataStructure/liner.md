@@ -91,6 +91,7 @@ typedef struct{
 　      }LinkQueue;
 　      ```
 　   
+　
 3、串：由零个或者多个字符组成的有限序列。
 ```C
 顺序表示：typedef unsigned char SString[size]    //一般s[0]记录串长度
@@ -125,3 +126,7 @@ typedef struct Array{
     int *constants;     //数组常量基址,malloc()分配的地址
 }```
 5、广义表：lists
+
+6、单链表环：<br>
+两个指针，一个每次加1,一个加2,如果相遇，则有环，否则无！<br>
+性质：相遇点到交叉点的距离等于起点到交叉点的距离！
