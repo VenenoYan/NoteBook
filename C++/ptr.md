@@ -109,7 +109,6 @@ std::shared_ptr<Widget> spw2(new Widget); // without make func
     现在用 make_shared() 的话，可以一次分配一块足够大的内存，供 Foo 和 ref_count 对象容身
 2、new调用构造函数时可能会出错。
 ```
-
 ### **4 weak_ptr**
 
 weak_ptr是为配合shared_ptr而引入的一种智能指针来协助shared_ptr工作，它可以从一个shared_ptr或另一个weak_ptr对象构造，它的构造和析构不会引起引用记数的增加或减少。没有重载*和->但可以使用lock获得一个可用的shared_ptr对象
