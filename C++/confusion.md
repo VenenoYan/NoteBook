@@ -140,4 +140,3 @@ C++中，空指针多用nullptr
 
 ** weak_ptr:**
 ### **14.BOOL , float, 指针变量 与“零值”比较的 if 语句**
-BOOL , float, 指针变量 与“零值”比较的 if 语句
