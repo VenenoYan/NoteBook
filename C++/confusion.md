@@ -157,8 +157,9 @@ if ((x >= - EPSINON) && (x <= EPSINON)
   
 如下是错误的写法，不得分。
     if (x == 0.0)  
-    if (x != 0.0)    ```  
+    if (x != 0.0)  
 
 标准答案：
     if (p == NULL)
     if (p != NULL)
+```
