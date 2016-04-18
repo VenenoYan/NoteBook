@@ -74,7 +74,7 @@ int partion(int *a,int low,int high)
 }   //把比关键字大的和小的分开；
 void quicksort(int *a,int low,int high)
 {
-        if(low<high)
+        if(low<high)    //注意此处
             int pivot = partion(a,low,high);
         quicksort(a,low,pivot-1);
         quicksort(a,pivot+1,high);
