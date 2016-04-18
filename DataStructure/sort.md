@@ -21,9 +21,31 @@ void maopao(int []a)
 
 1. 
 直接插入排序:向已经有序的序列中插入,需要后移操作；
-
+```C
+    void insertsort(int *a)
+    {
+        
+    }
+```
 1. 
 希尔排序(插入排序的一种)又叫增量排序：把所有元素根据增量距离分为几组，然后对组内进行直接插入排序；对下一个增量排序，最后增量为1即全体直接插入排序。即可
+```C
+void shellinsert(list &l, int k)
+{
+    for(int i = k;i<l.length;++i)
+    {
+        if(l[i]>l[i-k])
+        {
+            
+        }
+    }
+}
+void shellsort(list &l, int []dlta)
+{
+    for(int i = 0;i<dlta.length;++i)
+        shellinsert(l,dlta[i]);
+}
+```
 
 1. 
 快速排序
