@@ -3,6 +3,21 @@
 ## 内部排序
 1. 
 冒泡排序：每次遍历一遍找最小/最大的放到序列的头/尾部。
+```C
+void maopao(int []a)
+{
+    for(int i = 0;i<a.length;++i)
+    {
+        min = i;
+        for(int j = i+1;j<a.length;++j)
+        {
+            if(a[min]>a[j])
+                min = j;
+        }
+        swap(a[min],a[i]);
+    }
+}
+```
 
 1. 
 直接插入排序
