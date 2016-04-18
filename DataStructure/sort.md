@@ -23,17 +23,11 @@ O（N*N），O(1)
 1. 
 直接插入排序:向已经有序的序列中插入
 ```C
-void maopao(int []a)
+void InsertSort(int []a)
 {
-    for(int i = 0;i<a.length;++i)
+    for(int i = 1;i<a.length;++i)
     {
-        min = i;
-        for(int j = i+1;j<a.length;++j)
-        {
-            if(a[min]>a[j])
-                min = j;
-        }
-        swap(a[min],a[i]);
+        
     }
 }
 ```
