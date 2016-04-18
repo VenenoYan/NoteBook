@@ -8,13 +8,11 @@ void maopao(int []a)
 {
     for(int i = 0;i<a.length;++i)
     {
-        min = i;
-        for(int j = i+1;j<a.length;++j)
+        for(int j = i;j<a.length;++j)
         {
-            if(a[min]>a[j])
-                min = j;
+            if(a[i]>a[j])
+                swap(a[min],a[i]);
         }
-        swap(a[min],a[i]);
     }
 }
 ```
