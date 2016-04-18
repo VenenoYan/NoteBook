@@ -12,7 +12,14 @@ void maopao(int []a)
         {
             if(a[i]>a[j])
                 swap(a[min],a[i]);
-        }  //没找到一个就换，效率低
+        }  //没找到一个就换，效率低：下面先找到最终的下标，然后只换一次即可
+        min = i;
+        for(int j = i+1;j<a.length;++j)
+        {
+            if(a[min]>a[j])
+                min = j;
+        }
+        swap(a[min],a[i]);
     }
 }
 ```
