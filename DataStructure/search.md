@@ -11,6 +11,22 @@
 * 
 实现
 ```C++
+//顺序表：数组
+int bin_search(SStable ST,keyType key)
+{
+    low = 1;high=ST.length;
+    while(low<=high)
+    {
+        mid = (low+high)/2;
+        if(ST[mid]<key)
+            low = mid;
+        else if(ST[mid]>key)
+            high = mid;
+        else
+            return mid;
+    }
+}
+//链式结构
 int bin_search(SStable ST,keyType key)
 {
     low = 1;high=ST.length;
