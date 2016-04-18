@@ -1,5 +1,4 @@
-
-## 混淆点：
+## [混淆点](http://blog.csdn.net/chenhuajie123/article/details/7405080)：
 
 **1. 
 暂停：**
