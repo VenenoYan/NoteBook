@@ -27,6 +27,19 @@ void insert(TNode *head,TNode *node)
             insert(head->left,node);
     }
 }
+TreeNode *search(TNode *root, int v)
+{
+    if(root->val>v)
+        return search(root->left,v)
+    else if(root->val<v)
+    {
+        return search(root->child,v)
+    }
+    else if(root==v)
+        return p;
+    else
+        return false;
+}
 TreeNode *create(int n)
 {
     TNode *HT = new TreeNode(50);
