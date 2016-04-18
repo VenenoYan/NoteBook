@@ -32,25 +32,4 @@ int bin_search(SStable ST,keyType key)
 
 ###2.分块查找、索引顺序查找
 * 
-思想：在顺序查找基础上建立一个索引表！
-* 
-实现
-```C++
-//顺序表：数组
-int bin_search(SStable ST,keyType key)
-{
-    low = 1;high=ST.length;
-    while(low<=high)
-    {
-        mid = (low+high)/2;
-        if(ST[mid]<key)
-            low = mid;
-        else if(ST[mid]>key)
-            high = mid;
-        else
-            return mid;
-    }
-}
-```
-* 
-分析：在查找成功的情况下和判定树的深度有关：比较次数至多 floor(log2(n))+1，平均：log2(n+1)-1
+思想：在顺序查找基础上建立一个索引表：分块！每次先定索引块
