@@ -154,7 +154,6 @@ C++中，空指针多用nullptr
 const float EPSINON = 0.00001;
 if ((x >= - EPSINON) && (x <= EPSINON)
 不可将浮点变量用“==”或“！=”与数字比较，应该设法转化成“>=”或“<=”此类形式。
-  
 如下是错误的写法，不得分。
     if (x == 0.0)  
     if (x != 0.0)  
@@ -162,4 +161,9 @@ if ((x >= - EPSINON) && (x <= EPSINON)
 标准答案：
     if (p == NULL)
     if (p != NULL)
+如下写法均属不良风格，不得分。
+    if (p == 0)
+    if (p != 0)    
+    if (p)  
+        if (!)  
 ```
