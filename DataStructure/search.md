@@ -26,21 +26,6 @@ int bin_search(SStable ST,keyType key)
             return mid;
     }
 }
-//链式结构
-int bin_search(SStable ST,keyType key)
-{
-    low = 1;high=ST.length;
-    while(low<=high)
-    {
-        mid = (low+high)/2;
-        if(ST[mid]<key)
-            low = mid;
-        else if(ST[mid]>key)
-            high = mid;
-        else
-            return mid;
-    }
-}
 ```
 * 
-分析：在查找成功的情况下和判定树的深度有关：比较次数至多 floor(log2(n))+1
+分析：在查找成功的情况下和判定树的深度有关：比较次数至多 floor(log2(n))+1，平均：log2(n+1)-1
