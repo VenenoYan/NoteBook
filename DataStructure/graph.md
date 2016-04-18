@@ -338,6 +338,6 @@ void shortest_DIJ(MGraph G, int s,shortpathtable &d)
 * 
 **法一：** 对每一个顶点进行一边迪杰斯特拉算法。O（N\*N\*N）
 * 
-**法二：** Floyd弗洛伊德算法。O(N*N*N)
+**法二：** Floyd弗洛伊德算法。O(N\*N\*N)
 
 两点最短路径：图的遍历算法即可
