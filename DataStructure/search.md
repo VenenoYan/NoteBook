@@ -83,5 +83,5 @@ int bin_search(SStable ST,keyType key)
 * 
 针对冲突再建立一个溢出区，所有冲突放在此处。
 
-###[红黑树](http://blog.csdn.net/chenhuajie123/article/details/11951777)
+###6.[红黑树](http://blog.csdn.net/chenhuajie123/article/details/11951777)
 
