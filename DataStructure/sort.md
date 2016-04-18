@@ -90,7 +90,7 @@ void Qsort(int *a)
 ```
 
 1. 
-简单选择排序：每次选择最大的和最后的元素互换
+简单选择排序：每次选择最小的和第一个的元素互换
 ```C
 int selectmin(int *a,int start)
 {
