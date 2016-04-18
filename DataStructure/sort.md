@@ -30,7 +30,9 @@ void maopao(int []a)
 ```C
     void insertsort(int *a)
     {
-        
+        for(int i = 1; i< a.length();++i)
+            for(int k = i;k>0&&a[k]<a[k-1];--k)
+                swap(a[k],a[k-1]);
     }
 ```
 1. 
