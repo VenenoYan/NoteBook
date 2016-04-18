@@ -40,12 +40,11 @@ void maopao(int []a)
 ```C
 void shellinsert(list &l, int k)
 {
-    for(int i = k;i<l.length;++i)
+    for(int i = 0;i<k;++i)
     {
-        if(l[i]>l[i-k])
-        {
-            
-        }
+        for(int x = i+k;x<l.length;l+=k)
+            for(int y = x;y>=k&&a[y]<a[y-k];y-=k)
+                swap(a[y],a[y-k]);
     }
 }
 void shellsort(list &l, int []dlta)
