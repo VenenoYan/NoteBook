@@ -74,3 +74,5 @@ int bin_search(SStable ST,keyType key)
 ####5.2.2 再哈希法
 * 
 针对冲突再使用一个新的哈希函数计算
+* 
+不易产生冲突聚集，但增加计算
