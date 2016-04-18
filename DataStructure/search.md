@@ -27,4 +27,4 @@ int bin_search(SStable ST,keyType key)
 }
 ```
 * 
-分析：在查找成功的情况下和判定树的深度有关，floor(log2(n))+1
+分析：在查找成功的情况下和判定树的深度有关:floor(log2(n))+1
