@@ -162,7 +162,7 @@ vertex find_closest(MGraph,vertex []U,vertex []V)   //返回最小边的另一�
 ####3.2.1.3 kruskal分析
 时间复杂度：O（e*loge）， 与顶点数无关<br>
 适合稀疏图
-###3.3 拓扑排序与环：事件z之间的先后关系
+###3.3 拓扑排序与环：事件之间的先后关系
 DGA：有向无环图
 <br>
 **环是否存在：**<br>
