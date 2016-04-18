@@ -66,4 +66,4 @@ int bin_search(SStable ST,keyType key)
 ####5.1.6随机数法
 * 
 取关键字的随机函数值为哈希地址。<HR>
-####5.2.1
+####5.2.1开放定址法
