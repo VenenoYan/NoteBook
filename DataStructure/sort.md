@@ -19,7 +19,7 @@ void maopao(int []a)
             if(a[min]>a[j])
                 min = j;
         }
-        swap(a[min],a[i]);
+        swap(a[min],a[i]);//先找到最终的下标，然后只换一次即可
     }
 }
 ```
