@@ -18,9 +18,25 @@ void maopao(int []a)
     }
 }
 ```
+O（N*N），O(1)
 
 1. 
-直接插入排序
+直接插入排序:向已经有序的序列中插入
+```C
+void maopao(int []a)
+{
+    for(int i = 0;i<a.length;++i)
+    {
+        min = i;
+        for(int j = i+1;j<a.length;++j)
+        {
+            if(a[min]>a[j])
+                min = j;
+        }
+        swap(a[min],a[i]);
+    }
+}
+```
 
 1. 
 希尔排序(插入排序的一种)
