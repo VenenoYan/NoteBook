@@ -84,4 +84,11 @@ int bin_search(SStable ST,keyType key)
 针对冲突再建立一个溢出区，所有冲突放在此处。
 
 ###6.[红黑树](http://blog.csdn.net/chenhuajie123/article/details/11951777)
-
+* 
+性质：
+    * 
+所有节点非红即黑
+    * 
+所有红节点的子节点都是黑的
+    * 
+根节点和叶子节点都是黑
