@@ -78,7 +78,7 @@ void quicksort(int *a,int low,int high)
             int pivot = partion(a,low,high);
         quicksort(a,low,pivot-1);
         quicksort(a,pivot+1,high);
-}
+}   //循环快排
 void Qsort(int *a)
 {
         int k= 0;
