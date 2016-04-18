@@ -57,7 +57,36 @@ void shellsort(list &l, int []dlta)
 1. 
 快速排序：一次排序后将待序的序列分为两个部分，一部分全是比关键字大的，另一部分小；然后分别对这两个部分快排。
 ```C
-3
+int partion(int *a,int low,int high)
+{
+        int p = a[low]
+        while(low<high)
+        {
+            while(low<high&&a[high]>p)
+                --high;
+            a[low] = a[high];
+            while(low<hihg&&a[low]<p)
+                ++low;
+            a[high]=a[low];
+        }
+        a[low]=p;
+        return low;
+}   //把比关键字大的和小的分开；
+void quicksort(int *a,int low,int high)
+{
+        if(low<high)
+            int pivot = partion(a,low,high);
+        quicksort(a,low,pivot-1);
+        quicksort(a,pivot+1,high);
+}
+void Qsort(int *a)
+{
+        int k= 0;
+        while(a[k]) ++k;
+        int low,high,mid;
+        low = 0,high =k;
+        quicksort(a,low,high);
+}
 ```
 
 1. 
