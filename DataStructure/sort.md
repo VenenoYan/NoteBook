@@ -12,7 +12,7 @@ void maopao(int []a)
         {
             if(a[i]>a[j])
                 swap(a[min],a[i]);
-        }
+        }  //没找到一个就换，效率低
     }
 }
 ```
