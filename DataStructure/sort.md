@@ -91,9 +91,27 @@ void Qsort(int *a)
 
 1. 
 简单选择排序：每次选择最大的和最后的元素互换
+```C
+int selectmin(int *a,int start)
+{
+        int ret = start;
+        for(int i = start+1;i<a.length;++i)
+            if(a[ret]<a[i])
+                ret= i;
+        return ret;
+}
+void select(int *a)
+{
+        for(int i = 0;i<a.length;++i)
+            {
+                int index = selectmin(a,i);
+                swap(a[i],a[index]);
+            }
+}
+```
 
 1. 
-堆排序(选择排序的一种)
+堆排序(选择排序的一种)：大小根堆，所有元素大于/小于根；
 
 1. 
 归并排序
