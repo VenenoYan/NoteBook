@@ -134,7 +134,7 @@ void heapinsert(int *a,int val) //放到最后啊！~！
     int l = 0;
     while(a[l]) ++l;
     a[l]=val;   //此处错误，仅为了表示需要
-    
+    for(int i = l;;i=ceil(i/2)-1)
 }
 void buildheap(int *a)
 {
