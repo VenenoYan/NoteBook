@@ -133,7 +133,7 @@ void buildheap(int *a)
 {
     int l = 0, mid = floor(l/2);
     while(a[l]) ++l;
-    for(int i = 0;i<mid;++i)    //第一个非终端节点是第floor(n/2)个元素
+    for(int i = mid;i>0;--i)    //第一个非终端节点是第floor(n/2)个元素
     {
         
     }
