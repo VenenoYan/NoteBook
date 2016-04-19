@@ -185,7 +185,7 @@ void heapsort(int *a)
 7.归并排序：m-路归并。初始时n个元素即n个有序序列，然后m个一组，组内排序；上步结束后的一组为一个，然后继续选m个一组；重复上述操作直至得到一个长度为n的序列即可。<br>
 核心：将m个相连的有序序列归并为一个有序的序列
 ```C
-//二路
+//二路归并
 void merge(int *a,int s,int m,int e)   //将有序序列a[s...m]与a[m...e]归并为a[s...e]
 {
     int *temp;
@@ -199,6 +199,7 @@ void merge(int *a,int s,int m,int e)   //将有序序列a[s...m]与a[m...e]归�
     }
     while(i<=m) temp[t++] = a[i++];
     while(j<=e) temp[t++] = a[j++];
+    while()
 }
 void mergesort()
 ```
