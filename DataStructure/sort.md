@@ -158,13 +158,12 @@ void buildheap(int *a)
 void adjheap(int *a)
 {
     cout<<"the minum is: "<<a[0]<<endl;
-    int l = 0,mid;
+    int l = 0;
     while(a[l]) ++l;
-    mid = floor(l/2)-1;
     a[0]=a[l-1];
     a[l-1]=NULL;    //此处仅表示拿掉一个元素
 
-    for(int i =0;i<=mid;++i)    //自上向下调整堆
+    for(int i =0;i<=l;++i)    //自上向下调整堆
     {
         
     }
