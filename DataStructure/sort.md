@@ -163,8 +163,8 @@ void adjheap(int *a)
     mid = floor(l/2)-1;
     a[0]=a[l-1];
     a[l-1]=NULL;    //此处仅表示拿掉一个元素
-    //子上向下调整堆
-    for(int i =0;i<=mid;++i)
+
+    for(int i =0;i<=mid;++i)    //自上向下调整堆
     {
         
     }
