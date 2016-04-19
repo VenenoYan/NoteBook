@@ -161,7 +161,8 @@ void adjheap(int *a)
     int l = 0;
     while(a[l]) ++l;
     a[0]=a[l-1];
-    a[l-1]=NULL;    //此处仅表示拿掉一个元素，
+    a[l-1]=NULL;    //此处仅表示拿掉一个元素
+    //子上向下调整堆
     
 }
 void heapsort(int *a)
