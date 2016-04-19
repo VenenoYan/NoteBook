@@ -155,7 +155,7 @@ void buildheap(int *a)
             swap(a[i],a[2*i+]);
     }
 }
-void printheap(int *a)
+void adjheap(int *a)
 {
     cout<<"the minum is: "<<a[0]<<endl;
     int l = 0;
@@ -170,7 +170,7 @@ void heapsort(int *a)
     while(a[j]) ++j;
     buildheap(a);
     for(int i=0;i<j;++i)
-        printheap(a);
+        adjheap(a);
 }
 ```
 7.归并排序
