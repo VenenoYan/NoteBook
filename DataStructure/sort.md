@@ -160,7 +160,7 @@ void printheap(int *a)
     cout<<"the minum is: "<<a[0]<<endl;
     int l = 0;
     while(a[l]) ++l;
-    swap(a[0,a[l-1]]);
+    a[0]=a[l-1];
 }
 void heapsort(int *a)
 {
