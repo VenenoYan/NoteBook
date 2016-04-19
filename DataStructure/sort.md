@@ -201,11 +201,14 @@ void merge(int *a,int s,int m,int e)   //将有序序列a[s...m]与a[m...e]归�
     while(j<=e) temp[t++] = a[j++];
     a = temp;
 }
-void mergesort(int *a)
+void mergesort(int *a,int s,int e)
 {
     int l = 0;
     while(a[l]) ++l;
-    
+    int mid = (s+e)/2;
+    mergesort(a,s,mid);
+    mergesort(a,mid,e);
+    merge(a,s,e);
 }
 ```
 
