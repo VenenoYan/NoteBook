@@ -237,7 +237,7 @@ void mergesort(int *a,int s,int e)
 * 
 内部排序最坏是O（N<sup>2</sup>），最好用希尔可以达到O（N<sup>1.3</sup>）
 
-## 外部排序：先分段zai排序
+## 外部排序：先分段再排序
 1. 
 多路平衡归并
 1. 
