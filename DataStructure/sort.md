@@ -134,7 +134,7 @@ void heapinsert(int *a,int val) //放到最后啊！~！
     int l = 0;
     while(a[l]) ++l;
     a[l]=val;   //此处错误，仅为了表示需要
-    for(int i = ceil(l/2)-1;i>=0;i=ceil(i/2)-1)
+    for(int i = ceil(l/2)-1;i>=0;i=ceil(i/2)-1) //自下向上仅调整父亲
     {
         if(a[l]<a[i])
             swap(a[i],a[l]);
