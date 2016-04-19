@@ -188,7 +188,7 @@ void heapsort(int *a)
 //二路归并
 void merge(int *a,int s,int m,int e)   //将有序序列a[s...m]与a[m...e]归并为a[s...e]
 {
-    int *temp;
+    int *temp;  //临时数组辅助保存
     int t = 0;
     for(int i =s,j=m+1;i<=m,j<=e;++t)
     {
