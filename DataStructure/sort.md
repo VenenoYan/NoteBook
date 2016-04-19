@@ -222,7 +222,7 @@ void mergesort(int *a,int s,int e)
 | 简单选择排序 | O（N<sup>2</sup>） | O（N<sup>2</sup>） | O（1） | 稳定 |
 | 快速排序 | O（N*logN） | O（N<sup>2</sup>） | O（logN） | 不稳定 |
 | 堆排序 | O（N*logN） | O（N*logN） | O（1） | 不稳定 |
-| 希尔排序 | O（N<sup>1.5</sup>） | O（N<sup>2</sup>） | O（1） | 不稳定 |
+| 希尔排序 | O（N<sup>1.5</sup>不定！！！） | O（N<sup>2</sup>） | O（1） | 不稳定 |
 | 归并排序 | O（N*logN） | O（N*logN） | O（n） | 稳定 |
 | 基数排序 | O（d*（n+r*d）） | O（d*（n+r*d）） | O（r*d） | 稳定 |
 
