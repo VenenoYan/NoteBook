@@ -222,8 +222,8 @@ void mergesort(int *a,int s,int e)
 | 希尔排序 | O（N<sup>1.5</sup>） | O（N<sup>2</sup>） | O（1） |
 | 快速排序 | O（N*logN） | O（N<sup>2</sup>） | O（logN） |
 | 简单选择排序 | O（N<sup>2</sup>） | O（N<sup>2</sup>） | O（1） |
-| 堆排序 | 1:7 | 2:7 | 3:7 |
-| 归并排序 | 1:8 | 2:8 | 3:8 |
+| 堆排序 | O（N*logN） | O（N*logN） | O（1） |
+| 归并排序 | O（N*logN） | O（N*logN） | O（n） |
 | 基数排序 | 1:9 | 2:9 | 3:9 |
 
 
