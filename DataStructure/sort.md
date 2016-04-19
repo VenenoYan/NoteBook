@@ -211,7 +211,7 @@ void mergesort(int *a,int s,int e)
     merge(a,s,mid,e);
 }
 ```
-8.　基数排序
+8.　基数排序：
 
 
 ### 比较
