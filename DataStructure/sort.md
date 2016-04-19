@@ -146,7 +146,7 @@ void buildheap(int *a)
     int l = 0, mid;
     while(a[l]) ++l;
     mid = floor(l/2)-1;
-    for(int i = mid;i>=0;--i)    //第一个非终端节点是第floor(n/2)个元素
+    for(int i = mid;i>=0;--i)    //第一个非终端节点是第floor(n/2)个元素，自下向上调整
     {
         if(a[2*i+2]>a[2*i+1])
             if(a[i]>a[2*i+1])
@@ -164,7 +164,10 @@ void adjheap(int *a)
     a[0]=a[l-1];
     a[l-1]=NULL;    //此处仅表示拿掉一个元素
     //子上向下调整堆
-    for
+    for(int i =0;i<=mid;++i)
+    {
+        
+    }
     
 }
 void heapsort(int *a)
