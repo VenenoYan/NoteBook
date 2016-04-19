@@ -137,8 +137,11 @@ void printheap(int *a)
 {}
 void heapsort(int *a)
 {
+    int j= 0;
+    while(a[j]) ++j;
     buildheap(a);
-    printheap(a);
+    for(int i=0;i<j;++i)
+        printheap(a);
 }
 ```
 7.归并排序
