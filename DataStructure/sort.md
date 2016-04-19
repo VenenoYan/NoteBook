@@ -141,11 +141,10 @@ void heapsort(int *a)
     printheap(a);
 }
 ```
-
-1. 
+7.
 归并排序
 
-1. 
+8. 
 基数排序
 
 
