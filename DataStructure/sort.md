@@ -161,7 +161,7 @@ void printheap(int *a)
     int l = 0;
     while(a[l]) ++l;
     a[0]=a[l-1];
-    a[l-1]=NULL;
+    a[l-1]=NULL;    //此处仅表示拿掉一个元素，
 }
 void heapsort(int *a)
 {
