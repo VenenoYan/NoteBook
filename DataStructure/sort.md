@@ -199,7 +199,7 @@ void merge(int *a,int s,int m,int e)   //将有序序列a[s...m]与a[m...e]归�
     }
     while(i<=m) temp[t++] = a[i++];
     while(j<=e) temp[t++] = a[j++];
-    while()
+    a = temp;
 }
 void mergesort()
 ```
