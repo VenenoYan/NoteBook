@@ -131,11 +131,13 @@ void heapinsert(int *a,int val)
 {}
 void buildheap(int *a)
 {
-    int l = 0, mid = floor(l/2);
+    int l = 0, mid = floor(l/2)-1;
     while(a[l]) ++l;
-    for(int i = mid;i>0;--i)    //第一个非终端节点是第floor(n/2)个元素
+    for(int i = mid;i>=0;--i)    //第一个非终端节点是第floor(n/2)个元素
     {
-        
+        if(a[2*i+2]>a[2*i+1])
+            if(a[i]>a[2*i+1])
+                swap(a[i],a[2*i+1]);
     }
 }
 void printheap(int *a)
