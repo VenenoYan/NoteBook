@@ -208,7 +208,7 @@ void mergesort(int *a,int s,int e)
     int mid = (s+e)/2;
     mergesort(a,s,mid);
     mergesort(a,mid,e);
-    merge(a,s,e);
+    merge(a,s,mid,e);
 }
 ```
 
