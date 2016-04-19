@@ -156,7 +156,10 @@ void buildheap(int *a)
     }
 }
 void printheap(int *a)
-{}
+{
+    cout<<"the minum is: "<<a[0]<<endl;
+    swap(a[0,a[l-1]]);
+}
 void heapsort(int *a)
 {
     int j= 0;
