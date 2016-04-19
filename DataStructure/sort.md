@@ -138,6 +138,8 @@ void buildheap(int *a)
         if(a[2*i+2]>a[2*i+1])
             if(a[i]>a[2*i+1])
                 swap(a[i],a[2*i+1]);
+        else if(a[i]>a[2*i+2])
+            swap(a[i],a[2*i+]);
     }
 }
 void printheap(int *a)
