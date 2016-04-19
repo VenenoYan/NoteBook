@@ -215,21 +215,25 @@ void mergesort(int *a,int s,int e)
 
 
 ## 比较
-| 排序方法 | 平均时间复杂度 | 最坏时间复杂度 | 空间复杂度 |
-| -- | -- | -- | -- |
-| 冒泡排序 | O（N<sup>2</sup>） | O（N<sup>2</sup>） | O（1） |
-| 直接插入排序 | O（N<sup>2</sup>） | O（N<sup>2</sup>） | O（1） |
-| 希尔排序 | O（N<sup>1.5</sup>） | O（N<sup>2</sup>） | O（1） |
-| 简单选择排序 | O（N<sup>2</sup>） | O（N<sup>2</sup>） | O（1） |
-| 快速排序 | O（N*logN） | O（N<sup>2</sup>） | O（logN） |
-| 堆排序 | O（N*logN） | O（N*logN） | O（1） |
-| 归并排序 | O（N*logN） | O（N*logN） | O（n） |
-| 基数排序 | O（d*（n+r*d）） | O（d*（n+r*d）） | O（r*d） |
+| 排序方法 | 平均时间复杂度 | 最坏时间复杂度 | 空间复杂度 | 稳定性 |
+| -- | -- | -- | -- | -- |
+| 冒泡排序 | O（N<sup>2</sup>） | O（N<sup>2</sup>） | O（1） | 稳定 |
+| 直接插入排序 | O（N<sup>2</sup>） | O（N<sup>2</sup>） | O（1） | 稳定 |
+| 希尔排序 | O（N<sup>1.5</sup>） | O（N<sup>2</sup>） | O（1） | 稳定 |
+| 简单选择排序 | O（N<sup>2</sup>） | O（N<sup>2</sup>） | O（1） | 稳定 |
+| 快速排序 | O（N*logN） | O（N<sup>2</sup>） | O（logN） | 不稳定 |
+| 堆排序 | O（N*logN） | O（N*logN） | O（1） | 不稳定 |
+| 归并排序 | O（N*logN） | O（N*logN） | O（n） | 不稳定 |
+| 基数排序 | O（d*（n+r*d）） | O（d*（n+r*d）） | O（r*d） | 稳定 |
 
 
 ### 总结
 * 
  堆排序与快速排序，归并排序一样都是时间复杂度为O(N*logN)的几种常见排序方法。
+* 
+堆排序和快速排序、基数排序是需要额外内存空间的
+* 
+
 
 ## 外部排序
 1. 
