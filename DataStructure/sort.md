@@ -211,7 +211,7 @@ void mergesort(int *a,int s,int e)
     merge(a,s,mid,e);
 }
 ```
-8.　基数排序：不通过元素间的比较和移动来实现。通过关键字lia shi xian
+8.　基数排序：不通过元素间的比较和移动来实现。通过关键字来实现
 
 
 ### 比较
