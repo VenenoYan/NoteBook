@@ -161,6 +161,7 @@ void printheap(int *a)
     int l = 0;
     while(a[l]) ++l;
     a[0]=a[l-1];
+    a[l-1]=NULL;
 }
 void heapsort(int *a)
 {
