@@ -182,7 +182,7 @@ void heapsort(int *a)
         adjheap(a);
 }
 ```
-7.归并排序
+7.归并排序：
 
 8.基数排序
 
