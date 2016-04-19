@@ -235,7 +235,7 @@ void mergesort(int *a,int s,int e)
 * 
 堆排序、快排、希尔性能最好，但是不稳定
 * 
-内部排序最坏是O（N<sup>2</sup>）
+内部排序最坏是O（N<sup>2</sup>），最好用希尔可以达到O（N<sup>1.3</sup>）
 
 ## 外部排序
 1. 
