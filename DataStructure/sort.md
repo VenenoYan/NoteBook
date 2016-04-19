@@ -130,11 +130,16 @@ void select(int *a)
 void heapinsert(int *a,int val)
 {}
 void buildheap(int *a)
-{}
+{
+    
+}
 void printheap(int *a)
 {}
 void heapsort(int *a)
-{}
+{
+    buildheap(a);
+    printheap(a);
+}
 ```
 1. 
 归并排序
