@@ -224,7 +224,7 @@ void mergesort(int *a,int s,int e)
 | 简单选择排序 | O（N<sup>2</sup>） | O（N<sup>2</sup>） | O（1） |
 | 堆排序 | O（N*logN） | O（N*logN） | O（1） |
 | 归并排序 | O（N*logN） | O（N*logN） | O（n） |
-| 基数排序 | O（d*（n+rd）） | O（d*（n+rd）） | O（r*d） |
+| 基数排序 | O（d*（n+r*d）） | O（d*（n+r*d）） | O（r*d） |
 
 
 ### 总结
