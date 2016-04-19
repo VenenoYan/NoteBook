@@ -128,11 +128,16 @@ void select(int *a)
 // 只需要从floor(n/2)开始递增到1,判断每个节点的左右子树是否满足大小根要求即可。
 */
 void heapinsert(int *a,int val)
-{}
+{
+    int l = 0, mid;
+    while(a[l]) ++l;
+    mid = floor(l/2)-1;
+}
 void buildheap(int *a)
 {
-    int l = 0, mid = floor(l/2)-1;
+    int l = 0, mid;
     while(a[l]) ++l;
+    mid = floor(l/2)-1;
     for(int i = mid;i>=0;--i)    //第一个非终端节点是第floor(n/2)个元素
     {
         if(a[2*i+2]>a[2*i+1])
