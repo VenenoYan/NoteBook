@@ -127,6 +127,14 @@ void select(int *a)
 /* 数组表示完全二叉树：第一个非终端节点是第floor(n/2)个元素，子节点下标：2i 、2i+1
 // 只需要从floor(n/2)开始递增到1,判断每个节点的左右子树是否满足大小根要求即可。
 */
+void heapinsert(int *a,int val)
+{}
+void buildheap(int *a)
+{}
+void printheap(int *a)
+{}
+void heapsort(int *a)
+{}
 ```
 1. 
 归并排序
