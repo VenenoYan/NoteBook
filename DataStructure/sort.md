@@ -205,7 +205,8 @@ void mergesort(int *a,int s,int e)
 {
     int l = 0;
     while(a[l]) ++l;
-    int mid = (s+e)/2;
+    //mid = (s+e)/2; /*注意防止溢出 */
+    mid= s+(e-s) >> 1;
     mergesort(a,s,mid);
     mergesort(a,mid,e);
     merge(a,s,mid,e);
