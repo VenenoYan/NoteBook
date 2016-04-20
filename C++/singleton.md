@@ -157,7 +157,7 @@ template <typename T>
 class Singleton
 {
 public:
-    static T& get_Instance()     //为什么用的指针，非要返回引用？:返回实例的是由Singleton定的，不是用户代码
+    static T& get_Instance()     //为什么用的指针，非要返回引用？:返回实例的生存期由Singleton定，不是用户代码
     {
         if (m_pInstance == NULL)
         {
