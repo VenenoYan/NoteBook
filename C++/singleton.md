@@ -183,7 +183,7 @@ private:
             delete m_pInstance;
         m_pInstance = NULL;
     }
-    static T* volatile m_pInstance;                 //使用指针而不是局部静态变量的原因？
+    static T* volatile m_pInstance;                 //使用指针而不是局部静态变量的原因？：多线程下问题
 };
 //.cpp文件
 template <typename T>
