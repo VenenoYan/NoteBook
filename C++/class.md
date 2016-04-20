@@ -4,6 +4,9 @@
 2. 一般大写
 3. 
 ``` #ifndef ...  #define ... #endif```
+
+[类大小及内存管理](http://blog.csdn.net/youoran/article/details/11069803)
+
 1. 
 每个头文件都有是个很好的习惯
 ## 类
