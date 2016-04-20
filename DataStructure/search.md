@@ -108,7 +108,7 @@ int bin_search(SStable ST,keyType key)
 情况2：
 父亲是红色
     * 
-z的叔叔y是红色的。
+z的叔叔y是红色的
     * 
 z的叔叔y是黑色的，且z是右孩子
     * 
