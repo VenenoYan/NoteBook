@@ -221,7 +221,7 @@ private:
     Singleton(const Singleton& rhs) {}                  //各种构造函数的私有化
     Singleton& operator = (const Singleton& rhs) {}
     　
-    static Delede;
+    static Dele;
     class Dele{
         ~Dele(){
             if(Singleton::m_pInstance)
