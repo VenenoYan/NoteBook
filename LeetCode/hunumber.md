@@ -16,6 +16,21 @@ public:
                 num/=i;
         return num==1;
     }
+    bool isUgly(int num) {
+        while(num%2==0)
+            num /= 2;
+        if(num==1)
+            return true;
+        while(num%3==0)
+            num /= 3;
+        if(num==1)
+            return true;
+        while(num%5==0)
+            num /= 5;
+        if(num==1)
+            return true;
+        return false;
+    }
 };
 ```
 ###Lesson
