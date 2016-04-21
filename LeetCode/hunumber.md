@@ -37,5 +37,28 @@ Example: 19 is a happy number
 12 + 02 + 02 = 1
 ```
 ###Solution
-
+```C
+bool isHappy(int num)
+{
+    int max = 1000;
+    int s = 0,t = 0;
+    while(max--)
+    {
+        while(num)
+        {
+            t = num%10;
+            s += t*t;
+            num /= 10;
+            num = s;
+            s = 0;
+        }
+        if(s==1)
+            break;
+    }
+    if(s==1)
+        return true;
+    return false;
+}
+```
 ###Lesson
+* 
