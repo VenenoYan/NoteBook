@@ -6,3 +6,18 @@ Ugly numbers are positive numbers whose prime factors only include 2, 3, 5. For 
 
 Note that 1 is typically treated as an ugly number.
 
+###Solution
+```C
+class Solution {
+public:
+    bool isUgly(int num) {
+        for(int i = 2;i<6&&num>1;++i)
+            while(num%i==0)
+                num/=i;
+        return num==1;
+    }
+};
+```
+###Lesson
+* 
+把2 3 5 除后，如果等于1则说明是，否则
