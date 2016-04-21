@@ -1,7 +1,8 @@
 ##[power of 2](bitset.md)
 
 ###Lesson
-
+* 
+bit表示，如果是2的幂，那么bieset中有且仅有一个1
 <hr>
 ##power of 3
 Give an integer, write a function to determine if it is apower of three.
@@ -19,5 +20,6 @@ bool isPowerOfThree(int num)
 ###Lesson
 * 
 在整数中，3的幂最大为1162261467。只要能被它整除的肯定是3的幂
+
 <hr>
 ##[power of 4](bitset.md)
