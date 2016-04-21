@@ -7,7 +7,7 @@
 #ifndef ...  
 #define ... 
 #include <>/""
-global variable/functio
+global variable/function
 class{};
 #endif```
 1. 
