@@ -23,3 +23,26 @@ bool isPowerOfThree(int num)
 
 <hr>
 ##[power of 4](bitset.md)
+Give an integer(signed 32bits), write a function to determine if it is apower of four.
+
+###Solution
+```C
+bool isPowerOfFour(int num)
+{
+    if(num<=0||n>pow(2,31)-1)
+        return false;
+    bitset<32> t(num);
+    if(t.count()!=1)
+        return false;
+    else
+    {
+        for(int i = 1;i<31;i+=2)
+            if(t[i])
+                return false;
+    }
+    return true;
+}
+```
+###Lesson
+* 
+bit表示，如果是4的幂，那么bieset中有且仅有一个1，而且是跨一个
