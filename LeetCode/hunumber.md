@@ -16,6 +16,7 @@ public:
                 num/=i;
         return num==1;
     }
+    //可以不除4
     bool isUgly(int num) {
         while(num%2==0)
             num /= 2;
