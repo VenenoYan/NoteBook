@@ -49,4 +49,6 @@
 1. 
 [# 234 链表中是否有环](palindrome.md)
 1. 
-[# 231&326&342幂的判断](power.md)
+[# 231&326&342 幂的判断](power.md)
+* 
+[# 202&263 Hapy&Ugly Number](hunumber.md)
