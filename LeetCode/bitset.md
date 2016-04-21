@@ -1,4 +1,4 @@
-## 191. Number of 1 Bits My Submissions Question
+## 191. Number of 1 Bits 
 
 Write a function that takes an unsigned integer and returns the number of ’1' bits it has (also known as the Hamming weight).
 
@@ -34,7 +34,7 @@ to_ulong()  按位返回一个unsigned long值
 to_string() 按位返回一个string值,顺序一致
 os<<b       输入至流中
 ```
-## 231. Power of Two My Submissions Question
+## 231. Power of Two
 
 Given an integer, write a function to determine if it is a power of two.
 ###solution
@@ -53,7 +53,7 @@ Given an integer, write a function to determine if it is a power of two.
 
 如果该数是2的幂，则对应的二进制中只有一个1。注意是负数或者是0.
 
-## 190. Reverse Bits My Submissions Question
+## 190. Reverse Bits
 
 Reverse bits of a given 32 bits unsigned integer.
 
