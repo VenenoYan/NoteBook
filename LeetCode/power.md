@@ -15,4 +15,5 @@ bool isPowerOfThree(int num)
 ###Lesson
 * 
 在整数中，3的幂最大为1162261467。只要能被它整除的肯定是3的幂
+
 ##[power of 4](bitset.md)
