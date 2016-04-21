@@ -3,7 +3,13 @@
 1. 仅在编译阶段起作用
 2. 一般大写
 3. 
-``` #ifndef ...  #define ... #endif```
+```C
+#ifndef ...  
+#define ... 
+#include <>/""
+global variable/functio
+class{};
+#endif```
 1. 
 每个头文件都有是个很好的习惯
 ## 类
