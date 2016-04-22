@@ -143,9 +143,9 @@ git checkout 把版本库中的文件覆盖工作区文件
         git pull --rebase   远程分支合并到本地，然后将本地变更应用到该版本（多人更新时）
         git push [remote-name] [localB-name]
         git fetch [Bname]        先取来不合并。（后慢慢merge）
-        git merge [Bname]        把分支合并到当前分支。并不会删除分支，如果继续提交会有新的！
         git diff [Bname]:[file]   查看其他分支文件与当前分支的不同
-        git diff [C_Bname]/[F_Bname]   查看下载来的分支文件与自己的不同
+        git diff [C_Bname]/[Fetch_Bname]   查看下载来的分支文件与自己的不同
+        git merge [Bname]        把分支合并到当前分支。并不会删除分支，如果继续提交会有新的！
 远程到本地：
         git clone [url]
 推送：
