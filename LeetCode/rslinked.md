@@ -1,8 +1,6 @@
-206
-把单链表逆序
+##206把单链表逆序
 
-92
-把单链表指定范围逆序
+##92把单链表指定范围逆序
 ```C++
 For example:
 Given 1->2->3->4->5->NULL, m = 2 and n = 4,
@@ -71,3 +69,24 @@ ListNode *reverseBetween(ListNode *head,int s,int e){
     2) 哨兵
     3) 链表只有1、2个时的特殊处理
 ```
+
+## 344 字符串逆序
+```C
+    string reverseString(string s) {
+        if(s.size()==0)
+            return s;
+        int l = 0, h = s.size()-1;
+        if(l==h)
+            return s;
+        while(l<h)
+        {
+            swap(s[l],s[h]);
+            ++l;
+            --h;
+        }
+        return s;
+    }
+```
+###Lesson
+* 
+前后指针、快慢指针，本题使用前后指针。但这两种方法很有用！！
