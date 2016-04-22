@@ -2,6 +2,7 @@
 ## 预编译/防止重复编译：**#ifndef**
 1. 仅在编译阶段起作用
 2. 一般大写
+<<<<<<< HEAD
 3. 格式：只放声明不放定义
 ```C
 #ifndef ...  
@@ -10,6 +11,13 @@
 global variable/function
 class{};
 #endif```
+=======
+3. 
+``` #ifndef ...  #define ... #endif```
+
+[类大小及内存管理](http://blog.csdn.net/youoran/article/details/11069803)
+
+>>>>>>> fbdba69655dc149b177b19eff1649267ee54eef5
 1. 
 每个头文件都有是个很好的习惯
 ## 类
