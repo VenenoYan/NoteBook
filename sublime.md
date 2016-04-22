@@ -174,5 +174,5 @@ DocBlockr           对代码建立文档。会解析函数，变量，和参数
 AllAutocomplete     自动完成插件(全部打开的文件中，自动完成)
 ColorPicker         颜色选择器(Ctrl / Cmd + Shift + C)
 CTags                   
-git      
+git 
 ```
