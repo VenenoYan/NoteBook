@@ -87,7 +87,7 @@ git checkout 把版本库中的文件覆盖工作区文件
         git checkout [Bname]     切换分支
         git branch -d/-D [Bname] 删除/强制删除
         git push [remote-name] --delete [Bname] 删除远程分支
-        git fetch [Bname]        先取。（后慢慢merge）
+        git fetch [Bname]        先取来不合并。（后慢慢merge）
         git merge [Bname]        把分支合并到当前分支。并不会删除分支，如果继续提交会有新的！
         合并时会有冲突：默认Fast-forward模式,自己解决
             git merge --no-ff -m "instruction" [Bname]    保存该分支的历史
