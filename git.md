@@ -134,6 +134,7 @@ git checkout 把版本库中的文件覆盖工作区文件
         ssh-keygen -t rsa -C "youremail"  
         然后把生成的 id_rsa.pub内容放到github内
 绑定：
+        git init：保证当前路径下是一个git respository
         git remote add [remote-name] git@github:[yourname]/[respo_name].git
 使用：
         git pull
