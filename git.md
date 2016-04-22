@@ -148,6 +148,11 @@ git checkout 把版本库中的文件覆盖工作区文件
         git merge [Bname]        把分支合并到当前分支。并不会删除分支，如果继续提交会有新的！
 远程到本地：
         git clone [url]
+        git branch -a       本地加远程所有分支
+        git branch -a - merged  已完全合并到master分支的分支
+        git remote -v       远程分支url
+        git branch -r       远程分支名
+        git branch -m [old] [new] 改分支名字
 推送：
         git checkout -b [lBname] [remote-name/Bname]  :建立对应远程的本地分支名，最好名字相同
         git push [remote-name/Bname] [localB-name]  ：  指定分支推送
