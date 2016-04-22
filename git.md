@@ -93,7 +93,8 @@ git checkout 把版本库中的文件覆盖工作区文件
             git merge --no-ff -m "instruction" [Bname]    保存该分支的历史
         git branch -a - merged  已完全合并到master分支的分支
         git show [Bname]:[file]   查看其他分支文件
-        git diff [Bname]:[file]   查看其他分支文件与自己的不同
+        git diff [Bname]:[file]   查看其他分支文件与当前分支的不同
+        git diff [C_Bname]/[F_Bname]   查看下载来的分支文件与自己的不同
         git pull --rebase   远程分支合并到本地，然后将本地变更应用到该版本（多人更新时）
 分支信息：
         git branch -v       本地分支信息
