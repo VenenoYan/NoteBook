@@ -141,6 +141,7 @@ git checkout 把版本库中的文件覆盖工作区文件
         git pull --rebase   远程分支合并到本地，然后将本地变更应用到该版本（多人更新时）
         git push [remote-name] [localB-name]
         git fetch
+        git merge
 远程到本地：
         git clone [url]
 推送：
