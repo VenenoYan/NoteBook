@@ -25,7 +25,59 @@ public:
 2、还可以用map统计出现次数  
 
 <hr>
-20 .Valid Parentheses   
+##20 .Valid Parentheses   
 Given a string containing just the characters '(', ')', '{', '}', '[' and ']', determine if the input string is valid.
 
 The brackets must close in the correct order, "()" and "()[]{}" are all valid but "(]" and "([)]" are not.
+###Solution
+```C
+public:
+    bool ispar(char s1,char s2)
+    {
+        switch (s1)
+        {
+            case '(':
+                if(s2==')')
+                    return true;
+            case '{':
+                if(s2=='}')
+                    return true;
+            case '[':
+                if(s2==']')
+                    return true;
+            default:
+                return false;
+        }
+            
+    }
+    bool isValid(string s) {
+        if(s.size()==0)
+            return true;
+        else if(s.size()==1)
+            return false;
+        stack<char> st;
+        int l = s.size()-1,i = 0;
+        char is;
+        while(i<=l)
+        {
+            if(st.empty())
+                st.push(s[i++]);
+            is= st.top();
+            if(ispar(is,s[i]))
+                st.pop();
+            else
+                st.push(s[i]);
+            ++i;
+        }
+        if(st.empty())
+            return true;
+        return false;
+    }
+```
+###Lesson
+* 
+栈保存
+* 
+首先判断栈是否为空：是先压入，然后判断：匹配弹出，否则压入
+* 
+下标的增加：空栈时，以及处理时
