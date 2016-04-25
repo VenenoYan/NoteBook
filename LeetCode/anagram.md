@@ -66,7 +66,7 @@ public:
             if(ispar(is,s[i]))
                 st.pop();           //匹配弹出
             else
-                st.push(s[i]);      //否则
+                st.push(s[i]);      //否则压入
             ++i;
         }
         if(st.empty())
