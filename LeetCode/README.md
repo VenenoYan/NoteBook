@@ -15,7 +15,7 @@
 * 
 [# 6 : Z字编码](ZigZag_conversion.md)
 * 
-[# 242 : 字符串字符匹配](anagram.md)
+[# 242&&20 : 字符串字符匹配](anagram.md)
 * 
 [# 283 : 把0移动到最后](movezeroes.md)
 * 
