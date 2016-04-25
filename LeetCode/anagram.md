@@ -23,3 +23,6 @@ public:
 
 1、不管怎么样，排序好一定相同<br>
 2、还可以用map统计出现次数  
+
+
+20. Valid Parentheses   
