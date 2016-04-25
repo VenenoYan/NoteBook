@@ -60,13 +60,13 @@ public:
         char is;
         while(i<=l)
         {
-            if(st.empty())
+            if(st.empty())          //首先看是否空栈
                 st.push(s[i++]);
             is= st.top();
             if(ispar(is,s[i]))
-                st.pop();
+                st.pop();           //匹配弹出
             else
-                st.push(s[i]);
+                st.push(s[i]);      //否则
             ++i;
         }
         if(st.empty())
