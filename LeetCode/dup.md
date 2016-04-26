@@ -51,4 +51,4 @@ You may assume that the array is non-empty and the majority element always exist
 ### lesson
 1. map的
 1. 
-**好的办法**：两个两个的比较，如果相等不处理，如果不相等删除这两个元素。那么最后剩下的那个元素肯定就是。但是注意刚开始两个就是相同的但他们不是majority
+**好的办法**：两个两个的比较，如果相等不处理，如果不相等删除这两个元素。那么最后剩下的那个元素肯定就是。但是注意刚开始两个就是相同的但他们不是majority。
