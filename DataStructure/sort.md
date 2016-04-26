@@ -205,11 +205,14 @@ void mergesort(int *a,int s,int e)
 {
     int l = 0;
     while(a[l]) ++l;
-    //mid = (s+e)/2;        /*注意防止溢出 */
-    mid= s+(e-s) >> 1;
-    mergesort(a,s,mid);
-    mergesort(a,mid,e);
-    merge(a,s,mid,e);
+    while(s<e)
+    {
+        //mid = (s+e)/2;        /*注意防止溢出 */
+        mid= s+(e-s) >> 1;
+        mergesort(a,s,mid);
+        mergesort(a,mid,e);
+        merge(a,s,mid,e);
+    }
 }
 ```
 8.　基数排序：不通过元素间的比较和移动来实现。通过关键字来实现：先排主关键字，然后对主关键字同的次关键字排...直至结束。
