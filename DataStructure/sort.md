@@ -59,7 +59,7 @@ void shellsort(list &l, int []dlta)
 ```C
 int partion(int *a,int low,int high)
 {
-        int p = a[low]
+        int p = a[low]          //中心轴的选择hen zhong y
         while(low<high)
         {
             while(low<high&&a[high]>p)
