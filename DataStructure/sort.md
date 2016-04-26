@@ -59,7 +59,7 @@ void shellsort(list &l, int []dlta)
 ```C
 int partion(int *a,int low,int high)
 {
-        int p = a[low]          //中心轴的选择hen zhong y
+        int p = a[low]          //中心轴的选择很重要
         while(low<high)
         {
             while(low<high&&a[high]>p)
@@ -92,7 +92,12 @@ void Qsort(int *a)
     * 
 快排在基本有序的情况下很慢，O（N*N）与O（N）
     * 
-快排的效率很大情况下由中心轴的选择决定的，所以中心选择很重要
+快排的效率很大情况下由中心轴的选择决定的，**优化点：**  
+        1. 
+不选择第一个作为轴，而是选择第一个、中间、最后一个的中间值作为轴心值
+        1. 
+当子数组小于一个阀值是用插入排序而不是快排
+
 1. 
 简单选择排序：每次选择最小的和第一个的元素互换
 ```C
