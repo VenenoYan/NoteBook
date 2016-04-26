@@ -52,3 +52,5 @@
 [# 231&326&342  : 幂的判断](power.md)
 * 
 [# 202&263  : Hapy&Ugly Number](hunumber.md)
+* 
+[#70 stairs](fib.md)
