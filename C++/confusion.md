@@ -170,6 +170,6 @@ if ((x >= - EPSINON) && (x <= EPSINON)
 ###**15.int_ptr**
 intptr_t 和uintptr_t 类型用来存放指针地址。它们提供了一种可移植且安全的方法声明指针，而且和系统中使用的指针长度相同，对于把指针转化成整数形式来说很有用。uintptr_t 是intptr_t 的无符号版本。
 ```C
-typedef long int intptr_t   / typedef int intptr_t;  
-typedef unsigned long int   uintptr_t;  / typedef unsigned int        uintptr_t;  ```
+typedef long int intptr_t; / typedef int intptr_t;  
+typedef unsigned long int intptr_t; / typedef unsigned int        uintptr_t;  ```
 概念上, 尽管地址是指针, 内存管理常常使用一个无符号的整数类型更好地完成; 内核对待物理内存如同一个大数组, 并且内存地址只是一个数组索引. 进一步地, 一个指针容易解引用; 当直接处理内存存取时, 你几乎从不想以这种方式解引用. 使用一个整数类型避免了这种解引用, 因此避免了 bug. 因此, 内核中通常的内存地址常常是 unsigned long, 利用了指针和长整型一直是相同大小的这个事实, 至少在 Linux 目前支持的所有平台上.
