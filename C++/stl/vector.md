@@ -24,14 +24,15 @@ vector之所以被认为是一个容器，是因为它能够像容器一样存�
 　  c.pop_back()        删最后一个
 　　c.assign(beg,end)   将[beg; end)区间中的数据赋值给c（beg,end不可是自己的迭代器）=======所有原来的迭代器失效
     c.assign(n,elem)    将n个elem的拷贝赋值给c
-　　c.at(idx)   传回索引idx所指的数据，如果idx越界，抛出out_of_range。
+　　c.at(idx)   传回索引idx所指的数据引用，如果idx越界，抛出out_of_range。
 　　c.back()　　传回最后一个数据的引用，不检查这个数据是否存在。
 　　c.front()　　传回第一个数据引用。
 　　c.begin()　　传回迭代器中的第一个数据地址。
 　　c.end()　　指向迭代器中末端元素的下一个，指向一个不存在元素。
 　　c.rbegin()　　指向迭代器中最后一个元素
 　　c.rend()　　传回迭代器中的第一个数据的前一个，指向一个不存在元素。
-　　c.capacity()　　返回容器中可容纳数据的个数。
+　　c.capacity()　　返回容器中可容纳数据的个数：
+   c.shrink_to_fit()  把已分配的但未使用的空间回收（这是请求）
 　　c.reserve()     重置capacity大小
 　  c.size()        大小
 　  c.resize()      重设大小
