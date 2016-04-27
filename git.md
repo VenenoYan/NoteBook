@@ -159,7 +159,7 @@ git checkout 把版本库中的文件覆盖工作区文件
 关联：
         1)普通：git remote add ....
         2)指定： git branch --set-upstream [local/lBname] [remote-name/Bname]
-                git push -u [remote] [local]     第一次是关联
+                git push -u [remote] [local]     第一次时关联
 删除：
         1)删除远程分支：
             git push [remote-name] --delete [Bname]
