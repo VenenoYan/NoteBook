@@ -167,7 +167,7 @@ if ((x >= - EPSINON) && (x <= EPSINON)
     if (p)  
         if (!)  
 ```
-###**15.int_ptr**
+###**15.int_ptr、uint_ptr**
 intptr_t 和uintptr_t 类型用来存放指针地址。它们提供了一种可移植且安全的方法声明指针，而且和系统中使用的指针长度相同，对于把指针转化成整数形式来说很有用。uintptr_t 是intptr_t 的无符号版本。
 ```C
 typedef long int intptr_t; / typedef int intptr_t;  
