@@ -89,3 +89,5 @@ struct CLS
 
 1.
 [虚函数](http://blog.csdn.net/haoel/article/details/1948051/)
+1. 
+[类大小及内存管理](http://blog.csdn.net/youoran/article/details/11069803)
