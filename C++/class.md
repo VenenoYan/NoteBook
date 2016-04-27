@@ -13,12 +13,7 @@ class{};
 #endif```
 =======
 3. 
-``` #ifndef ...  #define ... #endif```
-
-[类大小及内存管理](http://blog.csdn.net/youoran/article/details/11069803)
-
->>>>>>> fbdba69655dc149b177b19eff1649267ee54eef5
-1. 
+``` #ifndef ...  #define ... #endif``` 
 每个头文件都有是个很好的习惯
 ## 类
 
@@ -92,5 +87,7 @@ struct CLS
 
 通常在构造函数中申请内存，析构函数中释放，但是**只有构造函数调用成功，析构函数才会被调用**，换句话说，如果在构造函数中产生了异常，那么析构函数将不会调用，这样就会造成资源泄漏的隐患。**常识：析构函数不能抛异常**
 
-1.
+1. 
 [虚函数](http://blog.csdn.net/haoel/article/details/1948051/)
+1. 
+[类大小及内存管理](http://blog.csdn.net/youoran/article/details/11069803)

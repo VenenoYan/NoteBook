@@ -1,3 +1,66 @@
+##26. Remove Duplicates from Sorted Array   
+Given a sorted array, remove the duplicates in place such that each element appear only once and return the new length.
+
+Do not allocate extra space for another array, you must do this in place with constant memory.
+
+For example,
+Given input array nums = [1,1,2],
+
+Your function should return length = 2, with the first two elements of nums being 1 and 2 respectively. It doesn't matter what you leave beyond the new length.
+
+把一个排好序的数组，删除重复的。返回剩下的长度
+###Solution
+```C
+class Solution {
+public:
+    int removeDuplicates(vector<int>& nums) {
+        nums.erase(unique(nums.begin(),nums.end()),nums.end());
+        return nums.size();
+    }
+};
+```
+##27. Remove Element
+Given an array and a value, remove all instances of that value in place and return the new length.
+
+Do not allocate extra space for another array, you must do this in place with constant memory.
+
+The order of elements can be changed. It doesn't matter what you leave beyond the new length.
+
+Example:
+Given input array nums = [3,2,2,3], val = 3
+
+Your function should return length = 2, with the first two elements of nums being 2.
+
+就是删除制定的元素
+###Solution
+```C
+class Solution {
+public:
+    int removeElement(vector<int>& nums, int val) {
+        if(nums.size()==0)
+            return 0;
+        int i = 0, j = nums.size()-1;
+        while(i<j)
+        {
+            while(nums[i]!=val&&i<j)
+                ++i;
+            while(nums[j]==val&&i<j)
+                --j;
+            swap(nums[i],nums[j]);
+        }
+        if(nums[i]==val)
+            nums.erase(nums.begin()+i,nums.end());
+        else if(nums[j]==val)
+            nums.erase(nums.begin()+j,nums.end());
+        else
+            nums.erase(nums.begin()+j+1,nums.end());
+        return nums.size();
+    }
+};
+```
+###Lesson
+* 
+特殊案例：[1]1　　[2]3
 ## 217. Contains Duplicate.             
 Given an array of integers, find if the array contains any duplicates. Your function should return true if any value appears at least twice in the array, and it should return false if every element is distinct.
 
@@ -50,3 +113,5 @@ You may assume that the array is non-empty and the majority element always exist
 
 ### lesson
 1. map的
+1. 
+**好的办法**：两个两个的比较，如果相等不处理，如果不相等删除这两个元素。那么最后剩下的那个元素肯定就是。但是注意刚开始两个就是相同的但他们不是majority。

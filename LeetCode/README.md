@@ -15,7 +15,7 @@
 * 
 [# 6 : Z字编码](ZigZag_conversion.md)
 * 
-[# 242 : 字符串字符匹配](anagram.md)
+[# 242&&20 : 字符串字符匹配](anagram.md)
 * 
 [# 283 : 把0移动到最后](movezeroes.md)
 * 
@@ -39,7 +39,7 @@
 1. 
 [# 168&171 : excel&number](excel.md)
 1. 
-[# 217 : 数组重复元素](dup.md)
+[# 26&169&217&203 : 数组重复元素](dup.md)
 1. 
 [# 13 : 罗马数](roman_int.md)
 1. 
@@ -52,3 +52,7 @@
 [# 231&326&342  : 幂的判断](power.md)
 * 
 [# 202&263  : Hapy&Ugly Number](hunumber.md)
+* 
+[#70 stairs](fib.md)
+* 
+[# 345 翻转](reser.md)

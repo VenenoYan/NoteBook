@@ -59,7 +59,7 @@ void shellsort(list &l, int []dlta)
 ```C
 int partion(int *a,int low,int high)
 {
-        int p = a[low]
+        int p = a[low]          //中心轴的选择很重要
         while(low<high)
         {
             while(low<high&&a[high]>p)
@@ -88,6 +88,15 @@ void Qsort(int *a)
         quicksort(a,low,high);
 }
 ```
+注：
+    * 
+快排在基本有序的情况下很慢，O（N*N）与O（N）
+    * 
+快排的效率很大情况下由中心轴的选择决定的，**优化点：**  
+        1. 
+不选择第一个作为轴，而是选择第一个、中间、最后一个的中间值作为轴心值
+        1. 
+当子数组小于一个阀值是用插入排序而不是快排
 
 1. 
 简单选择排序：每次选择最小的和第一个的元素互换
@@ -205,11 +214,14 @@ void mergesort(int *a,int s,int e)
 {
     int l = 0;
     while(a[l]) ++l;
-    //mid = (s+e)/2; /*注意防止溢出 */
-    mid= s+(e-s) >> 1;
-    mergesort(a,s,mid);
-    mergesort(a,mid,e);
-    merge(a,s,mid,e);
+    if(s<e)
+    {
+        //mid = (s+e)/2;        /*注意防止溢出 */
+        mid= s+(e-s) >> 1;
+        mergesort(a,s,mid);
+        mergesort(a,mid,e);
+        merge(a,s,mid,e);
+    }
 }
 ```
 8.　基数排序：不通过元素间的比较和移动来实现。通过关键字来实现：先排主关键字，然后对主关键字同的次关键字排...直至结束。
