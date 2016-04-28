@@ -137,7 +137,6 @@ C++中，空指针多用nullptr
 ** unique_ptr:**
     从创建开始直到离开作用域，“唯一”拥有该对象，只能通过reset(重定)、move(转移)、release(释放)但无拷贝
 ** shared_ptr:**
-
 ** weak_ptr:**
 ### **14.BOOL , float, 指针变量 与“零值”比较的 if 语句**
 ```C
