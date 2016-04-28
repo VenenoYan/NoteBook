@@ -15,13 +15,13 @@ public:
         low=high=0;         //记录结果的下标
         for(int i = 1 ; i<prices.size();++i)
         {
-            if(prices[i]<min)
+            if(prices[i]<min)   //遇到更小的
             {
                 min=prices[i];
                 max=prices[i];
                 low = i;
             }
-            else if(prices[i]>max)
+            else if(prices[i]>max)  //遇到更大的
             {
                 max=prices[i];
                 high = i;
