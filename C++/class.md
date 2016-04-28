@@ -6,15 +6,18 @@
 ```C
 #ifndef __UPPER_NAME_H__  
 #define __UPPER_NAME_H__
-#include <>/""          //头文件不妨到命名空间中：否则定义头文件中所有名字为它的
+#include <>/""          //头文件不放到命名空间中：否则定义头文件中所有名字为它的成员
 namespace xxx{
 global variable/function
 class{};
 ]
 #endif```
 3. 
-``` #ifndef ...  #define ... #endif``` 
-每个头文件都有是个很好的习惯
+``` #ifndef ...  #define ... #endif``` 每个头文件都有是个很好的习惯
+1. 
+\#inlcude 不放到命名空间中：否则定义头文件中所有名字为它的成员
+1. 
+头文件如果包括using，则所有包含该头文件的文件都有该using：一般放到函数实现
 
 ## 类
 
