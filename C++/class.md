@@ -2,19 +2,20 @@
 ## 预编译/防止重复编译：**#ifndef**
 1. 仅在编译阶段起作用
 2. 一般大写
-<<<<<<< HEAD
 3. 格式：只放声明不放定义
 ```C
-#ifndef ...  
-#define ... 
+#ifndef __UPPER_NAME_H__  
+#define __UPPER_NAME_H__
 #include <>/""
+namespace xxx{
 global variable/function
 class{};
+]
 #endif```
-=======
 3. 
 ``` #ifndef ...  #define ... #endif``` 
 每个头文件都有是个很好的习惯
+
 ## 类
 
 ```C
