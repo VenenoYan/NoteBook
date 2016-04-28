@@ -6,7 +6,7 @@
 ```C
 #ifndef __UPPER_NAME_H__  
 #define __UPPER_NAME_H__
-#include <>/""
+#include <>/""          //头文件不妨到命名空间中：否则定义头文件中所有名字为它的
 namespace xxx{
 global variable/function
 class{};
