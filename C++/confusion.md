@@ -132,7 +132,7 @@ C++中，空指针多用nullptr
  ### **前二者位于标准类库std内，后二者专为STL对象所拥有。**
  
  ### **13. 智能指针：auto_ptr与unique_ptr、shared_ptr与weak_ptr等**
-** auto_ptr:**
+** auto_ptr:**已被抛弃
 
 ** unique_ptr:**
     从创建开始直到离开作用域，“唯一”拥有该对象，只能通过reset(重定)、move(转移)、release(释放)但无拷贝
