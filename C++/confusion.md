@@ -139,19 +139,19 @@ C++中，空指针多用nullptr
 ** shared_ptr:**
 ```C
 __shared_count& operator=(const __shared_count& __r) // nothrow
-      {    
-    _Sp_counted_base<_Lp>* __tmp = __r._M_pi;   //_M_pi对象的计数
-    if (__tmp != _M_pi)
-      {    
-        if (__tmp != 0)
-          __tmp->_M_add_ref_copy();
-        if (_M_pi != 0)
-          _M_pi->_M_release();
-        _M_pi = __tmp;
-      }
-      COSTA_DEBUG_REFCOUNT;
-    return *this;
-      }```
+    {    
+        _Sp_counted_base<_Lp>* __tmp = __r._M_pi;   //_M_pi对象的计数指针
+        if (__tmp != _M_pi)
+        {    
+            if (__tmp != 0)
+                __tmp->_M_add_ref_copy();
+            if (_M_pi != 0)
+                _M_pi->_M_release();
+            _M_pi = __tmp;
+        }
+        COSTA_DEBUG_REFCOUNT;
+        return *this;
+    }```
 ** weak_ptr:**
 ### **14.BOOL , float, 指针变量 与“零值”比较的 if 语句**
 ```C
