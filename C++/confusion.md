@@ -138,10 +138,9 @@ C++中，空指针多用nullptr
     从创建开始直到离开作用域，“唯一”拥有该对象，只能通过reset(重定)、move(转移)、release(释放)但无拷贝
 ** shared_ptr:**
 ```C
-__shared_count&
-      operator=(const __shared_count& __r) // nothrow
+__shared_count& operator=(const __shared_count& __r) // nothrow
       {    
-    _Sp_counted_base<_Lp>* __tmp = __r._M_pi;
+    _Sp_counted_base<_Lp>* __tmp = __r._M_pi;   //_M_pi对象的计数
     if (__tmp != _M_pi)
       {    
         if (__tmp != 0)
