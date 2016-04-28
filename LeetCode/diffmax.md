@@ -3,7 +3,7 @@ Say you have an array for which the ith element is the price of a given stock on
 
 If you were only permitted to complete at most one transaction (ie, buy one and sell one share of the stock), design an algorithm to find the maximum profit.
 
-找到两天价格差距最大的
+找到两天价格差距最大
 ###Solution
 ```C
 class Solution {
