@@ -25,7 +25,7 @@ public:
             {
                 max=prices[i];
                 high = i;
-                if(diff<max-min)
+                if(diff<max-min)    //新旧差距的比较
                     diff=max-min;
             }
         }
@@ -36,4 +36,8 @@ public:
 ```
 ###Lesson
 * 
-记录最小的，因为今天买肯定会赚。然后找最大的。遇到更小的说明要以当前开始找。
+记录最小的，因为今天买肯定会赚。然后找最大的。
+* 
+遇到更小的说明要以当前开始找。
+* 
+遇到更大的，更新diff：因为该diff可能还是上一次的。
