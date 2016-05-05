@@ -36,7 +36,7 @@ Given a singly linked list, determine if it is a palindrome.
 　　　头指针到相遇点的长度加上问题2的长度即可
 
 
-141. Linked List Cycle  
+141.Linked List Cycle  
 Given a linked list, determine if it has a cycle in it.
 
 
