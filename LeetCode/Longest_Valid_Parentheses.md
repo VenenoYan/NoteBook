@@ -15,3 +15,5 @@ Another example is ")()())", where the longest valid parentheses substring is "(
 3.访问栈顶：如s.top();
 4.判断栈空：如s.empty().当栈空时返回true。
 5.访问栈中的元素个数，如s.size（）;```
+
+[返回目录](README.md)
