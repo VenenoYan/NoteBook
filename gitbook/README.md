@@ -6,4 +6,4 @@
 [技巧](sector2.md)
 
 
-[返回目录](README.md)
+[返回目录](../README.md)
