@@ -32,3 +32,6 @@ sleep()使当前线程进入阻塞状态，让出CUP的使用、目的是不让�
 wait()方法是Object类里的方法；当一个线程执行到wait()方法时，它就进入到一个和**该对象相关的等待池**中，调用者被挂起，同时**失去（释放）了对象的机锁**（暂时失去机锁，wait(long timeout)超时时间到后还需要返还对象锁）；其他线程可以访问；wait()使用notify或者notifyAlll或者指定睡眠时间来唤醒当前等待池中的线程。wiat()必须放在synchronized block中，否则会在program runtime时扔出”java.lang.IllegalMonitorStateException“异常。 <br>但是wait()和sleep()都可以通过interrupt()方法打断线程的暂停状态，从而使线程立刻抛出InterruptedException（但不建议使用该方法）。<br>
 其实两者都可以让线程暂停一段时间,但是本质的区别是一个线程的运行状态控制,一个是线程之间的通讯的问题<br>
 wait是针对进程，如果一个子进程有多个线程，那么在最后一个结束时，其parent才能wait返回
+
+
+[返回目录](README.md)
