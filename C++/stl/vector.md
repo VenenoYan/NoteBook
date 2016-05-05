@@ -44,3 +44,5 @@ vector之所以被认为是一个容器，是因为它能够像容器一样存�
 　　c.insert(pos,beg,end)   在迭代器指向的元素前插入beg~end间的元素，返回void。
 　　c1.swap(c2)　　swap(c1,c2)将c1和c2元素互换。同上操作。
 ```
+
+[返回目录](README.md)
