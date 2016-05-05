@@ -44,14 +44,14 @@ Given a linked list, determine if it has a cycle in it.
 class Solution {
 public:
     bool hasCycle(ListNode *head) {
-        if(!head)
+        if(!head||head->next==NULL)
             return false;
         ListNode *f,*l;
         f = l = head;
         while(f&&l)
         {
             l = l->next;
-            if(f->next)             //先看是否
+            if(f->next)             //先看是否有效
                 f = f->next->next;  //先移动后判断相遇
             else 
                 return false;
