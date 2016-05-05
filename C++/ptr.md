@@ -112,3 +112,5 @@ std::shared_ptr<Widget> spw2(new Widget); // without make func
 ### **4 weak_ptr**
 
 weak_ptr是为配合shared_ptr而引入的一种智能指针来协助shared_ptr工作，它可以从一个shared_ptr或另一个weak_ptr对象构造，它的构造和析构不会引起引用记数的增加或减少。没有重载*和->但可以使用lock获得一个可用的shared_ptr对象
+
+[返回目录](README.md)
