@@ -436,3 +436,6 @@ Python 展现了“瑞士军刀”的哲学。这可以通过它更大的包的�
 **pickle**：
 pickle模块被用来序列化python的对象到bytes流，从而适合存储到文件，网络传输，或数据库存储。（pickle的过程也被称serializing,marshalling或者flattening，pickle同时可以用来将bytes流反序列化为python的对象）。
 
+
+
+[返回目录](README.md)
