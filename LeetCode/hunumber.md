@@ -81,3 +81,5 @@ bool isHappy(int num)
 ###Lesson
 * 
 max：代表当endless时，假设从2到最大平方和的可能，都出现一遍然后endless循环。这是最坏的可能，也就是说当endless时最多可以循环max次必有重复。（但此max是10个9的平方和，可能更大）
+
+[返回目录](README.md)
