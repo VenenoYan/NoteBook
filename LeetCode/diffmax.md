@@ -11,7 +11,7 @@ public:
     int maxProfit(vector<int>& prices) {
         if(prices.size()<=1)
             return 0;
-        int diff = 0, min = prices[0] ,max= prices[0],low,high;
+        int diff = 0, min = prices[0] ,max= prices[0],low,high,low_test;
         low=high=0;         //记录结果的下标
         for(int i = 1 ; i<prices.size();++i)
         {
@@ -19,14 +19,17 @@ public:
             {
                 min=prices[i];
                 max=prices[i];
-                low = i;
+                low_test = i;
             }
             else if(prices[i]>max)  //遇到更大的
             {
                 max=prices[i];
                 high = i;
                 if(diff<max-min)    //新旧差距的比较
+                {
                     diff=max-min;
+                    low = low_test;
+                }
             }
         }
         cout<<low+1<<""<<high+1<<endl;
