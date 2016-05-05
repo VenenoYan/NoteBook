@@ -242,3 +242,5 @@ NULL            Null pointer (macro )               //空字符串
 size_t          Unsigned integral type (type )      //长度
 ```
 **字符串赋值时，从头覆盖。如果目地字符串比要源字符串长度长，覆盖剩下的依然是原有的值。**
+
+[返回目录](README.md)
