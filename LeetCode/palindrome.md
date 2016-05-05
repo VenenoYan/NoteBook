@@ -39,5 +39,36 @@ Given a singly linked list, determine if it is a palindrome.
 ##141.Linked List Cycle  
 Given a linked list, determine if it has a cycle in it.
 
+###Solution
+```C
+class Solution {
+public:
+    bool hasCycle(ListNode *head) {
+        if(!head)
+            return false;
+        ListNode *f,*l;
+        f = l = head;
+        while(f&&l)
+        {
+            l = l->next;
+            if(f->next)
+                f = f->next->next;
+            else 
+                return false;
+            
+            if(l==f)
+                return true;
+        }
+        return false;
+    }
+};
+```
+###Lesson
+1. 
+单链表是有环？<br>
+　　　两个指针，一个快一个慢，如果相遇就说明有环
+
+1. 
+先移动后判断是否相遇
 
 [返回目录](README.md)
