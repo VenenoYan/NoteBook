@@ -51,7 +51,7 @@ public:
         while(f&&l)
         {
             l = l->next;
-            if(f->next)
+            if(f->next)             //先看是否
                 f = f->next->next;  //先移动后判断相遇
             else 
                 return false;
