@@ -35,8 +35,8 @@ Given a singly linked list, determine if it is a palindrome.
 链表的长度？<br>
 　　　头指针到相遇点的长度加上问题2的长度即可
 
-141. Linked List Cycle   My Submissions QuestionEditorial Solution
-Total Accepted: 103384 Total Submissions: 280147 Difficulty: Easy
+
+141. Linked List Cycle  
 Given a linked list, determine if it has a cycle in it.
 
 
