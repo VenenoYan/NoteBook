@@ -22,4 +22,4 @@
 1. 
 [论文](paper.md)
 
-[返回目录](README.md)
+[返回目录](../README.md)
