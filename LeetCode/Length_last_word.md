@@ -49,3 +49,4 @@ string s2="year  "```
 the use of stack
 * 
 indice problem
+
