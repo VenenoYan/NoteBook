@@ -52,7 +52,7 @@ public:
         {
             l = l->next;
             if(f->next)
-                f = f->next->next;
+                f = f->next->next;  //先移动后判断相遇
             else 
                 return false;
             
