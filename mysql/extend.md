@@ -127,3 +127,5 @@
     24、选择从10到15的记录 
         select top 5 * from (select top 15 * from table order by id asc) T_别名 order by id desc 
 ```
+
+[返回目录](README.md)
