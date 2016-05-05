@@ -79,3 +79,6 @@ random.sample('abcdefghij',3)
 >>> random.shuffle(items)
 >>> items
 [3, 2, 5, 6, 4, 1] ```
+
+
+[返回目录](README.md)
