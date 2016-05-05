@@ -69,3 +69,5 @@ putchar(); 将指定的字符写到标准输出设备
 puts(); 送一字符串到流stdout中
 ungetc(); 　将指定字符写回文件流中
 perror(); 打印出错误原因信息字符串```
+
+[返回目录](README.md)
