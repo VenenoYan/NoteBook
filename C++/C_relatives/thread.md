@@ -134,3 +134,5 @@ signal()函数原型如下：
 
    typedef void (*sighandler_t)(int);
    sighandler_t signal(int signum, sighandler_t handler);```
+  
+  [返回目录](README.md)
