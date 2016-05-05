@@ -42,3 +42,4 @@ private:
 create a vector to save sum between 0 and i
 * 
 set vector with sum
+
