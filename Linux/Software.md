@@ -21,3 +21,5 @@ b 下载、解压、安装
 ```C
 a pip install python-mysql
 b 下载、解压、安装```
+
+[返回目录](README.md)
