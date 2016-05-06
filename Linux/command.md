@@ -1,4 +1,4 @@
-# man "command"
+# man "command":yong f
 
 查看cpu信息
 cat /proc/cpiinfo
