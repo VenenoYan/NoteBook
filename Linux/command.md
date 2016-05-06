@@ -1,4 +1,4 @@
-# man "command":yong f
+# man "command":用法
 
 查看cpu信息
 cat /proc/cpiinfo
@@ -104,6 +104,7 @@ ICMP分为两种：**差错报告报文和询问报文**
 时间戳请求(13)和回答(14)：用于请求时间，做时间同步
 
 ##find：在目录结构中搜索文件，并执行指定的操作
+
 
 查看服务对应端口：netstat -nlp
 同步数据到硬盘：sync
