@@ -160,7 +160,7 @@ find /opt/soft/test/ -perm 777  ：权限为777的文件
     * 
 find . -type f -name "*.log"    ：查找当目录，以.log结尾的普通文件
     * 
-find . -name '*.html' -exec grep 'mailto:'{}
+find . -name '*.html' -exec grep 'mailto:'{}：查找字符串
 
 查看服务对应端口：netstat -nlp
 同步数据到硬盘：sync
