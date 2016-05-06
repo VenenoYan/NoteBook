@@ -154,7 +154,7 @@ options:
 * 
 实例
     * 
-find . -name "*.log"    ：当前目录下以log为后缀的文件
+find . -name "*.log"    ：当前目录下以log为后缀的所有文件
     * 
 find /opt/soft/test/ -perm 777  ：权限为777的文件
     * 
