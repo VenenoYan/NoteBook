@@ -1,3 +1,5 @@
+# man "command"
+
 查看cpu信息
 cat /proc/cpiinfo
 
