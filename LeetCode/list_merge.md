@@ -33,4 +33,10 @@ public:
             head->next = l2;
         return ret->next;
     }
-};```
+};
+```
+###Lesson
+* 
+head 在来链表上跑。
+* 
+有一个到结尾了，需要把另外一个链表连到最后
