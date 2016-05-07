@@ -75,7 +75,7 @@ int partion(int *a,int low,int high)
 void quicksort(int *a,int low,int high)
 {
         if(low<high)    //注意此处
-            int pivot = partion(a,low,high);
+            int pivot = partion(a,low,high);    //具体的排序由partion完成
         quicksort(a,low,pivot-1);
         quicksort(a,pivot+1,high);
 }   //循环快排
@@ -89,6 +89,8 @@ void Qsort(int *a)
 }
 ```
 注：
+    * 
+快排的排序在parion函数wan ch
     * 
 快排在基本有序的情况下很慢，O（N*N）与O（N）
     * 
