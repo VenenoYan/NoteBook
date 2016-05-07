@@ -90,7 +90,7 @@ void Qsort(int *a)
 ```
 注：
     * 
-快排的排序在parion函数wan ch
+快排的排序在partion函数完成
     * 
 快排在基本有序的情况下很慢，O（N*N）与O（N）
     * 
