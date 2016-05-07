@@ -76,6 +76,8 @@ void quicksort(int *a,int low,int high)
 {
         if(low<high)    //注意此处
             int pivot = partion(a,low,high);    //具体的排序由partion完成
+        else 
+            return ;
         quicksort(a,low,pivot-1);
         quicksort(a,pivot+1,high);
 }   //循环快排
