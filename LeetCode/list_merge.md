@@ -89,6 +89,7 @@ void merge(vector<int>& nums1, int m, vector<int>& nums2, int n)
 insert: 返回第一个插入成功的迭代器
 * 
 insert到中间：效率很低
-
+* 
+从后向前插入，
 
 [返回目录](README.md)
