@@ -75,13 +75,13 @@ void merge(vector<int>& nums1, int m, vector<int>& nums2, int n)
         int k = m+n-1;
         while(i >=0 && j>=0)
         {
-            if(A[i] > B[j])
-                A[k--] = A[i--];
+            if(nums1[i] > nums2[j])
+                nums1[k--] = nums1[i--];
             else
-                A[k--] = B[j--];
+                nums1[k--] = nums2[j--];
         }
         while(j>=0)
-            A[k--] = B[j--];
+            nums1[k--] = nums2[j--];
 }
 ```
 [返回目录](README.md)
