@@ -37,7 +37,7 @@ vector之所以被认为是一个容器，是因为它能够像容器一样存�
 　  c.resize()      重设大小
 　　c.empty()　　判断容器是否为空
 　　c.clear()　　移除容器中所有数据。
-　　c.erase(pos)    删除pos位置的数据，传回下一个数据的迭代器。
+　　c.erase(pos)    删除pos位置的数据，传回下一个数据的迭代器。:自动把后面的前移，最坏O(N)
 　　c.erase(beg,end)    　删除(beg,end)区间的数据，传回下一个数据迭代器。
 　　c.insert(pos,elem)      在迭代器指向的元素前插入。返回指向新添加的迭代器
 　　c.insert(pos,n,elem)    在迭代器指向的元素前插入n个elem，返回void
