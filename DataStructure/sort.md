@@ -96,7 +96,7 @@ void quick_sort1(vector<int> &nums,int low,int high)
             high = q.top();q.pop();
             low = q.top();q.pop();
             int mid = partion(nums,low,high);
-            if(low<=mid-1)  //xian pan duan
+            if(low<=mid-1)  //先判断
             {
                 q.push(low);
                 q.push(mid-1);
