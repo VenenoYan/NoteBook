@@ -90,13 +90,13 @@ void quick_sort1(vector<int> &nums,int low,int high)
     else
     {
         q.push(low);
-        q.push(high);
+        q.push(high);       //每一次压入双下标
         while(!q.empty())
         {
             high = q.top();q.pop();
             low = q.top();q.pop();
             int mid = partion(nums,low,high);
-            if(low<=mid-1)
+            if(low<=mid-1)  //xian pan duan
             {
                 q.push(low);
                 q.push(mid-1);
