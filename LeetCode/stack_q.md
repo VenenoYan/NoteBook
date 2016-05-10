@@ -72,6 +72,58 @@ top() -- Get the top element.<br>
 empty() -- Return whether the stack is empty.<br>
 Notes:<br>
 You must use only standard operations of a queue -- which means only push to back, peek/pop from front, size, and is empty operations are valid.
+###Solution
+```C
+class Stack {
+public:
+    queue<int> q1,q2;
+    // Push element x onto stack.
+    void push(int x) {
+        q1.push(x);
+    }
 
+    // Removes the element on top of the stack.
+    void pop() {
+        int len = q1.size();
+        if(len==0)
+            return;
+        while(--len)
+        {
+            q2.push(q1.front());
+            q1.pop();
+        }
+        q1.pop();
+        while(!q2.empty())
+        {
+            q1.push(q2.front());
+            q2.pop();
+        }
+    }
+
+    // Get the top element.
+    int top() {
+        int len = q1.size();
+        while(--len)
+        {
+            q2.push(q1.front());
+            q1.pop();
+        }
+        int ret = q1.front();
+        q2.push(ret);
+        q1.pop();
+        while(!q2.empty())
+        {
+            q1.push(q2.front());
+            q2.pop();
+        }
+        return ret;
+    }
+
+    // Return whether the stack is empty.
+    bool empty() {
+        return q1.empty();
+    }
+};
+```
 
 [返回目录](README.md)
