@@ -61,6 +61,6 @@
 * 
 [# 121 相差最大](diffmax.md)
 * 
-[# 232  栈与队列 ](stack_q.md)
+[# 232&225  栈与队列 ](stack_q.md)
 
 [返回目录](../README.md)
