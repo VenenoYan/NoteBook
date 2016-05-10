@@ -87,7 +87,7 @@ public:
         int len = q1.size();
         if(len==0)
             return;
-        while(--len)
+        while(--len)        //先自减的原因
         {
             q2.push(q1.front());
             q1.pop();
@@ -109,7 +109,7 @@ public:
             q1.pop();
         }
         int ret = q1.front();
-        q2.push(ret);
+        q2.push(ret);       //重新压入的原因
         q1.pop();
         while(!q2.empty())
         {
