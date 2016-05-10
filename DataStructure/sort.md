@@ -108,7 +108,7 @@ void quick_sort1(vector<int> &nums,int low,int high)
             }
         }
     }
-}
+}   //非递归实现
 　
 void Qsort(int *a)
 {
