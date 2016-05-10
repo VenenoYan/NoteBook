@@ -65,7 +65,7 @@ int partion(int *a,int low,int high)
             while(low<high&&a[high]>p)
                 --high;
             a[low] = a[high];
-            while(low<hihg&&a[low]<=p)
+            while(low<hihg&&a[low]<=p)      //注意等于
                 ++low;
             a[high]=a[low];
         }
