@@ -1,6 +1,6 @@
 # Summary
 
-* [简介](README.md)
+* [编译简介](README.md)
 * [Sublime配置](sublime.md)
 * [Git使用](git.md)
 * [GitBook使用](gitbook/README.md)
