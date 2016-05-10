@@ -62,4 +62,16 @@ queue: pop()、front(与栈不同)、back(仅用于队列)、top(仅用于优先
 * 
 双栈实现队列
 
+
+##225. Implement Stack using Queues   
+Implement the following operations of a stack using queues.
+
+push(x) -- Push element x onto stack.<br>
+pop() -- Removes the element on top of the stack.<br>
+top() -- Get the top element.<br>
+empty() -- Return whether the stack is empty.<br>
+Notes:<br>
+You must use only standard operations of a queue -- which means only push to back, peek/pop from front, size, and is empty operations are valid.
+
+
 [返回目录](README.md)
