@@ -5,62 +5,88 @@ syntax on
 "设置高亮搜索
 set hlsearch
 set incsearch
+
 "编码
 set encoding=utf-8
-set fileencoding=chinese
 set fileencodings=ucs-bom,utf-8,chinese
+set langmenu=zh_CN,UTF-8
 set ambiwidth=double
 set helplang=cn 
 
 "显示行号
 set number 
+
 "突出当前行
 set cursorline
+
 "自动保存
 set autowrite
-"Tab 宽度
-set ts=4
+
+"当文件被外部修改时自动读取
+set autoread
+
 "自动缩进
-set softtabstop=4
-set shiftwidth=4
 set tabstop=4
+set cin     "C++缩进风格
+
+"换行无自动缩进
+set nowrap
+
 "不要空格代替指标符
 set noexpandtab
+
 "现实历史记录数
 set history=100
+
 "禁止生成临时文件
 set noswapfile
-"C/C++ 风格的自动缩进
-set cin
+set nobackup
+
 "在编辑过程中，在右下角显示光标位置的状态行
 set ruler
+
 "显示匹配括号
 set showmatch
+
+"允许鼠标定位
+set mouse=a
+
 "去掉讨厌的有关vi一致性模式，避免以前版本的一些bug和局限
 set nocompatible
+
 "打开的文件类型检测，用于智能补全
 set completeopt=longest,menu
-filetype on
+filetype plugin indent on
+
+"自动补全时采用菜单式匹配列表
+set wildmenu
+autocmd FileType ruby,eruby set omnifunc=rubycomplete
+autocmd FileType python set omnifunc=pythoncomplete  
+autocmd FileType javascript set omnifunc=javascriptcomplete  
+autocmd FileType html set omnifunc=htmlcomplete  
+autocmd FileType css set omnifunc=csscomplete  
+autocmd FileType xml set omnifunc=xmlcomplete  
+autocmd FileType java set omnifunc=javacomplete  
+
 "全选+复制 ctrl+a
 map <C-A> ggVGY
 map! <C-A> <Esc> ggVGY
 map <F12> gg=G
+
 "选中状态下，ctrl+c复制
 vmap <C-c> "+y
+
 "共享剪切板
 set clipboard+=unnamed
+
 "python 支持
 set filetype=python
 au BufNewFile,BufRead *.py,*.pyw setf python 
-set tabstop=4
-set softtabstop=4
 set shiftwidth=4
 set textwidth=90
 set expandtab
-set autoindent
-set fileformat=unix
-set encoding=utf-8
 let python_highlight_all=1
+
 "--ctags setting--
 "按下F5重新生成tag文件，并更新taglist
 map <F5> :!ctags -R --c++-kinds=+p --fields=+iaS --extra=+q .<CR><CR> :TlistUpdate<CR>
@@ -341,39 +367,66 @@ func SetTitle()
     "如果文件类型为.sh文件 
     if &filetype == 'sh' 
         call setline(1,"\#########################################################################") 
-        call append(line("."), "\# File Name: ".expand("%")) 
-        call append(line(".")+1, "\# Author: leo") 
-        call append(line(".")+2, "\# mail:zhangzhuang24@163.com") 
-        call append(line(".")+3, "\# Created Time: ".strftime("%c")) 
-        call append(line(".")+4, "\#########################################################################") 
-        call append(line(".")+5, "\#!/bin/bash") 
-        call append(line(".")+6, "") 
-    else 
-        call setline(1,"/*************************************************************************") 
-        call append(line("."),"    > File Name:".expand("%")) 
-        call append(line(".")+1, "    > Author:leo") 
-        call append(line(".")+2, "    > Mail:zhangzhuang24@163.com> ") 
-        call append(line(".")+3, "    > Created Time: ".strftime("%c"))
-        call append(line(".")+4, "************************************************************************/") 
-        call append(line(".")+5, "")
+        call append(line("."), "\# Copyright(c) Leo Zhang,XXX")
+        call append(line(".")+1, "\#           All Rights Reserved.")
+        call append(line(".")+2, "\# File Name: ".expand("%"))
+        call append(line(".")+3, "\# Description: $$$$")
+        call append(line(".")+4, "\# Author:Leo Zhang")
+        call append(line(".")+5, "\# E-mail:zhangzhuang24@163.com") 
+        call append(line(".")+6, "\# Created Time: ".strftime("%d")) 
+        call append(line(".")+7, "\#########################################################################") 
+        call append(line(".")+8, "\#!/bin/bash") 
+        call append(line(".")+9, "") 
     endif
     if &filetype == 'cpp'
-        call append(line(".")+6,"#include<iostream>")
-        call append(line(".")+7,"using namespace std;")                              
-        call append(line(".")+8,"")
-        call append(line(".")+9,"int main(){")
-        call append(line(".")+10,"    return 0;")
-        call append(line(".")+11,"}")
+        call setline(1,"/*#########################################################################")
+        call append(line("."), "* Copyright(c) Leo Zhang,XXX")
+        call append(line(".")+1, "*          All Rights Reserved.")
+        call append(line(".")+2, "* File Name: ".expand("%"))
+        call append(line(".")+3, "* Description: $$$$")
+        call append(line(".")+4, "* Author:Leo Zhang")
+        call append(line(".")+5, "* E-mail:zhangzhuang24@163.com")
+        call append(line(".")+6, "* Created Time: ".strftime("%d"))
+        call append(line(".")+7, "*###########################################################*/")
+        call append(line(".")+8, " ")
+        call append(line(".")+9,"#include<iostream>")
+        call append(line(".")+10,"using namespace std;")                              
+        call append(line(".")+11,"")
+        call append(line(".")+12,"int main(){")
+        call append(line(".")+13," ")
+        call append(line(".")+14,"    return 0;")
+        call append(line(".")+15,"}")
     endif
     if &filetype == 'c'
-        call append(line(".")+6,"#include<stdio.h>")
-        call append(line(".")+7,"")
-        call append(line(".")+8,"void main(){}")
-    endif
-    if &filetype == 'py'
-        call append(line(".")+6,"#!/usr/bin/env python")
-        call append(line(".")+7,"#_*_coding=utf-8_*_")
-        call append(line(".")+8,"")
+        call setline(1,"/*#########################################################################")
+        call append(line("."), "* Copyright(c) Leo Zhang,XXX")
+        call append(line(".")+1, "*          All Rights Reserved.")
+        call append(line(".")+2, "* File Name: ".expand("%"))
+        call append(line(".")+3, "* Description: $$$$")
+        call append(line(".")+4, "* Author:Leo Zhang")
+        call append(line(".")+5, "* E-mail:zhangzhuang24@163.com")
+        call append(line(".")+6, "* Created Time: ".strftime("%d"))
+        call append(line(".")+7, "*###########################################################*/")
+        call append(line(".")+8, " ")
+        call append(line(".")+9,"#include<stdio.h>")
+        call append(line(".")+10,"")
+        call append(line(".")+11,"int main(){")
+        call append(line(".")+12," ")
+        call append(line(".")+13,"    return 0;")
+        call append(line(".")+14,"}")
+   endif
+   if &filetype == 'py'
+        call setline(0,"\#*************************************************************************")                                                                                                    
+        call append(line("."), "\# Copyright(c) Leo Zhang,XXX")                                                                                                           
+        call append(line(".")+1, "\#         All Rights Reserved.")                                                                                                               
+        call append(line(".")+2, "\# File Name: ".expand("%"))                                                                                                            
+        call append(line(".")+3, "\# Description: $$$$")                                                                                                                  
+        call append(line(".")+4, "\# Author:Leo Zhang")                                                                                                                   
+        call append(line(".")+5, "\# E-mail:zhangzhuang24@163.com")                                                                                                       
+        call append(line(".")+6, "\# Created Time: ".strftime("%d"))                                                                                                      
+        call append(line(".")+7, "\#************************************************************************")                                                            
+        call append(line(".")+8, "#_*_coding=utf-8_*_")                                                                                                                   
+        call append(line(".")+9, "")  
     endif
 "新建文件后，自动定位到文件末尾
     autocmd * normal G
