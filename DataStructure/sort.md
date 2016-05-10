@@ -81,6 +81,35 @@ void quicksort(int *a,int low,int high)
         quicksort(a,low,pivot-1);
         quicksort(a,pivot+1,high);
 }   //循环快排
+　
+void quick_sort1(vector<int> &nums,int low,int high)
+{
+    stack<int> q;
+    if(low>high)
+        return;
+    else
+    {
+        q.push(low);
+        q.push(high);
+        while(!q.empty())
+        {
+            high = q.top();q.pop();
+            low = q.top();q.pop();
+            int mid = partion(nums,low,high);
+            if(low<=mid-1)
+            {
+                q.push(low);
+                q.push(mid-1);
+            }
+            if(high>=mid+1)
+            {
+                q.push(mid+1);
+                q.push(high);
+            }
+        }
+    }
+}
+　
 void Qsort(int *a)
 {
         int k= 0;
