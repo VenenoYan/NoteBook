@@ -1,7 +1,7 @@
 # Summary
 
 * [Sublime配置](sublime.md)
-* [git使用](git.md)
+* [Git使用](git.md)
 * [简介](README.md)
 * [GitBook使用](gitbook/README.md)
 * [Web基础](web/README.md)
