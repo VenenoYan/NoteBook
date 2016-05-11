@@ -95,8 +95,8 @@ struct CLS
 
 | 基类访问特性 | 基类用户 | 继承方式 | 子类访问特性 | 子类用户 |
 | -- | -- | -- | -- | -- | -- |
-| public | 可见 |  | public | 4:2 | 
-| protected | 不可见 | public | protected | 4:3 |
+| public | 可见 |  | public | 可见 | 
+| protected | 不可见 | public | protected | 不可见|
 | private | 不可见 |  | 无继承 | 不可见 |
 | |
 | public | 可见 |  | protected | 不可见 | 
