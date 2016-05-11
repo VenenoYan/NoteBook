@@ -98,9 +98,11 @@ struct CLS
 | public | 可见 |  | public | 4:2 | 
 | protected | 不可见 | public | protected | 4:3 |
 | private | 不可见 |  | 无继承 | 不可见 |
+| |
 | public | 可见 |  | protected | 不可见 | 
 | protected | 不可见 | protected | protected | 不可见 |
 | private | 不可见 |  | 无继承 | 不可见| 
+| |
 | public | 可见 |  | private | 不可见 |
 | protected | 不可见 | private | private | 不可见 | 
 | private | 不可见 |  | 无继承 | 不可见 |
