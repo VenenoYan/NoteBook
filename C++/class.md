@@ -95,13 +95,13 @@ struct CLS
 
 | 基类访问特性 | 基类用户 | 继承方式 | 子类访问特性 | 子类用户 |
 | -- | -- | -- | -- | -- | -- |
-| public | 可见 |  | 3:2 | 4:2 | 
+| public | 可见 |  | public | 4:2 | 
 | protected | 不可见 | public | 3:3 | 4:3 |
 | private | 不可见 |  | 3:4 | 4:4 |
-| public | 可见 | 2:5 |  | 4:5 | 
+| public | 可见 |  |  | 4:5 | 
 | protected | 不可见 | protected | 3:6 | 4:6 |
 | private | 不可见 |  | 3:7 | 4:7 | 
-| public | 可见 | 2:8 |  | 4:8 |
+| public | 可见 |  |  | 4:8 |
 | protected | 不可见 | private | 3:9 | 4:9 | 
 | private | 不可见 |  | 3:10 | 4:10 |
 
