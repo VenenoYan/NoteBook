@@ -106,7 +106,11 @@ struct CLS
 | public | 可见 |  | private | 不可见 |
 | protected | 不可见 | private | private | 不可见 | 
 | private | 不可见 |  | 无继承 | 不可见 |
-
+注：
+* 
+基类用户是指使用，而非CPP文件。
+* 
+基类的访问特性决定那些可以被继承，继承说明符决定那些能够被继承的成员继承来后的访问特性。
 
 
 1. 
