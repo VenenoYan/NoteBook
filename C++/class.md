@@ -101,9 +101,9 @@ struct CLS
 | public | 可见 |  | protected | 不可见 | 
 | protected | 不可见 | protected | protected | 不可见 |
 | private | 不可见 |  | 无继承 | 不可见| 
-| public | 可见 |  | private | 4:8 |
-| protected | 不可见 | private | private | 4:9 | 
-| private | 不可见 |  | 无继承 | 4:10 |
+| public | 可见 |  | private | 不可见 |
+| protected | 不可见 | private | private | 不可见 | 
+| private | 不可见 |  | 无继承 | 不可见 |
 
 
 
