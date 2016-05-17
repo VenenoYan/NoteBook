@@ -17,7 +17,7 @@ For this problem, a height-balanced binary tree is defined as a binary tree in w
         int r = height(root->right);
         return abs(l-r)<=1&&isBalanced(root->left)&&isBalanced(root->right);    //三个条件
     }
-    //更好的方法
+    //更好的方法：从底向上遍历，减少height的调用
     int dfsHeight (TreeNode *root) {
         if (root == NULL) return 0;
 
