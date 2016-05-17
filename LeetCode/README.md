@@ -65,6 +65,6 @@
 * 
 [#  66模拟大数相加进位](jinbit.md)
 * 
-[# 110 Balanced Binary Tree](balance.md)
+[# 110 平衡二叉树](balance.md)
 
 [返回目录](../README.md)
