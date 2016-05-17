@@ -66,6 +66,21 @@ TreeNode *create(int n)
 
 ### 平衡二叉树(AVL)：
 保证每一个节点左右子树高度相差不超过1
+```C
+    int height(TreeNode *root)
+    {
+        if(!root)
+            return 0;
+        return height(root->left)>height(root->right)?height(root->left)+1:height(root->right)+1;
+    }
+    bool isBalanced(TreeNode* root) {
+        if(!root)
+            return true;
+        int l = height(root->left);
+        int r = height(root->right);
+        return abs(l-r)<=1&&isBalanced(root->left)&&isBalanced(root->right);
+    }
+```
 * 
 A的左子树B的左子树上添加一个(LL)：把B向左上方提成为根节点，A为其右子树，B的右子树成为A的左子树
 * 
