@@ -15,11 +15,11 @@ For this problem, a height-balanced binary tree is defined as a binary tree in w
             return true;
         int l = height(root->left);
         int r = height(root->right);
-        return abs(l-r)<=1&&isBalanced(root->left)&&isBalanced(root->right);
+        return abs(l-r)<=1&&isBalanced(root->left)&&isBalanced(root->right);    //三个
     }
 ```
 ###Lesson
 * 
 高度差不能超过1:必须知道左右子树的高度
 * 
-不超过1,同时左右子树的
+不超过1,同时左右子树的状态
