@@ -87,43 +87,43 @@ Given a binary tree, find its minimum depth.
 The minimum depth is the number of nodes along the shortest path from the root node down to the nearest leaf node.
 ###Solution
 ```C
-    int minDepth(TreeNode* root) {
-        if(!root)
-            return 0;
-            
-        int depth = 1;
-        queue<TreeNode*> q;
-        TreeNode *temp;
-        int num=0,count = 1;
-        bool find = false;
+int minDepth(TreeNode* root) {
+    if(!root)
+        return 0;
         
-        q.push(root);
-        while(!find)
+    int depth = 1;
+    queue<TreeNode*> q;
+    TreeNode *temp;
+    int num=0,count = 1;
+    bool find = false;
+    
+    q.push(root);
+    while(!find)
+    {
+        num = count;
+        count=0;
+        for(int k = 0;k<num;++k)
         {
-            num = count;
-            count=0;
-            for(int k = 0;k<num;++k)
+            temp = q.front();
+            q.pop();
+            if((!temp->left)&&(!temp->right))
+                find = true;
+            if(temp->left)
             {
-                temp = q.front();
-                q.pop();
-                if((!temp->left)&&(!temp->right))
-                    find = true;
-                if(temp->left)
-                {
-                    q.push(temp->left);
-                    ++count;
-                }
-                if(temp->right)
-                {
-                    q.push(temp->right);
-                    ++count;
-                }
+                q.push(temp->left);
+                ++count;
             }
-            if(!find)
-                ++depth;
+            if(temp->right)
+            {
+                q.push(temp->right);
+                ++count;
+            }
         }
-        return depth;
+        if(!find)
+            ++depth;
     }
+    return depth;
+}
 ```
 
 [返回目录](README.md)
