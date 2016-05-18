@@ -67,6 +67,6 @@
 * 
 [# 110 平衡二叉树](balance.md)
 * 
-[# 102&107&111 底向上遍历二叉树](bottom_up.md)
+[# 102&107&111 遍历leetcode二叉树](bottom_up.md)
 
 [返回目录](../README.md)
