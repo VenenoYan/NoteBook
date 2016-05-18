@@ -74,3 +74,9 @@ vector<vector<int>> levelOrderBottom(TreeNode* root) {
     return ret;
 }
 ```
+###Lesson
+* 
+queue
+* 数组长度：sizeof
+* 
+记录每行的长度
