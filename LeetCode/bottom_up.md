@@ -44,8 +44,8 @@ vector<vector<int>> levelOrderBottom(TreeNode* root) {
         return ret;
         
     queue<TreeNode*> s;
-    int num = 0;
-    int count = 1;
+    int num = 0;    //每次进入下一行前置为
+    int count = 1;  //动态记录每行的个数
     s.push(root);
     while(!s.empty())
     {
