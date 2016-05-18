@@ -76,7 +76,7 @@ vector<vector<int>> levelOrderBottom(TreeNode* root) {
 ```
 ###Lesson
 * 
-queue
+书树的遍历：queue
 * 数组长度：sizeof
 * 
 记录每行的个数
