@@ -1,3 +1,4 @@
+###C++中，名字都有作用域，对象都有生命
 1. 
 [C_relatives](C_relatives/README.md)
 1. 
