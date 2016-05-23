@@ -8,7 +8,8 @@
 父指针指向孩子对象，调用普通函数与虚函数的区别？<br>
 答：普通函数调用父亲自己的，虚函数才会调用孩子的。
 * 
-模板Template用到class、typename这两个关键字，
+模板Template用到class、typename这两个关键字，那么他们相同吗？<br>
+答：
 
 
 [返回目录](README.md)
