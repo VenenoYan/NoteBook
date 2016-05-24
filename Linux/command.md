@@ -53,7 +53,7 @@ l 多进程的（使用 CLONE_THREAD, 类似 NPTL pthreads）；
 ## top:实时显示系统中各个进程的资源占用状况
 
 
-##[kill](http://www.cnblogs.com/peida/archive/2012/12/20/2825837.html):用来[终止](http://www.cnblogs.com/wangkangluo1/archive/2012/05/26/2518857.html)指定的进程（terminate）的运行
+##[kill](http://www.cnblogs.com/peida/archive/2012/12/20/2825837.html):[终止](http://www.cnblogs.com/wangkangluo1/archive/2012/05/26/2518857.html)指定的进程
 #### 杀死进程最安全的方法是单纯使用kill命令，不加修饰符，不带标志。 
 
 ```
