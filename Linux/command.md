@@ -163,8 +163,8 @@ find . -type f -name "*.log"    ：查找当目录，以.log结尾的普通文�
     * 
 find . -name '*.html' -exec grep 'mailto:'{}：查找字符串
 
-查看服务对应端口：netstat -nlp
-同步数据到硬盘：sync
-显示开机信息：dmesg
+###查看服务对应端口：netstat -nlp
+###同步数据到硬盘：sync
+###显示开机信息：dmesg
 
 [返回目录](README.md)
