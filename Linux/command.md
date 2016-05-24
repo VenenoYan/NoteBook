@@ -71,6 +71,7 @@ kill -l：列出所有的信号名称
 kill -l [信号名称]：返回信号对应的数值
 
 kill -2 123
+[root@localhost ~]# kill -9 $(ps -ef | grep peidalinux) ：过滤出hnlinux用户进程并杀死
 ```
 ## grep：查找并打印
 ```linux
