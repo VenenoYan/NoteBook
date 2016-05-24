@@ -192,7 +192,7 @@ dmesg [-cns]
 
 参　　数：
 　-c 　显示信息后，清除ring buffer中的内容。 
-　-s<缓冲区大小> 　预设置为8196，刚好等于ring buffer的大小。 
+　-s    <缓冲区大小>预设置为8196，刚好等于ring buffer的大小。 
 　-n 　设置记录信息的层级。
 　
 demsg | more/less/head/tail/grep str/
