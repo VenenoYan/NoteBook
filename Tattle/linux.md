@@ -4,7 +4,7 @@
 实时显示系统中各个进程的资源占用状况：top
 查看服务对应端口：netstat -nlp
 同步数据到硬盘：sync
-显示开机信息。：dmesg
+显示开机信息：dmesg
 查找grep：(global search regular expression(RE) and print out the line
     grep [-acinorvw] [--color=auto] '搜寻字符串' filename/*
         选项与参数：
