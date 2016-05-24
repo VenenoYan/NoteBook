@@ -74,6 +74,8 @@ TERM   15    终止
 KILL    9    强制终止
 CONT   18    继续（与STOP相反， fg/bg命令）
 STOP    19    暂停（同 Ctrl + Z）
+
+kill -2 123
 ```
 ## grep：查找并打印
 ```linux
