@@ -185,7 +185,7 @@ find . -name '*.html' -exec grep 'mailto:'{}：查找字符串
 ###同步数据到硬盘：sync
 ###显示开机信息：dmesg
 ```C
-dmesg [-cn][-s <缓冲区大小>]
+dmesg [-cns]
 
 补充说明：kernel会将开机信息存储在ring buffer中。您若是开机时来不及查看信息，可利用dmesg来查看。
 开机信息亦保存在/var/log目录中，名称为dmesg的文件里。
