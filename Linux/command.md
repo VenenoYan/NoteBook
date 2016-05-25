@@ -18,10 +18,10 @@ file /sbin/init
 ##linux用户
 
 ```C
-创建用户、设置密码、修改用户、删除用户：
+    创建用户、设置密码、修改用户、删除用户：
 useradd testuser 创建用户testuser
 passwd testuser 给已创建的用户testuser设置密码
-说明：新创建的用户会在/home下创建一个用户目录testuser
+    说明：新创建的用户会在/home下创建一个用户目录testuser
 usermod --help 修改用户这个命令的相关参数
 userdel testuser 删除用户testuser
 rm -rf testuser 删除用户testuser所在目录
