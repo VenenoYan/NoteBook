@@ -165,7 +165,7 @@ find . -name '*.html' -exec grep 'mailto:'{}：查找字符串
     * 
 find . -size +1000000c -print 查找当前目录下大于1000000字节的文件 
     * 
-find . -size+7M -print  查找大于7M 的
+find . -size+7M -print  查找大于7M 的文件
 
 ###netstat：查看网络服务
 ```C
