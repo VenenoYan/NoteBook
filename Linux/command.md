@@ -1,4 +1,4 @@
-# man "command":用法
+# man "command"
 
 查看cpu信息
 cat /proc/cpiinfo
@@ -15,7 +15,6 @@ cat /etc/issue
 方法2：
 file /sbin/init
 
-#查看帮助： man+command
 
 ##linux用户
 
