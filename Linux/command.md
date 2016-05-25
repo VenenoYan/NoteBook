@@ -29,6 +29,27 @@ rm -rf testuser 删除用户testuser所在目录
     用户组的添加和删除：
 groupadd testgroup 组的添加
 groupdel testgroup 组的删除
+
+更改用户密码：
+-k, --keep-tokens       keep non-expired authentication tokens
+注：保留即将过期的用户在期满后能仍能使用；
+-d, --delete            delete the password for the named account (root only)
+注：删除用户密码，仅能以root权限操作；
+-l, --lock              lock the named account (root only)
+注：锁住用户无权更改其密码，仅能通过root权限操作；
+-u, --unlock            unlock the named account (root only)
+注：解除锁定；
+-f, --force             force operation
+注：强制操作；仅root权限才能操作；
+-x, --maximum=DAYS      maximum password lifetime (root only) 注：两次密码修正的最大天数，后面接数字；仅能root权限操作；
+-n, --minimum=DAYS      minimum password lifetime (root only) 注：两次密码修改的最小天数，后面接数字，仅能root权限操作；
+-w, --warning=DAYS      number of days warning users receives before 注：在距多少天提醒用户修改密码；仅能root权限操作；
+password expiration (root only)
+-i, --inactive=DAYS     number of days after password expiration when an 注：在密码过期后多少天，用户被禁掉，仅能以root操作；
+account becomes disabled (root only)
+-S, --status            report password status on the named account (root   注：查询用户的密码状态，仅能root用户操作；
+only)
+--stdin                 read new tokens from stdin (root only)
 ```
 
 ## ps: 终端下所有程序及进程
