@@ -59,3 +59,5 @@ vector<int> intersection(vector<int>& nums1, vector<int>& nums2) {
 使用k记录上次匹配的地址，下次从k开始匹配（有序）
 * 
 如果主动的大于被动比较的，则说明结束了。因为所有的值都比被动的大；
+* 
+如果主动的小于被动的，说明可以k = j-1;从被动的上一个开始；
