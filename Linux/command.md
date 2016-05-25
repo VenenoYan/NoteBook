@@ -182,6 +182,7 @@ find . -size +1000000c -print 查找当前目录下大于1000000字节的文件
 提示：LISTEN和LISTENING的状态只有用-a或者-l才能看到
 
 找出运行在指定端口的进程： netstat -an | grep ':80'
+lsof -i:#port       谁在使用#port
 
 ```
 ###同步数据到硬盘：sync
