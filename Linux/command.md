@@ -30,7 +30,7 @@ rm -rf testuser 删除用户testuser所在目录
 groupadd testgroup 组的添加
 groupdel testgroup 组的删除
 
-更改用户密码：
+更改用户密码：passwd
 -k, --keep-tokens       keep non-expired authentication tokens
 注：保留即将过期的用户在期满后能仍能使用；
 -d, --delete            delete the password for the named account (root only)
