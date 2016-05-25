@@ -221,7 +221,7 @@ dmesg [-cns]
 　
 demsg | more/less/head/tail/grep str/-num...
 ```
-###more、less、cat、head、
+###more、less、cat、head、tail
 ```C
 cat：连接并显示文件
           -A, --show-all           等价于 -vET
@@ -279,7 +279,7 @@ less：对文件或其它输出进行分页显示
     v 调用vi编辑器；
     q 退出less
     !command 调用SHELL，可以运行命令；比如!ls 显示当前列当前目录下的所有文件；
- 
+ head：
 ```
 
 
