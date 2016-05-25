@@ -20,11 +20,14 @@ file /sbin/init
 ```C
     创建用户、设置密码、修改用户、删除用户：
 useradd testuser 创建用户testuser
-passwd testuser 给已创建的用户testuser设置密码,输入
+passwd testuser 给已创建的用户testuser设置密码,输入即可
     说明：新创建的用户会在/home下创建一个用户目录testuser
 usermod --help 修改用户这个命令的相关参数
 userdel testuser 删除用户testuser
 rm -rf testuser 删除用户testuser所在目录
+    用户组的添加和删除：
+groupadd testgroup 组的添加
+groupdel testgroup 组的删除
 ```
 
 ## ps: 终端下所有程序及进程
