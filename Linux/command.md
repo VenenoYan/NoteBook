@@ -221,7 +221,7 @@ dmesg [-cns]
 　
 demsg | more/less/head/tail/grep str/-num...
 ```
-###more、less、cat
+###more、less、cat、head、
 ```C
 cat：连接并显示文件
           -A, --show-all           等价于 -vET
