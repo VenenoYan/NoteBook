@@ -236,7 +236,7 @@ cat：连接并显示文件
           -v, --show-nonprinting   使用 ^ 和 M- 引用，除了 LFD 和 TAB 之外
           --help     显示此帮助信息并离开
           >/>> [filename]           新建文件或向文件添加内容
-    more：根据窗口的大小进行分页显示，然后还能提示文件的百分比；
+more：根据窗口的大小进行分页显示，然后还能提示文件的百分比；
         +num   从第num行开始显示；
         -num   定义屏幕大小，为num行；
         +/pattern   从pattern 前两行开始显示；
