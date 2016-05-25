@@ -24,6 +24,7 @@ usermod --help 修改用户这个命令的相关参数
 userdel testuser 删除用户testuser
 rm -rf testuser 删除用户testuser所在目录
 ```
+
 ## ps: 终端下所有程序及进程
 ```C
 ps a 显示现行终端机下的所有程序，包括其他用户的程序。
