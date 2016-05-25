@@ -11,6 +11,7 @@
 模板Template用到class、typename这两个关键字，那么他们相同吗？<br>
 答：在C++刚开始引入模板时，class表示类，所以直接被用来表示引用的类型```template<class T>```；但是为避免class在两个地方使用造成误解，所以引入typename关键字来表示后面的符号为类型。所以class、template的作用是相同的。```template<class T>```与```template<typename T>```等价。
 * 
+auto
 
 
 
