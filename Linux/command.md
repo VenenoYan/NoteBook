@@ -15,6 +15,7 @@ cat /etc/issue
 方法2：
 file /sbin/init
 ##linux用户
+
 ```C
 创建用户、设置密码、修改用户、删除用户：
 useradd testuser 创建用户testuser
