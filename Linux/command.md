@@ -189,7 +189,7 @@ lsof -i:#port       谁在使用#port
 ```C
 常用参数
 lsof语法格式是：
-lsof ［options］ filename
+lsof ［options］ [filename]
 
 复制代码
 lsof abc.txt 显示开启文件abc.txt的进程
