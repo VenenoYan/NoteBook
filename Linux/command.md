@@ -187,11 +187,9 @@ lsof -i:#port       谁在使用#port
 ```
 ###lsof：显示系统打开的文件（linux一切都是文件）
 ```C
-常用参数
 lsof语法格式是：
 lsof ［options］ [filename]
 
-复制代码
 lsof abc.txt 显示开启文件abc.txt的进程
 lsof -c abc 显示abc进程现在打开的文件
 lsof -c -p 1234 列出进程号为1234的进程所打开的文件
