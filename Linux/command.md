@@ -235,6 +235,7 @@ cat：连接并显示文件
       -u                       (被忽略)
       -v, --show-nonprinting   使用 ^ 和 M- 引用，除了 LFD 和 TAB 之外
       --help     显示此帮助信息并离开
+      >+[filename]              新建
 more
 less```
 
