@@ -222,7 +222,10 @@ dmesg [-cns]
 demsg | more/less/head/tail/grep str/-num...
 ```
 ###more、less、cat
-
+```C
+cat
+more
+less```
 
 
 [返回目录](README.md)
