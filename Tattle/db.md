@@ -4,5 +4,7 @@
 truncate与delete的区别
 * 
 数据库锁有那些？
+* 
+数据库范式
 
 [返回目录](README.md)
