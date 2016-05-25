@@ -224,19 +224,28 @@ demsg | more/less/head/tail/grep str/-num...
 ###more、less、cat
 ```C
 cat：连接并显示文件
-      -A, --show-all           等价于 -vET
-      -b, --number-nonblank    对非空输出行编号
-      -e                       等价于 -vE
-      -E, --show-ends          在每行结束处显示 $
-      -n, --number             对输出的所有行编号
-      -s, --squeeze-blank      不输出多行空行
-      -t                       与 -vT 等价
-      -T, --show-tabs          将跳格字符显示为 ^I
-      -u                       (被忽略)
-      -v, --show-nonprinting   使用 ^ 和 M- 引用，除了 LFD 和 TAB 之外
-      --help     显示此帮助信息并离开
-      >/>> [filename]           新建文件或向文件添加内容
-more：根据窗口的大小进行分页显示，然后还能提示文件的百分比；
+          -A, --show-all           等价于 -vET
+          -b, --number-nonblank    对非空输出行编号
+          -e                       等价于 -vE
+          -E, --show-ends          在每行结束处显示 $
+          -n, --number             对输出的所有行编号
+          -s, --squeeze-blank      不输出多行空行
+          -t                       与 -vT 等价
+          -T, --show-tabs          将跳格字符显示为 ^I
+          -u                       (被忽略)
+          -v, --show-nonprinting   使用 ^ 和 M- 引用，除了 LFD 和 TAB 之外
+          --help     显示此帮助信息并离开
+          >/>> [filename]           新建文件或向文件添加内容
+    more：根据窗口的大小进行分页显示，然后还能提示文件的百分比；
+        +num   从第num行开始显示；
+        -num   定义屏幕大小，为num行；
+        +/pattern   从pattern 前两行开始显示；
+        -c   从顶部清屏然后显示；
+        -d   提示Press space to continue, 'q' to quit.（按空格键继续，按q键退出），禁用响铃功能； 
+        -l    忽略Ctrl+l （换页）字符；
+        -p    通过清除窗口而不是滚屏来对文件进行换页。和-c参数有点相似；  
+        -s    把连续的多个空行显示为一行；
+        -u    把文件内容中的下划线去掉退出more的动作指令是q
 less```
 
 
