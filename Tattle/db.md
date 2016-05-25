@@ -3,6 +3,6 @@
 1. 
 truncate与delete的区别
 * 
-数据库锁
+数据库锁有那些
 
 [返回目录](README.md)
