@@ -185,6 +185,8 @@ find . -size +1000000c -print 查找当前目录下大于1000000字节的文件
 lsof -i:#port       谁在使用#port
 
 ```
+###lsof：显示系统打开的文件（linux一切都是文件）
+
 ###同步数据到硬盘：sync
 ###显示开机信息：dmesg
 ```C
