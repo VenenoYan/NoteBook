@@ -14,6 +14,7 @@ cat /etc/issue
 * 
 方法2：
 file /sbin/init
+##linux用户
 
 ## ps: 终端下所有程序及进程
 ```C
