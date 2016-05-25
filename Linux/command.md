@@ -1,4 +1,4 @@
-# man command
+# 查看帮助：man command
 
 查看cpu信息
 cat /proc/cpiinfo
