@@ -15,7 +15,7 @@ cat /etc/issue
 方法2：
 file /sbin/init
 
-#查看帮助：
+#查看帮助： man+command
 
 ##linux用户
 
