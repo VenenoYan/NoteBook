@@ -3,7 +3,7 @@
 1. 
 [面试-大纲](interview.md)
 1. 
-面试题目积累
+题目积累
     * 
 [linux](linux.md)
     * 
