@@ -69,6 +69,6 @@
 * 
 [# 102&107&111 遍历leetcode二叉树](bottom_up.md)
 * 
-[# 349&350](数组交叉)
+[# 349&350 数组交叉](intersection.md)
 
 [返回目录](../README.md)
