@@ -223,7 +223,18 @@ demsg | more/less/head/tail/grep str/-num...
 ```
 ###more、less、cat
 ```C
-cat
+cat：连接并显示文件
+      -A, --show-all           等价于 -vET
+      -b, --number-nonblank    对非空输出行编号
+      -e                       等价于 -vE
+      -E, --show-ends          在每行结束处显示 $
+      -n, --number             对输出的所有行编号
+      -s, --squeeze-blank      不输出多行空行
+      -t                       与 -vT 等价
+      -T, --show-tabs          将跳格字符显示为 ^I
+      -u                       (被忽略)
+      -v, --show-nonprinting   使用 ^ 和 M- 引用，除了 LFD 和 TAB 之外
+      --help     显示此帮助信息并离开
 more
 less```
 
