@@ -81,6 +81,43 @@ What if the given array is already sorted? How would you optimize your algorithm
 * 
 What if nums1's size is small compared to num2's size? Which algorithm is better?
 * 
-What if elements of nums2 are stored on disk, and the memory is limited such that you cannot load all elements into the memory at once?+
+What if elements of nums2 are stored on disk, and the memory is limited such that you cannot load all elements into the memory at once?
+
+###Solution
+```C
+    vector<int> intersect(vector<int>& nums1, vector<int>& nums2) {
+        vector<int> ret;
+        ret.clear();
+        if(!nums1.size()||!nums2.size())
+            return ret;
+        sort(nums1.begin(),nums1.end());
+        sort(nums2.begin(),nums2.end());
+        int i,j,k;
+        int len1,len2;
+        i = j = k = 0;
+        len1 = nums1.size();
+        len2 = nums2.size();
+        for(;i<len1&&k<len2;++i)
+        {
+            for(j = k;j<len2;++j)
+            {
+                while(nums2[j]<nums1[i]&&j<len2)
+        	        ++j;
+                if(j<len2&&nums2[j]==nums1[i])
+        	    {
+        	        ret.push_back(nums1[i]);
+        	        k = ++j;
+                    break;
+        	    }else if(j==len2)
+                {
+                    return ret;
+                }
+                else
+                    break;         
+            }
+        }
+        return ret;
+    }
+```
 
 [返回目录](README.md)
