@@ -1,6 +1,8 @@
 ## [经验](http://blog.csdn.net/chenhuajie123/article/details/7405080)
 ## 混淆点
 
+**0.字面值常量：**
+
 **1. 
 暂停：**
 ```C
