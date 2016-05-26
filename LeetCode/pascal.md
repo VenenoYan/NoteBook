@@ -41,6 +41,7 @@ Return
     
     vector<vector<int> > generate(int numRows) {
         vector<vector<int>> r(numRows);
+        r.clear();
 
         for (int i = 0; i < numRows; i++) {
             r[i].resize(i + 1);
