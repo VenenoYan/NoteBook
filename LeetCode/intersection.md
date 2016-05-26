@@ -121,7 +121,7 @@ What if elements of nums2 are stored on disk, and the memory is limited such tha
 ```
 ###Lesson
 * 
-匹配到了，i和j都要向前走一步。========》这是要求，每个仅匹配一次
+匹配到了，i和j都要向前走一步。========》这是要求，每个元素仅匹配一次
 * 
 
 
