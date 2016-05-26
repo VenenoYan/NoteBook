@@ -119,5 +119,8 @@ What if elements of nums2 are stored on disk, and the memory is limited such tha
         return ret;
     }
 ```
+###Lesson
+* 
+匹配到了，i和j都要向前走一步。
 
 [返回目录](README.md)
