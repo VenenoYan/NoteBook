@@ -58,6 +58,7 @@ Return
 ###Lesson
 * 
 操作前后先压入1.操作实现功能：从0到i-1，每个和后一个相加，然后压入。
+
 ##119. Pascal's Triangle II
 
 Given an index k, return the kth row of the Pascal's triangle.
