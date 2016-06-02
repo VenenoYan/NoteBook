@@ -81,7 +81,7 @@ vector<int> getRow(int rowIndex) {
         temp.push_back(1);
         for(int j = 0;j<i;++j)
         {
-            int kk = j+1<i?ret[j+1]:0;
+            int kk = j+1<i?ret[j+1]:0;      //此处好好分析
             temp.push_back(ret[j]+kk);
         }
         ret = temp;
@@ -90,3 +90,6 @@ vector<int> getRow(int rowIndex) {
     return ret;
 }
 ```
+###Lesson
+* 
+除了开始和最后一个，其余的都是肩上的两个数相加
