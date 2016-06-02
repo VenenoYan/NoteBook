@@ -68,5 +68,25 @@ Return [1,3,3,1].
 
 ###Solution
 ```C
-
+vector<int> getRow(int rowIndex) {
+    vector<int> ret;
+    vector<int> temp;
+    ret.clear();
+    temp.clear();
+    ret.push_back(1);
+    if(rowIndex==0)
+        return ret;
+    for(int i = 1;i<=rowIndex;++i)
+    {
+        temp.push_back(1);
+        for(int j = 0;j<i;++j)
+        {
+            int kk = j+1<i?ret[j+1]:0;
+            temp.push_back(ret[j]+kk);
+        }
+        ret = temp;
+        temp.clear();
+    }
+    return ret;
+}
 ```
