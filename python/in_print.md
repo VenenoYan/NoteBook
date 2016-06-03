@@ -57,7 +57,7 @@ python3之前：input([prompt])和raw_input([prompt])差不多。不过input内�
 python3之后，用input(),无raw_input()
 无论如何，输入来的永远是字符串！
 ```
-##显示错误在行数
+##显示错误在行数:traceback
 ```python
 try
     print("test error...")
