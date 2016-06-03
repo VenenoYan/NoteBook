@@ -62,7 +62,7 @@ python3之后，用input(),无raw_input()
 try
     print("test error...")
 except  Exception,e:
-    print(traceback.print_exc()
+    traceback.print_exc()
 ```
 
 [返回目录](README.md)
