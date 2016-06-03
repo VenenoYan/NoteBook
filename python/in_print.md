@@ -58,6 +58,11 @@ python3之后，用input(),无raw_input()
 无论如何，输入来的永远是字符串！
 ```
 ##显示错误在行数
-
+```python
+try
+    print("test error...")
+except  Exception,e:
+    print(traceback.print_exc()
+```
 
 [返回目录](README.md)
