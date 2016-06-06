@@ -23,7 +23,7 @@ SQL语句分为三种：DML（Data Manipulation Language）与DDL(Data Definitio
 不区分大小写
 
 ####操作符
-```C
+```C++
 算术操作符：
     +  -  /  *  %  |  ^  &  <<  >>
 比较操作符：
@@ -32,7 +32,7 @@ SQL语句分为三种：DML（Data Manipulation Language）与DDL(Data Definitio
     not、！     or、||      XOR         and、&&
     ```
 ###数据类型：
-```C
+```C++
     1)算术：
         tinyint、smallint、mediumint、int、bigint、float(M,D)、double(M,D)、decimal(M,D)
             MySQL数据类型	    含义（有符号）
