@@ -13,6 +13,15 @@ SQL语句分为三种：DML（Data Manipulation Language）与DDL(Data Definitio
         GRANT，REVOKE，COMMIT，ROLLBACK
 ```
 ####语法特点：
+* 
+没有“”，只有‘’
+* 
+没有逻辑相等，只有=，赋值和逻辑相等都是=
+* 
+任何数据都可以包含在‘’以内
+* 
+不区分大小写
+
 ```C
     
 算术操作符：
