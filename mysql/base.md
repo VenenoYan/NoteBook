@@ -12,6 +12,7 @@ SQL语句分为三种：DML（Data Manipulation Language）与DDL(Data Definitio
     3、DCL
         GRANT，REVOKE，COMMIT，ROLLBACK
 特点：
+    
 算术操作符：
     +  -  /  *  %  |  ^  &  <<  >>
 比较操作符：
