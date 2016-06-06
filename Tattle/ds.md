@@ -26,10 +26,10 @@ LCA：lowest common ancestor
 
 一个数组(A[0],...,A[n])，[子数组之和](http://www.cnblogs.com/bourbon/archive/2011/08/23/2151044.html)的最大值是什么呢？
 
-非递归实现二叉树遍历、快排、
+非递归实现二叉树遍历
 
 找出一堆数中出现次数大于一半、三分之一的数
 
-数组实现
+数组实现队列
 
 [返回目录](README.md)
