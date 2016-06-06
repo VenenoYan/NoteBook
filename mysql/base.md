@@ -168,7 +168,8 @@ SQL语句分为三种：DML（Data Manipulation Language）与DDL(Data Definitio
         SELECT t1.id,t2.id,t3.id FROM (t1,t2) LEFT JOIN t3 ON (t3.id=t1.id) WHERE t1.id=t2.id;
 ```
 ###关键字
-
+```C
+```
 ### 常用函数：
 
 ```C++
