@@ -127,7 +127,7 @@ SQL语句分为三种：DML（Data Manipulation Language）与DDL(Data Definitio
         func
         math
 ```
-###实例;
+###实例:
 ```C
     创建详细功能表：
         create table students
