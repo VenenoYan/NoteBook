@@ -98,6 +98,24 @@ shared_ptr与scoped_ptr一样包装了new操作符在堆上分配的动态对象
 * 
 若[多个线程](http://www.cppblog.com/Solstice/archive/2013/01/28/197597.html)读写同一个 shared_ptr 对象，那么需要加锁：因为 **shared_ptr 有两个数据成员，读写操作不能原子化**
 
+```C
+__shared_count&
+      operator=(const __shared_count& __r) // nothrow
+      {    
+    _Sp_counted_base<_Lp>* __tmp = __r._M_pi;
+    if (__tmp != _M_pi)
+      {    
+        if (__tmp != 0)
+          __tmp->_M_add_ref_copy();
+        if (_M_pi != 0)
+          _M_pi->_M_release();
+        _M_pi = __tmp;
+      }
+      COSTA_DEBUG_REFCOUNT;
+    return *this;
+      }
+      ```
+
 ### 多用make_shared和make_unique
 
 ```C++
