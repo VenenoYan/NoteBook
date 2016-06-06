@@ -92,10 +92,9 @@ file的读写方法：
     seek(offset,where_start) 定位       #0表示从头开始，1表示以当前位置为原点。2表示以文件末尾为原点进行计算。
     
     读大文件：
-        file = open("test.lo")
+        file = open("test.log")
         with line in file:
             ...
-
 
 5、类、对象、属性
 
