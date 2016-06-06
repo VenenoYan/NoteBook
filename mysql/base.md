@@ -169,7 +169,7 @@ SQL语句分为三种：DML（Data Manipulation Language）与DDL(Data Definitio
 ```
 ###关键字
 * 
-select:从表（可能是其他关键字形成的虚表）中选择执行的列，并形成虚表。
+select:从表（可能是其他关键字形成的虚表）中选择指定的列，并形成虚表。
 
 ### 常用函数：
 
