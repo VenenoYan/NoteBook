@@ -170,7 +170,10 @@ SQL语句分为三种：DML（Data Manipulation Language）与DDL(Data Definitio
 ###关键字
 * 
 select:从表（可能是其他关键字形成的虚表）中选择指定的列，并形成虚表。
-
+* 
+from:将指定的表首先进行交叉连接（笛卡尔积），形成虚表
+* 
+on:条件作用于表1(可能是虚表），形成
 ### 常用函数：
 
 ```C++
