@@ -1,4 +1,4 @@
-##升级使用
+##[升级使用]()
 ```C++
     修改密码：
         1)终端：mysqladmin -u[user-name] -p[old-password] password [new-password]
