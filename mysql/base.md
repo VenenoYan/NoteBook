@@ -3,7 +3,7 @@
 ```C++
 MySQL 为关系型数据库(Relational Database Management System), 这种所谓的"关系型"可以理解为"表格"的概念, 
         一个关系型数据库由一个或数个表格组成
-
+Structed Query Language
 SQL语句分为三种：DML（Data Manipulation Language）与DDL(Data Definition Language)及DCL(Data Control)
     1、DML
         select、update、delete、insert into
