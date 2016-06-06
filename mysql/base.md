@@ -32,7 +32,7 @@ SQL语句分为三种：DML（Data Manipulation Language）与DDL(Data Definitio
     not、！     or、||      XOR         and、&&
     ```
 ###数据类型：
-    ```C
+```C
     1)算术：
         tinyint、smallint、mediumint、int、bigint、float(M,D)、double(M,D)、decimal(M,D)
             MySQL数据类型	    含义（有符号）
@@ -87,7 +87,10 @@ SQL语句分为三种：DML（Data Manipulation Language）与DDL(Data Definitio
             AUTO_INCREMENT      自动递增，适用于整数类型
             UNSIGNED	        无符号
             CHARACTER SET [name]	指定一个字符集
+```
+
 基本操作：
+```C    
     不区分大小写,每条命令以';'结束。
     登录：
         mysql [-h[host_addr]] -u[user-name] -p[password]   没有空格
