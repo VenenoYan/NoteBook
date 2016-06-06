@@ -1,5 +1,3 @@
-排序
-
 查找
 
 一致性hash
@@ -22,7 +20,6 @@ LCA：lowest common ancestor
 
 单/双向链表找中间节点：快慢/双向走相遇
 
-快排的改进、递归和非递归实现
 
 一个数组(A[0],...,A[n])，[子数组之和](http://www.cnblogs.com/bourbon/archive/2011/08/23/2151044.html)的最大值是什么呢？
 
