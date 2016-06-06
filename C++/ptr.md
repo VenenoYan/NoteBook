@@ -103,13 +103,13 @@ __shared_count&
       operator=(const __shared_count& __r) // nothrow
       {    
     _Sp_counted_base<_Lp>* __tmp = __r._M_pi;
-    if (__tmp != _M_pi)
+    if (__tmp != _M_pi)                 //先判断是否为自赋值
       {    
-        if (__tmp != 0)
+        if (__tmp != 0)                 //右边计数加1
           __tmp->_M_add_ref_copy();
-        if (_M_pi != 0)
+        if (_M_pi != 0)                 //左边计数减1
           _M_pi->_M_release();
-        _M_pi = __tmp;
+        _M_pi = __tmp;                  //左边等于右边               
       }
       COSTA_DEBUG_REFCOUNT;
     return *this;
