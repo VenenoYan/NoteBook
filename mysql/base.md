@@ -89,7 +89,7 @@ SQL语句分为三种：DML（Data Manipulation Language）与DDL(Data Definitio
             CHARACTER SET [name]	指定一个字符集
 ```
 
-基本操作：
+###基本操作：
 ```C    
     不区分大小写,每条命令以';'结束。
     登录：
