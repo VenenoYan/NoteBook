@@ -90,6 +90,10 @@ file的读写方法：
     tell()            当前位置(相对开头)
     next()            标记下一行
     seek(offset,where_start) 定位       #0表示从头开始，1表示以当前位置为原点。2表示以文件末尾为原点进行计算。
+    
+    读大文件：
+        with line in file:
+            ..
 
 
 5、类、对象、属性
