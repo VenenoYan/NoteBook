@@ -29,4 +29,5 @@ LCA：lowest common ancestor
 
 数组实现队列
 
+10亿个QQ 号中找一个有没有
 [返回目录](README.md)
