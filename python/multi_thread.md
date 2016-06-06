@@ -95,8 +95,9 @@ que.join()
 当三个线程发现队列都空时，各自的run函数返回，三个线程结束。同时主线程的阻塞打开，全部程序结束。
 ```
 范例2:
+
 ```python
-#consuming while producing
+consuming while producing
 import Queue,threading,time,random
 
 class consumer(threading.Thread):
