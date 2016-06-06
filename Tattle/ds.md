@@ -30,4 +30,6 @@ LCA：lowest common ancestor
 
 找出一堆数中出现次数大于一半、三分之一的数
 
+数组实现
+
 [返回目录](README.md)
