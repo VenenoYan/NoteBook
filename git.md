@@ -245,6 +245,6 @@ git daemon搭建：
 　　　　　　![](1339682915_7495.jpg)
 
 原因：<br>
-　　git merge
+　　git merge：将两个分支解决冲突，然后合并。
 
 [返回目录](README.md)
