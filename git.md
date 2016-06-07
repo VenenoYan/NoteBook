@@ -238,9 +238,9 @@ git daemon搭建：
 　　丶　自己修改mywork,别人提交了origin.
 
 　　　　　　![](1339682809_4752.jpg)
-　　　　　
-　　丶　自己修改mywork,别人提交了origin.
 
-　　　　　　
+　　丶　两种情况：
+
+　　　　　　![](1339682845_9921.jpg)
 
 [返回目录](README.md)
