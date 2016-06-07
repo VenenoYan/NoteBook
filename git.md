@@ -102,7 +102,8 @@ git checkout 把版本库中的文件覆盖工作区文件
         git branch -a - merged  已完全合并到master分支的分支
         git remote -v       远程分支url
         git branch -r       远程分支名
-        git branch -m [old] [new] 改分支名字
+        git branch -m [old] [new] 改分支名字.
+        git shortlog -n     查看当前仓库提交情况（每人提交次数按大小排序）
 保存当前工作环境：
         git stash       保存现场
             do something else
@@ -132,7 +133,7 @@ git checkout 把版本库中的文件覆盖工作区文件
 1. 
 远程库
 ```C
-首先认证：
+首先生成认证：
         ssh-keygen -t rsa -C "youremail"  
         然后把生成的 id_rsa.pub内容放到github内
 绑定：
