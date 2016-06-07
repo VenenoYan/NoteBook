@@ -253,6 +253,6 @@ git daemon搭建：
 
 **结果：**<br>
     git merge  ：　C7 C6 C5 C4 C3 C2 C1<br>
-    git rebase　：　C7 C6` C5` C4 C3 C2 C1
+    git rebase　：　C7 C6` C5\` C4 C3 C2 C1
 
 [返回目录](README.md)
