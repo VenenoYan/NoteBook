@@ -235,7 +235,7 @@ git daemon搭建：
 开始状态：  　git checkout -b mywork
 
 　　　　　　　![](1339682677_4329.jpg)
-　　　　　　　
+<hr>
     * 
 我们提交，别人也有提交
 
