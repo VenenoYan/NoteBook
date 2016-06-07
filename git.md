@@ -178,6 +178,7 @@ git checkout 把版本库中的文件覆盖工作区文件
             git push origin test:master             本地test分支，作为远程master分支
             git push origin test:test               本地test分支作为远程的test分支
             git push origin :test                   删除远程某个分支
+        git rebase [Bname]      先把当前的当成补丁dispatch保存，后以Bname为基准，然后将补丁应用到此
 ```
 1. 
 参与他人项目
