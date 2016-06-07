@@ -244,8 +244,9 @@ git daemon搭建：
 　　　　　　![](1339682845_9921.jpg)
 　　　　　　![](1339682915_7495.jpg)
 
-原因：<br>
+**原因**：<br>
 　　git merge：将两个分支解决冲突，然后合并；＝＝＝＝＝》看起来像是新的“提交“<br>
-　　git rebase：先将当前分支的所有修改保存为补丁(dispatch，放在./git/rebase目录下)，然后mywork分支更新为origin,然后将补丁应用于当前分支。然后补丁就会被丢弃
+　　git rebase：先将当前分支的所有修改保存为补丁(dispatch，放在./git/rebase目录下)，然后mywork分支更新为origin,然后将补丁应用于当前分支。然后补丁就会被丢弃。
+　　![](1339682976_4523.jpg)
 
 [返回目录](README.md)
