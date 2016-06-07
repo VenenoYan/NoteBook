@@ -90,7 +90,7 @@ git checkout 把版本库中的文件覆盖工作区文件
         git fetch [Bname]        先取来不合并。（后慢慢merge）
         git merge [Bname]        把分支合并到当前分支。并不会删除分支，如果继续提交会有新的！
             合并时会有冲突：默认Fast-forward模式,自己解决
-            解决好了之后，add   commit
+            解决好了之后，add   commit   pull即可
         git merge --no-ff -m "instruction" [Bname]    保存该分支的历史
         git branch -a - merged  已完全合并到master分支的分支
         git show [Bname]:[file]   查看其他分支文件
