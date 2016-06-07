@@ -31,7 +31,7 @@ $git config [--global/system] merge.tool vimdiff       比较工具
 1. 
 本地使用
 ```C
-        工作区--add-->暂存区--commit-->版本仓库------>push------>远程
+        工作区--add-->暂存区--commit-->版本仓库------>push------>远程仓库
 man git [order]     查看帮助
 git init        :初始化一个本地仓库
 git add file1 file2 ... :添加文件
