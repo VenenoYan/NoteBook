@@ -251,7 +251,8 @@ git daemon搭建：
 
 　　　　　![](1339682976_4523.jpg)
 
-**结果：**
-![](1339683149_4793.jpg)
+**结果：**<br>
+    git merge  ：　C7 C6 C5 C4 C3 C2 C1<br>
+    git rebase　：　C7 C6` C5` C4 C3 C2 C1
 
 [返回目录](README.md)
