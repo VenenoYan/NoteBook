@@ -92,6 +92,7 @@ git checkout 把版本库中的文件覆盖工作区文件
             合并时会有冲突：默认Fast-forward模式,自己解决
             解决好了之后，add   commit   pull即可
         git merge --no-ff -m "instruction" [Bname]    保存该分支的历史
+        git rebase [Bname]      先把当前的当成补丁dispatch保存，后以Bname为基准，然后将补丁应用到此
         git branch -a - merged  已完全合并到master分支的分支
         git show [Bname]:[file]   查看其他分支文件
         git diff [Bname]:[file]   查看其他分支文件与当前分支的不同
