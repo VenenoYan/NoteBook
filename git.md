@@ -77,7 +77,7 @@ git blame [-w] file1  查看文件被修改的所有信息  （注意 git log -p
 删除文件：
         git rm file1
         git commit -m ...
-删除回复：
+删除恢复：
         git checkout --file
 HEAD永远指向当前工作分支
 git checkout 把版本库中的文件覆盖工作区文件
