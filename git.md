@@ -32,7 +32,7 @@ $git config [--global/system] merge.tool vimdiff       比较工具
 本地使用
 ```C
         工作区--add-->暂存区--commit-->版本仓库------>push------>远程仓库
-man git [order]     查看帮助
+man git [command]     查看帮助
 git init        :初始化一个本地仓库
 git add file1 file2 ... :添加文件
 git add ./-A/-u  :  添加所有除了删除的/添加所有/添加除新建之外的
