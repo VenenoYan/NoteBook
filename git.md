@@ -175,9 +175,9 @@ git checkout 把版本库中的文件覆盖工作区文件
         git remote rename [old] [new]
 升级：
         git push [r-name] [l-bname]:[r-bname]     将本地分支l-bname作为远程r-bname分支名字
-            git push origin test:master         本地test分支，作为远程master分支
-            git push origin test:test           本地test分支作为远程的test分支
-            git push origin :test               删除远程某个分支
+            git push origin test:master             本地test分支，作为远程master分支
+            git push origin test:test               本地test分支作为远程的test分支
+            git push origin :test                   删除远程某个分支
 ```
 1. 
 参与他人项目
