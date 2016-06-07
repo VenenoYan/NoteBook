@@ -89,14 +89,15 @@ git checkout 把版本库中的文件覆盖工作区文件
         git push [remote-name] --delete [Bname] 删除远程分支
         git fetch [Bname]        先取来不合并。（后慢慢merge）
         git merge [Bname]        把分支合并到当前分支。并不会删除分支，如果继续提交会有新的！
-        合并时会有冲突：默认Fast-forward模式,自己解决
-            git merge --no-ff -m "instruction" [Bname]    保存该分支的历史
+            合并时会有冲突：默认Fast-forward模式,自己解决
+            解决好了之后，add   commit
+        git merge --no-ff -m "instruction" [Bname]    保存该分支的历史
         git branch -a - merged  已完全合并到master分支的分支
         git show [Bname]:[file]   查看其他分支文件
         git diff [Bname]:[file]   查看其他分支文件与当前分支的不同
         git diff [C_Bname]/[F_Bname]   查看下载来的分支文件与自己的不同
         git pull --rebase   远程分支合并到本地，然后将本地变更应用到该版本（多人更新时）
-                就是将远程的作为基准，然后把本地修改加入
+                就是将远程的作为基准，然后把本地修改加入进去
 分支信息：
         git branch -v       本地分支信息
         git branch -a       本地加远程所有分支
