@@ -232,6 +232,8 @@ git daemon搭建：
 1. 
 git merge 与 git rebase 的区别
     * 
-开始状态
-        
+开始状态    
+　　　　　　　
+
+
 [返回目录](README.md)
