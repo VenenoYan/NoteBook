@@ -22,7 +22,7 @@ $git config [--global/system] merge.tool vimdiff       比较工具
             ？  任意字符
         example：
             *.md        忽略所有 .md文件
-            !tt.md      忽略出tt.md的所有 .md文件
+            !tt.md      忽略除tt.md的所有 .md文件
             folder      忽略folder文件夹及子文件
             folder/     忽略该目录
             *.[o]       忽略所有 .o文件
