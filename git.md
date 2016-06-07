@@ -175,6 +175,7 @@ git checkout 把版本库中的文件覆盖工作区文件
 重命名：
         git remote rename [old] [new]
 升级：
+        本地与远程仓库绑定后，每次push 、pull都是和远程仓库的master分支交流，但是我们更多的是需要将更新放到自己的分支上，所以如何将本地的分支推送到远程具体某个分支上：
         git push [r-name] [l-bname]:[r-bname]     将本地分支l-bname作为远程r-bname分支名字
             git push origin test:master             本地test分支，push到远程master分支
             git push origin test:test               本地test分支，push到远程的test分支，没有就新建
