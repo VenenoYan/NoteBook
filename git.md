@@ -152,7 +152,7 @@ git checkout 把版本库中的文件覆盖工作区文件
         git merge [Bname]        把分支合并到当前分支。并不会删除分支，如果继续提交会有新的！
 远程到本地：
         git clone [url] 
-            自动为远程仓库新建为origin，并下载数据，建立一个指向他的master分支的指针。
+            自动为远程仓库新建别名为origin，并下载其中的所有数据，建立一个指向他的master分支的指针。
         git branch -a       本地加远程所有分支
         git branch -a - merged  已完全合并到master分支的分支
         git remote -v       远程分支url
