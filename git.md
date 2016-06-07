@@ -151,7 +151,8 @@ git checkout 把版本库中的文件覆盖工作区文件
         git diff [C_Bname]/[Fetch_Bname]   查看下载来的分支文件与自己的不同
         git merge [Bname]        把分支合并到当前分支。并不会删除分支，如果继续提交会有新的！
 远程到本地：
-        git clone [url]
+        git clone [url] 
+            自动新建远程仓库为origin，并下载数据，建立一个指向他的master分支的指针。
         git branch -a       本地加远程所有分支
         git branch -a - merged  已完全合并到master分支的分支
         git remote -v       远程分支url
