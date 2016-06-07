@@ -253,7 +253,7 @@ git daemon搭建：
 
 **结果：**<br>
     git merge  ：　C7 C6 C5 C4 C3 C2 C1<br>
-    git rebase　：　C7 C6\` C5` C4 C3 C2 C1
+    git rebase　：　C7 C6\` C5` C4 C3 C2 C1<br>
 如果git rebase有冲突，也需要自己解决，解决完后，git add添加，然后不用commit，直接：```git rebase --continue```
 
 [返回目录](README.md)
