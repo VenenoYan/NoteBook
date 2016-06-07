@@ -232,7 +232,8 @@ git daemon搭建：
 1. 
 git merge 与 git rebase 的区别
     * 
-开始状态    
+开始状态    ：　git checkout -b mywork
+
 　　　　　　　![](1339682677_4329.jpg)
     * 
 我们有提交，别人也有提交
