@@ -158,8 +158,8 @@ git checkout 把版本库中的文件覆盖工作区文件
         git branch -r       远程分支名
         git branch -m [old] [new] 改分支名字
 推送：
-        git checkout -b [lBname] [remote-name/Bname]  :建立对应远程的本地分支名，最好名字相同
-        git push [remote-name/Bname] [localB-name]  ：  指定分支推送
+        git checkout -b [lBname] [remote-name/Bname] : 建立对应远程的本地分支名，最好名字相同
+        git push [remote-name/Bname] [localB-name] ： 指定分支推送
 关联：
         1)普通：git remote add ....
         2)指定： git branch --set-upstream [local/lBname] [remote-name/Bname]
