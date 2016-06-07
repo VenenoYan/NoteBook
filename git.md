@@ -254,5 +254,6 @@ git daemon搭建：
 **结果：**<br>
     git merge  ：　C7 C6 C5 C4 C3 C2 C1<br>
     git rebase　：　C7 C6\` C5` C4 C3 C2 C1
+如果git rebase有冲突，也需要自己解决，
 
 [返回目录](README.md)
