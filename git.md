@@ -173,6 +173,8 @@ git checkout 把版本库中的文件覆盖工作区文件
         git remote set-url --push [remote-name] new-url
 重命名：
         git remote rename [old] [new]
+升级：
+        git push [r-name] [l-bname]:[r-bname]     将本地分支l-bname作为远程r-bname分支
 ```
 1. 
 参与他人项目
