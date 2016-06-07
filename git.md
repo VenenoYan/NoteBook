@@ -234,6 +234,6 @@ git daemon搭建：
     * 
 开始状态：  　git checkout -b mywork
 
-![](1339682677_4329.jpg)
+　　　　　　　　　　　　　![](1339682677_4329.jpg)
 
 [返回目录](README.md)
