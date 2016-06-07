@@ -246,6 +246,6 @@ git daemon搭建：
 
 原因：<br>
 　　git merge：将两个分支解决冲突，然后合并；＝＝＝＝＝》看起来像是新的“提交“<br>
-　　git　rebase：
+　　git rebase：
 
 [返回目录](README.md)
