@@ -230,7 +230,7 @@ git daemon搭建：
 1. 
 如果卸载错误或无法卸载，首先下载一个老版本覆盖安装然后卸载即可！
 1. 
-＃＃＃git merge 与 git rebase 的区别
+###git merge 与 git rebase 的区别
     * 
 开始状态：  　git checkout -b mywork
 
