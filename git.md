@@ -193,7 +193,7 @@ git checkout 把版本库中的文件覆盖工作区文件
 通知作者： 远程仓库发起一个 pull request
 ```
 1. 
-搭建自己的git服务器:G
+搭建自己的git服务器:GitLab
 ```C
 安装
 创建用户：sudo adduser [git-name] 
