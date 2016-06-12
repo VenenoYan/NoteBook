@@ -115,7 +115,64 @@ struct CLS
 基类的private对象派生类不可见，但是派生类构造时会调用基类构造函数，所以内存布局中有该private但不可访问。
 
 1. 
-[虚函数](http://blog.csdn.net/haoel/article/details/1948051/)
+[虚函数](http://blog.csdn.net/haoel/article/details/1948051/)```C
+#include <iostream>
+using namespace std;
+ 
+class Base1 {
+public:
+            virtual void f() { cout << "Base1::f" << endl; }
+            virtual void g() { cout << "Base1::g" << endl; }
+            virtual void h() { cout << "Base1::h" << endl; }
+};
+
+class Base2 {
+public:
+            virtual void f() { cout << "Base2::f" << endl; }
+            virtual void g() { cout << "Base2::g" << endl; }
+            virtual void h() { cout << "Base2::h" << endl; }
+};
+ 
+class Base3 {
+public:
+            virtual void f() { cout << "Base3::f" << endl; }
+            virtual void g() { cout << "Base3::g" << endl; }
+            virtual void h() { cout << "Base3::h" << endl; }
+};
+ 
+class Derive : public Base1, public Base2, public Base3 {
+public:
+            //virtual void f() { cout << "Derive::f" << endl; }
+            virtual void g1() { cout << "Derive::g1" << endl; }
+};
+ 
+typedef void(*Fun)(void);
+ 
+int main()
+{
+            Fun pFun = NULL;
+ 
+            Derive d;
+            Base1 b1;
+            Base2 b2;
+            Base3 b3;
+            int** pVtab = (int**)&d;
+            int **pVtab1  = (int **)&b1;
+            int **pVtab2  = (int **)&b2;
+            int **pVtab3  = (int **)&b3;
+
+            cout<<"addr of D "<<pVtab[0]<<endl;
+            cout<<hex<<pVtab[0][0]<<endl;
+            cout<<hex<<pVtab[0][1]<<endl;
+            cout<<"addr of B1 "<<pVtab1[0]<<endl;
+            cout<<hex<<pVtab1[0][0]<<endl;
+             cout<<"addr of B2 "<<pVtab2[0]<<endl;
+            cout<<hex<<pVtab2[0][0]<<endl;
+             cout<<"addr of B3 "<<pVtab3[0]<<endl;
+            cout<<hex<<pVtab3[0][0]<<endl;
+    return
+}
+```
     * 
 那些适合虚函数：析构、自定义的函数
     * 
