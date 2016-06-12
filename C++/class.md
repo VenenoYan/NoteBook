@@ -116,6 +116,7 @@ struct CLS
 
 1. 
 [虚函数](http://blog.csdn.net/haoel/article/details/1948051/)
+
 ```C
 #include <iostream>
 using namespace std;
