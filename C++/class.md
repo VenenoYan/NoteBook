@@ -174,6 +174,8 @@ int main()
     cout<<hex<<pVtab3[0][0]<<endl;
     return 0;
 }
+
+每个类都有自己的vptr，
 ```
 注意：
     * 适合虚函数：析构、自定义的函数
