@@ -150,27 +150,27 @@ typedef void(*Fun)(void);
  
 int main()
 {
-            Fun pFun = NULL;
- 
-            Derive d;
-            Base1 b1;
-            Base2 b2;
-            Base3 b3;
-            int** pVtab = (int**)&d;
-            int **pVtab1  = (int **)&b1;
-            int **pVtab2  = (int **)&b2;
-            int **pVtab3  = (int **)&b3;
+    Fun pFun = NULL;
 
-            cout<<"addr of D "<<pVtab[0]<<endl;
-            cout<<hex<<pVtab[0][0]<<endl;
-            cout<<hex<<pVtab[0][1]<<endl;
-            cout<<"addr of B1 "<<pVtab1[0]<<endl;
-            cout<<hex<<pVtab1[0][0]<<endl;
-             cout<<"addr of B2 "<<pVtab2[0]<<endl;
-            cout<<hex<<pVtab2[0][0]<<endl;
-             cout<<"addr of B3 "<<pVtab3[0]<<endl;
-            cout<<hex<<pVtab3[0][0]<<endl;
-    return
+    Derive d;
+    Base1 b1;
+    Base2 b2;
+    Base3 b3;
+    int** pVtab = (int**)&d;
+    int **pVtab1  = (int **)&b1;
+    int **pVtab2  = (int **)&b2;
+    int **pVtab3  = (int **)&b3;
+
+    cout<<"addr of D "<<pVtab[0]<<endl;
+    cout<<hex<<pVtab[0][0]<<endl;
+    cout<<hex<<pVtab[0][1]<<endl;
+    cout<<"addr of B1 "<<pVtab1[0]<<endl;
+    cout<<hex<<pVtab1[0][0]<<endl;
+     cout<<"addr of B2 "<<pVtab2[0]<<endl;
+    cout<<hex<<pVtab2[0][0]<<endl;
+     cout<<"addr of B3 "<<pVtab3[0]<<endl;
+    cout<<hex<<pVtab3[0][0]<<endl;
+    return 0;
 }
 ```
     * 
