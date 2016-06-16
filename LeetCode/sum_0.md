@@ -1,5 +1,7 @@
 ##172 Factorial Trailing Zeroes
 Given an integer n, return the number of trailing zeroes int n!;
+
+就是给你一个数，求他阶乘法中末尾0的个数
 ###Solution
 ```C
 int trailingZeroes(int n)
