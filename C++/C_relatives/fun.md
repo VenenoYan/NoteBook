@@ -69,7 +69,7 @@ wait是针对进程，如果一个子进程有多个线程，那么在最后一�
 **4.alloca、malloc、calloc、realloc的区别：**
 ```C
 alloca：向栈申请内存，不需要释放
-
+malloc：向堆申请内存，不会对内存初始化，所以一般需要memset进行初始化
 ```
 
 
