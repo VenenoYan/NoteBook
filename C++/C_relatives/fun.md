@@ -66,7 +66,7 @@ wait是针对进程，如果一个子进程有多个线程，那么在最后一�
     return ret;
   }
 ```
-**4.malloc、calloc、realloc的区别：**
+**4.alloca、malloc、calloc、realloc的区别：**
 
 ```C
 ```
