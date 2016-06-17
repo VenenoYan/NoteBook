@@ -1,5 +1,4 @@
-**1. 
-基础知识：什么是TCP/IP、UDP、Socket**
+**基础知识：什么是TCP/IP、UDP、Socket**
 
   TCP/IP(Transmission Control Protocol/Internet Protocol)<br>
   UDP(User Data Protocol)<br>
@@ -12,8 +11,7 @@
      <br>  Socket是应用层与TCP/IP协议族通信的中间软件抽象层，它是一组接口。在设计模式中，Socket其实就是一个门面模式，它把复杂的TCP/IP协议族隐藏在Socket接口后面，对用户来说，一组简单的接口就是全部，让Socket去组织数据，以符合指定的协议。<br>
       ![](../32.jpg)
  
-1.  
-HTTP的过程和原理，以连接www.baidu.com为例
+**HTTP的过程和原理，以连接www.baidu.com为例**
   * 
   首先需要建立socket连接(IP和port)，所以会先做DNS解析，由url网址得到IP地址：
       * 
