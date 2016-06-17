@@ -12,7 +12,7 @@
 1.  
 HTTP的过程和原理，以连接www.baidu.com为例
   * 
-首先需要建立socket连接(IP和port)，
+首先需要建立socket连接(IP和port)，所以会先做DNS解析，得到IP地址
 
 1. 
 TCP 连接的过程和特点
