@@ -1,7 +1,9 @@
 1. 
 基础知识：什么是TCP/IP、UDP、Socket<br>
-    TCP/IP(Transmission Control Protocol/Internet Protocol)
-    UDP(User Data Protocol)
+    TCP/IP(Transmission Control Protocol/Internet Protocol)<br>
+    UDP(User Data Protocol)<br>
+    网络模型图：
+    ![](../1.jpg)
 1.  
 HTTP的过程和原理
   
