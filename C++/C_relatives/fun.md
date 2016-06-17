@@ -36,7 +36,7 @@ wait是针对进程，如果一个子进程有多个线程，那么在最后一�
 **2.实现strcpy函数：**
 
 ```C
-void strcpy(char *dest, char *src)
+void strcpy(char *dest,const char *src)
 {
 }
 ```
