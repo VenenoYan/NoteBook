@@ -11,6 +11,8 @@
  
 1.  
 HTTP的过程和原理，以连接www.baidu.com为例
+  * 
+首先需要建立socket连接，
 
 1. 
 TCP 连接的过程和特点
