@@ -54,7 +54,7 @@ wait是针对进程，如果一个子进程有多个线程，那么在最后一�
 **3.实现strlen函数：**
 
 ```C
-  char* strcpy(char *dest,const char *src)
+  int strlen(const char *src)
   {
     assert(dest != NULL);
     assert(src != NULL);
