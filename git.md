@@ -33,8 +33,7 @@ $git config [--global/system] merge.tool vimdiff       比较工具
 ```C
         工作区--add-->暂存区--commit-->版本仓库------>push------>远程仓库
 man git [command]     查看帮助
-生成key：
-  ssh-keygen -t rsa -C "your-email" 在HOME目录下会有.ssh目录。
+生成key：ssh-keygen -t rsa -C "your-email" 在HOME目录下会有.ssh目录。
       HOME目录默认：/home/[user]/.ssh（linux）
                    HOME环境变量对应的目录中(win)
       win下使用git时DOS界面默认路径：设置快捷方式的起始地址，如果不行在环境变量中增加HOME路径即可。
