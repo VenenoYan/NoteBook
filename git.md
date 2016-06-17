@@ -37,6 +37,7 @@ man git [command]     查看帮助
   ssh-keygen -t rsa -C "your-email" 在HOME目录下会有.ssh目录。
       HOME目录默认：/home/[user]/.ssh（linux）
                    HOME环境变量对应的目录中(win)
+      win下使用git时DOS界面默认路径：设置快捷方式的起始地址，如果不行在环境变量中增加HOME路径即可。不过上面的生成key需要重新，因为路径也变了。
 git init        :初始化一个本地仓库
 git add file1 file2 ... :添加文件
 git add ./-A/-u  :  添加所有除了删除的/添加所有/添加除新建之外的
