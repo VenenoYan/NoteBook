@@ -67,8 +67,8 @@ wait是针对进程，如果一个子进程有多个线程，那么在最后一�
   }
 ```
 **4.alloca、malloc、calloc、realloc的区别：**
-
-  alloca：向栈申请内存，不需要释放
+```C
+alloca：向栈申请内存，不需要释放```
 
 
 [返回目录](README.md)
