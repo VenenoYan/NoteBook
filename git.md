@@ -27,16 +27,16 @@ $git config [--global/system] merge.tool vimdiff       比较工具
             folder/     忽略该目录
             *.[o]       忽略所有 .o文件
             *a/a*       忽略所有以a结尾/开头的文件
-生成key：
-  ssh-keygen -t rsa -C "your-email" 在HOME目录下会有.ssh目录。
-      HOME目录默认：/home/[user]/.ssh（linux）
-                   HOME环境变量对应的目录中(win)
 ```
 1. 
 本地使用
 ```C
         工作区--add-->暂存区--commit-->版本仓库------>push------>远程仓库
 man git [command]     查看帮助
+生成key：
+  ssh-keygen -t rsa -C "your-email" 在HOME目录下会有.ssh目录。
+      HOME目录默认：/home/[user]/.ssh（linux）
+                   HOME环境变量对应的目录中(win)
 git init        :初始化一个本地仓库
 git add file1 file2 ... :添加文件
 git add ./-A/-u  :  添加所有除了删除的/添加所有/添加除新建之外的
