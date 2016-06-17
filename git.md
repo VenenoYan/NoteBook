@@ -29,7 +29,8 @@ $git config [--global/system] merge.tool vimdiff       比较工具
             *a/a*       忽略所有以a结尾/开头的文件
 生成key：
   ssh-keygen -t rsa -C "your-email" 在HOME目录下会有.ssh目录。
-      HOME目录默认：/home/[user]/.ssh（linux）<br> HOME环境变量对应的目录中(win)
+      HOME目录默认：/home/[user]/.ssh（linux）
+                   HOME环境变量对应的目录中(win)
 ```
 1. 
 本地使用
