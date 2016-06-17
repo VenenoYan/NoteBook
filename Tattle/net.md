@@ -19,6 +19,8 @@ HTTP的过程和原理，以连接www.baidu.com为例
 得到IP地址，port是指定好的。
   * 
 建立Sockent连接
+  * 
+然后发送web请求给指定的web服务器：GET、POST
 
 1. 
 TCP 连接的过程和特点
