@@ -100,10 +100,6 @@ TCP慢效率不高易受攻击，UDP快比TCP安全一点(不需要建立连接)
   * 
 TCP可靠稳定，UDP相反
 
-**拥塞控制**
-
-**[session](http://www.cnblogs.com/kissdodog/archive/2013/02/08/2909292.html)放在哪里？如何保存会话状态**
-
 **域名解析过程及协议**
 * 
 第一步： 客户端发出域名解析请求， 将该请求发送给本地域名服务器(一般浏览器也有自己的缓存，这个是第一次查找的对象)
@@ -161,6 +157,10 @@ C类IP地址<br>
 | 5 会话层 | |  |
 | 6 表示层 | |  |
 | 7 应用层 | DNS-53、FTP-20/21、TELNET-23、SMTP-25、POP3-110、DHCP、HTTP-80、HTTPS-443 |  |
+
+**拥塞控制**
+
+**[session](http://www.cnblogs.com/kissdodog/archive/2013/02/08/2909292.html)放在哪里？如何保存会话状态**
 
 **nignx的异步模型与事件管理**
 
