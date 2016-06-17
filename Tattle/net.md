@@ -56,7 +56,7 @@ ABC 类地址
 | 4 传输层 | TCP、UDP | 数据报，屏蔽底层细节 |
 | 5 会话层 | |  |
 | 6 表示层 | |  |
-| 7 应用层 | DNS-53、FTP-20/21、TELNET、WWW、SMTP-25、POP3-110、DHCP |  |
+| 7 应用层 | DNS-53、FTP-20/21、TELNET-23、WWW、SMTP-25、POP3-110、DHCP、HTTP-80、HTTPS-443 |  |
 
 * 
 nignx的异步模型与事件管理
