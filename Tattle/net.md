@@ -32,7 +32,8 @@ HTTP的过程和原理，以连接www.baidu.com为例
 关闭连接
 
 1. 
-TCP 连接的过程和特点
+TCP 连接的过程和特点，
+TCP为什么需要三次握手？两次可以吗？
 
 ![](../wKioL1LSW6rjI1nhAAE63Uv8ZRY731.jpg)
  * 
