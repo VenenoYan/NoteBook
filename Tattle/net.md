@@ -102,7 +102,7 @@ TCP可靠稳定，UDP相反
 
 **拥塞控制**
 
-**session放在哪里？如何保存会话状态**
+**[session](http://www.cnblogs.com/kissdodog/archive/2013/02/08/2909292.html)放在哪里？如何保存会话状态**
 
 **域名解析过程及协议**
 * 
