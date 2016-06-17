@@ -56,16 +56,13 @@ wait是针对进程，如果一个子进程有多个线程，那么在最后一�
 ```C
   int strlen(const char *src)
   {
-    assert(dest != NULL);
     assert(src != NULL);
-    char *ret = dest;
+    int ret = 0;
     while(*src != '\0')
     {
-      *ret = *src;
       ++ret;
       ++src;
     }
-    *ret = '\0';
     return ret;
   }
 ```
