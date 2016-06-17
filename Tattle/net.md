@@ -4,7 +4,7 @@
     UDP(User Data Protocol)<br>
     网络模型图：
     ![](../1.jpg)
-    才
+    那么Socket在那呢？
 1.  
 HTTP的过程和原理
   
