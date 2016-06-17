@@ -27,6 +27,8 @@ $git config [--global/system] merge.tool vimdiff       比较工具
             folder/     忽略该目录
             *.[o]       忽略所有 .o文件
             *a/a*       忽略所有以a结尾/开头的文件
+生成key：
+  ssh-keygen -t rsa -C "your-email" 在HOME目录下会有.ssh目录。
 ```
 1. 
 本地使用
