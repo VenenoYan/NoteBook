@@ -239,7 +239,7 @@ except urllib2.URLError, e:
 else:
     print "OK"
 ```
-## 安装scrapy
+## 安装[scrapy]()
 1. setuptool```https://pypi.python.org/packages/2.7/s/setuptools/```  easy_install
 2. win32api ```http://sourceforge.net/projects/pywin32/files%2Fpywin32/```  
 3. zope.interface  ```https://pypi.python.org/pypi/zope.interface/4.1.0#downloads``` 
