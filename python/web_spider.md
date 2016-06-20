@@ -240,12 +240,12 @@ else:
     print "OK"
 ```
 ## 安装scrapy
-1. lxml ```https://pypi.python.org/pypi/lxml/3.3.1```输入 import lxml 测试安装
-2. setuptool  ```https://pypi.python.org/packages/2.7/s/setuptools/```  easy_install
+1. ```https://pypi.python.org/packages/2.7/s/setuptools/```  easy_install
+2. win32api ```http://sourceforge.net/projects/pywin32/files%2Fpywin32/```setuptool  
 3. zope.interface  ```https://pypi.python.org/pypi/zope.interface/4.1.0#downloads``` 
 4. Twisted : pip install twisted
 5. pyOpenSSL : pip install pyOpenSSL
-6. win32api ```http://sourceforge.net/projects/pywin32/files%2Fpywin32/```
+6. lxml ```https://pypi.python.org/pypi/lxml/3.3.1```输入 import lxml 测试安装
 7. scrapy : pip install scrapy         pip install scrapy==1.1.0rc3
 
 
