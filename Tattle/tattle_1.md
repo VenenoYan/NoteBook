@@ -6,7 +6,7 @@
 * 
 包罗万象
 
-**wwin回收站恢复**
+**win回收站恢复**
 ```C
 打开注册表(运行regedit)---》LOCAL_MACHINE-->SOFTWARE--->MICROSOFT--
 -->WINDOWS--->CURRENTVERSION--->EXPLOERER--->DESKTOP--->NAMESPACE
