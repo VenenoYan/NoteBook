@@ -10,7 +10,8 @@
 ```C
 打开注册表(运行regedit)---》LOCAL_MACHINE-->SOFTWARE--->MICROSOFT--
 -->WINDOWS--->CURRENTVERSION--->EXPLOERER--->DESKTOP--->NAMESPACE
-然后右键新建项，填入：{645FFO40-5081-101B-9F08-00AA002F954E}
+然后右键新建项，填入：{645FFO40-5081-101B-9F08-00AA002F954E}.
+然后点击该新项，右击“默认”，数据改为“回收站”，然后重启电脑即可
 ```
 
 **常用时延：**
