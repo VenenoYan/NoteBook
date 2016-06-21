@@ -83,7 +83,7 @@ python中通过协程来处理：async/await  分别用来定义协程函数和�
 ###Linux与fork()
 两种方式创建进程：
 * 
-操作系统：fork()（vfork实际上也是调用的fork），有两个返回值
+操作系统：fork()（vfork实际上也是调用的fork），有两个返回值；两个进程顺序不定
 * 
 父进程。
 
