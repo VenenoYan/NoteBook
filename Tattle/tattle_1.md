@@ -7,7 +7,9 @@
 包罗万象
 
 **回收站恢复**
-
+```C
+打开注册表(运行regedit)---》LOCAL_MACHINE-->SOFTWARE--->MICROSOFT---->WINDOWS--->CURRENTVERSION--->EXPLOERER--->DESKTOP--->NAMESPACE
+```
 
 **常用时延：**
 ![2](time_delay.png)
