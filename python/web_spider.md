@@ -143,7 +143,7 @@ print 'status'+response.getcode()```
 ```python
 import urllib2  
 request = urllib2.Request('http://www.baidu.com/')  
-request.add_header('User-Agent', 'fake-client')         //添加
+request.add_header('User-Agent', 'fake-client')         #添加
 response = urllib2.urlopen(request)  
 print response.read()               #response.read().decode("utf-8") ```
 特别的头信息：<br>
