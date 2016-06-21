@@ -1,7 +1,7 @@
 
 ## C常用头文件
 [链接1---牛人整理](http://ganquan.info/standard-c/)<br>
-[链接3---C语言中文网](http://c.biancheng.net/cpp/u/hs1/)
+[链接2---C语言中文网](http://c.biancheng.net/cpp/u/hs1/)
 
 ```C
 格式：
