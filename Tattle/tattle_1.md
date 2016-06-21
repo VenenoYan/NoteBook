@@ -1,4 +1,4 @@
-**山寨兵法：**
+**山寨兵法：w**
 * 
 明修栈道，暗渡陈仓
 * 
@@ -6,7 +6,7 @@
 * 
 包罗万象
 
-**回收站恢复**
+**wwin回收站恢复**
 ```C
 打开注册表(运行regedit)---》LOCAL_MACHINE-->SOFTWARE--->MICROSOFT--
 -->WINDOWS--->CURRENTVERSION--->EXPLOERER--->DESKTOP--->NAMESPACE
