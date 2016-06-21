@@ -26,7 +26,12 @@ C语言的字符串反转效率
   * C++支持而C不支持：面向对象、模板等
   * C支持而C++不支持：很少
   * C和C++都支持但是语法不同：const、struct、void*、auto、IO
+* C的printf：
+  *```C
+  int a = 10,b = 20 , c = 30;
+  printf();
+  ```
 
 
-IO
+
 [返回目录](README.md)
