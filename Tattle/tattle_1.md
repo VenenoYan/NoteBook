@@ -9,6 +9,7 @@
 **回收站恢复**
 ```C
 打开注册表(运行regedit)---》LOCAL_MACHINE-->SOFTWARE--->MICROSOFT---->WINDOWS--->CURRENTVERSION--->EXPLOERER--->DESKTOP--->NAMESPACE
+然后右键新建项。
 ```
 
 **常用时延：**
