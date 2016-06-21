@@ -1,7 +1,6 @@
 
 ## C常用头文件
 [链接1---牛人整理](http://ganquan.info/standard-c/)<br>
-[链接2---C++网站](http://www.cplusplus.com/reference/clibrary/)<br>
 [链接3---C语言中文网](http://c.biancheng.net/cpp/u/hs1/)
 
 ```C
