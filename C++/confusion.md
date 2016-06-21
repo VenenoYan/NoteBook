@@ -2,7 +2,8 @@
 ## 混淆点
 
 **0.字面值常量：**<br>
-字面值因为只能用值称呼，常量说明不可以改变
+字面值因为只能用值称呼，常量说明不可以改变<br>
+long double > double > float > unsigned long int > long int > unsigned int > int 
 
 **1. 
 暂停：**
