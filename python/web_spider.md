@@ -43,6 +43,9 @@ print the_page
 post表单提交
 * 
 headers设置
+* urlopen是一个特殊的opener
+* 
+
 
 ####**===>post表单提交** Request():数据参数
 **urllib**用来处理表单数据  
