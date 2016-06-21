@@ -81,6 +81,6 @@ python中通过协程来处理：async/await  分别用来定义协程函数和�
     loop.run_forever()
 ```
 ###Linux与fork()
-
+两种方式创建进程：操作系统或者父进程。
 
 [返回目录](README.md)
