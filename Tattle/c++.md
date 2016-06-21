@@ -29,7 +29,7 @@ C语言的字符串反转效率
 * C的printf：
   *```C
   int a = 10,b = 20 , c = 30;
-  printf();
+  printf("\n %d .. %d .. %d \n", a+b+c,(b = 2*b),(c = 3*30));
   ```
 
 
