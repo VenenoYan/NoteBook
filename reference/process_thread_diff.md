@@ -87,7 +87,7 @@ python中通过协程来处理：async/await  分别用来定义协程函数和�
   * 创建子进程就是一个clone的过程。目前三个fork、clone、vfork，其实后面两个都是调用的fork
 
 * 
-父进程。
+父进程自己穿件
 
 
 [返回目录](README.md)
