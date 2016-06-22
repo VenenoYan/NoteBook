@@ -25,7 +25,7 @@ C语言的字符串反转效率
 * C语言main()中return和exit(x)的区别
   * main
 * C/C++的不同
-  * C++支持而C不支持：面向对象、模板等
+  * C++支持而C不支持：面向对象、泛型技术等
   * C支持而C++不支持：很少
   * C和C++都支持但是语法不同：const、struct、void*、auto、IO
 * C的printf：
