@@ -14,6 +14,14 @@ C++的锁有那些？以及区别
 生产者-消费者  加锁
 1. 
 BOOL , float, 指针变量 与“零值”比较的 if 语句
+```C
+    解答：
+    BOOL型变量：if（！var）
+    int型变量： if（var==0）
+    float型变量：
+    const float EPSINON = 0.00001；
+    if （（x >= - EPSINON） && （x <= EPSINON）
+    指针变量：　　if（var==NULL）```
 * 
 三种传参的不同、返回值的不同
 * 
