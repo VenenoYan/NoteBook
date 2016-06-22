@@ -20,7 +20,6 @@ LCA：lowest common ancestor
 
 单/双向链表找中间节点：快慢/双向走相遇
 
-
 一个数组(A[0],...,A[n])，[子数组之和](http://www.cnblogs.com/bourbon/archive/2011/08/23/2151044.html)的最大值是什么呢？
 
 非递归实现二叉树遍历
