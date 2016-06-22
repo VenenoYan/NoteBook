@@ -88,6 +88,9 @@ python中通过协程来处理：async/await  分别用来定义协程函数和�
 父进程自己创建
 
 ###return 和 exit的不同
+* 
+exit是系统调用，是不会退栈的！！
+* 
 
 
 
