@@ -1,10 +1,10 @@
-
 1.读取Excel(需要安装xlrd)：
 ```python
 #-*- coding: utf8 -*-
 import xlrd
 
 fname = "reflect.xls"
+fname = 'C:\\Users\\leo\\Download'
 bk = xlrd.open_workbook(fname)
 shxrange = range(bk.nsheets)
 try:
