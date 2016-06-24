@@ -1,4 +1,5 @@
-## [经验](http://blog.csdn.net/chenhuajie123/article/details/7405080)
+## [经验1](http://blog.csdn.net/chenhuajie123/article/details/7405080)
+###[经验2](http://www.ezlippi.com/blog/2014/12/c-open-project.html)
 ## 混淆点
 
 **0.字面值常量：**<br>
