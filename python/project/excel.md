@@ -36,8 +36,7 @@ ws.write(1,0,'xuan')   #在2行1列写入xuan
 w.save('mini.xls')     #保存
 ```
 3.读写Excel的例子:读取reflect.xls中的某些信息进行处理后写入mini.xls文件中。　
-复制代码 代码如下:
-
+```python
 #-*- coding: utf8 -*-
 import xlrd
 from pyExcelerator import *  
@@ -55,7 +54,7 @@ nrows = sh.nrows
 ncols = sh.ncols
 print "nrows %d, ncols %d" % (nrows,ncols)
 
-cell_value = sh.cell_value(1,1)
+cell_value =``` sh.cell_value(1,1)
 #print cell_value
 
 row_list = []
@@ -79,7 +78,7 @@ for i in range(1,nrows):
     row_list.append(row_data[3])
 #print row_list
 w.save('mini.xls')
-
+```
 4.现在我需要根据Excel文件中满足特定要求的apk的md5值来从服务器获取相应的apk样本，就需要这样做：　
 复制代码 代码如下:
 
