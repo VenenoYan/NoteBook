@@ -26,6 +26,8 @@ os.rmdir()
         删除目录
 os.listdir()
         返回指定目录下的所有文件和目录名,包括隐藏文件，并以列表方式打印。
+        Linux 正常
+        window  os.listdir('C:\\Users\\leo')。注意转义字符
 os.remove()
         删除一个文件。
 os.rename(old,new)
