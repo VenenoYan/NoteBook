@@ -4,7 +4,7 @@
 import xlrd
 
 fname = "reflect.xls"
-fname = 'C:\\Users\\leo\\Download'
+# fname = 'C:\\Users\\leo\\Download'
 bk = xlrd.open_workbook(fname)
 shxrange = range(bk.nsheets)
 try:
