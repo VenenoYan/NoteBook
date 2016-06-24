@@ -1,5 +1,6 @@
 ###基础
 ```python
+ 到python官网下载http://pypi.python.org/pypi/xlrd模块安装，前提是已经安装了python 环境。
 1、导入模块
       import xlrd
 2、打开Excel文件读取数据
