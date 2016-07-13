@@ -7,4 +7,22 @@ Example:
 Given a = 1 and b = 2, return 3. 
 ###Solution
 ```C++
+class Solution {
+public:
+    int getSum(int a, int b) {
+        int yi,yu;
+        yu = a & b;
+        yi = a ^ b;
+        while(yu)
+        {
+            yu = yu << 1;
+            a = yu;
+            b = yi;
+            yu = a & b;
+            yi = a ^ b;
+        }
+        return yi;
+    }
+};
 ```
+###Lesson
