@@ -22,7 +22,7 @@
 * 
 [# 324 : 排序：a< b >c<...](324_Wiggle_sort.md)
 * 
-[# 322 : Coin Change](coin_change.md)
+[# 322 : 换硬币](coin_change.md)
 * 
 [# 104 : 二叉树深度和宽度](depthofbinarytree.md)
 * 
