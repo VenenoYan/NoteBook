@@ -35,3 +35,4 @@ For example, the lowest common ancestor (LCA) of nodes 2 and 8 is 6. Another exa
     * 
 如果一个大一个小或者相等，那么就说明root就是LCA
 
+[返回目录](README.md)
