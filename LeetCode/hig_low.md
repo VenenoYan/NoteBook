@@ -17,3 +17,27 @@ n = 10, I pick 6.
 Return 6.
 ```
 ###Solution
+```C++
+    int guessNumber(int n) {
+        if(n == 1 || guess(n) == 0) 
+            return n;
+        uint32_t ig = n >> 1;
+        uint32_t max = n, min = 0;
+        int ret = guess(ig);
+        while(ret != 0)
+        {
+            if(ret == 1)
+            {
+                min = ig;
+                ig = (ig + max) >> 1;
+            }
+            else if(ret == -1)
+            {
+                max = ig;
+                ig = (ig + min) >> 1;
+            }
+            ret = guess(ig);
+        }
+        return ig;
+    }
+```
