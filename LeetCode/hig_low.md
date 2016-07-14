@@ -51,5 +51,39 @@ int guessNumber(int n) {
     * 
 a + ((b-a) >>1)
 
+###278. First Bad Version
+
+You are a product manager and currently leading a team to develop a new product. Unfortunately, the latest version of your product fails the quality check. Since each version is developed based on the previous version, all the versions after a bad version are also bad.
+
+Suppose you have n versions [1, 2, ..., n] and you want to find out the first bad one, which causes all the following ones to be bad.
+
+You are given an API bool isBadVersion(version) which will return whether version is bad. Implement a function to find the first bad version. You should minimize the number of calls to the API. 
+###Solution
+```C++
+    int firstBadVersion(int n) {
+        if(isBadVersion(1))
+            return 1;
+        uint32_t l = 1, h = n;
+        uint32_t ig = n >> 1;
+        bool ret = isBadVersion(ig);
+        while(h - l != 1)
+        {
+        	cout<<l<<" "<<h<<" "<<ig<<endl;
+            if(ret)
+            {
+                h = ig;
+                ig = (ig + l) >> 1;
+            }
+            else
+            {
+                l = ig;
+                ig = (ig + h) >> 1;
+            }
+            ret = isBadVersion(ig);
+        }
+        return h;
+    }
+```
+
 
 [返回目录](README.md)
