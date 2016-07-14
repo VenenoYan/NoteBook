@@ -49,3 +49,4 @@ int guessNumber(int n) {
     * 
 用uint32_t（比较局限）
     * 
+a + ((b-a) >>1)
