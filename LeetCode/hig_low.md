@@ -61,21 +61,18 @@ You are given an API bool isBadVersion(version) which will return whether versio
         if(isBadVersion(1))
             return 1;
         uint32_t l = 1, h = n;
-        uint32_t ig = n >> 1;
-        bool ret = isBadVersion(ig);
         while(h - l != 1)
         {
+            uint32_t ig = n >> 1;
+            bool ret = isBadVersion(ig);
             if(ret)
             {
                 h = ig;
-                ig = (ig + l) >> 1;
             }
             else
             {
                 l = ig;
-                ig = (ig + h) >> 1;
             }
-            ret = isBadVersion(ig);
         }
         return h;
     }
