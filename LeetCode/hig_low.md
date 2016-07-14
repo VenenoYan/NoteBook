@@ -87,6 +87,7 @@ You are given an API bool isBadVersion(version) which will return whether versio
 ###Lesson
 * 
 找值：截半法。
-
+* 
+注意第一个是无效
 
 [返回目录](README.md)
