@@ -23,7 +23,11 @@ int trailingZeroes(int n)
         return 0;
     else
     {
-        
+        int ret = 0;
+        while(n > 5)
+        {
+            
+        }
     }
 }
 ```
