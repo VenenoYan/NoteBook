@@ -4,7 +4,7 @@ Given a binary search tree (BST), find the lowest common ancestor (LCA) of two g
 According to the definition of LCA on Wikipedia: “The lowest common ancestor is defined between two nodes v and w as the lowest node in T that has both v and w as descendants (where we allow a node to be a descendant of itself).”
 
  ``` 
- _______6______
+        _______6______
        /              \
     ___2__          ___8__
    /      \        /      \
