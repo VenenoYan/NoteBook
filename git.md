@@ -49,7 +49,7 @@ git log [--pretty=oneline]  历史记录
         --oneline   一行显示
         --name-only 只显示变更文件的名称
         --author="someone-name" 只显示某个用户的更改
-        --reverse   按逆序现实
+        --reverse   按逆序显示
         --graph     现实所有依赖树
         --after="date"    显示该日期之后的提交
         --before="date"   该日期之前的提交
