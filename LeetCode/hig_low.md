@@ -24,7 +24,7 @@ int guessNumber(int n) {
     uint32_t max = n, min = 0;
     while(ret != 0)
     {
-        uint32_t ig = min + (max+min)/2;
+        uint32_t ig = min + (max+min) >> 1;
         int ret = guess(ig);
         if(ret == 1)
         {
