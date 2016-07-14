@@ -84,6 +84,9 @@ You are given an API bool isBadVersion(version) which will return whether versio
         return h;
     }
 ```
+###Lesson
+* 
+找值：截半法。
 
 
 [返回目录](README.md)
