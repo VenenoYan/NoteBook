@@ -63,7 +63,7 @@ You are given an API bool isBadVersion(version) which will return whether versio
         uint32_t l = 1, h = n;
         while(h - l != 1)
         {
-            uint32_t ig = n >> 1;
+            uint32_t ig = l + (h - l) >> 1;
             bool ret = isBadVersion(ig);
             if(ret)
             {
