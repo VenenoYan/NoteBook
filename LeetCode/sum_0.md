@@ -24,11 +24,12 @@ int trailingZeroes(int n)
     else
     {
         int ret = 0;
-        while(n > 5)
+        while(n >= 5)
         {
             ret += log10(n)/log10(5);
             n -= 5;
         }
+        return ret;
     }
 }
 ```
