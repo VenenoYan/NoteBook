@@ -47,5 +47,5 @@ int guessNumber(int n) {
 * 
 相加可能出现超过最大范围，我们此处用的是uint32_t！！！相加超过范围解决方案：
     * 
-用uint32_t
+用uint32_t（比较局限）
     * 
