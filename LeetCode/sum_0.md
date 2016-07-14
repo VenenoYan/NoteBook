@@ -40,6 +40,10 @@ int trailingZeroes(int n)
 如果\*2和\*5相乘的结果还有2与5,那么还要乘
 * 
 能除尽5,则说明一定有[*2]
+* 
+版本2：
+    * 
+换底公式：logcG = log10(G)/log10(c)
 
 
 [返回目录](README.md)
