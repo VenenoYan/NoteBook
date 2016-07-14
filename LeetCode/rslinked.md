@@ -91,6 +91,11 @@ ListNode *reverseBetween(ListNode *head,int s,int e){
 * 
 当然本题还可以用栈解决，但是空间复杂度会比较高。
 
+###190，Reverse Bits 
+Reverse bits of a given 32 bits unsigned integer.
+
+For example, given input 43261596 (represented in binary as 00000010100101000001111010011100), return 964176192 (represented in binary as 00111001011110000010100101000000).
+###Solution
 
 
 [返回目录](README.md)
