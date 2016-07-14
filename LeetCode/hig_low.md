@@ -65,7 +65,6 @@ You are given an API bool isBadVersion(version) which will return whether versio
         bool ret = isBadVersion(ig);
         while(h - l != 1)
         {
-        	cout<<l<<" "<<h<<" "<<ig<<endl;
             if(ret)
             {
                 h = ig;
