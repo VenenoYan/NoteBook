@@ -26,7 +26,7 @@ int trailingZeroes(int n)
         int ret = 0;
         while(n > 5)
         {
-            
+            ret = log(
         }
     }
 }
