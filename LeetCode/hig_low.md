@@ -34,7 +34,6 @@ int guessNumber(int n) {
         {
             max = ig;
         }
-        ret = guess(ig);
     }
     return ig;
 }
