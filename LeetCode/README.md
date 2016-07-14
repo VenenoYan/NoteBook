@@ -26,7 +26,7 @@
 * 
 [# 104 : 二叉树深度和宽度](depthofbinarytree.md)
 * 
-[# 206&&92&&344 : 逆序](rslinked.md)
+[# 206&&92&&344&190 : 逆序](rslinked.md)
 * 
 [# 2 : 两个单链表求和](sl_sum.md)
 * 
