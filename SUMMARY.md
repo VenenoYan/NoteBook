@@ -58,7 +58,6 @@
 **大驼峰式：**
 每个单词的第一个字母都大写;
 <br>　　　　　　　For example：string FirstName = string.Empty<br>
-##　　　　　     　　　　　　　　　　　　　　 　　　
 <hr>
 
 ##编译：
