@@ -57,7 +57,7 @@ git log [--pretty=oneline]  历史记录
         --pretty=oneline/[para] 自定义输出
         -p [file]       显示某个文件的详细变化，
         -L [s,e]:[file] 显示某个文件s~e行之间的变化
-    例子：
+    例子：某个用户、时间段、那个文件，都可以详细列出
         git log --author="leo" --after="1 week ago" --oneline   一周之内leo的提交,一行显示
         git log -p git.md       git.md的提交和具体改变
 git reflog   查看历史commit-id
