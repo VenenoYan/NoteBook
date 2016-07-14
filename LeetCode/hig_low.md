@@ -42,3 +42,5 @@ int guessNumber(int n) {
 }
 ```
 ###Lesson
+* 
+上限、下限不断变化！！！
