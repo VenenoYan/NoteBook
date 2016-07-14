@@ -11,7 +11,7 @@ int trailingZeroes(int n)
     int ret = 0;
     while(n>4)
     {
-        ret += n/5;
+        ret += n/5;         //除5说明有几个5，那么至少这么多0(与任何一个偶数相乘即可)
         n /= 5;
     }
     return ret;
