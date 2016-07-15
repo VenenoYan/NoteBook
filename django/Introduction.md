@@ -45,6 +45,9 @@ Django评价：
     * URL分发器
     * 错误页面中有详细的提示
     * APP概念：每个功能模块都视作一个APP，可插拔（增删）。
-
+* 
+不足
+    * 
+自带的ORM，不支持Python公认的SQLAlchemy 
 
 [返回目录](README.md)
