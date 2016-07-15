@@ -1,5 +1,5 @@
 1. 
-[Introduction](Instruction.md)
+[Introduction](instruction.md)
 1. 
 [setting](setting.md)
 
