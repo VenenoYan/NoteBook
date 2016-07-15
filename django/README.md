@@ -1,5 +1,5 @@
 1. 
-[Introduction](introduction.md)
+[Introduction](Introduction.md)
 1. 
 [setting](setting.md)
 
