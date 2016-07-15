@@ -41,7 +41,7 @@ Django评价：
 * 
 优点
     * 完善的后台管理：admin interface contrib
-    * 自带的ORM与数据库的连接、
+    * 自带的ORM与数据库的连接、更新
 
 
 [返回目录](README.md)
