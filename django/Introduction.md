@@ -17,7 +17,7 @@ T即Template模版层，负责与用户交互
 * 
 V即View视图层，负责实现业务逻辑，与Model与Template合作实现用户的请求；
 * 
-在Django中，请求不同的URL是通过一个叫做URL分发器的单元实现的，它可以把一个请求分发给不同的view处理，然后view与model、template交互完成具体的请求。
+在Django中，请求不同的URL是通过一个叫做URL分发器的单元实现的，它可以把一个请求分发给不同的view处理，然后view负责与model、template交互完成具体的请求。这个URL分发器使用正则表达式来匹配不同的URL然后交给对应的view。
 
 
 [返回目录](README.md)
