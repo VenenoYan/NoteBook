@@ -48,6 +48,6 @@ Django评价：
 * 
 不足
     * 
-自带的ORM，不支持Python公认的SQLAlchemy 
+自带的ORM，不支持Python公认的SQLAlchemy 标准
 
 [返回目录](README.md)
