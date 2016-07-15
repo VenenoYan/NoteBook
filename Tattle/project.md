@@ -8,7 +8,7 @@ uop在各阶段传输时，需要不断的拷贝。我们使用智能指针管�
 模块化
 * 
 使用的技术、数据结构：
-queue、vector、map、function、智能指针、
+queue、vector、map、function、智能指针(计数、指针在哪？怎么变)、
 * 
 难点、如何解决|
 
