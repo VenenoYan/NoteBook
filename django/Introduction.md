@@ -27,6 +27,6 @@ V即View视图层，负责实现业务逻辑，与Model与Template合作实现�
 * 
 在view处理中，调用model读写数据库，调用Template反馈给用户
 * 
-
+然后Web服务器将响应反馈给客户端；
 
 [返回目录](README.md)
