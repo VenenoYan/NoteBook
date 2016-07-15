@@ -24,6 +24,8 @@ V即View视图层，负责实现业务逻辑，与Model与Template合作实现�
 普通：视图负责**如何展示数据**（表现逻辑）
 * 
 Django：视图负责**展示那些数据**（业务逻辑）
+* 
+普通的model层和Django中一样，但是C层由Django中的View层和URL分发器共同完成，V层由Template实现；
 
 在Django中，一个请求过程：
 * 
@@ -36,5 +38,9 @@ Django：视图负责**展示那些数据**（业务逻辑）
 然后Web服务器将响应反馈给客户端；
 
 Django评价：
+* 
+优点
+    * 
+
 
 [返回目录](README.md)
