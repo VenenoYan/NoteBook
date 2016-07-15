@@ -40,7 +40,8 @@ Django：视图负责**展示那些数据**（业务逻辑），如何展示由T
 Django评价：
 * 
 优点
-    * 完善的后台
+    * 完善的后台管理：admin interface contrib
+    * 自带的ORM与数据库的连接、
 
 
 [返回目录](README.md)
