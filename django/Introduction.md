@@ -44,7 +44,7 @@ Django评价：
     * 自带的ORM与数据库的连接、更新（对象关系映射Object Relational Mapping，简称ORM）.
     * URL分发器
     * 错误页面
-    * 
+    * APP概念
 
 
 [返回目录](README.md)
