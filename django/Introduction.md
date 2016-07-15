@@ -35,6 +35,6 @@ Django：视图负责**展示那些数据**（业务逻辑）
 * 
 然后Web服务器将响应反馈给客户端；
 
-Django：
+Django评价：
 
 [返回目录](README.md)
