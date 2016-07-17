@@ -167,6 +167,7 @@ Alignment：         进行智能对齐。
 HTML/JS/CSS prettify  格式化HTML/JS/CSS
 ColorHighlighter    css颜色高亮
 jQuery              支持jquery的智能语法提示
+SideBarEnhencement  增强文件操作
 CSS3                CSS3的自动补全
 SublimeLinter       可以验证各种语法错误。
 ConvertToUTF8       自动转换乱码
