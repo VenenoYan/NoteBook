@@ -14,7 +14,7 @@ MTV框架
 * 
 Glib（Generic lib）：GType、GObject
 * 
-算法：分块（FSC、CDC）
+算法：分块（FSP、VSP）、MD5、RSA加密
 
 
 
