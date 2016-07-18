@@ -449,14 +449,19 @@ GObject的动态类型系统允许程序在运行时进行类型注册，它的�
 —Gtype API是Gobject系统的基础，它提供注册和管理所有基本数据、用户定义对象和接口类型的技术实现。如： G_DEFINE_TYPE宏、G_DEFINE_INTERFACE宏、g_type_register_static函数等都在GType实现。
 —前面提到的G_DEFINE_TYPE宏，展开后主要用于实现用户定义类型，包括：声明类初始化函数、声明实例初始化函数、声明父类的一些信息、以及用于获取分配类型ID的xx_xx_get_type()函数
 #### GOBEJCT如何实现继承
-—前面我们已经介绍，在 GObject世界里，类是两个结构体的组合，一个是实例结构体，另一个是类结构体。
-—很容易理解，GOBJECT的继承需要实现实例结构体的继承和类结构体的继承。
-—在前面的例子，我们通过在gupnpcontext实例中显示声明GSSDPClient parent来告知gobject系统GSSDPClient是gupnpcontext实例的双亲；同时，通过GUPnPContextClass定义中声明GSSDPClientClassparent_class。通过实例结构体和类结构体的共同声明，
-—GOBJECT知道gupnpcontext是gssdpclient的子类。
+* 
+前面我们已经介绍，在 GObject世界里，类是两个结构体的组合，一个是实例结构体，另一个是类结构体。
+* 
+很容易理解，GOBJECT的继承需要实现实例结构体的继承和类结构体的继承。
+* 
+在前面的例子，我们通过在gupnpcontext实例中显示声明GSSDPClient parent来告知gobject系统GSSDPClient是gupnpcontext实例的双亲；同时，通过GUPnPContextClass定义中声明GSSDPClientClassparent_class。通过实例结构体和类结构体的共同声明，
+* 
+GOBJECT知道gupnpcontext是gssdpclient的子类。
 GOBJECT构造函数
-—Gobject对象的初始化可分为2部分：类结构体初始化和实例结构体初始化。
+* 
+Gobject对象的初始化可分为2部分：类结构体初始化和实例结构体初始化。
 类结构体初始化函数只被调用一次，而实例结构体的初始化函数的调用次数等于对象实例化的次数。这意味着，所有对象共享的数据，可保存在类结构体中，而所有对象私有的数据，则保存在实例结构体中。
- 多态的概念
+####多态的概念
 —多态指同一个实体同时具有多种形式。它是面向对象程序设计的一个重要特征。
 —把不同的子类对象都当作父类来看，可以屏蔽不同子类对象之间的差异，写出通用的代码，做出通用的编程，以适应需求的不断变化。
 —赋值之后，父对象就可以根据当前赋值给它的子对象的特性以不同的方式运作。也就是说，父亲的行为像儿子，而不是儿子的行为像父亲。
