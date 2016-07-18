@@ -81,7 +81,7 @@ void  boy_info(Boy *boy);
 ####对象的实现
 
 下面的代码实现了上面的Boy对象的定义：
-
+```C
 /* boy.c */
 #include "boy.h"
 enum { BOY_BORN, LAST_SIGNAL };
@@ -183,7 +183,7 @@ void  boy_info(Boy *boy)
 	g_print("The Boy name is %s\n", boy->name);
 	g_print("The Boy age is %d\n", boy->age);
 }
-
+```
 在这段代码中，出现了实现Boy对象的关键函数，这是在Boy对象的定义中未出现的，也是没必要出现的。就是两个初始化函数，boy_init和boy_class_init，它们分别用来初始化实例结构和类结构。它们并不被在代码中明显调用，关键是将其用宏转换为地址指针，然后赋值到GTypeInfo结构中，然后由GType系统自行处理，同时将它们定义为静态的也是非常必要的。
 
 GTypeInfo结构中定义了对象的类型信息，包括以下内容：
