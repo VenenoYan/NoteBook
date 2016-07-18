@@ -13,7 +13,8 @@
 MTV框架
 * 
 Glib（Generic lib）：GType、GObject
-
+* 
+分块算法
 
 
 
