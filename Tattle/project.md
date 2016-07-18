@@ -12,7 +12,8 @@
 * 
 MTV框架
 * 
-Glib（Generic lib）
+Glib（Generic lib）：GType、GObject
+
 
 
 
