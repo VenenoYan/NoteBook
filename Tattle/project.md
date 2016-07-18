@@ -33,6 +33,7 @@ Glib（Generic lib）：GType、GObject
 
 
 
+
 * 
 uop在各阶段传输时，需要不断的拷贝。我们使用智能指针管理uop，通过move函数，可以减少空间使用。
 * 
