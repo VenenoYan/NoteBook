@@ -223,16 +223,14 @@ struct GParameter{
 
 本例中每创建一个新的Boy对象，就会发射一次BOY_BORN信号，也就会执行一次我们定义的boy_born函数，也就输出一行"Message : A boy was born ."信息。
 
-回页首
-对象的属性和方法
+####对象的属性和方法
 
 对象实例所有的属性和方法一般都定义在对象的实例结构中，属性定义为变量或变量指针，而方法则定义为函数指针，如此，我们一定要定义函数为static类型，当为函数指针赋值时，才能有效。
 
-回页首
-对象的继承
+####对象的继承
 
 以下为继承自Boy对象的Man对象的实现，Man对象在Boy对象的基础上又增加了一个属性job和一个方法bye。
-
+```C
 #ifndef __MAN_H__
 #define __MAN_H__
 #include "boy.h"
@@ -319,7 +317,7 @@ void man_info(Man *man)
 	g_print("the man age is %d\n", BOY(man)->age);
 	g_print("the man job is %s\n", man->job);
 }
-
+```
 关键在于定义对象时将父对象实例定义为Boy，父类设定为BoyClass，在注册此对象时将其父对象类型设为BOY_TYPE，在设定对象属性时如用到父对象的属性要强制转换下，如取得对象的name属性，就必须用BOY(obj)->name，因为Man本身没有name属性，而其父对象Boy有，所以用BOY宏将其强制为Boy类型的对象。
 
 回页首
