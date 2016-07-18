@@ -320,8 +320,7 @@ void man_info(Man *man)
 ```
 关键在于定义对象时将父对象实例定义为Boy，父类设定为BoyClass，在注册此对象时将其父对象类型设为BOY_TYPE，在设定对象属性时如用到父对象的属性要强制转换下，如取得对象的name属性，就必须用BOY(obj)->name，因为Man本身没有name属性，而其父对象Boy有，所以用BOY宏将其强制为Boy类型的对象。
 
-回页首
-测试我们定义的对象
+####测试我们定义的对象
 
 #include <glib.h>
 #include "boy.h"
