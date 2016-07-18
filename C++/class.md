@@ -184,7 +184,27 @@ int main()
     * 不适合虚函数：普通函数(重载而不是重写)、构造函数(还不知道对象类型怎么选)、内联(编译时展开)、友元函数(友元不能继承)、
         静态函数(类持有的，不是对象)
 
-函数调用过程分析：```C```
+函数调用过程分析：
+```C
+    Base *pb = new Derive;
+    pb->print();
+    Base& rb = *pb;
+    rb.print();
+    Derive d;
+    d.print();
+    Base *pbb = &d; 
+    pbb->print();
+    Base& rbb = d;
+    rbb.print();
+    Base b;
+    b.print();
+    Derive *pd = (Derive*)&b;
+    pd->print();
+    Derive& rd = *(Derive*)&b;
+    rd.print();
+    delete pb; 
+    return 0;
+```
 1. 
 [类大小及内存管理](http://blog.csdn.net/youoran/article/details/11069803)
 
