@@ -185,6 +185,12 @@ int main()
         静态函数(类持有的，不是对象)
 
 函数调用过程分析：
+* 
+先参数入栈
+* 
+从虚表中找到函数地址
+* 
+函数
 ```C
 #include <iostream>
 using namespace std;
