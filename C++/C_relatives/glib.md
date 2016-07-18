@@ -35,7 +35,7 @@ GType 是GLib 运行时类型认证和管理系统。GType API 是GObject的基�
     对象的实例（多个，结构型，对象的具体实现）。 
 
 基于GObject的对象到底是什么样的呢？下面是基于GObject的简单对象 -- Boy的定义代码：
-
+```C
 /* boy.h */
 #ifndef __BOY_H__
 #define __BOY_H__
@@ -67,7 +67,7 @@ Boy*  boy_new_with_age(gint age);
 Boy*  boy_new_with_name_and_age(gchar *name, gint age);
 void  boy_info(Boy *boy);
 #endif /* __BOY_H__*/
-
+```
 这是一段典型的C语言头文件定义，包括编译预处理，宏定义，数据结构定义和函数声明；首先要看的是两个数据结构对象Boy和BoyClass，
 
 结构类型_Boy是Boy对象的实例，就是说我们每创建一个Boy对象，也就同时创建了一个Boy结构。Boy对象中的parent表示此对象的父类，GObject系统中所有对象的共同的根都是GObject类，所以这是必须的；其它的成员可以是公共的，这里包括表示年龄的age，表示名字的name和表示方法的函数指针cry，外部代码可以操作或引用它们。
