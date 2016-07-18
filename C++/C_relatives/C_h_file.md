@@ -1,7 +1,5 @@
 
 ## C常用头文件
-[链接1---牛人整理](http://ganquan.info/standard-c/)<br>
-[链接2---C语言中文网](http://c.biancheng.net/cpp/u/hs1/)
 
 1.      
 定义单行宏：主要有以下三种用法．
