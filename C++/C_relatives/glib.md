@@ -321,7 +321,7 @@ void man_info(Man *man)
 关键在于定义对象时将父对象实例定义为Boy，父类设定为BoyClass，在注册此对象时将其父对象类型设为BOY_TYPE，在设定对象属性时如用到父对象的属性要强制转换下，如取得对象的name属性，就必须用BOY(obj)->name，因为Man本身没有name属性，而其父对象Boy有，所以用BOY宏将其强制为Boy类型的对象。
 
 ####测试我们定义的对象
-
+```C
 #include <glib.h>
 #include "boy.h"
 #include "man.h"
@@ -373,7 +373,7 @@ the man age is 30
 the man job is Teacher
 
 Makefile中用到`pkg-config -cflags -libs gobject-2.0`，在GLIB中将线程（gthread），插件（gmoudle）和对象系统（gobject）这三个子系统区别对待，编译时要注意加入相应的参数。
-
+```
 本文只是概要的介绍了如何定义和实现GObject对象，GObject系统中还有很多相关内容，如：枚举和标识类型（Enumeration and flags types）；Gboxed，是Gtype系统中注册一种封装为不透明的C语言结构类型的机制；许多对象用到的参数对象都是C结构类型，使用者不必了解其结构的内部定义，即不透明，GBoxed即是实现这一功能的机制；标准的参数和变量类型的定义（Standard Parameter and Value Types）等，它们都以C语言来开发，是深入了解和掌握GObject的关键。
 
 透过以上代码实现，我们还可以看出，以GLIB为基础的GTK+/GNOME开发环境所具有的独特的编程风格和独到的开发思想。这一点在长期的编程实践中会体验得更深刻。
