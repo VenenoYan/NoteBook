@@ -186,6 +186,20 @@ int main()
 
 函数调用过程分析：
 ```C
+#include <iostream>
+using namespace std;
+class Base
+{
+public:
+    virtual void print(const int a = 10) {cout<<"Base: "<<a<<endl;}
+};
+class Derive : public Base
+{
+public:
+    virtual void print(const int a = 100) {cout<<"Derive: "<<a<<endl;}
+};
+int main()
+{
     Base *pb = new Derive;
     pb->print();
     Base& rb = *pb;
@@ -204,6 +218,17 @@ int main()
     rd.print();
     delete pb; 
     return 0;
+}
+你认为运行后的结果是什么呢？
+下面是在我机器上的运行结果（Linux dev 2.6.32，gcc (GCC) 4.8.1）
+Derive: 10
+Derive: 10
+Derive: 100
+Derive: 10
+Derive: 10
+Base: 10
+Base: 100
+Base: 100
 ```
 1. 
 [类大小及内存管理](http://blog.csdn.net/youoran/article/details/11069803)
