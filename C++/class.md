@@ -235,7 +235,7 @@ Derive: 10
 Base: 10
 Base: 100
 Base: 100
-先参数入栈（编译器做的）
+先参数入栈（编译器做的），所以第一个输出1
 ```
 1. 
 [类大小及内存管理](http://blog.csdn.net/youoran/article/details/11069803)
