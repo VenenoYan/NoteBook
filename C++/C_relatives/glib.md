@@ -78,8 +78,7 @@ void  boy_info(Boy *boy);
 
 宏在GObject系统中用得相当广泛，也相当重要，这里我们定义了两个非常关键的宏，BOY_TYPE宏封装了boy_get_type函数，可以直接取得并替代Boy对象的ID标识；BOY(obj)宏是G_TYPE_CHECK_INSTANCE_CAST宏的再一次封装，目的是将一个Gobject对象强制转换为Boy对象，这在对象的继承中十分关键，也经常用到。
 
-回页首
-对象的实现
+####对象的实现
 
 下面的代码实现了上面的Boy对象的定义：
 
