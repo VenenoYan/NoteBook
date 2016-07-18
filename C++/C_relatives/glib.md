@@ -192,23 +192,23 @@ GTypeInfo结构中定义了对象的类型信息，包括以下内容：
     基础初始化函数（base initialization function，可选）；
     基础结束化函数（base finalization function，可选）；
 
-    （以上两个函数可以对对象使用的内存来做分配和释放操作，使用时要用GBaseInitFunc和GBaseFinalizeFunc来转换为指针，本例中均未用到，故设为NULL。）
-    类初始化函数（即我们这里的boy_class_init函数，用GclassInit宏来转换，可选，仅用于类和实例类型）；
-    类结束函数（可选）；
-    实例初始化函数（可选，即我们这里的boy_init函数）；
-    最后一个成员是GType变量表（可选）。 
+（以上两个函数可以对对象使用的内存来做分配和释放操作，使用时要用GBaseInitFunc和GBaseFinalizeFunc来转换为指针，本例中均未用到，故设为NULL。）
+类初始化函数（即我们这里的boy_class_init函数，用GclassInit宏来转换，可选，仅用于类和实例类型）；
+类结束函数（可选）；
+实例初始化函数（可选，即我们这里的boy_init函数）；
+最后一个成员是GType变量表（可选）。 
 
 定义好GTypeInfo结构后就可以用g_type_register_static函数来注册对象的类型了。
 
 g_type_register_static函数用来注册对象的类型，它的第一个参数是表示此对象的父类的对象类型，我们这里是G_TYPE_OBJECT，这个宏用来表示GObject的父类；第二个参数表示此对象的名称，这里为"Boy"；第三个参数是此对象的GTypeInfo结构型指针，这里赋值为&boyinfo；第四个参数是对象注册成功后返回此对象的整型ID标识。
 
 g_object_new函数，用来创建一个基于G_OBJECT的对象，它可以有多个参数，第一个参数是上面说到的已注册的对象标识ID；第二个参数表示后面参数的数量，如果为0，则没有第三个参数；第三个参数开始类型都是GParameter类型，它也是一个结构型，定义为：
-
+```C
 struct GParameter{
 		const gchar* name;
 		GValue value;
 	};
-
+```
 关于GValue，它是变量类型的统一定义，它是基础的变量容器结构，用于封装变量的值和变量的类型，可以GOBJECT文档的GVALUE部分。
 
 回页首
