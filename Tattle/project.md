@@ -15,8 +15,11 @@ MTV框架
 Glib（Generic lib）：GType、GObject
 * 
 算法：分块（FSP、VSP）、MD5、RSA加密
+* 
+Django中间件：后台管理界面等
 
 ##进销存系统
+* 
 
 
 
