@@ -441,16 +441,14 @@ GObject的动态类型系统允许程序在运行时进行类型注册，它的�
 
     很简单，我们只需要建立自己的头文件，并添加一些宏定义G_DEFINE_TYPE即可。
 
-     这样，GUPnPContext就成为了Gobject库认可的一类合法公民了，即成功的把GUpnPContextClass类所代表的type(类型)注册到了glib类型系统中，并且将成功获取到一个类型ID。
+这样，GUPnPContext就成为了Gobject库认可的一类合法公民了，即成功的把GUpnPContextClass类所代表的type(类型)注册到了glib类型系统中，并且将成功获取到一个类型ID。
 
-     也就是说，当你设计新类时，GUPnPContext可以被考虑加进你的继承体系，同时GUPnPContext也可以被用于组合成其他的类。
+也就是说，当你设计新类时，GUPnPContext可以被考虑加进你的继承体系，同时GUPnPContext也可以被用于组合成其他的类。
  进一步理解GType类型系统
 —Gtype类型系统是Glib运行时类型认证和管理系统。
 —Gtype API是Gobject系统的基础，它提供注册和管理所有基本数据、用户定义对象和接口类型的技术实现。如： G_DEFINE_TYPE宏、G_DEFINE_INTERFACE宏、g_type_register_static函数等都在GType实现。
-—前面提到的G_DEFINE_TYPE宏，展开后主要用于实现用户定义类型，包括：声明类初始化函数、声明实例初始化函数、声明父类的一些信息、以及用于获取分配类型ID的xx_xx_get_type()函数；如下图所示：
- 
-
- GOBEJCT如何实现继承
+—前面提到的G_DEFINE_TYPE宏，展开后主要用于实现用户定义类型，包括：声明类初始化函数、声明实例初始化函数、声明父类的一些信息、以及用于获取分配类型ID的xx_xx_get_type()函数
+#### GOBEJCT如何实现继承
 —前面我们已经介绍，在 GObject世界里，类是两个结构体的组合，一个是实例结构体，另一个是类结构体。
 —很容易理解，GOBJECT的继承需要实现实例结构体的继承和类结构体的继承。
 —在前面的例子，我们通过在gupnpcontext实例中显示声明GSSDPClient parent来告知gobject系统GSSDPClient是gupnpcontext实例的双亲；同时，通过GUPnPContextClass定义中声明GSSDPClientClassparent_class。通过实例结构体和类结构体的共同声明，
