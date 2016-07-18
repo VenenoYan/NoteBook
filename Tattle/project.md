@@ -14,7 +14,7 @@ MTV框架
 * 
 Glib（Generic lib）：GType、GObject
 * 
-分块算法
+算法：分块（FDC、CDC）
 
 
 
