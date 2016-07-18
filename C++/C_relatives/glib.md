@@ -513,7 +513,7 @@ GOBJECT属性实现：泛型与多态
 
 名转换为枚举的属性ID，GParamSpec也是一个能把所有东西都粘在一起的大胶水。
 
-gobject属性设置
+####gobject属性设置
  
 —当我们需要设置或者获取一个属性的值时，传入属性的名字，并且带上GValue用来保存我们要设置的值，调用g_object_set/get_property。g_object_set_property函数将在GParamSpec中查找我们要设置的属性名称，查找我们对象的类，并且调用对象的set_property方法。这意味着如果我们要增加一个新的属性，就必须要覆盖默认的set/get_property方法。而且基类包含的属性将被它自己的方法所正常处理，因为GParamSpec就是从基类传递下来的。最后，应该记住，我们必须事先通过对象的class_init方法来传入GParamSpec参数，用于安装上属性！
  Gobject消息系统：闭包
