@@ -2,7 +2,7 @@
 
 5. linux下如何修改进程优先级？（nice命令的使用）。
 6. linux下性能监控命令uptime介绍，平均负载的具体含义是什么？建议看server load概念。
-7. 调试程序。bt显示栈信息
+7. 调试程序。bt显示栈信息，-g添加所有信息
 
 查看cpu信息
 cat /proc/cpiinfo
