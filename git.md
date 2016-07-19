@@ -13,7 +13,7 @@ $git config [--global/system] color.ui true   颜色
 $git config [--global/system] alias.st status  重命名命令---别名
 $git config [--global/system] core.editor vim/emacs    设默认编辑器
 $git config [--global/system] merge.tool vimdiff       比较工具
-写忽略文件：
+写忽略文件：Git工作区的根目录
         编写 .gitignore文件
         规则：
             #   代表注释
