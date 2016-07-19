@@ -13,7 +13,6 @@
 * [GitBook使用](gitbook/README.md)
 * [Web基础](web/README.md)
 * [Django初步](django/README.md)
-* [杂谈](Tattle/README.md)
 
 
 
