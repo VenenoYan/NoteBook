@@ -123,7 +123,7 @@ C++中的new底层也是用的malloc实现的
         while (1) {}  
         return 0;  
     }  
-    会发现
+    会发现40、56M出跳变：原因vector本身占用8M，剩余32M、48M
     ```
 
 [返回目录](README.md)
