@@ -30,8 +30,8 @@ free(p) ;//通过虚拟地址，找到其所对应的物理页面，释放物理
 #include <stdlib.h>
 void main()
 {
-    char * p1;
-    char * p2;
+    char *p1;
+    char *p2;
     int i=1;
     printf("%d\n",sizeof(char *));
     for(;i<100;i++)
