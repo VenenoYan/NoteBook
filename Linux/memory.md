@@ -23,6 +23,26 @@ free(p) ;//通过虚拟地址，找到其所对应的物理页面，释放物理
 但并不是每次申请是否都系统调用，glibc负责批发和零售
 
 ##glibc的malloc内部机制
+```C
+#include<stdio.h>
+#include<stdlib.h>
+int main()
+{
+        char * p1;
+        char * p2;
+        int i=1;
+        printf("%d\n",sizeof(char *));
+        for(;i<100;i++)
+        {
+                p1=NULL;
+                p2=NULL;
+                p1=(char *)malloc(i*sizeof(char));
+                p2=(char *)malloc(1*sizeof(char));
+                printf("i=%d     %d\n",i,(p2-p1));
+        }
 
+        getchar();
+}
+```
 
 [返回目录](README.md)
