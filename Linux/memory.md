@@ -27,7 +27,7 @@ free(p) ;//通过虚拟地址，找到其所对应的物理页面，释放物理
 ```C
 #include <stdio.h>
 #include <stdlib.h>
-int main()
+void main()
 {
         char * p1;
         char * p2;
