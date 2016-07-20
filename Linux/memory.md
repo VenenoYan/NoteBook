@@ -110,5 +110,20 @@ nextchunk-> +-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+
 ```
 * 
 C++中的new底层也是用的malloc实现的
+    ```C++
+    #include <vector>  
+    using namespace std;  
+    int main(int argc, char *argv[])  
+    {  
+        int malloc_size = atoi(argv[1]);  
+        vector<char *> malloc_vec(1 * 1024 * 1024);  
+        for (size_t i = 0; i < malloc_vec.size(); ++i) {  
+            malloc_vec[i] = new char[malloc_size];  
+        }  
+        while (1) {}  
+        return 0;  
+    }  
+    会发现
+    ```
 
 [返回目录](README.md)
