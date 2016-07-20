@@ -57,7 +57,9 @@ void main()
 #ifndef MALLOC_ALIGNMENT  
 #define MALLOC_ALIGNMENT       (2 * SIZE_SZ)  
 #endif  
+/*===================================================================
 
+===================================================================*/
 
 struct malloc_chunk {  
   INTERNAL_SIZE_T      prev_size;  /* Size of previous chunk (if free).  */  
