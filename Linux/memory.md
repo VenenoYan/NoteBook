@@ -40,7 +40,7 @@ void main()
             p2=NULL;
             p1=(char *)malloc(i*sizeof(char));
             p2=(char *)malloc(1*sizeof(char));
-            printf("i=%d     %d\n",i,(p2-p1));   //两个指针的距离===内存
+            printf("i=%d     %d\n",i,(p2-p1));   //两个指针的距离===得到内存布局
     }
 
     getchar();
