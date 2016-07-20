@@ -57,6 +57,7 @@ void main()
 #ifndef MALLOC_ALIGNMENT  
 #define MALLOC_ALIGNMENT       (2 * SIZE_SZ)  
 #endif  
+
 /*===================================================================
     MALLOC_ALIGNMENT：是不是对其大小？
     不是，这个是每次申请空间大于阀值(下面的MINSIZE)时，补充的大小；
