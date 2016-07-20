@@ -29,20 +29,20 @@ free(p) ;//通过虚拟地址，找到其所对应的物理页面，释放物理
 #include <stdlib.h>
 void main()
 {
-        char * p1;
-        char * p2;
-        int i=1;
-        printf("%d\n",sizeof(char *));
-        for(;i<100;i++)
-        {
-                p1=NULL;
-                p2=NULL;
-                p1=(char *)malloc(i*sizeof(char));
-                p2=(char *)malloc(1*sizeof(char));
-                printf("i=%d     %d\n",i,(p2-p1));   //两个指针的距离
-        }
+    char * p1;
+    char * p2;
+    int i=1;
+    printf("%d\n",sizeof(char *));
+    for(;i<100;i++)
+    {
+            p1=NULL;
+            p2=NULL;
+            p1=(char *)malloc(i*sizeof(char));
+            p2=(char *)malloc(1*sizeof(char));
+            printf("i=%d     %d\n",i,(p2-p1));   //两个指针的距离
+    }
 
-        getchar();
+    getchar();
 }
 ```
 
