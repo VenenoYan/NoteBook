@@ -24,8 +24,8 @@ free(p) ;//通过虚拟地址，找到其所对应的物理页面，释放物理
 
 ##glibc的malloc内部机制
 ```C
-#include<stdio.h>
-#include<stdlib.h>
+#include <stdio.h>
+#include <stdlib.h>
 int main()
 {
         char * p1;
