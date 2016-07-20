@@ -23,6 +23,7 @@ free(p) ;//通过虚拟地址，找到其所对应的物理页面，释放物理
 但并不是每次申请是否都系统调用，glibc负责批发和零售
 
 ##glibc的malloc内部机制
+可以先运行下面的程序，会发现：
 ```C
 #include <stdio.h>
 #include <stdlib.h>
