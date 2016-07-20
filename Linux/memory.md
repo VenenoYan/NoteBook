@@ -70,8 +70,8 @@ struct malloc_chunk {
   struct malloc_chunk* fd;         /* double links -- used only if free. */  
   struct malloc_chunk* bk;  
 };  
-==============
-/*===============================================================================================
+
+/*=================================================================================
     An allocated chunk looks like this:  
     chunk-> +-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+  
             |             Size of previous chunk, if allocated            | |  
