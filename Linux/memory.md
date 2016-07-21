@@ -4,7 +4,7 @@ malloc：申请一段内存，不初始化
 * 
 calloc：申请一段内存，初始化为0
 * 
-relloc
+realloc：
 * 
 
 
