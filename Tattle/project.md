@@ -25,7 +25,8 @@
 ##海云存储
 * 
 MTV框架
-
+* 
+Django机制（消息）
 * 
 Glib（Generic lib）：GType、GObject
 * 
