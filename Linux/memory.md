@@ -208,7 +208,7 @@ void *malloc(unsigned nbytes)
                 return NULL; /* none left */
     }
 }
-#define NALLOC 1024    /* minimum #units to request  每次最小的申请 */
+#define NALLOC 1024    /* minimum #units to request  每次最小的申请单元 */
 static Header *morecore(unsigned nu)
 {
     char *cp;
@@ -227,6 +227,26 @@ static Header *morecore(unsigned nu)
 * 由于调用了sbrk()，系统开销比较大，为避免morecore()本身的调用次数，设定了一个NALLOC，
 * 如果每次申请的空间小于NALLOC，就申请NALLOC大小的空间，使得后续malloc()不必每次都需要调用morecore()
 */
+
+void free(void *ap)
+{
+    Header *bp,*p;
+    bp = (Header *)ap -1; /* point to block header */
+    for(p=freep;!(bp>p && bp< p->s.ptr);p=p->s.ptr)
+        if(p>=p->s.ptr && (bp>p || bp<p->s.ptr))
+            break;    /* freed block at start or end of arena*/
+    if (bp+bp->s.size==p->s.ptr) {    /* join to upper nbr */
+        bp->s.size += p->s.ptr->s.size;
+        bp->s.ptr = p->s.ptr->s.ptr;
+    } else
+        bp->s.ptr = p->s.ptr;
+    if (p+p->s.size == bp) {     /* join to lower nbr */
+        p->s.size += bp->s.size;
+        p->s.ptr = bp->s.ptr;
+    } else
+        p->s.ptr = bp;
+    freep = p;
+}
 ```
 
 
