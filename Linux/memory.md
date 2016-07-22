@@ -220,7 +220,7 @@ static Header *morecore(unsigned nu)
         return NULL;
     up = (Header *)cp;
     up->s.size = nu;
-    free((void *)(up+1));
+    free((void *)(up+1));   //使用之前先
     return freep;
 }
 /*
