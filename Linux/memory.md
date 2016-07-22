@@ -224,6 +224,10 @@ static Header *morecore(unsigned nu)
     free((void *)(up+1));
     return freep;
 }
+/*
+由于调用了sbrk()，系统开销比较大，为避免morecore()本身的调用次数，设定了一个NALLOC，
+如果每次申请的空间小于NALLOC，就申请NALLOC大小的空间，使得后续malloc()不必每次都需要调用morecore()。
+*/
 ```
 
 ![](20130917084159562.png)
