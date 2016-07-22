@@ -1,3 +1,4 @@
+[安装Linux](https://www.ibm.com/developerworks/cn/linux/l-lwl1/)
 **python:**
 ```C
 sudo apt-get install python```
