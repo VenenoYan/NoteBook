@@ -8,6 +8,19 @@ realloc：重新对原有的空间，分配大小。一般是扩容：realloc(pt
 * 
 alloca：最特殊的开辟栈空间方法，优点是当离开调用这个函数的时候，栈所分配的空间会自动释放（也就是free）
 
+###基础点
+当一个进程发生缺页中断的时候，进程会陷入内核态，执行以下操作： 
+* 
+检查要访问的虚拟地址是否合法 
+* 
+查找/分配一个物理页 
+* 
+填充物理页内容（读取磁盘，或者直接置0，或者啥也不干） 
+* 
+建立映射关系（虚拟地址到物理地址） 
+* 
+重新执行发生缺页中断的那条指令 
+
 ##内存分配器：
 * 
 dlmalloc - 通用分配器
@@ -33,7 +46,8 @@ char *p=malloc(2048); //这里只是分配了虚拟内存2048，并不占用实�
 strcpy(p,”123”) ;//分配了物理页面，虽然只是使用了3个字节，但内存还是为它分配了2048字节的物理内存。 
 free(p) ;//通过虚拟地址，找到其所对应的物理页面，释放物理页面，释放线性区。  
 ```
-但并不是每次申请是否都系统调用，glibc负责批发和零售
+但并不是每次申请是否都系统调用，glibc负责批发和零售<br>
+所以：这两种方式分配的都是虚拟内存，没有分配物理内存。在第一次访问已分配的虚拟地址空间的时候，发生缺页中断，操作系统负责分配物理内存，然后建立虚拟内存和物理内存之间的映射关系。
 
 ##glibc的malloc内部机制
 可以先运行下面的程序，会发现：16、24、32、40(32Bit系统)；32、48、64(64Bit系统)；会有跳变<br>当然也可以用top命令重点才看res(Resident size)指标
@@ -81,7 +95,7 @@ struct malloc_chunk {
   INTERNAL_SIZE_T      prev_size;  /* Size of previous chunk (if free).  */  
   INTERNAL_SIZE_T      size;       /* Size in bytes, including overhead. */  
   struct malloc_chunk* fd;         /* double links -- used only if free. */  forward point
-  struct malloc_chunk* bk;  
+  struct malloc_chunk* bk;              // back point
 };  
 
 /*=================================================================================
