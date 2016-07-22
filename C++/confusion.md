@@ -170,7 +170,8 @@ __shared_count& operator=(const __shared_count& __r) // nothrow
     if (flag == FALSE)  
         if (flag == 0)     
 
-标准答案示例：
+标准答案示例：因为float的精度是6位，即精确到小数点后第五位，所以应该使用其精确位0.00001；
+同理双精度小数其精度为15位，精确到小数点后第14位。
 const float EPSINON = 0.00001;
 if ((x >= - EPSINON) && (x <= EPSINON)
 不可将浮点变量用“==”或“！=”与数字比较，应该设法转化成“>=”或“<=”此类形式。
