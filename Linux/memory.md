@@ -184,6 +184,9 @@ C++中的new底层也是用的malloc实现的
 * 
 第二：如果申请空间大于128K，那么会调用mmap进行申请，不是在此处了，而是在堆和栈之间的文件映射区；
 
+###Buddy、Slab
+
+
 ###Linux通过slab容器分配task_struct结构，这样能达到对象复用和缓存着色的目的”
 * 
 task_struct：学过操作系统的知道，每个进程都有一个PCB（process control block），是控制进程的唯一也是最有效的手段；在调用fork()函数创建新的进程时时系统自动为我们创建的。
