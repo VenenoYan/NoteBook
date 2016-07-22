@@ -167,6 +167,17 @@ C++中的new底层也是用的malloc实现的
 ###malloc过程
 ####源码
 ```C++
+typedef long Align;/*for alignment to long boundary*/
+union header { 
+    struct {
+        union header *ptr; /*next block if on free list*/
+        unsigned size; /*size of this block*/
+    } s;
+    Align x;
+};
+
+typedef union header Header;
+
 static Header base;
 static Header *freep = NULL;
 
