@@ -208,8 +208,6 @@ void *malloc(unsigned nbytes)
                 return NULL; /* none left */
     }
 }
-
-
 ```
 
 ![](20130917084159562.png)
