@@ -176,7 +176,8 @@ union header {
     Align x;
 };
 typedef union header Header;
-/*x只是为了对齐，按x的倍数分配；因为union除了保证最大的元素所需空间外，还保证所有空间对所有元素都是对齐的。因此虽然x不会被使用，但是内存空间对齐受其影响！
+/*x只是为了对齐，按x的倍数分配；因为union除了保证最大的元素所需空间外，
+还保证所有空间对所有元素都是对齐的。因此虽然x不会被使用，但是内存空间对齐受其影响！
 */
 static Header base;
 static Header *freep = NULL;
