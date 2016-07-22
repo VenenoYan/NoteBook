@@ -168,7 +168,37 @@ C++中的new底层也是用的malloc实现的
 ![](20130917084159562.png)
 
 ####源码
+```C++
+static Header base;
+static Header *freep = NULL;
 
+void *malloc(unsigned nbytes)
+{
+    Header *p, *prevp;
+    unsigned nunits;
+    nunits = (nbytes+sizeof(Header)-1)/sizeof(Header) + 1;
+    if((prevp = freep) == NULL) { /* no free list */
+        base.s.ptr = freep = prevp = &base;
+        base.s.size = 0;
+    }
+    for(p = prevp->s.ptr; ;prevp = p, p= p->s.ptr) {
+        if(p->s.size >= nunits) { /* big enough */
+            if (p->s.size == nunits)  /* exactly */
+                prevp->s.ptr = p->s.ptr;
+            else {
+                p->s.size -= nunits;
+                p += p->s.size;
+                p->s.size = nunits;
+            }
+            freep = prevp;
+            return (void*)(p+1);
+        }
+        if (p== freep) /* wrapped around free list */
+            if ((p = morecore(nunits)) == NULL)
+                return NULL; /* none left */
+    }
+}
+```
 
 图中白色背景的框表示 malloc管理的空闲内存块，深色背景的框不归 malloc管，可能是已经分配给用户的内存块，也可能不属于当前进程， Break之上的地址不属于当前进程，需要通过 brk系统调用向内核申请。**每个内存块开头都有一个头节点，**里面有一个指针字段和一个长度字段，指针字段把所有空闲块的头节点串在一起，组成一个环形链表，长度字段记录着头节点和后面的内存块加起来一共有多长，**以 8字节为单位**（也就是以头节点的长度为单位）。
 * 
