@@ -8,6 +8,13 @@ realloc：重新对原有的空间，分配大小。一般是扩容：realloc(pt
 * 
 alloca：最特殊的开辟栈空间方法，优点是当离开调用这个函数的时候，栈所分配的空间会自动释放（也就是free）
 
+##内存分配器：
+dlmalloc - 通用分配器
+ptmallac2- glibc
+jemalloc - FreeBSD & Firefox
+tcmalloc - Google
+libumem - Solaris ...
+每种内存分配器都说他们是最快的、可扩展并且具有高效的内存使用！！但是并非所有的分配器都适合我们自己的应用程序。内存消耗大的应用性能很大程度依赖于内存分配器的性能。本文中，我只讨论 "glibc malloc” 内存分配器。并希望今后能涉及到其他内存分配器的讨论。本文中为了更好的理解 ”glibc malloc”,我会联系它最近的源码来谈。好，下面系好你的安全带，我们开启探索 glibc malloc 的旅程！！
 ###Linux通过slab容器分配task_struct结构，这样能达到对象复用和缓存着色的目的”
 * 
 task_struct：学过操作系统的知道，每个进程都有一个PCB（process control block），是控制进程的唯一也是最有效的手段；在调用fork()函数创建新的进程时时系统自动为我们创建的。
