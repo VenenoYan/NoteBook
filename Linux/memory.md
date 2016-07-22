@@ -208,7 +208,7 @@ void *malloc(unsigned nbytes)
                 return NULL; /* none left */
     }
 }
-#define NALLOC 1024    /* minimum #units to request */
+#define NALLOC 1024    /* minimum #units to request  每次最小的申请 */
 static Header *morecore(unsigned nu)
 {
     char *cp;
