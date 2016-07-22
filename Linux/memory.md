@@ -180,7 +180,7 @@ C++中的new底层也是用的malloc实现的
 * 
 调用 free(p3)释放这个内存块，由于它和前一个空闲块连续，又重新合并成一个空闲块。注意， Break只能抬高而不能降低，从内核申请到的内存以后都归 malloc管了，即使调用 free也不会还给内核。 
 * 
-综上：分配的大小：sizeof(header)+n
+**综上：分配的大小：sizeof(header)+n**
 
 ###Linux通过slab容器分配task_struct结构，这样能达到对象复用和缓存着色的目的”
 * 
