@@ -179,6 +179,8 @@ typedef union header Header;
 /* x只是为了对齐，按x的倍数分配；因为union除了保证最大的元素所需空间外，
 * 还保证所有空间对所有元素都是对齐的。因此虽然x不会被使用，但是内存空间对齐受其影响！
 */
+
+#define NALLOC 1024    /* minimum #units to request */
 static Header base;
 static Header *freep = NULL;
 
@@ -208,10 +210,7 @@ void *malloc(unsigned nbytes)
                 return NULL; /* none left */
     }
 }
-```
-```C
 
-#define NALLOC 1024    /* minimum #units to request */
 static Header *morecore(unsigned nu)
 {
     char *cp;
@@ -231,6 +230,7 @@ static Header *morecore(unsigned nu)
 * 如果每次申请的空间小于NALLOC，就申请NALLOC大小的空间，使得后续malloc()不必每次都需要调用morecore()
 */
 ```
+
 
 ![](20130917084159562.png)
 
