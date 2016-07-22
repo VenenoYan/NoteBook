@@ -175,8 +175,8 @@ union header {
     } s;
     Align x;
 };
-
 typedef union header Header;
+//x只是为了对齐，按x的倍数
 
 static Header base;
 static Header *freep = NULL;
