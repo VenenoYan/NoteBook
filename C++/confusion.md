@@ -204,5 +204,7 @@ new调用malloc
 malloc是函数调用，new是操作符
 * 
 malloc未初始化，new是初始化的，自动调用构造函数/析构函数。
+* 
+malloc返回（void*），new返回对象指针
 
 [返回目录](README.md)
