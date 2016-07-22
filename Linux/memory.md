@@ -210,6 +210,7 @@ void *malloc(unsigned nbytes)
 }
 ```
 ```C
+
 #define NALLOC 1024    /* minimum #units to request */
 static Header *morecore(unsigned nu)
 {
