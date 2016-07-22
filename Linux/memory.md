@@ -186,7 +186,7 @@ void *malloc(unsigned nbytes)
 {
     Header *p, *prevp;
     unsigned nunits;
-    nunits = (nbytes+sizeof(Header)-1)/sizeof(Header) + 1;
+    nunits = (nbytes+sizeof(Header)-1)/sizeof(Header) + 1;  //以Header的倍数分配，多余一个放头部x
     if((prevp = freep) == NULL) { /* no free list */
         base.s.ptr = freep = prevp = &base;
         base.s.size = 0;
