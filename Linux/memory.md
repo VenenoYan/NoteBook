@@ -18,7 +18,7 @@ jemalloc - FreeBSD & Firefox
 * 
 tcmalloc - Google
 * 
-libumem - Solaris ...
+libumem - Solaris ...<br>
 每种内存分配器都说他们是最快的、可扩展并且具有高效的内存使用！！但是并非所有的分配器都适合我们自己的应用程序。内存消耗大的应用性能很大程度依赖于内存分配器的性能。本文中，我只讨论 "glibc malloc” 内存分配器。并希望今后能涉及到其他内存分配器的讨论。本文中为了更好的理解 ”glibc malloc”,我会联系它最近的源码来谈。好，下面系好你的安全带，我们开启探索 glibc malloc 的旅程！！
 ###Linux通过slab容器分配task_struct结构，这样能达到对象复用和缓存着色的目的”
 * 
