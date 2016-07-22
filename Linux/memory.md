@@ -181,7 +181,6 @@ typedef union header Header;
 */
 static Header base;
 static Header *freep = NULL;
-
 void *malloc(unsigned nbytes)
 {
     Header *p, *prevp;
@@ -208,7 +207,6 @@ void *malloc(unsigned nbytes)
                 return NULL; /* none left */
     }
 }
-
 #define NALLOC 1024    /* minimum #units to request */
 static Header *morecore(unsigned nu)
 {
