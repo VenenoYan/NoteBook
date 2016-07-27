@@ -8,8 +8,8 @@
 #define __UPPER_NAME_H__
 #include <>/""          //头文件不放到命名空间中：否则定义头文件中所有名字为它的成员
 namespace xxx{
-global variable/function
-class{};
+    global variable/function
+    class{};
 ]
 #endif```
 3. 
