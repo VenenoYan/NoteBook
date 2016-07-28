@@ -233,7 +233,7 @@ git daemon搭建：
 1. 
 git reset 与git revert区别
     1. git reset (--hard/soft) commit-id 返回到某一个提交。从那开始之后的提交没了
-    1. 
+    1. git revert commit-id 相当于把某个提交重做一遍，添加一个提交记录，而不删除。
 
 1. 
 ###git merge 与 git rebase 的区别
