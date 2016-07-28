@@ -42,8 +42,9 @@ auto、static、register、extern、const和volitate
     * const：只读常数。普通、引用、指针(6中)
     * volitate：该值可能有意想不到的改变，需要从内存读。因为它是你自己不动也可能改变的东西。
         * 一个参数既可以是const还可以是volatile吗？解释为什么。
-            * 可以。修改状态 
+            * 可以。修改状态寄存器 
         * 一个指针可以是volatile 吗？解释为什么。
+            * 可以。指针
 
 
 
