@@ -44,7 +44,8 @@ priority_queue：是另一个适配器类，支持的操作与queue相同。
         priority_queue<int> pg2(greater<int>);       // use greater<int> to order
         greater<>函数是一个预定义的函数对象。```
 
-        stack：与queue相似，stack也是一个适配器类，它给底层类（默认情况下为vector）提供了典型的栈接口。
+    * 
+stack：与queue相似，stack也是一个适配器类，它给底层类（默认情况下为vector）提供了典型的栈接口。
 1. 
 关联容器
     * 
