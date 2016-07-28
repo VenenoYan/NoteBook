@@ -40,7 +40,7 @@ auto、static、register、extern、const和volitate
     * register
     * extern
     * const
-    * volitate:
+    * volitate：
 
 
 
