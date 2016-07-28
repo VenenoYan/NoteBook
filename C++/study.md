@@ -51,7 +51,7 @@ auto、static、register、extern、const和volitate
 * 
 const、static
     * 
-static关键字：
+static关键字：面向过程和面向对象
         * 
 函数体内static变量的作用范围为函数体。不同于auto变量。该变量的内存只被分配一次。因此其值在下次调用时仍维持上次的值。
         * 
