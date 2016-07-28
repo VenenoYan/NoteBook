@@ -529,11 +529,11 @@ GOBJECT属性实现：泛型与多态
 
 一个GClosure提供以下简单的服务：
 
-      调用（g_closure_invoke）：这就是Closure创建的目的： 它们隐藏了回调者的回调细节。
+调用（g_closure_invoke）：这就是Closure创建的目的： 它们隐藏了回调者的回调细节。
 
-       通知：相关事件的Closure通知监听者如Closure调用，Closure无效和Clsoure终结。监听者可以用注册g_closure_add_finalize_notifier（终结通知），g_closure_add_invalidate_notifier（无效通知）和g_closure_add_marshal_guards（调用通知）。
+通知：相关事件的Closure通知监听者如Closure调用，Closure无效和Clsoure终结。监听者可以用注册g_closure_add_finalize_notifier（终结通知），g_closure_add_invalidate_notifier（无效通知）和g_closure_add_marshal_guards（调用通知）。
 
-      对于终结和无效事件来说，这是对等的函数（g_closure_remove_finalize_notifier和g_closure_remove_invalidate_notifier，但调用过程不是。
+对于终结和无效事件来说，这是对等的函数（g_closure_remove_finalize_notifier和g_closure_remove_invalidate_notifier，但调用过程不是。
 
  
 “一眼望穿”闭包
@@ -545,28 +545,19 @@ Gobject为什么搞这么复杂？用于其它语言间的绑定.
 
 我们从分析g_signal_new函数的使用来说明这个问题。第7个参数为GSignalMarshaller类型，它与前面体面提到的GClosureMarshal是一个东西，都是一个函数指针。
 
-  
+GSignalCMarshaller c_marshaller:该参数是一个GSignalCMarshall类型的函数指针，其值反映了回调函数的返回值类型和额外参数类型（所谓“额外参数”，即指除回调函数中instance和user_data以外的参数）。 
 
-     GSignalCMarshaller c_marshaller:该参数是一个GSignalCMarshall类型的函数指针，其值反映了回调函数的返回值类型和额外参数类型（所谓“额外参数”，即指除回调函数中instance和user_data以外的参数）。 
+例如，g_closure_marshal_VOID_VOID说明该signal的回调函数为以下的callback类型：
+typedef  void (*callback)  (gpointer instance, gpointer user_data);
+而g_closure_marshal_VOID_POINTER则说明该signal的回调函数为以下的callback类型：
+typedef void (*callback)  (gpointer instance,gpointer arg1,gpointer user_data);
+GType return_type:该参数的值应为回调函数的返回值在GType类型系统中的ID。
+guintn_params:该参数的值应为回调函数的额外参数的个数。
+...: 这一系列的参数的值应为回调函数的额外参数在GType类型系统中的ID，且这一系列参数中第一个参数的值为回调函数的第一个额外参数在GType类型系统中的ID，依次类推。
 
-       例如，g_closure_marshal_VOID_VOID说明该signal的回调函数为以下的callback类型：
+可以认为，信号就是包含对可以连接到信号的闭包的描述和对连接到信号的闭包的调用顺序的规定的集合体。
 
-       typedef  void (*callback)  (gpointer instance, gpointer user_data);
-
-      而g_closure_marshal_VOID_POINTER则说明该signal的回调函数为以下的callback类型：
-
-      typedef void (*callback)  (gpointer instance,gpointer arg1,gpointer user_data);
-
-     GType return_type:该参数的值应为回调函数的返回值在GType类型系统中的ID。
-
-     guintn_params:该参数的值应为回调函数的额外参数的个数。
-
-      ...: 这一系列的参数的值应为回调函数的额外参数在GType类型系统中的ID，且这一系列参数中第一个参数的值为回调函数的第一个额外参数在GType类型系统中的ID，依次类推。
-
-
-       可以认为，信号就是包含对可以连接到信号的闭包的描述和对连接到信号的闭包的调用顺序的规定的集合体。
-
-      事实上，它是用来翻译闭包的参数和返回值类型的，它将翻译的结果传递给闭包。之所以不直接调用callback或闭包，而在外面加了一层marshal的封装，主要是方便gobjec库与其他语言的绑定。例如，我们可以写一个pyg_closure_marshal_void_string函数，其中可以调用python语言编写的“闭包”并将其计算结果传递给Gvalue容器，然后再从Gvalue容器中提取计算结果。
+事实上，它是用来翻译闭包的参数和返回值类型的，它将翻译的结果传递给闭包。之所以不直接调用callback或闭包，而在外面加了一层marshal的封装，主要是方便gobjec库与其他语言的绑定。例如，我们可以写一个pyg_closure_marshal_void_string函数，其中可以调用python语言编写的“闭包”并将其计算结果传递给Gvalue容器，然后再从Gvalue容器中提取计算结果。
 Gobject消息系统：Signal机制
 —在gobject系统中，信号是一种定制对象行为的手段，也是一种多种用途的通知机制。
 —每一个信号都是和能发出信号的类型一起注册到系统中的。
