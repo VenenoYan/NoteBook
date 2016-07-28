@@ -35,11 +35,11 @@ exit是系统调用，是不会退栈的，表示一个进程的结束！！它�
     * fork和vfork中区别大，因为vfork是共享内存，所以可以exit，但是不能是return，否则子结束因为退栈把父的也改变了。
 * 
 auto、static、register、extern、const和volitate
-    * auto
-    * static
-    * register
-    * extern
-    * const
+    * auto：
+    * static：
+    * register：
+    * extern：
+    * const：
     * volitate：
 
 
