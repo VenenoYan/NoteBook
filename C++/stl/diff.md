@@ -46,6 +46,8 @@ priority_queue：是另一个适配器类，支持的操作与queue相同。
 
     * 
 stack：与queue相似，stack也是一个适配器类，它给底层类（默认情况下为vector）提供了典型的栈接口。
+    * 
+queue、stack默认用deque,也可以用vector、list实现
 1. 
 关联容器
     * 
