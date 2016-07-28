@@ -63,13 +63,6 @@ git log [--pretty=oneline]  历史记录
 git reflog   查看历史commit-id
 git diff [-w] [file1]  ： 文件[file1]的改动     -w意味着空格改变不会显示
 git blame [-w] file1  查看文件被修改的所有信息  （注意 git log -p参数）
-忽略信息：不提交的内容
-        编写 .gitignore文件
-        规则：
-            #   代表注释
-            *   代表任意字符或字符串
-            ！  不忽略
-            ？  任意字符
 版本回退：
         0)回退到某一次提交(整体)： git checkout [commit-id]
         1)仍在工作区未add:  git checkout --filename1  返回到最近的已提交状态
