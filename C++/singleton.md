@@ -77,7 +77,7 @@ class testsingle{
 }
 ```
 1. 
-局部静态变量：多线程安全问题      良
+局部静态变量：多线程安全问题      
 ```C++
 class singleton{
     private:
