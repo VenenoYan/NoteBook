@@ -1,4 +1,4 @@
-###本文太多，未整理资源是否
+###本文太多，未整理资源是否有效！！
 引自：git clone https://github.com/kirang89/pycrumbs[/blob/master/pycrumbs.md]
 
 ### [python日报](http://py.memect.com/)
