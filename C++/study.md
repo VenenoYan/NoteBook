@@ -35,7 +35,7 @@ exit是系统调用，是不会退栈的，表示一个进程的结束！！它�
     * fork和vfork中区别大，因为vfork是共享内存，所以可以exit，但是不能是return，否则子结束因为退栈把父的也改变了。
 * 
 auto、static、register、extern、const和volitate
-    * auto：自动变量，一般auto省略
+    * auto：自动变量，一般auto省略；C++11用于范围for循环
     * static：局部（延迟初始化&第一次&仅一次）、全局（本文件可见）、函数（本文件可见）、类中（成员、函数===类的，不属于任何实例）
     * register：直接写入寄存器中
     * extern：声明变量在其他文件中
