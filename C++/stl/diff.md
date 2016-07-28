@@ -47,8 +47,10 @@ priority_queue：是另一个适配器类，支持的操作与queue相同。
         stack：与queue相似，stack也是一个适配器类，它给底层类（默认情况下为vector）提供了典型的栈接口。
 1. 
 关联容器
-        4种有序关联容器：set、multiset、map和multimap，底层基于树结构
-        C++11又增加了4种无序关联容器：unordered_set、unordered_multiset、unordered_map和unordered_multimap，底层基于hash。
+    * 
+4种有序关联容器：set、multiset、map和multimap，底层基于树结构
+    * 
+C++11又增加了4种无序关联容器：unordered_set、unordered_multiset、unordered_map和unordered_multimap，底层基于hash。
 
 
 
