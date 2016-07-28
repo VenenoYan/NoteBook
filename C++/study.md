@@ -48,6 +48,8 @@ auto、static、register、extern、const和volitate
             * 可以。修改状态寄存器 
         * 一个指针可以是volatile 吗？解释为什么。
             * 可以。指针可变
+* 
+const、static
 
 
 
