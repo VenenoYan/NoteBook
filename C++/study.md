@@ -40,7 +40,9 @@ auto、static、register、extern、const和volitate
     * register：直接写入寄存器中
     * extern：声明变量在其他文件中
     * const：只读常数。普通、引用、指针(6中)
-    * volitate：该值可能有意想不到的改变，需要从内存读。因为它是你自己不动也可能改变的东西。  
+    * volitate：该值可能有意想不到的改变，需要从内存读。因为它是你自己不动也可能改变的东西。
+        * 一个参数既可以是const还可以是volatile吗？解释为什么。
+        * 一个指针可以是volatile 吗？解释为什么。
 
 
 
