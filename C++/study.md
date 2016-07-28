@@ -39,7 +39,7 @@ auto、static、register、extern、const和volitate
     * static：局部（延迟初始化&第一次&仅一次）、全局（本文件可见）、函数（本文件可见）、类中（成员、函数===类的，不属于任何实例）
     * register：直接写入寄存器中
     * extern：声明变量在其他文件中
-    * const：只读常数。引用、指针
+    * const：只读常数。普通、引用、指针
     * volitate：
 
 
