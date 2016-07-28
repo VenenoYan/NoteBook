@@ -232,6 +232,8 @@ git daemon搭建：
 如果卸载错误或无法卸载，首先下载一个老版本覆盖安装然后卸载即可！
 1. 
 git reset 与git revert区别
+    1. git reset (--hard/soft) commit-id 返回到某一个提交。从那开始之后的提交没了
+    1. 
 
 1. 
 ###git merge 与 git rebase 的区别
