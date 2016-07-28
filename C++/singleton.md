@@ -133,7 +133,7 @@ class Singleton
 Singleton* Singleton::pInstance = 0;
 Singleton* Singleton::Instantialize()
 {
-    /*因此在这里，我使用了指针，并在对指针进行赋值之前使用锁保证在同一时间内只能有一个线程对指针进行初始化。
+    /*因此在这里，使用了指针，并在对指针进行赋值之前使用锁保证在同一时间内只能有一个线程对指针进行初始化。
     同时基于性能的考虑，我们需要在每次访问实例之前检查指针是否已经经过初始化，
 以避免每次对Singleton的访问都需要请求对锁的控制权。*/
 	if(pInstance == NULL)
