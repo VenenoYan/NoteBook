@@ -25,7 +25,6 @@ GType 是GLib 运行时类型认证和管理系统。GType API 是GObject的基�
 
 还可以用g_type_register_fundamental来注册基础类型，它同时需要GTypeInfo和GTypeFundamentalInfo两个结构，事实上大多数情况下这是不必要的，因为系统预先定义的基础类型是优于用户自定义的。
 
-（本文重点介绍创建和使用静态的类型。）
 ####对象的定义
 
 在GObject系统中，对象由三个部分组成：
