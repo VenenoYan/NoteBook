@@ -34,5 +34,5 @@
     
     
     template <typename T1,...typename Tn>
-    ret-type cname<>
+    ret-type cname<T1,...,Tn>::
     ```
