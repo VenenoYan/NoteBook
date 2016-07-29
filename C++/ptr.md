@@ -227,7 +227,7 @@ HasPtr& HasPtr::operator = (const HasPtr &rhs)  //赋值操作符在减少做操
     val = rhs.val;   // 复制int成员  
     return *this;  
 }  
-//==========================模板
+//==================模板
 template <typename T>
     class U_Ptr     //辅助类
     {
