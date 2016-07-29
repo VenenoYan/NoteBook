@@ -52,5 +52,7 @@
 * 
 非类型参数：
     ```template<class T, int a> class B{};其中int a就是非类型的模板形参。```
+    1. 
+非类型模板的形参只能是整型，指针和引用，像double，String, String **这样的类型是不允许的。但是double &，double *，对象的引用或指针是正确的。
 * 
 模板参数：
