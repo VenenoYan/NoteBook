@@ -22,6 +22,8 @@
 1. 
 [智能指针](ptr.md)
 1. 
+[模板](temp.md)
+1. 
 [异常](exception.md)
 1. 
 [日常积累](study.md)
