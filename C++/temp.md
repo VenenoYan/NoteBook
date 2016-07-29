@@ -20,3 +20,10 @@
     ```
 
 ###类模板
+* 
+形式：
+    ```C++ 
+    template<typename T1,...typename Tn>
+    class cname
+    {}  //类中的类型用T1,...,Tn；
+    ```
