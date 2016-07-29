@@ -51,5 +51,6 @@
 类型参数
 * 
 非类型参数
+    ```template<class T, int a> class B{};其中int a就是非类型的模板形参。```
 * 
 模板参数
