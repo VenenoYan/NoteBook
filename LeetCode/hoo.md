@@ -13,6 +13,15 @@ Given a list of non-negative integers representing the amount of money of each h
             int tmp = i;
             i = num[k] + e;
             e = Math.max(tmp, e);
+            
+            if (i%2==0)
+            {
+                a = max(a+num[i], b);
+            }
+            else
+            {
+                b = max(a, b+num[i]);
+            }
         }
         return Math.max(i,e);
     }
