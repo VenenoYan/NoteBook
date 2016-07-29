@@ -34,5 +34,6 @@
     
     
     template <typename T1,...typename Tn>
-    ret-type cname<T1,...,Tn>::
+    ret-type cname<T1,...,Tn>::func(T1 &a,T2 &b,...)
+    {}
     ```
