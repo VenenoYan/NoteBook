@@ -5,3 +5,24 @@ Given a list of non-negative integers representing the amount of money of each h
 
 就是说一个小区，你去偷钱。但是相连的两个都被偷就会触发警报，你被抓。怎么得到最多？最多多少？
 ###Solution
+```C++
+    public int rob(int[] num) {
+        int i = 0;
+        int e = 0;
+        for (int k = 0; k<num.length; k++) {
+            int tmp = i;
+            i = num[k] + e;
+            e = Math.max(tmp, e);
+        }
+        return Math.max(i,e);
+    }
+```
+
+###Lesson
+* 
+基准：
+    ```C
+    f(0) = nums[0]
+    f(1) = max(num[0], num[1])
+    f(k) = max( f(k-2) + nums[k], f(k-1) )
+    ```
