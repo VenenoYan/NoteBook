@@ -317,7 +317,7 @@ template <typename T>
         COSTA_DEBUG_REFCOUNT;
         return *this;
     }
-    析构函数只是调用了_M_pi的_M_release这个成员函数。_M_release这个函数，除了会将引用计数-1之外，还会判断是否引用计数为0， 如果为0就调用_M_dispose()函数。 _M_dispose函数会将share_ptr引用的对象释放内存。 
+    /*析构函数只是调用了_M_pi的_M_release这个成员函数。_M_release这个函数，除了会将引用计数-1之外，还会判断是否引用计数为0， 如果为0就调用_M_dispose()函数。 _M_dispose函数会将share_ptr引用的对象释放内存。 
     ~__shared_count() // nothrow
     {
         if (_M_pi != 0)
