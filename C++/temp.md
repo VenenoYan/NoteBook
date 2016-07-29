@@ -8,6 +8,10 @@
 
 ###函数模板
 * 
-
+    ```C++
+    template <typename T1,...,typename Tn>
+    ret-type func(T1 &a,T2 &b,...)
+    {}
+    ```
 
 ###类模板
