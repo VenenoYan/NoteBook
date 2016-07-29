@@ -288,6 +288,7 @@ template <typename T>
 当一个shared_ptr拷贝复制时， _M_pi指针调用_M_add_ref_copy（）函数将引用计数+1。 当shared_ptr析构时，_M_pi指针调用_M_release()函数将引用计数-1。 _M_release()函数中会判断引用计数是否为0. 如果引用计数为0， 则将shared_ptr引用的对象内存释放掉。
 
 ```C++
+    //首先将参数__r的_M_pi指针赋值给自己， 然后判断指针是否为NULL， 如果不为null 则增加引用计数。
     __shared_count(const __shared_count& __r) 
     : _M_pi(__r._M_pi) // nothrow
     {    
