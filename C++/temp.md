@@ -37,5 +37,5 @@
     ret-type cname<T1,...,Tn>::func(T1 &a,T2 &b,...)
     {}
     template <typename T1,...typename Tn>
-    int cname<T1,...,Tn>::int= 9；
+    int cname<T1,...,Tn>::i= 9;
     ```
