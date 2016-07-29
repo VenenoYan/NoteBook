@@ -281,7 +281,20 @@ template <typename T>
         U_Ptr<T> *rp;  //辅助类对象指针
     };
 ```
-###shared_ptr#源码：
+###shared_ptr源码：
+ shared_ptr的实现
+ shared_ptr模板类有一个__shared_count类型的成员_M_refcount来处理引用计数的问题。__shared_count也是一个模板类，它的内部有一个指向Sp_counted_base_impl类型的指针_M_pi。所有引用同一个对象的shared_ptr都共用一个_M_pi指针。
+
+当一个shared_ptr拷贝复制时， _M_pi指针调用_M_add_ref_copy（）函数将引用计数+1。 当shared_ptr析构时，_M_pi指针调用_M_release()函数将引用计数-1。 _M_release()函数中会判断引用计数是否为0. 如果引用计数为0， 则将shared_ptr引用的对象内存释放掉。
+
+```C++
+    __shared_count(const __shared_count& __r) 
+      : _M_pi(__r._M_pi) // nothrow
+      {    
+    if (_M_pi != 0)
+      _M_pi->_M_add_ref_copy();
+      COSTA_DEBUG_REFCOUNT;
+      }```
 ### **4 weak_ptr**
 
 weak_ptr是为配合shared_ptr而引入的一种智能指针来协助shared_ptr工作，它可以从一个shared_ptr或另一个weak_ptr对象构造，它的构造和析构不会引起引用记数的增加或减少。没有重载*和->但可以使用lock获得一个可用的shared_ptr对象
