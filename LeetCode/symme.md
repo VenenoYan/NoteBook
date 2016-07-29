@@ -32,4 +32,5 @@ But the following [1,2,2,null,3,null,3] is not:
             return false;
         return issy(l->left,r->right)&&issy(l->right,r->left);
     }
+    
 ```
