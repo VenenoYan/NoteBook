@@ -99,6 +99,8 @@ shared_ptr与scoped_ptr一样包装了new操作符在堆上分配的动态对象
 两个的 shared_ptr 实体可以被两个线程同时写入，“析构”算写操作；
 * 
 若[多个线程](http://www.cppblog.com/Solstice/archive/2013/01/28/197597.html)读写同一个 shared_ptr 对象，那么需要加锁：因为 **shared_ptr 有两个数据成员，读写操作不能原子化**
+* 
+ shared_ptr 对象本身的线程安全级别，不是它管理的对象的线程安全级别。
 
 ```C
 __shared_count&
