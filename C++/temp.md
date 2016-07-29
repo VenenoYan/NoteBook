@@ -61,5 +61,4 @@
     1. 
 可以为类模板的类型形参提供默认值，但不能为函数模板的类型形参提供默认值。
     1. 形式：
-```C++
-template<class T1, class T2=int> class A{}```
+```template<class T1, class T2=int> class A{}```
