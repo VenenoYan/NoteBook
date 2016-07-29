@@ -296,6 +296,13 @@ template <typename T>
             _M_pi->_M_add_ref_copy();
             COSTA_DEBUG_REFCOUNT;
     }
+    /*
+    首先，判断等号左右两边的__share_count是否引用同一个对象。如果引用同一个对象(__tmp==_M_pi)，
+    那么引用计数不变，什么都不用做。如果不是的话，就把等号左边的share_ptr的引用计数-1，
+    将等号右边的引用计数+1 。例如： 有两个shared_ptr p1和p2, 运行p1= p2 。
+    假如p1和p2是引用同一个对象的，那么引用计数不变。 如果p1和p2是指向不同对象的，
+    那么p1所指向对象的引用计数-1， p2指向对象的引用计数+1。 
+    */
     __shared_count& operator=(const __shared_count& __r) // nothrow
     {    
         _Sp_counted_base<_Lp>* __tmp = __r._M_pi;
@@ -310,6 +317,7 @@ template <typename T>
         COSTA_DEBUG_REFCOUNT;
         return *this;
     }
+    析构函数只是调用了_M_pi的_M_release这个成员函数。_M_release这个函数，除了会将引用计数-1之外，还会判断是否引用计数为0， 如果为0就调用_M_dispose()函数。 _M_dispose函数会将share_ptr引用的对象释放内存。 
     ~__shared_count() // nothrow
     {
         if (_M_pi != 0)
