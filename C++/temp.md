@@ -23,16 +23,16 @@
 * 
 形式：
     ```C++ 
+    //.H文件
     template<class data_obj>
     class other;    //前置声明：不带类型，只有类名
-        
     template<typename T1,...typename Tn>
     class cname
     {
         ret-type func(T1 &a,T2 &b,...);
     }  //类中的类型用T1,...,Tn
     
-    
+    //.CPP文件
     template <typename T1,...typename Tn>
     ret-type cname<T1,...,Tn>::func(T1 &a,T2 &b,...)
     {}
