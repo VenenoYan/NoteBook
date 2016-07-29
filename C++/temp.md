@@ -25,8 +25,9 @@
     ```C++ 
     template<typename T1,...typename Tn>
     class cname
-    {}  //类中的类型用T1,...,Tn
+    {
+        template <typename T1,...typename Tn>
+        ret-type func(T1 &a,T2 &b,...);
+    }  //类中的类型用T1,...,Tn
     
-    template <typename T1,...typename Tn>
-    ret-type func(T1 &a,T2 &b,...);
     ```
