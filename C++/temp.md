@@ -23,6 +23,9 @@
 * 
 形式：
     ```C++ 
+    template<class data_obj>
+    class clk_oport;    //前置声明
+        
     template<typename T1,...typename Tn>
     class cname
     {
