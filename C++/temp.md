@@ -7,11 +7,13 @@
 不能“分离编译”
 
 ###函数模板
-* 
+* 形式：
     ```C++
     template <typename T1,...,typename Tn>
     ret-type func(T1 &a,T2 &b,...)
     {}
     ```
+* 
+
 
 ###类模板
