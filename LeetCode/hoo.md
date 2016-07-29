@@ -14,6 +14,7 @@ Given a list of non-negative integers representing the amount of money of each h
             i = num[k] + e;
             e = Math.max(tmp, e);
             
+            //
             if (i%2==0)
             {
                 a = max(a+num[i], b);
