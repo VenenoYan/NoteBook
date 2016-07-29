@@ -64,3 +64,5 @@ But the following [1,2,2,null,3,null,3] is not:
 ###Lesson
 * 
 树一般都可以递归调用
+* 
+普通：既然是相似，那么就用两个队列去统计左右子树
