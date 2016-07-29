@@ -24,7 +24,7 @@
 形式：
     ```C++ 
     template<class data_obj>
-    class clk_oport;    //前置声明
+    class clk_oport;    //前置声明：不带类型，只有类名
         
     template<typename T1,...typename Tn>
     class cname
