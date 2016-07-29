@@ -17,3 +17,19 @@ But the following [1,2,2,null,3,null,3] is not:
   2   2
    \   \
    3    3```
+###Solution
+```C++
+    bool isSymmetric(TreeNode* root) {
+        if(!root)
+            return true;
+        return issy(root->left,root->right);
+    }
+    bool issy(TreeNode* l,TreeNode* r)
+    {
+        if(!l||!r)
+            return l == r;
+        if(l->val != r->val)
+            return false;
+        return issy(l->left,r->right)&&issy(l->right,r->left);
+    }
+```
