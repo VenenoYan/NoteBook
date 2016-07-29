@@ -295,7 +295,28 @@ template <typename T>
             _M_pi->_M_add_ref_copy();
             COSTA_DEBUG_REFCOUNT;
       }
+    __shared_count&
+      operator=(const __shared_count& __r) // nothrow
+      {    
+    _Sp_counted_base<_Lp>* __tmp = __r._M_pi;
+    if (__tmp != _M_pi)
+      {    
+        if (__tmp != 0)
+          __tmp->_M_add_ref_copy();
+        if (_M_pi != 0)
+          _M_pi->_M_release();
+        _M_pi = __tmp;
+      }
+      COSTA_DEBUG_REFCOUNT;
+    return *this;
+      }
+    ~__shared_count() // nothrow
+      {
+    if (_M_pi != 0)
+      _M_pi->_M_release();
 
+      COSTA_DEBUG_REFCOUNT;
+      }
 ```
 ### **4 weak_ptr**
 
