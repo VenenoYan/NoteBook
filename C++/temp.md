@@ -38,4 +38,4 @@
     template <typename T1,...typename Tn>
     int cname<T1,...,Tn>::i = 9;
     ```
-    
+    注：切记不可分离编译，声明和定义一起！！！
