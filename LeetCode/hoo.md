@@ -14,14 +14,14 @@ Given a list of non-negative integers representing the amount of money of each h
             i = num[k] + e;
             e = Math.max(tmp, e);
             
-            //
-            if (i%2==0)
+            //或者
+            if (k%2==0)
             {
-                a = max(a+num[i], b);
+                i = max(i+num[k], e);
             }
             else
             {
-                b = max(a, b+num[i]);
+                e = max(i, e+num[k]);
             }
         }
         return Math.max(i,e);
