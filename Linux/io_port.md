@@ -17,7 +17,7 @@
 cat /proc/ioports：查看端口分配信息
 
 ##[端口复用](http://www.zhihu.com/question/32163005/answer/55772739)
-
+[形象介绍](https://www.zhihu.com/question/32163005)
 1. 
 水平触发（level-triggered，默认）——只要满足条件，就触发一个事件(只要有数据没有被获取，内核就不断通知你)，本次不处理下次还提醒；=====本次可以不管
 1. 
