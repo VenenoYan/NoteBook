@@ -60,6 +60,8 @@ poll方法返回时会返回一个描述读写操作是否就绪的mask掩码，
 只告诉有无数据，而不告诉那个fd，所以要遍历；====如果很多，那不是效率低
     * 
 但是它解决了select最大个数的限制；使用链表，所以最大个数不限；
+    * 
+过程：poll的实现和select非常相似，只是描述fd集合的方式不同，poll使用pollfd结构而不是select的fd_set结构，其他的都差不多。
 1. 
 [epoll](http://www.cnblogs.com/Anker/archive/2013/08/17/3263780.html)
     * 
