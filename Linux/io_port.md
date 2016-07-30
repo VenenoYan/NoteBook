@@ -25,7 +25,7 @@ cat /proc/ioports：查看端口分配信息
 
 
 * 
-[select]():
+[select](http://www.cnblogs.com/Anker/archive/2013/08/14/3258674.html):
     * 
 最大连接数：1024；可以配置
     * 
