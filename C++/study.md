@@ -81,17 +81,10 @@ const关键字：
     int a=1;
     char b=(char)a;```
      这种转换适用于面向过程的没有类的概念的c语言的转换，然而这样的转换符也能不分青红皂白的应用于类和类的指针，没有安全检查。转换后源的格式依然不变
-    2. const_cast
-
-　  ```C
-　  const_cast<type_id> (expression)
-　  ```
-
+    2. const_cast　  ```const_cast<type_id> (expression) ```
 　　用于修改类型的const或volatile属性，一般用于强制消除对象的常量性，c中不提供消除这const的机制
 
-    3. static_cast
-
-　　用法：static_cast<type_id> (expression)
+    3. static_cast ```static_cast<type_id> (expression)```
 
 　　该转换和c风格的转换很类似，没有运行时类型检查，所以无法保证转换的安全性。主要有以下几种用法：
 
