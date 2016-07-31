@@ -62,7 +62,7 @@ int partion(int *a,int low,int high)
         int p = a[low]          //中心轴的选择很重要：本处选择第一个，可以换成第一个、中间、最后一个
         while(low<high)
         {
-            while(low<high&&a[high]>=p)
+            while(low<high&&a[high]>=p)     //注意等于的问题
                 --high;
             a[low] = a[high];
             while(low<hihg&&a[low]<=p)      //注意等于的问题
