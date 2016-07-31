@@ -95,10 +95,8 @@ const关键字：
 　　（3）将任何类型的表达式转换为void类型
 
 　　（4）可以将子类类型的指针转换为父类类型的指针（这种转换的安全性需要开发人员来保证）
-
-    4. dynamic_cast
-
-　　用法：dynamic_cast<type*>(expression)
+　　
+    4. dynamic_cast```dynamic_cast<type*>(expression)```
 
 　　他只用于对象和引用，主要用于执行安全的向下转型，他可以将指向子类的父类指针转换为子类指针，但是要求父类有虚函数，如果转换为指针类型失败则返回NULL，如果是引用类型转换失败则跑出bad_cast的异常
 
