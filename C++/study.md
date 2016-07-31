@@ -82,20 +82,18 @@ const关键字：
     char b=(char)a;```<br>
      这种转换适用于面向过程的没有类的概念的c语言的转换，然而这样的转换符也能不分青红皂白的应用于类和类的指针，没有安全检查。转换后源的格式依然不变
     2. const_cast　  ```const_cast<type_id> (expression) ```<br>
-　　用于修改类型的const或volatile属性，一般用于强制消除对象的常量性，c中不提供消除这const的机制<br>
+用于修改类型的const或volatile属性，一般用于强制消除对象的常量性，c中不提供消除这const的机制<br>
 
     3. static_cast ```static_cast<type_id> (expression)```<br>
-　　该转换和c风格的转换很类似，没有运行时类型检查，所以无法保证转换的安全性。主要有以下几种用法：<br>
+该转换和c风格的转换很类似，没有运行时类型检查，所以无法保证转换的安全性。主要有以下几种用法：<br>
 　　（1）用于基本数据类型，或者non_const到const（反过来必须用const_cast)<br>
 　　（2）把空指针转换为目标类型的指针<br>
 　　（3）将任何类型的表达式转换为void类型<br>
 　　（4）可以将子类类型的指针转换为父类类型的指针（这种转换的安全性需要开发人员来保证）<br>
     4. dynamic_cast```dynamic_cast<type*>(expression)```<br>
-　　他只用于对象和引用，主要用于执行安全的向下转型，他可以将指向子类的父类指针转换为子类指针，但是要求父类有虚函数，如果转换为指针类型失败则返回NULL，如果是引用类型转换失败则跑出bad_cast的异常
+只用于对象和引用，主要用于执行安全的向下转型，他可以将指向子类的父类指针转换为子类指针，但是要求父类有虚函数，如果转换为指针类型失败则返回NULL，如果是引用类型转换失败则跑出bad_cast的异常
 
-    5. reinpreter_cast
-
-　　用法：reinpreter_cast<type_id> (expression)
+    5. reinpreter_cast```reinpreter_cast<type_id> (expression)```
 
 　　type_id可以是指针，引用，算术类型，函数指针或者成员指针，这个操作符可以在非相关的类型之间转换，操作只是简单的从一个指针到别的指针的值得二进制拷贝，在类型之间指向的内容不作任何类型的检查和转换。
 
