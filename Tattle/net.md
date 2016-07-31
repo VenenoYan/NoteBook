@@ -183,6 +183,10 @@ C类IP地址<br>
 | 7 应用层 | DNS-53、FTP-20/21、TELNET-23、SMTP-25、POP3-110、DHCP、HTTP-80、HTTPS-443 |  |
 
 **拥塞控制**
+* 
+接收端根据接收缓存的大小，动态调整发送端窗口大小：接收窗口
+* 
+发送方对当前网络的拥塞程度估计得到窗口：拥塞窗口
 
 **[session](http://www.cnblogs.com/kissdodog/archive/2013/02/08/2909292.html)放在哪里？如何保存会话状态**
 
