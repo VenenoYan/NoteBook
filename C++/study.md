@@ -83,7 +83,8 @@ const关键字：
      这种转换适用于面向过程的没有类的概念的c语言的转换，然而这样的转换符也能不分青红皂白的应用于类和类的指针，没有安全检查。转换后源的格式依然不变
     2. const_cast
 
-　　用法：const_cast<type_id> (expression)
+　  ```C
+　  const_cast<type_id> (expression)```
 
 　　用于修改类型的const或volatile属性，一般用于强制消除对象的常量性，c中不提供消除这const的机制
 
