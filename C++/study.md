@@ -84,20 +84,13 @@ const关键字：
     2. const_cast　  ```const_cast<type_id> (expression) ```
 　　用于修改类型的const或volatile属性，一般用于强制消除对象的常量性，c中不提供消除这const的机制
 
-    3. static_cast ```static_cast<type_id> (expression)```
-
+    3. static_cast ```static_cast<type_id> (expression)```<br>
 　　该转换和c风格的转换很类似，没有运行时类型检查，所以无法保证转换的安全性。主要有以下几种用法：
-
 　　（1）用于基本数据类型，或者non_const到const（反过来必须用const_cast)
-
 　　（2）把空指针转换为目标类型的指针
-
 　　（3）将任何类型的表达式转换为void类型
-
 　　（4）可以将子类类型的指针转换为父类类型的指针（这种转换的安全性需要开发人员来保证）
-　　
     4. dynamic_cast```dynamic_cast<type*>(expression)```
-
 　　他只用于对象和引用，主要用于执行安全的向下转型，他可以将指向子类的父类指针转换为子类指针，但是要求父类有虚函数，如果转换为指针类型失败则返回NULL，如果是引用类型转换失败则跑出bad_cast的异常
 
     5. reinpreter_cast
