@@ -93,9 +93,8 @@ const关键字：
     4. dynamic_cast```dynamic_cast<type*>(expression)```<br>
 只用于对象和引用，主要用于执行安全的向下转型，他可以将指向子类的父类指针转换为子类指针，但是要求父类有虚函数，如果转换为指针类型失败则返回NULL，如果是引用类型转换失败则跑出bad_cast的异常
 
-    5. reinpreter_cast```reinpreter_cast<type_id> (expression)```
-
-　　type_id可以是指针，引用，算术类型，函数指针或者成员指针，这个操作符可以在非相关的类型之间转换，操作只是简单的从一个指针到别的指针的值得二进制拷贝，在类型之间指向的内容不作任何类型的检查和转换。
+    5. reinpreter_cast```reinpreter_cast<type_id> (expression)```<br>
+type_id可以是指针，引用，算术类型，函数指针或者成员指针，这个操作符可以在非相关的类型之间转换，操作只是简单的从一个指针到别的指针的值得二进制拷贝，在类型之间指向的内容不作任何类型的检查和转换。
 
 note：关于static_cast 和 dynamic_cast的区别：
 
