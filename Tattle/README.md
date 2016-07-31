@@ -21,7 +21,7 @@
     * 
 [智力题](intel.md)
     * 
-
+[机考](machind.md)
 
 1. 
 [论文](paper.md)
