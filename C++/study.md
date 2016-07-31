@@ -81,14 +81,13 @@ const关键字：
 int a=1;
 char b=(char)a;```
  这种转换适用于面向过程的没有类的概念的c语言的转换，然而这样的转换符也能不分青红皂白的应用于类和类的指针，没有安全检查。转换后源的格式依然不变
-
-2. const_cast
+    2. const_cast
 
 　　用法：const_cast<type_id> (expression)
 
 　　用于修改类型的const或volatile属性，一般用于强制消除对象的常量性，c中不提供消除这const的机制
 
-3. static_cast
+    3. static_cast
 
 　　用法：static_cast<type_id> (expression)
 
@@ -102,13 +101,13 @@ char b=(char)a;```
 
 　　（4）可以将子类类型的指针转换为父类类型的指针（这种转换的安全性需要开发人员来保证）
 
-4. dynamic_cast
+    4. dynamic_cast
 
 　　用法：dynamic_cast<type*>(expression)
 
 　　他只用于对象和引用，主要用于执行安全的向下转型，他可以将指向子类的父类指针转换为子类指针，但是要求父类有虚函数，如果转换为指针类型失败则返回NULL，如果是引用类型转换失败则跑出bad_cast的异常
 
-5. reinpreter_cast
+    5. reinpreter_cast
 
 　　用法：reinpreter_cast<type_id> (expression)
 
