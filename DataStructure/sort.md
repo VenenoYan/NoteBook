@@ -81,7 +81,6 @@ void quicksort(int *a,int low,int high)
         quicksort(a,low,pivot-1);
         quicksort(a,pivot+1,high);
 }   //循环快排
-　
 void quick_sort1(vector<int> &nums,int low,int high)
 {
     stack<int> q;
