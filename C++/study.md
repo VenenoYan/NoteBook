@@ -84,7 +84,8 @@ const关键字：
     2. const_cast
 
 　  ```C
-　  const_cast<type_id> (expression)```
+　  const_cast<type_id> (expression)
+　  ```
 
 　　用于修改类型的const或volatile属性，一般用于强制消除对象的常量性，c中不提供消除这const的机制
 
