@@ -62,7 +62,7 @@ int partion(int *a,int low,int high)
         int p = a[low]          //中心轴的选择很重要：本处选择第一个，可以换成第一个、中间、最后一个
         while(low<high)
         {
-            while(low<high&&a[high]>=p)     //注意等于的问题
+            while(low<high&&a[high]>=p)     //注意等于的问题：如果a[high]==p，那么high永远不会渐减
                 --high;
             a[low] = a[high];
             while(low<hihg&&a[low]<=p)      //注意等于的问题
@@ -75,7 +75,7 @@ int partion(int *a,int low,int high)
 void quicksort(int *a,int low,int high)
 {
         if(low<high)    //注意此处
-            int pivot = partion(a,low,high);    //具体的排序由partion完成：可以直接展开，减少函数
+            int pivot = partion(a,low,high);    //具体的排序由partion完成：可以直接展开，减少函数调用
         else 
             return ;
         quicksort(a,low,pivot-1);
