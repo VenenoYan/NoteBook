@@ -76,13 +76,11 @@ void quicksort(int *a,int low,int high)
 {
         if(low<high)    //注意此处
             int pivot = partion(a,low,high);    //具体的排序由partion完成
-                            //为了减少函数调用可以不写，直接把拍戏需代码写在此处
         else 
             return ;
         quicksort(a,low,pivot-1);
         quicksort(a,pivot+1,high);
 }   //循环快排
-
 void quick_sort1(vector<int> &nums,int low,int high)
 {
     stack<int> q;
