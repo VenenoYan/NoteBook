@@ -39,7 +39,7 @@ slave重做中继日志中的事件，将改变反映它自己的数据。
 * 
 1NF:每个属性是不可分的。 
 * 
-2NF:若关系R是１NF,且每个非主属性都完全函数依赖于R的键。例SLC(SID#, CourceID#, SNAME,Grade),则不是2NF; 
+2NF:若关系R是１NF,且每个非主属性都完全函数依赖于主键。例SLC(SID#, CourceID#, SNAME,Grade),则不是2NF; 
 * 
 3NF:若R是2NF，且它的任何非键属性都不传递依赖于任何候选键。
 
