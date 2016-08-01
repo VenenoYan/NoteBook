@@ -23,8 +23,6 @@ cat /proc/ioports：查看端口分配信息
 1. 
 边缘触发（edge-triggered）——每当状态变化时，触发一个事件，如果不处理下次不提醒。=====被你猜必须管
 
-
-
 * 
 [select](http://www.cnblogs.com/Anker/archive/2013/08/14/3258674.html):
     * 
