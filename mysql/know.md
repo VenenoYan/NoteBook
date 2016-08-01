@@ -8,7 +8,14 @@
 基于行的复制(row-based replication, RBR)，
 * 
 混合模式复制(mixed-based replication, MBR)。<br>
-相应地，binlog的格式也有三种：STATEMENT，ROW，MIXED。 MBR 模式中，SBR 模式是默认的。
+相应地，binlog的格式也有三种：STATEMENT，ROW，MIXED。 MBR 模式中，SBR 模式是默认的。<br>
+Mysql复制分成三步： 
+* 
+master将改变记录到二进制日志(binary log)中（这些记录叫做二进制日志事件，binary log events）； 
+* 
+slave将master的binary log events拷贝到它的中继日志(relay log)； 
+* 
+slave重做中继日志中的事件，将改变反映它自己的数据。
 
 ####3. 
 
