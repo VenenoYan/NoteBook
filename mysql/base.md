@@ -1,5 +1,5 @@
 ##基础：
-关系型数据库管理系统：SQL Server、ORACLE、SYBASE、INFORMIX和 DB2。
+关系型数据库管理系统：SQL Server、ORACLE、SYBASE、INFORMIX和 DB2。<br>
 [入门](http://www.cnblogs.com/mr-wid/archive/2013/05/09/3068229.html#c1)
 ```C++
 MySQL 为关系型数据库(Relational Database Management System), 这种所谓的"关系型"可以理解为"表格"的概念, 
