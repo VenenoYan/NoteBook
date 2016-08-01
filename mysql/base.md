@@ -5,7 +5,7 @@
 * 
 网络式
 * 
-关系型数据库管理系统：SQL Server、ORACLE、SYBASE、INFORMIX和 DB2、MongoDB、MySql。
+关系型数据库管理系统：SQL Server、ORACLE、SYBASE、INFORMIX和 DB2、MongoDB、MySql、。
 
 [入门](http://www.cnblogs.com/mr-wid/archive/2013/05/09/3068229.html#c1)
 ```C++
