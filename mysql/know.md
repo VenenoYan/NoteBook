@@ -138,7 +138,7 @@ A表ID与B表的Pid存在相关关系：
       1   张3     1     23     1  
       2   李四    2     34     2  
 
-2）左连接 ：左表的所有和右表的
+2）左连接 ：左表的所有和右表的匹配，没有在右表匹配到的天NULL
       select   a.*,b.*   from   a   left   join   b     on   a.id=b.parent_id      
       结果是    
       1   张3     1     23     1  
