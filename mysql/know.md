@@ -11,3 +11,4 @@
 
 相应地，binlog的格式也有三种：STATEMENT，ROW，MIXED。 MBR 模式中，SBR 模式是默认的。
 
+####2.
