@@ -193,6 +193,7 @@ A表ID与B表的Pid存在相关关系：
     FROM ProductCustomers  
     WHERE prod_id="RGAN01";  
 ```
+在数据库中，存放的只是视图的定义而已，不存放视图包含的数据，这些视图仍存放在原来的基本表结构中。
 
 ####11. 
 
