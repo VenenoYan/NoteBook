@@ -1,7 +1,8 @@
 ##基础：
 数据库通常分为层次式数据库、网络式数据库和关系式数据库三种。
 * 
-关系型数据库管理系统：SQL Server、ORACLE、SYBASE、INFORMIX和 DB2。<br>
+关系型数据库管理系统：SQL Server、ORACLE、SYBASE、INFORMIX和 DB2。
+
 [入门](http://www.cnblogs.com/mr-wid/archive/2013/05/09/3068229.html#c1)
 ```C++
 MySQL 为关系型数据库(Relational Database Management System), 这种所谓的"关系型"可以理解为"表格"的概念, 
