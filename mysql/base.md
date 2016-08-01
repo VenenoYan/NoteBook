@@ -6,6 +6,8 @@
 网络式
 * 
 关系型数据库管理系统：SQL Server、ORACLE、SYBASE、INFORMIX和 DB2、MySql、PostgreSQL。
+* 
+MongoDB是一个介于关系数据库和非关系数据库之间。
 
 [入门](http://www.cnblogs.com/mr-wid/archive/2013/05/09/3068229.html#c1)
 ```C++
