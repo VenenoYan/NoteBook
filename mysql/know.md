@@ -186,8 +186,7 @@ A表ID与B表的Pid存在相关关系：
     SELECT cust_name,cust_contact,prod_id  
     FROM Customers,Orders,OrderItems  
     WHERE Customers.cust_id=Orders.cust_id AND OrderItems.order_num=Orders.order_num;  
-      
-      
+    
     #可以这样使用视图  
     SELECT*  
     FROM ProductCustomers  
