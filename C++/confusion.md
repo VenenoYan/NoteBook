@@ -208,7 +208,7 @@ malloc未初始化，new是初始化的，自动调用构造函数/析构函数�
 * 
 malloc返回（void*），new返回对象指针
 
-###16.malloc、free/new、delete
+###16.移位操作符
 #include <stdio.h>
 void main()
 {
