@@ -132,7 +132,7 @@ slave重做中继日志中的事件，将改变反映它自己的数据。
 |  | 3 | 王武 |  | 3 | 64 | 4 |
 A表ID与B表的Pid存在相关关系：
 ```SQL
-1） 内连接  
+1） 内连接：两张表完全匹配的几个数据集
       select   a.*,b.*   from   a   inner   join   b     on   a.id=b.parent_id      
       结果是    
       1   张3     1     23     1  
