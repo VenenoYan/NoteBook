@@ -13,7 +13,7 @@
 
 分页、分段、段页
 
-[select、poll、epoll]((./../Linux/io_port.md)
+[select、poll、epoll](./../Linux/io_port.md)
 
 vim快捷键：查找(/、?)、替换（:s、:%s）
 
