@@ -3,7 +3,7 @@
 * 
 层次式：IMS(Information Management System)是其典型代表
 * 
-网络式：
+网络式
 * 
 关系型数据库管理系统：SQL Server、ORACLE、SYBASE、INFORMIX和 DB2。
 
