@@ -48,7 +48,11 @@ groupdel testgroup 组的删除
 
 ```
 ##更新权限
-
+```C++
+u stands for user.
+g stands for group.
+o stands for others.
+a stands for all.```
 ## ps: 终端下所有程序及进程
 ```C
 ps a 显示现行终端机下的所有程序，包括其他用户的程序。
