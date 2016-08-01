@@ -145,7 +145,7 @@ A表ID与B表的Pid存在相关关系：
       2   李四    2     34     2  
       3   王武    null  
 
-3） 右连接  
+3） 右连接 ：左表和右表所有匹配，左表没有的NULL
       select   a.*,b.*   from   a   right   join   b     on   a.id=b.parent_id      
       结果是    
       1   张3    1     23     1  
