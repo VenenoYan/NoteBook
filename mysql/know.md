@@ -18,7 +18,7 @@ MySQL使用多主复制时，需要修改自增长变量参数,所以有人认�
 相应地，binlog的格式也有三种：STATEMENT，ROW，MIXED。 MBR 模式中，SBR 模式是默认的。<br>
 **Mysql复制分成三步：** 
 * 
-master将改变记录到**二进制日志(binary log BINLO)**中（这些记录叫做二进制日志事件，binary log events）； 
+master将改变记录到**二进制日志(binary log ：BINLOG)**中（这些记录叫做二进制日志事件，binary log events）； 
 * 
 slave将master的binary log events拷贝到它的中继日志(relay log)； 
 * 
