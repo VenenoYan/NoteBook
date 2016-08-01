@@ -8,6 +8,8 @@
 关系型数据库管理系统：SQL Server、ORACLE、MySql、PostgreSQL、SYBASE、INFORMIX和 DB2。
 * 
 MongoDB是一个介于关系数据库和非关系数据库之间。
+* 
+key-value：Redis、HBase
 
 [入门](http://www.cnblogs.com/mr-wid/archive/2013/05/09/3068229.html#c1)
 ```C++
