@@ -43,7 +43,7 @@ TCP/UDP/IP网络协议规定：接收的第一个字节是高字节，会放到�
       * 
 得到IP地址，port是指定好的。
   * 
-建立Sockent连接
+建立Sockect连接
   * 
 然后发送web请求给指定的web服务器：GET、POST
   * 
