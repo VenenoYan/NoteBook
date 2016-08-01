@@ -1,6 +1,8 @@
 1. 
 [基础知识](base.md)
 1. 
-[扩展](extend.md)
+[扩展使用](extend.md)
+1. 
+[知识点](know.md)
 
 [返回目录](../README.md)
