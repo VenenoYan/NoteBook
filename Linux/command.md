@@ -49,6 +49,7 @@ groupdel testgroup 组的删除
 ```
 ##更新权限
 ```C++
+chmod a+x
 u stands for user.
 g stands for group.
 o stands for others.
