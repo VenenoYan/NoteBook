@@ -181,6 +181,18 @@ A表ID与B表的Pid存在相关关系：
 
 ####10. 视图
 视图是从数据库的基本表中选取出来的数据组成的逻辑窗口，它是一个虚表，它包含的不是数据而是根据需要检索数据的查询。
+```SQL
+    CREATE VIEW ProductCustomers AS --视图必须唯一命名，创建视图  
+    SELECT cust_name,cust_contact,prod_id  
+    FROM Customers,Orders,OrderItems  
+    WHERE Customers.cust_id=Orders.cust_id AND OrderItems.order_num=Orders.order_num;  
+      
+      
+    #可以这样使用视图  
+    SELECT*  
+    FROM ProductCustomers  
+    WHERE prod_id="RGAN01";  
+```
 
 ####11. 
 
