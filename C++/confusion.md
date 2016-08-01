@@ -209,6 +209,7 @@ malloc未初始化，new是初始化的，自动调用构造函数/析构函数�
 malloc返回（void*），new返回对象指针
 
 ###16.移位操作符
+```C++
 #include <stdio.h>
 void main()
 {
@@ -218,6 +219,6 @@ void main()
    //为什么下面两个左移操作结果不一样？
    j=1<<i;  // j为8
    j=1<<35; // j为0
-}
+}```
 
 [返回目录](README.md)
