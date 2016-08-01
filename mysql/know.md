@@ -9,3 +9,5 @@ MySQL 5.1 中，在复制方面的改进就是引进了新的复制技术：基�
 混合模式复制(mixed-based replication, MBR)。.
 
 相应地，binlog的格式也有三种：STATEMENT，ROW，MIXED。 MBR 模式中，SBR 模式是默认的。
+
+众所周知，MySQL只支持一对多的主从复制，而不支持多主（multi-master）复制
