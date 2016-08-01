@@ -53,7 +53,20 @@ chmod a+x
 u stands for user.
 g stands for group.
 o stands for others.
-a stands for all.```
+a stands for all.
+
+
+数字	说明	权限
+0	没有任何权限	---
+1	执行权限	--x
+2	写入权限	-w-
+3	执行权限和写入权限：1 (执行) + 2 (写入) = 3	-wx
+4	读取权限	r--
+5	读取和执行权限：4 (读取) + 1 (执行) = 5	r-x       
+6	读取和写入权限：4 (读取) + 2 (写入) = 6	rw-
+7	所有权限: 4 (读取) + 2 (写入) + 1 (执行) = 7	rwx
+
+```
 ## ps: 终端下所有程序及进程
 ```C
 ps a 显示现行终端机下的所有程序，包括其他用户的程序。
