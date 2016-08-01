@@ -17,6 +17,6 @@ select、poll、epoll
 
 vim快捷键
 
-平均周转时间：
+平均周转时间：<br>执行时间J1:1分钟 J2:5分钟 J3:9分钟 J4:13分钟
 
 [返回目录](README.md)
