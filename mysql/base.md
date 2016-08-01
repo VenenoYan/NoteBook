@@ -5,7 +5,7 @@
 * 
 网络式
 * 
-关系型数据库管理系统：SQL Server、ORACLE、SYBASE、INFORMIX和 DB2、MySql、PostgreSQL。
+关系型数据库管理系统：SQL Server、ORACLE、MySql、PostgreSQL、SYBASE、INFORMIX和 DB2。
 * 
 MongoDB是一个介于关系数据库和非关系数据库之间。
 
