@@ -9,7 +9,7 @@
 * 
 混合模式复制(mixed-based replication, MBR)。<br>
 相应地，binlog的格式也有三种：STATEMENT，ROW，MIXED。 MBR 模式中，SBR 模式是默认的。<br>
-Mysql复制分成三步： 
+**Mysql复制分成三步：** 
 * 
 master将改变记录到二进制日志(binary log)中（这些记录叫做二进制日志事件，binary log events）； 
 * 
