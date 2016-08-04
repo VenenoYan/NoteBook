@@ -226,7 +226,7 @@ void heapsort(int *a)
 核心：将m个相连的有序序列归并为一个有序的序列
 ```C
 //二路归并：主要就是合并两张表 = s~m和m+1~e
-void merge(int *a,int s,int m,int e)   //将有序序列a[s...m]与a[m...e]归并为a[s...e]
+void merge(int *a,int s,int m,int e)   //将有序序列a[s...m-1]与a[m...e]归并为a[s...e]
 {
     int *temp;  //临时数组辅助保存
     int t = 0;
