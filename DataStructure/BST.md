@@ -81,7 +81,7 @@ TreeNode *create(int n)
         return abs(l-r)<=1&&isBalanced(root->left)&&isBalanced(root->right);
     }
 ```
-什么是A，就是那个**最先打破1**的节点（从下网上最先）<br>
+什么是A，就是那个**最先打破1**的节点（从下向上最先）<br>
 * 
 A的左子树B的左子树上添加一个(LL)：把B向左上方提成为根节点，A为其右子树，B的右子树成为A的左子树
 * 
