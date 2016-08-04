@@ -6,7 +6,7 @@
 网络式
 * 
 关系型数据库管理系统：SQL Server、ORACLE、MySql、PostgreSQL、SYBASE、INFORMIX和 DB2。
-* 
+* 非关系型的数据库
 MongoDB（文档型）、Redis（key-value）、HBase（列数据库）
 
 [入门](http://www.cnblogs.com/mr-wid/archive/2013/05/09/3068229.html#c1)
