@@ -51,6 +51,7 @@ int bin_search(SStable ST,keyType key)
 除叶子节点外的每个节点有关键字列表和指向子树的指针，关键字形成的范围是子树
 
 ####4.1.1 B树查找：
+B树一般是存储在硬盘中，查找的过程分两步：找节点，找关键字；
 
 
 ###5.[哈希](http://blog.csdn.net/chenhuajie123/article/details/9210091)：一个关键字对应一个存储位置
