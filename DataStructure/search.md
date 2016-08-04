@@ -46,6 +46,8 @@ int bin_search(SStable ST,keyType key)
 * 
 除了根节点外的每个非叶子节点至少ceil(m/2)颗子树(即ceil(m/2)-1个关键字)。
 * 
+所有的叶子节点在同一层级上；
+* 
 除叶子节点外的每个节点有关键字列表和指向子树的指针，关键字形成的范围是子树
 
 ###5.[哈希](http://blog.csdn.net/chenhuajie123/article/details/9210091)：一个关键字对应一个存储位置
