@@ -7,5 +7,13 @@
 
 ####1.1 模型
 ```C++
-
+ret-type func(para)
+{
+    if(end_contion)
+        return something;
+    else
+    {
+        
+    }
+}
 ```
