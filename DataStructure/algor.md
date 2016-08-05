@@ -13,7 +13,7 @@ ret-type func(para)
         return something;
     else
     {
-        
+        归纳处理
     }
 }
 ```
