@@ -90,6 +90,7 @@ void quicksort(int *a,int low,int high)
             quicksort(a,pivot+1,high);
         }
 }   //明确：quicksort并未执行排序功能，真正排序的是partion()
+　
 void quick_sort1(vector<int> &nums,int low,int high)
 {
     stack<int> q;
