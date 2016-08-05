@@ -33,7 +33,6 @@ else {
 }
 
 判断一个二叉树是否平衡：
-
 int isB(Tree t){ 
     if(!t) return 0; 
     int left=isB(t.left); 
