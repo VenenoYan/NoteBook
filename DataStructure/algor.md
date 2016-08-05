@@ -21,3 +21,26 @@ ret-type func(para)
 }
 ```
 ####1.2 例子
+```C++
+例如：返回一个二叉树的深度：
+
+int depth(Tree t){ 
+if(!t) return 0; 
+else { 
+         int a=depth(t.right); 
+         int b=depth(t.left); 
+         return (a>b)?(a+1):(b+1); 
+    } 
+}
+
+判断一个二叉树是否平衡：
+
+int isB(Tree t){ 
+    if(!t) return 0; 
+    int left=isB(t.left); 
+    int right=isB(t.right); 
+    if( left >=0 && right >=0 && left - right <= 1 || left -right >=-1) 
+         return (left<right)? (right +1) : (left + 1); 
+    else return -1; 
+}
+```
