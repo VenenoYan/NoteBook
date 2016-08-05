@@ -81,7 +81,15 @@ void quicksort(int *a,int low,int high)
         quicksort(a,pivot+1,high);
 }   //循环快排
 //更容易扩展使用的快排：
-
+void quicksort(int *a,int low,int high)
+{
+        while(low >= high)    //注意此处
+        {
+            int pivot = partion(a,low,high);    //具体的排序由partion完成：可以直接展开，减少函数调用
+            quicksort(a,low,pivot-1);
+            quicksort(a,pivot+1,high);
+        }
+}   //循环快排
 void quick_sort1(vector<int> &nums,int low,int high)
 {
     stack<int> q;
