@@ -20,3 +20,4 @@ ret-type func(para)
     return something;
 }
 ```
+####1.2 例子
