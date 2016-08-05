@@ -13,7 +13,8 @@ ret-type func(para)
         return something;
     else
     {
-        归纳处理
+        归纳处理普通条件
+        
     }
 }
 ```
