@@ -13,8 +13,9 @@ ret-type func(para)
         return something;
     else
     {
-        归纳处理普通条件
-        
+        归纳处理普通条件即不结束的条件
+        子问题
+        调用自身
     }
 }
 ```
