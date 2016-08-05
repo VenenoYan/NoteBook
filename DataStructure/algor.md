@@ -23,7 +23,6 @@ ret-type func(para)
 ####1.2 例子
 ```C++
 例如：返回一个二叉树的深度：
-
 int depth(Tree t){ 
 if(!t) return 0; 
 else { 
