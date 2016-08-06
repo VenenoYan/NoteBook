@@ -3,8 +3,7 @@ Secure Hash Algorithm (安全散列算法) 的缩写，它用来产生 20 个字
 ###例子
 ```C
 #include <openssl/sha.h>
-    unsigned char *SHA1(const unsigned char *d, unsigned long n,
-            unsigned char *md);```
+    unsigned char *SHA1(const unsigned char *d, unsigned long n,unsigned char *md);```
 
 函数中的
 * 
