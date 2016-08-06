@@ -69,6 +69,7 @@ Result of SHA1 : f6f80b59f1b25c82b64d857594fee53cd0df3604
 int SHA1_Init(SHA_CTX *c);  
 int SHA1_Update(SHA_CTX *c, const void *data, unsigned long len);  
 int SHA1_Final(unsigned char *md, SHA_CTX *c);  
+　
 SHA1_Init() 初始化一个 SHA_CTX 结构，该结构存放弄了生成 SHA1 散列值的一些参数，在应用中可以不用关系该结构的内容。
 SHA1_Update() 函数正是可以处理大文件的关键。它可以反复调用，比如说我们要计算一个 5G 文件的散列值，
     我们可以将该文件分割成多个小的数据块，对每个数据块分别调用一次该函数，这样在最后就能够应用 
