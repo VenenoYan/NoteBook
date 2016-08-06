@@ -115,6 +115,7 @@ int main(int argc, char **argv)
     return 0;  
 }    
 Result of SHA1 : 048b371b37fd824645a54718461ae5fe84f1805c  
+在上面函数中，我们将要处理的字串 "hello groad.net" 分割成 2 部分进行处理，第 1 部分处理前 6 个字节，第 2 部分处理剩下的字节。
 ```
 
 
