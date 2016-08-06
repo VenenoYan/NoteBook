@@ -81,9 +81,9 @@ SHA1_Final() 函数正确计算出这个大文件的 sha1 散列值。
 #include <stdlib.h>  
 #include <string.h>  
 #include <openssl/sha.h>  
-   
+　   
 static const char hex_chars[] = "0123456789abcdef";  
-   
+　   
 void convert_hex(unsigned char *md, unsigned char *mdstr)  
 {  
     int i;  
@@ -97,7 +97,7 @@ void convert_hex(unsigned char *md, unsigned char *mdstr)
     }  
     mdstr[40] = '\0';  
 }  
-   
+　   
 int main(int argc, char **argv)  
 {  
     SHA_CTX shactx;  
