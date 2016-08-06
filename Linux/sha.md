@@ -38,24 +38,24 @@ void convert_hex(unsigned char *md, unsigned char *mdstr)
 　
 int main(int argc, char **argv)
 {
-    if (argc != 2) {
-        fprintf (stderr, "usage: %s your-string\n", argv[0]);
-        exit (EXIT_FAILURE);
-    }
-    
-    char md[SHA_DIGEST_LENGTH];
-    char mdstr[40];
-    
-    bzero(md, SHA_DIGEST_LENGTH);
-    bzero(mdstr, 40);
-    
-    SHA1(argv[1], strlen(argv[1]), md);
-    
-    convert_hex(md, mdstr);
-    
-    printf ("Result of SHA1 : %s\n", mdstr);
-    
-    return 0;
+        if (argc != 2) {
+            fprintf (stderr, "usage: %s your-string\n", argv[0]);
+            exit (EXIT_FAILURE);
+        }
+        
+        char md[SHA_DIGEST_LENGTH];
+        char mdstr[40];
+        
+        bzero(md, SHA_DIGEST_LENGTH);
+        bzero(mdstr, 40);
+        
+        SHA1(argv[1], strlen(argv[1]), md);
+        
+        convert_hex(md, mdstr);
+        
+        printf ("Result of SHA1 : %s\n", mdstr);
+        
+        return 0;
 }
 Result of SHA1 : f6f80b59f1b25c82b64d857594fee53cd0df3604
 ```
