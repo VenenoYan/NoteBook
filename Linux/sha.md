@@ -57,6 +57,5 @@ Secure Hash Algorithm (安全散列算法) 的缩写，它用来产生 20 个字
   
      return 0;
  }
- 
 Result of SHA1 : f6f80b59f1b25c82b64d857594fee53cd0df3604
 ```
