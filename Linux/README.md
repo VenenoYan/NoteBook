@@ -10,5 +10,7 @@
 [IO端口复用](io_port.md)
 * 
 [内存分配](memory.md)
+* 
+[Hash值](sha.md)
 
 [返回目录](../README.md)
