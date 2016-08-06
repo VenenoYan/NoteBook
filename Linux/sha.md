@@ -60,7 +60,8 @@ int main(int argc, char **argv)
 Result of SHA1 : f6f80b59f1b25c82b64d857594fee53cd0df3604
 ```
 ###升级：
-缺陷：就是32位系统下不能对超过4G的文件计算HASH值(参考第一个指针，指向的空间)，
+缺陷：就是32位系统下不能对超过4G的文件计算HASH值(参考第一个指针，指向的空间)
+改进
 
 
 [返回目录](README.md)
