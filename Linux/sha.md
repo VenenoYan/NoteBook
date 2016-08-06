@@ -64,6 +64,12 @@ Result of SHA1 : f6f80b59f1b25c82b64d857594fee53cd0df3604
 缺陷：就是32位系统下不能对超过4G的文件计算HASH值(参考第一个指针，指向的空间)
 * 
 改进：
+```C++
+#include <openssl/sha.h>  
+int SHA1_Init(SHA_CTX *c);  
+int SHA1_Update(SHA_CTX *c, const void *data, unsigned long len);  
+int SHA1_Final(unsigned char *md, SHA_CTX *c);  
+```
 
 
 [返回目录](README.md)
