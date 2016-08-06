@@ -24,16 +24,16 @@ static const char hex_chars[] = "0123456789abcdef";
 　
 void convert_hex(unsigned char *md, unsigned char *mdstr)
 {
-    int i;
-    int j = 0;
-    unsigned int c;
-    
-    for (i = 0; i < 20; i++) {
-        c = (md[i] >> 4) & 0x0f;
-        mdstr[j++] = hex_chars[c];
-        mdstr[j++] = hex_chars[md[i] & 0x0f];
-    }
-    mdstr[40] = '\0';
+        int i;
+        int j = 0;
+        unsigned int c;
+        
+        for (i = 0; i < 20; i++) {
+            c = (md[i] >> 4) & 0x0f;
+            mdstr[j++] = hex_chars[c];
+            mdstr[j++] = hex_chars[md[i] & 0x0f];
+        }
+        mdstr[40] = '\0';
 }
 　
 int main(int argc, char **argv)
