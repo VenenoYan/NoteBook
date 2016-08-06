@@ -17,11 +17,11 @@ Secure Hash Algorithm (安全散列算法) 的缩写，它用来产生 20 个字
 #include <stdlib.h>
 #include <string.h>
 #include <openssl/sha.h>
-
+　
 #define SHA1LEN SHA_DIGEST_LENGTH
-
+　
 static const char hex_chars[] = "0123456789abcdef";
-
+　
 void convert_hex(unsigned char *md, unsigned char *mdstr)
 {
     int i;
@@ -35,7 +35,7 @@ void convert_hex(unsigned char *md, unsigned char *mdstr)
     }
     mdstr[40] = '\0';
 }
-
+　
 int main(int argc, char **argv)
 {
         if (argc != 2) {
