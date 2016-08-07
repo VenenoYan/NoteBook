@@ -1,4 +1,4 @@
-##SHA
+##[SHA](http://blog.csdn.net/gszhy/article/details/20533733)
 * 
 不可以从消息摘要中复原信息；
 * 
