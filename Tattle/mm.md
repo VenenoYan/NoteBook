@@ -8,7 +8,10 @@
         * 三种参数：类型参数、非类型参数、模板参数  ```template<typename T1, int a, typename T2 = int>```
         * 函数返回为啥有typename：因为编译器不知道你是啥类型：函数、变量还是别的，告诉他用的。
         * [traits](./../C++/stl/shix.md)：类型萃取器
-    * c指针数组： 数组不可以拷贝和赋值；函数参数时数组自动转换为指针；
+    * c指针数组： 
+        * 数组不可以拷贝和赋值；
+        * 函数参数时数组自动转换为指针；
+        * int i[10]; int *p = i;  sizeof(i) = 10, sizeof(p) = 4;
     * sizeof：
     * java和c++的赋值都啥不同：
     * const和static能不能同时使用：
