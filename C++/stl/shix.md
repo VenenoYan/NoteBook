@@ -51,7 +51,10 @@ typename traits<T>::value_type func(T i)
 }
 
 ##例子：
-    
+int i = 10;
+int *p = new int(100);
+
+
 ```
 
 [返回目录](README.md)
