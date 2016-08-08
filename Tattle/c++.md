@@ -41,7 +41,7 @@ c和C++比较
 1. 
 C++的锁有那些？以及区别
 1. 
-进程通信
+进程通信IPC
 1. 
 override、overload
 1. 
