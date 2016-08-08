@@ -29,7 +29,14 @@ template <typename T>
 class mytest
 {
     typedef typename T value_type;
-}
+};
+
+template<typename T>
+class traits
+{
+    typedef typename T value_type;
+    typedef typename T::value_type value_type;
+};
 ```
 
 [返回目录](README.md)
