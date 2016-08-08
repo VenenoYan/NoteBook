@@ -69,7 +69,7 @@ void  boy_info(Boy *boy);
 ```
 这是一段典型的C语言头文件定义，包括编译预处理，宏定义，数据结构定义和函数声明；首先要看的是两个数据结构对象Boy和BoyClass，
 
-结构类型_Boy是Boy对象的实例，就是说我们每创建一个Boy对象，也就同时创建了一个Boy结构。Boy对象中的parent表示此对象的父类，GObject系统中所有对象的共同的根都是GObject类，所以这是必须的；其它的成员可以是公共的，这里包括表示年龄的age，表示名字的name和表示方法的函数指针cry，外部代码可以操作或引用它们。
+结构类型_Boy是Boy对象的实例，就是说我们每创建一个Boy对象，也就同时创建了一个_Boy结构。Boy对象中的parent表示此对象的父类，GObject系统中所有对象的共同的根都是GObject类，所以这是必须的；其它的成员可以是公共的，这里包括表示年龄的age，表示名字的name和表示方法的函数指针cry，外部代码可以操作或引用它们。
 
 结构类型_BoyClass是Boy对象的类结构，它是所有Boy对象实例所共有的。BoyClass中的parent_class是GObjectClass，同GObject是所有对象的共有的根一样，GObejctClass是所有对象的类结构的根。在BoyClass中我们还定义了一个函数指针boy_born，也就是说这一函数指针也是所有Boy对象实例共有的，所有的Boy实例都可以调用它；同样，如果需要的话，你也可以在类结构中定义其它数据成员。
 
