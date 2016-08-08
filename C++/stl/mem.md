@@ -98,7 +98,8 @@ malloc申请指定大小的内存，更新start_free、end_free、heap_size
 如果失败，遍历所有的链表，把空闲块的释放到内存池中，再次调用chunk_alloc
 * 
 内存池中的内存都是连续的
-
+* 
+申请者申请时：指定自己想要的大小
 
 
 [返回目录](README.md)
