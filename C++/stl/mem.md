@@ -109,6 +109,8 @@ malloc申请指定大小的内存，更新start_free、end_free、heap_size
     * 
 为什么这么多倍？？？ 因为希望洗一次申请时可以直接够
 
+![](绘图1.jpg)
+
 ####例子:
 * 
 当第一次调用chunk_alloc(32,10)的时候，表示我要申请10块__Obje(free_list)， 每块大小32B，
