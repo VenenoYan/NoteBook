@@ -3,7 +3,7 @@
 ###空间配置器简介
 STL空间配置器分为两级：
 * 
-一级空间配置器(__malloc_alloc_template)：申请空间大于128Bytes时
+一级空间配置器(__malloc_alloc_template)：申请空间大于128Bytes时,直接包装malloc、realloc、free等函数
 * 
 二级空间配置器：申请空间小于等于128Bytes
 * 
