@@ -11,7 +11,7 @@
     * c指针数组： 
         * 数组不可以拷贝和赋值；
         * 函数参数时数组自动转换为指针；
-        * int i[10]; int *p = i;  sizeof(i) = 10, sizeof(p) = 4;
+        * ```int i[10]; int *p = i;  　　　　sizeof(i) = 10, sizeof(p) = 4;```
     * sizeof：
     * java和c++的赋值都啥不同：
     * const和static能不能同时使用：
