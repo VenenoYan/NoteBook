@@ -99,6 +99,8 @@ malloc申请指定大小的内存，更新start_free、end_free、heap_size
 * 
 内存池中的内存都是连续的
 * 
+申请
+    * 
 申请者申请时：指定自己想要的大小
 
 
