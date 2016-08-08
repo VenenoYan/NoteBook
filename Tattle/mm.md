@@ -7,6 +7,7 @@
         * 两者区别
         * 三种参数
         * 函数返回为啥有typename
+        * traits
     * c指针数组： 
     * sizeof：
     * java和c++的赋值都啥不同：
