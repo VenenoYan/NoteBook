@@ -9,14 +9,14 @@ STL的设计非常巧妙，组件间互取短长，形成了一个世界，这�
  
 ###迭代器
 迭代器在元素操作的时候需要用到以下五种类型：
-
-　　value_type: 代表迭代器所指对象的类型。
-
-　　difference_type:代表两个迭代器之间的距离
-
-　　reference_type:代表迭代器所指对象的引用类型。简言之，它是operator*()的返回类型
-
-　　pointer_type:代表迭代器所致对象的指针类型。简言之，它是operator->()的返回类型
-
-　　iterator_category:代表1中提出的五种迭代器的类型标识
+* 
+value_type: 代表迭代器所指对象的类型。
+* 
+difference_type:代表两个迭代器之间的距离
+* 
+reference_type:代表迭代器所指对象的引用类型。简言之，它是operator*()的返回类型
+* 
+pointer_type:代表迭代器所致对象的指针类型。简言之，它是operator->()的返回类型
+* 
+iterator_category:代表1中提出的五种迭代器的类型标识
 [返回目录](README.md)
