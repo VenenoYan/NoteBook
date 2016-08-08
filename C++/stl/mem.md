@@ -9,6 +9,8 @@ STL空间配置器分为两级：
 * 
 配置器最小的分辨度是8Byte
 
+由于一级空间配置器包装malloc等函数，所以申请和释放的过程和正常的glibc差不多。我们主要介绍二级空间配置器
+
 对于基本的malloc分配我们都知道，容易产生碎片：
 
 ![](d.png)
@@ -22,7 +24,5 @@ void deallocate(void* \__p, size_t \__n)　　　　　// 外部 API，回收内
 char* chunk_alloc(size_t \__size, int& \__nobjs)　// 内部函数，用于分配一个大块
 * 
 void* refill(size_t n) 　　　　　　　　　　　// 内部函数，用于 allocate 从 free_list 中未找到可使用的块时调用
-
-由于一级空间配置器包装malloc等函数，所以申请和释放的过程和正常的glibc差不多。我们主要介绍二级空间配置器
 
 [返回目录](README.md)
