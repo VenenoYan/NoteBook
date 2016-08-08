@@ -7,7 +7,7 @@
         * 两者区别：上述，还有就是函数模板不能有模板参数
         * 三种参数：类型参数、非类型参数、模板参数  ```template<typename T1, int a, typename T2 = int>```
         * 函数返回为啥有typename：因为编译器不知道你是啥类型：函数、变量还是别的，告诉他用的。
-        * traits：类型萃取器
+        * [traits]：类型萃取器
     * c指针数组： 
     * sizeof：
     * java和c++的赋值都啥不同：
