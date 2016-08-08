@@ -47,7 +47,7 @@ class traits<T *>
 template<typename T>
 typename traits<T>::value_type func(T i)
 {
-    return i;
+    return *i;
 }
 
 //例子：
