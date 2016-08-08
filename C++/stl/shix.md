@@ -50,6 +50,8 @@ typename traits<T>::value_type func(T i)
     func(i,traits<T>::value_type);
 }
 
+
+
 //例子：
 int i = 10;
 int *p = new int(100);
