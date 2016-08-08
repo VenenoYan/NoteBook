@@ -54,8 +54,8 @@ typename traits<T>::value_type func(T i)
 int i = 10;
 int *p = new int(100);
 
-func(i);
-func(p);
+func(i);        //返回10
+func(p);        //返回100
 ```
 
 [返回目录](README.md)
