@@ -55,7 +55,7 @@ queue、stack默认用deque,也可以用vector、list实现
     * 
 C++11又增加了4种无序关联容器：unordered_set、unordered_multiset、unordered_map和unordered_multimap，底层基于hash。
 
-STL的容器可以分为以下几个大类:
+###STL的容器可以分为以下几个大类:
 一：序列容器，　有vector, list, deque, string.
 二 : 关联容器,     有set, multiset, map, mulmap
                hash_set,hash_map, hash_multiset, hash_multimap
