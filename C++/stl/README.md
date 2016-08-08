@@ -1,6 +1,7 @@
 1. 
 [内存管理](mem.md)
 1. 
+[实现原理](shix.md)
 1. 
 [vector](vector.md)
 1. 
