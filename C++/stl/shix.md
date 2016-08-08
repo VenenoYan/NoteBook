@@ -49,6 +49,16 @@ typename traits<T>::value_type func(T i)
 {
     func(i,traits<T>::value_type);
 }
+template<typename T>
+typename traits<T>::value_type func(T i)
+{
+    func(i,traits<T>::value_type);
+}
+template<typename T>
+typename traits<T>::value_type func(T i)
+{
+    func(i,traits<T>::value_type);
+}
 
 
 
