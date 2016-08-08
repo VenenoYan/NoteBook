@@ -25,6 +25,11 @@ traits的目的是：让属于同一个概念的、具有不同特性的模型�
 ###实现
 ```C++
 //三步走
+template <typename T>
+class mytest
+{
+    typedef typename T value_type;
+}
 ```
 
 [返回目录](README.md)
