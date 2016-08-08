@@ -102,7 +102,8 @@ malloc申请指定大小的内存，更新start_free、end_free、heap_size
 申请大小
     * 
 申请者申请时：指定自己想要的大小n
-
+    * 
+链表申请时：
 
 
 [返回目录](README.md)
