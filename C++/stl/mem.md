@@ -15,6 +15,8 @@ STL空间配置器分为两级：
 
 ![](d.png)
 
+
+
 ###过程
 首先介绍四个基本的API：
 * void* allocate(size_t \__n) 　　　　　　　　// 外部 API，分配内存
