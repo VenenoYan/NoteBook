@@ -42,6 +42,9 @@ class traits<T *>
 {
     typede typename T value_type;
 };
+
+//使用即可：
+    
 ```
 
 [返回目录](README.md)
