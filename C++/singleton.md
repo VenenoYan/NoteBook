@@ -247,6 +247,7 @@ Singleton的最主要目的并不是作为一个全局变量使用，而是保�
 “也就是说，Singleton本身并不是一个非常差的模式，对其使用的关键在于何时使用它并正确的使用它。”
 
 ##思考题：
+```C
 class Sin {
 private:
 	Sin() {}
@@ -256,6 +257,6 @@ private:
 };
 
 Sin *Sin::inst = new Sin();
-
+```
 
 [返回目录](README.md)
