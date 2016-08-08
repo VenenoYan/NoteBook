@@ -43,12 +43,15 @@ class traits<T *>
     typede typename T value_type;
 };
 
-//使用即可：
+//使用：
 template<typename T>
 typename traits<T>::value_type func(T i)
 {
     return i;
 }
+
+##例子：
+    
 ```
 
 [返回目录](README.md)
