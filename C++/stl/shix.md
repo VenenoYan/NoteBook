@@ -20,7 +20,8 @@ pointer_type:代表迭代器所致对象的指针类型。简言之，它是oper
 * 
 iterator_category:代表1中提出的五种迭代器的类型标识
 
-##Traits：
+##Traits
+traits的目的是：让属于同一个概念的、具有不同特性的模型，对外暴露一致的接口。
 
 
 [返回目录](README.md)
