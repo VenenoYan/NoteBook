@@ -44,7 +44,11 @@ class traits<T *>
 };
 
 //使用即可：
-    
+template<typename T>
+typename traits<T>::value_type func(T i)
+{
+    return i;
+}
 ```
 
 [返回目录](README.md)
