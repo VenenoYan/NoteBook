@@ -35,8 +35,9 @@ template<typename T>
 class traits
 {
     typedef typename T value_type;
-    typedef typename T::value_type value_type;  //取决于T的
+    typedef typename T::value_type value_type;  //取决于T的类型
 };
+
 ```
 
 [返回目录](README.md)
