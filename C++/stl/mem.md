@@ -29,15 +29,11 @@ void* refill(size_t n) 　　　　　　　　　　　// 内部函数，用于
 
 二级空间配置器使用freelist链表的形式管理内存，最小的分辨单位为 8Byte, 其 free_list 数组存着 8*n（n=1…16) 大小内存的首地址, 大小同样的内存块使用链表的形式相连
 ```C++
-
 free_list[0] ——–> 8 byte
-
 free_list[1] ——–> 16 byte
-
 free_list[2] ——–> 24 byte
-
 free_list[3] ——–> 32 byte
-
+......
 free_list[15] ——-> 128 byte
 ```
 
