@@ -14,6 +14,9 @@
         * ```int i[10]; int *p = i;  　　　　sizeof(i) = 10, sizeof(p) = 4;```
     * sizeof、strlen
         * 运算符：函数
+        * 内存字节数：长度
+        * 任意类型：字符串
+        * 
     * java和c++的赋值都啥不同：
     * const和static能不能同时使用：
     * 指针和引用的区别
