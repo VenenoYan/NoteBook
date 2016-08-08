@@ -11,11 +11,13 @@ STL空间配置器分为两级：
 
 ###过程
 首先介绍四个基本的API：
-* void* allocate(size_t __n) // 外部 API，分配内存
-
-void deallocate(void* __p, size_t __n)// 外部 API，回收内存，以供再利用
-char* chunk_alloc(size_t __size, int& __nobjs)// 内部函数，用于分配一个大块
-void* refill(size_t n) // 内部函数，用于 allocate 从 free_list 中未找到可使用的块时调用
+* void* allocate(size_t __n) 　　　　　　　　// 外部 API，分配内存
+1. 
+void deallocate(void* __p, size_t __n)　　　　　// 外部 API，回收内存，以供再利用
+* 
+char* chunk_alloc(size_t __size, int& __nobjs)　// 内部函数，用于分配一个大块
+* 
+void* refill(size_t n) 　　　　　　　　　　　// 内部函数，用于 allocate 从 free_list 中未找到可使用的块时调用
 
 
 [返回目录](README.md)
