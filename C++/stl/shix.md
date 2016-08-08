@@ -37,7 +37,11 @@ class traits
     typedef typename T value_type;
     typedef typename T::value_type value_type;  //取决于T的类型
 };
-
+template <typename T>
+class traits<T *>
+{
+    typede typename T value_type;
+};
 ```
 
 [返回目录](README.md)
