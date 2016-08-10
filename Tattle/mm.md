@@ -120,7 +120,7 @@
         * 浅拷贝只是指针的拷贝，共享一个内存空间
         * 特别注意指针赋值时；
     * C++11特性了解哪些：auto、decltype、nullptr、for、smart-pointer、lambda、move语义和右值引用、override-final、多线程及信号量和锁、unordered-map、regex、bind、原子类型等
-* ###二、GDB
+* ###二、[GDB](http://www.cnblogs.com/lidabo/p/4234362.html)
     * gdb的用法，说说常用的那些调试命令，怎么产生dump文件，怎么设置条件断点，怎么设置观察断点
     * 多线程调试时候,怎么切换到另外的线程呢?
     * 问: 你这里说你熟悉GDB,你平时是分析dumpcore还是单步调试?
