@@ -79,7 +79,7 @@
         * dynamic_cast：尽可以对象的指针和引用；下行有安全检查
         * reinterpret_cast：位模式下的转换。同C本身格式没变！
     * dynamic_cast与直接(Class \*)类型转换
-        * dynamic_cast下行转换时有安全
+        * dynamic_cast下行转换时有安全检查
     * c/c++中函数调用的过程（参数压栈，call压返回地址，压ebp，保存现场）：
         * 参数入栈（此时在调用者栈里）
         * 返回地址入栈（此时仍在调用者栈里）
