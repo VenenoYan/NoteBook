@@ -72,6 +72,10 @@ BOOL , float, 指针变量 与“零值”比较的 if 语句
 [strlen](./../C++/C_relatives/fun.md)（）的实现
 * 
 C语言参数的入栈顺序，为什么这样？
+    * 
+自右向左
+    * 
+保证出栈顺序是
 * 
 C语言的字符串反转效率
 * C语言main()中return和exit(x)的区别<br>
