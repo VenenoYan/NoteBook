@@ -77,7 +77,7 @@
         * static_cast：non-const到const、void与普通互换、精度问题认为用户保证、子类转换为基类(不安全)
         * const_cast：仅用于消除const属性；const到non-const
         * dynamic_cast：尽可以对象的指针和引用；下行有安全检查
-        * reinterpret_cast：位模式下的转换。同C本身格式没变
+        * reinterpret_cast：位模式下的转换。同C本身格式没变！
     * dynamic_cast与直接(Class *)类型转换
     * c/c++中函数调用的过程（参数压栈，call压返回地址，压ebp，保存现场）：
     * c/c++变长函数：
