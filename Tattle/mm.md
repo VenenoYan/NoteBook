@@ -127,7 +127,7 @@
             * 编译时加上-g；
             * ulimit -c unlimited  //unlimited 表示不限制生成的core文件的大小。
         * 条件断点
-            * break [break-args] if (condition) 　　　
+            * break [break-args] if (condition) 　```break 180 if (string == NULL && i < 0)```　　
             * condition <break_list> (condition)
     * 多线程调试时候,怎么切换到另外的线程呢?
     * 问: 你这里说你熟悉GDB,你平时是分析dumpcore还是单步调试?
