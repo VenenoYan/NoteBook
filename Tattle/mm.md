@@ -109,6 +109,7 @@
         * const在*左边，底层const，可以改自己，不可以改自己指向的对象
         * const在*右边，顶层const，不可以改自己，可以改自己指向的对象
     * gcc编译链接时候有多个库需要链接，那么链接顺序需要注意什么：
+        * 从左向右查找，
     * C++语言中extern C有什么用处：
     * C++深拷贝和浅拷贝是什么? 深拷贝一般过程是什么样? 每次深拷贝都要拷贝一遍么?
     * C++11特性了解哪些：auto、decltype、nullptr、for、smart-pointer、lambda、move语义和右值引用、override-final、多线程及信号量和锁、unordered-map、regex、bind、原子类型等
