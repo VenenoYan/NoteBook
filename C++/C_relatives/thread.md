@@ -21,7 +21,9 @@
 
 新的进程在** copy_process 函数内作为父进程的一个副本创建**。此函数能执行除启动进程之外的所有操作，启动进程在之后进行处理。copy_process 内的第一步是验证 CLONE 标志以确保这些标志是一致的。如果不一致，就会返回 EINVAL 错误。接下来，询问 Linux Security Module (LSM) 看当前任务是否可以创建一个新任务。要了解有关 LSM 在 Security-Enhanced Linux (SELinux) 上下文中的更多信息，请参见 参考资料 小节。
 
-接下来，**调用 dup_task_struct 函数（在 ./linux/kernel/fork.c 内），这会分配一个新 task_struct** 并将当前进程的描述符复制到其内。在新的线程堆栈设置好后，一些状态信息也会被初始化，并且会将控制返回给 copy_process。控制回到 copy_process 后，除了其他几个限制和安全检查之外，还会执行一些常规管理，包括在新 task_struct 上的各种初始化。之后，会调用一系列复制函数来复制此进程的各个方面，比如复制开放文件描述符（copy_files）、复制符号信息（copy_sighand 和 copy_signal）、复制进程内存（copy_mm）以及最终复制线程（copy_thread）。
+接下来，**调用 dup_task_struct 函数（在 ./linux/kernel/fork.c 内），这会分配一个新 task_struct** 并将当前进程的描述符复制到其内。在新的线程堆栈设置好后，一些状态信息也会被初始化，并且会将控制返回给 copy_process。
+
+控制回到 copy_process 后，除了其他几个限制和安全检查之外，还会执行一些常规管理，包括在**新 task_struct 上的各种初始化**。之后，会调用一系列复制函数来复制此进程的各个方面，比如复制开放文件描述符（copy_files）、复制符号信息（copy_sighand 和 copy_signal）、复制进程内存（copy_mm）以及最终复制线程（copy_thread）。
 
 之后，这个新任务会被指定给一个处理程序，同时对允许执行进程的处理程序进行额外的检查（cpus_allowed）。新进程的优先级从父进程的优先级继承后，执行一小部分额外的常规管理，而且控制也会被返回给 do_fork。在此时，新进程存在但尚未运行。do_fork 函数通过调用 wake_up_new_task 来修复此问题。此函数（可在 ./linux/kernel/sched.c 内找到）初始化某些调度程序的常规管理信息，将新进程放置在运行队列之内，然后将其唤醒以便执行。最后，一旦返回至 do_fork，此 PID 值即被返回给调用程序，进程完成。
 
