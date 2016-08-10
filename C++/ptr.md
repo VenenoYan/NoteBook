@@ -239,7 +239,10 @@ template <typename T>
         friend class SmartPtr<T>;      //定义智能指针类为友元，因为智能指针类需要直接操纵辅助类
     
         //构造函数的参数为基础对象的指针
-        U_Ptr(T *ptr) :p(ptr), count(1) { }
+        U_Ptr(T *ptr) :p(ptr) {
+            if(!ip)
+                ++count;
+        }
     
         //析构函数
         ~U_Ptr() { delete p; }
