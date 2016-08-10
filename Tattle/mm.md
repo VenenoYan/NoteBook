@@ -126,7 +126,7 @@
         * 产生core dump(核心转储)文件：（一般禁止生成）
             * 编译时加上-g；
             * ulimit -c unlimited  //unlimited 表示不限制生成的core文件的大小。
-        * break [break-args] if (condition) 　　　condition <break_list> (condition)
+        * 条件断点break [break-args] if (condition) 　　　condition <break_list> (condition)
     * 多线程调试时候,怎么切换到另外的线程呢?
     * 问: 你这里说你熟悉GDB,你平时是分析dumpcore还是单步调试?
     * 问: 那么你知道gdb中被调函数中想打印上层函数局部变量怎么打印么?
