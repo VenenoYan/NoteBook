@@ -17,7 +17,7 @@
 
 可以看到 do_fork 是进程创建的基础。可以在 ./linux/kernel/fork.c 内找到 do_fork 函数（以及合作函数 copy_process）。
 
-do_fork 函数首先分配一个新的PID，然后调用copy_process：调用 alloc_pidmap，该调用会分配一个新的 PID。接下来，do_fork 检查调试器是否在跟踪父进程。如果是，在 clone_flags 内设置 CLONE_PTRACE 标志以做好执行 fork 操作的准备。之后 do_fork 函数还会调用 copy_process，向其传递这些标志、堆栈、注册表、父进程以及最新分配的 PID。
+**do_fork 函数首先分配一个新的PID，然后调用copy_process：**调用 alloc_pidmap，该调用会分配一个新的 PID。接下来，do_fork 检查调试器是否在跟踪父进程。如果是，在 clone_flags 内设置 CLONE_PTRACE 标志以做好执行 fork 操作的准备。之后 do_fork 函数还会调用 copy_process，向其传递这些标志、堆栈、注册表、父进程以及最新分配的 PID。
 
 新的进程在 copy_process 函数内作为父进程的一个副本创建。此函数能执行除启动进程之外的所有操作，启动进程在之后进行处理。copy_process 内的第一步是验证 CLONE 标志以确保这些标志是一致的。如果不一致，就会返回 EINVAL 错误。接下来，询问 Linux Security Module (LSM) 看当前任务是否可以创建一个新任务。要了解有关 LSM 在 Security-Enhanced Linux (SELinux) 上下文中的更多信息，请参见 参考资料 小节。
 
