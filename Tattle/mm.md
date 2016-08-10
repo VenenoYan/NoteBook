@@ -112,7 +112,6 @@
         * 库的查找：从右向左，最后一个-l库文件最先调用；根据-L指定的路径顺序查找；
         * 在项目开发过层中尽量让lib是垂直关系，避免循环依赖；越是底层的库，越是往后面写！
 　　　　　　　　　　　　　　　```g++ ...  obj($?) -l(上层逻辑lib) -l(中间封装lib) -l(基础lib) -l(系统lib)  -o $@```
-        * 符号的查找：
     * C++语言中extern C有什么用处：
     * C++深拷贝和浅拷贝是什么? 深拷贝一般过程是什么样? 每次深拷贝都要拷贝一遍么?
     * C++11特性了解哪些：auto、decltype、nullptr、for、smart-pointer、lambda、move语义和右值引用、override-final、多线程及信号量和锁、unordered-map、regex、bind、原子类型等
