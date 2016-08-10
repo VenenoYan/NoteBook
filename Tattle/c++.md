@@ -46,6 +46,10 @@ override、overload
 [单例模式](../C++/singleton.md)
 1. 
 生产者-消费者  加锁
+    * 
+P操作：
+    * 
+V操作：
 1. 
 BOOL , float, 指针变量 与“零值”比较的 if 语句
 ```C
