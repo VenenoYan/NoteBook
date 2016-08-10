@@ -11,7 +11,7 @@
     * c指针数组： 
         * 数组不可以拷贝和赋值；
         * 函数参数时数组自动转换为指针；
-        * ```int i[10]; int *p = i;  　　　　sizeof(i) = 10, sizeof(p) = 4;```
+        * ```int i[10]; int *p = i;  　　　　sizeof(i) = 40, sizeof(p) = 4;```
     * sizeof、strlen
         * 运算符：函数
         * 内存字节数：长度
