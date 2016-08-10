@@ -14,3 +14,4 @@
 * [Web基础](web/README.md)
 * [Django初步](django/README.md)
 
+该项目是作者自己学习期间的总结，以及
