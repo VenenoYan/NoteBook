@@ -78,7 +78,7 @@
         * const_cast：仅用于消除const属性；const到non-const
         * dynamic_cast：尽可以对象的指针和引用；下行有安全检查
         * reinterpret_cast：位模式下的转换。同C本身格式没变！
-    * dynamic_cast与直接(Class *)类型转换
+    * dynamic_cast与直接(Class \*)类型转换
         * 
     * c/c++中函数调用的过程（参数压栈，call压返回地址，压ebp，保存现场）：
         * 参数入栈（此时在调用者栈里）
