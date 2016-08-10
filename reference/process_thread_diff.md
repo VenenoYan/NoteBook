@@ -109,7 +109,7 @@ exit是系统调用，是不会退栈的，表示一个进程的结束！！它�
 * main函数中调用return，会隐式调用exit：非主函数中调用return和exit效果很明显，但是在main函数中调用return和exit的现象就很模糊，多数情况下现象都是一致的。
 * fork和vfork中区别大，因为vfork是共享内存，所以可以exit，但是不能是return，否则子结束因为退栈把父的也改变了。
 
-###通信：
+###[通信](http://blog.csdn.net/eroswang/article/details/1772350)：
 1. 
 同进程下不同线程：线程共享进程的内存空间，全局变量就可以了；
 1. 
