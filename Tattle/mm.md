@@ -114,7 +114,7 @@
 　　　　　　　　　　　　　　　```g++ ...  obj($?) -l(上层逻辑lib) -l(中间封装lib) -l(基础lib) -l(系统lib)  -o $@```
     * C++语言中extern C有什么用处：
     * C++深拷贝和浅拷贝是什么? 深拷贝一般过程是什么样? 每次深拷贝都要拷贝一遍么?
-        * 深拷贝采用的是按位拷贝，
+        * 深拷贝采用的是从新申请一块内存，将数据拷贝过来；
         * 浅拷贝只是指针的拷贝，共享一个内存空间
     * C++11特性了解哪些：auto、decltype、nullptr、for、smart-pointer、lambda、move语义和右值引用、override-final、多线程及信号量和锁、unordered-map、regex、bind、原子类型等
 * ###二、GDB
