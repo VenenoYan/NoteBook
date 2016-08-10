@@ -123,7 +123,7 @@
 * ###二、[GDB](http://www.cnblogs.com/lidabo/p/4234362.html)
     * gdb的用法，说说常用的那些调试命令，怎么产生dump文件，怎么设置条件断点，怎么设置观察断点
         * help、b、bt、r/c、s/n、p、watch、d等
-        * 产生core dump()：
+        * 产生core dump(核心转储)：
     * 多线程调试时候,怎么切换到另外的线程呢?
     * 问: 你这里说你熟悉GDB,你平时是分析dumpcore还是单步调试?
     * 问: 那么你知道gdb中被调函数中想打印上层函数局部变量怎么打印么?
