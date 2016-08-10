@@ -128,7 +128,7 @@
             * ulimit -c unlimited  //unlimited 表示不限制生成的core文件的大小。
         * 条件断点
             * break [break-args] if (condition) 　```break 180 if (string == NULL && i < 0)```　　
-            * condition <break_list> (condition)    ```cond 3 i == 3　将会在断点3上附加条件（i == 3）```
+            * condition <break_list> (condition)```cond 3 i == 3　将会在断点3上附加条件（i == 3）```
     * 多线程调试时候,怎么切换到另外的线程呢?
     * 问: 你这里说你熟悉GDB,你平时是分析dumpcore还是单步调试?
     * 问: 那么你知道gdb中被调函数中想打印上层函数局部变量怎么打印么?
