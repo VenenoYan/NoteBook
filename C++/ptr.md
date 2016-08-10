@@ -145,8 +145,10 @@ class U_Ptr
     friend class HasPtr;  
     int *ip;  
     size_t use;  
-    U_Ptr(int *p) : ip(p) , use(1)  
+    U_Ptr(int *p) : ip(p) 
     {  
+        if(!ip)
+            ++use;
         cout << "U_ptr constructor called !" << endl;  
     }  
     ~U_Ptr()  
