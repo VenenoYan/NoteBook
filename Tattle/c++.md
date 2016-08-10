@@ -39,8 +39,6 @@ c和C++比较
   * C支持而C++不支持：很少
   * C和C++都支持但是语法不同：const、struct、void*、auto、IO
 1. 
-C++的锁有那些？以及区别
-1. 
 进程通信IPC
 1. 
 override、overload
