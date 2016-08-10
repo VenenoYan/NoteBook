@@ -76,7 +76,7 @@
         * C风格：不做任何保证，直接暴力转换。但是数据的原始属性并没有改变；
         * static_cast：non-const到const、void与普通互换、精度问题认为用户保证、子类转换为基类(不安全)
         * const_cast：仅用于消除const属性；const到non-const
-        * dynamic_cast：尽可以对象的指针和引用；下行有安全检查
+        * dynamic_cast：尽可以对象的指针和引用；下行有安全检查；上行
         * reinterpret_cast：位模式下的转换。同C本身格式没变！
     * dynamic_cast与直接(Class \*)类型转换
         * dynamic_cast下行转换时有安全检查
