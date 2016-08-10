@@ -69,7 +69,7 @@ BOOL , float, 指针变量 与“零值”比较的 if 语句
     * 
 指针传递
 * 
-strlen（）的实现
+[strlen](./../C++/C_relatives/fun.md)（）的实现
 * 
 C语言参数的入栈顺序，为什么这样？
 * 
