@@ -295,6 +295,8 @@ unsigned int ELFhash(char *str)
     * 有一个文件里面每行存储ip user query_id三项，然后找出出现次数最多的query_id的所有行． 我很艰难的写了 query_id = cat file | awk '{ print $3} | sort | awk '{ ...}''; cat file | '($3 == $query_id){ print $0}', 面试官说我写的复杂了...
     * shell脚本了解么?file.txt每行有两列数据，第二列是数字，求所有行第二列数据和?
     * 编译，链接，装载到内存：
+        * 编译：负责将上层语言编译为汇编语言
+        * 连接：
     * 讲讲链接器，静态链接和动态链接的优缺点，
     * 进程执行，挂起，调度，调用共享库，
     * 系统调用：
