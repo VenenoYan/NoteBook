@@ -333,7 +333,7 @@ unsigned int ELFhash(char *str)
         * fork、vfork等函数内部都是sys_fork实现的
         * 调用do_fork()：生成新的PID，调用copy_process；
         * copy_process以父进程副本的形式拷贝；调用dup_task_struct，
-        * 
+        * 返回给copy_process，
     * fork 函数：如何确认是子进程还是父进程 返回0是子进程 大于0是父进程，表示子进程pid
     * 进程和线程、进程的创建及运行过程，进程通信过程，进程调度，线程安全, 进程间互斥的理解
     * 进线程优缺点：
