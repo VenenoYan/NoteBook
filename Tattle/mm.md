@@ -285,6 +285,7 @@ unsigned int ELFhash(char *str)
     * awk，sed会用么
     * iptables五个钩子：
     * linux core文件：
+        * 在一个程序崩溃时，它一般会在指定目录下生成一个core文件。core文件仅仅是一个内存映象(同时加上调试信息)，主要是用来调试的。   
     * traceroute使用
     * 有一个文件里面每行存储ip user query_id三项，然后找出出现次数最多的query_id的所有行． 我很艰难的写了 query_id = cat file | awk '{ print $3} | sort | awk '{ ...}''; cat file | '($3 == $query_id){ print $0}', 面试官说我写的复杂了...
     * shell脚本了解么?file.txt每行有两列数据，第二列是数字，求所有行第二列数据和?
