@@ -188,6 +188,29 @@
     * 字符串如何hash 
         * 对于字符串Hash来说都是把**字符串映射为一个整数**，这一步是通过Hash函数来进行的。常用的Hash函数具体有：
 SDBMHash，RSHash，JSHash，ELFHash，BKDRHash，DJBHash等等：
+```C
+unsigned int ELFhash(char *str)  
+{  
+    unsigned int h = 0;  
+    unsigned int x;  
+    while(*str)  
+    {  
+        h = (h << 4) + *str++;  
+        x = h & 0xF0000000L;  
+        if(x)  
+        {  
+            h ^= x>>24;  
+            h &= ~x;  
+        }  
+    }  
+    return h & 0x7FFFFFFF;  
+}  
+接下来我会详细探讨它的原理。
+（1）h = (h << 4) + *str++;  把当前的字符的ASCII存入h的低4位。
+（2）x = h & 0xF0000000L;    取出h中最高4位，0xF0000000L地代表28~31这4位是1，其余后28位是0。
+（3）如果最高4位不为0，那么说明字符多于7个，现在正在存第8个，如果不处理再加下一个字符时，第一个字符会
+    被移出，因为1~4位刚刚加入了新字符，所以不能>>28，而是>>24。
+（4）h &= ~x;                表示把h的高4位清零。```
     * url如何hash
     * 哈希表的size为什么总是一个素数？
         * 减少冲突的产生
