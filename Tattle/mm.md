@@ -266,7 +266,7 @@
     * 工作区、暂存区（版本库）
     * git怎么远程添加分支?
         * git push remote-name local-branch:remote-branch
-    * git平时用哪些[命令](./git,md)?
+    * git平时用哪些[命令](./../git,md)?
         * add、commit、status、log、reflog、branch、checkout、reverse、push、pull、rebase、fetch等
         
 ![](0.jpg)
