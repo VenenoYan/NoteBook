@@ -254,7 +254,8 @@ unsigned int ELFhash(char *str)
         * 我认为一个快，两个还要打开两次。当然如果两个进程近更快了
         * iostat信息，查看当前使用的句柄个数
     * 怎样判断机器大小尾端？
-        * 通过使用union
+        * 申请一个int,只读一部分
+        * 或者通过使用union
         ```C++
             typedef union
             {
@@ -281,7 +282,6 @@ unsigned int ELFhash(char *str)
             　　return 0;
             }
         ```
-        * 或者申请一个int,只读一部分
     * awk，sed会用么
     * iptables五个钩子：
     * linux core文件：
