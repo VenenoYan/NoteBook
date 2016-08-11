@@ -323,6 +323,7 @@ unsigned int ELFhash(char *str)
     * select和epoll的区别？ epoll有哪几种触发？ 各有什么特点？
         * 水平触发LT：可以当前不处理，下次还报告
         * 边缘触发ET：当前不处理以后不报告了
+        * 默认水平LT
     * pthread_cond_signal唤醒几个线程
     * 信号量怎么实现的?
     * fork()流程，如文件描述符存储位置，写时复制技术，clone函数等
