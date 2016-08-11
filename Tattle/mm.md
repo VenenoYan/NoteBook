@@ -329,7 +329,7 @@ unsigned int ELFhash(char *str)
         * 默认水平触发LT
     * pthread_cond_signal唤醒几个线程
     * 信号量怎么实现的?
-    * [fork()流程](./..C++/C_relatives/)，如文件描述符存储位置，写时复制技术，clone函数等
+    * [fork()流程](./..C++/C_relatives/thread.md)，如文件描述符存储位置，写时复制技术，clone函数等
         * fork、vfork等函数内部都是sys_fork实现的
         * 调用do_fork()：生成新的PID，调用copy_process；
         * copy_process以父进程副本的形式拷贝；调用dup_task_struct，生成新的task_struct
