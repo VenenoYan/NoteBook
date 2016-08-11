@@ -255,6 +255,55 @@ unsigned int ELFhash(char *str)
         * iostat信息，查看当前使用的句柄个数
     * 怎样判断机器大小尾端？
         * 通过使用union
+        ```C++
+        #include <stdio.h>
+
+typedef union
+
+{
+
+　　char ch;
+
+　　int    data;
+
+}Udata;
+
+int main()
+
+{
+
+　　Udata tmpData;
+
+　　tmpData.data = 0x12345678;
+
+　　if(tmpData.ch == 0x78)
+
+　　{
+
+　　　　printf("Little-endian\n");
+
+　　}
+
+　　else if(tmpData.ch == 0x12)
+
+　　{
+
+　　　　printf("Big-endian\n");
+
+　　}
+
+　　else
+
+　　{
+
+　　　　printf("Unable to determine\n");
+
+　　}
+
+　　return 0;
+
+}
+        ```
         * 或者申请一个int,只读一部分
     * awk，sed会用么
     * iptables五个钩子：
