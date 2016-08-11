@@ -267,7 +267,7 @@
     * git怎么远程添加分支?
         * git push remote-name local-branch:remote-branch
     * git平时用哪些命令?
-        * add、commit、status、log、reflog、branch、checkout、
+        * add、commit、status、log、reflog、branch、checkout、push、pull、rebase、fetch、
         
 ![](0.jpg)
 ![](32.jpg)
