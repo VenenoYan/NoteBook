@@ -190,7 +190,7 @@
 SDBMHash，RSHash，JSHash，ELFHash，BKDRHash，DJBHash等等
     * url如何hash
     * 哈希表的size为什么总是一个素数？
-        * 
+        * 减少冲突的产生
     * 字符串匹配都有哪些算法?
 * ###六、操作系统：
     * 如何查看进程是否内存泄露?进程执行时间过长分析原因？strace命令用过么? 进程内核态时间较多一般是什么原因?
