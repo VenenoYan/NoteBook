@@ -186,7 +186,8 @@
     * 归并排序是否需要额外的空间：链表的不用 数组的要
     * [归并、快排写法](./../DataStructure/sort.md)
     * 字符串如何hash 
-        * 
+        * 对于字符串Hash来说都是把字符串映射为一个整数，这一步是通过Hash函数来进行的。常用的Hash函数具体有：
+SDBMHash，RSHash，JSHash，ELFHash，BKDRHash，DJBHash等等
     * url如何hash
     * 字符串匹配都有哪些算法?
 * ###六、操作系统：
