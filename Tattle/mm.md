@@ -319,11 +319,14 @@ unsigned int ELFhash(char *str)
         * 分段是根据用户程序
     * 进程虚拟地址空间的实现
     * select, poll和epoll的差别
+        * select有大小限制，一般1024，可以配置。
+        * select和poll都会修改传入的数组，所有会有两次拷贝的过程，比较慢；
+        * select和poll都不会告诉那个有变化，需要自己遍历
     * 使用epoll的高并发服务器(详细，线程池以及epoll监听过程)
     * select和epoll的区别？ epoll有哪几种触发？ 各有什么特点？
         * 水平触发LT：可以当前不处理，下次还报告
         * 边缘触发ET：当前不处理以后不报告了
-        * 默认水平LT
+        * 默认水平触发LT
     * pthread_cond_signal唤醒几个线程
     * 信号量怎么实现的?
     * fork()流程，如文件描述符存储位置，写时复制技术，clone函数等
