@@ -254,6 +254,7 @@ unsigned int ELFhash(char *str)
         * 我认为一个快，两个还要打开两次。当然如果两个进程近更快了
         * iostat信息，查看当前使用的句柄个数
     * 怎样判断机器大小尾端？
+        *
     * awk，sed会用么
     * iptables五个钩子：
     * linux core文件：
