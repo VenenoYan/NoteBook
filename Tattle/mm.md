@@ -131,9 +131,9 @@
             * ```condition <break_list>　(condition)```：只是condition只能用在已存在的断点上。
         ```cond 3 i == 3　将会在断点3上附加条件（i == 3）```
         * 观察断点，为表达式（变量） expr设置一个观察点，一量表达式值有变化时，马上停住程序。
-            * watch <expr>  ：有变化及通知停住
-            * rwatch <expr>：表达式/变量被读时，停住
-            * awatch <expr>：被写时
+            * ```watch <expr> ``` ：有变化及通知停住
+            * ```rwatch <expr>```：表达式/变量被读时，停住
+            * ```awatch <expr>```：被写时
     * 多线程调试时候,怎么切换到另外的线程呢?
         * 查询线程：info threads  　　  info inferiors
         * 切换调试线程：```thread <thread number>　　　inferior <infer number>```
