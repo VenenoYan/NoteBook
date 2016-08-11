@@ -330,6 +330,9 @@ unsigned int ELFhash(char *str)
     * pthread_cond_signal唤醒几个线程
     * 信号量怎么实现的?
     * fork()流程，如文件描述符存储位置，写时复制技术，clone函数等
+        * fork、vfork等函数内部都是sys_fork实现的
+        * 调用do_fork()：生成新的PID，调用copy_process；
+        * copy_process赋值以父进程副本的形式拷贝
     * fork 函数：如何确认是子进程还是父进程 返回0是子进程 大于0是父进程，表示子进程pid
     * 进程和线程、进程的创建及运行过程，进程通信过程，进程调度，线程安全, 进程间互斥的理解
     * 进线程优缺点：
