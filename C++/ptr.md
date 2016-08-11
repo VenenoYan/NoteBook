@@ -259,7 +259,7 @@ public:
     SmartPtr(T *ptr) :rp(new U_Ptr<T>(ptr)) { }      //构造函数
     SmartPtr(const SmartPtr<T> &sp) 
     { 
-        rp = sp.rp;     //注意sp不是指针，所以用的.而不是->
+        rp = sp.rp;             //注意sp不是指针，所以用的.而不是->
         rp->count += 1;
     }  //复制构造函数
     SmartPtr& operator=(const SmartPtr<T>& rhs) 
