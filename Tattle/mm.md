@@ -139,6 +139,8 @@
         * 切换调试线程：```thread <thread number>　　　inferior <infer number>```
     * 问: 你这里说你熟悉GDB,你平时是分析dumpcore还是单步调试?
     * 问: 那么你知道gdb中被调函数中想打印上层函数局部变量怎么打印么?
+        * print [file]::x
+        * print [func]::x
     * 问: 那多线程调试时候,怎么切换到另外的线程呢?
     * 问: 还有你说你熟悉git, 那么怎么远程添加分支?
         * git push remote-name local-branch:remote-branch
