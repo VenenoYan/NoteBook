@@ -255,7 +255,7 @@ unsigned int ELFhash(char *str)
         * iostat信息，查看当前使用的句柄个数
     * 怎样判断机器大小尾端？
         * 申请一个int,只读一部分
-        * 或者通过使用union
+        * 或者通过使用union：共享的特性，给一个大的赋值，读小的看是大的的那一部分即可
         ```C++
             typedef union
             {
