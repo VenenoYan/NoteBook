@@ -315,6 +315,7 @@ unsigned int ELFhash(char *str)
         * 直接相连（高位对cache块数取余）、全相连、组相连
     * 内存通道，并行单元
     * 分段的核心思想是什么：
+        * 分页是按
     * 进程虚拟地址空间的实现
     * select, poll和epoll的差别
     * 使用epoll的高并发服务器(详细，线程池以及epoll监听过程)
