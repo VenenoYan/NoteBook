@@ -245,6 +245,12 @@ private:
     U_Ptr(T *ptr) :p(ptr),count(1) {}
     //析构函数
     ~U_Ptr() { delete p; }
+    
+    void add_referece()
+    {
+        ++count;
+    }
+    void 
 
     //引用计数
     int count;   
