@@ -250,7 +250,10 @@ private:
     {
         ++count;
     }
-    void 
+    void release()
+    {
+        --count;
+    }
 
     //引用计数
     int count;   
