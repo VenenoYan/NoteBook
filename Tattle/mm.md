@@ -191,19 +191,19 @@ SDBMHash，RSHash，JSHash，ELFHash，BKDRHash，DJBHash等等：
 ```C
 unsigned int ELFhash(char *str)  
 {  
-    unsigned int h = 0;  
-    unsigned int x;  
-    while(*str)  
-    {  
-        h = (h << 4) + *str++;  
-        x = h & 0xF0000000L;  
-        if(x)  
-        {  
-            h ^= x>>24;  
-            h &= ~x;  
-        }  
-    }  
-    return h & 0x7FFFFFFF;  
+                unsigned int h = 0;  
+                unsigned int x;  
+                while(*str)  
+                {  
+                    h = (h << 4) + *str++;  
+                    x = h & 0xF0000000L;  
+                    if(x)  
+                    {  
+                        h ^= x>>24;  
+                        h &= ~x;  
+                    }  
+                }  
+                return h & 0x7FFFFFFF;  
 }  
 接下来我会详细探讨它的原理。
 （1）h = (h << 4) + *str++;  把当前的字符的ASCII存入h的低4位。
