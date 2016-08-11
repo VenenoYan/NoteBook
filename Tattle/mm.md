@@ -282,7 +282,7 @@ unsigned int ELFhash(char *str)
             　　return 0;
             }
         ```
-    * awk，sed,grep：
+    * awk，sed,grep：分析处理、编辑、
     * iptables五个钩子：
         * PREROUTING (路由前)
 		* INPUT (数据包流入口)
