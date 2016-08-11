@@ -187,7 +187,7 @@
     * [归并、快排写法](./../DataStructure/sort.md)
     * 字符串如何hash 
         * 对于字符串Hash来说都是把**字符串映射为一个整数**，这一步是通过Hash函数来进行的。常用的Hash函数具体有：
-SDBMHash，RSHash，JSHash，ELFHash，BKDRHash，DJBHash等等
+SDBMHash，RSHash，JSHash，ELFHash，BKDRHash，DJBHash等等：
     * url如何hash
     * 哈希表的size为什么总是一个素数？
         * 减少冲突的产生
