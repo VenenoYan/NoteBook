@@ -231,8 +231,6 @@ HasPtr& HasPtr::operator = (const HasPtr &rhs)  //赋值操作符在减少做操
 }  
 
 //升级========================================================================模板
-#include <iostream>
-
 template <typename T>
 class SmartPtr;
 
