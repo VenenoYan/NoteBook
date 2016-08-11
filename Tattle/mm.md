@@ -123,7 +123,7 @@
 * ###二、[GDB](http://www.cnblogs.com/lidabo/p/4234362.html)
     * gdb的用法，说说常用的那些调试命令，怎么产生dump文件，怎么设置条件断点，怎么设置观察断点
         * help、b、bt、r/c、s/n、p、watch、d等
-        * 产生core dump(核心转储)文件：（一般禁止生成）
+        * 产生core dump(核心转储)文件：（linux一般禁止生成）
             * 编译时加上-g；
             * ulimit -c unlimited  //unlimited 表示不限制生成的core文件的大小。
         * 条件断点
