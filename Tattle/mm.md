@@ -284,6 +284,11 @@ unsigned int ELFhash(char *str)
         ```
     * awk，sed会用么
     * iptables五个钩子：
+        * PREROUTING (路由前)
+		* INPUT (数据包流入口)
+		* FORWARD (转发管卡)
+		* OUTPUT(数据包出口)
+		* POSTROUTING（路由后）    
     * linux core文件：
         * 在一个程序崩溃时，它一般会在指定目录下生成一个core文件。core文件仅仅是一个内存映象(同时加上调试信息)，主要是用来调试的。   
     * traceroute使用
