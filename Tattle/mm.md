@@ -399,6 +399,9 @@ unsigned int ELFhash(char *str)
         @log
         def now():
             print('2015-3-25')
+        >>> now()
+        call now():
+        2015-3-25
         ```
     * GIL
     * With
