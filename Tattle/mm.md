@@ -388,7 +388,8 @@ unsigned int ELFhash(char *str)
     * SQL操作：
 * ###八、Python
     * python装饰器 
-        * 在代码运行期间动态增加功能的方式，称之为“装饰器”（Decorator）    
+        * 在代码运行期间动态增加功能的方式，称之为“装饰器”（Decorator） 
+        * 本质上，decorator就是一个返回函数的高阶函数。
     * GIL
     * With
     * 如果去掉GIL会出现什么问题
