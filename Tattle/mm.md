@@ -388,6 +388,8 @@ unsigned int ELFhash(char *str)
         * 三次连接：
             * 客户端：closed->syn_sent->established
             * 服务端：listen->syn_recv->establish
+        * 四次挥手：   
+            * 
     * 拥塞控制
         * 发送端会根据当前的路由情况估计网络的拥塞情况，估计得到一个拥塞窗口
     * 丢包的话滑动窗口会改变么？
