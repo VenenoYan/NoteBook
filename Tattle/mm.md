@@ -402,6 +402,7 @@ unsigned int ELFhash(char *str)
         >>> now()
         call now():
         2015-3-25
+        # now = log(now)
         ```
     * GIL
     * With
