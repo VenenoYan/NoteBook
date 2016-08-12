@@ -390,6 +390,13 @@ unsigned int ELFhash(char *str)
     * python装饰器 
         * 在代码运行期间动态增加功能的方式，称之为“装饰器”（Decorator） 
         * 本质上，decorator就是一个返回函数的高阶函数：参数也是函数
+        ```python
+        def log(func):
+    def wrapper(*args, **kw):
+        print('call %s():' % func.__name__)
+        return func(*args, **kw)
+    return wrapper
+        ```
     * GIL
     * With
     * 如果去掉GIL会出现什么问题
