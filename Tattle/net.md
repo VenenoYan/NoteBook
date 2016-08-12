@@ -1,4 +1,5 @@
 [数据包在网络中的过程](http://blog.csdn.net/waitforfree/article/details/50771777)
+
 **网络字节序，大小端**
 
 大小端：主要是多字节值的哪一端存放在起始地址处（即低地址处）。
