@@ -385,6 +385,9 @@ unsigned int ELFhash(char *str)
     * 怎样查看两台主机之间的路由情况？traceroute命令?
         * traceroute通过发送小的数据包到目的设备直到其返回，来测量其需要多长时间.测三次，大小40B
     * TCP/IP状态转移图
+        * 三次连接：
+            * 客户端：closed->syn_sent->established
+            * 服务端：listen->syn_recv->establish
     * 拥塞控制
         * 发送端会根据当前的路由情况估计网络的拥塞情况，估计得到一个拥塞窗口
     * 丢包的话滑动窗口会改变么？
