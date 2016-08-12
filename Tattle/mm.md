@@ -389,7 +389,8 @@ unsigned int ELFhash(char *str)
             * 客户端：closed->syn_sent->established
             * 服务端：listen->syn_recv->establish
         * 四次挥手：   
-            * 
+            * 客户端：established->fin_wait1->fin_wait2->time__wait->closed
+            * 服务端：established->close_wait->last_ack->closed
     * 拥塞控制
         * 发送端会根据当前的路由情况估计网络的拥塞情况，估计得到一个拥塞窗口
     * 丢包的话滑动窗口会改变么？
