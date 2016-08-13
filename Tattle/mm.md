@@ -386,7 +386,7 @@ unsigned int ELFhash(char *str)
         * 尽量避免在 where 子句中使用 or 来连接条件
     * Innodb、以及另一种方式
         * Innodb：
-        * Myisam：默认的，但是不支持事务
+        * Myisam：默认的，但是不支持事务、外键、行级锁
     * mysql where 和 on的区别：
         * where：是对生成的临时表起作用
         * on：先对表操作，然后在生成虚表
