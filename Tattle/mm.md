@@ -416,7 +416,7 @@ unsigned int ELFhash(char *str)
         * 在多线程环境下，任何一条线程想要执行代码的时候，都必须获取（acquire）到这个锁，运行一定数量字节码，然后释放（release）掉，然后再尝试获取。这样 GIL 就保证了同时只有一条线程在执行。
         * 所以python根本没有利用多线程。但是好处是不用担心全局变量的锁问题
         * 对应CPU密集型操作，作用不大，但是我们的程序大多数IO密集型的。
-        * 所以CPU密集型的用多进程，普通IO的用多线程
+        * 所以CPU密集型的用多进程，普通IO的用多线程。还是多进程把！
     * With：简化try...catch...finally
     ```python
     class opened(object):
