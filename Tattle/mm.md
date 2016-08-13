@@ -412,6 +412,7 @@ unsigned int ELFhash(char *str)
         # 即相当于now = log(now)
         ```
     * GIL (Global Interpreter Lock)
+        * 每一个interpreter进程,只能同时仅有一个线程来执行, 获得相关的锁, 存取相关的资源.
     * With
     * 如果去掉GIL会出现什么问题
     * Async:
