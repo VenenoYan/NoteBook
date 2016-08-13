@@ -381,6 +381,8 @@ unsigned int ELFhash(char *str)
     * 数据库的索引优化：
     * 聚簇索引：
     * 数据库索引：
+        * 尽量不在where中判断NULL
+        * 尽量避免在 where 子句中使用 != 或 <> 操作符，否则将引擎放弃使用索引而进行全表扫描。
     * Innodb、以及另一种方式
     * mysql where 和 on的区别：
     * 怎么保证ACID：
