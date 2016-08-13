@@ -416,15 +416,14 @@ unsigned int ELFhash(char *str)
     * With：简化try...catch...finally
     ```python
     class opened(object):
-    def __init__(self, name):
-        self.handle = open(name)
-    def __enter__(self):
-        return self.handle
-    def __exit__(self, type, value, trackback):
-        self.handle.close()
-with opened('/tmp/a.txt') as f:
-    for line in f.readlines():
-        print(line)
+        def __init__(self, name):
+            self.handle = open(name)
+        def __enter__(self):
+            return self.handle
+        def __exit__(self, type, value, trackback):
+            self.handle.close()
+    with opened('/tmp/a.txt') as f:
+            print(line)
     ```
     * 如果去掉GIL会出现什么问题
     * Async:
