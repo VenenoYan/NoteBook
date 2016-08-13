@@ -388,6 +388,8 @@ unsigned int ELFhash(char *str)
         * Innodb：
         * Myisam：默认的，但是不支持事务
     * mysql where 和 on的区别：
+        * where：是对生成的临时表起作用
+        * on：
     * 怎么保证ACID：
     * 数据库123范式：
     * SQL操作：
