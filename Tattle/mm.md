@@ -413,6 +413,7 @@ unsigned int ELFhash(char *str)
         ```
     * GIL (Global Interpreter Lock)
         * 每一个interpreter进程,只能同时仅有一个线程来执行, 获得相关的锁, 存取相关的资源.
+        * 在多线程环境下，任何一条线程想要执行代码的时候，都必须获取（acquire）到这个锁，运行一定数量字节码，然后释放（release）掉，然后再尝试获取。这样 GIL 就保证了同时只有一条线程在执行。
     * With：简化try...catch...finally
     ```python
     class opened(object):
