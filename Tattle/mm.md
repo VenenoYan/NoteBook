@@ -424,6 +424,8 @@ unsigned int ELFhash(char *str)
             self.handle.close()
     with opened('/tmp/a.txt') as f:
             print(line)
+            
+    # with 后的那个返回一个上下文管理器对象。  AS后的是调用enter方法返回的值
     ```
     * 如果去掉GIL会出现什么问题
     * Async:
