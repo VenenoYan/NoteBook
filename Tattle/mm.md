@@ -389,7 +389,7 @@ unsigned int ELFhash(char *str)
         * Myisam：默认的，但是不支持事务、外键、行级锁
     * mysql where 和 on的区别：
         * where：是对生成的临时表起作用
-        * on：先对表操作，然后在生成虚表
+        * on：在生成虚表时使用的，不管真假左边的肯定都有
     * 怎么保证ACID：
     * 数据库123范式：
     * SQL操作：
