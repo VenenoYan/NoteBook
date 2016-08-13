@@ -413,7 +413,19 @@ unsigned int ELFhash(char *str)
         ```
     * GIL (Global Interpreter Lock)
         * 每一个interpreter进程,只能同时仅有一个线程来执行, 获得相关的锁, 存取相关的资源.
-    * With
+    * With：简化try...catch...finally
+    ```python
+    class opened(object):
+    def __init__(self, name):
+        self.handle = open(name)
+    def __enter__(self):
+        return self.handle
+    def __exit__(self, type, value, trackback):
+        self.handle.close()
+with opened('/tmp/a.txt') as f:
+    for line in f.readlines():
+        print(line)
+    ```
     * 如果去掉GIL会出现什么问题
     * Async:
     * MVC是什么?
