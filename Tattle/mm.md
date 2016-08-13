@@ -411,7 +411,7 @@ unsigned int ELFhash(char *str)
         2015-3-25
         # 即相当于now = log(now)
         ```
-    * GIL (Global Interpreter Lock),
+    * GIL (Global Interpreter Lock)
     * With
     * 如果去掉GIL会出现什么问题
     * Async:
