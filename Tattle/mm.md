@@ -386,7 +386,7 @@ unsigned int ELFhash(char *str)
         * 尽量避免在 where 子句中使用 or 来连接条件
     * Innodb、以及另一种方式
         * Innodb：
-        * Myisam:
+        * Myisam：默认的，但是不支持事务
     * mysql where 和 on的区别：
     * 怎么保证ACID：
     * 数据库123范式：
