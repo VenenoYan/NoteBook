@@ -19,7 +19,7 @@ int normal_search(string *s,string *t)
         int ret,i,j;
         i = j = 0;
         ret = -1;
-        while(i <= s.size()-t.size() && j != t.size()-1)
+        while(i <= s.size()-t.size() && j != t.size())
         {
             if(s[i] == t[j])
             {
@@ -32,5 +32,7 @@ int normal_search(string *s,string *t)
                 i = x - j + 1;
             }
         }
+        if( j == t.size() )
+            
 }
 ```
