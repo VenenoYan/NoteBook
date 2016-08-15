@@ -1,4 +1,4 @@
-##[红黑树]()
+##[红黑树](http://blog.csdn.net/chenhuajie123/article/details/11951777)
 * 
 性质：是平衡二叉树的一种
     * 
