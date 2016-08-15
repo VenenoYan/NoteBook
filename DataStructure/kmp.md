@@ -29,7 +29,7 @@ int normal_search(string *s,string *t)
                 {
                     ++i;
                     ++j;
-                    }
+                }
             }
         }
 }
