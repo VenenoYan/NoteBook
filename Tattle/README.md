@@ -24,6 +24,8 @@
 [机考](machind.md)
     * 
 [真题](mm.md)
+    * 
+[面试总结](inter.md)
 1. 
 [论文](paper.md)
 
