@@ -33,6 +33,6 @@ int normal_search(string *s,string *t)
             }
         }
         if( j == t.size() )
-            
+            ret = i - t.size();
 }
 ```
