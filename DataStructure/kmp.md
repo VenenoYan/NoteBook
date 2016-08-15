@@ -4,3 +4,5 @@ abcabaaabaabcac
 abaabcac
 ```
 ###普通匹配：
+* 
+策略：
