@@ -16,12 +16,16 @@
 ```C
 int normal_search(string *s,string *t)
 {
-    int ret,i,j;
-    i = j = 0;
-    ret = -1;
-    while(i <= s.size()-t.size())
-    {
-        
-    }
+        int ret,i,j;
+        i = j = 0;
+        ret = -1;
+        while(i <= s.size()-t.size())
+        {
+            if(s[i] == t[j])
+            {
+                ++i;
+                ++j;
+            }
+        }
 }
 ```
