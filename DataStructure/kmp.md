@@ -1,7 +1,7 @@
 #KMP 算法
 ```C
-abcabaaabaabcac
-abaabcac
+母串：abcabaaabaabcac
+字串：abaabcac
 ```
 ###普通匹配：
 * 
@@ -10,4 +10,4 @@ abaabcac
     * 
 如果下标对应的字符相等，则两个指针都自加1；
     * 
-否则，指向字串的指针归0，即y=0，而指向母串的指针为
+否则，指向字串的指针归0，即y=0，而指向母串的指针为x-y+1。即从母串
