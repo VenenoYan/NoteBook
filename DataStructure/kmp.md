@@ -13,3 +13,11 @@
 否则，指向字串的指针归0，即y=0，而指向母串的指针为x-y+1。即从母串上一轮匹配的地方加一继续重头匹配
 * 
 算法实现：
+```C
+int normal_search(string *s,string *t)
+{
+    int ret,i,j;
+    i = j = 0;
+    ret = -1;
+}
+```
