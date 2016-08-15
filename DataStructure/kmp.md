@@ -39,3 +39,7 @@ int normal_search(string *s,string *t)
 ```
 
 ##KMP算法
+* 
+策略：
+    * 
+我们从普通算法可知：如果当前匹配失败，
