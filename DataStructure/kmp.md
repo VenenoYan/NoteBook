@@ -57,8 +57,8 @@ KMP三个人分析，如果匹配如下所示：```Si != Sk```
         1.  
 KMP算法就是这个思想：既然Si前面有j个字符与子串的前j个字符相等，
 ```C
-    母串S：  S0 S1 S2 S3 S4 ... 【Si-k Si-k+1 Si-j+2 ... Si-2 Si-1 Si Si+1 ... Sx  ... Sn-2 Sn-1
-    字串T：                     【T0   T1     T2  . . .  Tk-2 Tk-1 Tk Tk+1 ... Tm-1
+    母串S：  S0 S1 S2 S3 S4 ... 【Si-k Si-k+1 Si-j+2 ... Si-2 Si-1 Si Si+1 ... Sx】  ... Sn-2 Sn-1
+    字串T：                     【T0   T1     T2  . . .  Tk-2 Tk-1 Tk Tk+1 ... Tm-1】
 ```
             1. 
 那我们为什么不直接从子串的第j的字符处继续和母串的第i个字符处继续比较呢？？？
