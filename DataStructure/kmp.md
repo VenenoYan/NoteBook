@@ -44,7 +44,7 @@ int normal_search(string *s,string *t)
     * 
 我们从普通算法可知：如果当前匹配失败，那么字串从头匹配，母串下标为本轮开始匹配的地方加1即下一个字符；
     * 
-KMP三个人分析：如下所示
+KMP三个人分析,如下所示
 ```C
     母串S：  S0 S1 S2 S3 S4 ... Si-k Si-k+1 Si-j+2 ... Si-2 Si-1 Si ... Sx  ... Sn-2 Sn-1
     字串T：                     T0   T1     T2  . . .  Tj-2 Tj-1 Tj ... Tm-1
