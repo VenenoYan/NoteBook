@@ -24,6 +24,7 @@ int normal_search(string *s,string *t)
             if(s[i] == t[j])
             {
                 if(j == t.size()-1)
+                    ret = i;
                 ++i;
                 ++j;
             }
