@@ -46,7 +46,7 @@ int normal_search(string *s,string *t)
     * 
 KMP三个人分析，如下所示
 ```C
-    母串S：  S0 S1 S2 S3 S4 ... Si-k Si-k+1 Si-j+2 ... Si-2 Si-1 Si Si+1 ... Sx  ... Sn-2 Sn-1
+    母串S：  S0 S1 S2 S3 S4 ... 【Si-k Si-k+1 Si-j+2 ... Si-2 Si-1 Si Si+1】 ... Sx  ... Sn-2 Sn-1
     字串T：                     T0   T1     T2  . . .  Tk-2 Tk-1 Tj Tj+1 ... Tm-1
 ```
 如果```Si != Sk```的话，按照普通算法，那么```k = 0; i = i - k + 1```，然后继续匹配；<br>
