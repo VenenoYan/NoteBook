@@ -26,6 +26,11 @@ int normal_search(string *s,string *t)
                 ++i;
                 ++j;
             }
+            else
+            {
+                j = 0;
+                i = x - j + 1;
+            }
         }
 }
 ```
