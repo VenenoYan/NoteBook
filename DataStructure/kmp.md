@@ -1,7 +1,7 @@
 #KMP 算法
 ```C
-母串：abcabaaabaabcac           abcabaaabaabcac
-字串：abaabcac                         abaabcac
+母串：abcabaaabaabcac      .     abcabaaabaabcac
+字串：abaabcac             .           abaabcac
 ```
 ###普通匹配算法：
 * 
