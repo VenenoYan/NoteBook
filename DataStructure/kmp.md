@@ -93,7 +93,7 @@ next[0]和next[1]都是0（前提是子串长度大于2个）；
                     next[0] = 0;
                     next[1] = 0;
                     int i = 2;
-                    //首先判断str[i - 1] == str[next[i - 1]]，如果等就是说已有的Z直接加
+                    //首先判断str[i - 1] == str[next[i - 1]]，如果等就是说已有的Z直接加1即可
                     while(i < len)
                     {
                         if(str[i - 1] == str[next[i - 1]])
