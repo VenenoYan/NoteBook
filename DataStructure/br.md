@@ -43,12 +43,13 @@
 
 ####6.1.1伪代码实现
 ```C
+//空树时
 void insert_case1(node n) {
     if (n->parent == NULL)
         n->color = BLACK;
     else
         insert_case2(n);
-}   //空树时
+}   
 void insert_case2(node n) {
     if (n->parent->color == BLACK)
         return;     /* 树仍旧有效 */
