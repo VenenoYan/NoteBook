@@ -81,12 +81,6 @@ KMP算法就是这个思想：既然Si前面有j个字符与子串的前j个字�
 算法
     * 
 求出辅助数组next[]：即子串每个下标(比如上面提到的K)对应的同缀长度Z即可
-```C
-void get_next(string &T,int *next)
-{
-
-}
-```
     * 
 实现一样，只是```j = 0;i = x - j + 1;```换成```i不变;j = next[j]```即可
 ```C
@@ -95,7 +89,7 @@ int kmp_search(string S,string T)
     int len = T.size();
     int next[len + 1] = {0};
     
-    get_next(T,next);
+    get_next(next);
     for(int i = 0,j = 0;i <= S.size() - T.size() && j != len;)
     {
         if(S[i] == T[j])
