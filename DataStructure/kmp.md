@@ -66,7 +66,7 @@ KMP算法就是这个思想：既然Si前面会有j个字符与子串的前j个�
 而且我们发现Si前面的j个字符同时也是我们子串中的字符啊！！！正常匹配到```Si != Tk```，<br>```【Si-k Si-k+1 ... [Si-j] ... Si-2 Si-1】 = 【T0 T1 T2 ... Tj-1 [Tj] ... Tk-2 Tk-1 】```　
 ```
 母串S：  S0 S1 S2 S3 S4 ... 【Si-k Si-k+1 ...　Si-j ... Si-2 Si-1】 [Si] Si+1 ... Sx  ... Sn-2 Sn-1
-    字串T：                     【T0   T1     T2  .  .  .   Tk-2 Tk-1】 [Tk] Tk+1 ... Tm-1
+    字串T：                     【T0   T1     T2  .......   Tk-2 Tk-1】 [Tk] Tk+1 ... Tm-1
     子串T：                                      【T0 T1 ... Tz-2 Tz-1】 [Tz] Tk+1 ... Tm-1
                                                              否
 ```
