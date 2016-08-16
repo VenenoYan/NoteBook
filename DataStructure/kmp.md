@@ -108,7 +108,7 @@ next[0]和next[1]都是0（前提是子串长度大于2个）；
                                 ++i;
                                 continue;
                             }
-                            while(temp)
+                            while(temp)                 //否则就继续比较前面
                             {
                                 temp -= 1;
                                 if(str[i - 1] == str[temp])
