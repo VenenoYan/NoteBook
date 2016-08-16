@@ -102,6 +102,7 @@ next[0]和next[1]都是0（前提是子串长度大于2个）；
     字串T：                                【T0   T1     T2  . . .  Tj-2 Tj-1 [Tj] Tj+1 ... Tm-1】
                                                              j个匹配的                新起点
 ```
+　
     ```C
     void get_next(string &str,int *next,int len)
     {
