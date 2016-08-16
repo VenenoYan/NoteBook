@@ -54,7 +54,7 @@ void insert_case2(node n) {
          return; /* 树仍旧有效 */
      else
          insert_case3(n);
- }
+}
 ```
 
 ####6.2 红黑树删除的几种情况。
