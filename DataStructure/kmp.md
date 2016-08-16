@@ -90,7 +90,7 @@ int kmp_search(string S,string T)
     int next[len + 1] = {0};
     
     get_next(next);
-    for(int i = 0,j = 0;i <= S.size() - T.size() ;)
+    for(int i = 0,j = 0;i <= S.size() - T.size() && j != len;)
     {
         if(S[i] == T[j])
         {
@@ -100,6 +100,7 @@ int kmp_search(string S,string T)
         else
             j = next[j];
     }
+    if()
 }
 ```
 
