@@ -84,7 +84,7 @@ KMP算法就是这个思想：既然Si前面有j个字符与子串的前j个字�
         * 
 next[0]和next[1]都是0（前提是子串中有2个）；
         * 
-
+对于next[i]：我们已知next[i-1]，
     ```C
     void get_next(string &str,int *next,int len)
     {
