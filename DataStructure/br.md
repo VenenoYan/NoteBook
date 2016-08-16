@@ -43,7 +43,18 @@
 
 ####6.1.1伪代码实现
 ```C++
-
+void insert_case1(node n) {
+     if (n->parent == NULL)
+         n->color = BLACK;
+     else
+         insert_case2(n);
+}
+void insert_case2(node n) {
+     if (n->parent->color == BLACK)
+         return; /* 树仍旧有效 */
+     else
+         insert_case3(n);
+ }
 ```
 
 ####6.2 红黑树删除的几种情况。
