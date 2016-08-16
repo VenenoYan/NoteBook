@@ -97,6 +97,8 @@ int kmp_search(string S,string T)
             ++i;
             ++j;
         }
+        else
+            j = next[j];
     }
 }
 ```
