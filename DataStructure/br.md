@@ -65,6 +65,16 @@ void insert_case3(node n) {
     else
         insert_case4(n);   //否则，叔叔是黑色的，转到下述情形4处理。
 }
+void insert_case4(node n) {
+    if (n == n->parent->right && n->parent == grandparent(n)->left) {
+        rotate_left(n->parent);
+        n = n->left;
+    } else if (n == n->parent->left && n->parent == grandparent(n)->right) {
+        rotate_right(n->parent);
+        n = n->right;
+    }
+        insert_case5(n);    //转到下述情形5处理。
+}
 ```
 
 ####6.2 红黑树删除的几种情况。
