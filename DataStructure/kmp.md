@@ -84,26 +84,26 @@ KMP算法就是这个思想：既然Si前面有j个字符与子串的前j个字�
     * 
 实现一样，只是```j = 0;i = x - j + 1;```换成```i不变;j = next[j]```即可
 ```C
-int kmp_search(string S,string T)
-{
-    int len = T.size();
-    int next[len + 1] = {0};
-    
-    get_next(T,next);
-    for(int i = 0,j = 0;i <= S.size() - T.size() && j != len;)
+    int kmp_search(string S,string T)
     {
-        if(S[i] == T[j])
-        {
-            ++i;
-            ++j;
-        }
-        else
-            j = next[j];
+            int len = T.size();
+            int next[len + 1] = {0};
+            
+            get_next(T,next);
+            for(int i = 0,j = 0;i <= S.size() - T.size() && j != len;)
+            {
+                if(S[i] == T[j])
+                {
+                    ++i;
+                    ++j;
+                }
+                else
+                    j = next[j];
+            }
+            if(j == len)
+                return i - len;
+            return -1;
     }
-    if(j == len)
-        return i - len;
-    return -1;
-}
 ```
 
 
