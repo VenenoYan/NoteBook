@@ -44,16 +44,26 @@
 ####6.1.1伪代码实现
 ```C++
 void insert_case1(node n) {
-     if (n->parent == NULL)
-         n->color = BLACK;
-     else
-         insert_case2(n);
+    if (n->parent == NULL)
+        n->color = BLACK;
+    else
+        insert_case2(n);
 }
 void insert_case2(node n) {
-     if (n->parent->color == BLACK)
-         return; /* 树仍旧有效 */
+    if (n->parent->color == BLACK)
+        return; /* 树仍旧有效 */
+    else
+        insert_case3(n);
+}
+void insert_case3(node n) {
+     if (uncle(n) != NULL && uncle(n)->color == RED) {
+         n->parent->color = BLACK;
+         uncle(n)->color = BLACK;
+         grandparent(n)->color = RED;
+         insert_case1(grandparent(n));   //因为祖父节点可能是红色的，违反性质4，递归情形1.
+     }
      else
-         insert_case3(n);
+         insert_case4(n);   //否则，叔叔是黑色的，转到下述情形4处理。
 }
 ```
 
