@@ -25,12 +25,13 @@ ret-type func(para)
 ```C++
 例如：返回一个二叉树的深度：
 int depth(Tree t){ 
-if(!t) return 0; 
-else { 
-         int a=depth(t.right); 
-         int b=depth(t.left); 
-         return (a>b)?(a+1):(b+1); 
-    } 
+    if(!t) 
+        return 0; 
+    else { 
+             int a=depth(t.right); 
+             int b=depth(t.left); 
+             return (a>b)?(a+1):(b+1); 
+        } 
 }
 
 判断一个二叉树是否平衡：
