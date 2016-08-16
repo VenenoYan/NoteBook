@@ -51,7 +51,7 @@ void insert_case1(node n) {
 }   //空树时
 void insert_case2(node n) {
     if (n->parent->color == BLACK)
-        return; /* 树仍旧有效 */
+        return;     /* 树仍旧有效 */
     else
         insert_case3(n);
 }   //父亲为黑色
