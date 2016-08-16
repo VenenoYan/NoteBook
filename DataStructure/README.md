@@ -13,6 +13,8 @@
 1. 
 [查找](search.md)
 1. 
+[KMP](kmp.md)
+1. 
 [排序](sort.md)
 1. 
 [动态规划](dynamic.md)
