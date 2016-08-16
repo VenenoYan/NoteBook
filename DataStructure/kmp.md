@@ -14,7 +14,7 @@
 * 
 算法实现：
 ```C
-int normal_search(string *s,string *t)
+int normal_search(string s,string t)
 {
         int ret,i,j;
         i = j = 0;
