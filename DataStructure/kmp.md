@@ -101,9 +101,9 @@ next[0]和next[1]都是0（前提是子串长度大于2个）；
                             next[i] = next[i - 1] + 1;
                         else
                         {
-                            int temp = next[i - 1];     //已有的前缀
+                            int temp = next[i - 1];     //已有的前缀长度
                             next[i] = 0;
-                            if(temp == 0)
+                            if(temp == 0)               //当然如果为0，
                             {
                                 ++i;
                                 continue;
