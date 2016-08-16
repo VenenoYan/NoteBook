@@ -42,7 +42,7 @@
 ![](3333.png)
 
 ####6.1.1伪代码实现
-```C++
+```C
 void insert_case1(node n) {
     if (n->parent == NULL)
         n->color = BLACK;
