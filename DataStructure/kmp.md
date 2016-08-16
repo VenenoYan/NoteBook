@@ -103,7 +103,7 @@ next[0]和next[1]都是0（前提是子串长度大于2个）；
                         {
                             int temp = next[i - 1];     //已有的前缀长度
                             next[i] = 0;
-                            if(temp == 0)               //当然如果为0，next[i]=0即可不要
+                            if(temp == 0)               //当然如果为0，next[i]=0即可不用修改了
                             {
                                 ++i;
                                 continue;
