@@ -28,8 +28,8 @@ int normal_search(string s,string t)
             }
             else
             {
-                j = 0;
                 i = i - j + 1;
+                j = 0;
             }
         }
         if( j == t.size() )
