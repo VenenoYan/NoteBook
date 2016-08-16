@@ -88,6 +88,8 @@ int kmp_search(string S,string T)
 {
     int len = T.size();
     int next[len + 1] = {0};
+    
+
 }
 ```
 
