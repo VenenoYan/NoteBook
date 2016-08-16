@@ -29,7 +29,7 @@ int normal_search(string *s,string *t)
             else
             {
                 j = 0;
-                i = x - j + 1;
+                i = i - j + 1;
             }
         }
         if( j == t.size() )
