@@ -44,52 +44,52 @@
 ####6.1.1伪代码实现
 ```C
 //空树时
-void insert_case1(node n) {
-    if (n->parent == NULL)
-        n->color = BLACK;
-    else
-        insert_case2(n);
-}  
+    void insert_case1(node n) {
+        if (n->parent == NULL)
+            n->color = BLACK;
+        else
+            insert_case2(n);
+    }  
 //父亲为黑色
-void insert_case2(node n) {
-    if (n->parent->color == BLACK)
-        return;     /* 树仍旧有效 */
-    else
-        insert_case3(n);
-}   
+    void insert_case2(node n) {
+        if (n->parent->color == BLACK)
+            return;     /* 树仍旧有效 */
+        else
+            insert_case3(n);
+    }   
 //父亲叔叔都是红色
-void insert_case3(node n) {
-    if (uncle(n) != NULL && uncle(n)->color == RED) {
-        n->parent->color = BLACK;
-        uncle(n)->color = BLACK;
-        grandparent(n)->color = RED;
-        insert_case1(grandparent(n));   //因为祖父节点可能是红色的，违反性质4，递归情形1.
-    }
-    else
-        insert_case4(n);   //否则，叔叔是黑色的，转到下述情形4处理。
-}   
+    void insert_case3(node n) {
+        if (uncle(n) != NULL && uncle(n)->color == RED) {
+            n->parent->color = BLACK;
+            uncle(n)->color = BLACK;
+            grandparent(n)->color = RED;
+            insert_case1(grandparent(n));   //因为祖父节点可能是红色的，违反性质4，递归情形1.
+        }
+        else
+            insert_case4(n);   //否则，叔叔是黑色的，转到下述情形4处理。
+    }   
 //父亲红色，叔叔黑色：自己是右孩子，父亲是左孩子
-void insert_case4(node n) {
-    if (n == n->parent->right && n->parent == grandparent(n)->left) {
-        rotate_left(n->parent);
-        n = n->left;
-    } else if (n == n->parent->left && n->parent == grandparent(n)->right) {
-        rotate_right(n->parent);
-        n = n->right;
-    }
-        insert_case5(n);    //转到下述情形5处理。
-}   
+    void insert_case4(node n) {
+        if (n == n->parent->right && n->parent == grandparent(n)->left) {
+            rotate_left(n->parent);
+            n = n->left;
+        } else if (n == n->parent->left && n->parent == grandparent(n)->right) {
+            rotate_right(n->parent);
+            n = n->right;
+        }
+            insert_case5(n);    //转到下述情形5处理。
+    }   
 //父亲红色，叔叔黑色：自己是左孩子，父亲也是左孩子
-void insert_case5(node n) {
-    n->parent->color = BLACK;
-    grandparent(n)->color = RED;
-    if (n == n->parent->left && n->parent == grandparent(n)->left) {
-        rotate_right(grandparent(n));
-    } else {
-        /* 反情况，N 是其父节点的右孩子，而父节点P又是其父G的右孩子 */
-        rotate_left(grandparent(n));
-    }
-}   
+    void insert_case5(node n) {
+        n->parent->color = BLACK;
+        grandparent(n)->color = RED;
+        if (n == n->parent->left && n->parent == grandparent(n)->left) {
+            rotate_right(grandparent(n));
+        } else {
+            /* 反情况，N 是其父节点的右孩子，而父节点P又是其父G的右孩子 */
+            rotate_left(grandparent(n));
+        }
+    }   
 ```
 
 ####6.2 红黑树删除的几种情况。
