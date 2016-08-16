@@ -96,7 +96,7 @@ KMP算法就是这个思想：既然Si前面有j个字符与子串的前j个字�
             int next[len] = {0};
             
             get_next(T,next,len;
-            for(int i = 0,j = 0;i <= S.size() && j != len;)
+            for(int i = 0,j = 0;i < S.size() && j != len;)
             {
                 if(S[i] == T[j])
                 {
