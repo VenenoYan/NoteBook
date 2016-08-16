@@ -98,8 +98,8 @@ next[0]和next[1]都是0（前提是子串长度大于2个）；
             * 
 所以如果S[i-1] = S[next[i-1]]，那么S[i]对应Z的大小就是S[i-1]对应的Z加上1
 ```C
-    母串S：  S0 S1 S2 S3 S4 ... [Si-k] ... 【Si-j Si-j+1 Si-j+2 ... Si-2 Si-1 [Si] Si+1 ... Sx】  ... Sn-2 Sn-1
-    字串T：                                【T0   T1     T2  . . .  Tj-2 Tj-1 [Tj] Tj+1 ... Tm-1】
+    母串S：  S0 S1 ... [Si-k] ... 【Si-j Si-j+1 Si-j+2 ... Si-2 Si-1 [Si] Si+1 ... Sx】  ... Sn-2 Sn-1
+    字串　                         【T0   T1     T2  . . .  Tj-2 Tj-1 [Tj] Tj+1 ... Tm-1】
                                                              j个匹配的                新起点
 ```
 　
