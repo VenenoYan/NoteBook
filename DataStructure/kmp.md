@@ -95,7 +95,7 @@ int kmp_search(string S,string T)
     int len = T.size();
     int next[len + 1] = {0};
     
-    get_next(next);
+    get_next(T,next);
     for(int i = 0,j = 0;i <= S.size() - T.size() && j != len;)
     {
         if(S[i] == T[j])
