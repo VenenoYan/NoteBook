@@ -100,7 +100,9 @@ int kmp_search(string S,string T)
         else
             j = next[j];
     }
-    if()
+    if(j == len)
+        return i - len;
+    return -1;
 }
 ```
 
