@@ -90,34 +90,34 @@ next[0]和next[1]都是0（前提是子串长度大于2个）；
     ```C
     void get_next(string &str,int *next,int len)
     {
-            next[0] = 0;
-            next[1] = 0;
-            int i = 2;
-            while(i < len)
-            {
-                if(str[i - 1] == str[next[i - 1]])
-                    next[i] = next[i - 1] + 1;
-                else
+                next[0] = 0;
+                next[1] = 0;
+                int i = 2;
+                while(i < len)
                 {
-                    int temp = next[i - 1];
-                    next[i] = 0;
-                    if(temp == 0)
+                    if(str[i - 1] == str[next[i - 1]])
+                        next[i] = next[i - 1] + 1;
+                    else
                     {
-                        ++i;
-                        continue;
-                    }
-                    while(temp)
-                    {
-                        temp -= 1;
-                        if(str[i - 1] == str[temp])
+                        int temp = next[i - 1];
+                        next[i] = 0;
+                        if(temp == 0)
                         {
-                            next[i] = temp + 1;
-                            break;
+                            ++i;
+                            continue;
+                        }
+                        while(temp)
+                        {
+                            temp -= 1;
+                            if(str[i - 1] == str[temp])
+                            {
+                                next[i] = temp + 1;
+                                break;
+                            }
                         }
                     }
+                    ++i;
                 }
-                ++i;
-            }
     }
     ```
     * 
