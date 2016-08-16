@@ -86,6 +86,7 @@ KMP算法就是这个思想：既然Si前面有j个字符与子串的前j个字�
 ```C
 int kmp_search(string S,string T)
 {
+    int len = T.size();
     int *next;
 }
 ```
