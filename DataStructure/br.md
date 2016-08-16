@@ -54,7 +54,7 @@ void insert_case2(node n) {
         return; /* 树仍旧有效 */
     else
         insert_case3(n);
-}
+}   //父亲为黑色
 void insert_case3(node n) {
     if (uncle(n) != NULL && uncle(n)->color == RED) {
         n->parent->color = BLACK;
