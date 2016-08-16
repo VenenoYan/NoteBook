@@ -98,7 +98,7 @@ KMP算法就是这个思想：既然Si前面有j个字符与子串的前j个字�
             get_next(T,next,len;
             for(int i = 0,j = 0;i < S.size() && j != len;)
             {
-                if(j==0 || S[i] == T[j])        //j==0：无限循环
+                if(j==0 || S[i] == T[j])        //j==0：以防无限循环
                 {
                     ++i;
                     ++j;
