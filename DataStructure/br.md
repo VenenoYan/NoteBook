@@ -75,6 +75,16 @@ void insert_case4(node n) {
     }
         insert_case5(n);    //转到下述情形5处理。
 }
+void insert_case5(node n) {
+    n->parent->color = BLACK;
+    grandparent(n)->color = RED;
+    if (n == n->parent->left && n->parent == grandparent(n)->left) {
+        rotate_right(grandparent(n));
+    } else {
+        /* 反情况，N 是其父节点的右孩子，而父节点P又是其父G的右孩子 */
+        rotate_left(grandparent(n));
+    }
+}
 ```
 
 ####6.2 红黑树删除的几种情况。
