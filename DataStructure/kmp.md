@@ -78,7 +78,7 @@ KMP算法就是这个思想：既然Si前面有j个字符与子串的前j个字�
     * 
 假若Si不在将来匹配成功的范围内，那么很简单：```j = 0;i = i;```即从这里开始比；
 * 
-算法
+算法实现
     * 
 求出辅助数组next[]：即子串每个下标(比如上面提到的K)对应的同缀长度Z即可
     * 
@@ -89,7 +89,7 @@ int kmp_search(string S,string T)
     int len = T.size();
     int next[len + 1] = {0};
     
-    get_next(next);
+    get_next(T,next);
     for(int i = 0,j = 0;i <= S.size() - T.size() && j != len;)
     {
         if(S[i] == T[j])
