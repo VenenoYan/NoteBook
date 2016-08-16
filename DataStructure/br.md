@@ -64,7 +64,7 @@ void insert_case3(node n) {
     }
     else
         insert_case4(n);   //否则，叔叔是黑色的，转到下述情形4处理。
-}   //父亲叔叔都是
+}   //父亲叔叔都是红色
 void insert_case4(node n) {
     if (n == n->parent->right && n->parent == grandparent(n)->left) {
         rotate_left(n->parent);
@@ -74,7 +74,7 @@ void insert_case4(node n) {
         n = n->right;
     }
         insert_case5(n);    //转到下述情形5处理。
-}
+}   //父亲红色，叔叔黑色：
 void insert_case5(node n) {
     n->parent->color = BLACK;
     grandparent(n)->color = RED;
