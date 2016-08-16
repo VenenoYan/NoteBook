@@ -82,7 +82,7 @@ KMP算法就是这个思想：既然Si前面有j个字符与子串的前j个字�
     * 
 求出辅助数组next[]：即子串每个下标(比如上面提到的K)对应的同缀长度Z即可.<br>
         * 
-next[0]和next[1]都是0；
+next[0]和next[1]都是0（前提是子串中有2）；
     ```C
     void get_next(string &str,int *next,int len)
     {
