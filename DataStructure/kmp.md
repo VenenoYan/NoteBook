@@ -86,7 +86,7 @@ next[0]和next[1]都是0（前提是子串长度大于2个）；
         * 
 对于next[i]：我们已知next[i-1]，即对于S[i-1]前面的子字符串中Z的大小为next[i-1];
             * 
-所以如果S[i-1] = S[next[i-1]]，那么S[i]对应Z的大小就是S[i-1]加上1
+所以如果S[i-1] = S[next[i-1]]，那么S[i]对应Z的大小就是S[i-1]对应的Z加上1
     ```C
     void get_next(string &str,int *next,int len)
     {
