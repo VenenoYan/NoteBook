@@ -14,6 +14,7 @@ ret-type func(para)
     else
     {
         归纳处理普通条件即不结束的条件
+            如果结束了，直接return
         子问题
         调用自身
     }
