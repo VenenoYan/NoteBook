@@ -35,12 +35,12 @@ class myIterator
     * 
 如果我们希望获得它内部的指向的对象的类型，那么我们只需要内嵌一个typedef即可：
 ```C++
-template <typename T>
-class myIterator
-{
-        typedef T value_type;
-        ...
-};
+    template <typename T>
+    class myIterator
+    {
+            typedef T value_type;
+            ...
+    };
 ```
 然后我们就可以通过```myIterator<T>::value_Type```获得指向的对象类型。
 
