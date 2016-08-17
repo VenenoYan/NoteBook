@@ -44,7 +44,7 @@ class myIterator
 ```
 然后我们就可以通过```myIterator<T>::value_Type```获得指向的对象类型。
 <hr>
-问题是：
+问题是：如果我们希望
 <hr>
 
 
