@@ -144,6 +144,7 @@ void delete_case5(struct node *n)
                 }
         }
         delete_case6(n);  //转到情况6。
+}
 ```
 ![](5y2w.jpg)
     * 情况6：
