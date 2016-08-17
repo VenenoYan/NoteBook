@@ -135,6 +135,71 @@ void delete_case2(struct node *n)
         } 
         delete_case3(n);
 }
+void delete_case3(struct node *n)
+{
+        struct node *s = sibling(n);
+ 
+        if ((n->parent->color == BLACK) &&
+            (s->color == BLACK) &&
+            (s->left->color == BLACK) &&
+            (s->right->color == BLACK)) {
+                s->color = RED;
+                delete_case1(n->parent);
+        } else
+                delete_case4(n);
+}
+void delete_case4(struct node *n)
+{
+        struct node *s = sibling(n);
+ 
+        if ((n->parent->color == RED) &&
+            (s->color == BLACK) &&
+            (s->left->color == BLACK) &&
+            (s->right->color == BLACK)) {
+                s->color = RED;
+                n->parent->color = BLACK;
+        } else
+                delete_case5(n);
+}
+
+void delete_case5(struct node *n)
+{
+        struct node *s = sibling(n);
+ 
+        if  (s->color == BLACK) 
+                if ((n == n->parent->left) &&
+                    (s->right->color == BLACK) &&
+                    (s->left->color == RED)) { 
+                        // this last test is trivial too due to cases 2-4.
+                        s->color = RED;
+                        s->left->color = BLACK;
+                        rotate_right(s);
+                } else if ((n == n->parent->right) &&
+                           (s->left->color == BLACK) &&
+                           (s->right->color == RED)) {
+                       // this last test is trivial too due to cases 2-4.
+                        s->color = RED;
+                        s->right->color = BLACK;
+                        rotate_left(s);
+                }
+        }
+        delete_case6(n);  //转到情况6。
+}
+void delete_case6(struct node *n)
+{
+        struct node *s = sibling(n);
+ 
+        s->color = n->parent->color;
+        n->parent->color = BLACK;
+ 
+        if (n == n->parent->left) {
+                s->right->color = BLACK;
+                rotate_left(n->parent);
+        } else {
+                s->left->color = BLACK;
+                rotate_right(n->parent);
+        }
+}
 ```
 
 所以为了使插入、或删除结点后的树依然维持为一棵新的红黑树，
