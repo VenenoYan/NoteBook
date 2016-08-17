@@ -43,7 +43,7 @@ class myIterator
     };
 ```
     * 
-然后我们使用就可以了：
+然后我们就可以通过```myIterator<T>::value_Type```获得指向的对象类型，我们使用就可以了：
 ```C++
     template <typeneme T>
     typename myIterator<T>::value_type func(myIterator<T> i)
@@ -51,7 +51,6 @@ class myIterator
             ...
     }
 ```
-然后我们就可以通过```myIterator<T>::value_Type```获得指向的对象类型。
 <hr>
 问题是：如果我们希望func函数可以**适应于所有的迭代器**，那么怎么办？？？
 ```C++
