@@ -23,51 +23,6 @@ iterator_category:代表1中提出的五种迭代器的类型标识
 ##[Traits](http://www.cnblogs.com/hush/archive/2004/03/10/2717.html)
 traits的目的是：让属于同一个概念的、具有不同特性的模型，对外暴露一致的接口。允许系统在编译时根据类型作一些决断，就好像在运行时根据值来作出决断一样。
 ###实现
-```C++
-//三步走
-template <typename T>
-class mytest
-{
-    typedef typename T value_type;
-};
 
-template<typename T>
-class traits
-{
-    typedef typename T value_type;
-    typedef typename T::value_type value_type;  //取决于T的类型
-};
-template <typename T>
-class traits<T *>
-{
-    typede typename T value_type;
-};
-
-//使用：
-template<typename T>
-typename traits<T>::value_type func(T i)
-{
-    return func(i,traits<T>::value_type t);       //根据类型的不同调用不同的方法
-}
-template<typename T>
-typename traits<T>::value_type func(T i,traits<T>::value_type t)
-{
-    return i;
-}
-template<typename T>
-typename traits<T *>::value_type func(T i,traits<T>::value_type t)
-{
-    return *i;
-}
-
-
-
-//例子：
-int i = 10;
-int *p = new int(100);
-
-func(i);        //返回10
-func(p);        //返回100
-```
 
 [返回目录](README.md)
