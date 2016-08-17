@@ -88,11 +88,9 @@ typename I::value_type Foo(I i)
 * 
 使用：
 ```C++
-int i = 10；
 int j = new int (100);
 　
-func(i);            //自动调用
-func(j);
+func(j);                //自动调用
 ```
 
 [返回目录](README.md)
