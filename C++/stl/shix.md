@@ -105,7 +105,7 @@ typename I::value_type Foo(I i)
     typename traits<T>::value_type func(T i)
     {
             traits<T>::value_type temp;
-            return func(i,);
+            return func(i,temp);
     }
     
     int j = new int (100);
