@@ -41,6 +41,10 @@ class myIterator
             typedef T value_type;
             ...
     };
+```
+    * 
+然后我们使用就可以了：
+```C++
     template <typeneme T>
     typename myIterator<T>::value_type func(myIterator<T> i)
     {
