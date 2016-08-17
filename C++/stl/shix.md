@@ -117,7 +117,7 @@ typename I::value_type Foo(I i)
     {
             return *i;
     }
-    
+===========
     int j = new int (100);
     　
     func(j);                //自动调用偏特化的版本
