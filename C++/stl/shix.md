@@ -92,6 +92,7 @@ typename I::value_type Foo(I i)
     class traits
     {
             typedef typename T value_type;
+            ...
     }
     
     int j = new int (100);
