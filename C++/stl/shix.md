@@ -124,5 +124,7 @@ typename I::value_type Foo(I i)
     func(i);                //调用普通int版本
     func(j);                //自动调用偏特化的版本
 ```
+* 
+概述：
 
 [返回目录](README.md)
