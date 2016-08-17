@@ -54,7 +54,7 @@ class myIterator
 template <typename I> //这里的I可以是任意类型的迭代器
 typename I::value_type Foo(I i)
 {
-    ...
+        ...
 }
 ```
 <hr>
