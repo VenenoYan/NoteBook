@@ -121,7 +121,20 @@ void delete_case1(struct node *n)
         if (n->parent != NULL)
                 delete_case2(n);
 }
-
+void delete_case2(struct node *n)
+{
+        struct node *s = sibling(n);
+ 
+        if (s->color == RED) {
+                n->parent->color = RED;
+                s->color = BLACK;
+                if (n == n->parent->left)
+                        rotate_left(n->parent);  //左旋
+                else
+                        rotate_right(n->parent);
+        } 
+        delete_case3(n);
+}
 ```
 
 所以为了使插入、或删除结点后的树依然维持为一棵新的红黑树，
