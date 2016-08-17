@@ -125,7 +125,7 @@ typename I::value_type Foo(I i)
     func(j);                //自动调用偏特化的版本
 ```
 * 
-概述：
+概述：我们使用traits把它们的类型都萃取出来
 
 ![](rew.jpg)
 
