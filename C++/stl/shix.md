@@ -90,7 +90,7 @@ typename I::value_type Foo(I i)
 ```C++
 int j = new int (100);
 　
-func(j);                //自动调用
+func(j);                //自动调用偏特化的版本
 ```
 
 [返回目录](README.md)
