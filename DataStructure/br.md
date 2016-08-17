@@ -123,6 +123,22 @@ n的兄弟s是黑色的，且s的俩个孩子都是黑色的。
 n的兄弟s是黑色的，且s的左孩子是红色，w的右孩子是黑色。
     * 情况6：
 n的兄弟s是黑色的，且s的右孩子是红色的。
+```C++
+void delete_case6(struct node *n)
+{
+        struct node *s = sibling(n);
+ 
+        s->color = n->parent->color;
+        n->parent->color = BLACK;
+ 
+        if (n == n->parent->left) {
+                s->right->color = BLACK;
+                rotate_left(n->parent);
+        } else {
+                s->left->color = BLACK;
+                rotate_right(n->parent);
+        }
+}```
 ![](8394323_1294495422E1VW.jpg)
 
 所以为了使插入、或删除结点后的树依然维持为一棵新的红黑树，
