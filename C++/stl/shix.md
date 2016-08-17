@@ -42,6 +42,6 @@ class myIterator
     ...
 };
 ```
-然后我们就可以通过myIterator<T>::value_Type获得指向的对象类型。
+然后我们就可以通过```myIterator<T>::value_Type```获得指向的对象类型。
 
 [返回目录](README.md)
