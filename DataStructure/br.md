@@ -78,7 +78,7 @@ n->color = RED;
             rotate_right(n->parent);
             n = n->right;
         }
-            insert_case5(n);    //转到下述情形5处理。
+        insert_case5(n);    //转到下述情形5处理。
     }   
 //父亲红色，叔叔黑色：自己是左孩子，父亲也是左孩子
     void insert_case5(node n) {
