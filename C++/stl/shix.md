@@ -100,7 +100,7 @@ typename I::value_type Foo(I i)
     {
             typedef typename T value_type;
     };
-    
+============================================================================
     template <typename T>
     typename traits<T>::value_type func(T i)
     {
