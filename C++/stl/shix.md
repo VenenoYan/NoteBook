@@ -70,5 +70,7 @@ class traits
             typedef typename T::value_type value_type;
 };
 ```
+    * 
+我们通过traits<myIterator<T>>::value_type
 
 [返回目录](README.md)
