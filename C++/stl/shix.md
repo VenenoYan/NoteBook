@@ -29,7 +29,7 @@ traits的目的是：让属于同一个概念的、具有不同特性的模型�
 template <typename T>
 class myIterator
 {
-    ...
+        ...
 };
 ```
     * 
@@ -38,8 +38,8 @@ class myIterator
 template <typename T>
 class myIterator
 {
-    typedef T value_type;
-    ...
+        typedef T value_type;
+        ...
 };
 ```
 然后我们就可以通过```myIterator<T>::value_Type```获得指向的对象类型。
