@@ -51,6 +51,7 @@ class myIterator
 <hr>
 问题是：如果我们希望func函数可以适应于所有的迭代器，那么怎么办？？？
 <hr>
+* 
 
 
 [返回目录](README.md)
