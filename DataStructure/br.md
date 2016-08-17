@@ -117,6 +117,7 @@ void delete_case2(struct node *n)
         } 
         delete_case3(n);
 }```
+![](kr765.jpg)
     * 情况4：
 n的兄弟s是黑色的，且s的俩个孩子都是黑色的。
     * 情况5：
