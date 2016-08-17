@@ -102,6 +102,21 @@ n->color = RED;
 自己是黑的且不是根节点的：
     * 情况3：
 x的兄弟w是红色的======》兄弟描黑，父亲描红，然后兄弟左旋上来取代父亲
+```C++
+void delete_case2(struct node *n)
+{
+        struct node *s = sibling(n);
+ 
+        if (s->color == RED) {
+                n->parent->color = RED;
+                s->color = BLACK;
+                if (n == n->parent->left)
+                        rotate_left(n->parent);  //左旋
+                else
+                        rotate_right(n->parent);
+        } 
+        delete_case3(n);
+}```
 
     * 情况4：
 x的兄弟w是黑色的，且w的俩个孩子都是黑色的。
