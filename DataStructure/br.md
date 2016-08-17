@@ -121,6 +121,30 @@ void delete_case2(struct node *n)
 n的兄弟s是黑色的，且s的俩个孩子都是黑色的。
     * 情况5：
 n的兄弟s是黑色的，且s的左孩子是红色，s的右孩子是黑色。
+```C++
+void delete_case5(struct node *n)
+{
+        struct node *s = sibling(n);
+ 
+        if  (s->color == BLACK) 
+                if ((n == n->parent->left) &&
+                    (s->right->color == BLACK) &&
+                    (s->left->color == RED)) { 
+                        // this last test is trivial too due to cases 2-4.
+                        s->color = RED;
+                        s->left->color = BLACK;
+                        rotate_right(s);
+                } else if ((n == n->parent->right) &&
+                           (s->left->color == BLACK) &&
+                           (s->right->color == RED)) {
+                       // this last test is trivial too due to cases 2-4.
+                        s->color = RED;
+                        s->right->color = BLACK;
+                        rotate_left(s);
+                }
+        }
+        delete_case6(n);  //转到情况6。
+```
 ![](5y2w.jpg)
     * 情况6：
 n的兄弟s是黑色的，且s的右孩子是红色的。
