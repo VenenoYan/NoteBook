@@ -67,11 +67,11 @@ typename I::value_type Foo(I i)
     * 
 我们在**函数调用和原始类型之间加一层专门萃取类型的中间层**：traits！！
 ```C++
-template <typename T>
-class traits
-{
+    template <typename T>
+    class traits
+    {
             typedef typename T::value_type value_type;
-};
+    };
 ```
     * 
 我们通过```traits<myIterator<T>>::value_type```来获得myIterator的元素类型；
