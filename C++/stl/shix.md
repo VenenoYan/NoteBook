@@ -87,6 +87,10 @@ typename I::value_type Foo(I i)
 ```
 * 
 使用：
+```C++
+int i = 10；
+int j = new int (100);
 
+```
 
 [返回目录](README.md)
