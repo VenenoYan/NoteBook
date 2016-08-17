@@ -33,7 +33,7 @@ class myIterator
 };
 ```
     * 
-如果我们希望获得它内部的指向的对象的类型，那么我们只需要内嵌一个typedef即可：
+如果我们希望获得它**内部指向对象的类型**，那么我们只需要内嵌一个typedef即可：
 ```C++
     template <typename T>
     class myIterator
@@ -49,7 +49,7 @@ class myIterator
 ```
 然后我们就可以通过```myIterator<T>::value_Type```获得指向的对象类型。
 <hr>
-问题是：如果我们希望func函数可以适应于所有的迭代器，那么怎么办？？？
+问题是：如果我们希望func函数可以**适应于所有的迭代器**，那么怎么办？？？
 <hr>
 * 
 
