@@ -88,9 +88,15 @@ typename I::value_type Foo(I i)
 * 
 使用：
 ```C++
-int j = new int (100);
-　
-func(j);                //自动调用偏特化的版本
+    template <typename T>
+    class traits
+    {
+            typedef typename T value_type;
+    }
+    
+    int j = new int (100);
+    　
+    func(j);                //自动调用偏特化的版本
 ```
 
 [返回目录](README.md)
