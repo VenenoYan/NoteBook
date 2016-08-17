@@ -76,7 +76,7 @@ typename I::value_type Foo(I i)
     * 
 我们通过```traits<myIterator<T>>::value_type```来获得myIterator的元素类型；
     * 
-可是原生指针的问题还么解决？？？ ===============》C++的偏特化：
+可是原生指针的问题还么解决？？？ ===============》C++的模板偏特化：
 ```C++
     template <typename T>
     class traits<T *>
