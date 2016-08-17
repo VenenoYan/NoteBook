@@ -74,6 +74,6 @@ class traits
 };
 ```
     * 
-我们通过traits<myIterator<T>>::value_type来获得myIterator的元素类型；
+我们通过```traits<myIterator<T>>::value_type```来获得myIterator的元素类型；
 
 [返回目录](README.md)
