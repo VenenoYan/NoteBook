@@ -78,11 +78,12 @@ class traits
     * 
 可是原生指针的问题还么解决？？？ ===============》C++的偏特化：
 ```C++
-template <typename T>
-class traits<T *>
-{
-        typedef typename T::value_type value_type;
-}
+    template <typename T>
+    class traits<T *>
+    {
+            typedef typename T::value_type value_type;
+            ...
+    }
 ```
 
 [返回目录](README.md)
