@@ -25,6 +25,12 @@ traits的目的是：让属于同一个概念的、具有不同特性的模型�
 ###实现
 * 
 比如我们有一个迭代器类：
-
+```C++
+template <typename T>
+class myIterator
+{
+    ...
+};
+```
 
 [返回目录](README.md)
