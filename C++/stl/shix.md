@@ -127,7 +127,7 @@ typename I::value_type Foo(I i)
 * 
 概述：我们使用traits把它们的类型都萃取出来
 
-![](rew.jpg)
+![](ghds.jpg)
 
 
 [返回目录](README.md)
