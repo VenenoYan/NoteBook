@@ -121,6 +121,7 @@ typename I::value_type Foo(I i)
     int i = 10;
     int j = new int (100);
     　
+    func(i);
     func(j);                //自动调用偏特化的版本
 ```
 
