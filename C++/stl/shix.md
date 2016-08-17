@@ -93,10 +93,13 @@ typename I::value_type Foo(I i)
     {
             typedef typename T value_type;
             ...
-    }
+    };
     
     template <typename T>
     class traits<T *>
+    {
+            typedef typename T value_type
+    };
     
     int j = new int (100);
     　
