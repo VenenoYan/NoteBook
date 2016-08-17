@@ -104,7 +104,7 @@ typename I::value_type Foo(I i)
     template <typename T>
     typename traits<T>::value_type func(T i)
     {
-            return func()
+            return func(i,traits<T>::value_type temp);
     }
     
     int j = new int (100);
