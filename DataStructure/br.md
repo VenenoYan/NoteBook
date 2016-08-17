@@ -102,72 +102,17 @@ n->color = RED;
 自己是黑的且不是根节点的：
     * 情况3：
 n的兄弟s是红色的======》兄弟描黑，父亲描红，然后兄弟左旋上来取代父亲
-```C++
-void delete_case2(struct node *n)
-{
-        struct node *s = sibling(n);
- 
-        if (s->color == RED) {
-                n->parent->color = RED;
-                s->color = BLACK;
-                if (n == n->parent->left)
-                        rotate_left(n->parent);  //左旋
-                else
-                        rotate_right(n->parent);
-        } 
-        delete_case3(n);
-}```
 ![](kr765.jpg)
     * 情况4：
 n的兄弟s是黑色的，且s的俩个孩子都是黑色的。
 ![](thurw2.jpg)
     * 情况5：
 n的兄弟s是黑色的，且s的左孩子是红色，s的右孩子是黑色。
-```C++
-void delete_case5(struct node *n)
-{
-        struct node *s = sibling(n);
- 
-        if  (s->color == BLACK) 
-                if ((n == n->parent->left) &&
-                    (s->right->color == BLACK) &&
-                    (s->left->color == RED)) { 
-                        // this last test is trivial too due to cases 2-4.
-                        s->color = RED;
-                        s->left->color = BLACK;
-                        rotate_right(s);
-                } else if ((n == n->parent->right) &&
-                           (s->left->color == BLACK) &&
-                           (s->right->color == RED)) {
-                       // this last test is trivial too due to cases 2-4.
-                        s->color = RED;
-                        s->right->color = BLACK;
-                        rotate_left(s);
-                }
-        }
-        delete_case6(n);  //转到情况6。
-}
-```
 ![](5y2w.jpg)
     * 情况6：
 n的兄弟s是黑色的，且s的右孩子是红色的。
-```C++
-void delete_case6(struct node *n)
-{
-        struct node *s = sibling(n);
- 
-        s->color = n->parent->color;
-        n->parent->color = BLACK;
- 
-        if (n == n->parent->left) {
-                s->right->color = BLACK;
-                rotate_left(n->parent);
-        } else {
-                s->left->color = BLACK;
-                rotate_right(n->parent);
-        }
-}```
 ![](8394323_1294495422E1VW.jpg)
+####6.2.1实现
 
 所以为了使插入、或删除结点后的树依然维持为一棵新的红黑树，
 那就要做**三方面**的工作：
