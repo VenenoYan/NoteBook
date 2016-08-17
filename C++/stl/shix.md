@@ -108,12 +108,12 @@ typename I::value_type Foo(I i)
             return func(i,temp);
     }
     template <typename T>
-    typename traits<T>::value_type func(T i,T t)
+    typename traits<T>::value_type func(T i,int t)
     {
             return i;
     }
     template <typename T>
-    typename traits<T>::value_type func(T i,T* t)
+    typename traits<T>::value_type func(T i,int* t)
     {
             return *i;
     }
