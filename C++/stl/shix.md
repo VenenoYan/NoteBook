@@ -91,7 +91,7 @@ typename I::value_type Foo(I i)
 int i = 10；
 int j = new int (100);
 　
-func(i);
+func(i);            //自动调用
 func(j);
 ```
 
