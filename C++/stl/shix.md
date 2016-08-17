@@ -80,6 +80,9 @@ class traits
 ```C++
 template <typename T>
 class traits<T *>
+{
+        typedef typename T::value_type value_type;
+}
 ```
 
 [返回目录](README.md)
