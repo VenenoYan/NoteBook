@@ -113,7 +113,13 @@ n的兄弟s是黑色的，且s的左孩子是红色，s的右孩子是黑色。
 n的兄弟s是黑色的，且s的右孩子是红色的。
 ![](8394323_1294495422E1VW.jpg)
 ####6.2.1实现
+
 ```C++
+void delete_case1(struct node *n)
+{
+        if (n->parent != NULL)
+                delete_case2(n);
+}
 
 ```
 
