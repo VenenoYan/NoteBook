@@ -61,5 +61,7 @@ typename I::value_type Foo(I i)
 <hr>
 * 
 解决方案：traits
+    * 
+我们在函数调用和原始类型之间加一层专门萃取类型的中间层：traits！！
 
 [返回目录](README.md)
