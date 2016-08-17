@@ -43,6 +43,7 @@
 
 ####6.1.1伪代码实现
 ```C
+n->color = RED;
 //空树时
     void insert_case1(node n) {
         if (n->parent == NULL)
