@@ -50,6 +50,13 @@ class myIterator
 然后我们就可以通过```myIterator<T>::value_Type```获得指向的对象类型。
 <hr>
 问题是：如果我们希望func函数可以**适应于所有的迭代器**，那么怎么办？？？
+```C++
+template <typename I> //这里的I可以是任意类型的迭代器
+typename I::value_type Foo(I i)
+{
+ ...
+}
+```
 <hr>
 * 
 
