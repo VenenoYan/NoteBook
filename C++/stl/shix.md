@@ -81,7 +81,7 @@ typename I::value_type Foo(I i)
     template <typename T>
     class traits<T *>
     {
-            typedef typename T::value_type value_type;
+            typedef typename T value_type;
             ...
     }
 ```
