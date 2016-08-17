@@ -120,6 +120,7 @@ void delete_case2(struct node *n)
 ![](kr765.jpg)
     * 情况4：
 n的兄弟s是黑色的，且s的俩个孩子都是黑色的。
+![](thurw2.jpg)
     * 情况5：
 n的兄弟s是黑色的，且s的左孩子是红色，s的右孩子是黑色。
 ```C++
