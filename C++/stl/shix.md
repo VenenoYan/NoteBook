@@ -41,6 +41,11 @@ class myIterator
             typedef T value_type;
             ...
     };
+    template <typeneme T>
+    typename myIterator<T>::value_type func(myIterator<T> i)
+    {
+            ...
+    }
 ```
 然后我们就可以通过```myIterator<T>::value_Type```获得指向的对象类型。
 <hr>
