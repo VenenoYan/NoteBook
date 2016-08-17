@@ -57,7 +57,7 @@ typename traits<T>::value_type func(T i,traits<T>::value_type t)
 template<typename T>
 typename traits<T>::value_type func(T i,traits<T>::value_type t)
 {
-    return i;
+    return *i;
 }
 
 
