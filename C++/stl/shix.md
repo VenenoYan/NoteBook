@@ -90,7 +90,9 @@ typename I::value_type Foo(I i)
 ```C++
 int i = 10；
 int j = new int (100);
-
+　
+func(i);
+func(j);
 ```
 
 [返回目录](README.md)
