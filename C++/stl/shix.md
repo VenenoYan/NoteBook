@@ -75,5 +75,7 @@ class traits
 ```
     * 
 我们通过```traits<myIterator<T>>::value_type```来获得myIterator的元素类型；
+    * 
+可是原生指针的问题还么解决？？？
 
 [返回目录](README.md)
