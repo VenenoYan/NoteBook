@@ -148,6 +148,7 @@ SQL语句分为三种：DML（Data Manipulation Language）与DDL(Data Definitio
     		age tinyint unsigned default '0' not null,
     		tel char(13) null default "-"
     	)ENGINE=InnoDB DEFAULT CHARSET=gbk;
+    //插入时自增主键冲突：我们可以设为0或NULL，也可以不设置，让数据库自己处理
     between：
         between ... and ...
         not between ... and ...
