@@ -194,7 +194,7 @@
     * 装饰：动态的给一个对象添加一些额外的功能。
 * ###五、算法设计:
     * 将ip字符串转换为int[]的程序
-        * strtok的使用
+        * strtok的使用：第一次是源串，第二次设NULL
         * unsigned int 足够保存
         * ```C++
         uint ipTint(char *ipstr)  
