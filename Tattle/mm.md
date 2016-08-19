@@ -295,14 +295,14 @@ unsigned int ELFhash(char *str)
                while(true) {                 while(true) {
                produce( );                   P(full);
                P(empty);                     P(mutex);
-           P(mutex);                     take( ) from B[out];
-           append to B[in];              V(empty);             
-           in=(in+1)%k;                  out=(out+1)%k;     
-           V(mutex);                     V(mutex);  
-           V(full);                      consume( );
-                      }                               }
-                        }                                }
-    coend
+               P(mutex);                     take( ) from B[out];
+               append to B[in];              V(empty);             
+               in=(in+1)%k;                  out=(out+1)%k;     
+               V(mutex);                     V(mutex);  
+               V(full);                      consume( );
+                          }                               }
+                            }                                }
+        coend
     ```
     * 如何查看进程是否内存泄露?进程执行时间过长分析原因？
         * 静态检查: valgrind 
