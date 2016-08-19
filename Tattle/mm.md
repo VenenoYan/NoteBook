@@ -303,11 +303,12 @@ unsigned int ELFhash(char *str)
                           }                               }
                             }                                }
         coend
-    ```
     semaphore
     {
-    
+        int value;          // 
+        PCBtype *wait_queue;//阻塞的队列
     }
+    ```
     * 如何查看进程是否内存泄露?进程执行时间过长分析原因？
         * 静态检查: valgrind 
         * 动态检查：vim /proc/pid/status VmData项数值即为进程使用的堆大小，实时观察该值，是不是在不断的一直变大，说明有可能内存泄露
