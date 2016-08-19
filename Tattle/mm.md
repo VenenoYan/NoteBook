@@ -196,6 +196,28 @@
     * 将ip字符串转换为int[]的程序
         * strtok的使用
         * unsigned int 足够保存
+        * ```C++
+        uint ipTint(char *ipstr)  
+{  
+    if (ipstr == NULL)  return 0;  
+   
+    char *token;  
+    uint i = 3, total = 0, cur;  
+   
+    token = strtok(ipstr, ".");  
+   
+    while (token != NULL) {  
+        cur = atoi(token);  
+        if (cur >= 0 && cur <= 255) {  
+            total += cur * pow(256, i);  
+        }  
+        i --;  
+        token = strtok(NULL, ".");  
+    }  
+   
+    return total;  
+}   
+        ```
     * 闰年
         * 该年能被4整除，但是不能被100整除
         * 该年能被400整除
