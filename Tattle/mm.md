@@ -282,7 +282,28 @@ unsigned int ELFhash(char *str)
         * 遍历所有：先hash**分而治之**，降低规模；然后对小文件一个个处理
         * 最大的某些：堆排序
 * ###六、操作系统：
-    * 生产者-消费者伪代码
+    * 生产者-消费者伪代码：多个生产者与多个消费者共享多个缓冲区的事情
+    ```C++
+        item B[k];
+        semaphore empty;    empty=k;   //可以使用的空缓冲区数
+        semaphore full; full=0;        //缓冲区内可以使用的产品数
+        semaphore mutex;    mutex=1;   //互斥信号量
+        int in=0;                      //放入缓冲区指针
+        int out=0;                     //取出缓冲区指针 
+        cobegin
+        process producer_i ( ) {        process consumer_j( )   {    
+               while(true) {                 while(true) {
+               produce( );                   P(full);
+               P(empty);                     P(mutex);
+           P(mutex);                     take( ) from B[out];
+           append to B[in];              V(empty);             
+           in=(in+1)%k;                  out=(out+1)%k;     
+           V(mutex);                     V(mutex);  
+           V(full);                      consume( );
+                      }                               }
+                        }                                }
+    coend
+    ```
     * 如何查看进程是否内存泄露?进程执行时间过长分析原因？
         * 静态检查: valgrind 
         * 动态检查：vim /proc/pid/status VmData项数值即为进程使用的堆大小，实时观察该值，是不是在不断的一直变大，说明有可能内存泄露
