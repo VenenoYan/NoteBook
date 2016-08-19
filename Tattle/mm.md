@@ -303,6 +303,7 @@ unsigned int ELFhash(char *str)
                           }                               }
                             }                                }
         coend
+    原理：
     semaphore
     {
         int value;          // 
