@@ -309,7 +309,7 @@ unsigned int ELFhash(char *str)
         PCBtype *wait_queue;//阻塞的队列
     }
     P：操作时减1，如果value大于0执行，小于0进入阻塞队列
-    V：操作时加1，如果value大于0，继续；如果小于0，唤醒一个
+    V：操作时加1，如果value大于0，继续；如果小于等于0，唤醒一个
     ```
     * 如何查看进程是否内存泄露?进程执行时间过长分析原因？
         * 静态检查: valgrind 
