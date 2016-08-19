@@ -201,22 +201,22 @@
             {  
                 if (ipstr == NULL)  return 0;  
                
-            char *token;  
-            uint i = 3, total = 0, cur;  
-           
-            token = strtok(ipstr, ".");  
-           
-            while (token != NULL) {  
-                cur = atoi(token);  
-                if (cur >= 0 && cur <= 255) {  
-                    total += cur * pow(256, i);  
+                char *token;  
+                uint i = 3, total = 0, cur;  
+               
+                token = strtok(ipstr, ".");  
+               
+                while (token != NULL) {  
+                    cur = atoi(token);  
+                    if (cur >= 0 && cur <= 255) {  
+                        total += cur * pow(256, i);  
+                    }  
+                    i --;  
+                    token = strtok(NULL, ".");  
                 }  
-                i --;  
-                token = strtok(NULL, ".");  
-            }  
-           
-            return total;  
-        }   
+               
+                return total;  
+            }   
         ```
     * 闰年
         * 该年能被4整除，但是不能被100整除
