@@ -1,7 +1,5 @@
 ###C++：名字都有作用域，对象都有生命周期
 1. 
-[C_relatives](C_relatives/README.md)
-1. 
 [混淆点](confusion.md)
 1. 
 [字符串](string.md)
@@ -27,5 +25,7 @@
 [异常](exception.md)
 1. 
 [日常积累](study.md)
+1. 
+[C_relatives](C_relatives/README.md)
 
 [返回目录](../README.md)
