@@ -129,7 +129,7 @@ git checkout 把版本库中的文件覆盖工作区文件
         4)git bisect bad    告诉git当前版本有问题，git bisect结束
         5)git bisect reset  返回到初始状态
         6)git bisect log    最后一个完全成功的日志
-        7)以上过程可以写一个脚本
+        7)以上过程可以写一个脚本（目前自己也不是很了解，只有实际用时才会体会更强）
 ```
 1. 
 远程库
