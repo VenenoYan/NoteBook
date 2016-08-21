@@ -71,7 +71,7 @@
         * 
 那些依赖是“false-dependency”？
             * 
-RAR、RAW、WAW、WAR，除了最后一个写后读，其他都是“false-dependency”
+RAR、RAW、WAW、WAR，除了最后一个写后读，其他都是“false-dependency”========》映射表记录，源操作数都是从表中读，目地操作数重新映射为一个新的
         * 
 怎么为乱序做准备即怎么解决寄存器的映射关系？
         * 
