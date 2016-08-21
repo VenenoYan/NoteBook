@@ -71,7 +71,7 @@
         * 
 那些依赖是“false-dependency”？
             * 
-RAR、RAW、WAW、WAR，除了最后写后读，其他都是
+RAR、RAW、WAW、WAR，除了最后一个写后读，其他都是“false-得盆扽采用”
         * 
 怎么为乱序做准备即怎么解决寄存器的映射关系？
         * 
