@@ -34,7 +34,7 @@ jemalloc - FreeBSD & Firefox
 libumem - Solaris ...<br>
 * 
 ptmalloc：用单向循环链表管理空闲块
-tcmalloc：对8~
+tcmalloc：用链表数组管理；每个线程独立一个cache（不加锁），进程一个共享cache（加锁）
 每种内存分配器都说他们是最快的、可扩展并且具有高效的内存使用！！但是并非所有的分配器都适合我们自己的应用程序。内存消耗大的应用性能很大程度依赖于内存分配器的性能。本文中，我只讨论 "glibc malloc” 内存分配器。并希望今后能涉及到其他内存分配器的讨论。本文中为了更好的理解 ”glibc malloc”,我会联系它最近的源码来谈。
 *  
 ptmalloc2 来自于 dlmalloc 的分支：因为dlmalloc不支持多线程（它用一个临界段freelist管理所有的堆，大家共享,多线程会竞争）；但是ptmalloc增加了多线程支持（它使每个线程自己管理一个堆分段，因此空闲列表堆段也是自己的）====逐渐形成malloc
