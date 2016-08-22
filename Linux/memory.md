@@ -65,6 +65,7 @@ tcmalloc就是一个内存分配器，管理堆内存，主要影响malloc和fre
 tcmalloc区别的对待大、小对象。它为每个线程分配了一个线程局部的cache，线程需要的小对象都是在其cache中分配的，由于是thread local的，所以基本上是无锁操作（在cache不够，需要增加内存时，会加锁）。同时，tcmalloc维护了进程级别的cache，所有的大对象都在这个cache中分配，由于多个线程的大对象的分配都从这个cache进行，所以必须加锁访问。在实际的程序中，小对象分配的频率要远远高于大对象，通过这种方式（小对象无锁分配，大对象加锁分配）可以提升整体性能。
 * 
 线程级别cache和进程级别cache实际上就是一个多级的空闲块列表（Free List）。一个Free List以大小为k bytes倍数的空闲块进行分配，包含n个链表，每个链表存放大小为nk bytes的空闲块。在tcmalloc中，<=**32KB**的对象被称作是小对象，>32KB的是大对象。在小对象中，<=**1024byte**s的对象以8n bytes分配，1025<size<=32KB的对象以128n bytes大小分配，比如：要分配20bytes则返回的空闲块大小是24bytes的，这样在<=1024的情况下最多浪费7bytes，>1025则浪费127bytes。而大对象是以页大小4KB进行对齐的，最多会浪费4KB - 1 bytes。
+![](20130716082045234.jpg)
 
 ##glibc的[malloc](http://blog.163.com/xychenbaihu@yeah/blog/static/132229655201210975312473/)内部机制
 可以先运行下面的程序，会发现：16、24、32、40(32Bit系统)；32、48、64(64Bit系统)；会有跳变<br>当然也可以用top命令重点才看res(Resident size)指标
