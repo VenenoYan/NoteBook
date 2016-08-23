@@ -53,7 +53,7 @@ public:
                 --j;
             swap(s[i],s[j]);
             ++i;
-            --j;
+            --j;            //自减、自加
         }
         return s;
     }
