@@ -58,7 +58,7 @@ public:
         return s;
     }
 };
-unsigned char isVowels(char c)
+bool isVowels(char c)
 {
 	switch(c)
 	{
@@ -72,11 +72,10 @@ unsigned char isVowels(char c)
 		case 'E':
 		case 'I':
 		case 'U':
-			return 1;
+			return true;
 		default:
-			return 0;
+			return false;
 	}
-	return 0;
 }
 ```
 ###Lesson
