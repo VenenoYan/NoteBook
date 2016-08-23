@@ -86,7 +86,7 @@ ListNode *reverseBetween(ListNode *head,int s,int e){
 ```
 ###Lesson
 * 
-前后指针、快慢指针，本题使用前后指针。但这两种方法很有用！！
+本题使用前后指针！！
 * 
 当然本题还可以用栈解决，但是空间复杂度会比较高。
 
