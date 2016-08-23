@@ -71,17 +71,16 @@ ListNode *reverseBetween(ListNode *head,int s,int e){
 ## 344 字符串逆序
 ```C
     string reverseString(string s) {
-        if(s.size()==0)
+        if(s.size() <= 1)
             return s;
         int l = 0, h = s.size()-1;
-        if(l==h)
-            return s;
         while(l<h)
         {
             swap(s[l],s[h]);
             ++l;
             --h;
         }
+        //reverse(s.begin(),s.end());
         return s;
     }
 ```
