@@ -58,6 +58,26 @@ public:
         return s;
     }
 };
+unsigned char isVowels(char c)
+{
+	switch(c)
+	{
+		case 'a':
+		case 'o':
+		case 'e':
+		case 'i':
+		case 'u':
+		case 'A':
+		case 'O':
+		case 'E':
+		case 'I':
+		case 'U':
+			return 1;
+		default:
+			return 0;
+	}
+	return 0;
+}
 ```
 ###Lesson
 * 
