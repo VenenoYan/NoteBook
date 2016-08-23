@@ -89,6 +89,8 @@ ListNode *reverseBetween(ListNode *head,int s,int e){
 本题使用前后指针！！
 * 
 当然本题还可以用栈解决，但是空间复杂度会比较高。
+* 
+库函数！
 
 ###190，Reverse Bits 
 Reverse bits of a given 32 bits unsigned integer.
