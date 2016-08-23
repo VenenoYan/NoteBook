@@ -28,6 +28,7 @@ public:
         return s;
     }
 };
+//使用set查找：数量比较少时效率不高
 ```
 ###Lesson
 * 
