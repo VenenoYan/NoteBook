@@ -81,5 +81,7 @@ bool isVowels(char c)
 ###Lesson
 * 
 前后双指针的应用
+1. 
+比对数量不多时，直接使用if或者switch即可
 
 [返回目录](README.md)
