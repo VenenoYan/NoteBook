@@ -9,6 +9,7 @@
 ```C++
 ret-type func(para)
 {
+    //做一些
     if(end_contion)
         return something;
     else
