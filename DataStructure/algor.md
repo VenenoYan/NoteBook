@@ -76,7 +76,8 @@ int isB(Tree t){
     * 
 代码：
 ```C++ 
-initiative：k
+initiative size：k
+
 ```
 
 [返回目录](README.md)
