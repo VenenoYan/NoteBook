@@ -82,6 +82,7 @@ for i = k+1 to N:
     if(p < k):  
         swap()
     continue
+endfor
 ```
 
 [返回目录](README.md)
