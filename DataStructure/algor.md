@@ -81,6 +81,7 @@ for i = k+1 to N:
     p = rand(1,i)
     if(p < k):  
         swap()
+    endif
     continue
 endfor
 ```
