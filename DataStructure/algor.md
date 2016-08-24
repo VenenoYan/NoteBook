@@ -77,7 +77,11 @@ int isB(Tree t){
 代码：
 ```C++ 
 initiative size：k
-
+for i = k+1 to N:
+    p = rand(1,i)
+    if(p < k):  
+        swap()
+    continue
 ```
 
 [返回目录](README.md)
