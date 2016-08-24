@@ -11,17 +11,17 @@ class Solution {
 public:
     int getSum(int a, int b) {
         int yi,yu;
-        yu = a & b;
-        yi = a ^ b;
-        while(yu)
-        {
-            yu = yu << 1;
-            a = yu;
-            b = yi;
-            yu = a & b;
+        do{
             yi = a ^ b;
-        }
-        return yi;
+            yu = a & b << 1;
+        }while(yu != 0);
+        reutrn yi
+    }
+    int getSum(int a, int b) {
+        if(a && b) 
+            return getSum(a^b, (a&b) << 1);
+        else 
+            return a|b;
     }
 };
 ```
