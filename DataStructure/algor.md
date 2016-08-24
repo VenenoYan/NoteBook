@@ -80,7 +80,7 @@ initiative size：k
 for i = k+1 to N:
     p = rand(1,i)
     if(p < k):  
-        swap()
+        swap(pth,k+1)
     endif
     continue
 endfor
