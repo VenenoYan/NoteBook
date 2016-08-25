@@ -1,4 +1,7 @@
 #HTTP-Protocol
+* 
+电脑上访问一个网页，整个过程是怎么样的：DNS、HTTP、TCP、OSPF、IP、ARP。
+
 HTTP协议（HyperText TransferProtocol，超文本传输协议）是用于从WWW服务器传输超文本到本地浏览器的传送协议。是一个无状态的协议，处于应用层。
 
 ![](TCPIP.jpg)
