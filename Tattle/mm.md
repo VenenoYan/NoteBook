@@ -425,7 +425,7 @@ unsigned int ELFhash(char *str)
         * 返回给copy_process完成task_struct的初始化，返回给do_fork
     * fork 函数：如何确认是子进程还是父进程
         * 返回0是子进程 大于0是父进程，表示子进程pid
-    * Linux底层不管是线程还是进程都是task_struct实现的
+    * Linux底层不管是线程还是进程**都是**task_struct实现的
     * 进程和线程、进程的创建及运行过程，进程通信过程，进程调度，线程安全, 进程间互斥的理解
     * 进线程优缺点：
         * 进程是申请资源的最小单位，线程是调度的最小单位；
