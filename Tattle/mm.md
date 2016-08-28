@@ -490,6 +490,7 @@ unsigned int ELFhash(char *str)
             * 避免：分配资源时
             * 监测：
             * 解决：
+    * 中断：
 * ###七、[数据库](./../mysql/know.md)
     * SQL语句及索引的优化
         * 尽量不在where中判断NULL
