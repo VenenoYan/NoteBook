@@ -51,5 +51,8 @@ A把药放进箱子，用自己的锁把箱子锁上。B拿到箱子后，再在
 12个球，都一样的外表，但是有一个重量不同（没说重还是轻），找出来
     * 
 [答案](http://blog.csdn.net/hackbuteer1/article/details/6728383)
+<hr>
+
+<hr>
 
 [返回目录](README.md)
