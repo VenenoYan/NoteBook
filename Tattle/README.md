@@ -26,6 +26,8 @@
 [真题](mm.md)
     * 
 [面试总结](inter.md)
+    * 
+[算法](sua.md)
 1. 
 [论文](paper.md)
 
