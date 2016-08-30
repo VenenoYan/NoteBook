@@ -11,17 +11,20 @@ struct Node
     void * data;
     struct Node *next;
 };
+　
 struct QNode
 {
     struct Node *front;
     struct Node *tail;
     unsigned int len;
 };
+　
 struct Qlist
 {
     struct QNode *qlist;
     pthread_mutex_t m_lock;
 };
+　
 class MyQueue
 {
    public:
@@ -32,6 +35,7 @@ class MyQueue
    private:
        struct Qlist *m_qlist;
 };
+　
 MyQueue::MyQueue()
 {
     m_qlist = (struct Qlist *)malloc(sizeof(struct Qlist));
@@ -45,6 +49,7 @@ MyQueue::MyQueue()
     }
     pthread_mutex_init(&m_qlist->m_lock,NULL);
 }
+　
 int MyQueue::Push(void *pData)
 {
     struct Node *INode = NULL;
@@ -78,6 +83,7 @@ int MyQueue::Push(void *pData)
     cout<<endl; 
     return m_qlist->qlist->len;
 }
+　
 void* MyQueue::Pop()
 {
     void *pData;
@@ -103,6 +109,7 @@ void* MyQueue::Pop()
     cout<<endl;
     return pData;
 }
+　
 MyQueue::~MyQueue()
 {
     struct Node *pNode = NULL;
@@ -128,6 +135,7 @@ MyQueue::~MyQueue()
     }
     pthread_mutex_destroy(&m_qlist->m_lock);
 }
+　
 void *Thread_push(void *arg)
 {
     MyQueue *tasklist = (MyQueue *)arg;
@@ -141,6 +149,7 @@ void *Thread_push(void *arg)
     }
     return (void *)0;
 }
+　
 void *Thread_pop(void *arg)
 {
     MyQueue *tasklist = (MyQueue *)arg;
@@ -152,6 +161,7 @@ void *Thread_pop(void *arg)
     }
     return (void *)0;
 }
+　
 int main()
 {
     MyQueue taskQueue;
