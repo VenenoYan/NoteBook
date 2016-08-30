@@ -5,6 +5,7 @@
 #include <pthread.h>
 #include <unistd.h>
 using namespace std;
+　
 struct Node
 {
     void * data;
